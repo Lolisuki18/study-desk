@@ -1,0 +1,1935 @@
+{
+  "id": "cnxhkh-ngan-hang-chuong-7",
+  "title": "CNXH Khoa học – Ngân hàng bổ sung – Chương 7",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "description": "Ngân hàng MLN131 bổ sung, Chương 7 – Vấn đề gia đình. 61 câu.",
+  "contentType": "multiple-choice",
+  "language": "vi",
+  "source": {
+    "document": "MLN131 - Chủ nghĩa xã hội khoa học – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz)",
+    "note": "Nguồn cộng đồng, đã đối chiếu tự động với giáo trình; xem docs/doi-chieu-giao-trinh.md"
+  },
+  "items": [
+    {
+      "id": "b-003",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hiện nay, kiểu gia đình nào đang trở nên rất phổ biến ở các đô thị và cả ở nông thôn Việt Nam ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gia đình hạt nhân"
+          },
+          {
+            "key": "B",
+            "text": "Gia đình truyền thống"
+          },
+          {
+            "key": "C",
+            "text": "Gia đình đồng đại"
+          },
+          {
+            "key": "D",
+            "text": "Gia đình kết nối"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 3"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 180): Gia đình hạt nhân (gia đình đơn) hiện rất phổ biến ở cả đô thị lẫn nông thôn và đang dần thay thế mô hình gia đình truyền thống.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 180"
+      }
+    },
+    {
+      "id": "b-016",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguồn gốc gây nên tình trạng thống trị của người đàn ông trong gia đình, sự bất bình đẳng nam, nữ, giữa vợ chồng, sự nô dịch đối với phụ nữ trong gia đình là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là chế độ phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Là chế độ hôn nhân phụ hệ"
+          },
+          {
+            "key": "C",
+            "text": "Là chế độ tư hữu về tư liệu sản xuất"
+          },
+          {
+            "key": "D",
+            "text": "Là các quan niệm đạo đức lỗi thời"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 16"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 174): Xóa bỏ chế độ tư hữu về tư liệu sản xuất cũng là xóa gốc rễ của sự thống trị của nam giới và bất bình đẳng nam – nữ trong gia đình (giáo trình dẫn ý Lênin).",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 174"
+      }
+    },
+    {
+      "id": "b-024",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chức năng chính trị của gia đình thể hiện điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gia đình là nơi tổ chức thực hiện chính sách, pháp luật của nhà nước và hưởng lợi từ hệ thống chính sách, pháp luật đó"
+          },
+          {
+            "key": "B",
+            "text": "Gia đình là một công cụ thực thi quyền lực thống trị chính trị, mang bản chất của giai cấp cầm quyền"
+          },
+          {
+            "key": "C",
+            "text": "Gia đình là tổ chức chính trị nhỏ nhất trong xã hội, thực thi quyền lực thống trị của người giữ vai trò quyết định kinh tế"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 24"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 174): Về chức năng chính trị, gia đình là một tổ chức chính trị của xã hội: nơi thực hiện chính sách, pháp luật của Nhà nước và quy ước làng xã, đồng thời được hưởng lợi từ hệ thống đó.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 174"
+      }
+    },
+    {
+      "id": "b-026",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung giáo dục gia đình hiện nay ở Việt Nam hướng đến giáo dục điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giáo dục kiến thức khoa học hiện đại, trang bị công cụ để con cái hòa nhập với thế giới"
+          },
+          {
+            "key": "B",
+            "text": "Giáo dục tinh thần làm giàu, kinh doanh, sản mà"
+          },
+          {
+            "key": "C",
+            "text": "Giáo dục con cái hướng đến các giá trị truyền thống xưa"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 26"
+      }
+    },
+    {
+      "id": "b-042",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điều kiện và tiền đề kinh tế - XH để xây dựng gia đình trong CNXH là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xóa bỏ chế tư hữu, xác lập chế độ công hữu về tư liệu sản xuất."
+          },
+          {
+            "key": "B",
+            "text": "Phát triển kinh tế - XH"
+          },
+          {
+            "key": "C",
+            "text": "Nhà nước XHCN ban hành và thực hiện luật hôn nhân và nâng cao trình độ văn hóa và dân trí cho mọi người dân"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 42"
+      }
+    },
+    {
+      "id": "b-048",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Gia đình Việt Nam hiện đại có mấy thế hệ cùng sống chung?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "3"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 48"
+      }
+    },
+    {
+      "id": "b-052",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xây dựng gia đình Việt Nam hiện nay là xây dựng mô hình gia đình như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hiện đại với tiến trình công nghiệp hóa, hiện đại hóa đất nước và hội nhập kinh tế quốc tế"
+          },
+          {
+            "key": "B",
+            "text": "Hiện đại, phù hợp với tiến trình công nghiệp hóa, hiện đại hóa đất nước và hội nhập kinh tế quốc tế"
+          },
+          {
+            "key": "C",
+            "text": "Phù hợp với tiến trình công nghiệp hóa, hiện đại hóa đất nước và hội nhập kinh tế quốc tế"
+          },
+          {
+            "key": "D",
+            "text": "Hiện đại, phù hợp với tiến trình công nghiệp hóa đất nước và hội nhập kinh tế quốc tế"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 52"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 188): Xây dựng gia đình Việt Nam hiện nay là xây dựng mô hình gia đình hiện đại, phù hợp với công nghiệp hóa, hiện đại hóa và hội nhập quốc tế.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 188"
+      }
+    },
+    {
+      "id": "b-056",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mức đó tác động của gia đình đối với xã hội phụ thuộc vào yếu tố nào?(Chọn 3)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vào bản chất của từng chế độ xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Vào đường lối, chủ trương của giai cấp cầm quyền"
+          },
+          {
+            "key": "C",
+            "text": "Vào bản thân mô hình, kết cấu, đặc điểm của mới hình thức gia đình trong lịch sử"
+          },
+          {
+            "key": "D",
+            "text": "Vào ý chí, nguyện vọng của các thành viên trong gia đình"
+          }
+        ],
+        "answer": "ABC"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 56"
+      }
+    },
+    {
+      "id": "b-058",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quan hệ nào được coi là quan hệ cơ bản nhất trong gia đình?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quan hệ hôn nhân và huyết thống"
+          },
+          {
+            "key": "B",
+            "text": "Quan hệ quân tụ trong một không gian sinh tồn"
+          },
+          {
+            "key": "C",
+            "text": "Quan hệ hôn nhân"
+          },
+          {
+            "key": "D",
+            "text": "Quan hệ nuôi dưỡng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 58"
+      }
+    },
+    {
+      "id": "b-062",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ sở chính trị - xã hội để xây dựng gia đình trong chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tất cả các đáp án đều đúng"
+          },
+          {
+            "key": "B",
+            "text": "Thiết lập chế độ công hữu về tư liệu sản xuất"
+          },
+          {
+            "key": "C",
+            "text": "Xây dựng văn hóa xã hội chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Thiết lập chính quyền nhà nước của giai cấp công nhân và nhân dân lao động, nhà nước xã hội chủ nghĩa"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 62"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 175): Cơ sở chính trị để xây dựng gia đình trong thời kỳ quá độ là thiết lập chính quyền nhà nước của giai cấp công nhân và nhân dân lao động.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 175"
+      }
+    },
+    {
+      "id": "b-063",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giáo dục gia đình và giáo dục của xã hội có vị trí, vai trò như thế nào trong quá trình phát triển của mỗi cá nhân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giáo dục gia đình đóng vai trò quyết định sự phát triển của cá nhân"
+          },
+          {
+            "key": "B",
+            "text": "Giáo dục của xã hội đóng vai trò quyết định sự phát triển của cá nhân"
+          },
+          {
+            "key": "C",
+            "text": "Giáo dục gia đình gắn liền với giáo dục của xã hội trong quá trình phát triển của mỗi cá nhân"
+          },
+          {
+            "key": "D",
+            "text": "Giáo dục gia đình và giáo dục của xã hội chịu sự chi phối của quá trình nhận thức riêng biệt của mỗi cá nhân dựa trên tâm tư, tình cảm, tri thức chủ quan của cá nhân đó"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 63"
+      }
+    },
+    {
+      "id": "b-071",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ sở văn hóa để xây dựng gia đình trong chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thiết lập chính quyền nhà nước của giai cấp công nhân và nhân dân lao động, nhà nước xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Thiết lập chế độ công hữu về tư liệu sản xuất"
+          },
+          {
+            "key": "C",
+            "text": "Giá trị văn hóa được xây dựng trên nền tảng hệ tư tưởng chính trị của giai cấp công nhân"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 71"
+      }
+    },
+    {
+      "id": "b-093",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu không phải là một chức năng của gia đình?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chức năng nghề nghiệp"
+          },
+          {
+            "key": "B",
+            "text": "Chức năng nuôi dưỡng, giáo dục"
+          },
+          {
+            "key": "C",
+            "text": "Chức năng kinh tế và tổ chức tiêu dùng"
+          },
+          {
+            "key": "D",
+            "text": "Chức năng thỏa mãn nhu cầu tâm sinh lý, duy trì tình cảm"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 93"
+      }
+    },
+    {
+      "id": "b-097",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chế độ hôn nhân tiến bộ được đảm bảo trên nguyên tắc nào? (chọn 3)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hôn nhân tư nguyên"
+          },
+          {
+            "key": "B",
+            "text": "Hôn nhân một vợ một chồng, vợ chồng bỉnh đảng"
+          },
+          {
+            "key": "C",
+            "text": "Hôn nhân được đảm bảo về mặt pháp lý"
+          },
+          {
+            "key": "D",
+            "text": "Hôn nhân được đảm bảo về mặt kinh tế"
+          }
+        ],
+        "answer": "ABC"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 97"
+      }
+    },
+    {
+      "id": "b-100",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở Việt Nam, từ những năm 70 và 80 của thế kỉ XX, Nhà nước đã tuyên truyền, phổ biến và vận động, khuyến khích mỗi cặp vợ chồng có bao nhiêu con?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ nên có từ 1 đến 2 con"
+          },
+          {
+            "key": "B",
+            "text": "Có từ 4 con trở lên"
+          },
+          {
+            "key": "C",
+            "text": "Có đủ 3 con"
+          },
+          {
+            "key": "D",
+            "text": "Còn đông con càng tốt"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 100"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 181): Từ thập niên 70–80, Nhà nước phổ biến biện pháp tránh thai, vận động sinh đẻ có kế hoạch và khuyến khích mỗi cặp vợ chồng chỉ nên có 1–2 con.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 181"
+      }
+    },
+    {
+      "id": "b-104",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nơi nào được xem là cộng đồng xã hội đầu tiên mà mỗi cá nhân sinh sống?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gia đình"
+          },
+          {
+            "key": "B",
+            "text": "Trường học"
+          },
+          {
+            "key": "C",
+            "text": "Quê hương"
+          },
+          {
+            "key": "D",
+            "text": "Xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 104"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 169): Gia đình là cộng đồng xã hội đầu tiên của mỗi người và ảnh hưởng rất lớn đến việc hình thành, phát triển nhân cách; nó là cầu nối giữa cá nhân và xã hội.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 169"
+      }
+    },
+    {
+      "id": "b-116",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cho đến nay, kinh tế gia đình Việt Nam đã có bước chuyển biến mang tính bước ngoặt nào? ( chọn 2 đáp án)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Từ kinh tế tự cấp, tự túc thành kinh tế hàng hóa"
+          },
+          {
+            "key": "B",
+            "text": "Từ đơn vị kinh tế đáp ứng nhu cầu của thị trường quốc gia thành đơn vị kinh tế đáp ứng nhu cầu của thị trướng toàn cầu"
+          },
+          {
+            "key": "C",
+            "text": "Từ kinh tế hàng hóa thành kinh tế tự cấp, tự túc"
+          },
+          {
+            "key": "D",
+            "text": "Từ kinh tế kế hoạch hóa tập trung sang kinh tế thị trường tự do"
+          }
+        ],
+        "answer": "AB"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 116"
+      }
+    },
+    {
+      "id": "b-133",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung cơ bản và trực tiếp để xây dựng gia đình ở Việt Nam hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển kinh tế - xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng gia đình no ấm, bình đẳng, tiến bộ và hạnh phúc"
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng người phụ nữ"
+          },
+          {
+            "key": "D",
+            "text": "Nâng cao trình độ dân trí cho nhân dân lao động"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 133"
+      }
+    },
+    {
+      "id": "b-142",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chức năng cơ bản nào của gia đình được xem là chức năng đặc thù nhất?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chức năng nuôi dưỡng, giáo dục"
+          },
+          {
+            "key": "B",
+            "text": "Chức năng kinh tế và tổ chức tiêu dùng"
+          },
+          {
+            "key": "C",
+            "text": "Chức năng tái sản xuất ra con người"
+          },
+          {
+            "key": "D",
+            "text": "Chức năng thỏa mãn nhu cầu tâm sinh lý, duy trì tình cảm gia đinh"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 142"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 170): Tái sản xuất ra con người là chức năng đặc thù của gia đình, không cộng đồng nào khác thay thế được.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 170"
+      }
+    },
+    {
+      "id": "b-147",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chức năng tái sản xuất ra con người của gia đình nên được thực hiện theo xu hướng hạn chế hay khuyến khích?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tùy theo từng nơi, theo từng nhu cầu cụ thể của xã hôi"
+          },
+          {
+            "key": "B",
+            "text": "Cần khuyến khích phát triển để phát triển kinh tế"
+          },
+          {
+            "key": "C",
+            "text": "Cần hạn chế để tránh dân số quá đông"
+          },
+          {
+            "key": "D",
+            "text": "Không nên can thiệp, vì đây là chức năng tự nhiên. quyền tự do của mỗi gia đình"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 147"
+      }
+    },
+    {
+      "id": "b-153",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quan hệ nào là quan hệ tự nhiên, là yếu tố mạnh mẽ nhất gắn kết các thành viên trong gia đình với nhau?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quan hệ nuôi dưỡng"
+          },
+          {
+            "key": "B",
+            "text": "Quan hệ huyết thống"
+          },
+          {
+            "key": "C",
+            "text": "Quan hệ kinh tế"
+          },
+          {
+            "key": "D",
+            "text": "Quan hệ hôn nhân"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 153"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 167): Quan hệ huyết thống là quan hệ tự nhiên, yếu tố mạnh mẽ nhất gắn kết các thành viên trong gia đình.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 167"
+      }
+    },
+    {
+      "id": "b-159",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Câu nói sau do ai khẳng định: \"Nếu không giải phóng phụ nữ là xây dựng chủ nghĩa xã hội chỉ một nửa\" là của ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "V.I.Lênin"
+          },
+          {
+            "key": "B",
+            "text": "C.Mác"
+          },
+          {
+            "key": "C",
+            "text": "Chủ tịch Hồ Chí Minh"
+          },
+          {
+            "key": "D",
+            "text": "Ph.Ăngghen"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 159"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 170): Câu “Nếu không giải phóng phụ nữ là xây dựng chủ nghĩa xã hội chỉ một nửa” được giáo trình dẫn là lời của Hồ Chí Minh.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 170"
+      }
+    },
+    {
+      "id": "b-164",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quy mô gia đình ở Việt Nam hiện nay tồn tại theo xu hướng nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thu nhỏ số lượng thành viên trong gia đình"
+          },
+          {
+            "key": "B",
+            "text": "Mở rộng số lượng thành viên trong gia đình"
+          },
+          {
+            "key": "C",
+            "text": "Liên kết các gia đình đơn"
+          },
+          {
+            "key": "D",
+            "text": "Quy mô nhỏ ở nông thôn và quy mô lớn ở thành thị"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 164"
+      }
+    },
+    {
+      "id": "b-183",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vị trí của gia đình trong xã hội là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gia đình là tớ ấm mang lại các giá trị hạnh phúc, sự hài hòa trong đười sóng Cả nhân của môi thành viện"
+          },
+          {
+            "key": "B",
+            "text": "Gia đình là cầu nối giữa cá nhân và xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Gia đình là tế bào của xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 183"
+      }
+    },
+    {
+      "id": "b-197",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xây dựng gia đình mới ở Việt Nam hiện nay cần phải kế thừa, phát huy truyền thống nào của gia đình truyền thống?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phong tục cưới hỏi"
+          },
+          {
+            "key": "B",
+            "text": "Uy quyền tuyệt đối của người chồng"
+          },
+          {
+            "key": "C",
+            "text": "Sự cố kết chặt chẽ giữa các thành viên"
+          },
+          {
+            "key": "D",
+            "text": "Gia đình đông con"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 197"
+      }
+    },
+    {
+      "id": "b-207",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chức năng nào được coi là chức năng cơ bản và riêng có của gia đình?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tổ chức đời sống gia đình"
+          },
+          {
+            "key": "B",
+            "text": "Tái sản xuất ra con người"
+          },
+          {
+            "key": "C",
+            "text": "Giáo dục gia đình"
+          },
+          {
+            "key": "D",
+            "text": "Thỏa mãn tâm sinh lý"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 207"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 170): Tái sản xuất ra con người là chức năng đặc thù, riêng có của gia đình.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 170"
+      }
+    },
+    {
+      "id": "b-221",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nếu thiếu đi cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính tri, thì sẽ ảnh hưởng đến vấn đề gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Việc phát triển xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Việc nhận thức về thế giới xung quanh của con người bị hạn chế"
+          },
+          {
+            "key": "C",
+            "text": "Việc xây dựng gia đình sẽ lệch lạc, không đạt hiệu quả cao"
+          },
+          {
+            "key": "D",
+            "text": "Việc phát triển tâm sinh lý của con người"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 221",
+        "bankAnswer": "A",
+        "answerChangedToTextbook": true
+      },
+      "enrichment": {
+        "text": "ĐÃ ĐỔI THEO GIÁO TRÌNH: giáo trình MLN131 viết “Thiếu đi cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính trị, thì việc xây dựng gia đình sẽ lệch lạc, không đạt hiệu quả cao”, nên đáp án là C. Ngân hàng câu hỏi gốc ghi A. Ngân hàng còn có câu b-391 giống hệt, đáp án là C, nên b-221 là lỗi của ngân hàng.",
+        "reference": "Giáo trình MLN131, trang PDF 176",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "b-237",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong quá trình xây dựng chủ nghĩa xã hội, chủ trương bảo vệ chế độ hôn nhân một vợ, một chồng nhằm mục đích gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tất cả các đáp án đều đúng"
+          },
+          {
+            "key": "B",
+            "text": "Điều hòa mâu thuẫn trong gia đình"
+          },
+          {
+            "key": "C",
+            "text": "Thực hiện bình đẳng trong gia đình, giải phóng phụ nữ"
+          },
+          {
+            "key": "D",
+            "text": "Hạn chế các tệ nạn xã hội như mại dâm, bạo lực gia đình e.Đảm bảo hiệu quả cho sự quản lý nhà nước về gia đình"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 237"
+      }
+    },
+    {
+      "id": "b-241",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại sao nói gia đình là tế bào của xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì bất kì ai cũng có gia đình riêng, có con cái và cha mẹ"
+          },
+          {
+            "key": "B",
+            "text": "Tất cả các đáp án đều đúng"
+          },
+          {
+            "key": "C",
+            "text": "Vì gia đình là cơ chế quản lý xã hội ở cấp độ nhỏ nhất, không thể phân chia được nữa"
+          },
+          {
+            "key": "D",
+            "text": "Vì gia đình sản xuất ra tư liệu tiêu dùng, tư liệu sản xuất và tái sản xuất ra con người"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 241"
+      }
+    },
+    {
+      "id": "b-245",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong bối cảnh hội nhập kinh tế quốc tế và cạnh tranh hàng hóa trong khu vực và thế giới, kinh té gia đình gặp khó khăn, trở ngại do nguyên nhân gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Do thói quen, tập quán an phận, ngại thay đổi của nền tảng gia đình cũ"
+          },
+          {
+            "key": "B",
+            "text": "Do chính sách đều tiết của Nhà nước thúc đẩy kinh tế hộ gia đình phát triển thành doanh nghiệp"
+          },
+          {
+            "key": "C",
+            "text": "Do gia đình ngày càng ít thành viên hơn"
+          },
+          {
+            "key": "D",
+            "text": "Do kinh tế gia đình phần lớn có quy mô nhỏ, lao động ít, tự sản xuất là chính"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 245"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 182): Trong hội nhập và cạnh tranh hàng hóa, kinh tế gia đình khó chuyển sang sản xuất hàng hóa chuyên sâu vì phần lớn quy mô nhỏ, ít lao động.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 182"
+      }
+    },
+    {
+      "id": "b-259",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Gia đình văn hóa là một mô hình gia đình như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển"
+          },
+          {
+            "key": "B",
+            "text": "Tiến bộ"
+          },
+          {
+            "key": "C",
+            "text": "Huyết thống"
+          },
+          {
+            "key": "D",
+            "text": "Không được bảo vệ"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 259"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 188): Gia đình văn hóa là mô hình gia đình tiến bộ, một danh hiệu mà nhiều gia đình Việt Nam hướng tới.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 188"
+      }
+    },
+    {
+      "id": "b-260",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hôn nhân một vợ một chồng xuất hiện lần đầu tiên khi nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khi có sự thắng lợi của chế độ tư hữu đối với chế độ công hữu nguyên thủy"
+          },
+          {
+            "key": "B",
+            "text": "Khi có sự thắng thế của chế độ tư bản đối với chế độ phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Khi các quốc gia bước vào thời kỳ quá độ lên chủ nghĩa xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Khi con người xuất hiện"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 260"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 178): Hôn nhân một vợ một chồng xuất hiện từ sớm, khi chế độ tư hữu thắng chế độ công hữu nguyên thủy.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 178"
+      }
+    },
+    {
+      "id": "b-266",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại sao trong gia đình Việt Nam truyền thống trước kia lại quan niệm có càng đông con càng tốt và nhất thiết phải có con trai nối dõi?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Do dân số ít và nam giới quá hiếm"
+          },
+          {
+            "key": "B",
+            "text": "Do không có các biện pháp kế hoạch hóa gia đình"
+          },
+          {
+            "key": "C",
+            "text": "Do con cái mang họ cha"
+          },
+          {
+            "key": "D",
+            "text": "Do ảnh hưởng phong tục, tập quán và nhu cầu sản xuất nông nghiệp"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 266"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 181): Trước kia, do phong tục, tập quán và nhu cầu sản xuất nông nghiệp, gia đình truyền thống muốn có nhiều con, càng đông con càng tốt.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 181"
+      }
+    },
+    {
+      "id": "b-272",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hình thức gia đình nào hình thành sớm nhất trong lịch sử?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gia đình một vợ một chồng"
+          },
+          {
+            "key": "B",
+            "text": "Gia đình phụ hệ"
+          },
+          {
+            "key": "C",
+            "text": "Đại gia đình phụ hệ"
+          },
+          {
+            "key": "D",
+            "text": "Gia đình mẫu hệ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 272"
+      }
+    },
+    {
+      "id": "b-274",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Các quan hệ gia đình biến đổi, phát triển phụ thuộc vào điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trình độ phát triển kinh tế và thể chế chính trị - xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Số lượng thành viên trong gia đình"
+          },
+          {
+            "key": "C",
+            "text": "Điều kiện kinh tế của từng cá nhân trong gia đình"
+          },
+          {
+            "key": "D",
+            "text": "Các yếu tố đạo đức của một xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 274"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 167): Các quan hệ trong gia đình biến đổi, phát triển tùy thuộc vào trình độ phát triển kinh tế và thể chế chính trị – xã hội.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 167"
+      }
+    },
+    {
+      "id": "b-277",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Với sự phát triển của hệ thống giáo dục xã hội và sự phát triển kinh tế hiện nay, vai trò giáo dục của các chủ thể trong gia đình có sự biến đổi như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vai trò giáo dục của các thành viên trong gia đình có xu hướng giảm xuống"
+          },
+          {
+            "key": "B",
+            "text": "Vai trò giáo dục của các thành viên trong gia đình có xu hướng gia tăng"
+          },
+          {
+            "key": "C",
+            "text": "Vai trò giáo dục của cha mẹ ngày càng được tăng cường, dành nhiều thời gian chăm sóc, giáo dục con cái hơn"
+          },
+          {
+            "key": "D",
+            "text": "Vai trò giáo dục của ông bà ngày càng quan trọng hơn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 277"
+      }
+    },
+    {
+      "id": "b-278",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hôn nhân tiến bộ là hôn nhân xuất phát từ đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Từ tình yêu giữa nam và nữ"
+          },
+          {
+            "key": "B",
+            "text": "Từ quan hệ kinh tế - xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Từ cơ sở pháp lý được xã hội công nhân"
+          },
+          {
+            "key": "D",
+            "text": "Từ các yếu tố đạo đức truyền thống"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 278"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 177): Hôn nhân tiến bộ là hôn nhân xuất phát từ tình yêu giữa nam và nữ.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 177"
+      }
+    },
+    {
+      "id": "b-279",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong các chế độ xã hội trước, sự thống trị của người đàn ông trong gia đình là kết quả của việc gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Của sự thống trị về kinh tế"
+          },
+          {
+            "key": "B",
+            "text": "Của sự phát triển chế độ quân chủ"
+          },
+          {
+            "key": "C",
+            "text": "Của sự thống trị về văn hóa"
+          },
+          {
+            "key": "D",
+            "text": "Của sự thống trị về chính trị"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 279"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 175): Sự thống trị của đàn ông trong gia đình là kết quả của sự thống trị về kinh tế; khi sự thống trị kinh tế đó không còn thì nó cũng tiêu tan.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 175"
+      }
+    },
+    {
+      "id": "b-294",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Gia đình được hình thành, củng cố và duy trì dựa trên mối quan hệ nào? (chọn 3 đáp án)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quan hệ hôn nhân"
+          },
+          {
+            "key": "B",
+            "text": "Quan hệ huyết thống"
+          },
+          {
+            "key": "C",
+            "text": "Quan hệ nuôi dưỡng"
+          },
+          {
+            "key": "D",
+            "text": "Quan hệ kinh tế"
+          }
+        ],
+        "answer": "ABC"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 294"
+      }
+    },
+    {
+      "id": "b-298",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nếu trước kia, gia đình Việt Nam tiêu dùng sản phẩm do mình làm ra là chính, thì hiện nay, gia tỉnh Việt Nam đang tiến tới xu hướng tiêu dùng chủ yếu nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xu hướng sử dụng hàng hóa, dịch vụ của phúc lợi Nhà nước"
+          },
+          {
+            "key": "B",
+            "text": "Xu hướng tiêu dùng sản phẩm do người khác làm ra"
+          },
+          {
+            "key": "C",
+            "text": "Xu hướng tiêu dùng sản phẩm nước ngoài"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 298"
+      }
+    },
+    {
+      "id": "b-309",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chức năng văn hóa của gia đình thể hiện điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gia đình là nơi lưu giữ truyền thống văn hóa của dân tộc, là nơi sáng tạo và thụ hưởng những giá trị văn hóa của xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Gia đình là nơi chịu sự chi phối, chế ước của các yếu tố văn hóa cũ và mới đan xen"
+          },
+          {
+            "key": "C",
+            "text": "Gia đình là nơi thực thi các chính sách văn hóa, mang đậm dấu ấn của giai cấp thống trị"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 309"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 174): Gia đình không chỉ là nơi lưu giữ mà còn là nơi sáng tạo và thụ hưởng các giá trị văn hóa của xã hội.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 174"
+      }
+    },
+    {
+      "id": "b-317",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điểm tương đồng giữa giáo dục gia đình truyền thông và giáo dục gia đình trong xã hội mới của Việt Nam hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tinh thần cô kết làng xã"
+          },
+          {
+            "key": "B",
+            "text": "Nhấn mạnh sự hy sinh của cá nhân cho cộng đồng"
+          },
+          {
+            "key": "C",
+            "text": "Ý thức vươn lên làm giàu"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 317"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 182): Giáo dục gia đình truyền thống và giáo dục của xã hội mới giống nhau ở chỗ cùng nhấn mạnh sự hy sinh của cá nhân cho cộng đồng.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 182"
+      }
+    },
+    {
+      "id": "b-334",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là một trong những phương hướng cơ bản xây dựng và phát triển gia đình Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tiếp tục phát triển và nâng cao chất lượng phong trào xây dựng gia đình văn hóa"
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng gia định văn hóa, bình đẳng giới, con cái được học hành"
+          },
+          {
+            "key": "C",
+            "text": "Gia đình từ một đến hai con, ấm no, hạnh phúc"
+          },
+          {
+            "key": "D",
+            "text": "Mọi thành viên trong gia đình phải tôn trong, phát huy quyền làm chủ trong gia định"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 334"
+      }
+    },
+    {
+      "id": "b-340",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc thực hiện chức năng nào của gia đình quyết định mật độ dân cư và nguồn lực lao động của một quốc gia và quốc tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chức năng kinh tế và tố chức tiêu dùng"
+          },
+          {
+            "key": "B",
+            "text": "Chức năng định cư"
+          },
+          {
+            "key": "C",
+            "text": "Chức năng tái sản xuất ra con người"
+          },
+          {
+            "key": "D",
+            "text": "Chức năng giáo dục, nuôi dưỡng"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 340"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 171): Chức năng tái sản xuất ra con người quyết định mật độ dân cư và nguồn lao động của một quốc gia và của thế giới.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 171"
+      }
+    },
+    {
+      "id": "b-342",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Câu nói sau đây do ai nói: \"... nếu nghĩa vụ của vợ chồng là phải thương yêu nhau thì nghĩa vụ của những kẻ yêu nhau há chẳng phải là kết hôn với nhau và không được kết hôn với người khác hay sao?\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ph. Ăngghen"
+          },
+          {
+            "key": "B",
+            "text": "V.I.Lênin"
+          },
+          {
+            "key": "C",
+            "text": "Chủ tịch Hồ Chí Minh"
+          },
+          {
+            "key": "D",
+            "text": "C.Mác"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 342"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 177): Giáo trình dẫn Ăngghen khi bàn về hôn nhân tự nguyện, xuất phát từ tình yêu giữa nam và nữ.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 177"
+      }
+    },
+    {
+      "id": "b-346",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong gia đình truyền thống, ai được xem là trụ cột của gia đình?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Người vợ"
+          },
+          {
+            "key": "B",
+            "text": "Người chồng"
+          },
+          {
+            "key": "C",
+            "text": "Cà vợ và chồng"
+          },
+          {
+            "key": "D",
+            "text": "Người con trong gia đình"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 346"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 185): Trong gia đình truyền thống, người chồng là trụ cột và mọi quyền lực trong gia đình thuộc về người đàn ông.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 185"
+      }
+    },
+    {
+      "id": "b-353",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở Việt Nam hiện nay, tồn tại mô hình người chủ gia đình nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Người đàn ông - người chồng làm chủ gia đình"
+          },
+          {
+            "key": "B",
+            "text": "Người phụ nữ - người vợ làm chủ gia đình"
+          },
+          {
+            "key": "C",
+            "text": "Cả hai vợ chồng cùng làm chủ gia đình"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 353"
+      }
+    },
+    {
+      "id": "b-358",
+      "type": "multiple-choice",
+      "content": {
+        "question": "*Quyền tự do kết hôn trên cơ sở tình yêu và quyền tự do ly hôn là hai quyền thực hiện nguyên tắc nào của chế độ hôn nhân tiến bộ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hôn nhân tự nguyện"
+          },
+          {
+            "key": "B",
+            "text": "Hôn nhân một vợ một chồng, vợ chồng bình đẳng"
+          },
+          {
+            "key": "C",
+            "text": "Hôn nhân được đàm bảo về mặt pháp lý"
+          },
+          {
+            "key": "D",
+            "text": "Hôn nhân được đàm bảo về mặt kinh tế"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 358"
+      }
+    },
+    {
+      "id": "b-360",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hôn nhân xuất phát từ tinh yêu giữa nam và nữ được xem là hôn nhân như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hôn nhân chậm tiến bộ"
+          },
+          {
+            "key": "B",
+            "text": "Hôn nhân tiến bộ"
+          },
+          {
+            "key": "C",
+            "text": "Hôn nhân không được đàm bảo"
+          },
+          {
+            "key": "D",
+            "text": "Hôn nhân huyết thống"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 360"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 177): Hôn nhân tiến bộ là hôn nhân xuất phát từ tình yêu giữa nam và nữ.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 177"
+      }
+    },
+    {
+      "id": "b-363",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Có bao nhiêu phương hướng cơ bản xây dựng và phát triển gia đình Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "3"
+          },
+          {
+            "key": "B",
+            "text": "4"
+          },
+          {
+            "key": "C",
+            "text": "5"
+          },
+          {
+            "key": "D",
+            "text": "6"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 363"
+      }
+    },
+    {
+      "id": "b-369",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong gia đình Việt Nam hiện đại, sự bền vững của hôn nhân phụ thuộc rất nhiều vào yếu tố nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có con hay không có con"
+          },
+          {
+            "key": "B",
+            "text": "Có con trai hay không có con trai"
+          },
+          {
+            "key": "C",
+            "text": "Tâm lý, tình cảm, kinh tế"
+          },
+          {
+            "key": "D",
+            "text": "Địa vị xã hội, kinh tế"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 369"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 181): Ở gia đình hiện đại, sự bền vững của hôn nhân phụ thuộc nhiều vào yếu tố tâm lý, tình cảm, kinh tế, không chỉ vào việc có con hay có con trai.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 181"
+      }
+    },
+    {
+      "id": "b-372",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thách thức lớn nhất đặt ra cho các gia đình Việt Nam hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vấn đề thất nghiệp, mất ổn định về kinh tế"
+          },
+          {
+            "key": "B",
+            "text": "Vẫn đề học tập, phát triển của con cái - thế hệ tương lai"
+          },
+          {
+            "key": "C",
+            "text": "Vấn đề mâu thuẫn giữa các thế hệ do sự khác biệt về tuổi tác"
+          },
+          {
+            "key": "D",
+            "text": "Vẫn đê kế hoạch hóa gia đình"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 372"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 186): Thách thức lớn nhất của gia đình Việt Nam hiện nay là mâu thuẫn giữa các thế hệ do khác biệt tuổi tác khi sống chung.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 186"
+      }
+    },
+    {
+      "id": "b-390",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong gia đình Việt Nam hiện nay, người chủ gia đình là ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Người lớn tuổi nhất trong gia đình"
+          },
+          {
+            "key": "B",
+            "text": "Người có trình độ cao nhất trong gia đình"
+          },
+          {
+            "key": "C",
+            "text": "Nguời lớn tuổi nhất và có trình độ cao nhất trong gia đình"
+          },
+          {
+            "key": "D",
+            "text": "Có thể là người đàn ông, người phụ nữ hoặc cả hai"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 390"
+      }
+    },
+    {
+      "id": "b-391",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nếu thiếu đi cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính trị thì việc xây dựng gia đình sẽ bị ảnh hưởng như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Việc xây dựng gia đình sẽ lệch lạc, không đạt hiệu quả"
+          },
+          {
+            "key": "B",
+            "text": "Hệ thống chính sách, pháp luật về xây dựng gia đình sẽ không thể hoàn thiện"
+          },
+          {
+            "key": "C",
+            "text": "Việc xây dựng gia đình không còn dựa trên nền tảng hệ tư tưởng chính trị"
+          },
+          {
+            "key": "D",
+            "text": "Việc xây dựng gia đình sẽ không hướng tới đời sống văn hóa, tinh thần"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 391"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 176): Thiếu cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính trị thì việc xây dựng gia đình sẽ lệch lạc, không đạt hiệu quả cao.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 176"
+      }
+    },
+    {
+      "id": "b-396",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu không phải là một cơ sở xây dụng gia đình trong thời kì quá độ lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cơ sở kinh tế - xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Cơ sở chính trị - xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Cơ sở văn hóa"
+          },
+          {
+            "key": "D",
+            "text": "Cơ sở lao động, sản xuất"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 396"
+      }
+    },
+    {
+      "id": "b-397",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhân tố nào sau đây có vai trò quyết định đến sự tồn tại và phát triển của xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Con người"
+          },
+          {
+            "key": "B",
+            "text": "Gia đinh"
+          },
+          {
+            "key": "C",
+            "text": "Tư duy"
+          },
+          {
+            "key": "D",
+            "text": "Khoa học kỹ thuật"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 397"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 166): Gia đình là cộng đồng người đặc biệt, có vai trò quyết định đến sự tồn tại và phát triển của xã hội.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 166"
+      }
+    },
+    {
+      "id": "b-398",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở nước ta hiện nay, sự bền vững của hôn nhân phụ thuộc vào yếu tố nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Yếu tố con cái nhiều hay ít"
+          },
+          {
+            "key": "B",
+            "text": "Yếu tố con cái là trai hay gái"
+          },
+          {
+            "key": "C",
+            "text": "Yếu tố truyền thống gia trưởng"
+          },
+          {
+            "key": "D",
+            "text": "Yếu tố tâm lý, tình cảm và kinh tế"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 398"
+      }
+    },
+    {
+      "id": "b-404",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ sở kinh tế - xã hội để xây dựng gia đình trong thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là sự phát triển của lực lượng sản xuất và tương ứng với nó là quan hệ sản xuất mới, xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Là sự phát triển của trình độ lao động, khoa học kỹ thuật của xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Là điều kiện lao động, công ăn, việc làm và thu nhập của công dân"
+          },
+          {
+            "key": "D",
+            "text": "Thiết lập chính quyền nhà nước của giai cấp công nhân và nhân dân lao động"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 404"
+      }
+    },
+    {
+      "id": "b-405",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong giai đoạn hiện nay, tại sao Nhà nước lại khuyến khích mỗi cặp vợ chồng “nên sinh đủ hai con”?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Do Việt Nam đang chuyển sang giai đoạn già hóa dân số"
+          },
+          {
+            "key": "B",
+            "text": "Do dân số Việt Nam quá ít so với mật độ trung bình của thế giới"
+          },
+          {
+            "key": "C",
+            "text": "Do tỷ lệ tử vong và tuổi thọ trung bình người Việt Nam quá thấp"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 405"
+      }
+    },
+    {
+      "id": "b-406",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Gia đình có bao nhiều chức năng cơ bản?",
+        "options": [
+          {
+            "key": "A",
+            "text": "3"
+          },
+          {
+            "key": "B",
+            "text": "4"
+          },
+          {
+            "key": "C",
+            "text": "5"
+          },
+          {
+            "key": "D",
+            "text": "6"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 406"
+      }
+    },
+    {
+      "id": "b-412",
+      "type": "multiple-choice",
+      "content": {
+        "question": "C.Mác và Ph.Ăngghen từng cho rằng: \"Quan hệ thứ ba tham dự ngay từ đầu vào quá trình phát triển lịch sử: hằng ngày tái tạo ra đời sống của bản thân mình, con người bắt đầu tạo ra những người khác, sinh sôi nẩy nở\". Cụm từ \"quan hệ thứ ba\" trong câu trên dùng để chi cái gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển"
+          },
+          {
+            "key": "B",
+            "text": "Sinh nở"
+          },
+          {
+            "key": "C",
+            "text": "Bạn bè"
+          },
+          {
+            "key": "D",
+            "text": "Gia đình"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 412"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 166): Mác – Ăngghen coi gia đình là quan hệ thứ ba tham gia ngay từ đầu vào quá trình phát triển lịch sử: con người sinh sản để tái tạo chính mình.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 166"
+      }
+    }
+  ]
+}

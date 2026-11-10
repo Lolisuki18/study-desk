@@ -1,0 +1,1666 @@
+{
+  "id": "cnxhkh-chuong-3",
+  "title": "CNXH Khoa học – Chương 3",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "contentType": "multiple-choice",
+  "description": "Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội. Câu 1–50.",
+  "language": "vi",
+  "source": {
+    "document": "Bộ câu hỏi trắc nghiệm ôn tập Chủ nghĩa xã hội khoa học – Chương 3"
+  },
+  "items": [
+    {
+      "id": "q-001",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thuật ngữ \"Chủ nghĩa xã hội\" KHÔNG được hiểu theo nghĩa nào sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là một phong trào thực tiễn, phong trào đấu tranh của nhân dân lao động."
+          },
+          {
+            "key": "B",
+            "text": "Là một trào lưu tư tưởng, lý luận."
+          },
+          {
+            "key": "C",
+            "text": "Là một chế độ xã hội tốt đẹp, giai đoạn đầu của hình thái kinh tế - xã hội cộng sản chủ nghĩa."
+          },
+          {
+            "key": "D",
+            "text": "Là một học thuyết bảo vệ quyền lợi cho giai cấp tư sản."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Chủ nghĩa xã hội được hiểu theo 4 nghĩa: là phong trào thực tiễn, là trào lưu tư tưởng, là một khoa học (CNXHKH) và là một chế độ xã hội. Nó bảo vệ quyền lợi cho nhân dân lao động, chống lại giai cấp bóc lột."
+      },
+      "source": {
+        "ref": "Câu 1"
+      },
+      "enrichment": {
+        "text": "Thuật ngữ “chủ nghĩa xã hội” xuất hiện ở châu Âu đầu thế kỷ XIX. Có bốn cách hiểu: phong trào thực tiễn, trào lưu tư tưởng, khoa học (chủ nghĩa xã hội khoa học) và chế độ xã hội. Không cách hiểu nào bảo vệ lợi ích của giai cấp tư sản."
+      }
+    },
+    {
+      "id": "q-002",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo học thuyết hình thái kinh tế - xã hội của Mác - Lênin, sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng hình thái kinh tế - xã hội cộng sản chủ nghĩa là một quá trình:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lịch sử - tự nhiên."
+          },
+          {
+            "key": "B",
+            "text": "Do ý muốn chủ quan của con người."
+          },
+          {
+            "key": "C",
+            "text": "Mang tính ngẫu nhiên."
+          },
+          {
+            "key": "D",
+            "text": "Phụ thuộc vào sự viện trợ quốc tế."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Mác coi sự phát triển của các hình thái kinh tế - xã hội là một quá trình lịch sử - tự nhiên, tuân theo các quy luật khách quan (mâu thuẫn giữa LLSX và QHSX)."
+      },
+      "source": {
+        "ref": "Câu 2"
+      },
+      "enrichment": {
+        "text": "Mác viết trong lời tựa bộ “Tư bản” rằng ông xem sự phát triển của các hình thái kinh tế - xã hội là một quá trình lịch sử - tự nhiên: tuân theo quy luật khách quan chứ không do ý muốn chủ quan."
+      }
+    },
+    {
+      "id": "q-003",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn kinh tế cơ bản của chủ nghĩa tư bản dẫn đến sự ra đời tất yếu của chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mâu thuẫn giữa sản xuất hàng hóa nhỏ và sản xuất lớn."
+          },
+          {
+            "key": "B",
+            "text": "Mâu thuẫn giữa tính chất xã hội hóa ngày càng cao của lực lượng sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất."
+          },
+          {
+            "key": "C",
+            "text": "Mâu thuẫn giữa tư bản độc quyền và tư bản không độc quyền."
+          },
+          {
+            "key": "D",
+            "text": "Mâu thuẫn giữa các tập đoàn tư bản xuyên quốc gia."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là mâu thuẫn kinh tế cơ bản nhất, làm cho quan hệ sản xuất TBCN từ chỗ mở đường trở thành xiềng xích kìm hãm sự phát triển của LLSX, đòi hỏi phải có một QHSX mới (XHCN) thay thế."
+      },
+      "source": {
+        "ref": "Câu 3"
+      },
+      "enrichment": {
+        "text": "Mác (Tư bản, tập I) dự báo: khi vỏ bọc tư bản chủ nghĩa không còn phù hợp với lực lượng sản xuất xã hội hóa thì “tiếng chuông của chế độ tư hữu tư bản chủ nghĩa sắp điểm” và những kẻ đi tước đoạt bị tước đoạt."
+      }
+    },
+    {
+      "id": "q-004",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Biểu hiện về mặt xã hội của mâu thuẫn kinh tế cơ bản trong chủ nghĩa tư bản là mâu thuẫn giữa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp tư sản và địa chủ phong kiến."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp công nhân hiện đại với giai cấp tư sản lỗi thời."
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp nông dân với giai cấp công nhân."
+          },
+          {
+            "key": "D",
+            "text": "Tầng lớp trí thức với giai cấp tư sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Mâu thuẫn kinh tế (LLSX >< QHSX) biểu hiện về mặt xã hội chính là cuộc đấu tranh giai cấp gay gắt giữa giai cấp công nhân (đại biểu cho LLSX mới) và giai cấp tư sản."
+      },
+      "source": {
+        "ref": "Câu 4"
+      },
+      "enrichment": {
+        "text": "Mâu thuẫn kinh tế cơ bản (lực lượng sản xuất xã hội hóa >< quan hệ sản xuất tư hữu) biểu hiện về xã hội thành mâu thuẫn giữa giai cấp công nhân hiện đại và giai cấp tư sản."
+      }
+    },
+    {
+      "id": "q-005",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I. Lênin, cuộc cách mạng vô sản có thể nổ ra và thắng lợi đầu tiên ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ở tất cả các nước tư bản chủ nghĩa cùng một lúc."
+          },
+          {
+            "key": "B",
+            "text": "Ở những nước tư bản phát triển cao nhất."
+          },
+          {
+            "key": "C",
+            "text": "Ở một nước hoặc một số nước là khâu yếu nhất trong sợi dây chuyền tư bản chủ nghĩa."
+          },
+          {
+            "key": "D",
+            "text": "Ở các nước thuộc địa chưa có giai cấp công nhân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dựa vào quy luật phát triển không đều của CNTB trong giai đoạn đế quốc chủ nghĩa, Lênin phát hiện ra cách mạng có thể thắng lợi ở khâu yếu nhất (như nước Nga năm 1917)."
+      },
+      "source": {
+        "ref": "Câu 5"
+      },
+      "enrichment": {
+        "text": "Năm 1915 (“Bàn về khẩu hiệu Liên bang châu Âu”) Lênin kết luận: chủ nghĩa xã hội có thể thắng lợi trước hết ở một số ít nước, thậm chí ở một nước riêng lẻ, do sự phát triển không đều của chủ nghĩa tư bản. Thực tế là Cách mạng Tháng Mười Nga 1917."
+      }
+    },
+    {
+      "id": "q-006",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng nào sau đây KHÔNG phải là đặc trưng bản chất của chủ nghĩa xã hội (theo chủ nghĩa Mác - Lênin)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giải phóng giai cấp, giải phóng dân tộc, giải phóng con người."
+          },
+          {
+            "key": "B",
+            "text": "Xã hội do nhân dân lao động làm chủ."
+          },
+          {
+            "key": "C",
+            "text": "Nền kinh tế phát triển cao dựa trên chế độ tư hữu về tư liệu sản xuất."
+          },
+          {
+            "key": "D",
+            "text": "Có nhà nước kiểu mới mang bản chất giai cấp công nhân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "CNXH phải dựa trên nền kinh tế phát triển cao và chế độ **công hữu** về các tư liệu sản xuất chủ yếu, không phải chế độ tư hữu."
+      },
+      "source": {
+        "ref": "Câu 6"
+      },
+      "enrichment": {
+        "text": "Chủ nghĩa xã hội gắn với nền kinh tế phát triển cao dựa trên chế độ công hữu về tư liệu sản xuất chủ yếu, vì tư hữu tư bản chủ nghĩa là gốc của bóc lột mà chủ nghĩa xã hội muốn xóa bỏ."
+      }
+    },
+    {
+      "id": "q-007",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên tắc phân phối chủ yếu trong giai đoạn thấp của xã hội cộng sản chủ nghĩa (chủ nghĩa xã hội) là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Làm theo năng lực, hưởng theo nhu cầu."
+          },
+          {
+            "key": "B",
+            "text": "Phân phối bình quân."
+          },
+          {
+            "key": "C",
+            "text": "Làm theo năng lực, hưởng theo lao động."
+          },
+          {
+            "key": "D",
+            "text": "Phân phối theo vốn góp."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Do LLSX chưa phát triển đến mức dồi dào của cải, nên CNXH áp dụng nguyên tắc phân phối theo lao động. Đến giai đoạn cao (CNCS) mới thực hiện \"làm theo năng lực, hưởng theo nhu cầu\"."
+      },
+      "source": {
+        "ref": "Câu 7"
+      },
+      "enrichment": {
+        "text": "Trong “Phê phán Cương lĩnh Gôta” (1875), Mác chia xã hội cộng sản thành hai giai đoạn: giai đoạn thấp (phân phối theo lao động) và giai đoạn cao (làm theo năng lực, hưởng theo nhu cầu)."
+      }
+    },
+    {
+      "id": "q-008",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo C.Mác, \"Giữa xã hội tư bản chủ nghĩa và xã hội cộng sản chủ nghĩa là một thời kỳ cải biến cách mạng từ xã hội này sang xã hội kia\". Thời kỳ đó gọi là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thời kỳ quá độ lên chủ nghĩa xã hội."
+          },
+          {
+            "key": "B",
+            "text": "Thời kỳ tư bản chủ nghĩa giai đoạn độc quyền."
+          },
+          {
+            "key": "C",
+            "text": "Giai đoạn cao của chủ nghĩa cộng sản."
+          },
+          {
+            "key": "D",
+            "text": "Thời kỳ nhảy vọt vĩ đại."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Đây là định nghĩa kinh điển của Mác về thời kỳ quá độ chính trị từ CNTB lên CNCS."
+      },
+      "source": {
+        "ref": "Câu 8"
+      },
+      "enrichment": {
+        "text": "Câu trích nằm trong “Phê phán Cương lĩnh Gôta” của Mác. Thời kỳ cải biến cách mạng đó chính là thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa cộng sản."
+      }
+    },
+    {
+      "id": "q-009",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hiện nay, Việt Nam đang trải qua hình thức quá độ nào lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quá độ trực tiếp."
+          },
+          {
+            "key": "B",
+            "text": "Quá độ gián tiếp."
+          },
+          {
+            "key": "C",
+            "text": "Quá độ tuần tự."
+          },
+          {
+            "key": "D",
+            "text": "Quá độ nhảy vọt."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Quá độ gián tiếp là quá độ từ một nước chưa trải qua chủ nghĩa tư bản phát triển (lạc hậu) đi lên CNXH. Việt Nam thuộc trường hợp này."
+      },
+      "source": {
+        "ref": "Câu 9"
+      },
+      "enrichment": {
+        "text": "Quá độ trực tiếp là quá độ từ nước tư bản đã phát triển cao; quá độ gián tiếp là quá độ từ nước kinh tế lạc hậu, chưa qua tư bản chủ nghĩa phát triển. Cương lĩnh 1991 xác định Việt Nam quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-010",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm thực chất của thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp tư sản vẫn nắm quyền lãnh đạo."
+          },
+          {
+            "key": "B",
+            "text": "Đã xóa bỏ hoàn toàn giai cấp và đấu tranh giai cấp."
+          },
+          {
+            "key": "C",
+            "text": "Sự đan xen, đấu tranh giữa những tàn dư của xã hội cũ và những yếu tố mới của CNXH trên tất cả các lĩnh vực."
+          },
+          {
+            "key": "D",
+            "text": "Lực lượng sản xuất đã phát triển cao hơn hẳn CNTB ở mọi quốc gia."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Thời kỳ quá độ là thời kỳ xã hội cũ đang biến đổi sang xã hội mới, nên tất yếu tồn tại sự đan xen và đấu tranh giữa cái cũ và cái mới trên mọi lĩnh vực (kinh tế, chính trị, tư tưởng, văn hóa...)."
+      },
+      "source": {
+        "ref": "Câu 10"
+      },
+      "enrichment": {
+        "text": "Mác nói xã hội mới ra đời từ xã hội cũ nên còn mang những dấu vết của xã hội cũ về kinh tế, đạo đức, tinh thần. Vì thế thời kỳ quá độ là sự đan xen và đấu tranh giữa cái cũ và cái mới."
+      }
+    },
+    {
+      "id": "q-011",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ lên CNXH, trên lĩnh vực kinh tế tất yếu tồn tại:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nền kinh tế tự cung tự cấp."
+          },
+          {
+            "key": "B",
+            "text": "Nền kinh tế chỉ có thành phần kinh tế nhà nước."
+          },
+          {
+            "key": "C",
+            "text": "Nền kinh tế hàng hóa nhiều thành phần, trong đó có cả thành phần đối lập."
+          },
+          {
+            "key": "D",
+            "text": "Nền kinh tế kế hoạch hóa tập trung tuyệt đối."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Do LLSX còn ở nhiều trình độ khác nhau nên tất yếu phải duy trì nền kinh tế nhiều thành phần (kinh tế nhà nước, tập thể, tư nhân, FDI...), trong đó có cả thành phần tư bản tư nhân."
+      },
+      "source": {
+        "ref": "Câu 11"
+      },
+      "enrichment": {
+        "text": "Lênin chỉ ra nước Nga có 5 thành phần kinh tế và thực hiện Chính sách kinh tế mới (NEP, 1921) cho phép thương mại tự do, kinh tế tư bản nhà nước. Việt Nam cũng phát triển nền kinh tế nhiều thành phần trong thời kỳ quá độ."
+      }
+    },
+    {
+      "id": "q-012",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trên lĩnh vực chính trị, thời kỳ quá độ lên CNXH có đặc điểm gì nổi bật?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thiết lập và tăng cường chuyên chính vô sản."
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ hoàn toàn nhà nước."
+          },
+          {
+            "key": "C",
+            "text": "Thực hiện đa nguyên chính trị, đa đảng đối lập."
+          },
+          {
+            "key": "D",
+            "text": "Áp dụng cơ chế tam quyền phân lập."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Bản chất chính trị của thời kỳ này là GCCN nắm quyền lực nhà nước (chuyên chính vô sản) để thực hành dân chủ cho nhân dân và trấn áp mọi sự phản kháng của kẻ thù."
+      },
+      "source": {
+        "ref": "Câu 12"
+      },
+      "enrichment": {
+        "text": "Về chính trị, thời kỳ quá độ phải thiết lập và tăng cường nền chuyên chính của giai cấp công nhân (chuyên chính vô sản) để bảo vệ thành quả cách mạng, thực hành dân chủ cho nhân dân và trấn áp sự chống đối của các thế lực thù địch."
+      }
+    },
+    {
+      "id": "q-013",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thực hiện \"bỏ qua chế độ tư bản chủ nghĩa\" ở Việt Nam (theo Đại hội IX) được hiểu đúng nhất là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bỏ qua hoàn toàn mọi giai đoạn phát triển trước đó của lịch sử."
+          },
+          {
+            "key": "B",
+            "text": "Bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng TBCN."
+          },
+          {
+            "key": "C",
+            "text": "Bỏ qua việc xây dựng nền kinh tế hàng hóa."
+          },
+          {
+            "key": "D",
+            "text": "Bỏ qua toàn bộ những thành tựu mà nhân loại đạt được dưới chế độ TBCN."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Bỏ qua chế độ TBCN tức là không để cho QHSX tư bản và KTTT tư sản chiếm vai trò thống trị, NHƯNG phải tiếp thu, kế thừa các thành tựu (nhất là khoa học công nghệ, quản lý) của nhân loại đạt được trong CNTB."
+      },
+      "source": {
+        "ref": "Câu 13"
+      },
+      "enrichment": {
+        "text": "Quan điểm “bỏ qua chế độ tư bản chủ nghĩa” có từ Cương lĩnh 1991 và được làm rõ ở Đại hội IX: bỏ qua việc xác lập địa vị thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa, nhưng tiếp thu thành tựu của nhân loại."
+      }
+    },
+    {
+      "id": "q-014",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH (bổ sung, phát triển 2011) xác định xã hội XHCN mà nhân dân ta xây dựng có mấy đặc trưng cơ bản?",
+        "options": [
+          {
+            "key": "A",
+            "text": "6 đặc trưng."
+          },
+          {
+            "key": "B",
+            "text": "7 đặc trưng."
+          },
+          {
+            "key": "C",
+            "text": "8 đặc trưng."
+          },
+          {
+            "key": "D",
+            "text": "9 đặc trưng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Cương lĩnh 2011 phát triển và hoàn thiện mô hình CNXH ở Việt Nam với 8 đặc trưng cơ bản."
+      },
+      "source": {
+        "ref": "Câu 14"
+      },
+      "enrichment": {
+        "text": "Tám đặc trưng (Cương lĩnh 2011): (1) dân giàu, nước mạnh, dân chủ, công bằng, văn minh; (2) do nhân dân làm chủ; (3) kinh tế phát triển cao, dựa trên lực lượng sản xuất hiện đại và quan hệ sản xuất phù hợp; (4) văn hóa tiên tiến, đậm đà bản sắc dân tộc; (5) con người có cuộc sống ấm no, tự do, hạnh phúc; (6) các dân tộc bình đẳng, đoàn kết; (7) Nhà nước pháp quyền xã hội chủ nghĩa; (8) quan hệ hữu nghị, hợp tác với các nước."
+      }
+    },
+    {
+      "id": "q-015",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng tổng quát, bao trùm nhất (đặc trưng số 1) của CNXH ở Việt Nam hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có nền kinh tế phát triển cao."
+          },
+          {
+            "key": "B",
+            "text": "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh."
+          },
+          {
+            "key": "C",
+            "text": "Do nhân dân lao động làm chủ."
+          },
+          {
+            "key": "D",
+            "text": "Có nền văn hóa tiên tiến, đậm đà bản sắc dân tộc."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là mục tiêu tổng quát và là đặc trưng bao trùm nhất được bổ sung trong Cương lĩnh 2011, phản ánh khát vọng và bản chất tốt đẹp của chế độ XHCN ở nước ta."
+      },
+      "source": {
+        "ref": "Câu 15"
+      },
+      "enrichment": {
+        "text": "Đặc trưng thứ nhất “dân giàu, nước mạnh, dân chủ, công bằng, văn minh” cũng là mục tiêu tổng quát của công cuộc xây dựng chủ nghĩa xã hội ở Việt Nam trong thời kỳ đổi mới."
+      }
+    },
+    {
+      "id": "q-016",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo Cương lĩnh 2011, đặc trưng về nền kinh tế của CNXH ở Việt Nam có sự điều chỉnh quan trọng nào so với Cương lĩnh 1991?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chuyển từ \"chế độ công hữu về các tư liệu sản xuất chủ yếu\" sang \"quan hệ sản xuất tiến bộ phù hợp\"."
+          },
+          {
+            "key": "B",
+            "text": "Chuyển từ \"quan hệ sản xuất tiến bộ phù hợp\" sang \"chế độ công hữu về các tư liệu sản xuất chủ yếu\"."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ hoàn toàn khái niệm công hữu."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ giữ lại thành phần kinh tế tư nhân."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Cương lĩnh 1991 ghi \"chế độ công hữu...\". Cương lĩnh 2011 điều chỉnh thành \"dựa trên lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ phù hợp\" để phản ánh đúng quy luật khách quan và tính chất của thời kỳ quá độ."
+      },
+      "source": {
+        "ref": "Câu 16"
+      },
+      "enrichment": {
+        "text": "Cương lĩnh 1991 có 6 đặc trưng và nêu “chế độ công hữu về tư liệu sản xuất chủ yếu”. Cương lĩnh 2011 phát triển thành 8 đặc trưng và nêu nền kinh tế “dựa trên lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ phù hợp”."
+      }
+    },
+    {
+      "id": "q-017",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng nào sau đây nói về chủ thể của xã hội XHCN ở Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có nền văn hóa tiên tiến."
+          },
+          {
+            "key": "B",
+            "text": "Có Nhà nước pháp quyền XHCN."
+          },
+          {
+            "key": "C",
+            "text": "Do nhân dân làm chủ."
+          },
+          {
+            "key": "D",
+            "text": "Phát triển lực lượng sản xuất."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Cương lĩnh 2011 xác định \"Do nhân dân làm chủ\". (Cương lĩnh 1991 là \"Do nhân dân lao động làm chủ\", năm 2011 mở rộng ra toàn thể \"nhân dân\" để thể hiện tính đại đoàn kết toàn dân tộc)."
+      },
+      "source": {
+        "ref": "Câu 17"
+      },
+      "enrichment": {
+        "text": "Cương lĩnh 1991 viết “do nhân dân lao động làm chủ”; Cương lĩnh 2011 sửa thành “do nhân dân làm chủ” để thể hiện rõ hơn khối đại đoàn kết toàn dân tộc."
+      }
+    },
+    {
+      "id": "q-018",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cương lĩnh 2011 xác định có bao nhiêu phương hướng cơ bản để xây dựng CNXH ở Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "6 phương hướng."
+          },
+          {
+            "key": "B",
+            "text": "7 phương hướng."
+          },
+          {
+            "key": "C",
+            "text": "8 phương hướng."
+          },
+          {
+            "key": "D",
+            "text": "9 phương hướng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Đi kèm với 8 đặc trưng, Cương lĩnh 2011 cũng vạch ra 8 phương hướng cơ bản để xây dựng CNXH (ví dụ: Đẩy mạnh CNH-HĐH; phát triển kinh tế thị trường định hướng XHCN...)."
+      },
+      "source": {
+        "ref": "Câu 18"
+      },
+      "enrichment": {
+        "text": "Tám phương hướng cơ bản (Cương lĩnh 2011): đẩy mạnh công nghiệp hóa, hiện đại hóa; phát triển kinh tế thị trường định hướng xã hội chủ nghĩa; xây dựng nền văn hóa tiên tiến; bảo đảm quốc phòng, an ninh; đường lối đối ngoại độc lập, tự chủ; xây dựng dân chủ xã hội chủ nghĩa và đại đoàn kết toàn dân tộc; xây dựng Nhà nước pháp quyền; xây dựng Đảng."
+      }
+    },
+    {
+      "id": "q-019",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương hướng cơ bản đầu tiên để xây dựng CNXH ở nước ta hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xây dựng nền văn hóa tiên tiến."
+          },
+          {
+            "key": "B",
+            "text": "Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước gắn với phát triển kinh tế tri thức, bảo vệ tài nguyên, môi trường."
+          },
+          {
+            "key": "C",
+            "text": "Xây dựng Nhà nước pháp quyền."
+          },
+          {
+            "key": "D",
+            "text": "Bảo đảm vững chắc quốc phòng an ninh."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Để xây dựng cơ sở vật chất - kỹ thuật cho CNXH, nhiệm vụ trung tâm và phương hướng đầu tiên là phải đẩy mạnh CNH, HĐH gắn với kinh tế tri thức và bảo vệ môi trường."
+      },
+      "source": {
+        "ref": "Câu 19"
+      },
+      "enrichment": {
+        "text": "Công nghiệp hóa, hiện đại hóa là nhiệm vụ trung tâm vì tạo nền tảng vật chất - kỹ thuật cho chủ nghĩa xã hội; gắn với phát triển kinh tế tri thức và bảo vệ tài nguyên, môi trường."
+      }
+    },
+    {
+      "id": "q-020",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương hướng thứ hai về kinh tế trong Cương lĩnh 2011 là phát triển nền kinh tế:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kế hoạch hóa tập trung bao cấp."
+          },
+          {
+            "key": "B",
+            "text": "Thị trường tự do cạnh tranh."
+          },
+          {
+            "key": "C",
+            "text": "Thị trường định hướng xã hội chủ nghĩa."
+          },
+          {
+            "key": "D",
+            "text": "Hàng hóa giản đơn."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Phát triển nền kinh tế thị trường định hướng XHCN là phương thức căn bản để phát triển lực lượng sản xuất, thực hiện mục tiêu dân giàu nước mạnh."
+      },
+      "source": {
+        "ref": "Câu 20"
+      },
+      "enrichment": {
+        "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa được Hiến pháp 2013 (Điều 51) khẳng định là mô hình kinh tế của Việt Nam; nó là phương thức để phát triển lực lượng sản xuất và thực hiện dân giàu, nước mạnh."
+      }
+    },
+    {
+      "id": "q-021",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ lên CNXH ở Việt Nam, việc nắm vững và giải quyết tốt các \"mối quan hệ lớn\" có ý nghĩa gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phản ánh quy luật đổi mới và phát triển ở Việt Nam, giúp đưa cách mạng đi đúng hướng."
+          },
+          {
+            "key": "B",
+            "text": "Chỉ để giải quyết các vấn đề kinh tế ngắn hạn."
+          },
+          {
+            "key": "C",
+            "text": "Nhằm đối phó với sự chống phá của các thế lực thù địch."
+          },
+          {
+            "key": "D",
+            "text": "Thay thế cho các cương lĩnh của Đảng."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Cương lĩnh 2011 (và các Đại hội sau này) nhấn mạnh việc giải quyết tốt các mối quan hệ lớn (như Đổi mới - Ổn định - Phát triển) chính là nắm bắt và hành động theo quy luật khách quan của con đường đi lên CNXH ở VN."
+      },
+      "source": {
+        "ref": "Câu 21"
+      },
+      "enrichment": {
+        "text": "Cương lĩnh 2011 và văn kiện Đại hội XI nêu 8 mối quan hệ lớn cần giải quyết tốt, như đổi mới – ổn định – phát triển; đổi mới kinh tế và đổi mới chính trị; độc lập tự chủ và hội nhập quốc tế…"
+      }
+    },
+    {
+      "id": "q-022",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ lớn nào sau đây thể hiện sự gắn kết giữa kinh tế và chính trị trong công cuộc đổi mới?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giữa tăng trưởng kinh tế và phát triển văn hóa."
+          },
+          {
+            "key": "B",
+            "text": "Giữa đổi mới kinh tế và đổi mới chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Giữa độc lập tự chủ và hội nhập quốc tế."
+          },
+          {
+            "key": "D",
+            "text": "Giữa Đảng lãnh đạo và nhân dân làm chủ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đổi mới phải đồng bộ. Đảng ta xác định lấy đổi mới kinh tế làm trọng tâm, đồng thời từng bước đổi mới chính trị một cách vững chắc (Quan hệ giữa đổi mới kinh tế và đổi mới chính trị)."
+      },
+      "source": {
+        "ref": "Câu 22"
+      },
+      "enrichment": {
+        "text": "Đổi mới bắt đầu từ Đại hội VI (12/1986), lấy đổi mới kinh tế làm trọng tâm, đồng thời từng bước đổi mới hệ thống chính trị một cách vững chắc."
+      }
+    },
+    {
+      "id": "q-023",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cương lĩnh 2011 xác định mục tiêu tổng quát khi kết thúc thời kỳ quá độ ở nước ta là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đuổi kịp các nước tư bản phát triển nhất."
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng xong về cơ bản nền tảng kinh tế của CNXH với kiến trúc thượng tầng về chính trị, tư tưởng, văn hoá phù hợp, tạo cơ sở để nước ta trở thành nước XHCN phồn vinh."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ hoàn toàn nhà nước."
+          },
+          {
+            "key": "D",
+            "text": "Trở thành một nước có thu nhập trung bình."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là mục tiêu tổng quát được quy định rõ trong Cương lĩnh 2011 để đánh dấu việc kết thúc thời kỳ quá độ."
+      },
+      "source": {
+        "ref": "Câu 23"
+      },
+      "enrichment": {
+        "text": "Mục tiêu tổng quát khi kết thúc thời kỳ quá độ: xây dựng xong về cơ bản nền tảng kinh tế của chủ nghĩa xã hội với kiến trúc thượng tầng về chính trị, tư tưởng, văn hóa phù hợp, tạo cơ sở để nước ta trở thành nước xã hội chủ nghĩa phồn vinh."
+      }
+    },
+    {
+      "id": "q-024",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những đặc trưng của CNXH ở Việt Nam là \"Con người có cuộc sống ấm no, tự do, hạnh phúc, có điều kiện phát triển...\":",
+        "options": [
+          {
+            "key": "A",
+            "text": "Một cách tự phát."
+          },
+          {
+            "key": "B",
+            "text": "Toàn diện."
+          },
+          {
+            "key": "C",
+            "text": "Theo hướng tư bản chủ nghĩa."
+          },
+          {
+            "key": "D",
+            "text": "Thiên lệch về kinh tế."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Sự phát triển toàn diện của con người là mục tiêu cao nhất của CNXH, giải phóng con người khỏi áp bức, bóc lột, bất công."
+      },
+      "source": {
+        "ref": "Câu 24"
+      },
+      "enrichment": {
+        "text": "Mục tiêu cao nhất của chủ nghĩa xã hội là giải phóng con người, tạo điều kiện để con người phát triển toàn diện, đúng tinh thần Tuyên ngôn Đảng Cộng sản: sự phát triển tự do của mỗi người là điều kiện của sự phát triển tự do của tất cả mọi người."
+      }
+    },
+    {
+      "id": "q-025",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng về Nhà nước trong mô hình CNXH ở Việt Nam (theo Cương lĩnh 2011) là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có Nhà nước dân chủ tư sản."
+          },
+          {
+            "key": "B",
+            "text": "Có Nhà nước chuyên chính vô sản thuần túy."
+          },
+          {
+            "key": "C",
+            "text": "Có Nhà nước pháp quyền xã hội chủ nghĩa của nhân dân, do nhân dân, vì nhân dân do Đảng Cộng sản lãnh đạo."
+          },
+          {
+            "key": "D",
+            "text": "Không còn nhà nước."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Cương lĩnh 2011 chính thức bổ sung đặc trưng \"Nhà nước pháp quyền XHCN\" vào mô hình CNXH ở nước ta, khẳng định nguyên tắc pháp quyền dưới sự lãnh đạo của Đảng."
+      },
+      "source": {
+        "ref": "Câu 25"
+      },
+      "enrichment": {
+        "text": "Hiến pháp 2013 (Điều 2) xác định Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân; Điều 4 khẳng định vai trò lãnh đạo của Đảng."
+      }
+    },
+    {
+      "id": "q-026",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc Việt Nam tiến thẳng lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa thể hiện sự vận dụng quy luật nào của triết học Mác - Lênin?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quy luật về sự phát triển không đều của chủ nghĩa tư bản."
+          },
+          {
+            "key": "B",
+            "text": "Quy luật về sự phát triển rút ngắn (nhảy vọt) trong lịch sử."
+          },
+          {
+            "key": "C",
+            "text": "Quy luật giá trị."
+          },
+          {
+            "key": "D",
+            "text": "Quy luật cạnh tranh."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Mác và Lênin đều dự báo các nước lạc hậu, với sự giúp đỡ của GCCN đã chiến thắng (hoặc ưu thế của thời đại), có thể rút ngắn quá trình phát triển, bỏ qua giai đoạn TBCN."
+      },
+      "source": {
+        "ref": "Câu 26"
+      },
+      "enrichment": {
+        "text": "Trong thư gửi V. Dasulich (1881), Mác cho rằng nước lạc hậu có thể đi tắt, rút ngắn nếu tiếp thu thành tựu của nhân loại. Lênin phát triển thành lý luận quá độ gián tiếp đối với các nước chưa qua tư bản chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-027",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tính tất yếu của thời kỳ quá độ lên CNXH bắt nguồn từ đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự khác biệt về bản chất giữa hình thái KT-XH cộng sản chủ nghĩa và tư bản chủ nghĩa."
+          },
+          {
+            "key": "B",
+            "text": "Do trình độ dân trí còn thấp."
+          },
+          {
+            "key": "C",
+            "text": "Do sự chống phá của kẻ thù."
+          },
+          {
+            "key": "D",
+            "text": "Do sự mong muốn chủ quan của Đảng Cộng sản."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Hình thái KT-XH CSCN khác biệt hoàn toàn về chất (công hữu, không bóc lột) so với mọi xã hội trước đó, do đó nó không thể tự sinh ra trong lòng CNTB mà phải thông qua một thời kỳ cải biến cách mạng lâu dài."
+      },
+      "source": {
+        "ref": "Câu 27"
+      },
+      "enrichment": {
+        "text": "Hình thái kinh tế - xã hội cộng sản khác hẳn mọi xã hội trước (công hữu, không có người bóc lột người) nên không thể tự hình thành ngay mà phải qua một thời kỳ cải biến cách mạng lâu dài, khó khăn."
+      }
+    },
+    {
+      "id": "q-028",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu KHÔNG phải là một đặc điểm của lĩnh vực tư tưởng - văn hóa trong thời kỳ quá độ lên CNXH?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tồn tại nhiều tư tưởng, văn hóa khác nhau."
+          },
+          {
+            "key": "B",
+            "text": "Cuộc đấu tranh giữa tư tưởng vô sản và tư tưởng tư sản."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ hoàn toàn mọi tín ngưỡng, tôn giáo ngay lập tức."
+          },
+          {
+            "key": "D",
+            "text": "Từng bước xây dựng nền văn hóa mới XHCN."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Trong thời kỳ quá độ, tín ngưỡng, tôn giáo vẫn là nhu cầu tinh thần của một bộ phận nhân dân và sẽ tồn tại lâu dài. Xóa bỏ ngay lập tức là tư tưởng chủ quan, duy ý chí, trái với quan điểm Mác - Lênin."
+      },
+      "source": {
+        "ref": "Câu 28"
+      },
+      "enrichment": {
+        "text": "Hiến pháp 2013 (Điều 24) ghi nhận quyền tự do tín ngưỡng, tôn giáo của công dân. Nhà nước tôn trọng và bảo hộ quyền này; xóa bỏ ngay tôn giáo bằng mệnh lệnh là sai lầm chủ quan, duy ý chí."
+      }
+    },
+    {
+      "id": "q-029",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong 8 phương hướng xây dựng CNXH ở Việt Nam, phương hướng nào liên quan đến phát huy sức mạnh khối đại đoàn kết toàn dân tộc?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển nền kinh tế thị trường định hướng XHCN."
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng Đảng trong sạch, vững mạnh."
+          },
+          {
+            "key": "C",
+            "text": "Xây dựng nền dân chủ XHCN, thực hiện đại đoàn kết toàn dân tộc, tăng cường và mở rộng mặt trận dân tộc thống nhất."
+          },
+          {
+            "key": "D",
+            "text": "Bảo đảm vững chắc quốc phòng và an ninh quốc gia."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Phương hướng thứ sáu nhấn mạnh việc xây dựng dân chủ gắn liền với khối đại đoàn kết toàn dân tộc để tạo động lực cho công cuộc đổi mới."
+      },
+      "source": {
+        "ref": "Câu 29"
+      },
+      "enrichment": {
+        "text": "Phương hướng thứ sáu của Cương lĩnh 2011 là xây dựng nền dân chủ xã hội chủ nghĩa, thực hiện đại đoàn kết toàn dân tộc, tăng cường và mở rộng Mặt trận dân tộc thống nhất, tạo động lực cho phát triển."
+      }
+    },
+    {
+      "id": "q-030",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Cơ cấu kinh tế nhiều thành phần\" trong thời kỳ quá độ ở Việt Nam mang ý nghĩa gì về mặt xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dẫn đến sự xóa bỏ các giai cấp ngay lập tức."
+          },
+          {
+            "key": "B",
+            "text": "Tạo ra cơ cấu xã hội - giai cấp đa dạng, phức tạp với nhiều giai cấp, tầng lớp khác nhau."
+          },
+          {
+            "key": "C",
+            "text": "Thu hẹp quy mô của giai cấp công nhân."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ mang lại lợi ích cho giai cấp tư sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cơ cấu kinh tế quyết định cơ cấu xã hội. Kinh tế nhiều thành phần tất yếu làm xuất hiện và tồn tại đan xen nhiều giai cấp, tầng lớp (công nhân, nông dân, trí thức, doanh nhân...)."
+      },
+      "source": {
+        "ref": "Câu 30"
+      },
+      "enrichment": {
+        "text": "Kinh tế nhiều thành phần dẫn tới cơ cấu xã hội - giai cấp đa dạng: công nhân, nông dân, trí thức, doanh nhân, tiểu thương… Nội dung này được phân tích kỹ hơn ở chương 5."
+      }
+    },
+    {
+      "id": "q-031",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo Lênin, đối với những nước chưa trải qua chủ nghĩa tư bản đi lên CNXH, hình thức quá độ này được gọi là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quá độ trực tiếp."
+          },
+          {
+            "key": "B",
+            "text": "Quá độ gián tiếp."
+          },
+          {
+            "key": "C",
+            "text": "Đột biến lịch sử."
+          },
+          {
+            "key": "D",
+            "text": "Cải lương xã hội."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Quá độ gián tiếp là quá độ qua các bước trung gian, bỏ qua giai đoạn phát triển TBCN (như ở Nga, Việt Nam, Trung Quốc...)."
+      },
+      "source": {
+        "ref": "Câu 31"
+      },
+      "enrichment": {
+        "text": "Tại Đại hội II Quốc tế Cộng sản (1920), Lênin nêu khả năng các nước lạc hậu, với sự giúp đỡ của giai cấp vô sản các nước tiên tiến, có thể đi lên chủ nghĩa xã hội mà không qua giai đoạn phát triển tư bản chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-032",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Yếu tố nào sau đây KHÔNG thuộc về những tàn dư của xã hội cũ trong thời kỳ quá độ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quan hệ sản xuất bóc lột."
+          },
+          {
+            "key": "B",
+            "text": "Tâm lý tiểu nông, bảo thủ."
+          },
+          {
+            "key": "C",
+            "text": "Phương thức sản xuất tiên tiến, hiện đại."
+          },
+          {
+            "key": "D",
+            "text": "Tư tưởng trọng nam khinh nữ."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Phương thức sản xuất tiên tiến, hiện đại là mục tiêu hướng tới và là nhân tố mới của CNXH, không phải là \"tàn dư của xã hội cũ\"."
+      },
+      "source": {
+        "ref": "Câu 32"
+      },
+      "enrichment": {
+        "text": "Tàn dư của xã hội cũ gồm quan hệ sản xuất bóc lột, tâm lý tiểu nông, bảo thủ, tư tưởng trọng nam khinh nữ… Phương thức sản xuất tiên tiến, hiện đại là yếu tố mới mà chủ nghĩa xã hội hướng tới."
+      }
+    },
+    {
+      "id": "q-033",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để \"bỏ qua chế độ tư bản chủ nghĩa\" thành công, Việt Nam cần phải làm gì đối với các thành tựu của nhân loại đạt được dưới chủ nghĩa tư bản?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bác bỏ hoàn toàn."
+          },
+          {
+            "key": "B",
+            "text": "Kế thừa có chọn lọc, đặc biệt là khoa học, công nghệ và kinh nghiệm quản lý."
+          },
+          {
+            "key": "C",
+            "text": "Phủ nhận vai trò của khoa học công nghệ tư bản."
+          },
+          {
+            "key": "D",
+            "text": "Sao chép y nguyên mô hình chính trị của CNTB."
+          }
+        ],
+        "answer": "B",
+        "explanation": "\"Bỏ qua\" về mặt bản chất chính trị, quan hệ bóc lột nhưng phải \"tiếp thu, kế thừa\" các thành tựu văn minh nhân loại để rút ngắn khoảng cách phát triển."
+      },
+      "source": {
+        "ref": "Câu 33"
+      },
+      "enrichment": {
+        "text": "Lênin nhấn mạnh chỉ có thể xây dựng chủ nghĩa cộng sản bằng việc nắm vững và vận dụng toàn bộ tri thức, kỹ thuật mà nhân loại đã đạt được dưới chủ nghĩa tư bản (kế thừa có chọn lọc)."
+      }
+    },
+    {
+      "id": "q-034",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ giữa \"Tăng trưởng kinh tế\" và \"Phát triển văn hóa, thực hiện tiến bộ và công bằng xã hội\" được Đảng ta xác định như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ tập trung tăng trưởng kinh tế, công bằng xã hội tính sau."
+          },
+          {
+            "key": "B",
+            "text": "Kết hợp chặt chẽ, gắn kết hài hòa ngay trong từng bước và từng chính sách phát triển."
+          },
+          {
+            "key": "C",
+            "text": "Ưu tiên công bằng xã hội, chấp nhận kìm hãm kinh tế."
+          },
+          {
+            "key": "D",
+            "text": "Kinh tế và xã hội phát triển độc lập, không liên quan."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là nguyên tắc cơ bản mang tính định hướng XHCN, không chờ đến khi kinh tế phát triển cao mới thực hiện công bằng xã hội."
+      },
+      "source": {
+        "ref": "Câu 34"
+      },
+      "enrichment": {
+        "text": "Quan điểm “tiến bộ và công bằng xã hội ngay trong từng bước và từng chính sách phát triển” xuất hiện trong văn kiện của Đảng. Không chờ kinh tế phát triển cao mới thực hiện công bằng xã hội."
+      }
+    },
+    {
+      "id": "q-035",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại Đại hội XI (2011), Đảng ta nhấn mạnh nhiệm vụ trung tâm của thời kỳ quá độ là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đấu tranh giai cấp gay gắt."
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng quân đội hiện đại nhất thế giới."
+          },
+          {
+            "key": "C",
+            "text": "Phát triển kinh tế, thực hiện CNH, HĐH gắn với phát triển kinh tế tri thức."
+          },
+          {
+            "key": "D",
+            "text": "Thay đổi liên tục thể chế chính trị."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Xây dựng cơ sở vật chất - kỹ thuật cho CNXH là nhiệm vụ cốt lõi, do đó phát triển kinh tế thông qua CNH, HĐH luôn được coi là nhiệm vụ trung tâm."
+      },
+      "source": {
+        "ref": "Câu 35"
+      },
+      "enrichment": {
+        "text": "Đại hội XI (1/2011) thông qua Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển 2011) và Chiến lược phát triển kinh tế - xã hội 2011–2020."
+      }
+    },
+    {
+      "id": "q-036",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện nào trên thế giới đánh dấu chủ nghĩa xã hội từ lý luận trở thành hiện thực?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công xã Paris (1871)."
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng Tháng Mười Nga (1917)."
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng Tháng Tám ở Việt Nam (1945)."
+          },
+          {
+            "key": "D",
+            "text": "Sự ra đời của Quốc tế Cộng sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cách mạng Tháng Mười Nga (1917) thành công đã lập nên nhà nước XHCN đầu tiên trên thế giới, biến CNXH từ lý thuyết thành thực tiễn sinh động."
+      },
+      "source": {
+        "ref": "Câu 36"
+      },
+      "enrichment": {
+        "text": "Cách mạng Tháng Mười Nga (7/11/1917 theo lịch mới, 25/10 theo lịch Nga cũ) lập nên nhà nước xã hội chủ nghĩa đầu tiên; Liên bang Xô viết thành lập năm 1922."
+      }
+    },
+    {
+      "id": "q-037",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mục tiêu cao nhất của chủ nghĩa xã hội, sự khác biệt về chất so với các hình thái kinh tế - xã hội trước đó là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tích lũy tư bản khổng lồ."
+          },
+          {
+            "key": "B",
+            "text": "Phát triển khoa học công nghệ vượt bậc."
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng con người khỏi áp bức, bóc lột, bất công; tạo điều kiện phát triển toàn diện."
+          },
+          {
+            "key": "D",
+            "text": "Thiết lập chế độ quân chủ lập hiến."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Bản chất nhân văn, nhân đạo cao cả nhất của CNXH là sự nghiệp giải phóng con người, \"sự phát triển tự do của mỗi người là điều kiện phát triển tự do của tất cả mọi người\"."
+      },
+      "source": {
+        "ref": "Câu 37"
+      },
+      "enrichment": {
+        "text": "Tuyên ngôn Đảng Cộng sản viết: thay cho xã hội tư sản cũ sẽ là một liên hợp mà trong đó sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người."
+      }
+    },
+    {
+      "id": "q-038",
+      "type": "multiple-choice",
+      "content": {
+        "question": "C.Mác và Ph.Ăngghen đã kế thừa có phê phán trào lưu tư tưởng nào để xây dựng nên Chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Triết học cổ điển Đức."
+          },
+          {
+            "key": "B",
+            "text": "Kinh tế chính trị học cổ điển Anh."
+          },
+          {
+            "key": "C",
+            "text": "Chủ nghĩa xã hội không tưởng phê phán Pháp."
+          },
+          {
+            "key": "D",
+            "text": "Cả A, B, C đều đúng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "CNXH không tưởng Pháp (Saint Simon, Fourier, Owen) là tiền đề tư tưởng trực tiếp nhất, cung cấp nhiều giá trị để Mác và Ăngghen cải tạo thành CNXH khoa học."
+      },
+      "source": {
+        "ref": "Câu 38"
+      },
+      "enrichment": {
+        "text": "LƯU Ý: tài liệu gốc chọn C. Tuy nhiên theo Lênin (“Ba nguồn gốc và ba bộ phận cấu thành của chủ nghĩa Mác”, 1913) chủ nghĩa xã hội khoa học kế thừa cả ba nguồn gốc: triết học cổ điển Đức, kinh tế chính trị học cổ điển Anh và chủ nghĩa xã hội không tưởng Pháp (Xanh Ximông, Phuriê, Ôoen), nên đáp án D cũng có thể được coi là đúng. Nên đối chiếu giáo trình.",
+        "confidence": "uncertain",
+        "reference": "Đối chiếu từ kiến thức giáo trình, chưa tra nguồn trực tuyến."
+      }
+    },
+    {
+      "id": "q-039",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu KHÔNG phải là một quy luật khách quan trong thời đại ngày nay được Đảng ta nhận định?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khoa học công nghệ và toàn cầu hóa diễn ra mạnh mẽ."
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa tư bản đã bị tiêu diệt hoàn toàn trên toàn cầu."
+          },
+          {
+            "key": "C",
+            "text": "Các nước có chế độ chính trị khác nhau vừa hợp tác vừa đấu tranh."
+          },
+          {
+            "key": "D",
+            "text": "Theo quy luật tiến hóa, loài người nhất định sẽ tiến tới chủ nghĩa xã hội."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đảng ta nhận định CNTB hiện nay vẫn còn tiềm năng phát triển (chưa bị tiêu diệt hoàn toàn), dù bản chất áp bức bóc lột và các mâu thuẫn nội tại của nó vẫn không thay đổi."
+      },
+      "source": {
+        "ref": "Câu 39"
+      },
+      "enrichment": {
+        "text": "Văn kiện của Đảng nhận định chủ nghĩa tư bản hiện nay vẫn còn tiềm năng phát triển và thích nghi, nhưng bản chất bóc lột và các mâu thuẫn nội tại không thay đổi; loài người “nhất định” tiến tới chủ nghĩa xã hội theo quy luật phát triển."
+      }
+    },
+    {
+      "id": "q-040",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Chủ nghĩa xã hội là một xã hội: do nhân dân làm chủ; có nền kinh tế phát triển cao...; có Nhà nước pháp quyền xã hội chủ nghĩa...\". Đây là nội dung của văn kiện nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cương lĩnh 1930."
+          },
+          {
+            "key": "B",
+            "text": "Cương lĩnh 1951."
+          },
+          {
+            "key": "C",
+            "text": "Cương lĩnh 1991."
+          },
+          {
+            "key": "D",
+            "text": "Cương lĩnh 2011 (bổ sung, phát triển)."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Đây chính là sự trình bày 8 đặc trưng của mô hình CNXH ở Việt Nam trong Cương lĩnh (bổ sung, phát triển năm 2011)."
+      },
+      "source": {
+        "ref": "Câu 40"
+      },
+      "enrichment": {
+        "text": "Đây là phần mô tả mô hình xã hội xã hội chủ nghĩa trong Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011). Cương lĩnh đầu tiên được thông qua năm 1991."
+      }
+    },
+    {
+      "id": "q-041",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo quan điểm của chủ nghĩa Mác - Lênin, động lực lớn nhất để xây dựng chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự sợ hãi bạo lực nhà nước."
+          },
+          {
+            "key": "B",
+            "text": "Sức mạnh của giai cấp tư sản."
+          },
+          {
+            "key": "C",
+            "text": "Sự phát huy tính tích cực, tự giác, sáng tạo của quần chúng nhân dân (phát huy dân chủ)."
+          },
+          {
+            "key": "D",
+            "text": "Sự cạnh tranh khốc liệt triệt tiêu đối thủ trên thị trường."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Lênin nhấn mạnh, CNXH không thể được tạo ra bằng những sắc lệnh từ trên ban xuống, nó là kết quả hoạt động tự giác, sáng tạo của đông đảo quần chúng nhân dân."
+      },
+      "source": {
+        "ref": "Câu 41"
+      },
+      "enrichment": {
+        "text": "Lênin nhấn mạnh chủ nghĩa xã hội không thể được tạo ra bằng sắc lệnh từ trên xuống; đó là sự nghiệp sáng tạo của chính quần chúng nhân dân, vì vậy phát huy dân chủ là động lực lớn nhất."
+      }
+    },
+    {
+      "id": "q-042",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khi phân tích thời kỳ quá độ, V.I. Lênin cho rằng nước Nga tồn tại bao nhiêu thành phần kinh tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "3 thành phần."
+          },
+          {
+            "key": "B",
+            "text": "4 thành phần."
+          },
+          {
+            "key": "C",
+            "text": "5 thành phần."
+          },
+          {
+            "key": "D",
+            "text": "6 thành phần."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Lênin chỉ ra nước Nga tồn tại 5 thành phần kinh tế: Kinh tế gia trưởng, kinh tế hàng hóa nhỏ, kinh tế tư bản, kinh tế tư bản nhà nước và kinh tế XHCN."
+      },
+      "source": {
+        "ref": "Câu 42"
+      },
+      "enrichment": {
+        "text": "Năm thành phần kinh tế nước Nga theo Lênin (1921): kinh tế gia trưởng (tự cung tự cấp), sản xuất hàng hóa nhỏ, tư bản tư nhân, tư bản nhà nước, kinh tế xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-043",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương hướng \"Xây dựng Nhà nước pháp quyền xã hội chủ nghĩa của nhân dân, do nhân dân, vì nhân dân\" phản ánh yêu cầu về lĩnh vực nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lĩnh vực kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Lĩnh vực chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Lĩnh vực văn hóa."
+          },
+          {
+            "key": "D",
+            "text": "Lĩnh vực đối ngoại."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Xây dựng Nhà nước pháp quyền là nhiệm vụ trọng tâm của việc đổi mới và hoàn thiện hệ thống chính trị nhằm phát huy quyền làm chủ của nhân dân."
+      },
+      "source": {
+        "ref": "Câu 43"
+      },
+      "enrichment": {
+        "text": "Xây dựng Nhà nước pháp quyền xã hội chủ nghĩa thuộc lĩnh vực chính trị: nhằm phát huy quyền làm chủ của nhân dân và tăng cường hiệu lực quản lý của Nhà nước (xem thêm chương 4)."
+      }
+    },
+    {
+      "id": "q-044",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kết hợp giữa chủ nghĩa yêu nước chân chính và chủ nghĩa quốc tế trong sáng của giai cấp công nhân thể hiện ở đặc trưng nào của CNXH?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giải phóng con người khỏi áp bức bóc lột."
+          },
+          {
+            "key": "B",
+            "text": "Có nền kinh tế phát triển cao."
+          },
+          {
+            "key": "C",
+            "text": "Các dân tộc trong cộng đồng Việt Nam bình đẳng, đoàn kết."
+          },
+          {
+            "key": "D",
+            "text": "Có quan hệ hữu nghị và hợp tác với các nước trên thế giới."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Đặc trưng thứ 8 (quan hệ hữu nghị, hợp tác quốc tế) phản ánh tinh thần quốc tế vô sản, kết hợp sức mạnh dân tộc với sức mạnh thời đại."
+      },
+      "source": {
+        "ref": "Câu 44"
+      },
+      "enrichment": {
+        "text": "LƯU Ý: tài liệu gốc chọn D (quan hệ hữu nghị, hợp tác quốc tế), phản ánh sự kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa quốc tế vô sản. Phương án C (dân tộc bình đẳng, đoàn kết) cũng có thể được hiểu là thể hiện chủ nghĩa yêu nước, nên nên đối chiếu giáo trình.",
+        "confidence": "uncertain"
+      }
+    },
+    {
+      "id": "q-045",
+      "type": "multiple-choice",
+      "content": {
+        "question": "C.Mác đã sử dụng phương pháp luận khoa học nào để phân tích sự sụp đổ tất yếu của chủ nghĩa tư bản và sự ra đời của chủ nghĩa cộng sản?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa duy tâm lịch sử."
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa duy vật lịch sử."
+          },
+          {
+            "key": "C",
+            "text": "Phép biện chứng duy tâm."
+          },
+          {
+            "key": "D",
+            "text": "Thuyết tiến hóa của Darwin."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Chủ nghĩa duy vật lịch sử (phát kiến vĩ đại thứ nhất của Mác) chỉ ra quy luật vận động của các HTKT-XH, từ đó khẳng định CNTB tất yếu bị thay thế bởi CNCS."
+      },
+      "source": {
+        "ref": "Câu 45"
+      },
+      "enrichment": {
+        "text": "Ăngghen trong bài điếu văn trước mộ Mác (1883) nêu hai phát kiến vĩ đại của Mác: chủ nghĩa duy vật lịch sử và học thuyết về giá trị thặng dư; nhờ đó chủ nghĩa xã hội trở thành khoa học."
+      }
+    },
+    {
+      "id": "q-046",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ giữa \"độc lập dân tộc\" và \"chủ nghĩa xã hội\" ở Việt Nam được Đảng ta xác định như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là hai vấn đề tách biệt, không liên quan."
+          },
+          {
+            "key": "B",
+            "text": "Độc lập dân tộc là điều kiện tiên quyết để thực hiện CNXH, và CNXH là cơ sở bảo đảm vững chắc cho độc lập dân tộc."
+          },
+          {
+            "key": "C",
+            "text": "Phải hi sinh độc lập dân tộc để xây dựng CNXH."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ cần độc lập dân tộc, không cần CNXH."
+          }
+        ],
+        "answer": "B",
+        "explanation": "\"Độc lập dân tộc gắn liền với chủ nghĩa xã hội\" là quy luật phát triển của cách mạng Việt Nam, là tư tưởng cốt lõi của Hồ Chí Minh và sợi chỉ đỏ xuyên suốt của Đảng."
+      },
+      "source": {
+        "ref": "Câu 46"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh: độc lập dân tộc phải gắn liền với chủ nghĩa xã hội; chỉ có chủ nghĩa xã hội, chủ nghĩa cộng sản mới giải phóng được các dân tộc bị áp bức và những người lao động trên thế giới khỏi ách nô lệ."
+      }
+    },
+    {
+      "id": "q-047",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc Đảng ta nhấn mạnh \"xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc\" nhằm mục đích chống lại nguy cơ nào trong thời kỳ hội nhập?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bị tụt hậu về kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Tình trạng tham nhũng."
+          },
+          {
+            "key": "C",
+            "text": "Sự xói mòn, hòa tan bản sắc văn hóa dân tộc và \"diễn biến hòa bình\" trên lĩnh vực tư tưởng."
+          },
+          {
+            "key": "D",
+            "text": "Nguy cơ dịch bệnh toàn cầu."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Văn hóa là nền tảng tinh thần. Giữ vững bản sắc dân tộc giúp chống lại sự xâm lăng văn hóa và bảo vệ vững chắc trận địa tư tưởng."
+      },
+      "source": {
+        "ref": "Câu 47"
+      },
+      "enrichment": {
+        "text": "Nghị quyết Trung ương 5 khóa VIII (1998) về xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc đặt ra yêu cầu giữ gìn bản sắc trong hội nhập quốc tế. “Diễn biến hòa bình” là hoạt động chống phá bằng tư tưởng, văn hóa."
+      }
+    },
+    {
+      "id": "q-048",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương hướng \"Thực hiện đường lối đối ngoại độc lập, tự chủ, hòa bình, hữu nghị, hợp tác và phát triển...\" nhằm thực hiện bài học kinh nghiệm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nắm vững ngọn cờ độc lập dân tộc."
+          },
+          {
+            "key": "B",
+            "text": "Sự nghiệp cách mạng là của nhân dân."
+          },
+          {
+            "key": "C",
+            "text": "Kết hợp sức mạnh dân tộc với sức mạnh thời đại."
+          },
+          {
+            "key": "D",
+            "text": "Sự lãnh đạo đúng đắn của Đảng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Chủ động hội nhập và mở rộng đối ngoại chính là cách thức để tranh thủ ngoại lực, kết hợp sức mạnh bên trong (dân tộc) và bên ngoài (thời đại)."
+      },
+      "source": {
+        "ref": "Câu 48"
+      },
+      "enrichment": {
+        "text": "Kết hợp sức mạnh dân tộc với sức mạnh thời đại là một trong những bài học kinh nghiệm lớn của cách mạng Việt Nam. Đường lối đối ngoại độc lập, tự chủ, đa phương hóa, đa dạng hóa là cách thực hiện bài học đó."
+      }
+    },
+    {
+      "id": "q-049",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Yếu tố nào sau đây quyết định sự biến đổi của cơ cấu xã hội - giai cấp trong thời kỳ quá độ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự biến đổi của cơ cấu kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Hệ thống giáo dục."
+          },
+          {
+            "key": "C",
+            "text": "Quan điểm của các cá nhân lãnh đạo."
+          },
+          {
+            "key": "D",
+            "text": "Mật độ dân số."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Theo nguyên lý duy vật lịch sử, cơ sở kinh tế (cơ cấu kinh tế, phương thức sản xuất) quyết định kiến trúc thượng tầng và cơ cấu xã hội (cơ cấu giai cấp)."
+      },
+      "source": {
+        "ref": "Câu 49"
+      },
+      "enrichment": {
+        "text": "Theo chủ nghĩa duy vật lịch sử, cơ sở hạ tầng quyết định kiến trúc thượng tầng: Mác (Lời tựa 1859) nói phương thức sản xuất quyết định quá trình sinh hoạt xã hội, chính trị và tinh thần. Cơ cấu kinh tế quyết định cơ cấu xã hội - giai cấp."
+      }
+    },
+    {
+      "id": "q-050",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tựu trung lại, vì sao Việt Nam lựa chọn con đường quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì chủ nghĩa tư bản đã bị tiêu diệt hoàn toàn trên thế giới."
+          },
+          {
+            "key": "B",
+            "text": "Vì đây là sự lựa chọn duy nhất đúng, phản ánh quy luật phát triển khách quan của thời đại và khát vọng độc lập, tự do của dân tộc."
+          },
+          {
+            "key": "C",
+            "text": "Vì các nước tư bản từ chối hợp tác với Việt Nam."
+          },
+          {
+            "key": "D",
+            "text": "Vì Việt Nam đã có nền kinh tế phát triển cao hơn CNTB."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Sự lựa chọn này vừa đáp ứng nguyện vọng thiết tha của dân tộc (thoát khỏi áp bức), vừa phù hợp với xu thế thời đại (quá độ lên CNXH trên phạm vi toàn cầu), được dẫn dắt bởi học thuyết Mác - Lênin khoa học."
+      },
+      "source": {
+        "ref": "Câu 50"
+      },
+      "enrichment": {
+        "text": "Cương lĩnh và văn kiện của Đảng khẳng định: độc lập dân tộc gắn liền với chủ nghĩa xã hội là quy luật phát triển của cách mạng Việt Nam, phù hợp xu thế thời đại và nguyện vọng của nhân dân."
+      }
+    }
+  ]
+}

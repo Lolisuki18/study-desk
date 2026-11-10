@@ -1,0 +1,1663 @@
+{
+  "id": "cnxhkh-chuong-4",
+  "title": "CNXH Khoa học – Chương 4",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "contentType": "multiple-choice",
+  "description": "Dân chủ xhcn và nhà nước xhcn. Câu 1–50.",
+  "language": "vi",
+  "source": {
+    "document": "Bộ câu hỏi trắc nghiệm ôn tập Chủ nghĩa xã hội khoa học – Chương 4"
+  },
+  "items": [
+    {
+      "id": "q-001",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thuật ngữ \"Dân chủ\" (Demokratos) ra đời vào khoảng thời gian nào và ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thế kỷ VII - VI TCN ở Hy Lạp cổ đại."
+          },
+          {
+            "key": "B",
+            "text": "Thế kỷ XVIII ở Pháp."
+          },
+          {
+            "key": "C",
+            "text": "Thế kỷ XIX ở Đức."
+          },
+          {
+            "key": "D",
+            "text": "Đầu thế kỷ XX ở Nga."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Thuật ngữ \"dân chủ\" xuất hiện từ thời Hy Lạp cổ đại (khoảng thế kỷ VII - VI TCN), \"Demos\" là nhân dân và \"kratos\" là cai trị/quyền lực, nghĩa là quyền lực thuộc về nhân dân."
+      },
+      "source": {
+        "ref": "Câu 1"
+      },
+      "enrichment": {
+        "text": "Từ “dân chủ” (demokratia) gồm demos (nhân dân) và kratos (quyền lực). Athens thời Hy Lạp cổ đại (khoảng thế kỷ VI–V TCN) là hình mẫu, nhưng quyền công dân chỉ dành cho nam giới tự do; nô lệ và phụ nữ bị loại."
+      }
+    },
+    {
+      "id": "q-002",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo quan điểm của chủ nghĩa Mác - Lênin, dân chủ trên phương diện chế độ xã hội và trong lĩnh vực chính trị được hiểu là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là một giá trị nhân loại chung vĩnh viễn."
+          },
+          {
+            "key": "B",
+            "text": "Là một hình thức hay hình thái nhà nước, là chính thể dân chủ hay chế độ dân chủ."
+          },
+          {
+            "key": "C",
+            "text": "Là nguyên tắc tập trung dân chủ."
+          },
+          {
+            "key": "D",
+            "text": "Là sự tự do cá nhân tuyệt đối."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trên phương diện chính trị, dân chủ là một hình thái nhà nước (gắn với giai cấp thống trị), nó sẽ ra đời, phát triển và mất đi khi nhà nước tiêu vong."
+      },
+      "source": {
+        "ref": "Câu 2"
+      },
+      "enrichment": {
+        "text": "Dân chủ có hai phương diện: là giá trị xã hội chung (quyền làm chủ của nhân dân) và là một hình thức, chế độ nhà nước gắn với giai cấp thống trị. Trên phương diện chế độ nhà nước, dân chủ mang tính lịch sử và giai cấp."
+      }
+    },
+    {
+      "id": "q-003",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong lịch sử nhân loại, cho đến nay đã tồn tại bao nhiêu nền (chế độ) dân chủ mang tính chất nhà nước?",
+        "options": [
+          {
+            "key": "A",
+            "text": "2 nền dân chủ."
+          },
+          {
+            "key": "B",
+            "text": "3 nền dân chủ."
+          },
+          {
+            "key": "C",
+            "text": "4 nền dân chủ."
+          },
+          {
+            "key": "D",
+            "text": "5 nền dân chủ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Lịch sử có 3 nền dân chủ gắn với 3 kiểu nhà nước: Dân chủ chủ nô, Dân chủ tư sản và Dân chủ vô sản (XHCN)."
+      },
+      "source": {
+        "ref": "Câu 3"
+      },
+      "enrichment": {
+        "text": "Ba nền dân chủ gắn với ba kiểu nhà nước bóc lột và không bóc lột: dân chủ chủ nô (Athens), dân chủ tư sản (sau các cuộc cách mạng tư sản như Pháp 1789) và dân chủ xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-004",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Dân chủ nguyên thủy\" (hay dân chủ quân sự) trong xã hội cộng sản nguyên thủy có phải là một nền dân chủ mang tính nhà nước không?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có, vì đã có thủ lĩnh quân sự."
+          },
+          {
+            "key": "B",
+            "text": "Có, vì đã có Đại hội nhân dân."
+          },
+          {
+            "key": "C",
+            "text": "Không, vì lúc đó chưa có giai cấp và nhà nước."
+          },
+          {
+            "key": "D",
+            "text": "Không, vì lúc đó quyền lực thuộc về thần linh."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dân chủ nguyên thủy chỉ là mầm mống, hình thức manh nha của dân chủ. Vì chưa có giai cấp và nhà nước nên chưa được coi là một \"nền/chế độ dân chủ\" mang tính chính trị - nhà nước."
+      },
+      "source": {
+        "ref": "Câu 4"
+      },
+      "enrichment": {
+        "text": "Ăngghen trong “Nguồn gốc của gia đình, của chế độ tư hữu và của nhà nước” (1884) gọi chế độ quản lý của thị tộc là “dân chủ quân sự”: đó là dạng sơ khai, chưa có giai cấp và nhà nước nên chưa phải nền dân chủ mang tính nhà nước."
+      }
+    },
+    {
+      "id": "q-005",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chế độ phong kiến có tồn tại nền dân chủ không?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có nền dân chủ phong kiến."
+          },
+          {
+            "key": "B",
+            "text": "Không có nền dân chủ, chỉ có chế độ độc tài chuyên chế phong kiến."
+          },
+          {
+            "key": "C",
+            "text": "Có dân chủ cho giai cấp địa chủ."
+          },
+          {
+            "key": "D",
+            "text": "Có dân chủ cho nông dân."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Chế độ phong kiến thay thế chế độ chiếm hữu nô lệ, xóa bỏ dân chủ chủ nô và thay bằng chế độ độc tài chuyên chế (lấy ý chí của vua/trời làm tối thượng), do đó không có nền dân chủ phong kiến."
+      },
+      "source": {
+        "ref": "Câu 5"
+      },
+      "enrichment": {
+        "text": "Chế độ phong kiến là chế độ quân chủ chuyên chế, quyền lực tập trung vào vua; thân phận người dân là thần dân, không có quyền công dân như trong dân chủ hiện đại."
+      }
+    },
+    {
+      "id": "q-006",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nền dân chủ tư sản ra đời đánh dấu một bước tiến lớn của nhân loại, nhưng hạn chế thực chất của nó là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Không có hệ thống pháp luật bảo vệ quyền con người."
+          },
+          {
+            "key": "B",
+            "text": "Vẫn là nền dân chủ của thiểu số (những người nắm giữ tư liệu sản xuất) đối với đại đa số nhân dân lao động."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ hoàn toàn quyền tự do của cá nhân."
+          },
+          {
+            "key": "D",
+            "text": "Do giai cấp nông dân lãnh đạo."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Dân chủ tư sản được xây dựng trên chế độ tư hữu về tư liệu sản xuất, nên thực chất nó chỉ phục vụ và bảo vệ lợi ích cho thiểu số giai cấp tư sản."
+      },
+      "source": {
+        "ref": "Câu 6"
+      },
+      "enrichment": {
+        "text": "Các văn kiện như Tuyên ngôn độc lập Mỹ (1776) và Tuyên ngôn Nhân quyền và Dân quyền Pháp (1789) đề cao tự do, bình đẳng. Nhưng Lênin chỉ ra dân chủ tư sản về thực chất vẫn là dân chủ cho thiểu số vì dựa trên chế độ tư hữu về tư liệu sản xuất."
+      }
+    },
+    {
+      "id": "q-007",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nền dân chủ xã hội chủ nghĩa (dân chủ vô sản) chính thức được xác lập từ sự kiện lịch sử nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công xã Paris năm 1871."
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng Tháng Mười Nga năm 1917."
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng Tháng Tám năm 1945 ở Việt Nam."
+          },
+          {
+            "key": "D",
+            "text": "Sự ra đời của Tuyên ngôn của Đảng Cộng sản năm 1848."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Dân chủ XHCN phôi thai từ Công xã Paris (1871) nhưng chỉ chính thức được xác lập khi Cách mạng Tháng Mười Nga (1917) thành công, lập ra nhà nước XHCN đầu tiên trên thế giới."
+      },
+      "source": {
+        "ref": "Câu 7"
+      },
+      "enrichment": {
+        "text": "Công xã Pari (1871) là mầm mống đầu tiên; Cách mạng Tháng Mười Nga (1917) thiết lập nhà nước Xô viết, chính thức xác lập nền dân chủ xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-008",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I. Lênin, nền dân chủ vô sản so với bất kỳ chế độ dân chủ tư sản nào cũng:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tương đồng về bản chất."
+          },
+          {
+            "key": "B",
+            "text": "Có tính giai cấp ít hơn."
+          },
+          {
+            "key": "C",
+            "text": "Dân chủ hơn gấp triệu lần."
+          },
+          {
+            "key": "D",
+            "text": "Kém phát triển hơn do xuất phát điểm kinh tế thấp."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Lênin nhấn mạnh dân chủ vô sản đưa quảng đại quần chúng nhân dân lên địa vị người chủ chân chính của xã hội, do đó nó dân chủ hơn gấp triệu lần so với dân chủ tư sản (vốn chỉ dành cho thiểu số nhà giàu)."
+      },
+      "source": {
+        "ref": "Câu 8"
+      },
+      "enrichment": {
+        "text": "Lênin, trong “Cách mạng vô sản và tên phản bội Cau-xky” (1918), cho rằng dân chủ vô sản dân chủ hơn gấp triệu lần bất kỳ nền dân chủ tư sản nào vì đưa đông đảo người lao động vào quản lý nhà nước."
+      }
+    },
+    {
+      "id": "q-009",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bản chất chính trị của nền dân chủ xã hội chủ nghĩa thể hiện ở:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự lãnh đạo chính trị của giai cấp công nhân thông qua Đảng Cộng sản đối với toàn xã hội."
+          },
+          {
+            "key": "B",
+            "text": "Sự phân chia quyền lực cho các đảng phái đối lập (đa nguyên chính trị)."
+          },
+          {
+            "key": "C",
+            "text": "Sự thống trị tuyệt đối của giai cấp tư sản."
+          },
+          {
+            "key": "D",
+            "text": "Sự cai trị của một cá nhân độc tài."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Bản chất chính trị của dân chủ XHCN là tính nhất nguyên về chính trị, đặt dưới sự lãnh đạo duy nhất của Đảng Cộng sản (đại biểu cho lợi ích của GCCN và nhân dân lao động)."
+      },
+      "source": {
+        "ref": "Câu 9"
+      },
+      "enrichment": {
+        "text": "Bản chất chính trị: nền dân chủ xã hội chủ nghĩa đặt dưới sự lãnh đạo của giai cấp công nhân thông qua Đảng Cộng sản; ở Việt Nam, Điều 4 Hiến pháp 2013 quy định vai trò lãnh đạo của Đảng."
+      }
+    },
+    {
+      "id": "q-010",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bản chất kinh tế của nền dân chủ xã hội chủ nghĩa là dựa trên:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất."
+          },
+          {
+            "key": "B",
+            "text": "Chế độ sở hữu xã hội (công hữu) về những tư liệu sản xuất chủ yếu."
+          },
+          {
+            "key": "C",
+            "text": "Nền kinh tế tự nhiên, tự cung tự cấp."
+          },
+          {
+            "key": "D",
+            "text": "Sự điều tiết hoàn toàn của bàn tay vô hình (thị trường tự do)."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Về mặt kinh tế, dân chủ XHCN dựa trên chế độ công hữu về TLSX chủ yếu và thực hiện chế độ phân phối lợi ích theo kết quả lao động là chủ yếu."
+      },
+      "source": {
+        "ref": "Câu 10"
+      },
+      "enrichment": {
+        "text": "Về kinh tế, dân chủ xã hội chủ nghĩa dựa trên chế độ sở hữu xã hội (công hữu) về tư liệu sản xuất chủ yếu, và phân phối chủ yếu theo lao động; ở Việt Nam kết hợp với kinh tế thị trường định hướng xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-011",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bản chất tư tưởng - văn hóa của nền dân chủ xã hội chủ nghĩa lấy hệ tư tưởng nào làm chủ đạo?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hệ tư tưởng phong kiến."
+          },
+          {
+            "key": "B",
+            "text": "Hệ tư tưởng tư sản."
+          },
+          {
+            "key": "C",
+            "text": "Hệ tư tưởng Mác - Lênin (hệ tư tưởng của giai cấp công nhân)."
+          },
+          {
+            "key": "D",
+            "text": "Chủ nghĩa dân tộc cực đoan."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dân chủ XHCN lấy chủ nghĩa Mác - Lênin làm nền tảng tư tưởng, đồng thời kế thừa, phát huy tinh hoa văn hóa truyền thống dân tộc và nhân loại."
+      },
+      "source": {
+        "ref": "Câu 11"
+      },
+      "enrichment": {
+        "text": "Về tư tưởng - văn hóa, dân chủ xã hội chủ nghĩa lấy hệ tư tưởng Mác - Lênin làm nền tảng chủ đạo, đồng thời kế thừa, phát huy giá trị văn hóa truyền thống dân tộc và tinh hoa nhân loại."
+      }
+    },
+    {
+      "id": "q-012",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điều kiện tiên quyết để dân chủ xã hội chủ nghĩa ra đời, tồn tại và phát triển là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự bảo trợ của các nước tư bản phát triển."
+          },
+          {
+            "key": "B",
+            "text": "Bảo đảm vai trò lãnh đạo duy nhất của Đảng Cộng sản."
+          },
+          {
+            "key": "C",
+            "text": "Áp dụng cơ chế tam quyền phân lập."
+          },
+          {
+            "key": "D",
+            "text": "Sự ra đời của nền kinh tế tri thức."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Chỉ dưới sự lãnh đạo của Đảng Cộng sản (nhờ nắm vững hệ tư tưởng Mác - Lênin), nhân dân mới có khả năng thực hiện hữu hiệu quyền dân chủ và chống lại mưu đồ lợi dụng dân chủ."
+      },
+      "source": {
+        "ref": "Câu 12"
+      },
+      "enrichment": {
+        "text": "Điều kiện tiên quyết là vai trò lãnh đạo của Đảng Cộng sản: đảng đại diện lợi ích giai cấp công nhân, nhân dân lao động và dân tộc, đồng thời ngăn chặn việc lợi dụng dân chủ để chống phá chế độ."
+      }
+    },
+    {
+      "id": "q-013",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I. Lênin, khi xã hội cộng sản chủ nghĩa đạt tới mức độ hoàn thiện, xã hội không còn giai cấp, thì dân chủ với tư cách là một chế độ nhà nước sẽ:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tồn tại vĩnh viễn."
+          },
+          {
+            "key": "B",
+            "text": "Phát triển đến đỉnh cao nhất."
+          },
+          {
+            "key": "C",
+            "text": "Tiêu vong (không còn nữa)."
+          },
+          {
+            "key": "D",
+            "text": "Chuyển hóa thành dân chủ tư sản."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dân chủ mang tính chính trị (chế độ nhà nước) là một phạm trù lịch sử. Khi nhà nước tiêu vong trong giai đoạn cao của CNCS, dân chủ mang tính chính trị cũng tự tiêu vong (trở thành thói quen, tập quán)."
+      },
+      "source": {
+        "ref": "Câu 13"
+      },
+      "enrichment": {
+        "text": "Lênin, trong “Nhà nước và cách mạng” (1917), dự báo khi không còn giai cấp, nhà nước sẽ dần tiêu vong và dân chủ (với tư cách chế độ nhà nước) cũng tiêu vong, trở thành thói quen của đời sống xã hội."
+      }
+    },
+    {
+      "id": "q-014",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhà nước xã hội chủ nghĩa ra đời là kết quả của:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự thỏa hiệp giữa giai cấp tư sản và giai cấp vô sản."
+          },
+          {
+            "key": "B",
+            "text": "Cuộc cách mạng do giai cấp vô sản và nhân dân lao động tiến hành dưới sự lãnh đạo của Đảng Cộng sản."
+          },
+          {
+            "key": "C",
+            "text": "Sự viện trợ của quốc tế."
+          },
+          {
+            "key": "D",
+            "text": "Sự phát triển tự nhiên của chủ nghĩa tư bản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nhà nước XHCN không tự nhiên sinh ra, nó là thành quả của cách mạng vô sản nhằm lật đổ ách thống trị của giai cấp bóc lột."
+      },
+      "source": {
+        "ref": "Câu 14"
+      },
+      "enrichment": {
+        "text": "Nhà nước xã hội chủ nghĩa ra đời từ cách mạng vô sản do giai cấp công nhân và nhân dân lao động tiến hành dưới sự lãnh đạo của Đảng, đập tan bộ máy nhà nước cũ và thiết lập nhà nước kiểu mới."
+      }
+    },
+    {
+      "id": "q-015",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về mặt chính trị, sự thống trị của giai cấp vô sản trong Nhà nước XHCN khác với sự thống trị của giai cấp bóc lột trước đây ở điểm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là sự thống trị của thiểu số đối với đa số."
+          },
+          {
+            "key": "B",
+            "text": "Là sự thống trị của đa số nhân dân lao động đối với thiểu số giai cấp bóc lột."
+          },
+          {
+            "key": "C",
+            "text": "Là sự thống trị không cần đến pháp luật."
+          },
+          {
+            "key": "D",
+            "text": "Là sự thống trị nhằm bảo vệ lợi ích của giai cấp tư sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nhà nước bóc lột là thiểu số trấn áp đa số. Nhà nước XHCN là đa số nhân dân lao động trấn áp thiểu số bóc lột nhằm bảo vệ thành quả cách mạng."
+      },
+      "source": {
+        "ref": "Câu 15"
+      },
+      "enrichment": {
+        "text": "Nhà nước xã hội chủ nghĩa là nhà nước của đa số nhân dân lao động trấn áp thiểu số bóc lột; ngược lại, các nhà nước bóc lột là sự thống trị của thiểu số đối với đa số."
+      }
+    },
+    {
+      "id": "q-016",
+      "type": "multiple-choice",
+      "content": {
+        "question": "V.I. Lênin gọi Nhà nước xã hội chủ nghĩa là \"nửa nhà nước\" vì lý do gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì nó chưa có đầy đủ các cơ quan lập pháp, hành pháp, tư pháp."
+          },
+          {
+            "key": "B",
+            "text": "Vì nó chỉ kiểm soát được một nửa lãnh thổ."
+          },
+          {
+            "key": "C",
+            "text": "Vì nó vừa là cơ quan cưỡng chế (trấn áp), vừa là tổ chức quản lý kinh tế - xã hội vì lợi ích của đại đa số nhân dân lao động."
+          },
+          {
+            "key": "D",
+            "text": "Vì nó phải chia sẻ quyền lực với giai cấp tư sản."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Nhà nước XHCN không còn là nhà nước theo đúng nghĩa (công cụ của thiểu số bóc lột đa số), mà chức năng chủ yếu chuyển sang tổ chức, quản lý xây dựng xã hội mới cho đa số nhân dân."
+      },
+      "source": {
+        "ref": "Câu 16"
+      },
+      "enrichment": {
+        "text": "Lênin gọi nhà nước xã hội chủ nghĩa là “nửa nhà nước” vì nó không còn là bộ máy trấn áp của thiểu số đối với đa số, mà chủ yếu tổ chức, quản lý xã hội; nó từng bước tiến tới tự tiêu vong."
+      }
+    },
+    {
+      "id": "q-017",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Căn cứ vào tính chất của quyền lực, chức năng của Nhà nước XHCN được chia thành:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chức năng đối nội và chức năng đối ngoại."
+          },
+          {
+            "key": "B",
+            "text": "Chức năng chính trị, kinh tế và văn hóa, xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Chức năng giai cấp (trấn áp) và chức năng xã hội (tổ chức, xây dựng)."
+          },
+          {
+            "key": "D",
+            "text": "Chức năng lập pháp, hành pháp và tư pháp."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Theo tính chất quyền lực, nhà nước thực hiện chức năng trấn áp (đối với kẻ thù) và chức năng tổ chức, quản lý xây dựng (đối với xã hội)."
+      },
+      "source": {
+        "ref": "Câu 17"
+      },
+      "enrichment": {
+        "text": "Có hai cách chia chức năng: theo tính chất quyền lực (giai cấp/trấn áp và xã hội/tổ chức, xây dựng); theo phạm vi tác động (đối nội và đối ngoại); theo lĩnh vực (chính trị, kinh tế, văn hóa - xã hội)."
+      }
+    },
+    {
+      "id": "q-018",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong các chức năng của Nhà nước XHCN, chức năng nào đóng vai trò then chốt, quyết định nhất?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chức năng trấn áp bạo lực."
+          },
+          {
+            "key": "B",
+            "text": "Chức năng đối ngoại."
+          },
+          {
+            "key": "C",
+            "text": "Chức năng tổ chức quản lý và xây dựng kinh tế - xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Chức năng quân sự."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Lênin chỉ rõ, nhà nước vô sản không chủ yếu là bạo lực. Điều bảo đảm sức sống và thắng lợi của nó là tổ chức lao động, quản lý kinh tế để tạo ra năng suất cao hơn CNTB."
+      },
+      "source": {
+        "ref": "Câu 18"
+      },
+      "enrichment": {
+        "text": "Lênin nhấn mạnh chức năng tổ chức quản lý và xây dựng kinh tế - xã hội là chủ yếu của nhà nước vô sản, vì sức sống của chế độ mới được quyết định bởi năng suất lao động cao hơn chủ nghĩa tư bản."
+      }
+    },
+    {
+      "id": "q-019",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ giữa dân chủ XHCN và Nhà nước XHCN là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân chủ XHCN là công cụ, Nhà nước XHCN là nền tảng."
+          },
+          {
+            "key": "B",
+            "text": "Dân chủ XHCN là cơ sở nền tảng; Nhà nước XHCN là công cụ quan trọng, là phương thức thể hiện và thực hiện dân chủ."
+          },
+          {
+            "key": "C",
+            "text": "Hai yếu tố này đối lập và triệt tiêu lẫn nhau."
+          },
+          {
+            "key": "D",
+            "text": "Không có mối quan hệ phụ thuộc."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Dân chủ XHCN là bản chất, là nền tảng. Nhà nước XHCN (pháp quyền) thể chế hóa ý chí nhân dân thành pháp luật để bảo vệ và thực thi quyền làm chủ đó (là công cụ)."
+      },
+      "source": {
+        "ref": "Câu 19"
+      },
+      "enrichment": {
+        "text": "Dân chủ xã hội chủ nghĩa là bản chất, nền tảng; Nhà nước pháp quyền xã hội chủ nghĩa là công cụ thể chế hóa ý chí của nhân dân thành pháp luật và tổ chức thực hiện quyền làm chủ đó."
+      }
+    },
+    {
+      "id": "q-020",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nếu Nhà nước XHCN đánh mất bản chất của mình thì sẽ dẫn đến hậu quả gì đối với nền dân chủ XHCN?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nền dân chủ XHCN sẽ phát triển mạnh mẽ hơn."
+          },
+          {
+            "key": "B",
+            "text": "Quyền làm chủ của người dân bị xâm phạm, dẫn tới chuyên chế, độc tài, dân chủ chỉ còn là hình thức."
+          },
+          {
+            "key": "C",
+            "text": "Nền dân chủ XHCN không bị ảnh hưởng."
+          },
+          {
+            "key": "D",
+            "text": "Sẽ tự động chuyển sang dân chủ tư sản phát triển."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nhà nước là công cụ thực thi dân chủ. Nếu công cụ này bị tha hóa (quan liêu, đặc quyền đặc lợi) thì quyền lực không còn của nhân dân nữa."
+      },
+      "source": {
+        "ref": "Câu 20"
+      },
+      "enrichment": {
+        "text": "Văn kiện của Đảng thường nhấn mạnh nguy cơ tha hóa quyền lực (quan liêu, tham nhũng, đặc quyền đặc lợi) và yêu cầu kiểm soát quyền lực nhà nước để bảo đảm quyền lực thực sự thuộc về nhân dân."
+      }
+    },
+    {
+      "id": "q-021",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chủ tịch Hồ Chí Minh đã khẳng định: \"Nước ta là nước dân chủ, địa vị cao nhất là...\". Từ còn thiếu là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng viên."
+          },
+          {
+            "key": "B",
+            "text": "Cán bộ."
+          },
+          {
+            "key": "C",
+            "text": "Dân."
+          },
+          {
+            "key": "D",
+            "text": "Trí thức."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Tư tưởng Hồ Chí Minh xác định rất rõ: \"Nước ta là nước dân chủ, địa vị cao nhất là dân, vì dân là chủ\"."
+      },
+      "source": {
+        "ref": "Câu 21"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh còn nói: thực hành dân chủ là cái chìa khóa vạn năng có thể giải quyết mọi khó khăn. Tư tưởng “dân là chủ và dân làm chủ” xuyên suốt tư tưởng của Người về nhà nước."
+      }
+    },
+    {
+      "id": "q-022",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo tư tưởng Hồ Chí Minh, trong nhà nước dân chủ, cán bộ, bộ trưởng, chủ tịch đóng vai trò là gì của nhân dân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là quan cách mạng."
+          },
+          {
+            "key": "B",
+            "text": "Là đấng cứu thế."
+          },
+          {
+            "key": "C",
+            "text": "Là người đầy tớ trung thành của nhân dân."
+          },
+          {
+            "key": "D",
+            "text": "Là người cai trị tuyệt đối."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Bác Hồ nhiều lần nhắc nhở: \"Dân làm chủ thì Chủ tịch, bộ trưởng, thứ trưởng... làm đầy tớ. Làm đầy tớ cho nhân dân, chứ không phải là quan cách mạng\"."
+      },
+      "source": {
+        "ref": "Câu 22"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh nhắc cán bộ phải là công bộc, đầy tớ trung thành của nhân dân, “không phải là quan cách mạng”, lấy phục vụ nhân dân làm mục đích."
+      }
+    },
+    {
+      "id": "q-023",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự khác biệt cốt lõi giữa nền dân chủ XHCN và nền dân chủ tư sản về mặt cơ chế chính trị là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân chủ XHCN thực hiện nhất nguyên chính trị, Dân chủ tư sản thực hiện đa nguyên, đa đảng."
+          },
+          {
+            "key": "B",
+            "text": "Dân chủ XHCN không có bầu cử, Dân chủ tư sản có bầu cử."
+          },
+          {
+            "key": "C",
+            "text": "Dân chủ XHCN không có hiến pháp, Dân chủ tư sản có hiến pháp."
+          },
+          {
+            "key": "D",
+            "text": "Dân chủ XHCN phân chia tam quyền phân lập tuyệt đối."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Nền dân chủ XHCN đặt dưới sự lãnh đạo duy nhất của Đảng Cộng sản (nhất nguyên chính trị), trong khi dân chủ tư sản vận hành theo cơ chế đa nguyên, đa đảng đối lập."
+      },
+      "source": {
+        "ref": "Câu 23"
+      },
+      "enrichment": {
+        "text": "Nhất nguyên chính trị: một đảng lãnh đạo (Điều 4 Hiến pháp 2013), thể hiện sự thống nhất chính trị. Dân chủ tư sản vận hành theo cơ chế đa đảng, đa nguyên, cạnh tranh quyền lực."
+      }
+    },
+    {
+      "id": "q-024",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chế độ dân chủ nhân dân ở nước ta được xác lập chính thức từ sự kiện nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thành lập Đảng Cộng sản Việt Nam (1930)."
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng Tháng Tám năm 1945 thành công."
+          },
+          {
+            "key": "C",
+            "text": "Chiến thắng Điện Biên Phủ (1954)."
+          },
+          {
+            "key": "D",
+            "text": "Đại thắng mùa Xuân (1975)."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Sau Cách mạng Tháng Tám (1945), nước Việt Nam Dân chủ Cộng hòa ra đời, đánh dấu việc xác lập chế độ dân chủ nhân dân ở nước ta."
+      },
+      "source": {
+        "ref": "Câu 24"
+      },
+      "enrichment": {
+        "text": "Nước Việt Nam Dân chủ Cộng hòa ra đời ngày 2/9/1945; Tổng tuyển cử đầu tiên 6/1/1946 và Hiến pháp đầu tiên (9/11/1946) là những dấu mốc xây dựng chế độ dân chủ nhân dân."
+      }
+    },
+    {
+      "id": "q-025",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mục tiêu tổng quát của cách mạng Việt Nam hiện nay liên quan đến dân chủ được Đảng ta xác định là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Độc lập, tự do, hạnh phúc."
+          },
+          {
+            "key": "B",
+            "text": "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh."
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng giai cấp, giải phóng dân tộc."
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ hoàn toàn kinh tế tư nhân."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Khái niệm \"dân chủ\" đã được đưa vào mục tiêu tổng quát của cách mạng Việt Nam trong thời kỳ đổi mới (Dân giàu, nước mạnh, dân chủ, công bằng, văn minh)."
+      },
+      "source": {
+        "ref": "Câu 25"
+      },
+      "enrichment": {
+        "text": "Mục tiêu tổng quát “dân giàu, nước mạnh, dân chủ, công bằng, văn minh” là mục tiêu của chủ nghĩa xã hội Việt Nam trong thời kỳ đổi mới; chữ “dân chủ” được đưa vào mục tiêu chung."
+      }
+    },
+    {
+      "id": "q-026",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ đổi mới, Đảng ta xác định Dân chủ xã hội chủ nghĩa đóng vai trò như thế nào đối với sự phát triển đất nước?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ là mục tiêu xa vời."
+          },
+          {
+            "key": "B",
+            "text": "Vừa là mục tiêu, vừa là động lực của sự phát triển đất nước."
+          },
+          {
+            "key": "C",
+            "text": "Là rào cản của sự phát triển kinh tế."
+          },
+          {
+            "key": "D",
+            "text": "Là phương tiện để bảo vệ giai cấp tư sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Văn kiện Đảng khẳng định: \"Dân chủ xã hội chủ nghĩa là bản chất của chế độ ta, vừa là mục tiêu, vừa là động lực của sự phát triển đất nước\"."
+      },
+      "source": {
+        "ref": "Câu 26"
+      },
+      "enrichment": {
+        "text": "Cương lĩnh 2011 nêu: dân chủ xã hội chủ nghĩa là bản chất của chế độ ta, vừa là mục tiêu, vừa là động lực của sự phát triển đất nước."
+      }
+    },
+    {
+      "id": "q-027",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hình thức dân chủ mà nhân dân \"ủy quyền\", giao quyền lực của mình cho các tổ chức, cá nhân do nhân dân bầu ra (như Quốc hội, HĐND) được gọi là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân chủ trực tiếp."
+          },
+          {
+            "key": "B",
+            "text": "Dân chủ gián tiếp (dân chủ đại diện)."
+          },
+          {
+            "key": "C",
+            "text": "Dân chủ tập trung."
+          },
+          {
+            "key": "D",
+            "text": "Dân chủ cơ sở."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là hình thức dân chủ gián tiếp (đại diện), nhân dân không trực tiếp điều hành mà thông qua các đại biểu để thực thi quyền lực nhà nước."
+      },
+      "source": {
+        "ref": "Câu 27"
+      },
+      "enrichment": {
+        "text": "Điều 69 Hiến pháp 2013: Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất. Nhân dân thực hiện dân chủ đại diện qua Quốc hội và Hội đồng nhân dân."
+      }
+    },
+    {
+      "id": "q-028",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hình thức dân chủ mà nhân dân bằng hành động trực tiếp của mình tham gia bàn bạc, quyết định, kiểm tra, giám sát công việc của nhà nước và xã hội gọi là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân chủ gián tiếp."
+          },
+          {
+            "key": "B",
+            "text": "Dân chủ đại diện."
+          },
+          {
+            "key": "C",
+            "text": "Dân chủ trực tiếp."
+          },
+          {
+            "key": "D",
+            "text": "Dân chủ ủy quyền."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dân chủ trực tiếp thể hiện quyền tự quyết, tham gia trực tiếp của người dân (ví dụ: bầu cử, trưng cầu dân ý, giám sát ở cơ sở)."
+      },
+      "source": {
+        "ref": "Câu 28"
+      },
+      "enrichment": {
+        "text": "Dân chủ trực tiếp thể hiện qua bầu cử, trưng cầu ý dân (Luật Trưng cầu ý dân 2015), tham gia ý kiến vào dự thảo luật, giám sát ở cơ sở…"
+      }
+    },
+    {
+      "id": "q-029",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Câu châm ngôn nào sau đây phản ánh nguyên tắc thực thi dân chủ trực tiếp ở cơ sở tại Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kỷ luật là sức mạnh của quân đội."
+          },
+          {
+            "key": "B",
+            "text": "Dân biết, dân bàn, dân làm, dân kiểm tra."
+          },
+          {
+            "key": "C",
+            "text": "Quyền lực nhà nước là thống nhất."
+          },
+          {
+            "key": "D",
+            "text": "Phân quyền và kiểm soát quyền lực."
+          }
+        ],
+        "answer": "B",
+        "explanation": "\"Dân biết, dân bàn, dân làm, dân kiểm tra\" (hiện nay bổ sung thêm \"dân giám sát, dân thụ hưởng\") là phương châm nền tảng của quy chế dân chủ ở cơ sở tại Việt Nam."
+      },
+      "source": {
+        "ref": "Câu 29"
+      },
+      "enrichment": {
+        "text": "Phương châm “Dân biết, dân bàn, dân làm, dân kiểm tra” gắn với Quy chế dân chủ ở cơ sở (từ 1998); nay là Luật Thực hiện dân chủ ở cơ sở (2022), bổ sung “dân giám sát, dân thụ hưởng”."
+      }
+    },
+    {
+      "id": "q-030",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Nhà nước pháp quyền\" được hiểu chung nhất là một nhà nước:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Do một đảng phái nắm quyền tuyệt đối không cần pháp luật."
+          },
+          {
+            "key": "B",
+            "text": "Thượng tôn pháp luật, mọi cơ quan, tổ chức và công dân đều phải tuân thủ pháp luật."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ áp dụng pháp luật đối với nhân dân lao động."
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ mọi quyền tự do của cá nhân."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đặc trưng cốt lõi của mọi nhà nước pháp quyền là tính tối thượng của pháp luật (thượng tôn pháp luật)."
+      },
+      "source": {
+        "ref": "Câu 30"
+      },
+      "enrichment": {
+        "text": "Nhà nước pháp quyền (rule of law) đề cao vai trò tối thượng của pháp luật: mọi cơ quan nhà nước, tổ chức, cá nhân đều phải tuân thủ pháp luật; pháp luật bảo vệ quyền con người."
+      }
+    },
+    {
+      "id": "q-031",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm nào sau đây KHÔNG phải là đặc điểm của Nhà nước pháp quyền XHCN ở Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nhà nước của nhân dân, do nhân dân, vì nhân dân."
+          },
+          {
+            "key": "B",
+            "text": "Được tổ chức và hoạt động dựa trên cơ sở của Hiến pháp và pháp luật."
+          },
+          {
+            "key": "C",
+            "text": "Thực hiện nguyên tắc tam quyền phân lập (lập pháp, hành pháp, tư pháp độc lập và đối trọng nhau)."
+          },
+          {
+            "key": "D",
+            "text": "Do Đảng Cộng sản Việt Nam lãnh đạo."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Ở Việt Nam, nguyên tắc tổ chức quyền lực nhà nước là: Quyền lực nhà nước là THỐNG NHẤT, có sự phân công, phối hợp và kiểm soát; chứ KHÔNG thực hiện tam quyền phân lập."
+      },
+      "source": {
+        "ref": "Câu 31"
+      },
+      "enrichment": {
+        "text": "Điều 2 Hiến pháp 2013: quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước trong thực hiện quyền lập pháp, hành pháp, tư pháp. Việt Nam không theo mô hình tam quyền phân lập."
+      }
+    },
+    {
+      "id": "q-032",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ quan nào là cơ quan quyền lực nhà nước cao nhất ở Việt Nam, có quyền lập hiến và lập pháp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chính phủ."
+          },
+          {
+            "key": "B",
+            "text": "Tòa án nhân dân tối cao."
+          },
+          {
+            "key": "C",
+            "text": "Quốc hội."
+          },
+          {
+            "key": "D",
+            "text": "Mặt trận Tổ quốc Việt Nam."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Theo Hiến pháp, Quốc hội do nhân dân trực tiếp bầu ra, là cơ quan đại biểu cao nhất của nhân dân và là cơ quan quyền lực nhà nước cao nhất."
+      },
+      "source": {
+        "ref": "Câu 32"
+      },
+      "enrichment": {
+        "text": "Quốc hội thực hiện quyền lập hiến, lập pháp, quyết định các vấn đề quan trọng của đất nước và giám sát tối cao (Điều 69 Hiến pháp 2013)."
+      }
+    },
+    {
+      "id": "q-033",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo quy định của Hiến pháp 2013, nguyên tắc tổ chức quyền lực của Nhà nước ta là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phân quyền tuyệt đối."
+          },
+          {
+            "key": "B",
+            "text": "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước."
+          },
+          {
+            "key": "C",
+            "text": "Tập quyền vào tay cá nhân Chủ tịch nước."
+          },
+          {
+            "key": "D",
+            "text": "Tản quyền cho các địa phương tự quyết định hoàn toàn."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là nguyên tắc Hiến định, đảm bảo quyền lực thuộc về nhân dân (thống nhất) nhưng vẫn có sự rành mạch, chuyên môn hóa và kiểm soát để tránh lạm quyền."
+      },
+      "source": {
+        "ref": "Câu 33"
+      },
+      "enrichment": {
+        "text": "Điều 2 khoản 3 Hiến pháp 2013: “Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp”."
+      }
+    },
+    {
+      "id": "q-034",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự lãnh đạo của Đảng Cộng sản Việt Nam đối với Nhà nước pháp quyền XHCN được quy định tại Điều mấy của Hiến pháp 2013?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Điều 1."
+          },
+          {
+            "key": "B",
+            "text": "Điều 2."
+          },
+          {
+            "key": "C",
+            "text": "Điều 3."
+          },
+          {
+            "key": "D",
+            "text": "Điều 4."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Điều 4 Hiến pháp 2013 khẳng định Đảng Cộng sản Việt Nam là lực lượng lãnh đạo Nhà nước và xã hội."
+      },
+      "source": {
+        "ref": "Câu 34"
+      },
+      "enrichment": {
+        "text": "Điều 4 Hiến pháp 2013 khẳng định Đảng Cộng sản Việt Nam là lực lượng lãnh đạo Nhà nước và xã hội; đồng thời Đảng gắn bó mật thiết với nhân dân, chịu sự giám sát của nhân dân và chịu trách nhiệm trước nhân dân."
+      }
+    },
+    {
+      "id": "q-035",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những đặc điểm của Nhà nước pháp quyền XHCN ở Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tôn trọng quyền con người, coi con người là chủ thể, là trung tâm của sự phát triển."
+          },
+          {
+            "key": "B",
+            "text": "Đặt lợi ích của giai cấp tư sản lên trên lợi ích quốc gia."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ bảo vệ quyền lợi cho đảng viên."
+          },
+          {
+            "key": "D",
+            "text": "Bỏ qua các cam kết quốc tế về nhân quyền."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Nhà nước pháp quyền XHCN lấy con người làm trung tâm, tôn trọng và bảo vệ quyền con người, quyền công dân bằng pháp luật."
+      },
+      "source": {
+        "ref": "Câu 35"
+      },
+      "enrichment": {
+        "text": "Hiến pháp 2013 đặt Chương II “Quyền con người, quyền và nghĩa vụ cơ bản của công dân” lên ngay sau chương về chế độ chính trị, thể hiện coi trọng quyền con người."
+      }
+    },
+    {
+      "id": "q-036",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong hệ thống chính trị Việt Nam, tổ chức nào đóng vai trò là \"cơ sở chính trị của chính quyền nhân dân\", đại diện bảo vệ quyền và lợi ích hợp pháp của nhân dân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Cộng sản Việt Nam."
+          },
+          {
+            "key": "B",
+            "text": "Quốc hội."
+          },
+          {
+            "key": "C",
+            "text": "Mặt trận Tổ quốc Việt Nam và các tổ chức chính trị - xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Chính phủ."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Mặt trận Tổ quốc VN là liên minh chính trị, liên hiệp tự nguyện, đóng vai trò tập hợp khối đại đoàn kết, phản biện và giám sát xã hội, là cơ sở chính trị của chính quyền."
+      },
+      "source": {
+        "ref": "Câu 36"
+      },
+      "enrichment": {
+        "text": "Điều 9 Hiến pháp 2013: Mặt trận Tổ quốc Việt Nam là tổ chức liên minh chính trị, liên hiệp tự nguyện, là cơ sở chính trị của chính quyền nhân dân; thực hiện giám sát và phản biện xã hội."
+      }
+    },
+    {
+      "id": "q-037",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên tắc hoạt động cốt lõi của bộ máy quản lý nhà nước XHCN ở Việt Nam là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Độc đoán chuyên quyền."
+          },
+          {
+            "key": "B",
+            "text": "Tập trung dân chủ."
+          },
+          {
+            "key": "C",
+            "text": "Tự do vô chính phủ."
+          },
+          {
+            "key": "D",
+            "text": "Cạnh tranh giữa các cơ quan."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Tập trung dân chủ là nguyên tắc cơ bản trong tổ chức và hoạt động của bộ máy nhà nước ta (đảm bảo sự lãnh đạo tập trung thống nhất trên cơ sở phát huy dân chủ)."
+      },
+      "source": {
+        "ref": "Câu 37"
+      },
+      "enrichment": {
+        "text": "Điều 8 Hiến pháp 2013: Nhà nước được tổ chức và hoạt động theo Hiến pháp và pháp luật, quản lý xã hội bằng Hiến pháp và pháp luật, thực hiện nguyên tắc tập trung dân chủ."
+      }
+    },
+    {
+      "id": "q-038",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để phát huy dân chủ XHCN ở Việt Nam hiện nay, một trong những định hướng quan trọng là phải xây dựng, hoàn thiện thể chế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thể chế kinh tế thị trường tự do."
+          },
+          {
+            "key": "B",
+            "text": "Thể chế kinh tế thị trường định hướng XHCN."
+          },
+          {
+            "key": "C",
+            "text": "Thể chế kinh tế kế hoạch hóa tập trung."
+          },
+          {
+            "key": "D",
+            "text": "Thể chế quân phiệt."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Xây dựng thể chế kinh tế thị trường định hướng XHCN tạo ra cơ sở kinh tế vững chắc để phát huy quyền làm chủ của nhân dân, bảo vệ quyền lợi hợp pháp của các chủ thể kinh tế."
+      },
+      "source": {
+        "ref": "Câu 38"
+      },
+      "enrichment": {
+        "text": "Điều 51 Hiến pháp 2013 xác định nền kinh tế Việt Nam là nền kinh tế thị trường định hướng xã hội chủ nghĩa, nhiều hình thức sở hữu, nhiều thành phần kinh tế, trong đó kinh tế nhà nước giữ vai trò chủ đạo."
+      }
+    },
+    {
+      "id": "q-039",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đổi mới hệ thống chính trị ở Việt Nam nhằm mục đích gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thay đổi bản chất của chế độ xã hội chủ nghĩa."
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ vai trò lãnh đạo của Đảng Cộng sản."
+          },
+          {
+            "key": "C",
+            "text": "Tăng cường vai trò lãnh đạo của Đảng, hiệu lực quản lý của Nhà nước, phát huy quyền làm chủ của nhân dân."
+          },
+          {
+            "key": "D",
+            "text": "Thực hiện đa nguyên đa đảng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Đổi mới hệ thống chính trị không phải là thay đổi chế độ, mà là làm cho hệ thống đó hoạt động hiệu lực, hiệu quả hơn (Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ)."
+      },
+      "source": {
+        "ref": "Câu 39"
+      },
+      "enrichment": {
+        "text": "Đổi mới hệ thống chính trị nhằm làm cho hệ thống hoạt động hiệu lực, hiệu quả hơn, chứ không thay đổi chế độ chính trị hay vai trò lãnh đạo của Đảng."
+      }
+    },
+    {
+      "id": "q-040",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vụ cấp bách, lâu dài của quá trình xây dựng Nhà nước pháp quyền XHCN ở nước ta hiện nay, góp phần làm trong sạch bộ máy nhà nước là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mở rộng biên chế nhà nước vô hạn độ."
+          },
+          {
+            "key": "B",
+            "text": "Đấu tranh phòng, chống tham nhũng, lãng phí, thực hành tiết kiệm."
+          },
+          {
+            "key": "C",
+            "text": "Giao toàn quyền cho các doanh nghiệp tư nhân."
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ hệ thống pháp luật cũ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đấu tranh phòng chống tham nhũng, lãng phí là nhiệm vụ then chốt để củng cố niềm tin của nhân dân, bảo vệ bản chất tốt đẹp của Nhà nước pháp quyền XHCN."
+      },
+      "source": {
+        "ref": "Câu 40"
+      },
+      "enrichment": {
+        "text": "Luật Phòng, chống tham nhũng năm 2018 (có hiệu lực từ 2019) là một bước hoàn thiện pháp luật. Phòng, chống tham nhũng, lãng phí được xác định là nhiệm vụ then chốt để củng cố niềm tin của nhân dân."
+      }
+    },
+    {
+      "id": "q-041",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin, dân chủ có mang tính giai cấp không?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân chủ không mang tính giai cấp, nó là của chung mọi người."
+          },
+          {
+            "key": "B",
+            "text": "Trong xã hội có giai cấp, dân chủ bao giờ cũng mang tính giai cấp."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ dân chủ tư sản mới mang tính giai cấp."
+          },
+          {
+            "key": "D",
+            "text": "Dân chủ XHCN không mang tính giai cấp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Mác - Lênin khẳng định không có dân chủ \"thuần túy\" hay dân chủ \"nói chung\". Trong xã hội có giai cấp, dân chủ gắn với nhà nước và phục vụ lợi ích của giai cấp thống trị."
+      },
+      "source": {
+        "ref": "Câu 41"
+      },
+      "enrichment": {
+        "text": "Lênin phê phán ý niệm “dân chủ thuần túy”, “dân chủ nói chung” (Cau-xky): trong xã hội có giai cấp thì phải hỏi dân chủ cho giai cấp nào."
+      }
+    },
+    {
+      "id": "q-042",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc xây dựng dân chủ XHCN ở Việt Nam hiện nay gặp phải trở ngại lớn nào từ bên ngoài?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự suy thoái kinh tế thế giới."
+          },
+          {
+            "key": "B",
+            "text": "Âm mưu \"diễn biến hòa bình\", lợi dụng chiêu bài \"dân chủ\", \"nhân quyền\" của các thế lực thù địch."
+          },
+          {
+            "key": "C",
+            "text": "Quá trình toàn cầu hóa."
+          },
+          {
+            "key": "D",
+            "text": "Biến đổi khí hậu."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Các thế lực thù địch thường xuyên sử dụng \"dân chủ, nhân quyền\" làm công cụ để kích động, chống phá, gây bạo loạn lật đổ nhằm xóa bỏ chế độ XHCN ở Việt Nam."
+      },
+      "source": {
+        "ref": "Câu 42"
+      },
+      "enrichment": {
+        "text": "“Diễn biến hòa bình” là chiến lược dùng chính trị, kinh tế, văn hóa, tư tưởng để làm thay đổi chế độ từ bên trong. Văn kiện của Đảng cảnh giác việc lợi dụng chiêu bài “dân chủ”, “nhân quyền” để chống phá."
+      }
+    },
+    {
+      "id": "q-043",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Câu nói \"Chế độ ta là chế độ dân chủ, tức là nhân dân là người chủ, mà Chính phủ là người đầy tớ trung thành của nhân dân\" là của ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "V.I. Lênin"
+          },
+          {
+            "key": "B",
+            "text": "C.Mác"
+          },
+          {
+            "key": "C",
+            "text": "Hồ Chí Minh"
+          },
+          {
+            "key": "D",
+            "text": "Lê Duẩn"
+          }
+        ],
+        "answer": "C",
+        "explanation": "Đây là quan điểm nổi tiếng của Chủ tịch Hồ Chí Minh về bản chất của chế độ nhà nước ta."
+      },
+      "source": {
+        "ref": "Câu 43"
+      },
+      "enrichment": {
+        "text": "Tư tưởng Hồ Chí Minh về dân chủ gắn với “dân là chủ, dân làm chủ”; chính quyền là của dân, do dân, vì dân; cán bộ là công bộc của nhân dân."
+      }
+    },
+    {
+      "id": "q-044",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nền dân chủ xã hội chủ nghĩa được thực thi thông qua công cụ hữu hiệu nhất là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Các tổ chức phi chính phủ."
+          },
+          {
+            "key": "B",
+            "text": "Nhà nước pháp quyền xã hội chủ nghĩa."
+          },
+          {
+            "key": "C",
+            "text": "Các tập đoàn kinh tế."
+          },
+          {
+            "key": "D",
+            "text": "Truyền thông, báo chí."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nhà nước pháp quyền XHCN là thiết chế có quyền lực và chức năng trực tiếp nhất để thể chế hóa và tổ chức thực hiện dân chủ cho nhân dân."
+      },
+      "source": {
+        "ref": "Câu 44"
+      },
+      "enrichment": {
+        "text": "Nhà nước pháp quyền xã hội chủ nghĩa thể chế hóa ý chí của nhân dân thành Hiến pháp, pháp luật, tổ chức thực hiện và bảo đảm quyền làm chủ của nhân dân."
+      }
+    },
+    {
+      "id": "q-045",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong cơ chế vận hành của hệ thống chính trị Việt Nam, vai trò \"Lãnh đạo\" thuộc về tổ chức nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nhà nước."
+          },
+          {
+            "key": "B",
+            "text": "Mặt trận Tổ quốc."
+          },
+          {
+            "key": "C",
+            "text": "Nhân dân."
+          },
+          {
+            "key": "D",
+            "text": "Đảng Cộng sản Việt Nam."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Cơ chế tổng quát là \"Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ\"."
+      },
+      "source": {
+        "ref": "Câu 45"
+      },
+      "enrichment": {
+        "text": "Cơ chế “Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ” đã được nêu trong văn kiện của Đảng thời kỳ đổi mới. Đảng lãnh đạo bằng cương lĩnh, đường lối, chủ trương, cán bộ và kiểm tra."
+      }
+    },
+    {
+      "id": "q-046",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ chế \"Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ\" đòi hỏi Nhà nước phải hoạt động như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lấn sân sang công tác của Đảng."
+          },
+          {
+            "key": "B",
+            "text": "Bao biện, làm thay các tổ chức xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Thể chế hóa đường lối của Đảng thành pháp luật, tổ chức thực hiện và chịu sự giám sát của nhân dân."
+          },
+          {
+            "key": "D",
+            "text": "Không cần chịu sự giám sát của nhân dân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Nhà nước quản lý bằng pháp luật. Mọi hoạt động của nhà nước phải cụ thể hóa đường lối của Đảng và phục vụ, chịu sự kiểm tra của nhân dân."
+      },
+      "source": {
+        "ref": "Câu 46"
+      },
+      "enrichment": {
+        "text": "Nhà nước phải thể chế hóa đường lối của Đảng bằng pháp luật, tổ chức thực hiện, chịu sự giám sát của nhân dân; không làm thay Đảng, cũng không bao biện làm thay tổ chức xã hội."
+      }
+    },
+    {
+      "id": "q-047",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc nâng cao vai trò của Mặt trận Tổ quốc và các tổ chức chính trị - xã hội nhằm mục đích chủ yếu gì trong xây dựng nền dân chủ XHCN?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Để thay thế chức năng quản lý của Nhà nước."
+          },
+          {
+            "key": "B",
+            "text": "Để thay thế vai trò lãnh đạo của Đảng."
+          },
+          {
+            "key": "C",
+            "text": "Để thực hiện chức năng giám sát, phản biện xã hội, bảo vệ quyền lợi chính đáng của nhân dân."
+          },
+          {
+            "key": "D",
+            "text": "Để phát triển kinh tế tư nhân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Mặt trận Tổ quốc và các đoàn thể đại diện cho các tầng lớp nhân dân, đóng vai trò giám sát, phản biện đường lối, chính sách, góp phần phát huy dân chủ."
+      },
+      "source": {
+        "ref": "Câu 47"
+      },
+      "enrichment": {
+        "text": "Mặt trận Tổ quốc và các đoàn thể chính trị - xã hội thực hiện giám sát, phản biện xã hội (Quyết định 217 và 218-QĐ/TW năm 2013 về giám sát, phản biện xã hội và góp ý xây dựng Đảng, chính quyền), không thay thế Đảng hay Nhà nước."
+      }
+    },
+    {
+      "id": "q-048",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khái niệm \"Dân chủ\" không bao hàm yếu tố nào sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quyền lực thuộc về nhân dân."
+          },
+          {
+            "key": "B",
+            "text": "Sự tự do vô tổ chức, vô kỷ luật."
+          },
+          {
+            "key": "C",
+            "text": "Một hình thái nhà nước trong lịch sử."
+          },
+          {
+            "key": "D",
+            "text": "Một giá trị xã hội mang tính nhân loại chung."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Dân chủ phải gắn liền với kỷ luật, kỷ cương và pháp luật. Dân chủ không đồng nghĩa với tự do vô hạn độ hay vô chính phủ."
+      },
+      "source": {
+        "ref": "Câu 48"
+      },
+      "enrichment": {
+        "text": "Dân chủ luôn đi đôi với kỷ luật, kỷ cương và pháp luật. Dân chủ không đồng nghĩa với tự do vô hạn độ hay vô chính phủ; mỗi quyền đi liền với nghĩa vụ."
+      }
+    },
+    {
+      "id": "q-049",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để xây dựng Nhà nước pháp quyền XHCN vững mạnh, cần chú trọng điều gì trong công tác cán bộ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cắt giảm lương của công chức."
+          },
+          {
+            "key": "B",
+            "text": "Nâng cao bản lĩnh chính trị, phẩm chất đạo đức, năng lực quản lý của đội ngũ cán bộ, công chức; xây dựng cơ chế loại bỏ người không hoàn thành nhiệm vụ."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ tuyển dụng người có bằng cấp cao từ nước ngoài."
+          },
+          {
+            "key": "D",
+            "text": "Tăng số lượng biên chế không giới hạn."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cán bộ là cái gốc của mọi công việc. Nhà nước pháp quyền đòi hỏi công chức phải là \"công bộc\" tận tụy, có đức có tài và có cơ chế sàng lọc nghiêm khắc."
+      },
+      "source": {
+        "ref": "Câu 49"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh: “Cán bộ là cái gốc của mọi công việc” (“Sửa đổi lối làm việc”, 1947). Xây dựng đội ngũ cán bộ có phẩm chất, năng lực và cơ chế sàng lọc người không đủ tiêu chuẩn là then chốt của Nhà nước pháp quyền."
+      }
+    },
+    {
+      "id": "q-050",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự ra đời của nền dân chủ XHCN có kế thừa những giá trị của nền dân chủ nào trước đó không?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hoàn toàn phủ định sạch trơn mọi nền dân chủ trước đó."
+          },
+          {
+            "key": "B",
+            "text": "Kế thừa một cách chọn lọc các giá trị tiến bộ của các nền dân chủ trước đó, đặc biệt là dân chủ tư sản (như quyền tự do, bình đẳng, dân chủ, phổ thông đầu phiếu...)."
+          },
+          {
+            "key": "C",
+            "text": "Kế thừa y nguyên mô hình của dân chủ chủ nô."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ kế thừa tư tưởng của chế độ phong kiến."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Chủ nghĩa Mác - Lênin khẳng định sự ra đời của dân chủ XHCN là sự kế thừa có chọn lọc những thành tựu tiến bộ của nhân loại (trong đó có giá trị tự do, bình đẳng, nhân quyền của dân chủ tư sản) và nâng nó lên một chất lượng mới."
+      },
+      "source": {
+        "ref": "Câu 50"
+      },
+      "enrichment": {
+        "text": "Dân chủ xã hội chủ nghĩa kế thừa có chọn lọc các giá trị của nhân loại (tự do, bình đẳng, nhân quyền, phổ thông đầu phiếu…) và nâng chúng lên chất lượng mới; Lênin đánh giá dân chủ tư sản là bước tiến lớn so với chế độ phong kiến."
+      }
+    }
+  ]
+}

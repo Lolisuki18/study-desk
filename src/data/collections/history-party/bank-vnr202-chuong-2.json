@@ -1,0 +1,3754 @@
+{
+  "id": "lich-su-dang-ngan-hang-chuong-2",
+  "title": "Lịch sử Đảng – Ngân hàng bổ sung – Chương 2",
+  "subject": "Lịch sử Đảng",
+  "description": "Ngân hàng VNR202 bổ sung, Chương 2 – Hai cuộc kháng chiến (1945–1975). 127 câu.",
+  "contentType": "multiple-choice",
+  "language": "vi",
+  "source": {
+    "document": "VNR202 - Lịch sử Đảng Cộng sản Việt Nam – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz)",
+    "note": "Nguồn cộng đồng, đã đối chiếu tự động với giáo trình; xem docs/doi-chieu-giao-trinh.md"
+  },
+  "items": [
+    {
+      "id": "b-001",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để tránh sự chú ý và đàn áp của Pháp, Đảng ta đã tuyên bố tự giải tán vào ngày tháng năm nào và đổi tên là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "2-9-1945 - Đảng Cộng sản Đông Dương"
+          },
+          {
+            "key": "B",
+            "text": "25-11-1945 - Hội nghiên cứu Chủ nghĩa Mác - Lênin"
+          },
+          {
+            "key": "C",
+            "text": "3-2-1946 - Đảng Lao động Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "11-11-1945 - Hội nghiên cứu Chủ nghĩa Mác ở Đông Dương"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 1"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 34): Ngày 11/11/1945 Đảng tuyên bố tự giải tán, nhưng thực chất là rút vào hoạt động bí mật dưới danh nghĩa Hội nghiên cứu chủ nghĩa Mác ở Đông Dương.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 34"
+      }
+    },
+    {
+      "id": "b-002",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau khi giành chính quyền, Đảng chủ trương mở rộng mặt trận nào sau đây để tập trung ngon lửa đấu tranh chống Pháp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mặt trận Việt Minh"
+          },
+          {
+            "key": "B",
+            "text": "Mặt trận Liên Việt"
+          },
+          {
+            "key": "C",
+            "text": "Mặt trận Dân chủ"
+          },
+          {
+            "key": "D",
+            "text": "Mặt trận tổ quốc Việt Nam"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 2"
+      }
+    },
+    {
+      "id": "b-003",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ta đã nhân nhượng với quân Trung Hoa Dân quốc như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chấp nhận moi yêu câu cải tổ Chính phủ, Quốc hội theo ý chúng Trung Hoa Dân quốc"
+          },
+          {
+            "key": "B",
+            "text": "Chấp nhận tiêu tiền Trung Quốc, cung cấp một phần lương thực, thực phẩm cho quân Tưởng"
+          },
+          {
+            "key": "C",
+            "text": "Chấp nhận tất cả moi yêu cầu đảm bảo trật tự tri an , phương tiện đi lại của quân Tưởn"
+          },
+          {
+            "key": "D",
+            "text": "Chấp nhận cung cấp toàn bộ lương thực thực phẩm cho quân Tưởng"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 3"
+      }
+    },
+    {
+      "id": "b-004",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Pháp chấp nhận đàm phán với Việt Nam ở Hội nghi Giơnevơ năm 1954 về Đông Dương vì:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sức ép của Liên Xô"
+          },
+          {
+            "key": "B",
+            "text": "Bi thất bại ở Điên Biên Phủ"
+          },
+          {
+            "key": "C",
+            "text": "Dư luận nhân dân thế giới phản đối"
+          },
+          {
+            "key": "D",
+            "text": "Pháp sợ Trung Quốc đưa quân sang giúp đỡ Việt Nam"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 4"
+      }
+    },
+    {
+      "id": "b-005",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội Đảng lần thứ II xác đinh con đường đi lên chủ nghĩa xã hội là một quá trình:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đấu tranh lâu dài, đại thể trải qua ba giai đoạn"
+          },
+          {
+            "key": "B",
+            "text": "Đấu tranh kiên trì, đại thể trải qua bốn giai đoạn"
+          },
+          {
+            "key": "C",
+            "text": "Đấu tranh lâu dài, đại thể trải qua năm giai đoạn"
+          },
+          {
+            "key": "D",
+            "text": "Đấu tranh kiên trì, đại thể trải qua hai giai đoạn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 5"
+      }
+    },
+    {
+      "id": "b-006",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Kết quả lớn nhất mà quân và dân ta đạt được trong chiến dich Việt Bắc - Thu Đông 1947 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh bại âm mưu, kế hoạch đánh nhanh thắng nhanh của thực dân Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Tiêu diệt bộ phận lớn sinh lực đich"
+          },
+          {
+            "key": "C",
+            "text": "Bộ đội chủ lực ta trưởng thành, lớn mạnh"
+          },
+          {
+            "key": "D",
+            "text": "Đẩy quân Pháp vào thế bi động trên chiến trườn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 6"
+      }
+    },
+    {
+      "id": "b-007",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau Cách mạng tháng Tám năm 1945, tàn dư văn hóa lạc hậu của chế độ thực dân, phong kiến để lại hết sức nặng nề là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hơn 60% dân số không biết chữ"
+          },
+          {
+            "key": "B",
+            "text": "Hơn 70% dân số không biết chữ"
+          },
+          {
+            "key": "C",
+            "text": "Hơn 80% dân số không biết chữ"
+          },
+          {
+            "key": "D",
+            "text": "Hơn 90% dân số không biết chữ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 7"
+      }
+    },
+    {
+      "id": "b-008",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm của nước Việt Nam Dân chủ Cộng hòa ngay khi ra đời là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Được các nước lớn công nhận"
+          },
+          {
+            "key": "B",
+            "text": "Được Liên hợp quốc công nhận"
+          },
+          {
+            "key": "C",
+            "text": "Không được sự ủng hộ của các nước Đồng minh"
+          },
+          {
+            "key": "D",
+            "text": "Gắn liền với hậu phương xã hội chủ nghĩa"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 8"
+      }
+    },
+    {
+      "id": "b-009",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thắng lợi nào của quân và dân ta trong cuộc kháng chiến chống Pháp đã làm phá sản hoàn toàn kế hoạch Nava?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến thắng Biên giới Thu - Đông 1950"
+          },
+          {
+            "key": "B",
+            "text": "Chiến thắng Tây Bắc 1953"
+          },
+          {
+            "key": "C",
+            "text": "Chiến thắng Điện Biên Phủ 1954"
+          },
+          {
+            "key": "D",
+            "text": "Chiến thắng Thượng Lào 1954"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 9"
+      }
+    },
+    {
+      "id": "b-010",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội II Đảng Lao động Việt Nam vạch ra hai đối tượng của cách mạng Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa đế quốc xâm lược và phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Bon can thiệp Mỹ và phong kiến phản động"
+          },
+          {
+            "key": "C",
+            "text": "Đế quốc Pháp và phong kiến phản động"
+          },
+          {
+            "key": "D",
+            "text": "Đế quốc Pháp và bon can thiệp M"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 10"
+      }
+    },
+    {
+      "id": "b-011",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Từ tháng 9-1945 đến trước tháng 3-1946 ta chủ trương:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hòa với Tưởng"
+          },
+          {
+            "key": "B",
+            "text": "Hòa với Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Đánh Tưởng"
+          },
+          {
+            "key": "D",
+            "text": "Đánh Pháp"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 11"
+      }
+    },
+    {
+      "id": "b-022",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi nào của Đảng mở đường cho phong trào \"Đồng khởi\" ở miền Nam năm 1960?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi Trung ương 12 khóa II của Đảng (3/1957)"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi Trung ương 1 khóa II của Đảng (12/1957)"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi Trung ương 14 khóa II của Đảng (11/1958)"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi Trung ương 15 khóa Il của Đảng (1/1959"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 22"
+      }
+    },
+    {
+      "id": "b-023",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm nổi bật của nước ta sau 1954 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đuổi thực dân Pháp và can thiệp Mỹ xâm lược, giành độc lập dân tộc"
+          },
+          {
+            "key": "B",
+            "text": "Cả nước quá độ đi lên chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Phát triển chế độ dân chủ nhân dân, gây cơ sở cho"
+          },
+          {
+            "key": "D",
+            "text": "Tiến hành đồng thời cách mạng xã hội chủ nghĩa ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam chủ nghĩa xã hội"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 23"
+      }
+    },
+    {
+      "id": "b-024",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nghi quyết Hội nghi Trung ương lần thứ 15 (1/1959) đán h dấu sự thay đổi chiến lược trong chỉ đạo cách mạn g miền Nam ở điểm nào",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chuyển cách mạng miền Nam sang đấu tranh đòi quyền tự do dân chủ"
+          },
+          {
+            "key": "B",
+            "text": "Kết hợp đấu tranh chính tri với đấu tranh quân sự, tiến tới khởi nghĩa vũ trang giành chính quyền về tay nhân dân"
+          },
+          {
+            "key": "C",
+            "text": "Sử dung đấu tranh chính tri giành chính quyền về ta y nhân dâ"
+          },
+          {
+            "key": "D",
+            "text": "Tập trung lực lượng chính tri, lực lượng vũ trang đấu tranh giành độc lập dân tộ"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 24"
+      }
+    },
+    {
+      "id": "b-025",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Âm mưu của Mỹ trong chiến lược chiến tranh đặc biệt là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dùng người Việt đánh người Việt"
+          },
+          {
+            "key": "B",
+            "text": "Dùng người Mỹ đánh người Việt"
+          },
+          {
+            "key": "C",
+            "text": "Dùng người Đông Dương đánh người đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Dùng người Việt đánh người Việt và dùng người Đông Dương đánh người Đông Dương"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 25"
+      }
+    },
+    {
+      "id": "b-026",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 bắt đầu bằng chiến dich nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến dich Mậu Thân (1968)"
+          },
+          {
+            "key": "B",
+            "text": "Chiến dich Tây Nguyên (3/1975)"
+          },
+          {
+            "key": "C",
+            "text": "Chiến dich Huế - Đà Nẵng (3/1975)"
+          },
+          {
+            "key": "D",
+            "text": "Chiến dich Hồ Chí Minh (4/1975"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 26"
+      }
+    },
+    {
+      "id": "b-027",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phong trào Đồng Khởi làm thất bại loại hình chiến lược chiến tranh nào của Mỹ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến tranh đơn phương"
+          },
+          {
+            "key": "B",
+            "text": "Chiến tranh đặc biệt"
+          },
+          {
+            "key": "C",
+            "text": "Chiến tranh cuc bộ"
+          },
+          {
+            "key": "D",
+            "text": "Việt Nam hóa chiến tranh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 27"
+      }
+    },
+    {
+      "id": "b-028",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến lược \"Chiến tranh đặc biệt\" của Mỹ là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Một hình thức mới của chủ nghĩa thực dân cũ, dựa trên nền tảng lực lượng quân nguy, dưới sự chỉ huy của cố vấn Mỹ, bằng phương tiện chiến tranh Mỹ"
+          },
+          {
+            "key": "B",
+            "text": "Một hình thức chiến tranh của chủ nghĩa thực dân mới, được tiến hành bằng quân đội viễn chinh Mỹ và quân chư hầu"
+          },
+          {
+            "key": "C",
+            "text": "Một hình thức chiến tranh của chủ nghĩa thực dân cũ, được tiến hành bằng Quân đội lính đánh thuê, dưới sự chỉ huy của cố vấn Mỹ, phương tiện chiến tranh Mỹ"
+          },
+          {
+            "key": "D",
+            "text": "Một hình thức chiến tranh của chủ nghĩa thực dân mới, được tiến hành bằng quân đội tay sai, dưới sự chỉ huy của cố vấn Mỹ, bằng phương tiện chiến tranh Mỹ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 28"
+      }
+    },
+    {
+      "id": "b-029",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặt trận Dân tộc giải phóng miền Nam Việt Nam được thành lập ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bến Tre"
+          },
+          {
+            "key": "B",
+            "text": "Tây Ninh"
+          },
+          {
+            "key": "C",
+            "text": "Bình Đinh"
+          },
+          {
+            "key": "D",
+            "text": "Tây Nguyên"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 29"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 47): Ngày 20/12/1960 Mặt trận Dân tộc giải phóng miền Nam Việt Nam thành lập tại xã Tân Lập (Tây Ninh), Chủ tịch là luật sư Nguyễn Hữu Thọ.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 47"
+      }
+    },
+    {
+      "id": "b-030",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những sự kiện làm bùng nổ phong trào Đồng Khởi năm 1960 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ngăn cản hiệp thương, tổng tuyển cử thống nhất đất nước"
+          },
+          {
+            "key": "B",
+            "text": "Ban hành Luật 10/59"
+          },
+          {
+            "key": "C",
+            "text": "Lập ấp chiến lược"
+          },
+          {
+            "key": "D",
+            "text": "Các phương án trả lời đều đúng"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 30"
+      }
+    },
+    {
+      "id": "b-031",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chính cương của Đảng lao động Việt Nam đã nêu ra các nhiệm vu cơ bản của cách mạng Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đuổi bon đế quốc xâm lược, giành độc lập và thống nhất thật sự cho dân tộc; Xóa bỏ những di tích phong kiến và nửa phong kiến, làm cho người cày có ruộng; Phát triển chế độ dân chủ nhân dân, gây cơ sở cho chủ nghĩa xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Đánh đuổi bon đế quốc xâm lược, giành độc lập và thống nhất thật sự cho dân tộc; Xóa bỏ những di tích phong kiến và nửa phong kiến, làm cho người cày có ruộng; Phát triển chế độ dân chủ nhân dân, gây cơ sở cho xã hôi dân chủ."
+          },
+          {
+            "key": "C",
+            "text": "Đánh đuổi bon phong kiến, giành độc lập và thống nhất thật sự cho dân tộc; Xóa bỏ những di tích phong kiến và nửa phong kiến, làm cho người cày có ruộng; Phát triển chế độ dân chủ nhân dân, gây cơ sở cho chủ nghĩa xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Đánh đuổi bon đế quốc xâm lược, giành độc lập và thống nhất thật sự cho dân tộc; ... ; Phát triển chế độ dân chủ nhân dân, gây cơ sở cho xã hội mớ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 31"
+      }
+    },
+    {
+      "id": "b-045",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phạm Hùng",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phạm Hùng"
+          },
+          {
+            "key": "B",
+            "text": "Châu Văn Liêm"
+          },
+          {
+            "key": "C",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Phạm Hữu Tho"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 45"
+      }
+    },
+    {
+      "id": "b-053",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ 1954 - 1975, cuộc cách mạng dân tộc dân chủ nhân dân ở miền Nam Việt Nam có vai trò quyết đinh trực tiếp đối với sự nghiệp giải phóng miền Nam vì cuộc cách mạng này:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bảo vệ vững chắc hậu phương miền Bắc xã hội chủ nghĩa."
+          },
+          {
+            "key": "B",
+            "text": "Làm thất bại hoàn toàn chiến lược toàn cầu của Mỹ."
+          },
+          {
+            "key": "C",
+            "text": "Trực tiếp xóa bỏ ách áp bức, bóc lột của đia chủ và tư sản miền Nam."
+          },
+          {
+            "key": "D",
+            "text": "Trực tiếp đánh đổ ách thống tri của Mỹ và chính quyền Sài Gòn"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 53"
+      }
+    },
+    {
+      "id": "b-062",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đảng ta đã lựa chon giải pháp gì trong mối quan hệ với thực dân Pháp sau ngày Pháp và Tưởng ký hiệp ước Trùng Khánh (28-2-1946)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kháng chiến chống thực dân Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Chống cả quân đội Tường và Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Nhân nhượng với quân đội Tưởng"
+          },
+          {
+            "key": "D",
+            "text": "Thương lượng và hòa hoãn với Pháp"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 62"
+      }
+    },
+    {
+      "id": "b-063",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngàn cân treo sợi tóc",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có những thách thức to lớn"
+          },
+          {
+            "key": "B",
+            "text": "Vô cùng khó khăn, nguy hiểm"
+          },
+          {
+            "key": "C",
+            "text": "Vô cùng hiểm nghèo"
+          },
+          {
+            "key": "D",
+            "text": "Ngàn cân treo sợi tóc"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 63"
+      }
+    },
+    {
+      "id": "b-064",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thời gian từ tháng 3 năm 1946 đến ngày 19/12/1946, Đảng lãnh đạo nhân dân thực hiện chủ trương chiến lược:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hòa để tiến"
+          },
+          {
+            "key": "B",
+            "text": "Đối đầu với quân đội Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Đối đầu với quân đội Tưởng"
+          },
+          {
+            "key": "D",
+            "text": "Giải giáp quân đội Nhật"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 64"
+      }
+    },
+    {
+      "id": "b-065",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai là tác giả của tác phẩm Kháng chiến nhất đinh thắng lợi?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hồ Chí Minh"
+          },
+          {
+            "key": "B",
+            "text": "Lê Duẩn"
+          },
+          {
+            "key": "C",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Võ Nguyên Giáp"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 65"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 36): Giáo trình nhắc tác phẩm “Kháng chiến nhất định thắng lợi” trong phần nói về đường lối kháng chiến sau Lời kêu gọi toàn quốc kháng chiến ngày 19/12/1946.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 36"
+      }
+    },
+    {
+      "id": "b-066",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phong trào mà Đảng ta đã vận động nhân dân chống nạn mù chữ diễn ra sau cách mạng tháng Tám năm 1945 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xây dựng nếp sống văn hóa mới"
+          },
+          {
+            "key": "B",
+            "text": "Bình dân hoc vu"
+          },
+          {
+            "key": "C",
+            "text": "Bài trừ các tệ nạn xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Xoá bỏ văn hóa thực dân nô dich phản độn"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 66"
+      }
+    },
+    {
+      "id": "b-067",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khối liên minh nhân dân ba nước Việt - Lào - Cam puchia được thành lập khi nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tháng 3 năm 1950"
+          },
+          {
+            "key": "B",
+            "text": "Tháng 3 năm 1953"
+          },
+          {
+            "key": "C",
+            "text": "Tháng 3 năm 1954"
+          },
+          {
+            "key": "D",
+            "text": "Tháng 3 năm 1951"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 67"
+      }
+    },
+    {
+      "id": "b-068",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại Đại hội lần thứ II Đảng cộng sản Đông Dương quyết đinh tách ra thành ba Đảng cách mạng ở ba nước Đông Dương. Ở Việt Nam, Đảng ra hoạt động công khai lấy tên là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Lao động Việt Nam"
+          },
+          {
+            "key": "B",
+            "text": "Đảng Dân chủ Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Đảng Cách mạng Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Đảng Xã hội Việt Nam"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 68"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 38): Ở Việt Nam, Đảng ra hoạt động công khai, lấy tên là Đảng Lao động Việt Nam.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 38"
+      }
+    },
+    {
+      "id": "b-069",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Kế hoạch quân sự được xem là lớn nhất trong quá trình xâm lược Việt Nam của Pháp từ 1945-1954?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kế hoach Rove"
+          },
+          {
+            "key": "B",
+            "text": "Kế hoach Nava"
+          },
+          {
+            "key": "C",
+            "text": "Kế hoạch \"đánh nhanh thắng nhanh\""
+          },
+          {
+            "key": "D",
+            "text": "Kế hoach Đờ Lát đơ Tátxinhi"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 69"
+      }
+    },
+    {
+      "id": "b-070",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào trong Hiệp đinh Sơ bộ 6-3-1946 tạo điều kiện cho ta có thời gian để chuẩn bi lực lượng đối ph ó lâu dài với Pháp",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pháp công nhận Việt Nam là một quốc gia tự do trong khối liên hiệp Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Pháp được đưa 15 ngàn quân ra miền Bắc thay thế quân Tưởng"
+          },
+          {
+            "key": "C",
+            "text": "Hai bên ngừng bắn ở Nam Bộ"
+          },
+          {
+            "key": "D",
+            "text": "Hai bên thực hiện tập kết, chuyển quân"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 70"
+      }
+    },
+    {
+      "id": "b-071",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến dich Điện Biên Phủ được coi là một chiến dich li ch sử của quân đội ta và được chia làm bao nhiêu đợ",
+        "options": [
+          {
+            "key": "A",
+            "text": "2 đợt"
+          },
+          {
+            "key": "B",
+            "text": "3 đợt"
+          },
+          {
+            "key": "C",
+            "text": "4 đợt"
+          },
+          {
+            "key": "D",
+            "text": "5 đợt"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 71"
+      }
+    },
+    {
+      "id": "b-081",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tất cả để đánh thắng giặc Mỹ xâm lược",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tất cả để đánh thắng giặc Mỹ xâm lược"
+          },
+          {
+            "key": "B",
+            "text": "Tất cả để thống nhất nước nhà"
+          },
+          {
+            "key": "C",
+            "text": "Tất cả vì miền Nam ruột thit"
+          },
+          {
+            "key": "D",
+            "text": "Các phương án trả lời đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 81"
+      }
+    },
+    {
+      "id": "b-082",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hiệp đinh Pari về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết (1973) đã cam kết:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tôn trong độc lập, chủ quyền, thống nhất, toàn ve n lãnh thổ của nước Việt Na"
+          },
+          {
+            "key": "B",
+            "text": "Tôn trong độc lập, chủ quyền, thống nhất, toàn ve n lãnh thổ của nước Việt Nam Dân chủ Cộng hò"
+          },
+          {
+            "key": "C",
+            "text": "Tôn trong độc lập, chủ quyền, thống nhất, toàn ve n lãnh thổ của nước Việt Nam Cộng hò"
+          },
+          {
+            "key": "D",
+            "text": "Tôn trong độc lập, chủ quyền, thống nhất, toàn ve n lãnh thổ của Cộng hòa Miền Nam Việt N"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 82"
+      }
+    },
+    {
+      "id": "b-083",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong giai đoạn 1965 - 1968, ở miền Nam, Mỹ đã thực hiện chiến lược chiến tranh nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến tranh đơn phương"
+          },
+          {
+            "key": "B",
+            "text": "Chiến tranh đặc biệt"
+          },
+          {
+            "key": "C",
+            "text": "Chiến tranh cuc bộ"
+          },
+          {
+            "key": "D",
+            "text": "Việt Nam hóa chiến tranh"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 83"
+      }
+    },
+    {
+      "id": "b-084",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến thắng Phước Long (1/1975) có ý nghĩa như thế nào đối với việc Đảng đề ra quyết tâm chiến lược giải phóng miền Nam trong hai năm 1975-1976?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đòn đánh quan trong"
+          },
+          {
+            "key": "B",
+            "text": "Đòn đánh quyết đinh"
+          },
+          {
+            "key": "C",
+            "text": "Đòn thăm dò chiến lược"
+          },
+          {
+            "key": "D",
+            "text": "Đòn đánh mở màn"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 84"
+      }
+    },
+    {
+      "id": "b-085",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chuyển hướng xây dựng kinh tế, bảo đảm tiếp tuc xây dựng miền Bắc vững mạnh trong điều kiện có chiến tranh",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chuyển hướng xây dựng kinh tế, bảo đảm tiếp tuc xây dựng miền Bắc vững mạnh trong điều kiện có chiến tran"
+          },
+          {
+            "key": "B",
+            "text": "Tiếp tuc xây dựng kinh tế ở miền Bắc làm cho miền Bắc trở thành hậu phương lớn của cả nước"
+          },
+          {
+            "key": "C",
+            "text": "Không tiếp tuc xây dựng kinh tế ở miền Bắc để tập trung cho phát triển lực lượng quốc phòng"
+          },
+          {
+            "key": "D",
+            "text": "Không chuyển hướng xây dựng kinh tế, tiếp tuc phát triển kế hoạch 5 năm ở miền Bắ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 85"
+      }
+    },
+    {
+      "id": "b-086",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giương cao ngon cờ độc lập dân tộc và dân ch",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giương cao ngon cờ độc lập dân tộc và dân chủ"
+          },
+          {
+            "key": "B",
+            "text": "Kiên đinh tư tưởng chiến lược tiến công quyết đánh và quyết thắng đế quốc Mỹ xâm lược"
+          },
+          {
+            "key": "C",
+            "text": "Thực hiện chiến tranh nhân dân linh hoạt sáng tạo"
+          },
+          {
+            "key": "D",
+            "text": "Coi trong công tác tổ chức, công tác xây dựng Đản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 86"
+      }
+    },
+    {
+      "id": "b-087",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại hội nghi nào, Ban Chấp hành Trung ương Đảng quyết đinh để nhân dân miền Nam sử dung bạo lực cách mạ ng đánh đổ chính quyền Mỹ - Diệ",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi Trung ương lần thứ 15 (1/1959)"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi Trung ương lần thứ 11 (3/1965)"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi Trung ương lần thứ 12 (12/1965)"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi Trung ương lần thứ 21 (7/1973"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 87"
+      }
+    },
+    {
+      "id": "b-088",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Từ năm 1954 đến năm 1975, Mỹ đã thực hiện mấy loại hình chiến tranh ở Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "2 loại hình chiến tranh"
+          },
+          {
+            "key": "B",
+            "text": "3 loại hình chiến tranh"
+          },
+          {
+            "key": "C",
+            "text": "4 loại hình chiến tranh"
+          },
+          {
+            "key": "D",
+            "text": "5 loại hình chiến tranh"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 88"
+      }
+    },
+    {
+      "id": "b-089",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội làn thứ III của Đảng hop tại thủ đô Hà Nội từ ngày 5 đến ngày 10/09/1960. Đại hội đã hoàn chỉnh đường lối chiến lược chung của cách mạng Việt Nam trong giai đoạn mới và vạch ra hai nhiệm vu chiến lượ c đó là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tiến hành cách mạng xã hội chủ nghĩa ở miền Bắc. Giải phóng miền Nam khỏi ách thống tri của đế quốc Mỹ và bon tay sai, thự c hiện thống nhất nước nhà , hoàn thành độc lập và dâ n chủ trong cả nư Mỹ và bon tay sai, thực hiện thống nhất nước nhà, hoà n thành độc lập và dân chủ trong cả nướ"
+          },
+          {
+            "key": "B",
+            "text": "Tiến hành cách mạng dân chủ nhân dân ở miền Bắc. Giải phóng miền Nam khỏi ách thống tri của đế quốc"
+          },
+          {
+            "key": "C",
+            "text": "Tiến hành cách mạng dân tộc dân chủ ở miền Bắc. Giải phóng miền Nam khỏi ách thống tri của đế quốc Mỹ và bon tay sai, thực hiện thống nhất nước nhà, hoà n thành độc lập và dân chủ trong cả nư"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 89"
+      }
+    },
+    {
+      "id": "b-090",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là hạn chế của Đảng trong quá trình lãnh đạo, chỉ đạo các hoạt động quân sự năm 1968?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thiếu tính sáng tạo, bất ngờ, táo bạo"
+          },
+          {
+            "key": "B",
+            "text": "Có biểu hiện chủ quan trong việc đánh giá tình hình, đề ra yêu cầu chưa sát với thực tế"
+          },
+          {
+            "key": "C",
+            "text": "Các trận đánh không có ý nghĩa chiến lược"
+          },
+          {
+            "key": "D",
+            "text": "Không buộc đich phải xuống thang chiến tran"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 90"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 108): Trong lãnh đạo, chỉ đạo quân sự năm 1968, Đảng có biểu hiện chủ quan khi đánh giá tình hình, đề ra yêu cầu chưa sát thực tế.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 108"
+      }
+    },
+    {
+      "id": "b-109",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại sao cuộc tổng tiến công nổi dậy Mậu Thân 1968 bi thất bại vừa mất đất, mất dân, hy sinh nhiều nhưng Đảng ta vẫn đánh giá thành công?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chúng ta đã giáng đòn lớn và mạnh buộc Mỹ ngồi vào bàn đàm phán"
+          },
+          {
+            "key": "B",
+            "text": "Chúng ta đã giáng đòn lớn và mạnh buộc Mỹ kí hiệp đinh Pari"
+          },
+          {
+            "key": "C",
+            "text": "Buộc Mỹ phải thừa nhận thất bại của chiến lược Việt Nam hóa chiến tranh"
+          },
+          {
+            "key": "D",
+            "text": "Mỹ buộc phải rút quân về nước"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 109"
+      }
+    },
+    {
+      "id": "b-111",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thực tiễn 30 năm chiến tranh cách mạng Việt Nam (1945-1975) cho thấy: Hậu phương của chiến tranh nhân dân là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Không thể phân biệt rạch rồi với tiền tuyến chỉ bằng yếu tố không gian"
+          },
+          {
+            "key": "B",
+            "text": "Ở phía sau và phân biệt rạch ròi với tiền tuyến bằng yếu tố không gian"
+          },
+          {
+            "key": "C",
+            "text": "Luôn ở phía sau và bảo đảm cung cấp sức người, sức của cho tiền tuyến"
+          },
+          {
+            "key": "D",
+            "text": "Là đối xứng của tiền tuyến, thực hiện nhiệm vu chi viện cho tiền tuyế"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 111"
+      }
+    },
+    {
+      "id": "b-122",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến thắng Điện Biên Phủ năm 1954 của quân dân Việt Nam đã:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh dấu mốc thẳng lợi của cuộc kháng chiến chống Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Làm phá sản hoàn toàn kế hoạch Nava của thực dân Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Buộc Pháp phải ngồi vào đàm phán tại Giơnevơ"
+          },
+          {
+            "key": "D",
+            "text": "Bước đầu làm phá sản kế hoạch Nava của thực dân Pháp"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 122"
+      }
+    },
+    {
+      "id": "b-123",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong cương lĩnh thứ ba - Chính cương của Đảng Lao động Việt Nam (2/1951), Đảng ta đã khẳng đinh nhận thức của mình về triển vong của cách mạng Việt Nam là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đi tới xã hội cộng sản"
+          },
+          {
+            "key": "B",
+            "text": "Tiến tới chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Đi tới xã hội dân chủ"
+          },
+          {
+            "key": "D",
+            "text": "Tiến tới chủ nghĩa tư bản"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 123"
+      }
+    },
+    {
+      "id": "b-124",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đầu năm 1953, nhằm cứu vãn tình thế ngày càng xa lầy và tìm kiếm giải pháp chính tri có \"danh dự\", Pháp và Mỹ đã đưa một viên tướng Pháp sang làm tổng chỉ huy quân đội pháp ở Đông Dương và lập kế hoạch quân sự nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nava"
+          },
+          {
+            "key": "B",
+            "text": "De Castries"
+          },
+          {
+            "key": "C",
+            "text": "Salan"
+          },
+          {
+            "key": "D",
+            "text": "Leclerc"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 124"
+      }
+    },
+    {
+      "id": "b-125",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào dưới đây thuộc Hiệp đinh Sơ bộ (6-3-1946)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Việt Nam là một quốc gia độc lập trong khối Liên hợp Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Việt Nam là một quốc gia tự tri trong khối Liên hợp Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Việt Nam là một quốc gia tự do trong khối Liên hợp Pháp"
+          },
+          {
+            "key": "D",
+            "text": "Việt Nam là một quốc gia tự chủ trong khối Liên hợp Pháp"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 125"
+      }
+    },
+    {
+      "id": "b-126",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến dich lich sử Điện Biên Phủ 1954 là đỉnh cao của",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khởi nghĩa chống Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Kháng chiến chống Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Kháng chiến chống Mĩ"
+          },
+          {
+            "key": "D",
+            "text": "Chiến tranh chống Pháp"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 126"
+      }
+    },
+    {
+      "id": "b-127",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bản chỉ thi \"Kháng chiến, kiến quốc\" ngày 25/11/1945 của Trung ương Đảng đã xác đinh ai là kẻ thù chính củ a cách mạng Việt Nam lúc này",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thực dân Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Đế quốc Anh"
+          },
+          {
+            "key": "C",
+            "text": "Bon quân phiệt quốc dân đảng Trung Hoa"
+          },
+          {
+            "key": "D",
+            "text": "Phát xít Nhật"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 127"
+      }
+    },
+    {
+      "id": "b-137",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm lớn nhất của cách mạng Việt Nam sau tháng 7/1954 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kẻ thù chính lúc này là đế quốc Mỹ với tiềm lực kinh tế và quân sự hùng mạnh"
+          },
+          {
+            "key": "B",
+            "text": "Miền Bắc đi lên chủ nghĩa xã hội từ một nền nông nghiệp lạc hậu"
+          },
+          {
+            "key": "C",
+            "text": "Miền Nam trở thành thuộc đia kiểu mới, do chính quyền đối phương quản lý"
+          },
+          {
+            "key": "D",
+            "text": "Đất nước bi chia thành hai miền, có hai chế độ chính tri xã hội khác nh"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 137"
+      }
+    },
+    {
+      "id": "b-138",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngày 18/3/1975, Bộ Chính tri quyết đinh",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giải phóng miền Nam trong năm 1975"
+          },
+          {
+            "key": "B",
+            "text": "Giải phóng miền Nam trong hai năm 1975-1976"
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng miền Nam trong tháng 4 năm 1975"
+          },
+          {
+            "key": "D",
+            "text": "Giải phóng miền Nam trước mùa mưa năm 1975"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 138"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 114): Sau chiến thắng ở Tây Nguyên, cuộc họp Bộ Chính trị ngày 18/3/1975 quyết định giải phóng miền Nam trong năm 1975.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 114"
+      }
+    },
+    {
+      "id": "b-139",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mỹ Nguy không thực thi hiệp đinh Giơ-ne-vơ bằng cách",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ngăn cản hiệp thương, tống tuyến cử thống nhất đất nước"
+          },
+          {
+            "key": "B",
+            "text": "Ban hành Luật 10/59"
+          },
+          {
+            "key": "C",
+            "text": "Thực hiện chiến dich lập ấp chiến lược"
+          },
+          {
+            "key": "D",
+            "text": "Các phương án trả lời đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 139"
+      }
+    },
+    {
+      "id": "b-140",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ý nghĩa quan trong của phong trào Đồng Khởi là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chuyển cách mạng miền Nam từ thế giữ gìn lực lượng sang thế tiến công"
+          },
+          {
+            "key": "B",
+            "text": "Lật đồ chính quyền Mỹ - Diệm"
+          },
+          {
+            "key": "C",
+            "text": "Mỹ phải ngồi vào bàn đàm phán"
+          },
+          {
+            "key": "D",
+            "text": "Mỹ phải kí hiệp đinh Par"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 140"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 94): Thắng lợi của phong trào Đồng khởi là bước nhảy vọt của cách mạng miền Nam: chuyển từ thế giữ gìn lực lượng sang thế tiến công.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 94"
+      }
+    },
+    {
+      "id": "b-141",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội III (9-1960) của Đảng đã thông qua đường lối nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đuổi thực dân Pháp và can thiệp Mỹ xâm lược, giành độc lập và thống nhất thật sự cho dân tộc"
+          },
+          {
+            "key": "B",
+            "text": "Cả nước quá độ đi lên chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Phát triển chế độ dân chủ nhân dân, gây cơ sở cho chủ nghĩa xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Đường lối cách mạng xã hội chủ nghĩa ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 141"
+      }
+    },
+    {
+      "id": "b-142",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai là Tư lệnh Chiến dich Hồ Chí Minh giải phóng Sài Gòn - Gia Đinh tháng 4/1975",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lê Trong Tấn"
+          },
+          {
+            "key": "B",
+            "text": "Văn Tiến Dũng"
+          },
+          {
+            "key": "C",
+            "text": "Trần Văn Trà"
+          },
+          {
+            "key": "D",
+            "text": "Hoàng Văn Thái"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 142"
+      }
+    },
+    {
+      "id": "b-143",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hiệp đinh Pari về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết (1/1973) đánh dấu hoàn thành nhiệm vu của cách mạng miền Nam, đó là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thống nhất đất nước"
+          },
+          {
+            "key": "B",
+            "text": "Giải phóng miền Nam"
+          },
+          {
+            "key": "C",
+            "text": "Buộc quân đội Mỹ rút khỏi miền Nam"
+          },
+          {
+            "key": "D",
+            "text": "Chiến tranh kết thúc"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 143"
+      }
+    },
+    {
+      "id": "b-153",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chon các đáp án đúng. Đại hội lần thứ II Đảng Cộng sản Đông Dương (1951) đã quyết đinh:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giữ nguyên Đảng Cộng sản Đông Dương"
+          },
+          {
+            "key": "B",
+            "text": "Đổi tên thành Đảng Lao động Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Thành lập chính đảng cách mạng riêng ở 2 nước Lào và Campuchia"
+          },
+          {
+            "key": "D",
+            "text": "Chỉ thành lập chính đảng cách mạng ở Việt Nam"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 153"
+      }
+    },
+    {
+      "id": "b-154",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhân tố hàng đầu đảm bảo thắng lợi của cuộc kháng chiến chống Mĩ, cứu nước (1954-1975) là sự lãnh đạo của Đảng Cộng sản Việt Nam vì Đảng :",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tranh thủ được sự giúp đỡ của các nước xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Có đường lối cách mạng đúng đắn, sáng tạo, độc lập tự chủ"
+          },
+          {
+            "key": "C",
+            "text": "Lãnh đạo xây dựng miền Bắc thành hậu phương vững mạnh"
+          },
+          {
+            "key": "D",
+            "text": "Đã kết hợp sức mạnh toàn dân tộc với sức mạnh của thời đại"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 154"
+      }
+    },
+    {
+      "id": "b-164",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đường lối toàn quốc kháng chiến của Đảng vạch ra muc tiêu của kháng chiến là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh phản động thực dân Pháp xâm lược, giành thống nhất và độc lập"
+          },
+          {
+            "key": "B",
+            "text": "Đánh phản động phát xít Nhật xâm lược, giành thống nhất và độc lập"
+          },
+          {
+            "key": "C",
+            "text": "Đánh phản động để quốc Mỹ xâm lược, giành thống nhất và độc lập"
+          },
+          {
+            "key": "D",
+            "text": "Đánh phản động Trung Hoa Dân Quốc xâm lược, giành thống nhất và độc lập"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 164"
+      }
+    },
+    {
+      "id": "b-165",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngày 23-9-1945 gắn với sự kiện lich sử nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pháp nổ súng xâm lược nước ta lần thứ 2"
+          },
+          {
+            "key": "B",
+            "text": "Bác ra lời kêu goi toàn quốc kháng chiến"
+          },
+          {
+            "key": "C",
+            "text": "Nhật đảo chính Pháp độc chiếm Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi quốc dân ở Tân Trà"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 165"
+      }
+    },
+    {
+      "id": "b-166",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngay sau khi cách mạng tháng Tám 1945 thành công, thực dân Pháp được đảng coi là kẻ thù như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kẻ thù chính"
+          },
+          {
+            "key": "B",
+            "text": "Kẻ thù phu"
+          },
+          {
+            "key": "C",
+            "text": "Không nguy hiểm"
+          },
+          {
+            "key": "D",
+            "text": "Chờ giải giáp của quân đồng minh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 166"
+      }
+    },
+    {
+      "id": "b-167",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngày 12/12/1946, Ban Thường vu Trung ương Đảng đã ra:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quân lệnh số 1"
+          },
+          {
+            "key": "B",
+            "text": "Lời kêu goi Tổng khởi nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Chỉ thi Toàn dân kháng chiến"
+          },
+          {
+            "key": "D",
+            "text": "Lời kêu goi Toàn quốc kháng chiế"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 167"
+      }
+    },
+    {
+      "id": "b-168",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vu chống giặc dốt sau Cách mạng tháng Tám (1945) thể hiện qua phong trào nào sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Toàn dân đưa trẻ đến trường"
+          },
+          {
+            "key": "B",
+            "text": "Toàn dân tham gia xóa nạn mù chữ"
+          },
+          {
+            "key": "C",
+            "text": "Bình dân hoc vu"
+          },
+          {
+            "key": "D",
+            "text": "Truyền bá quốc ngữ"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 168"
+      }
+    },
+    {
+      "id": "b-169",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những khó khăn của nước ta trong những năm 1953-1954 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa đế quốc xâm lược và phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Bon can thiệp Mỹ và phong kiến phản động"
+          },
+          {
+            "key": "C",
+            "text": "Đế quốc Pháp và phong kiến"
+          },
+          {
+            "key": "D",
+            "text": "Đế quốc Pháp và bon can thiệp M"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 169"
+      }
+    },
+    {
+      "id": "b-170",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Phải tự cấp, tự túc về moi mặt",
+        "options": [
+          {
+            "key": "A",
+            "text": "\"Phải tự cấp, tự túc về moi mặt\""
+          },
+          {
+            "key": "B",
+            "text": "\"Phải đánh đich bằng sức mình\""
+          },
+          {
+            "key": "C",
+            "text": "\"Phải tự vũ trang để thắng đinh về moi mặt"
+          },
+          {
+            "key": "D",
+            "text": "\"Phải biết tranh thủ sự giúp đỡ của các nước\""
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 170"
+      }
+    },
+    {
+      "id": "b-171",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngày 19/10/1946, Ban Thường vu Trung ương Đảng mở Hội nghi quân sự toàn quốc lần thứ nhất, do Tổng Bí th ư Trường Chinh chủ trì, Hội nghi xác đi",
+        "options": [
+          {
+            "key": "A",
+            "text": "\"Không sớm thì muộn, Pháp sẽ đánh mình và mình nhất đinh phải đánh Pháp\""
+          },
+          {
+            "key": "B",
+            "text": "\"Không sớm thì muộn, Pháp sẽ tấn công mình và mình nhất đinh phải đánh Pháp\""
+          },
+          {
+            "key": "C",
+            "text": "\"Không sớm thì muộn, Pháp sẽ đánh chiếm mình và mình nhất đinh sẽ thắng Pháp"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 171"
+      }
+    },
+    {
+      "id": "b-172",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lời kêu goi toàn quốc kháng chiến của Chủ tich H ồ Chí Mi",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ thi Toàn dân kháng chiến của Ban Thường vu Trun g ương Đản"
+          },
+          {
+            "key": "B",
+            "text": "Lời kêu goi toàn quốc kháng chiến của Chủ tich Hồ Ch í Min"
+          },
+          {
+            "key": "C",
+            "text": "Tác phẩm Kháng chiến nhất đinh thắng lợi của Tổng Bí thư Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Chỉ thi sửa soạn khởi nghĩa của Tổng bộ Việt Min"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 172"
+      }
+    },
+    {
+      "id": "b-173",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đường lối kháng chiến chống thực dân Pháp thể hiện tập trung trong ba văn kiện quan trong, đó là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Toàn dân kháng chiến, Lời kêu goi toàn quốc kháng chiến, Kháng chiến nhất đin h thắng l lợi"
+          },
+          {
+            "key": "B",
+            "text": "Nhật - Pháp bắn nhau và hành động của chúng ta, Kháng chiến kiến quốc, Kháng chiến nhất đinh thắng"
+          },
+          {
+            "key": "C",
+            "text": "Toàn dân kháng chiến, Nhật - Pháp bắn nhau và hành động của chúng ta, Kháng chiến kiến quốc"
+          },
+          {
+            "key": "D",
+            "text": "Lời kêu goi toàn quốc kháng chiến, Nhật - Pháp bắn nhau và hành động của chúng ta, Kháng chiến kiến quố"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 173"
+      }
+    },
+    {
+      "id": "b-181",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để thực hiện chính sách \"Tổ cộng, diệt cộng\" Ngô Đinh Diệm đưa ra:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Luật 10/59"
+          },
+          {
+            "key": "B",
+            "text": "Luật nhân quyền"
+          },
+          {
+            "key": "C",
+            "text": "Luật bình đinh"
+          },
+          {
+            "key": "D",
+            "text": "Các phương án trả lời đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 181"
+      }
+    },
+    {
+      "id": "b-182",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội đại biểu toàn quốc lần thứ III của Đảng được tổ chức tại:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sài Gòn"
+          },
+          {
+            "key": "B",
+            "text": "Hà Nội"
+          },
+          {
+            "key": "C",
+            "text": "Tân Trào"
+          },
+          {
+            "key": "D",
+            "text": "Hóc môn"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 182"
+      }
+    },
+    {
+      "id": "b-183",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quan điểm nào sau đây của Đảng về nhiệm vu và mối quan hệ giữa hai miền sau khi Mỹ thực hiện \"chiến tranh cuc bộ",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trong cuộc chiến tranh chống Mỹ của nhân dân cả nước, miền Nam là tiền tuyến lớn, miền Bắc là hậu phương lớn. Bảo vệ miền Bắc là nhiệm vu của cả nướ phương lớn. Bảo vệ miền Bắc là nhiệm vu của miền Bắc"
+          },
+          {
+            "key": "B",
+            "text": "Trong cuộc chiến tranh chống Mỹ của nhân dân cả nước, miền Nam là hậu phương lớn, miền Bắc là tiền tuyến lớn. Bảo vệ miền Bắc là nhiệm vu của cả nước"
+          },
+          {
+            "key": "C",
+            "text": "Trong cuộc chiến tranh chống Mỹ của nhân dân cả nước, miền Nam là tiền tuyến lớn, miền Bắc là hậu"
+          },
+          {
+            "key": "D",
+            "text": "Trong cuộc chiến tranh chống Mỹ của nhân dân cả nước, miền Nam là tiền tuyến lớn, miền Bắc là hậu phương lớn. Bảo vệ miền Bắc là nhiệm vu của miền Na"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 183"
+      }
+    },
+    {
+      "id": "b-184",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau khi Mỹ thực hiện chiến lược \"Chiến tranh cuc bộ\", Đảng nhận đinh tình hình",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đây là cuộc chiến tranh xâm lược thực dân mới, buộc phải thực thi trong thế thua, thế thất bại và bi động cho nên nó chứa đựng đầy mâu thuẫn chiến lược"
+          },
+          {
+            "key": "B",
+            "text": "Đây là cuộc chiến tranh xâm lược thực dân cũ, buộc phải thực thi trong thế thua, thế thất bại và bi động cho nên nó chứa đựng đầy mâu thuẫn chiến lược"
+          },
+          {
+            "key": "C",
+            "text": "Đây là cuộc chiến tranh xâm lược thực dân hiện đại, buộc phải thực thi trong thế thua, thế thất bại và bi động cho nên nó chứa đựng đầy mâu thuẫn chiến lượ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 184"
+      }
+    },
+    {
+      "id": "b-195",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lực lượng tạo nên động lực cho cách mạng Việt Nam được nêu ra trong Chính cương của Đảng Lao động Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, đia chủ yêu nước"
+          },
+          {
+            "key": "B",
+            "text": "Công nhân, nông dân, lao động trí thức"
+          },
+          {
+            "key": "C",
+            "text": "Công nhân, trí thức, tư sản dân tộc"
+          },
+          {
+            "key": "D",
+            "text": "Đia chủ, tư sản dân tộc"
+          },
+          {
+            "key": "E",
+            "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, đại đia chủ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 195"
+      }
+    },
+    {
+      "id": "b-199",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội Đảng lần thứ II xác đinh nhiệm vu của cách mạn g Việt Nam là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đuổi bon đế quốc xâm lược, xóa bỏ những di tích phong kiến và nửa phong kiến, phát triển chế độ dân chủ nhân dân"
+          },
+          {
+            "key": "B",
+            "text": "Đánh đuổi bon đế quốc xâm lược, giành độc lập thống nhất thật sự cho dân tộc, gây cơ sở cho chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Đánh đuổi bon đế quốc xâm lược, giành độc lập thống nhất thật sự cho dân tộc, làm cho người cày có ruộng, phát triển chế độ dân chủ nhân dân"
+          },
+          {
+            "key": "D",
+            "text": "Làm cho người cày có ruộng, gây cơ sở cho chủ nghĩa xã hội, phát triển chế độ dân chủ nhân dân"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 199"
+      }
+    },
+    {
+      "id": "b-201",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội II của Đảng Lao động Việt Nam vạch ra tính chất của xã hội Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân chủ nhân dân, một phần thuộc đia và nửa phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Dân chủ nhân dân, thuộc đia và nửa phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Dân chủ nhân dân và nửa phong kiến"
+          },
+          {
+            "key": "D",
+            "text": "Một phần thuộc đia và nửa phong kiế"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 201"
+      }
+    },
+    {
+      "id": "b-205",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chính sách đối ngoại \"làm cho nước mình ít kẻ thù hơn hết, nhiều bạn đồng minh hơn hết\" được nêu ra trong văn kiện nào của Đảng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tuyên ngôn độc lập (2/9/1945)"
+          },
+          {
+            "key": "B",
+            "text": "Chỉ thi Kháng chiến kiến quốc (25/11/1945)"
+          },
+          {
+            "key": "C",
+            "text": "Hiến pháp năm 1946 (9/11/1946)"
+          },
+          {
+            "key": "D",
+            "text": "Lời kêu goi toàn quốc kháng chiến (19/12/1946"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 205"
+      }
+    },
+    {
+      "id": "b-207",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến thắng nào của ta quyết đinh thắng lợi tại hội nghi Giơnevơ 1954",
+        "options": [
+          {
+            "key": "A",
+            "text": "Việt Bắc Thu - Đông 1947"
+          },
+          {
+            "key": "B",
+            "text": "Biên giới Thu - Đông 1950"
+          },
+          {
+            "key": "C",
+            "text": "Điện Biên Phủ 1954"
+          },
+          {
+            "key": "D",
+            "text": "Đông Xuân 1953 - 1954"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 207"
+      }
+    },
+    {
+      "id": "b-208",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Pháp thực hiện rút quân khỏi miền Nam Việt Nam trong bối cảnh nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tất cả moi điều khoản được quy đinh tại Hiệp đinh đã được hoàn t"
+          },
+          {
+            "key": "B",
+            "text": "Pháp đã hoàn tất chuyển giao moi trách nhiệm thi hành Hiệp đinh Giơ-ne-vơ cho chính quyền Bửu Lộ"
+          },
+          {
+            "key": "C",
+            "text": "Pháp đã xúc tiến moi việc cho công cuộc thống nhất đất nước bằng con đường tổng tuyển cử hai miền"
+          },
+          {
+            "key": "D",
+            "text": "Rất nhiều điều khoản trong Hiệp đinh Giơ-ne-vơ chưa được hoàn tấ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 208"
+      }
+    },
+    {
+      "id": "b-209",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong phong trào cách mạng nước ta, giai cấp nào sẽ là lực lượng lãnh đạo cách mạng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Tiểu tư sản"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 209"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 39): Nòng cốt của cách mạng là công nhân, nông dân và lao động trí thức; giai cấp công nhân đóng vai trò lực lượng lãnh đạo.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 39"
+      }
+    },
+    {
+      "id": "b-216",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hiệp đinh sơ bộ được Hồ Chí Minh ký với Sanh-tơ-ny vào thời gian nào sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "6/3/1946"
+          },
+          {
+            "key": "B",
+            "text": "14/9/1946"
+          },
+          {
+            "key": "C",
+            "text": "19/12/1946"
+          },
+          {
+            "key": "D",
+            "text": "10/12/1946"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 216"
+      }
+    },
+    {
+      "id": "b-220",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhận xét nào là phù hợp khi nói về mối quan hệ của hai miền đất nước trong cuộc kháng chiến chống Mỹ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng hai miền có mối quan hệ mật thiết với nhau và có tác dung thúc đẩy lẫn nhau"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng hai miền có quan hệ quyết đinh lẫn nhau"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng hai miền có quan hệ mật thiết với nhau"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng hai miền có quan hệ độc lập với nhau và có tác dung thúc đẩy lẫn nha"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 220"
+      }
+    },
+    {
+      "id": "b-223",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vu của cách mạng miền Bắc ngay sau khi Hiệp đinh Giơ-ne-vơ năm 1954 về Đông Dương được kí kế t là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đấu tranh chống để quốc Mĩ và chính quyền Ngô Đình Diệm"
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng cơ sở vật chất kĩ thuật cho chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Hoàn thành cuộc cách mạng dân tộc dân chủ nhân dân"
+          },
+          {
+            "key": "D",
+            "text": "Hàn gắn vết thương chiến tranh, khôi phuc kinh t"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 223"
+      }
+    },
+    {
+      "id": "b-232",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đường lối kháng chiến chống thực dân Pháp xâm lược của Đảng (1946-1954) là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Toàn dân, toàn diện, lâu dài và tự lực cánh sinh"
+          },
+          {
+            "key": "B",
+            "text": "Toàn diện, lâu dài và tự lực cánh sinh"
+          },
+          {
+            "key": "C",
+            "text": "Chiến tranh nhân dân, toàn diện và tự lực cánh sinh"
+          },
+          {
+            "key": "D",
+            "text": "Chiến tranh nhân dân, toàn diện, lâu dài và tranh thủ ngoại lực"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 232"
+      }
+    },
+    {
+      "id": "b-236",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai được bầu làm Tổng Bí thư của Đảng tại Đại hội đại biểu lần thứ II (1951)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "B",
+            "text": "Hồ Chí Minh"
+          },
+          {
+            "key": "C",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Lê Hồng Phong"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 236"
+      }
+    },
+    {
+      "id": "b-238",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Từ 1961-1965, Mĩ thực hiện loại hình chiến lược nào ở miền Nam Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến tranh đơn phương"
+          },
+          {
+            "key": "B",
+            "text": "Chiến tranh đặc biệt"
+          },
+          {
+            "key": "C",
+            "text": "Chiến tranh cuc bộ"
+          },
+          {
+            "key": "D",
+            "text": "Việt Nam hóa chiến tranh"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 238"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 98): Từ năm 1961, sau thất bại ở hình thức thực dân mới điển hình, Mỹ chuyển sang chiến lược “Chiến tranh đặc biệt” ở miền Nam.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 98"
+      }
+    },
+    {
+      "id": "b-243",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở Việt Nam, cuộc kháng chiến chống Mĩ, cứu nước (1954-1975) có điểm mới nào sau đây so với cuộc kháng chiến chống thực dân Pháp (1945-1954)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hoàn thành đồng thời nhiệm vu kháng chiến và gây dựng cơ sở cho chế độ mới"
+          },
+          {
+            "key": "B",
+            "text": "Thực hiện tư tưởng tiến công bằng sức mạnh của lực lượng vũ trang ba thứ quân"
+          },
+          {
+            "key": "C",
+            "text": "Kết hợp khởi nghĩa từng phần của quần chúng nhân dân với chiến tranh cách mạng"
+          },
+          {
+            "key": "D",
+            "text": "Tiến hành tuần tự hai cuộc cách mạng ở hai miền đất nước với muc tiêu thống nhấ"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 243"
+      }
+    },
+    {
+      "id": "b-249",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc kháng chiến chống Mĩ, cứu nước của nhân dân ta là một cuộc đung đầu lich sử vì",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đây là cuộc đấu tranh của một dân tộc nhược tiểu"
+          },
+          {
+            "key": "B",
+            "text": "Đây là một cuộc chiến tranh xâm lược, phi nghĩa đứng về phía Mĩ - một đại diện cho chủ nghĩa đế quốc"
+          },
+          {
+            "key": "C",
+            "text": "Đây là một cuộc chiến phản ánh tập trung những chống lại một đế quốc số một thế giới"
+          },
+          {
+            "key": "D",
+            "text": "Đây là một cuộc chiến tranh chống chủ nghĩa thực dân mới của Mĩ, thực hiện giải phóng dân tộc, thống nhất đất nước đầu tiên giành thắng lợi mâu thuẫn cơ bản của thời đại"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 249"
+      }
+    },
+    {
+      "id": "b-251",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc kháng chiến chống Mỹ, cứu nước của nhân dân Việt Nam (1954-1975) kết thúc bằng thắng lợi của chiến dich nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hồ Chí Minh"
+          },
+          {
+            "key": "B",
+            "text": "Tây Nguyên"
+          },
+          {
+            "key": "C",
+            "text": "Huế - Đà Nẵng"
+          },
+          {
+            "key": "D",
+            "text": "Đường 14 - Phước Long"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 251"
+      }
+    },
+    {
+      "id": "b-254",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặc dù lâu dài, gian khổ, khó khăn song nhất đinh thắng lợi",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mặc dù lâu dài, gian khổ, khó khăn song nhất đinh thắng lợ"
+          },
+          {
+            "key": "B",
+            "text": "Mặc dù phải hy sinh to lớn đến đâu nhưng nhất đinh sẽ thành công"
+          },
+          {
+            "key": "C",
+            "text": "Mặc dù bi bao vây và chưa được nước nào trên thế giới công nhận, song nhất đinh thắng lợ"
+          },
+          {
+            "key": "D",
+            "text": "Nhờ có sự hy sinh to lớn của dân tộc nên cuộc kháng chiến sẽ thành công"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 254"
+      }
+    },
+    {
+      "id": "b-258",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào phản ánh điểm tương đồng về nội dung giữa Hiệp đinh Giơ-ne-vơ năm 1954 về Đông Dương và Hiệp đinh Pari năm 1973 về Việt Nam",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hiệp đinh có sự tham gia của 5 cường quốc Hội đồng Bảo an Liên Hợp Quốc"
+          },
+          {
+            "key": "B",
+            "text": "Các bên thừa nhận miền Nam có 2 chính quyền, 2 quân đội, 2 vùng kiểm soát và 3 lực lượng chính tri"
+          },
+          {
+            "key": "C",
+            "text": "Các nước đều cam kết tôn trong những quyền dân tộc cơ bản của nhân dân Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Thỏa thuận các bên ngừng bắn để thực hiện chuyển quân, tập kết, chuyển giao khu"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 258"
+      }
+    },
+    {
+      "id": "b-259",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lời kêu goi toàn quốc kháng chiến của Chủ tich Hồ Ch í Minh được phát ra vào thời gian nào",
+        "options": [
+          {
+            "key": "A",
+            "text": "12-12-1946"
+          },
+          {
+            "key": "B",
+            "text": "22-12-1946"
+          },
+          {
+            "key": "C",
+            "text": "2-3-1946"
+          },
+          {
+            "key": "D",
+            "text": "19-12-1946"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 259"
+      }
+    },
+    {
+      "id": "b-260",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội lần thứ III (9-1960), Đảng Lao động Việt Nam khẳng đinh nhiệm vu cách mạng giữ vai trò quyết đi nh nhất đối với sự phát triển cách mạng cả nước l",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng xã hội chủ nghĩa ở miền Bắc"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng dân tộc dân chủ nhân dân ở miền Nam"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng hai miền đều quyết đinh như nhau"
+          },
+          {
+            "key": "D",
+            "text": "Các phương án trả lời đều sai"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 260"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 95): Cách mạng XHCN ở miền Bắc có nhiệm vụ xây dựng tiềm lực, bảo vệ căn cứ địa cả nước, hậu thuẫn cho miền Nam, nên giữ vai trò quyết định nhất đối với sự phát triển của cách mạng cả nước.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 95"
+      }
+    },
+    {
+      "id": "b-264",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tình hình nước ta được ví như \"ngàn cân treo sợi tóc\" vào thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ngay sau cách mạng Tháng Tám 1945 thành công"
+          },
+          {
+            "key": "B",
+            "text": "Trước cách mạng Tháng Tám"
+          },
+          {
+            "key": "C",
+            "text": "Ngay sau cuộc kháng chiến chống Mỹ thắng lợi 1975"
+          },
+          {
+            "key": "D",
+            "text": "Ngay sau khi Hiệp đinh Pari được ký kết 197"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 264"
+      }
+    },
+    {
+      "id": "b-267",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nghi quyết về đường lối cách mạng miền Nam được thông qua tại Đại hội nào của Đảng sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đại hội II"
+          },
+          {
+            "key": "B",
+            "text": "Đai hôi III"
+          },
+          {
+            "key": "C",
+            "text": "Đại hội IV"
+          },
+          {
+            "key": "D",
+            "text": "Đại hội l"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 267"
+      }
+    },
+    {
+      "id": "b-269",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau thất bại của Chiến tranh đặc biệt, Mỹ chuyển sang loại hình chiến lược chiến tranh nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến tranh đơn phương"
+          },
+          {
+            "key": "B",
+            "text": "Chiến tranh cuc bộ"
+          },
+          {
+            "key": "C",
+            "text": "Việt Nam hóa chiến tranh"
+          },
+          {
+            "key": "D",
+            "text": "Đông Dương hóa chiến tranh"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 269"
+      }
+    },
+    {
+      "id": "b-272",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên nhân căn bản nhất dẫn đến sự thắng lợi của cuộc kháng chiến chống Pháp là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có sự lãnh đạo của Đảng với đường lối kháng chiến đúng"
+          },
+          {
+            "key": "B",
+            "text": "Có lực lượng vũ trang gồm 3 thứ quân dũng cảm, mưu lược"
+          },
+          {
+            "key": "C",
+            "text": "Có chính quyền dân chủ nhân dân tổ chức toàn dân kháng chiến và xây dựng chế độ mới"
+          },
+          {
+            "key": "D",
+            "text": "Có liên minh đoàn kết chiến đấu Việt Nam, Lào, Campuchia; sự ủng hộ của các nước xã hội chủ nghĩa và thế giới"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 272"
+      }
+    },
+    {
+      "id": "b-276",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nước Việt Nam Dân chủ Cộng hòa thiết lập quan hệ ngoại giao với Trung Quốc, Liên Xô và các nước xã hội chủ nghĩa Đông Âu vào năm:",
+        "options": [
+          {
+            "key": "A",
+            "text": "1949"
+          },
+          {
+            "key": "B",
+            "text": "1950"
+          },
+          {
+            "key": "C",
+            "text": "1951"
+          },
+          {
+            "key": "D",
+            "text": "1952"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 276"
+      }
+    },
+    {
+      "id": "b-280",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nét nổi bật nhất về tình hình chính tri ở Việt Nam sau khi Hiệp đinh Giơnevơ về Đông Dương được ký kết là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hà Nội được giải phóng"
+          },
+          {
+            "key": "B",
+            "text": "Pháp rút quân khỏi Miền Bắc"
+          },
+          {
+            "key": "C",
+            "text": "Đất nước bi chia cắt thành hai miền với hai chế độ chính tri - xã hội khác nha"
+          },
+          {
+            "key": "D",
+            "text": "Nhân dân hai miền tiến hành tổ chức hiệp thương tổng tuyển cử thống nhất đất nước"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 280"
+      }
+    },
+    {
+      "id": "b-283",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vĩ tuyến 17",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vĩ tuyến 17"
+          },
+          {
+            "key": "B",
+            "text": "Vĩ tuyển 18"
+          },
+          {
+            "key": "C",
+            "text": "Vĩ tuyến 19"
+          },
+          {
+            "key": "D",
+            "text": "Vĩ tuyến 20"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 283"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 43): Vĩ tuyến 17 là giới tuyến quân sự tạm thời theo Hiệp định Giơnevơ.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 43"
+      }
+    },
+    {
+      "id": "b-289",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặt trận Dân tộc giải phóng miền Nam Việt Nam được thành lập do ai làm chủ tich?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nguyễn Hữu Tho"
+          },
+          {
+            "key": "B",
+            "text": "Nguyễn Thi Đin"
+          },
+          {
+            "key": "C",
+            "text": "Võ Nguyên Giáp"
+          },
+          {
+            "key": "D",
+            "text": "Trường Chinh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 289"
+      }
+    },
+    {
+      "id": "b-292",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tình hình đất nước ta sau Cách mạng tháng Tám năm 1945 được ví như:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nước sôi, lửa bỏng"
+          },
+          {
+            "key": "B",
+            "text": "Nhe như lông hồng"
+          },
+          {
+            "key": "C",
+            "text": "Ngàn cân treo sợi tóc"
+          },
+          {
+            "key": "D",
+            "text": "Trứng, nước"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 292"
+      }
+    },
+    {
+      "id": "b-294",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi Trung ương nào của Đảng đề ra nghi quyết m ở đường cho sự bùng nổ của phong trào cách mạng ở miền Nam đầu năm 1960",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi Trung ương lần thứ 12 (3/1957)"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi Trung ương lần thứ 13 (12/1957)"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi Trung ương lần thứ 14 (11/1958)"
+          },
+          {
+            "key": "D",
+            "text": "Hôi nghi Trung ương lần thứ 15 (1/1959)"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 294"
+      }
+    },
+    {
+      "id": "b-298",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quyền dân tộc cơ bản của Việt Nam trong Hiệp đinh Giơnevơ 1954 là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Độc lập, chủ quyền, thống nhất, toàn ven lãnh thổ"
+          },
+          {
+            "key": "B",
+            "text": "Các bên thực hiện cuộc tập kết, chuyển quân, chuyển giao khu vực"
+          },
+          {
+            "key": "C",
+            "text": "Việt Nam sẽ tiến hành tổng tuyển cử thống nhất đất nước"
+          },
+          {
+            "key": "D",
+            "text": "Các bên tham chiến thực hiện ngừng bắn, lập lại hòa bình ở Đông Dương"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 298"
+      }
+    },
+    {
+      "id": "b-302",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đảng ta đã phát động phong trào gì để ủng hộ nhân lực cho Nam Bộ kháng chiến chống Pháp từ ngày 23-9-1945?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì miền Nam \"thành đồng Tổ quốc\""
+          },
+          {
+            "key": "B",
+            "text": "Hướng về miền Nam ruột thit"
+          },
+          {
+            "key": "C",
+            "text": "Nam tiến"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 302"
+      }
+    },
+    {
+      "id": "b-306",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội nào sau đây được đánh dấu là \"Đại hội kháng chiến thắng lợi\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi thành lập Đảng 1930"
+          },
+          {
+            "key": "B",
+            "text": "Đại hội Quốc dân ở Tân Trào 1945"
+          },
+          {
+            "key": "C",
+            "text": "Đại hội lần thứ II của Đảng 1951"
+          },
+          {
+            "key": "D",
+            "text": "Đại hội Đại biểu lần thứ III của Đảng 1960"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 306"
+      }
+    },
+    {
+      "id": "b-308",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào không phản ánh thành tựu của kế hoạch Nhà nước 5 năm (1961 - 1965)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giá tri sản lượng công nghiệp nặng năm 1965 tăng 3 lần so với năm 1960"
+          },
+          {
+            "key": "B",
+            "text": "Công nghiệp quốc doanh chiếm tỉ trong 93% trong tổng giá tri sản lượng ngành công nghiệp toàn miền Bắ"
+          },
+          {
+            "key": "C",
+            "text": "Công nghiệp nhe, tiểu thủ công nghiệp đã giải quyết được 80% hàng tiêu dùng thiết yếu cho nhân dân"
+          },
+          {
+            "key": "D",
+            "text": "Thương nghiệp tư nhân được Nhà nước ưu tiên phát triển nên đã chiếm lĩnh được thi trườn"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 308"
+      }
+    },
+    {
+      "id": "b-309",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đường lối chung xây dựng XHCN ở miền Bắc (1954-1975) được đề cập ở Đại hội lần thứ mấy của Đảng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đại hội II"
+          },
+          {
+            "key": "B",
+            "text": "Đại hội III"
+          },
+          {
+            "key": "C",
+            "text": "Đại hội IV"
+          },
+          {
+            "key": "D",
+            "text": "Đại hội V"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 309"
+      }
+    },
+    {
+      "id": "b-313",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để kéo dài thời gian chuẩn bi lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp đinh Sơ b ộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộn g hòa tiếp tuc kí với Pháp bả",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hiệp đinh Giơnevơ"
+          },
+          {
+            "key": "B",
+            "text": "Hòa ước"
+          },
+          {
+            "key": "C",
+            "text": "Hiệp đinh Paris"
+          },
+          {
+            "key": "D",
+            "text": "Tạm ước"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 313"
+      }
+    },
+    {
+      "id": "b-316",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tính chất toàn diện trong cuộc kháng chiến chống Pháp được hiểu là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kháng chiến trên moi lĩnh vực kinh tế, quân sự, chính tri, văn hóa, giáo du"
+          },
+          {
+            "key": "B",
+            "text": "Tất cả moi người dân đều tham gia kháng chiến"
+          },
+          {
+            "key": "C",
+            "text": "Kháng chiến lâu dài"
+          },
+          {
+            "key": "D",
+            "text": "Phải dựa vào sức mình"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 316"
+      }
+    },
+    {
+      "id": "b-317",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau Cách mạng tháng Tám đến 1954, kẻ thù chính của nhân dân Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Anh"
+          },
+          {
+            "key": "C",
+            "text": "Mĩ"
+          },
+          {
+            "key": "D",
+            "text": "Trung quốc"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 317"
+      }
+    },
+    {
+      "id": "b-321",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Căn cứ đia cách mạng của ta trong cuộc kháng chiến chống Pháp xâm lược lần thứ hai là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hà Nội"
+          },
+          {
+            "key": "B",
+            "text": "Biên Giới"
+          },
+          {
+            "key": "C",
+            "text": "Việt Bắc"
+          },
+          {
+            "key": "D",
+            "text": "Điên Biên Phủ"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 321"
+      }
+    },
+    {
+      "id": "b-322",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương châm tác chiến của Quân đội nhân dân Việt Nam trong chiến dich Điện Biên Phủ là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh nhanh, thắng nhanh"
+          },
+          {
+            "key": "B",
+            "text": "Đánh thần tốc, táo bạo, chắc thắng"
+          },
+          {
+            "key": "C",
+            "text": "Đánh thần tốc, táo bạo, bất ngờ"
+          },
+          {
+            "key": "D",
+            "text": "Đánh chắc, tiến chắc"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 322"
+      }
+    },
+    {
+      "id": "b-325",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hình thức khởi nghĩa chống lại ách thống tri của Mĩ Diệm đã diễn ra đầu tiên ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bến Tre"
+          },
+          {
+            "key": "B",
+            "text": "Bình Đinh"
+          },
+          {
+            "key": "C",
+            "text": "Quảng Ngãi"
+          },
+          {
+            "key": "D",
+            "text": "Tây Ninh"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 325"
+      }
+    },
+    {
+      "id": "b-327",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trưởng đoàn đại diện cho phái đoàn Chính phủ Việt Nam Dân chủ Cộng hòa tại Hội nghi Giơnevơ là ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hồ Chí Minh"
+          },
+          {
+            "key": "B",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "C",
+            "text": "Phạm Văn Đồng"
+          },
+          {
+            "key": "D",
+            "text": "Võ Nguyên Giáp"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 327"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 84): Ngày 8/5/1954, phái đoàn Chính phủ Việt Nam Dân chủ Cộng hòa do đồng chí Phạm Văn Đồng dẫn đầu đến Hội nghị Giơnevơ.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 84"
+      }
+    },
+    {
+      "id": "b-333",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội đại biểu toàn quốc lần thứ hai của Đảng hop tại đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cao Bằng"
+          },
+          {
+            "key": "B",
+            "text": "Bắc Kạn"
+          },
+          {
+            "key": "C",
+            "text": "Tuyền Quang"
+          },
+          {
+            "key": "D",
+            "text": "Thái Nguyên"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 333"
+      }
+    },
+    {
+      "id": "b-350",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau cách mạng tháng Tám năm 1945, khó khăn lớn nhất đưa nước ta vào tình thế \"ngàn cân treo sợi tóc\" là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khó khăn về thù trong giặc ngoài"
+          },
+          {
+            "key": "B",
+            "text": "Nạn đói, nạn dốt đe doa nghiêm trong đến nhân dâ n t"
+          },
+          {
+            "key": "C",
+            "text": "Ngân sách nhà nước trống rỗng"
+          },
+          {
+            "key": "D",
+            "text": "Hơn 90% dân số không biết chữ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 350"
+      }
+    },
+    {
+      "id": "b-352",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Được ghi vào lich sử dân tộc như một Bạch Đằng, một Chi Lăng, một Đống Đa thế kỉ XX. Đó là ý nghĩa của chiến thắng nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng tháng Tám 1945"
+          },
+          {
+            "key": "B",
+            "text": "Chiến dich Điện Biên Phủ 1954"
+          },
+          {
+            "key": "C",
+            "text": "Chiến dich Huế - Đà Nẵng 1975"
+          },
+          {
+            "key": "D",
+            "text": "Chiến dich Hồ Chí Minh 197"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 352"
+      }
+    },
+    {
+      "id": "b-359",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để tranh thủ thời gian chống Pháp, Đảng chủ trương quan hệ với quân Tưởng Giới Thạch theo khẩu hiệu:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hoa Việt thân thiện"
+          },
+          {
+            "key": "B",
+            "text": "Hoa Việt bình đẳng"
+          },
+          {
+            "key": "C",
+            "text": "Hoa Việt tương trợ"
+          },
+          {
+            "key": "D",
+            "text": "Hoa Việt thân ái"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 359"
+      }
+    },
+    {
+      "id": "b-367",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ giữa hai nhiệm vu cách mạng của hai miền được Đại hội III của Đảng xác đinh là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hai nhiệm vu chiến lược ấy có quan hệ mật thiết với nhau và có tác dung thúc đẩy lẫn nha"
+          },
+          {
+            "key": "B",
+            "text": "Hai nhiệm vu chiến lược ấy có quan hệ quyết đinh lẫ n nha"
+          },
+          {
+            "key": "C",
+            "text": "Hai nhiệm vu chiến lược ấy có quan hệ mật thiết với nhau"
+          },
+          {
+            "key": "D",
+            "text": "Hai nhiệm vu chiến lược ấy có quan hệ độc lập với nhau và có tác dung thúc đẩy lẫn nh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 367"
+      }
+    },
+    {
+      "id": "b-375",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội lần thứ II (9-1960) Đàng Lao động Việt Nam khẳng đinh nhiệm vu cách mạng giữ vai trò quyết đi nh nhất đó l",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng xã hội chủ nghĩa ở miền Bắc"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng dân tộc dân chủ nhân dân ở miền Nam"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng hai miền đều quyết đinh như nhau"
+          },
+          {
+            "key": "D",
+            "text": "Các phương án trả lời đều sai"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 375"
+      }
+    },
+    {
+      "id": "b-378",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thời gian và đia điểm diễn ra Đại hội lần thứ 2 của Đảng là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tháng 3/1935 tại Ma Cao - Trung Quốc"
+          },
+          {
+            "key": "B",
+            "text": "Tháng 2/1950 tại Tân Trào - Tuyên Quang"
+          },
+          {
+            "key": "C",
+            "text": "Tháng 2/1951 tại Vinh Quang - Chiêm Hóa - Tuyên Quang"
+          },
+          {
+            "key": "D",
+            "text": "Tháng 3/1951 tại Việt Bắc"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 378"
+      }
+    },
+    {
+      "id": "b-390",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội Đảng toàn quốc lần thứ hai của Đảng Lao Động Việt Nam đã thông qua một văn kiện mang tính chất cương lĩnh. Đó là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cương lĩnh cách mạng Việt Nam."
+          },
+          {
+            "key": "B",
+            "text": "Chính cương của Đảng Lao động Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Luận cương về cách mạng Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Cương lĩnh của Đảng Lao Động Việt Nam"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 390"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 79): Nội dung báo cáo của Đại hội II được phản ánh trong Chính cương của Đảng Lao động Việt Nam do Đại hội thông qua.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 79"
+      }
+    },
+    {
+      "id": "b-396",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chỉ thi \"Kháng chiến kiến quốc\" của Đảng vạch ra khẩu hiệu chỉ đạo chiến lược là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân tộc trên hết, Tổ quốc trên hết"
+          },
+          {
+            "key": "B",
+            "text": "Tổ quốc trên hết, Tự do trên hết"
+          },
+          {
+            "key": "C",
+            "text": "Độc lập về chính tri, nhân nhượng về kinh tế"
+          },
+          {
+            "key": "D",
+            "text": "Hoa - Việt thân thiện"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 396"
+      }
+    },
+    {
+      "id": "b-402",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khi bắt đầu tiến hành xâm lược Việt Nam, thực dân Pháp đã thực hiện chiến lược:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dùng người Việt đánh người Việt"
+          },
+          {
+            "key": "B",
+            "text": "Lấy chiến tranh nuôi chiến tranh"
+          },
+          {
+            "key": "C",
+            "text": "Đánh nhanh, thắng nhanh"
+          },
+          {
+            "key": "D",
+            "text": "Dùng người Việt đánh người Việt, lấy chiến tranh nuôi chiến tranh"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 402"
+      }
+    },
+    {
+      "id": "b-403",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương châm kháng chiến \"Dựa vào sức mình là chính\" được Đảng xác đinh là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "\"phải tự cấp, tự túc về moi mặt\""
+          },
+          {
+            "key": "B",
+            "text": "\"phải đánh đich bằng sức mình\""
+          },
+          {
+            "key": "C",
+            "text": "\"phải tự vũ trang để thẳng đinh về moi mặt"
+          },
+          {
+            "key": "D",
+            "text": "\"phải biết tranh thủ sự giúp đỡ của các nước\""
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 403"
+      }
+    }
+  ]
+}

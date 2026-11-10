@@ -1,0 +1,2100 @@
+{
+  "id": "cnxhkh-ngan-hang-chuong-3",
+  "title": "CNXH Khoa học – Ngân hàng bổ sung – Chương 3",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "description": "Ngân hàng MLN131 bổ sung, Chương 3 – Chủ nghĩa xã hội và thời kỳ quá độ lên CNXH. 69 câu.",
+  "contentType": "multiple-choice",
+  "language": "vi",
+  "source": {
+    "document": "MLN131 - Chủ nghĩa xã hội khoa học – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz)",
+    "note": "Nguồn cộng đồng, đã đối chiếu tự động với giáo trình; xem docs/doi-chieu-giao-trinh.md"
+  },
+  "items": [
+    {
+      "id": "b-002",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quá độ gián tiếp lên chủ nghĩa xã hội là bỏ qua chế độ gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Tư bản chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Chiếm hữu nô lệ"
+          },
+          {
+            "key": "D",
+            "text": "Cộng sản nguyên thủy"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 2"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 70): Quá độ lên CNXH ở Việt Nam là không để quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa giữ vị trí thống trị.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 70"
+      }
+    },
+    {
+      "id": "b-015",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại sao trong bất kì xã hội nào, muốn tiền lên chủ nghĩa xã hội đều tất yếu phải trải qua thời kỳ quá độ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì chủ nghĩa xã hội có bản chất đối lập với các chế độ xã hội bóc lột trước đó, giai cấp vô sản cần có thời gian để cải tạo xã hội cũ, xây dựng xã hội mới"
+          },
+          {
+            "key": "B",
+            "text": "Vì chủ nghĩa xã hội là thực hiện ý chí chủ quan của giai cấp công nhân và nhân dân lao động"
+          },
+          {
+            "key": "C",
+            "text": "Vì chủ nghĩa xã hội thực hiện sự thống trị của giai cấp, tầng lớp nghèo nàn trong xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Vì chủ nghĩa xã hội là giai đoạn đầu của hình thái kinh tế - xã hội cộng sản chủ nghĩa"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 15"
+      }
+    },
+    {
+      "id": "b-017",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Có bao nhiêu phương hướng được đề ra tại Văn kiện Đại hội đại biểu toàn quốc lần thứ XI trong thời kỳ quá độ lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "5"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "8"
+          },
+          {
+            "key": "D",
+            "text": "9"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 17"
+      }
+    },
+    {
+      "id": "b-021",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trên lĩnh vực kinh tế, trong thời kỳ quá độ lên chủ nghĩa xã hội tất yếu tồn tại nền kinh tế như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kinh tế nhiều thành phần, trong đó có thành phần đối lập"
+          },
+          {
+            "key": "B",
+            "text": "Kinh tế kế hoạch hóa tập trung cao độ"
+          },
+          {
+            "key": "C",
+            "text": "Kinh tế thị trường tự do"
+          },
+          {
+            "key": "D",
+            "text": "Kinh tế hàng hóa giản đơn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 21"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 67): Về kinh tế, thời kỳ quá độ tất yếu có nền kinh tế nhiều thành phần, trong đó có cả thành phần đối lập.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 67"
+      }
+    },
+    {
+      "id": "b-027",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điền cụm từ thích hợp vào (...): \"cần phải có một thời kỳ quá độ khá lâu dài từ ... lên ...\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa tư bản/ Chủ nghĩa xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Người bị bóc lột/ lên làm chủ"
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp công nhân/ người nắm chính quyền"
+          },
+          {
+            "key": "D",
+            "text": "Chủ nghĩa xã hội/ Chủ nghĩa cộng sản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 27"
+      }
+    },
+    {
+      "id": "b-028",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm cơ bản của thời kì quá độ lên chủ nghĩa xã hội là gì? (Chọn 2 đáp án)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thời kì cải tạo cách mạng sâu sắc, triệt để xã hội tư bản chủ nghĩa trên mọi lĩnh vực"
+          },
+          {
+            "key": "B",
+            "text": "Thời kì xây dựng từng bước cơ sở vật chất - kỹ thuật và đời sống tinh thần của chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Thời kì đấu tranh giai cấp khi tương quan lực lượng cân bằng"
+          },
+          {
+            "key": "D",
+            "text": "Thời kì thực hiện nền chuyên chính lao động"
+          }
+        ],
+        "answer": "AB"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 28"
+      }
+    },
+    {
+      "id": "b-032",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin, hình thái kinh tế- xã hội cộng sản chủ nghĩa có khác biệt đặc trưng nào với các hình thái kinh tế xã hội chiếm hữu nô lệ, phong kiến và tư bản chủ nghĩa?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hình thái kinh tế- xã hội công sản chủ nghĩa là giai đoạn phát triển cao nhất và cuối cùng của lịch sử loài người"
+          },
+          {
+            "key": "B",
+            "text": "Hình thái kinh tế — xã hội công sản chủ nghĩa khác biệt về chất, đó là xã hội không có giai cấp đối kháng như các xã hội trước đó"
+          },
+          {
+            "key": "C",
+            "text": "Hình thái kinh tế — xã hội công sản chủ nghĩa là phiên bản điều chỉnh tốt hơn tứ tư bản chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Hình thái kinh tế - xã hội cộng sản chủ nghĩa là quay trở lại công sản nguyên thủy"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 32"
+      }
+    },
+    {
+      "id": "b-036",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cho đến nay, hình thức quá độ lên chủ nghĩa xã hội nào chưa từng diễn ra trên thực tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quá độ toàn diện"
+          },
+          {
+            "key": "B",
+            "text": "Quả độ trực tiếp"
+          },
+          {
+            "key": "C",
+            "text": "Quá độ bộ phận"
+          },
+          {
+            "key": "D",
+            "text": "Quá độ gián tiếp"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 36"
+      }
+    },
+    {
+      "id": "b-037",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên tắc phân phối chủ yếu của chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Làm theo năng lực, hướng theo nhu cầu"
+          },
+          {
+            "key": "B",
+            "text": "Làm theo năng lực, hướng theo lao động"
+          },
+          {
+            "key": "C",
+            "text": "Làm theo năng lực, hướng theo phúc lợi xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Làm theo công việc, hướng theo tiền lương"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 37"
+      }
+    },
+    {
+      "id": "b-041",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tiền đề kinh tế- xã hội dẫn tới sự sụp đổ không tránh khỏi của chủ nghĩa tư bản là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự phát triển về lực lượng sản xuất và sự trưởng thành của giai cấp công nhân"
+          },
+          {
+            "key": "B",
+            "text": "Sự phát triển về quan hệ sản xuất và sự trưởng thành của giai cấp công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Sự phát triển về lực lượng sản xuất và sự trưởng thành của giai cấp nông dân"
+          },
+          {
+            "key": "D",
+            "text": "Sự phát triển về lực lượng sản xuất và sự trưởng thành của tầng lớp tri thức"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 41"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 56): Sự phát triển của lực lượng sản xuất và sự trưởng thành của giai cấp công nhân chính là tiền đề kinh tế – xã hội dẫn tới sự sụp đổ tất yếu của chủ nghĩa tư bản.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 56"
+      }
+    },
+    {
+      "id": "b-068",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin, chủ nghĩa xã hội được hiểu là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai đoạn đầu của hình thái kinh tế - xã hội cộng sản chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Một hình thái kinh tế - xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Là một chế độ xã hội, trong đó sự thống trị của giai cấp công nhân được xác lập"
+          },
+          {
+            "key": "D",
+            "text": "Là giai đoạn phát triển cao của hình thái kinh tế - xãa hội cộng sản chủ nghĩa"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 68"
+      }
+    },
+    {
+      "id": "b-077",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội XIII của Đảng Cộng sản Việt Nam đã đề ra mục tiêu gì vào năm 2030 trên con đường xây dựng chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là nước đang phát triển, có thu nhập trung bình"
+          },
+          {
+            "key": "B",
+            "text": "Là nước đang phát triển, có công nghiệp hiện đại, thu nhập trung bình cao"
+          },
+          {
+            "key": "C",
+            "text": "Là nước phát triển, có thu nhập trung bình cao"
+          },
+          {
+            "key": "D",
+            "text": "Là nước phát triển, có thu nhập cao"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 77"
+      }
+    },
+    {
+      "id": "b-078",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội XIII của Đảng Cộng sản Việt Nam đã đề ra mục tiêu gì vào năm 2025 trên con đường xây dựng chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là nước đang phát triển, có công nghiệp theo hướng hiện đại, vượt qua mức thu nhập trung bình thấp"
+          },
+          {
+            "key": "B",
+            "text": "Là nước phát triển, có công nghiệp hóa, hiện đại hóa cao, đạt mức thu nhập cao"
+          },
+          {
+            "key": "C",
+            "text": "Là nước đang phát triển, có công nghiệp theo hướng hiện đại, đạt được mức thu nhập trung bình"
+          },
+          {
+            "key": "D",
+            "text": "Là nước phát triển, có thành tựu khoa học - kỹ thuật hiện đại, phát triển nguồn lực nội sinh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 78"
+      }
+    },
+    {
+      "id": "b-079",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội XIII của Đảng Cộng sản Việt Nam đã đề ra mục tiêu gì vào năm 2045 trên con đường xây dựng chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trở thành nước phát triển, thu nhập cao"
+          },
+          {
+            "key": "B",
+            "text": "Trở thành con rồng châu Á"
+          },
+          {
+            "key": "C",
+            "text": "Trở thành nước phát triển thu nhập trung bình cao"
+          },
+          {
+            "key": "D",
+            "text": "Trở thành nước phát triển, có kinh tế tri thức, thu nhập trung bình cao"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 79"
+      }
+    },
+    {
+      "id": "b-082",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là một trong những nội dung của mối quan hệ lớn trong xây dựng chủ nghĩa xã hội ở Việt Nam hiện nay?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giữa tăng trưởng kinh tế, thực hiện tiến bộ, công bằng xã hội, bảo vệ môi trường sống"
+          },
+          {
+            "key": "B",
+            "text": "Giữa tăng trưởng kinh tế và phát triển văn hóa, thực hiện tiến bộ, bảo vệ môi trường, y tế, giáo dục"
+          },
+          {
+            "key": "C",
+            "text": "Giữa tăng trưởng kinh tế và phát triển văn hóa, thực hiện tiến bộ, công bằng xã hội, bảo vệ môi trường"
+          },
+          {
+            "key": "D",
+            "text": "Giữa tăng trưởng kinh tế và phát triển văn hóa, thực hiện tiến bộ, công bằng xã hội"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 82"
+      }
+    },
+    {
+      "id": "b-083",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo quan điểm của Đảng Cộng Sản Việt Nam, quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa, tức là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất tư bản chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Bỏ qua việc xác lập vị trí thống trị của kiến trúc thượng tầng chủ nghĩa xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng chủ nghĩa xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 83"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 69): Bỏ qua chế độ tư bản chủ nghĩa nghĩa là không xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 69"
+      }
+    },
+    {
+      "id": "b-084",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chủ nghĩa xã hội có mấy đặc trưng bản chất?",
+        "options": [
+          {
+            "key": "A",
+            "text": "4"
+          },
+          {
+            "key": "B",
+            "text": "5"
+          },
+          {
+            "key": "C",
+            "text": "6"
+          },
+          {
+            "key": "D",
+            "text": "7"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 84"
+      }
+    },
+    {
+      "id": "b-091",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I.Lênin: Thời kỳ quá độ ở nước Nga tồn tại bao nhiều thành phần kinh tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "3"
+          },
+          {
+            "key": "B",
+            "text": "4"
+          },
+          {
+            "key": "C",
+            "text": "5"
+          },
+          {
+            "key": "D",
+            "text": "6"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 91"
+      }
+    },
+    {
+      "id": "b-113",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khó khăn về xuất phát điểm của Việt Nam khi tiến vào thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xuất phát từ một xã hội vốn là thuộc địa, nửa phong kiến, lực lượng sản xuất rất thấp, chiến tranh kéo dài, để lại nhiều tàn dư tiêu cực"
+          },
+          {
+            "key": "B",
+            "text": "Xuất phát từ một xã hội phong kiến phát triển, trải qua thời kỳ thuộc địa nên bị đồng hóa nhiều về tư tưởng, văn hóa"
+          },
+          {
+            "key": "C",
+            "text": "Xuất phát từ một xã hội phong kiến lạc hậu, trình độ lực lượng sản xuất nông nghiệp kém, được sử khai hóa của thực dân Pháp nhưng không có sự cải biến tốt hơn"
+          },
+          {
+            "key": "D",
+            "text": "Xuất phát từ một nước công nghiệp phát hiện tiến lên chủ nghĩa xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 113"
+      }
+    },
+    {
+      "id": "b-114",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vấn đề: ... phải \"bắc những nhịp cầu nhỏ\" đi xuyên qua kinh tế tư bản để từng bước xây dựng Chủ nghĩa xã hội. Đồng thời, lưu ý \"chúng ta phải hiểu những đường lối, thể thức, thủ đoạn và phương sách trung gian cần thiết để chuyển từ những quan hệ tiền tư bản chủ nghĩa lên chủ nghĩa xã hội. Đó là mẫu chốt của vấn đề. Thông qua vấn đề trên hãy cho biết VILênin muốn đề cập đến đó là hình thức cơ bản nào của thời kỳ quá độ lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trực tiếp"
+          },
+          {
+            "key": "B",
+            "text": "Vừa trực tiếp vừa gián tiếp"
+          },
+          {
+            "key": "C",
+            "text": "Gián tiếp"
+          },
+          {
+            "key": "D",
+            "text": "Không trải qua"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 114"
+      }
+    },
+    {
+      "id": "b-115",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo C.Mác và Ph.Ăngghen: \"giai cấp tư sản không chỉ tạo ra vũ khí sẽ giết chết mình mà còn tạo ra những người sử dụng vũ khí đó ...\" - những người đó là ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp công nhân hiện đại"
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp nông dân hiện đại"
+          },
+          {
+            "key": "C",
+            "text": "Những nhà tư sản trí thức"
+          },
+          {
+            "key": "D",
+            "text": "Tầng lớp trí thức"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 115"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 56): Mác – Ăngghen: giai cấp tư sản vừa tạo ra vũ khí để giết chính mình, vừa tạo ra những người dùng vũ khí đó, tức công nhân hiện đại, những người vô sản.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 56"
+      }
+    },
+    {
+      "id": "b-122",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam hiện nay tồn tại hình thức phân phối nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phân phối theo tiền lương"
+          },
+          {
+            "key": "B",
+            "text": "Phân phối theo bao cấp"
+          },
+          {
+            "key": "C",
+            "text": "Phân phối theo lao động, theo mức độ đóng góp và quỹ phúc lợi xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Phân phối theo tiền lương và phân phối theo nhu cầu"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 122"
+      }
+    },
+    {
+      "id": "b-125",
+      "type": "multiple-choice",
+      "content": {
+        "question": "V.I.Lênin gọi thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "\"Cuộc đấu tranh giai cấp trong bôi cảnh mới\""
+          },
+          {
+            "key": "B",
+            "text": "\"Quá trình gian nan. phức tạp\""
+          },
+          {
+            "key": "C",
+            "text": "\"Những cơn đau đẻ kéo dài\""
+          },
+          {
+            "key": "D",
+            "text": "\"Sự đảo lộn trật tự\" sâu sắc\""
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 125"
+      }
+    },
+    {
+      "id": "b-131",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa là tạo ra sự biến đổi như thế nào của xã hội trên tất cả các lĩnh vực?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Biến đổi về lượng"
+          },
+          {
+            "key": "B",
+            "text": "Biến đổi về chất"
+          },
+          {
+            "key": "C",
+            "text": "Khuynh hướng phát triển"
+          },
+          {
+            "key": "D",
+            "text": "Thực hiện bước nhảy"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 131"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 70): Quá độ bỏ qua chế độ TBCN tạo ra sự biến đổi về chất của xã hội trên mọi lĩnh vực; đó là sự nghiệp khó khăn, phức tạp, lâu dài, nhiều chặng đường.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 70"
+      }
+    },
+    {
+      "id": "b-136",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội XI đã đề ra phương hướng phát triển nền kinh tế như thế nào trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam trong giai đoạn tới?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển nền kinh tế thị trường xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Phát triển nền kinh tế thị trường hiệp đồng"
+          },
+          {
+            "key": "C",
+            "text": "Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Phát triển nền kinh tế kế hoạch hóa tập trung"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 136"
+      }
+    },
+    {
+      "id": "b-152",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam hiện nay, hình thức phân phối nào giữ vai trò chủ đạo?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phân phối theo nhu cầu"
+          },
+          {
+            "key": "B",
+            "text": "Phân phối theo lao động"
+          },
+          {
+            "key": "C",
+            "text": "Phân phối theo bao cấp"
+          },
+          {
+            "key": "D",
+            "text": "Phân phối quỹ phúc lợi xã hội"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 152"
+      }
+    },
+    {
+      "id": "b-165",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Các yếu tố của chủ nghĩa xã hội xuất hiện",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trong lòng xã hội chiếm hữu nô lệ"
+          },
+          {
+            "key": "B",
+            "text": "Trong lòng xã hội tư bản"
+          },
+          {
+            "key": "C",
+            "text": "Trong lòng xã hội phong kiến"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 165"
+      }
+    },
+    {
+      "id": "b-167",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin, sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng hình thái kinh tế - xã hội cộng sản chủ nghĩa là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Một sự cải biến mang tính chất chủ quan"
+          },
+          {
+            "key": "B",
+            "text": "Một bước ngoặt phát triễn mới, đưa nhân loại thoát khỏi lối mòn cũ"
+          },
+          {
+            "key": "C",
+            "text": "Một quá trình lịch sử - tự nhiên"
+          },
+          {
+            "key": "D",
+            "text": "Một quá trình can thiệp của con người bằng ý chỉ nhằm cải biến lịch sử theo hướng nhân văn, tích cực hơn"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 167"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 53): Học thuyết hình thái kinh tế – xã hội chỉ ra việc thay thế hình thái TBCN bằng hình thái cộng sản chủ nghĩa là tất yếu, theo một quá trình lịch sử – tự nhiên.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 53"
+      }
+    },
+    {
+      "id": "b-169",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo C.Mác và Ph.Ăngghen, khi thực hiện cách mạng xã hội chủ nghĩa xóa bỏ được tình trạng người bóc lột người, giai cấp này bóc lột giai cấp khác thì có thể tiến tới xóa bỏ điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xóa bỏ tình trạng dân tộc này bóc lột dân tộc khác"
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ sự tồn tại của chế độ sở hữu tư nhân về công cụ lao động"
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ được tệ nạn xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ được tôn giáo"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 169"
+      }
+    },
+    {
+      "id": "b-174",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mô hình kinh tế mới tại Liên Xô viết tắt là",
+        "options": [
+          {
+            "key": "A",
+            "text": "USR"
+          },
+          {
+            "key": "B",
+            "text": "NEP"
+          },
+          {
+            "key": "C",
+            "text": "CCCP"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 174"
+      }
+    },
+    {
+      "id": "b-176",
+      "type": "multiple-choice",
+      "content": {
+        "question": "*Cách mạng xã hội chân chính và triệt để phải",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giải phóng loài người ra khỏi áp bức bóc lột"
+          },
+          {
+            "key": "B",
+            "text": "Giải phóng xã hội ra khỏi áp bức bóc lột"
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng giai cấp công nhân ra khỏi áp bức bóc lột"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 176"
+      }
+    },
+    {
+      "id": "b-182",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, hình thức sở hữu và thành phần kinh tế nào tuy còn tồn tại nhưng không giữ vai trò chủ đạo?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sở hữu tư nhân tư bản chủ nghĩa và thành phần kình tế tập thể"
+          },
+          {
+            "key": "B",
+            "text": "Sở hữu tư nhân tư bản chủ nghĩa và thành phần kinh tế tư nhân tư bản chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Sở hữu tập thể và thành phần kinh tế tập thể"
+          },
+          {
+            "key": "D",
+            "text": "Sở hữu hổn hợp và thành phần kinh tế tư nhân tư bản chủ nghĩa"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 182"
+      }
+    },
+    {
+      "id": "b-186",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng cơ bản đầu tiên của chủ nghĩa xã hội là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa xã hội có nhà nước kiểu mới mang bản chất giai cấp công nhân, đại biểu cho lợi ích, quyền lực và ý chỉ của nhân dân lao động"
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa xã hội là xã hội do nhân dân lao động làm chủ"
+          },
+          {
+            "key": "C",
+            "text": "Chủ nghĩa xã hội có nền kinh tế phát triễn cao dựa trên lực lượng sản xuất hiện đại và chế độ công hữu về tư liệu sản xuất chủ yếu"
+          },
+          {
+            "key": "D",
+            "text": "Chủ nghĩa xã hội giải phóng giai cấp, giải phóng dân tộc, giải phóng xã hội, giải phóng con người, tạo điều kiện để con người phát triển toàn diện"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 186"
+      }
+    },
+    {
+      "id": "b-193",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cương lĩnh xây dựng đất nước trong thời quá độ lên chủ nghĩa xã hội (Bổ sung và phát triển năm 2011) xác định phương hưởng đầu tiên, phản ánh con đường đi lên chủ nghĩa xã hội ở nước ta là :",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đẩy mạnh công nghiệp hoá, hiện đại hoá đất nước gắn với phát triển kinh tế tri thức, bảo vệ tài nguyên, môi trường"
+          },
+          {
+            "key": "B",
+            "text": "Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Xây dựng nền văn hoá tiên tiến, đậm đà bản sắc dân tộc; xây dựng con người, nâng cao đời sống nhân dân, thưc hiện tiến bộ và công bằng xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Bảo đảm vững chắc quốc phòng và an ninh quốc gia, trật tự, an toàn xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 193"
+      }
+    },
+    {
+      "id": "b-194",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cương lĩnh xây dựng đất nước trong thời quá độ lên chủ nghĩa xã hội (Bổ sung và phát triển năm 2011) xác định phương hướng thứ hai, phản ánh con đường đi lên chủ nghĩa xã hội ở nước ta là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc; xây dựng con người, nâng cao đời sống nhân dân, thực hiện tiến bộ và công bằng xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Bảo đảm vững chắc quốc phòng và an ninh quốc gia, trật tự, an toàn xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Thực hiện đường lối đối ngoại độc lập, tự chủ, hòa bình, hữu nghị, hợp tác và phát triển; chủ động và tích cực hội nhập quốc tế"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 194"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 73): Cương lĩnh (bổ sung, phát triển 2011) xác định 8 phương hướng xây dựng CNXH ở Việt Nam, trong đó có phát triển nền kinh tế thị trường định hướng XHCN.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 73"
+      }
+    },
+    {
+      "id": "b-195",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội XI, trong Cương lĩnh xây dựng đất nước trong thời quá độ lên chủ nghĩa xã hội (Bổ sung và phát triển năm 2011) xác định bao nhiêu phương hướng phản ánh con đường đi lên chủ nghĩa xã hội ở nước ta?",
+        "options": [
+          {
+            "key": "A",
+            "text": "5"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "7"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 195"
+      }
+    },
+    {
+      "id": "b-205",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cấu trúc cơ bản của một hình thái kinh tế - xã hội là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lực lượng sản xuất, quan hệ sản xuất và kiến trúc thượng tầng"
+          },
+          {
+            "key": "B",
+            "text": "Tất cả đều đúng"
+          },
+          {
+            "key": "C",
+            "text": "Cơ sở kinh tế và thể chế nhà nước"
+          },
+          {
+            "key": "D",
+            "text": "Lực lượng sản xuất và quan hệ sản xuất"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 205"
+      }
+    },
+    {
+      "id": "b-212",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điều gì vừa là thách thức vừa tạo ra thời cơ cho Việt Nam trong thời kỳ quá độ chủ nghĩa xã hội hiện nay?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cuộc cách mạng khoa học công nghệ và xu thế toàn cầu hóa"
+          },
+          {
+            "key": "B",
+            "text": "Sự trở dậy của chủ nghĩa xã hội, tiêu biểu là Trung Quốc"
+          },
+          {
+            "key": "C",
+            "text": "Sự thay đổi trật tự thế giới"
+          },
+          {
+            "key": "D",
+            "text": "Sự gia tăng nhanh chóng của lực lượng lao động nước ta"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 212"
+      }
+    },
+    {
+      "id": "b-216",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu không phải là một hình thái kinh tế - xã hội theo phân kì lịch sử loài người của chủ nghĩa Mác - Lênin?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Tư bản chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Cộng sản chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Phong kiến"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 216"
+      }
+    },
+    {
+      "id": "b-217",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn cơ bản và chủ yếu trong xã hội tư bản chủ nghĩa, bắt buộc nó phải được thay thế bằng hình thái kinh tế - xã hội khác phù hợp hơn là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mâu thuẫn giữa tính chất chuyên môn hóa của lực lượng sản xuất với chế độ chiếm hữu tập thể tư bản chủ nghĩa về tư liệu sản xuất"
+          },
+          {
+            "key": "B",
+            "text": "Mâu thuẫn giữa tính chất xã hội hóa về lực lượng sản xuất với chế độ chiếm hữu công cộng về tư liệu sản xuất"
+          },
+          {
+            "key": "C",
+            "text": "Mâu thuẫn giữa tính chất xã hội hóa của lực lượng sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất"
+          },
+          {
+            "key": "D",
+            "text": "Mâu thuẫn giữa tính chất tư nhân hóa của lực lượng sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 217"
+      }
+    },
+    {
+      "id": "b-230",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Liên Xô, Đông Âu và các nước xã hội chủ nghĩa hiện nay, đã và đang quá độ lên chủ nghĩa xã hội bằng hình thức nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quá độ gián tiếp"
+          },
+          {
+            "key": "B",
+            "text": "Quá độ trực tiếp"
+          },
+          {
+            "key": "C",
+            "text": "Quá độ bộ phận"
+          },
+          {
+            "key": "D",
+            "text": "Quá độ toàn diện"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 230"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 65): Liên Xô, Đông Âu trước đây, Trung Quốc, Việt Nam và một số nước XHCN khác đều đang trải qua thời kỳ quá độ gián tiếp, với trình độ phát triển khác nhau.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 65"
+      }
+    },
+    {
+      "id": "b-232",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thời kỳ quá độ lên chủ nghĩa xã hội là thời kỳ đấu tranh giai cấp trong điều kiện mới, điều kiện đó là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Cộng sản đã được thành lập, và ngày càng thể hiện vai trò lãnh đạo tích cực trong phong trào đấu tranh giành chính quyền"
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp tư sản đã trở thành lực lượng phản động"
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp công nhân và nhân dân lao động đã trở thành giai cấp cầm quyền"
+          },
+          {
+            "key": "D",
+            "text": "Sự phát triển của công nghiệp hóa dẫn đến thất nghiệp tràn lan"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 232"
+      }
+    },
+    {
+      "id": "b-238",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quá độ từ xã hội tiền tư bản chủ nghĩa phát triển lên chủ nghĩa xã hội là hình thức quá độ nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quá độ gián tiếp"
+          },
+          {
+            "key": "B",
+            "text": "Quá độ trực tiếp"
+          },
+          {
+            "key": "C",
+            "text": "Quá độ bộ phận"
+          },
+          {
+            "key": "D",
+            "text": "Quá độ toàn diện"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 238"
+      }
+    },
+    {
+      "id": "b-243",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo quan điểm của chủ nghĩa Mác - Lênin, từ chủ nghĩa tư bản lên chủ nghĩa xã hội tất yếu phải trải qua thời kỳ gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển của loài người"
+          },
+          {
+            "key": "B",
+            "text": "Phát triển lực lượng sản xuất và quan hệ sản xuất"
+          },
+          {
+            "key": "C",
+            "text": "Quá độ chính trị"
+          },
+          {
+            "key": "D",
+            "text": "Thay đổi phương thức sản xuất"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 243"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 65): Từ chủ nghĩa tư bản lên chủ nghĩa xã hội tất yếu phải trải qua thời kỳ quá độ chính trị.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 65"
+      }
+    },
+    {
+      "id": "b-254",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là một trong tám đặc trưng cơ bản của chủ nghĩa xã hội ở Việt Nam được đề cập trong Văn kiện Đại hội đại biểu toàn quốc lần thứ XI của Đảng Cộng sản Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dân giàu, nước mạnh, dân chủ, văn minh"
+          },
+          {
+            "key": "B",
+            "text": "Dân giàu, nước mạnh, con người có cuộc sông ấm no"
+          },
+          {
+            "key": "C",
+            "text": "Do nhân dân làm chủ"
+          },
+          {
+            "key": "D",
+            "text": "Nhà nước pháp quyền xã hội chủ nghĩa, nhà nước của nhân dân lao động"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 254"
+      }
+    },
+    {
+      "id": "b-258",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I.Lênin, mục đích cao cả nhất mà chủ nghĩa xã hội cần đạt đến là gì? ( Choose 3 answers)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xóa bỏ sự phân chia xã hội thành giai cấp"
+          },
+          {
+            "key": "B",
+            "text": "Biến tất cả thành viên trong xã hội thành người lao động"
+          },
+          {
+            "key": "C",
+            "text": "Tiêu diệt cơ sở của mọi tình trạng người bóc lột người"
+          },
+          {
+            "key": "D",
+            "text": "Thiết lập quyền thống trị xã hội của giai cấp công nhân và nhân dân lao động"
+          }
+        ],
+        "answer": "ABC"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 258"
+      }
+    },
+    {
+      "id": "b-269",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin thi lịch sử xã hội đã trải qua mấy hình thái kinh tế - xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 269"
+      }
+    },
+    {
+      "id": "b-276",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xã hội loài người đã trải qua 5 hình thái kinh tế - xã hội đó, hình thái nào được xem là \"thai nghén\" trong lòng xã hội tư bản chủ nghĩa?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hình thái kinh tế - xã hội chiếm hữu nô lệ"
+          },
+          {
+            "key": "B",
+            "text": "Hình thái kinh tế - xã hội phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Hình thái kinh tế - xã hội tư bản chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Hình thái kinh tế - xã hội cộng sản chủ nghĩa"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 276"
+      }
+    },
+    {
+      "id": "b-282",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo C.Mác và Ph.Ăngghen thì hình thái kinh tế - xã hội cộng sản chủ nghĩa phát triển như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phát triển theo hình xoáy ốc"
+          },
+          {
+            "key": "B",
+            "text": "Phát triển ý muốn chủ quan của con người"
+          },
+          {
+            "key": "C",
+            "text": "Phát triển theo sở thích của một đấng siêu nhiên nào đó trong vũ trụ"
+          },
+          {
+            "key": "D",
+            "text": "Phát triển từ thấp lên cao"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 282"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 53): Theo Mác – Ăngghen, hình thái kinh tế – xã hội cộng sản chủ nghĩa phát triển từ thấp lên cao qua hai giai đoạn: giai đoạn thấp và giai đoạn cao.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 53"
+      }
+    },
+    {
+      "id": "b-284",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vấn đề: \"Dân giàu, nước mạnh, dân chủ, công bằng, văn minh\" là đặc trưng thứ mấy trong 08 đặc trưng cơ bản của chủ nghĩa xã hội ở Việt Nam? (Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội bổ sung, phát triển năm 2011)",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "6"
+          },
+          {
+            "key": "D",
+            "text": "8"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 284"
+      }
+    },
+    {
+      "id": "b-285",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn cơ bản của hình thái kinh tế - xã hội tư bản chủ nghĩa biểu hiện về mặt xã hội là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mâu thuẫn xung đột lợi ích của các nhà tư sản khác nhau"
+          },
+          {
+            "key": "B",
+            "text": "Cuộc đấu tranh của giai cấp công nhân chống lại giai cấp tư sản ngày càng gay gắt"
+          },
+          {
+            "key": "C",
+            "text": "Cuộc cạnh tranh giành việc làm của những người công nhân để tránh không bị thất nghiệp"
+          },
+          {
+            "key": "D",
+            "text": "Cuộc đấu tranh giành quyền điều hành quốc gia của các đáng phải tư sản"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 285"
+      }
+    },
+    {
+      "id": "b-289",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ sở để xác định thời đại và phân chia thời đại là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hình thái kinh tế - xã hội và vị trí của một giai cấp đứng ở vị trí trung tâm"
+          },
+          {
+            "key": "B",
+            "text": "Vị trí của một giai cấp đứng ở vị trí trung tâm"
+          },
+          {
+            "key": "C",
+            "text": "Sư phát triển của lực lượng sản xuất và một quan hệ sản xuất phù hợp"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng xã hội chủ nghĩa do giai cấp công nhân lãnh đạo thành công"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 289"
+      }
+    },
+    {
+      "id": "b-302",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khác biệt về sự ra đời của hình thái kinh tế - xã hội cộng sản chủ nghĩa với sự ra đời của các hình thái kinh tế-xã hội trước đây là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phải được thực hiện thông qua cuộc cách mạng vô sản"
+          },
+          {
+            "key": "B",
+            "text": "Phải được thưc hiện thông qua cuộc cách mạng tư sản"
+          },
+          {
+            "key": "C",
+            "text": "Phải được thưc hiện thông qua một sự cải biến sâu sắc về trình độ phát triển của công nghiệp và người lao động"
+          },
+          {
+            "key": "D",
+            "text": "Phải có sự hội tụ đầy đủ các yếu tố về kinh tế và chính trị"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 302"
+      }
+    },
+    {
+      "id": "b-304",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về mặt lý thuyết, con đường cách mạng vô sản nào có thể tiến hành, nhưng vô cùng hiếm, quý và chưa từng xảy ra trên thực tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Con đường bao lưc cách mang"
+          },
+          {
+            "key": "B",
+            "text": "Con đường hòa bình"
+          },
+          {
+            "key": "C",
+            "text": "Con đường khởi nghĩa Vũ trang"
+          },
+          {
+            "key": "D",
+            "text": "Con đường bạo động lật đổ"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 304"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 57): Về lý thuyết cách mạng vô sản cũng có thể diễn ra bằng con đường hòa bình, nhưng rất hiếm và thực tế chưa từng xảy ra.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 57"
+      }
+    },
+    {
+      "id": "b-305",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thực chất của thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là thời kỳ cải biến cách mạng từ xã hội tiền tư bản và tư bản chủ nghĩa sang xã hội xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Là thời kỳ cải biến cách mang từ xã hội công sản nguyên thủy lên xã hội xã hội chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Là thời kỳ cải biển cách mạng tư xã hội chiếm hữu nô lệ lên xã hội xã hội chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Là thời kỳ Cải biến cách mạng từ xã hội xã hội chủ nghĩa lên xã hội cộng sản chủ nghĩa"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 305"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 66): Thực chất của thời kỳ quá độ lên CNXH là thời kỳ cải biến cách mạng từ xã hội tiền tư bản và tư bản chủ nghĩa sang xã hội xã hội chủ nghĩa.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 66"
+      }
+    },
+    {
+      "id": "b-310",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại đại hội X, theo quan điểm của đảng cộng sản Việt Nam, quá độ lên chủ nghĩa xã hội bộ qua chế độ tư bản chủ nghĩa là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Con đường cách mạng chủ quan, con đường xây dựng đất nước trong thời kỳ quá độ lên chủ nợía xă hội ở nước ta"
+          },
+          {
+            "key": "B",
+            "text": "Con đường cách mạng tất yếu khách quan, con đường xây dựng đất nước trong thời kỳ quá độ lên phong kiến ở nước ta"
+          },
+          {
+            "key": "C",
+            "text": "Con đường cách mạng tất yếu khách quan, con đường xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta"
+          },
+          {
+            "key": "D",
+            "text": "Con đường mong muốn riêng của đất nước ta"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 310"
+      }
+    },
+    {
+      "id": "b-311",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quá độ từ chủ nghĩa tư bản phát triển lên chủ nghĩa xã hội là hình thức quá độ nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quá độ gián tiếp"
+          },
+          {
+            "key": "B",
+            "text": "Quá độ trực tiếp"
+          },
+          {
+            "key": "C",
+            "text": "Quá độ bộ Phản"
+          },
+          {
+            "key": "D",
+            "text": "Quá độ toàn diện"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 311"
+      }
+    },
+    {
+      "id": "b-313",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa xã hội còn tồn tại nhiều tư tưởng khác nhau, chủ yếu là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tư tưởng vô sản và tư tưởng tư sản"
+          },
+          {
+            "key": "B",
+            "text": "Tư tưởng vô sản và tư tưởng đia chủ phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Tư tưởng chủ nó và tư tưởng tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Tư tưởng vô sản và tư tưởng chủ nô"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 313"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 68): Thời kỳ quá độ còn tồn tại nhiều tư tưởng khác nhau, chủ yếu là tư tưởng vô sản và tư tưởng tư sản.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 68"
+      }
+    },
+    {
+      "id": "b-325",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng bản chất của chủ nghĩa xã hội về phương diện kinh tế là gì? Chọn các đáp án đúng.",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại"
+          },
+          {
+            "key": "B",
+            "text": "Chế độ công hữu vẽ tư liệu sản xuất chủ yếu"
+          },
+          {
+            "key": "C",
+            "text": "Nên kinh tế phát triển cao dựa trên lực lượng sản xuất công nghiệp cơ khí"
+          },
+          {
+            "key": "D",
+            "text": "Chế độ sở hữu tập thể, hỗn hợp của tư nhân và công cộng"
+          }
+        ],
+        "answer": "AB"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 325"
+      }
+    },
+    {
+      "id": "b-329",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo quan điểm của Đảng công sản Việt Nam, quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa đòi hỏi phải:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tiếp thu, kế thừa những thành tựu mà nhân loại đã đạt được dưới chủ nghĩa tư bản"
+          },
+          {
+            "key": "B",
+            "text": "Tiếp thu, kế thừa những thành tựu mà chế độ phong kiến đã đạt được"
+          },
+          {
+            "key": "C",
+            "text": "Bò qua những thành tựu mà nhân loại đã đạt được trong chủ nghĩa tư bản"
+          },
+          {
+            "key": "D",
+            "text": "Loại bỏ tất cả những gì có liên quan đến chủ nghĩa tư bản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 329"
+      }
+    },
+    {
+      "id": "b-333",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc trưng bản chất nào của chủ nghĩa xã hội thể hiện đây là chế độ xã hội vì con người, do con người?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa xã hội có nên kinh tế phát triển cao, dựa trên chế độ tư hữu về tư liệu sản xuất chủ yếu"
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa xã hội là chế độ xã hội do nhân dân lao động làm chủ"
+          },
+          {
+            "key": "C",
+            "text": "Chủ nghĩa xã hội giài phóng giai cấp công nhân, nhân dân lao động và đông thời đàn áp giai cấp thống trị tàn bạo là giai cấp tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Chủ nghĩa xã hội có nhà nước kiểu mới mang bản chất giai cấp công nhân, đại biểu cho lợi ích, quyền lực và ý chí của riêng giai cấp công nhân"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 333"
+      }
+    },
+    {
+      "id": "b-345",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự ra đời của công nghiệp cơ khí là bước tiến to lớn của lực lượng sản xuất trong cuộc cách mạng công nghiệp lần thứ mấy?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng công nghiệp lần thứ nhất"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng công nghiệp lần thứ hai"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng công nghiệp lần thứ ba"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng công nghiệp lần thứ tư"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 345",
+        "bankAnswer": "A",
+        "answerChangedToTextbook": true
+      },
+      "enrichment": {
+        "text": "ĐÃ ĐỔI THEO GIÁO TRÌNH: giáo trình MLN131 (tr. PDF 55) xếp sự ra đời của công nghiệp cơ khí vào “Cách mạng công nghiệp lần thứ 2”, nên đáp án là B. Ngân hàng câu hỏi gốc ghi A (lần thứ nhất). Lưu ý: nhiều sách lịch sử xếp công nghiệp cơ khí vào cách mạng công nghiệp lần thứ nhất, nên nếu thầy cô dạy khác thì hỏi lại.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình MLN131, trang PDF 55"
+      }
+    },
+    {
+      "id": "b-347",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I.Lênin, đối với những nước chưa có chủ nghĩa tư bản phát triên cao thì cần phải có một thời kỳ gì để từ chủ nghĩa tư bản lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thời kỳ khai sáng"
+          },
+          {
+            "key": "B",
+            "text": "Thời kỳ tiến lên"
+          },
+          {
+            "key": "C",
+            "text": "Thời kỳ quá độ"
+          },
+          {
+            "key": "D",
+            "text": "Thời kỳ phát triển"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 347"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 54): Lênin: với những nước chưa có chủ nghĩa tư bản phát triển cao, cần một thời kỳ quá độ khá lâu dài từ chủ nghĩa tư bản lên chủ nghĩa xã hội.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 54"
+      }
+    },
+    {
+      "id": "b-349",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên tắc phân phối chủ yếu của chủ nghĩa cộng sản là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Làm theo năng lực, hướng theo nhu cầu"
+          },
+          {
+            "key": "B",
+            "text": "Làm theo năng lực, hướng theo lao động"
+          },
+          {
+            "key": "C",
+            "text": "Làm theo năng lực, hướng theo phúc lợi xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Làm theo công việc, hướng theo tiền lương"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 349"
+      }
+    },
+    {
+      "id": "b-354",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Học thuyết về hình thái kinh tế - xã hội do ai khởi xướng, và sau đó được ai bổ sung, phát triển?",
+        "options": [
+          {
+            "key": "A",
+            "text": "C.Mác - V.I.Lênin khôi xướng, Ph. Ăngghen bổ sung phát triển"
+          },
+          {
+            "key": "B",
+            "text": "C.Mác - Ph. Ăngghen khởi xướng, V.I Lênin bổ sung phát triển"
+          },
+          {
+            "key": "C",
+            "text": "C.Mác - Ph. Ăngghen khởi xướng, Chủ tịch Hồ Chí Minh bố sung phát triển"
+          },
+          {
+            "key": "D",
+            "text": "C.Mác khởi xướng, Ph. Ăngghen bổ sung phát triển"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 354"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 53): Học thuyết hình thái kinh tế – xã hội do Mác và Ăngghen khởi xướng, được Lênin bổ sung, phát triển và hiện thực hóa ở nước Nga Xô viết.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 53"
+      }
+    },
+    {
+      "id": "b-374",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cách mạng vô sản là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cuộc cách mạng của giai cấp nông dân và nhân dân lao động dưới sự lãnh đạo của Đảng Cộng sản, được thực hiện bằng con đường bạo lực cách mạng nhằm lật đổ chế độ tư bản chủ nghĩa, thiết lập nhà nước chuyên chính vô sản"
+          },
+          {
+            "key": "B",
+            "text": "Cuộc cách mạng của giai cấp công nhân và nhân dân lao động dưới sự lãnh đạo của Đảng Cộng sản, trên thực tế được thực hiện bằng con đường tuyên truyền giáo dục nhằm lật đổ chế độ tư bản chủ nghĩa, thiết lập nhà nước chuyển chính vô sản"
+          },
+          {
+            "key": "C",
+            "text": "Cuộc cách mạng của giai cấp công nhân và nhân dân lao động dưới sự lãnh đạo của Đảng Cộng sản, trên thực tế được thực hiện bằng con đường bạo lực cách mạng nhằm lật đổ chế độ phong kiến, thiết lập nhà nước chuyên chính vô sản"
+          },
+          {
+            "key": "D",
+            "text": "Cuộc cách mạng của giai cấp công nhân và nhân dân lao động dưới sự lãnh đạo của Đảng Cộng sản, được thực hiện bằng con đường bạo lực cách mạng nhằm lật đổ chế độ tư bản chủ nghĩa, thiết lập nhà nước chuyên chính vô sản"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 374"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 56): Cách mạng vô sản là cuộc cách mạng của công nhân và nhân dân lao động dưới sự lãnh đạo của Đảng Cộng sản, trên thực tế bằng con đường bạo lực cách mạng nhằm lật đổ chế độ tư bản.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 56"
+      }
+    },
+    {
+      "id": "b-375",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điền cụm từ thích hợp vào (...): \"Về lý luận, không thể nghi ngờ gì được rằng giữa ... và ..., có một thời kỳ quá độ nhất định\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa tư bản/ chủ nghĩa cộng sản"
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa tư băn/ Giai cấp công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Nhân dân lao động/ chính quyền"
+          },
+          {
+            "key": "D",
+            "text": "Chính trị/ xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 375"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 54): Lênin: về lý luận, giữa chủ nghĩa tư bản và chủ nghĩa cộng sản chắc chắn có một thời kỳ quá độ nhất định.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 54"
+      }
+    },
+    {
+      "id": "b-386",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vấn đề: \"Xây dựng nhà nước do nhân dân lao động làm chủ, đó là Nhà nước của dân, do dân, vì dân\" là đặc điềm thứ mấy trong các đặc điểm của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "5"
+          },
+          {
+            "key": "D",
+            "text": "6"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 386"
+      }
+    },
+    {
+      "id": "b-402",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bản chất của chủ nghĩa xã hội ở nước Nga Xôviết có mấy đặc trưng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "3"
+          },
+          {
+            "key": "B",
+            "text": "4"
+          },
+          {
+            "key": "C",
+            "text": "5"
+          },
+          {
+            "key": "D",
+            "text": "6"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 402"
+      }
+    }
+  ]
+}

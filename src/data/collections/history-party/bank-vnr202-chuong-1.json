@@ -1,0 +1,3600 @@
+{
+  "id": "lich-su-dang-ngan-hang-chuong-1",
+  "title": "Lịch sử Đảng – Ngân hàng bổ sung – Chương 1",
+  "subject": "Lịch sử Đảng",
+  "description": "Ngân hàng VNR202 bổ sung, Chương 1 – Đảng ra đời và lãnh đạo giành chính quyền (1930–1945). 122 câu.",
+  "contentType": "multiple-choice",
+  "language": "vi",
+  "source": {
+    "document": "VNR202 - Lịch sử Đảng Cộng sản Việt Nam – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz)",
+    "note": "Nguồn cộng đồng, đã đối chiếu tự động với giáo trình; xem docs/doi-chieu-giao-trinh.md"
+  },
+  "items": [
+    {
+      "id": "b-032",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện nào được lãnh tu Nguyễn Ái Quốc đánh giá \"nó chứng tỏ rằng giai cấp vô sản ta đã trường thành và đủ sức lãnh đạo cách mạng\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quốc tế Cộng sản ra đời (1919)"
+          },
+          {
+            "key": "B",
+            "text": "Hội Việt Nam Cách mạng Thanh niên ra đời (1925)"
+          },
+          {
+            "key": "C",
+            "text": "Ba tổ chức cộng sản ra đời (1929)"
+          },
+          {
+            "key": "D",
+            "text": "Đảng Cộng sản Việt Nam ra đời (1930)"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 32"
+      }
+    },
+    {
+      "id": "b-033",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tính chất của xã hội Việt Nam dưới sự thống tri của thực dân Pháp là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xã hội thuộc đia, nửa phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Xã hội phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Xã hội thuộc đia"
+          },
+          {
+            "key": "D",
+            "text": "Xã hội chiếm hữu"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 33"
+      }
+    },
+    {
+      "id": "b-034",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hoạt động của Phan Bội Châu, Phan Châu Trinh và một số người sống ở nước ngoài có tác dung quan tron g nhất là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mở mang dân trí"
+          },
+          {
+            "key": "B",
+            "text": "Tìm được con đường cứu nước cho dân tộc"
+          },
+          {
+            "key": "C",
+            "text": "Góp phần cải thiện đời sống của nhân dân"
+          },
+          {
+            "key": "D",
+            "text": "Cổ vũ, thức tỉnh lòng yêu nước của nhân dân ta"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 34"
+      }
+    },
+    {
+      "id": "b-035",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chánh cương vắn tắt, Sách lược vẫn tắt do Hội nghi thành lập Đảng thông qua đã đặt nhiệm vu gì lên hàn g đầu",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nhiệm vu chống tư sản"
+          },
+          {
+            "key": "B",
+            "text": "Nhiệm vu chống phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Nhiệm vu chống tay sai phản động"
+          },
+          {
+            "key": "D",
+            "text": "Nhiệm vu chống đế quố"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 35"
+      }
+    },
+    {
+      "id": "b-036",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xu hướng giành độc lập dân tộc theo con đường cải cách đất nước gắn với tên tuổi của nhà yêu nước nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phan Châu Trinh"
+          },
+          {
+            "key": "B",
+            "text": "Phan Bội Châu"
+          },
+          {
+            "key": "C",
+            "text": "Phan Đình Phùng"
+          },
+          {
+            "key": "D",
+            "text": "Phan Văn Trường"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 36"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 20): Phan Châu Trinh và những người cùng chí hướng muốn giành độc lập nhưng không bạo động như Phan Bội Châu, mà chủ trương cải cách đất nước.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 20"
+      }
+    },
+    {
+      "id": "b-037",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện nào được Nguyễn Ái Quốc đánh giá \"Nó là quả trứng, mà từ đó nở ra con chim non Cộng sản\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng tháng Mười Nga bùng nổ và thắng lợi"
+          },
+          {
+            "key": "B",
+            "text": "Sự thành lập Đảng cộng sản Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Vu mưu sát tên toàn quyền Méc lanh (Pháp) của Phạm Hồng Thái"
+          },
+          {
+            "key": "D",
+            "text": "Sự thành lập Hội Việt Nam cách mạng thanh niên"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 37"
+      }
+    },
+    {
+      "id": "b-038",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hoạt động chủ yếu của Hội Việt Nam Cách Mạng Thanh Niên thời kỳ ở Quảng Châu (Trung Quốc) là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xuất bản báo Thanh niên làm cơ quan tuyên truyền của Hội."
+          },
+          {
+            "key": "B",
+            "text": "Thực hiện chủ trương \"vô sản hóa\"."
+          },
+          {
+            "key": "C",
+            "text": "Mở lớp huấn luyện chính tri, đào tạo cán bộ cách mạng"
+          },
+          {
+            "key": "D",
+            "text": "Thành lập cơ sở trong nước."
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 38"
+      }
+    },
+    {
+      "id": "b-049",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vì sao trong những năm 1939-1941 Đảng Cộng sản Đông Dương lại phải chuyển hướng chiến lược đấu tranh cách mạng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Do sự biến đổi mau le của tình hình thế giới"
+          },
+          {
+            "key": "B",
+            "text": "Do chính sách thống tri của Pháp - Nhật"
+          },
+          {
+            "key": "C",
+            "text": "Do yêu cầu của sự nghiệp giải phóng dân tộc đặt ra cấp thiết"
+          },
+          {
+            "key": "D",
+            "text": "Do yêu cầu giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 49"
+      }
+    },
+    {
+      "id": "b-051",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điểm khác biệt và độc đáo nhất của Nguyễn Ái Quốc trong hành trình tìm đường cứu nước so các tiền bối khác?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hướng đi và cách tiếp cận chân lí"
+          },
+          {
+            "key": "B",
+            "text": "Từ yêu nước đến chủ nghĩa Mác - Lê nin"
+          },
+          {
+            "key": "C",
+            "text": "Gắn độc lập dân tộc với vấn đề ruộng đất"
+          },
+          {
+            "key": "D",
+            "text": "Dự đoán chính xác thời cơ cách mạng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 51"
+      }
+    },
+    {
+      "id": "b-054",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chính phủ lâm thời nước Việt Nam dân chủ cộng hòa ra đời từ tổ chức nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Việt Minh"
+          },
+          {
+            "key": "B",
+            "text": "Ủy ban dân tộc giải phóng Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Úy ban lâm thời khu giải phóng"
+          },
+          {
+            "key": "D",
+            "text": "Uy ban khởi nghĩa"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 54"
+      }
+    },
+    {
+      "id": "b-055",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi Ban Chấp hành Trung ương tháng 5/194 giải phóng dân tộc được đặt ra từ Hội nghi nào của Đảng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi Ban Chấp hành Trung ương tháng 10/1930"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi Ban Chấp hành Trung ương tháng 11/1939"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi Cán bộ Trung ương tháng 11/1940"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi Ban Chấp hành Trung ương tháng 5/194"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 55"
+      }
+    },
+    {
+      "id": "b-056",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lê Hồng Phong được bầu làm Tổng bí thư tại Đại hội nào của Đảng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đại hội đại biểu toàn quốc lần thứ II"
+          },
+          {
+            "key": "B",
+            "text": "Đại hội đại biểu toàn quốc lần thứ III"
+          },
+          {
+            "key": "C",
+            "text": "Đại hội đại biểu toàn quốc lần thứ I"
+          },
+          {
+            "key": "D",
+            "text": "Đại hội đại biểu toàn quốc lần thứ IV"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 56"
+      }
+    },
+    {
+      "id": "b-057",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặt trận được xây dựng thời kỳ cách mạng 1930 - 1931 goi tên là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mặt trận nhân dân phản đế Đông Dương"
+          },
+          {
+            "key": "B",
+            "text": "Mặt trận dân chủ Đông Dương"
+          },
+          {
+            "key": "C",
+            "text": "Hội phản đế Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Mặt trận dân tộc thống nhất phản đế Đông Dương"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 57"
+      }
+    },
+    {
+      "id": "b-058",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Muc tiêu cu thể trước mắt của cao trào cách mạng 193 6 - 1939 là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Độc lập dân tộc"
+          },
+          {
+            "key": "B",
+            "text": "Ruộng đất cho dân cày"
+          },
+          {
+            "key": "C",
+            "text": "Đánh đổ chế độ thực dân, phong kiến"
+          },
+          {
+            "key": "D",
+            "text": "Các quyền dân chủ đơn sơ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 58"
+      }
+    },
+    {
+      "id": "b-059",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vu cách mạng nào được xác đinh bởi Cương lĩn h chính tri",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đổ phong kiến, đánh đổ đế quốc, 2 nhiệm vu có quan hệ mật thiết khăng khít với nhau"
+          },
+          {
+            "key": "B",
+            "text": "Đánh đổ đế quốc Pháp và tư sản phản cách mạng"
+          },
+          {
+            "key": "C",
+            "text": "Đánh đổ đế quốc Pháp, phong kiến, tư sản phản cách mạng làm cho nước nhà độc lập"
+          },
+          {
+            "key": "D",
+            "text": "Đánh đuổi đế quốc Pháp và phong kiến"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 59"
+      }
+    },
+    {
+      "id": "b-060",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ngày 2/9/1945 gắn với sự kiện lich sử nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pháp xâm lược nước ta lần 2"
+          },
+          {
+            "key": "B",
+            "text": "Ngày Nam Bộ kháng chiến"
+          },
+          {
+            "key": "C",
+            "text": "Chủ tích Hò Chí Minh đoc tuyên ngôn độc lập khai sinh nước Việt Nam Dân chủ Công hòa"
+          },
+          {
+            "key": "D",
+            "text": "Ngày toàn quốc kháng chiến chống thực dân Pháp xâm lược"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 60"
+      }
+    },
+    {
+      "id": "b-061",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) quyết đinh hình thứ c chính quyền sau cách mạng ở Việt Nam là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chính phủ cách mạng lâm thời"
+          },
+          {
+            "key": "B",
+            "text": "Chính phủ Việt Nam Dân chủ Cộng hòa"
+          },
+          {
+            "key": "C",
+            "text": "Chính phủ Xô viết công-nông-binh"
+          },
+          {
+            "key": "D",
+            "text": "Chính phủ dân chủ Cộng hòa Đông Dương"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 61"
+      }
+    },
+    {
+      "id": "b-091",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tháng 6-1925 gắn với sự ra đời của tổ chức nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội Việt Nam cách mạng thanh niên"
+          },
+          {
+            "key": "B",
+            "text": "Đông Dương Cộng sản Đảng"
+          },
+          {
+            "key": "C",
+            "text": "Quốc dân Đảng"
+          },
+          {
+            "key": "D",
+            "text": "Đảng cộng sản Việt Nam"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 91"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 12): Tháng 6/1925 Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên; hoạt động của Hội giúp phong trào công nhân chuyển biến nhanh về chất.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 12"
+      }
+    },
+    {
+      "id": "b-092",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhân dân Việt Nam thực hiện nhiệm vu chống chế độ phản động thuộc đia, chống phát xít, chống chiến tran h trong phong trào nào sau đây",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phong trào cách mạng 1930-1931"
+          },
+          {
+            "key": "B",
+            "text": "Phong trào dân chủ 1936 - 1939"
+          },
+          {
+            "key": "C",
+            "text": "Phong trào dân tộc dân chủ 1919 - 1925"
+          },
+          {
+            "key": "D",
+            "text": "Phong trào dân tộc dân chủ 1925 - 1930"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 92"
+      }
+    },
+    {
+      "id": "b-093",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tổ chức Cộng sản nào ra đời đầu tiên ở Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội Việt Nam cách mạng Thanh Niên"
+          },
+          {
+            "key": "B",
+            "text": "Đông Dương Cộng sản Đảng"
+          },
+          {
+            "key": "C",
+            "text": "An Nam Cộng sản đảng"
+          },
+          {
+            "key": "D",
+            "text": "Đông Dương Cộng sản liên đoàn"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 93"
+      }
+    },
+    {
+      "id": "b-094",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lãnh tu Nguyễn Ái Quốc tìm thấy ở Chủ nghĩa Lênin con đường giải phóng cho dân tộc Việt Nam thông qua việc:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gửi Bản yêu sách của nhân dân An Nam (1919)"
+          },
+          {
+            "key": "B",
+            "text": "Bỏ phiếu tán thành Quốc tế Cộng sản, sáng lập Đảng Cộng sản Pháp (1920)"
+          },
+          {
+            "key": "C",
+            "text": "Đoc Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc đia (1920"
+          },
+          {
+            "key": "D",
+            "text": "Dự Đại hội lần thứ V Quốc tế Cộng sản (1924)"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 94"
+      }
+    },
+    {
+      "id": "b-095",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lực lượng chính của cách mạng được xác đinh trong Luận cương chính tri (10-1930) là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công nhân và nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Toàn thể nhân dân"
+          },
+          {
+            "key": "C",
+            "text": "Nông dân và tiểu tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Nông dân và tư sản dân tộc"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 95"
+      }
+    },
+    {
+      "id": "b-096",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn chủ yếu ở Việt Nam cuối thế kỷ XIX đầu thế kỷ XX là mâu thuẫn giữa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đia chủ phong kiến với nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Tư sản với công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Tư sản Việt Nam với tư sản Pháp"
+          },
+          {
+            "key": "D",
+            "text": "Dân tộc Việt Nam với đế quốc Pháp"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 96"
+      }
+    },
+    {
+      "id": "b-097",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung Cương lĩnh chính tri đầu tiên (2/1930) của Đảng thể hiện trong:",
+        "options": [
+          {
+            "key": "A",
+            "text": "2 văn kiện"
+          },
+          {
+            "key": "B",
+            "text": "3 văn kiên"
+          },
+          {
+            "key": "C",
+            "text": "4 văn kiện"
+          },
+          {
+            "key": "D",
+            "text": "5 văn kiện"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 97"
+      }
+    },
+    {
+      "id": "b-102",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đảng Cộng sản Việt Nam",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Lao động Việt Nam"
+          },
+          {
+            "key": "B",
+            "text": "Đảng Cộng sản Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Đảng Cộng sẵn Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Đảng nhân dân cách mạng Việt Nam"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 102"
+      }
+    },
+    {
+      "id": "b-108",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chính cương vắn tắt, Sách lược vắn tắt... do Nguyễn Ái Quốc soạn thảo được thông qua tại Hội nghi thành lập Đảng được xem là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Văn kiện của Đảng"
+          },
+          {
+            "key": "B",
+            "text": "Tài liệu chính tri đặc biệt của Đảng"
+          },
+          {
+            "key": "C",
+            "text": "Nghi quyết của Đảng Cộng sản Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Cương lĩnh chính tri đầu tiên của Đảng Cộng sản Việt Na"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 108"
+      }
+    },
+    {
+      "id": "b-113",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chủ trương nào không có trong Chỉ thi \"Nhật - Pháp bắn nhau và hành động của chúng ta\" (3/1945)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thông qua 10 chính sách lớn của Việt Minh"
+          },
+          {
+            "key": "B",
+            "text": "Thay khẩu hiệu \"đánh đuổi phát xít Nhật - Pháp\" bằng khẩu hiệu \"đánh đuổi phát xít Nhật\""
+          },
+          {
+            "key": "C",
+            "text": "Nêu khấu hiệu \"thành lập chính quyền cách mạng của nhân dân Đông Dương\""
+          },
+          {
+            "key": "D",
+            "text": "Phát động một cao trào kháng Nhật cứu nước"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 113"
+      }
+    },
+    {
+      "id": "b-114",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Căn cứ đia cách mạng đầu tiên của Việt Nam trong giai đoạn 1939 - 1945 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cao Bằng"
+          },
+          {
+            "key": "B",
+            "text": "Bắc Sơn - Võ Nhai"
+          },
+          {
+            "key": "C",
+            "text": "Thái Nguyên"
+          },
+          {
+            "key": "D",
+            "text": "Tuyên Quang"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 114"
+      }
+    },
+    {
+      "id": "b-115",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhân dân ta phải tiến hành tổng khởi nghĩa giành chính quyền trước khi quân Đồng minh vào Đông Dương vì:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đó là lúc so sánh lực lượng có lợi nhất đối với cách mạng"
+          },
+          {
+            "key": "B",
+            "text": "Đó là lúc kẻ thù cũ đã đầu hàng nhưng kẻ thù mới chưa kip đến"
+          },
+          {
+            "key": "C",
+            "text": "Quân Đồng minh có thể dựng ra một chính quyền trái với ý chí và nguyện vong của nhân dân ta"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các lý do"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 115"
+      }
+    },
+    {
+      "id": "b-116",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi Trung ương 8 (5/1941) đã bầu ai làm Tổng Bí thư của Đảng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nguyễn Ái Quốc"
+          },
+          {
+            "key": "B",
+            "text": "Nguyễn Văn Cừ"
+          },
+          {
+            "key": "C",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Lê Duẩn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 116"
+      }
+    },
+    {
+      "id": "b-117",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Qua thực tế lãnh đạo phong trào cách mạng 1930 - 1931, Đảng ta đã trưởng thành nhanh chóng. Do đó, tháng 4/1931 Đảng ta được Quốc tế Cộng sản công nhận:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là một chi bộ của Quốc tế Cộng sản"
+          },
+          {
+            "key": "B",
+            "text": "Là một bộ phận không thế tách rời của Quốc tế Cộng sản"
+          },
+          {
+            "key": "C",
+            "text": "Là một chính đảng của cách mạng Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Là một Đảng của giai cấp công nhân Việt Nam"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 117"
+      }
+    },
+    {
+      "id": "b-118",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên nhân chủ yếu và có ý nghĩa quyết đinh sự bùng nổ và phát triển của cao trào cách mạng Việt Nam năm 1930?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tác động tiêu cực của cuộc khủng hoảng kinh tế 1929 - 1933"
+          },
+          {
+            "key": "B",
+            "text": "Chính sách khủng bố trắng của đế quốc Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Chính sách tăng cường vơ vét bóc lột của để quốc Pháp"
+          },
+          {
+            "key": "D",
+            "text": "Sự lãnh đạo của Đảng Cộng sản Việt Nam"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 118"
+      }
+    },
+    {
+      "id": "b-119",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyên nhân nào làm cho phong trào ở Nghệ - Tĩnh lên cao?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì Nghệ - Tĩnh đã lập được chính quyền xô viết"
+          },
+          {
+            "key": "B",
+            "text": "Vì Nghệ - Tĩnh có tổ chức cộng sản và cơ sở đảng khá mạnh"
+          },
+          {
+            "key": "C",
+            "text": "Vì nhân dân ở đây có lòng yêu nước và căm thù giặc sâu sắc"
+          },
+          {
+            "key": "D",
+            "text": "Vì cơ sở công nghiệp Vinh - Bến Thủy ở Nghệ - Tĩnh là trung tâm kỹ nghệ lớn nhất ở Việt Nam"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 119"
+      }
+    },
+    {
+      "id": "b-120",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào chưa đúng trong các bài hoc lãnh đạo cách mạng của Đảng để dẫn tới cách mạng Tháng Tám 1945 thắng lợi?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giương cao ngon cờ độc lập dân tộc, kết hợp đúng đắn hai nhiệm vu chống để quốc và chống phong kiế"
+          },
+          {
+            "key": "B",
+            "text": "Sử dung lực lượng vũ trang áp đảo tiêu diệt kẻ thù"
+          },
+          {
+            "key": "C",
+            "text": "Lợi dung mâu thuẫn trong hàng ngũ kẻ thù"
+          },
+          {
+            "key": "D",
+            "text": "Nắm vững nghệ thuật khởi nghĩa, nghệ thuật chon đúng thời c"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 120"
+      }
+    },
+    {
+      "id": "b-144",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thành phần nào dưới đây trở thành bi tri trong thời Phá p thuộc",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công nhân và nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Công nhân, nông dân, tiểu tư sản"
+          },
+          {
+            "key": "C",
+            "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc"
+          },
+          {
+            "key": "D",
+            "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, đia chủ nhỏ và vừ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 144"
+      }
+    },
+    {
+      "id": "b-145",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là luận điểm sáng tạo của Hồ Chí Minh khi vận dung chủ nghĩa Mác - Lênin về việc ra đời của Đảng Cộng sản Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Cộng sản Việt Nam ra đời là tất yếu lich sử, nó là sản phẩm kết hợp giữa chủ nghĩa Mác với phong trào công nhân Việt Nam"
+          },
+          {
+            "key": "B",
+            "text": "Đảng Cộng sản Việt Nam ra đời là tất yếu lich sử, nó là sản phẩm kết hợp giữa chủ nghĩa Mác với phong trào yêu nước Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Đảng Cộng sản Việt Nam là sản phẩm của sự kết hợp chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước của nhân dân Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Đảng Cộng sản Việt Nam là sản phẩm của sự kết hợp phong trào công nhân và phong trào yêu nước Việt Nam"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 145"
+      }
+    },
+    {
+      "id": "b-146",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lãnh tu Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên (1925) là sự chuẩn bi cho sự ra đời củ a Đảng Cộng sản Việt Nam về mặt",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tổ chức"
+          },
+          {
+            "key": "B",
+            "text": "Tư tưởng"
+          },
+          {
+            "key": "C",
+            "text": "Chính tri"
+          },
+          {
+            "key": "D",
+            "text": "Đường lối chính sách"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 146"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 24): Tháng 6/1925, Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu (Trung Quốc), nòng cốt là Cộng sản đoàn.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 24"
+      }
+    },
+    {
+      "id": "b-147",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trước sự xâm lược của thực dân Pháp, phong trào yêu nước do Việt Nam Quốc dân Đảng khởi xướng theo khuynh hướng nào sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khuynh hướng phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Khuynh hướng vô sản"
+          },
+          {
+            "key": "C",
+            "text": "Khuynh hướng dân chủ tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Khuynh hướng tiểu tư sản"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 147"
+      }
+    },
+    {
+      "id": "b-149",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại biểu của tổ chức cộng sản nào không tham dự Hội nghi thành lập Đảng đầu năm 1930?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đông Dương cộng sản liên đoàn"
+          },
+          {
+            "key": "B",
+            "text": "An Nam cộng sản Đảng"
+          },
+          {
+            "key": "C",
+            "text": "Đông Dương cộng sản Đảng"
+          },
+          {
+            "key": "D",
+            "text": "Quốc tế cộng sản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 149"
+      }
+    },
+    {
+      "id": "b-157",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để tuyên truyền chủ nghĩa Mác trong giai đoạn 1932-1933, Đảng Cộng sản Đông Dương đã sử dung phương pháp gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tổ chức các hội công khai, như hội cấy, hội cày, hội đá bóng..."
+          },
+          {
+            "key": "B",
+            "text": "Tổ chức các cuộc bút chiến công khai"
+          },
+          {
+            "key": "C",
+            "text": "Tổ chức các buổi hoc bí mật"
+          },
+          {
+            "key": "D",
+            "text": "Tổ chức rải truyền đơn"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 157"
+      }
+    },
+    {
+      "id": "b-158",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đẳng chủ trương thành lập mặt trận Việt Minh vì muc đích gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nhằm tập hợp rộng rãi nông dân chống đế quốc"
+          },
+          {
+            "key": "B",
+            "text": "Tạm gác lại khẩu hiệu \"đánh đổ đia chủ, chia ruộng đất cho dân cày\""
+          },
+          {
+            "key": "C",
+            "text": "Để đoàn kết, tập hợp lực lượng cách mạng nhằm giải phóng dân tộc"
+          },
+          {
+            "key": "D",
+            "text": "Nhằm tranh thủ lực lượng đồng minh chống phát xít Nhật"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 158"
+      }
+    },
+    {
+      "id": "b-159",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội đại biểu toàn quốc của Đảng cộng sản Đông Dương vào tháng 3-1935 bầu ai làm Tổng bí thư?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "B",
+            "text": "Nguyễn Văn Cừ"
+          },
+          {
+            "key": "C",
+            "text": "Lê Hồng Phong"
+          },
+          {
+            "key": "D",
+            "text": "Hà Huy Tập"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 159"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 38): Đại hội I (3/1935) bầu Ban Chấp hành Trung ương mới do Lê Hồng Phong làm Tổng Bí thư và bầu đoàn đại biểu dự Đại hội VII Quốc tế Cộng sản.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 38"
+      }
+    },
+    {
+      "id": "b-160",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những nội dung của chương trình hành động của Đảng Cộng sản Đông Dương là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cải cách ruộng đất"
+          },
+          {
+            "key": "B",
+            "text": "Cải cách giáo duc"
+          },
+          {
+            "key": "C",
+            "text": "Đòi tư do, bình đẳng"
+          },
+          {
+            "key": "D",
+            "text": "Đòi quyền tự do: Phát ngôn, tự do đi lại..."
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 160"
+      }
+    },
+    {
+      "id": "b-161",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi của Ban chấp hành Trung ương nào sau đây nhấn mạnh giải phóng dân tộc là nhiệm vu bức thiế t nhất",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi trung ương I tháng 10/1930"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi trung ương VI tháng 11/1939"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi trung ương VII tháng 11/1940"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi trung ương VIII tháng 5/194"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 161"
+      }
+    },
+    {
+      "id": "b-162",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến tranh thế giới thứ hai bùng nổ"
+          },
+          {
+            "key": "B",
+            "text": "Pháp ra sức vơ vét, bóc lột nhân dân"
+          },
+          {
+            "key": "C",
+            "text": "Phát xít Nhật vào miền Bắc Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 162"
+      }
+    },
+    {
+      "id": "b-163",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điều kiện nào không tạo ra khả năng đấu tranh công khai, hợp pháp cho phong trào vận động dân chủ Đông Dương (1936-1939)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nguy cơ chiến tranh thế giới, chủ trương của Quốc tế cộng sản và Mặt trận bình dân Pháp lên cầm quyền"
+          },
+          {
+            "key": "B",
+            "text": "Chủ trương chuyển hướng chiến lược cách mạng của Quốc tế cộng sản và tình hình thế giới có nhiều thay đổi thuận lợi cho cách mạng"
+          },
+          {
+            "key": "C",
+            "text": "Mặt trận nhân dân Pháp lên cầm quyền và những thay đổi trong xã hội Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Mặt trận nhân dân Pháp tan vỡ, chính quyền thực dân Pháp ở Việt Nam thi hành chính sách phát xít"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 163"
+      }
+    },
+    {
+      "id": "b-185",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi thành lập Đảng Cộng sản Việt Nam thông qua mấy văn kiện do lãnh tu Nguyễn Ái Quốc soạn thảo",
+        "options": [
+          {
+            "key": "A",
+            "text": "2 văn kiện"
+          },
+          {
+            "key": "B",
+            "text": "3 văn kiện"
+          },
+          {
+            "key": "C",
+            "text": "4 văn kiện"
+          },
+          {
+            "key": "D",
+            "text": "5 văn kiện"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 185"
+      }
+    },
+    {
+      "id": "b-186",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện nào được Nguyễn Ái Quốc đánh giá \"là một bước ngoặt vô cùng quan trong trong lich sử Cách mạn g Việt Nam ta\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Cộng sản Việt Nam ra đời"
+          },
+          {
+            "key": "B",
+            "text": "Sự thành lập Đảng Cộng sản Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Sự thành lập hội Việt Nam Cách mạng thanh niên"
+          },
+          {
+            "key": "D",
+            "text": "Nguyễn Ái Quốc tìm thấy con đường cứu nước"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 186"
+      }
+    },
+    {
+      "id": "b-192",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhận xét nào sau đây là phù hợp về Hội Việt Nam cách mạng Thanh niên (1925 - 1929)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Một trong những tổ chức cộng sản đầu tiên ở Việt Nam"
+          },
+          {
+            "key": "B",
+            "text": "Là đội tiên phong của giai cấp công nhân Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Là tổ chức tiền thân của Đảng Cộng sản Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Đại diện tiêu biểu của giai cấp tiểu tư sản Việt Nam"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 192"
+      }
+    },
+    {
+      "id": "b-193",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điều kiện trực tiếp mở ra Phong trào dân chủ 1936 - 1939 do Đảng lãnh đạo là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khủng hoảng kinh tế thế giới 1929 - 1933"
+          },
+          {
+            "key": "B",
+            "text": "Quốc tế Cộng sản thay đổi chủ trương"
+          },
+          {
+            "key": "C",
+            "text": "Đảng Cộng sản Đông Dương ban hành chính sách mới"
+          },
+          {
+            "key": "D",
+            "text": "Chính phủ Mặt trận nhân dân lên cầm quyền ở Pháp"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 193"
+      }
+    },
+    {
+      "id": "b-194",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặt trận dân chủ Đông Dương chính thức thành lập vào năm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Năm 1938"
+          },
+          {
+            "key": "B",
+            "text": "Năm 1930"
+          },
+          {
+            "key": "C",
+            "text": "Năm 1941"
+          },
+          {
+            "key": "D",
+            "text": "Năm 1945"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 194"
+      }
+    },
+    {
+      "id": "b-196",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (7/1936) đã chủ trương thành lập:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mặt trận thống nhất dân chủ Đông Dương"
+          },
+          {
+            "key": "B",
+            "text": "Mặt trận Việt Nam độc lập Đồng minh"
+          },
+          {
+            "key": "C",
+            "text": "Mặt trận thống nhất dân tộc phản đế Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Mặt trận thống nhất nhân dân phản đế Đông Dương"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 196"
+      }
+    },
+    {
+      "id": "b-197",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chống phát xít, chống chiến tranh để quốc, chống bon phản động thuộc đia và tay sai là nhiệm vu cách mạ ng được Đảng đề ra trong giai đoạn nà",
+        "options": [
+          {
+            "key": "A",
+            "text": "1930-1931"
+          },
+          {
+            "key": "B",
+            "text": "1936-1939"
+          },
+          {
+            "key": "C",
+            "text": "1939-1945"
+          },
+          {
+            "key": "D",
+            "text": "1945-1954"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 197"
+      }
+    },
+    {
+      "id": "b-198",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Muc tiêu cu thể trước mắt của phong trào vận động dâ n chủ Đông Dương (1936-1939) là gì",
+        "options": [
+          {
+            "key": "A",
+            "text": "Độc lập dân tộc, gắn với chủ nghĩa xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Các quyền tự do, dân chủ, cơm áo và hòa bình"
+          },
+          {
+            "key": "C",
+            "text": "Ruộng đất cho dân cày"
+          },
+          {
+            "key": "D",
+            "text": "Đánh đổ đế quốc Pháp và tay sai"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 198"
+      }
+    },
+    {
+      "id": "b-200",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đêm 9/3/1945, Nhật đảo chính Pháp, ngày 12-3-1945,... đã ra Bản Chỉ thi \"Nhật Pháp bắn nhau và hành động của chúng ta\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ban Thường vu Trung ương Đảng"
+          },
+          {
+            "key": "B",
+            "text": "Trung ương cuc miền Nam"
+          },
+          {
+            "key": "C",
+            "text": "Quốc dân đại hội"
+          },
+          {
+            "key": "D",
+            "text": "Đại hội toàn quốc của Đảng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 200"
+      }
+    },
+    {
+      "id": "b-203",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong các nội dung sau đây, nội dung nào không thuộc luận cương chính tri tháng 10/1930?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng Việt Nam phải trải qua hai giai đoạn: cách mạng tư sản dân quyền và cách mạng xã hội chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng do Đảng của giai cấp vô sản lãnh đạo"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng Việt Nam là một bộ phận của cách mạng thế giới"
+          },
+          {
+            "key": "D",
+            "text": "Lực lượng để đánh đuổi đế quốc và phong kiến là công nông. Đồng thời \"phải biết liên lạc với tiểu tư sản, tri thức, trung nông... để kéo ho về phe vô sản giai cấp"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 203"
+      }
+    },
+    {
+      "id": "b-206",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bài hoc \"giương cao ngon cờ độc lập dân tộc, kết hợ p đúng đắn hai nhiệm vu chống đế quốc và chống pho ng kiến\" được Đảng rút ra sau thời gian nà",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng Tháng Tám"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng dân tộc dân chủ nhân dân ở miền Nam"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng xã hội chủ nghĩa ở miễn Bắc"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng Tháng Mười"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 206"
+      }
+    },
+    {
+      "id": "b-211",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quốc tế cộng sản (Quốc tế III) được thành lập vào năm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1918"
+          },
+          {
+            "key": "B",
+            "text": "1919"
+          },
+          {
+            "key": "C",
+            "text": "1920"
+          },
+          {
+            "key": "D",
+            "text": "1921"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 211"
+      }
+    },
+    {
+      "id": "b-221",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong lich sử Đảng Cộng sản Việt Nam, giai đoạn 1932 - 1935 là giai đoạn:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chuẩn bi các điều kiện để giành chính quyền"
+          },
+          {
+            "key": "B",
+            "text": "Phuc hồi hệ thống tổ chức của Đảng"
+          },
+          {
+            "key": "C",
+            "text": "Đẩy mạnh phong trào đấu tranh"
+          },
+          {
+            "key": "D",
+            "text": "Hợp tác với phong trào nhân dân Pháp"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 221"
+      }
+    },
+    {
+      "id": "b-222",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi thành lập Đảng Cộng sản Việt Nam được tổ chức ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hà Nội"
+          },
+          {
+            "key": "B",
+            "text": "Chiêm Hóa (Tuyên Quang)"
+          },
+          {
+            "key": "C",
+            "text": "Cửu Long- Hương Cảng-Trung Quốc"
+          },
+          {
+            "key": "D",
+            "text": "Quảng Châu- Trung Quốc"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 222"
+      }
+    },
+    {
+      "id": "b-225",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong phong trào dân chủ 1936 - 1939, Nhân dân Việt Nam thực hiện một trong những nhiệm vu trực tiếp, trước mắt là đấu tranh:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chống chế độ phản động thuộc đia"
+          },
+          {
+            "key": "B",
+            "text": "Chống đế quốc và chế độ phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Chống tư sản và đia chủ"
+          },
+          {
+            "key": "D",
+            "text": "Chống đế quốc và tư sản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 225"
+      }
+    },
+    {
+      "id": "b-229",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Kẻ thù chủ yếu của xã hội Việt Nam trong thời kì 1930-1931 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thực dân Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Đia chủ phong kiến"
+          },
+          {
+            "key": "C",
+            "text": "Đế quốc và phong kiến"
+          },
+          {
+            "key": "D",
+            "text": "Đia chủ phong kiến, tư sả"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 229"
+      }
+    },
+    {
+      "id": "b-230",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự khác biệt cơ bản giữa phong trào đấu tranh của nhân dân Việt Nam từ năm 1939 đến trước ngày 9-3-1945 với các phong trào cách mạng trước đó là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chống lại nền thống tri của đế quốc phát xít Pháp Nhật"
+          },
+          {
+            "key": "B",
+            "text": "Nhiệm vu giải phóng dân tộc đặt ra cấp thiết"
+          },
+          {
+            "key": "C",
+            "text": "Mâu thuẫn dân tộc phát triển gay gắt"
+          },
+          {
+            "key": "D",
+            "text": "Có sự liên kết với quốc tế"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 230"
+      }
+    },
+    {
+      "id": "b-234",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội Việt Nam Cách mạng Thanh niên hoạt động theo khuynh hướng nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khuynh hướng phong kiến"
+          },
+          {
+            "key": "B",
+            "text": "Khuynh hướng vô sản"
+          },
+          {
+            "key": "C",
+            "text": "Khuynh hướng tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Khuynh hướng tiểu tư sản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 234"
+      }
+    },
+    {
+      "id": "b-235",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đại hội lần thứ VII của Quốc tế Cộng sản hop vào năm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1936"
+          },
+          {
+            "key": "B",
+            "text": "1930"
+          },
+          {
+            "key": "C",
+            "text": "1935"
+          },
+          {
+            "key": "D",
+            "text": "1939"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 235"
+      }
+    },
+    {
+      "id": "b-237",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện tháng 6 - 1924 gắn với hoạt động của Nguyễn Ái Quốc ở Liên Xô, đó là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Người dự Đại hội Quốc tế Nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Người dự Đại hội lần thứ V của Quốc tế Cộng sản"
+          },
+          {
+            "key": "C",
+            "text": "Người dự Đại hội Quốc tế Phu nữ"
+          },
+          {
+            "key": "D",
+            "text": "Người dự Đại hội lần thứ VII của Quốc tế Cộng sản"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 237"
+      }
+    },
+    {
+      "id": "b-239",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lực lượng chủ yếu tham gia phong trào cách mạng 1930-1931 ở Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tiểu tư sản, công nhân"
+          },
+          {
+            "key": "B",
+            "text": "Nông dân, tiểu tư sản"
+          },
+          {
+            "key": "C",
+            "text": "Công nhân và nông dân"
+          },
+          {
+            "key": "D",
+            "text": "Nông dân, tư sản dân tộc"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 239"
+      }
+    },
+    {
+      "id": "b-240",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vu của cách mạng Việt Nam được xác đinh tron g Luận cương chính tri tháng 10/1930 do Trần Phú so ạn thảo l",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đổ phong kiến và đế quốc"
+          },
+          {
+            "key": "B",
+            "text": "Giải phóng dân tộc"
+          },
+          {
+            "key": "C",
+            "text": "Đánh đổ đế quốc và tay sai"
+          },
+          {
+            "key": "D",
+            "text": "Đánh đổ đế quốc Pháp, phong kiến và tư sản phản cách mạng, làm cho nước Việt Nam độc lập tự do"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 240"
+      }
+    },
+    {
+      "id": "b-244",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyễn Ái Quốc đã thành lập Hội Việt Nam cách mạng thanh niên ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hương Cảng (Trung Quốc)"
+          },
+          {
+            "key": "B",
+            "text": "Quảng Châu (Trung Quốc)"
+          },
+          {
+            "key": "C",
+            "text": "Thượng Hải (Trung Quốc)"
+          },
+          {
+            "key": "D",
+            "text": "Cao Bằng (Việt Nam)"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 244"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 24): Tháng 6/1925, Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu (Trung Quốc).",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 24"
+      }
+    },
+    {
+      "id": "b-250",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lực lượng cách mạng được nêu ra trong Luận cương chính tri (tháng 10/1930) của Đảng Cộng sản Đông Dương là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công nhân, nông dân và tư sản"
+          },
+          {
+            "key": "B",
+            "text": "Nông dân và tiểu tư sản"
+          },
+          {
+            "key": "C",
+            "text": "Công nhân, nông dân"
+          },
+          {
+            "key": "D",
+            "text": "Công nhân, nông dân và trí thức"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 250"
+      }
+    },
+    {
+      "id": "b-252",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cách mạng tháng Mười Nga thành công (1917) và Quốc tế Cộng sản ra đời (1919) có ý nghĩa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh dấu sự thành công của cách mạng vô sản trên thế giới"
+          },
+          {
+            "key": "B",
+            "text": "Thức tỉnh phong trào đấu tranh của giai cấp công nhân ở các nước đế quốc"
+          },
+          {
+            "key": "C",
+            "text": "Thúc đẩy cuộc đấu tranh giai cấp ở các nước thuộc"
+          },
+          {
+            "key": "D",
+            "text": "Thức tỉnh phong trào đấu giải phóng dân tộc ở các nước thuộc đia, phu thu đia, phu thuộ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 252"
+      }
+    },
+    {
+      "id": "b-255",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phát xít Nhật xâm lược nước ta vào ngày tháng, năm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ngày 22 Tháng 9-1940"
+          },
+          {
+            "key": "B",
+            "text": "Ngày 26 Tháng 9-1940"
+          },
+          {
+            "key": "C",
+            "text": "Ngày 20 Tháng 9-1940"
+          },
+          {
+            "key": "D",
+            "text": "Ngày 25 Tháng 9-1940"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 255"
+      }
+    },
+    {
+      "id": "b-257",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khởi nghĩa thắng lợi ở đia phương nào đã tạo điều kiện quyết đinh cho Tổng khởi nghĩa thành công trên cả nướ c trong Cách mạng tháng Tám (1945)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thái Nguyên"
+          },
+          {
+            "key": "B",
+            "text": "Hà Nội"
+          },
+          {
+            "key": "C",
+            "text": "Huế"
+          },
+          {
+            "key": "D",
+            "text": "Sài Gòn"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 257"
+      }
+    },
+    {
+      "id": "b-265",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam (10-1930) đã đổi tên đảng thành:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đông Dương Cộng sản Đảng"
+          },
+          {
+            "key": "B",
+            "text": "Đảng Lao động Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Đảng Cộng sản Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Đảng An Nam"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 265"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 34): Hội nghị Trung ương lần thứ nhất (14–31/10/1930, Hương Cảng) quyết định đổi tên Đảng Cộng sản Việt Nam thành Đảng Cộng sản Đông Dương.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 34"
+      }
+    },
+    {
+      "id": "b-266",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hạn chế lớn nhất của Luận cương chính tri tháng 10 năm 1930 là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh giá không đúng khả năng cách mạng của giai cấp nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Không đưa ngon cờ giải phóng dân tộc lên hàng đầu, nặng về đấu tranh giai cấ nông dân, tiểu tư sản trí thức"
+          },
+          {
+            "key": "C",
+            "text": "Xác đinh động lực cách mạng là giai cấp công nhân,"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng Đông Dương lúc đầu là cách mạng tư sản dân quyền bỏ qua thời kì tư bản chủ nghĩa, tiến thẳng lên con đường xã hội chủ nghĩa"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 266"
+      }
+    },
+    {
+      "id": "b-268",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đối tượng của cách mạng Việt Nam được xác đinh trong Cương lĩnh chính tri đầu tiên của Đảng (2/1930) là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phong kiến, đế quốc"
+          },
+          {
+            "key": "B",
+            "text": "Đế quốc, tư sản phản cách mạng"
+          },
+          {
+            "key": "C",
+            "text": "Thực dân Pháp và tư sản mại bản"
+          },
+          {
+            "key": "D",
+            "text": "Đế quốc, phong kiến và tư sản phản cách mạng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 268"
+      }
+    },
+    {
+      "id": "b-270",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi trung ương VIII tháng 5/1941 nhấn mạnh điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giải phóng dân tộc là nhiệm vu quan tron"
+          },
+          {
+            "key": "B",
+            "text": "Giải phóng dân tộc là nhiệm vu cần thiết"
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng giai cấp là nhiệm vu bức thiết nhất"
+          },
+          {
+            "key": "D",
+            "text": "Giải phóng dân tộc là nhiệm vu bức thiết nhấ"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 270"
+      }
+    },
+    {
+      "id": "b-275",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tổng Bí thư của Đảng được bầu tại Hội nghi Trung ương tháng 10/1930 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "B",
+            "text": "Lê Hồng Phong"
+          },
+          {
+            "key": "C",
+            "text": "Hà Huy Tập"
+          },
+          {
+            "key": "D",
+            "text": "Nguyễn Văn Cừ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 275"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 34): Tại Hội nghị 10/1930, đồng chí Trần Phú được bầu làm Tổng Bí thư của Đảng.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 34"
+      }
+    },
+    {
+      "id": "b-277",
+      "type": "multiple-choice",
+      "content": {
+        "question": "2",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 277"
+      }
+    },
+    {
+      "id": "b-278",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập vào thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "10-1930"
+          },
+          {
+            "key": "B",
+            "text": "5-1935"
+          },
+          {
+            "key": "C",
+            "text": "11-1939"
+          },
+          {
+            "key": "D",
+            "text": "5-1941"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 278"
+      }
+    },
+    {
+      "id": "b-279",
+      "type": "multiple-choice",
+      "content": {
+        "question": "So với trước chiến tranh thế giới thứ nhất, phong trào yêu nước Việt Nam trong những năm 1919-1930 có những điểm mới nào sau đây?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có hai khuynh hướng cùng tồn tại và phát triển"
+          },
+          {
+            "key": "B",
+            "text": "Diễn ra dưới tác động của cuộc khai thác thuộc đia của thực dân Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp công nhân nắm lấy vai trò lãnh đạo cách mạng giải phóng dân tộc"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng Việt Nam nhận được sự ủng hộ, giúp đỡ của Liên Xô, Trung Quốc"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 279"
+      }
+    },
+    {
+      "id": "b-281",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đảng Cộng sẵn Việt Nam ra đời là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tất yếu lich sử, nó là sản phẩm kết hợp giữa chủ nghĩa Mác với phong trào công nhân Việt Nam"
+          },
+          {
+            "key": "B",
+            "text": "Sản phẩm kết hợp giữa chủ nghĩa Mác với phong trào yêu nước Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Sản phẩm của sự kết hợp chủ nghĩa Mác-Lênin với phong trào công nhân và phong trào yêu nước"
+          },
+          {
+            "key": "D",
+            "text": "Sự kết hợp phong trào công nhân và phong trào yêu nước Việt Nam với phong trào công nhân và phong trào yêu nước"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 281"
+      }
+    },
+    {
+      "id": "b-282",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cách mạng tháng Tám (1945) là cuộc cách mạng:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tư sản"
+          },
+          {
+            "key": "B",
+            "text": "Xã hội chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Giải phóng dân tộc"
+          },
+          {
+            "key": "D",
+            "text": "Ruộng đất"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 282"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 209): Cách mạng Tháng Tám là cuộc cách mạng giải phóng dân tộc (đánh đổ thực dân, phát xít), đồng thời là cách mạng dân chủ đánh đổ chế độ quân chủ phong kiến.",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202, trang PDF 209"
+      }
+    },
+    {
+      "id": "b-284",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Công lao to lớn đầu tiên của Nguyễn Ái Quốc đối với cách mạng Việt Nam là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tìm được con đường cứu nước đúng đắn"
+          },
+          {
+            "key": "B",
+            "text": "Thành lập Hội Việt Nam Cách mạng thanh niên"
+          },
+          {
+            "key": "C",
+            "text": "Chủ trì Hội nghi thành Đảng cộng sản Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Thành lập Đông Dương cộng sản đảng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 284"
+      }
+    },
+    {
+      "id": "b-288",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trước cuộc khai thác thuộc đia lần thứ nhất của thực dân Pháp (1897 - 1913) ở Việt Nam có những giai cấp nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đia chủ và nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Đia chủ, nông dân, tư sản, tiểu tư sản và công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Đia chủ, nông dân và công nhân"
+          },
+          {
+            "key": "D",
+            "text": "Nông dân và tiểu tư sản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 288"
+      }
+    },
+    {
+      "id": "b-291",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hình thức đấu tranh chủ yếu trong phong trào 1930-1931 của nhân dân Nghệ - Tĩnh là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bãi công chính tri"
+          },
+          {
+            "key": "B",
+            "text": "Biểu tình có vũ trang tự vệ"
+          },
+          {
+            "key": "C",
+            "text": "Mít tinh đòi quyền dân chủ"
+          },
+          {
+            "key": "D",
+            "text": "Đưa yêu sách cải thiện đời sống"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 291"
+      }
+    },
+    {
+      "id": "b-296",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vu cách mạng được Cương lĩnh xác đinh là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đổ phong kiến, đánh đổ đế quốc, 2 nhiệm vu có quan hệ mật thiết khăng khít với nhau."
+          },
+          {
+            "key": "B",
+            "text": "Đánh đồ đế quốc Pháp và tư sản phản cách mạng"
+          },
+          {
+            "key": "C",
+            "text": "Đánh đổ đế quốc Pháp, phong kiến, tư sản phản cách mạng làm cho nước nhà độc lập."
+          },
+          {
+            "key": "D",
+            "text": "Đánh đuối để quốc Pháp và phong kiến"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 296"
+      }
+    },
+    {
+      "id": "b-297",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Đoàn kết, tập hợp lực lượng cách mạng nhằm giải phóng dân tộc\" là chủ trương của Đảng trong việc thành lập tổ chức nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mặt trận Việt Minh"
+          },
+          {
+            "key": "B",
+            "text": "Mặt trận dân chủ thống nhất phản đế Đông Dương"
+          },
+          {
+            "key": "C",
+            "text": "Mặt trận dân chủ Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Hội phản đế đồng minh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 297"
+      }
+    },
+    {
+      "id": "b-299",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tổng bí thư đầu tiên của Đảng ta là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "B",
+            "text": "Nguyễn Văn Cừ"
+          },
+          {
+            "key": "C",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Lê Hồng Phong"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 299"
+      }
+    },
+    {
+      "id": "b-300",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ban chấp hành Trung ương Đảng chủ trương thành lập nước Việt Nam dân chủ cộng hòa tại Hội nghi nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi trung ương tháng 10/1930"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi trung ương VI tháng 11/1939"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi trung ương VII tháng 11/1940"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi trung ương VIII tháng 5/194"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 300"
+      }
+    },
+    {
+      "id": "b-303",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ giữa hai khẩu hiệu: \"Độc lập dân tộc\" và \"Ruộng đất cho dân cày\" được giải quyết như thế nào trong thời kì 1939-1945?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tạm gác lại khẩu hiệu cách mạng ruộng đất"
+          },
+          {
+            "key": "B",
+            "text": "Tạm gác lại khẩu hiệu cách mạng giải phóng dân tộc"
+          },
+          {
+            "key": "C",
+            "text": "Tiếp tuc thực hiện hai khẩu hiệu trên một cách đồng bộ"
+          },
+          {
+            "key": "D",
+            "text": "Tạm gác lại việc thực hiện hai khẩu hiệu trên"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 303"
+      }
+    },
+    {
+      "id": "b-304",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện lich sử nào ảnh hưởng đến phong trào cách mạng nước ta trong những năm 1930 - 1931?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng tháng Mười Nga thành công"
+          },
+          {
+            "key": "B",
+            "text": "Sự thành lập Quốc tế Cộng sản"
+          },
+          {
+            "key": "C",
+            "text": "Cuộc khủng hoảng kinh tế 1929 - 1933"
+          },
+          {
+            "key": "D",
+            "text": "Thắng lợi của cách mạng tháng Tám"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 304"
+      }
+    },
+    {
+      "id": "b-310",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong cuộc khai thác thuộc đia lần thứ nhất của thực dân Pháp (1897 - 1913) ở Việt Nam đã xuất hiện những giai cấp, tầng lớp mới nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đia chủ và nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Tư sản, tiểu tư sản và công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Đia chủ, nông dân và công nhân"
+          },
+          {
+            "key": "D",
+            "text": "Nông dân và tiểu tư sản"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 310"
+      }
+    },
+    {
+      "id": "b-311",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cương lĩnh đầu tiên của Đảng đã xác đinh muc tiêu chiế n lược của cách mạng Việt Nam là gì",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xây dựng một nước Việt Nam dân giàu, nước mạnh, dân chủ, công bằng, văn minh"
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng một nước Việt Nam dân giàu mạnh"
+          },
+          {
+            "key": "C",
+            "text": "Làm tư sản dân quyền cách mạng và thổ đia cách mạng để đi tới xã hội cộng sản"
+          },
+          {
+            "key": "D",
+            "text": "Cách mạng tư sản dân quyền, lập chính quyền của công nông bằng hình thức Xô viết, để dự bi điều kiện đi tới cách mạng xã hội chủ nghĩ"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 311"
+      }
+    },
+    {
+      "id": "b-312",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi Ban Chấp hành Trung ương tháng 5/194 Luận điểm trên được đưa ra tại Hội nghi nào của Đảng",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hội nghi Ban Chấp hành Trung ương tháng 11/1939"
+          },
+          {
+            "key": "B",
+            "text": "Hội nghi Cán bộ Trung ương tháng 11/1940"
+          },
+          {
+            "key": "C",
+            "text": "Hội nghi Ban Chấp hành Trung ương tháng 5/1941"
+          },
+          {
+            "key": "D",
+            "text": "Hội nghi Ban Thường vu Trung ương tháng 3/19"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 312"
+      }
+    },
+    {
+      "id": "b-315",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điểm khác nhau giữa Luận cương chính tri tháng 10/1930 với Cương lĩnh chính tri đầu tiên (2/1930) củ a Đàng là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đường lối quốc tế của cách mạng giải phóng dân tộc"
+          },
+          {
+            "key": "B",
+            "text": "Đường lối tập hợp lực lượng bên trong của cách mạng"
+          },
+          {
+            "key": "C",
+            "text": "Phương pháp tiến hành cách mạng"
+          },
+          {
+            "key": "D",
+            "text": "Không có điểm khác nhau giữa 2 văn kiện"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 315"
+      }
+    },
+    {
+      "id": "b-318",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc tập dượt thứ nhất của Đảng chuẩn bi cho thắng lợi của cách mạng tháng Tám là giai đoạn:",
+        "options": [
+          {
+            "key": "A",
+            "text": "1930-1931"
+          },
+          {
+            "key": "B",
+            "text": "1936-1939"
+          },
+          {
+            "key": "C",
+            "text": "1939-1945"
+          },
+          {
+            "key": "D",
+            "text": "1945-1954"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 318"
+      }
+    },
+    {
+      "id": "b-319",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhiệm vu của cách mạng Việt Nam được xác đinh tron g Cương lĩnh chính tri đầu tiên của Đảng là g",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đánh đổ đế quốc Pháp, làm cho nước Việt Nam hoàn toàn độc lập"
+          },
+          {
+            "key": "B",
+            "text": "Đánh đổ phong kiến, tay sai, phát triển theo con đường tư bản chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Đánh đổ đế quốc Pháp, phong kiến và tư sản phản cách mạng làm cho Việt Nam được độc lập tự do"
+          },
+          {
+            "key": "D",
+            "text": "Đánh đổ đế quốc Pháp, phong kiến làm cho Việt Nam hoàn toàn độc lập"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 319"
+      }
+    },
+    {
+      "id": "b-323",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tổng bí thư đầu tiên của nước ta là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "B",
+            "text": "Nguyễn Văn Cử"
+          },
+          {
+            "key": "C",
+            "text": "Trường Chinh"
+          },
+          {
+            "key": "D",
+            "text": "Lê Hồng Phong"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 323"
+      }
+    },
+    {
+      "id": "b-324",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chiến tranh thế giới thứ II nổ ra vào thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1937"
+          },
+          {
+            "key": "B",
+            "text": "1938"
+          },
+          {
+            "key": "C",
+            "text": "1939"
+          },
+          {
+            "key": "D",
+            "text": "1940"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 324"
+      }
+    },
+    {
+      "id": "b-326",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp công nhân Việt Nam ra đời từ:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cuộc khai thác thuộc đia lần thứ nhất của thực dân Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Cuộc khai thác thuộc đia lần thứ hai của thực dân Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Cuộc xâm lược lần thứ nhất của thực dân Pháp"
+          },
+          {
+            "key": "D",
+            "text": "Cuộc xâm lược lần thứ hai của thực dân Pháp"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 326"
+      }
+    },
+    {
+      "id": "b-329",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong phong trào yêu nước chống Thực dân Pháp, giai cấp nào được coi là động lực của cách mạng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Công nhân"
+          },
+          {
+            "key": "C",
+            "text": "Tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Tiểu tư sản"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 329"
+      },
+      "enrichment": {
+        "text": "Câu hỏi mơ hồ: trong phong trào yêu nước chống Pháp, giáo trình nêu giai cấp công nhân lãnh đạo, còn nông dân là lực lượng đông đảo nhất; “động lực” có thể được hiểu theo cả hai cách. Chưa đối chiếu được chắc chắn.",
+        "confidence": "uncertain"
+      }
+    },
+    {
+      "id": "b-332",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hoạt động chủ yếu nhất của Hội Việt Nam Cách mạng Thanh niên là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xuất bản báo Thanh niên làm cơ quan tuyên truyền của Hội"
+          },
+          {
+            "key": "B",
+            "text": "Thực hiện chủ trương \"vô sản hóa\""
+          },
+          {
+            "key": "C",
+            "text": "Mở lớp huấn luyện chính tri, đào tạo cán bộ cách mạng"
+          },
+          {
+            "key": "D",
+            "text": "Thành lập cơ sở trong nước"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 332"
+      }
+    },
+    {
+      "id": "b-334",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) đã nhấn mạnh nhiệm vu trong tâm của toàn Đảng, toàn dân l",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xây dựng lực lượng chính tri"
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng lực lượng vũ trang"
+          },
+          {
+            "key": "C",
+            "text": "Chuẩn bi khởi nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Khởi nghĩa từng phần"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 334"
+      }
+    },
+    {
+      "id": "b-335",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hai khẩu hiệu mà Đảng ta vận dung trong phong trào cách mạng 1930-1931 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "\"Độc lập dân tộc\" và \"Ruộng đất dân cày\""
+          },
+          {
+            "key": "B",
+            "text": "\"Tự do dẫn chủ\" và \"cơm áo hòa bình\""
+          },
+          {
+            "key": "C",
+            "text": "\"Giải phóng dân tộc\" và \"tich thu ruộng đất của đế quốc Việt gian\""
+          },
+          {
+            "key": "D",
+            "text": "\"Chống đế quốc\" và \"Chống phát xít, chống chiến tranh\""
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 335"
+      }
+    },
+    {
+      "id": "b-337",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào không có trong Luận cương chính tri tháng 10 năm 1930?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đặt nhiệm vu chống đế quốc, giải phóng dân tộc lên hàng đầu"
+          },
+          {
+            "key": "B",
+            "text": "Không nêu được mâu thuẫn chủ yếu là mâu thuẫn giữa dân tộc Việt Nam và đế quốc Pháp"
+          },
+          {
+            "key": "C",
+            "text": "Không đề ra được chiến lược liên minh dân tộc và giai cấp rộng rãi"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án trên đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 337"
+      }
+    },
+    {
+      "id": "b-338",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điểm khác biệt về phương pháp đấu tranh của thời kì 1936 - 1939 so với thời kì 1930 - 1931 là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chính tri và vũ trang"
+          },
+          {
+            "key": "B",
+            "text": "Nghi trường và đấu tranh báo chí"
+          },
+          {
+            "key": "C",
+            "text": "Đấu tranh chính tri"
+          },
+          {
+            "key": "D",
+            "text": "Ngoại giao với vận động quần chúng"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 338"
+      }
+    },
+    {
+      "id": "b-340",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tác động của chương trình khai thác thuộc đia lần thứ hai của Pháp đến kinh tế Việt Nam làm cho:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cơ cấu kinh tế Việt Nam mất cân đối, lạc hậu, nghèo nàn"
+          },
+          {
+            "key": "B",
+            "text": "Nền kinh tế Việt Nam phát triển độc lập"
+          },
+          {
+            "key": "C",
+            "text": "Kinh tế Việt Nam phát triển một cách tự chủ"
+          },
+          {
+            "key": "D",
+            "text": "Kinh tế Việt Nam phu thuộc kinh tế Phá"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 340"
+      }
+    },
+    {
+      "id": "b-341",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập vài thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "10-1930"
+          },
+          {
+            "key": "B",
+            "text": "5-1935"
+          },
+          {
+            "key": "C",
+            "text": "11-1939"
+          },
+          {
+            "key": "D",
+            "text": "5-1941"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 341"
+      }
+    },
+    {
+      "id": "b-344",
+      "type": "multiple-choice",
+      "content": {
+        "question": "1-5-1930",
+        "options": [
+          {
+            "key": "A",
+            "text": "1-5-1930"
+          },
+          {
+            "key": "B",
+            "text": "1-5-1931"
+          },
+          {
+            "key": "C",
+            "text": "19-5-1930"
+          },
+          {
+            "key": "D",
+            "text": "19-8-1930"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 344"
+      }
+    },
+    {
+      "id": "b-346",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung nào không có trong Hội nghi Trung ương VIII của Đảng (tháng 5 năm 1941)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đưa nhiệm vu giải phóng dân tộc lên hàng đầu"
+          },
+          {
+            "key": "B",
+            "text": "Chuẩn bi điều kiện để \"đánh đổ đia chủ, chia ruộn g đất cho dân cày"
+          },
+          {
+            "key": "C",
+            "text": "Thành lập mặt trận Việt Minh để tập hợp lực lượng cách mạng nhằm muc tiêu giải phóng dân tộc"
+          },
+          {
+            "key": "D",
+            "text": "Xác đinh chuẩn bi khởi nghĩa là nhiệm vu trung t âm trong giai đoạn hiện"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 346"
+      }
+    },
+    {
+      "id": "b-347",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Bãi công của công nhân Ba Son",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bãi công của công nhân Ba Son"
+          },
+          {
+            "key": "B",
+            "text": "Bãi công của công nhân Vinh - Bến Thủy"
+          },
+          {
+            "key": "C",
+            "text": "Phong trào Đông Dương đại hội"
+          },
+          {
+            "key": "D",
+            "text": "Phong trào phá kho thóc của Nhật"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 347"
+      }
+    },
+    {
+      "id": "b-349",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Hội nghi trung ương VIII tháng 5/1941 đề ra chủ trương gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thành lập nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+          },
+          {
+            "key": "B",
+            "text": "Thành lập nước Việt Nam cộng hòa dân chủ"
+          },
+          {
+            "key": "C",
+            "text": "Thành lập nước dân chủ cộng hòa Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Thành lập nước Việt Nam dân chủ cộng hòa"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 349"
+      }
+    },
+    {
+      "id": "b-354",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lãnh tu cao nhất của Đảng bi đich bắt sau Cao trào cá ch mạng 1930 - 1931 là a",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "B",
+            "text": "Lê Hồng Phong"
+          },
+          {
+            "key": "C",
+            "text": "Hà Huy Tập"
+          },
+          {
+            "key": "D",
+            "text": "Nguyễn Văn Cừ"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 354"
+      }
+    },
+    {
+      "id": "b-360",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khẳng đinh vai trò lãnh đạo cách mạng của Đảng Cộng sản",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khẳng đinh vai trò lãnh đạo cách mạng của Đảng Cộng sả"
+          },
+          {
+            "key": "B",
+            "text": "Xác đinh nhiệm vu cách mạng là chống đế quốc, phon g kiế"
+          },
+          {
+            "key": "C",
+            "text": "Ảnh hưởng quan trong đối với cách mạng Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Xác đinh lực lượng là công- nôn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 360"
+      }
+    },
+    {
+      "id": "b-363",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chính sách thống tri của thực dân Pháp ở Việt Nam và Đông Dương có nội dung cơ bản là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tự do nhân quyền"
+          },
+          {
+            "key": "B",
+            "text": "Bóc lột về kinh tế, chuyên chế về chính tri và nô dic h về văn hó"
+          },
+          {
+            "key": "C",
+            "text": "Khai hóa văn minh"
+          },
+          {
+            "key": "D",
+            "text": "Đồng hóa người Việt Nam"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 363"
+      }
+    },
+    {
+      "id": "b-364",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguyễn Ái Quốc đã trở thành người cộng sản vào thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1917"
+          },
+          {
+            "key": "B",
+            "text": "1918"
+          },
+          {
+            "key": "C",
+            "text": "1919"
+          },
+          {
+            "key": "D",
+            "text": "1920"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 364"
+      }
+    },
+    {
+      "id": "b-374",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trung Quốc xuất bản tại đầu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Pháp"
+          },
+          {
+            "key": "B",
+            "text": "Liên Xô"
+          },
+          {
+            "key": "C",
+            "text": "Việt Nam"
+          },
+          {
+            "key": "D",
+            "text": "Trung Quốc"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 374"
+      },
+      "enrichment": {
+        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Trung Quốc xuất bản tại đầu?”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.",
+        "confidence": "uncertain"
+      }
+    },
+    {
+      "id": "b-376",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chính phủ nước Việt Nam dân chủ cộng hòa do Hồ Chí Minh làm chủ tich ra mắt quốc dân vào ngày, tháng, năm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "3/10/1946"
+          },
+          {
+            "key": "B",
+            "text": "3/11/1946"
+          },
+          {
+            "key": "C",
+            "text": "3/9/1945"
+          },
+          {
+            "key": "D",
+            "text": "2/9/1945"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 376"
+      }
+    },
+    {
+      "id": "b-383",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại hội nghi thành lập Đảng, Ban chấp hành trung ương lầm thời được cử ra do ai đứng đầu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hà Huy Tập"
+          },
+          {
+            "key": "B",
+            "text": "Trần Phú"
+          },
+          {
+            "key": "C",
+            "text": "Lê Hồng Phong"
+          },
+          {
+            "key": "D",
+            "text": "Trinh Đình Cử"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 383"
+      }
+    },
+    {
+      "id": "b-384",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về vi trí của Đảng Cộng sán Việt Nam được xác đinh tron g bản Cương lĩnh cách mạng đầu tiền là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Quyết đinh moi thắng lợi của cách mạng Việt Na"
+          },
+          {
+            "key": "B",
+            "text": "Đảm báo thắng lợi của cách mạng Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Đảm bảo thắng lợi của cách mạng Đông Dương"
+          },
+          {
+            "key": "D",
+            "text": "Lãnh đạo cách mạng Việt Nam"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 384"
+      }
+    },
+    {
+      "id": "b-393",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Các đại biểu rời khỏi hội nghi thành lập Đảng Cộng sản Việt Nam và trở về nước vào thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "24-2-1930"
+          },
+          {
+            "key": "B",
+            "text": "6-1-1930"
+          },
+          {
+            "key": "C",
+            "text": "8-2-1930"
+          },
+          {
+            "key": "D",
+            "text": "3-2-1930"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 393"
+      }
+    }
+  ]
+}

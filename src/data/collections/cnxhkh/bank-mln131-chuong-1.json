@@ -1,0 +1,1437 @@
+{
+  "id": "cnxhkh-ngan-hang-chuong-1",
+  "title": "CNXH Khoa học – Ngân hàng bổ sung – Chương 1",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "description": "Ngân hàng MLN131 bổ sung, Chương 1 – Nhập môn chủ nghĩa xã hội khoa học. 47 câu.",
+  "contentType": "multiple-choice",
+  "language": "vi",
+  "source": {
+    "document": "MLN131 - Chủ nghĩa xã hội khoa học – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz)",
+    "note": "Nguồn cộng đồng, đã đối chiếu tự động với giáo trình; xem docs/doi-chieu-giao-trinh.md"
+  },
+  "items": [
+    {
+      "id": "b-010",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đáp án nào không phải là một phương pháp nghiên cứu của chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phương pháp kết hợp lịch sử và logic"
+          },
+          {
+            "key": "B",
+            "text": "Phương pháp khảo sát và phân tích về mặt chính trị xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Phương pháp trừu tượng hóa khoa học"
+          },
+          {
+            "key": "D",
+            "text": "Phương phép so sánh"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 10"
+      }
+    },
+    {
+      "id": "b-030",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo nghĩa hẹp, chủ nghĩa xã hội khoa học được hiểu là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là một trong ba bộ phận hợp thành chủ nghĩa Mác - Lênin"
+          },
+          {
+            "key": "B",
+            "text": "Là những thành tựu của con người đạt được trong quá trình đấu tranh giai cấp"
+          },
+          {
+            "key": "C",
+            "text": "Là sự chuyển biến tất yếu của xã hội loài người từ chủ nghĩa tư bản lên một xã hội tốt đẹp hơn"
+          },
+          {
+            "key": "D",
+            "text": "Là một hình thái kinh tế - xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 30"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 7): Theo nghĩa hẹp, chủ nghĩa xã hội khoa học là một trong ba bộ phận cấu thành chủ nghĩa Mác – Lênin.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 7"
+      }
+    },
+    {
+      "id": "b-039",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tác phẩm nào đánh dấu sự ra đời của chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tuyên ngôn của Đảng Cộng sản"
+          },
+          {
+            "key": "B",
+            "text": "Tình cảnh nước Anh"
+          },
+          {
+            "key": "C",
+            "text": "Bộ Tư bản"
+          },
+          {
+            "key": "D",
+            "text": "Góp phần phê phán triết học pháp quyền của Hêghen - Lời nói đầu"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 39"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 12): “Tuyên ngôn của Đảng Cộng sản” do Mác và Ăngghen soạn, công bố tháng 2/1848, đánh dấu sự ra đời của chủ nghĩa xã hội khoa học.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 12"
+      }
+    },
+    {
+      "id": "b-043",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai đã khẳng định: \"Từ khi bộ Tư bản ra đời... quan niệm duy vật lịch sử không còn là một giả thuyết của, ma la một nguyên lý đã được chứng minh một cách khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "V.I.Lênin"
+          },
+          {
+            "key": "B",
+            "text": "Các Mác"
+          },
+          {
+            "key": "C",
+            "text": "Ph.Ăngghen"
+          },
+          {
+            "key": "D",
+            "text": "S.Phurie"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 43"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 13): Giáo trình dẫn ý của Lênin: từ khi bộ “Tư bản” ra đời, quan niệm duy vật lịch sử không còn là giả thuyết mà là nguyên lý đã được chứng minh khoa học.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 13"
+      }
+    },
+    {
+      "id": "b-044",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phát hiện ra sự phân chia xã hội thành giai cấp và đấu tranh giai cấp là công lao của ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Các Mác"
+          },
+          {
+            "key": "B",
+            "text": "V.I. Lênin"
+          },
+          {
+            "key": "C",
+            "text": "Ph.Ảng ghen"
+          },
+          {
+            "key": "D",
+            "text": "Các nhà sử học tư sản trước Mác"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 44"
+      }
+    },
+    {
+      "id": "b-049",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự kiện gì đánh dấu việc V.I.Lênin đã biến chủ nghĩa xã hội từ khoa học, lý luận thành hiện thực?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng tháng Mười Nga và sự ra đời của Nhà nước Xô - viết Nga 1917"
+          },
+          {
+            "key": "B",
+            "text": "Sự ra đời của Liên Xô"
+          },
+          {
+            "key": "C",
+            "text": "Sự chiến thắng của nước Nga trong giai đoạn nội chiến"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 49"
+      }
+    },
+    {
+      "id": "b-054",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Các khẩu hiệu \"sống có việc làm hay là chết trong đấu tranh\" (1831) và \"cộng hòa hay là chết (1834) xuất hiện trong phong trào đấu tranh của công nhân dệt ở Lion (Pháp) có ý nghĩa gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phong trào đấu tranh của giai cấp công nhân đã chuyển từ mục đích kinh tế sang mục đích chính trị"
+          },
+          {
+            "key": "B",
+            "text": "Phong trào đấu tranh của giai cấp công nhân đã có lý luận soi đường"
+          },
+          {
+            "key": "C",
+            "text": "Phong trào đấu tranh của giai cấp công nhân đã có những thắng lợi to lớn"
+          },
+          {
+            "key": "D",
+            "text": "Phong trào đấu tranh của giai cấp công nhân chuyển từ tự phát sang tự giác"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 54"
+      }
+    },
+    {
+      "id": "b-069",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc đấu tranh của giai cấp vô sản chống lại nội dung gì của giai cấp tư sản?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chống lại sự thống trị, áp bức"
+          },
+          {
+            "key": "B",
+            "text": "Chống lại chế độ độc tài"
+          },
+          {
+            "key": "C",
+            "text": "Chống lại sự bóc lột"
+          },
+          {
+            "key": "D",
+            "text": "Chống lại sự thống trị, độc tôn"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 69"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 8): Cuộc đấu tranh của công nhân chống sự thống trị, áp bức của tư sản là biểu hiện xã hội của mâu thuẫn giữa lực lượng sản xuất mang tính xã hội và quan hệ sản xuất tư hữu tư bản chủ nghĩa.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 8"
+      }
+    },
+    {
+      "id": "b-080",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong giai đoạn 1843 -1844, C. Mác và Ph. Ăng ghen đã chuyển biến lập trường của mình như thế nào?( Chọn 2 Đáp án)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Từ thế giới quan duy tâm sang thế giới quan duy vật"
+          },
+          {
+            "key": "B",
+            "text": "Từ lập trường dân chủ cách mạng sang lập trường cộng sản chủ nghĩa"
+          },
+          {
+            "key": "C",
+            "text": "Từ lập trường cách mạng dân chủ sang lập trường dân tộc chủ nghĩa"
+          },
+          {
+            "key": "D",
+            "text": "Từ phương pháp luận siêu hình sang phương pháp luận biện chứng"
+          }
+        ],
+        "answer": "AB"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 80"
+      }
+    },
+    {
+      "id": "b-088",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp nào có sứ mệnh thủ tiêu chủ nghĩa tư bản, xây dựng thành công chủ nghĩa xã hội và chủ nghĩa cộng sản?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nông dân"
+          },
+          {
+            "key": "B",
+            "text": "Tư sản"
+          },
+          {
+            "key": "C",
+            "text": "Chủ nô"
+          },
+          {
+            "key": "D",
+            "text": "Công nhân"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 88"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 11): Mác – Ăngghen coi sứ mệnh lịch sử toàn thế giới của giai cấp công nhân (xóa bỏ chủ nghĩa tư bản, xây dựng CNXH và CNCS) là phát kiến vĩ đại thứ ba.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 11"
+      }
+    },
+    {
+      "id": "b-103",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo nghĩa rộng, chủ nghĩa xã hội khoa học được hiểu là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là một trong ba bộ phận hợp thành chủ nghĩa Mác - Lênin"
+          },
+          {
+            "key": "B",
+            "text": "Là chủ nghĩa Mác - Lênin, luận giải từ các giác độ triết học, kinh tế học chính trị và chính trị xã hội về sự chuyển biến tất yếu của xã hội loài người từ chủ nghĩa tư bản lên chủ nghĩa xã hội và chủ nghĩa cộng sản"
+          },
+          {
+            "key": "C",
+            "text": "Là một học thuyết trình bày sự ra đời, phát triển và suy vong của chủ nghĩa tư bản"
+          },
+          {
+            "key": "D",
+            "text": "Là một hình thái kinh tế - xã hội trong tiến trình lịch sử tự nhiên của loài người"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 103"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 7): Theo nghĩa rộng, CNXH khoa học chính là chủ nghĩa Mác – Lênin, được luận giải từ góc độ triết học, kinh tế chính trị và chính trị – xã hội về sự chuyển biến tất yếu từ CNTB lên CNXH, CNCS.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 7"
+      }
+    },
+    {
+      "id": "b-110",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai đã đánh giá về chủ nghĩa của C. Mác là: \"Học thuyết của Mác là học thuyết vạn năng vì nó là một học thuyết chính xác\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tập Cận Binh"
+          },
+          {
+            "key": "B",
+            "text": "Chủ tịch Hồ Chi Minh"
+          },
+          {
+            "key": "C",
+            "text": "Ph.Ăngghen"
+          },
+          {
+            "key": "D",
+            "text": "V.I.Lênin"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 110"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 14): Câu “học thuyết của Mác là học thuyết vạn năng vì nó là một học thuyết chính xác” được giáo trình dẫn là đánh giá của Lênin.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 14"
+      }
+    },
+    {
+      "id": "b-117",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Vấn đề \"Giai cấp tư sản, trong quá trình thống trị giai cấp chưa đầy một thế kỷ, đã tạo ra những lực lượng sản xuất nhiều hơn và đồ số hơn lực lượng sản xuất của tất cả các thế hệ trước kia gộp lại\" được C.Mác và PhĂngghen viết trong tác phẩm nào dưới đây ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tuyên ngôn của Đảng Cộng sản"
+          },
+          {
+            "key": "B",
+            "text": "Tư bản"
+          },
+          {
+            "key": "C",
+            "text": "Góp phần phê phán triết học pháp quyền của Hêghen"
+          },
+          {
+            "key": "D",
+            "text": "Gia đình thần thánh"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 117"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 8): Câu về lực lượng sản xuất mà giai cấp tư sản tạo ra trong chưa đầy một thế kỷ (nhiều và đồ sộ hơn mọi thế hệ trước cộng lại) được dẫn từ Tuyên ngôn của Đảng Cộng sản.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 8"
+      }
+    },
+    {
+      "id": "b-118",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đối tượng nghiên cứu của chủ nghĩa xã hội khoa học là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là những quy luật và tính quy luật chính trị -xã hội của quá trình phát sinh, hình thành và phát triển hình thái kinh tế - xã hội cộng sản chủ nghĩa"
+          },
+          {
+            "key": "B",
+            "text": "Là những quy luật hình thành, phát triển và hoàn thiện của các hình thái kinh tế - xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Là những quy luật và tính quy luật chính trị -xã hội của quá trình phát sinh, hình thành và phát triển hình thái kinh tế - xã hội chủ nghĩa xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 118"
+      }
+    },
+    {
+      "id": "b-120",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chủ nghĩa xã hội khoa học ra đời dựa trên mấy tiền đề?",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 120"
+      }
+    },
+    {
+      "id": "b-121",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau Hội nghị Mátxcơva (1960), hoạt động lý luận và thực tiễn của Đảng Cộng sản và công nhân như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tăng cường hơn trước"
+          },
+          {
+            "key": "B",
+            "text": "Chỉ có công nhân phát triển"
+          },
+          {
+            "key": "C",
+            "text": "Bị chủ nghĩa tư bản thủ tiêu"
+          },
+          {
+            "key": "D",
+            "text": "Không phát triển"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 121"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 19): Sau Hội nghị Mátxcơva 1960, hoạt động lý luận và thực tiễn của các Đảng Cộng sản và công nhân được tăng cường hơn trước.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 19"
+      }
+    },
+    {
+      "id": "b-129",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong ba phát kiến vĩ đại của C.Mác và Phăng ghen là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ủng hộ nhân dân lao động"
+          },
+          {
+            "key": "B",
+            "text": "A và B đều đúng"
+          },
+          {
+            "key": "C",
+            "text": "Thành lập quốc tế cộng sản"
+          },
+          {
+            "key": "D",
+            "text": "Học thuyết về sứ mệnh lịch sử toàn thế giới của giai cấp công nhân"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 129"
+      }
+    },
+    {
+      "id": "b-130",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai đã đưa ra quan niệm \"chủ nghĩa xã hội là sự phản kháng và đấu tranh chống sự bóc lột người lao động, mục tiêu cuộc đấu tranh nhằm hoàn toàn xóa bỏ sự bóc lột\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "S.Phuriê"
+          },
+          {
+            "key": "B",
+            "text": "V.l.Lênin"
+          },
+          {
+            "key": "C",
+            "text": "C.Mác"
+          },
+          {
+            "key": "D",
+            "text": "Ph.Ănghen"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 130"
+      }
+    },
+    {
+      "id": "b-166",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc cải tổ xã hội chủ nghĩa diễn ra đầu tiên tại",
+        "options": [
+          {
+            "key": "A",
+            "text": "Liên Xô"
+          },
+          {
+            "key": "B",
+            "text": "Việt Nam"
+          },
+          {
+            "key": "C",
+            "text": "Trung Quốc"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 166"
+      }
+    },
+    {
+      "id": "b-168",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Liên Xô và Đông Âu sụp đổ là do",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bản chất của chủ nghĩa Mác- Lênin"
+          },
+          {
+            "key": "B",
+            "text": "Vận dụng sai chủ nghĩa Mác- Lênin"
+          },
+          {
+            "key": "C",
+            "text": "Sai lầm của chủ nghĩa Mác- Lênin"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 168"
+      }
+    },
+    {
+      "id": "b-170",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc cải cách và mở cửa diễn ra đầu tiên tại",
+        "options": [
+          {
+            "key": "A",
+            "text": "Liên Xô"
+          },
+          {
+            "key": "B",
+            "text": "Đông Âu"
+          },
+          {
+            "key": "C",
+            "text": "Trung Quốc"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 170"
+      }
+    },
+    {
+      "id": "b-172",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phát kiến nào của C.Mác và Ph.Ăngghen đã khắc phục triệt để được những hạn chế có tính lịch sử của chủ nghĩa xã hội không tưởng Pháp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa duy vật lịch sử"
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa duy vật biện chứng"
+          },
+          {
+            "key": "C",
+            "text": "Học thuyết về giá trị thặng dư"
+          },
+          {
+            "key": "D",
+            "text": "Học thuyết về sứ mệnh lịch sử toàn thế giới của giai cấp công nhân"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 172"
+      }
+    },
+    {
+      "id": "b-175",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cuộc cách mạng xã hội chủ nghĩa đầu tiên trên thể giới là",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng tháng Tám"
+          },
+          {
+            "key": "B",
+            "text": "Cách mạng Tân Hợi"
+          },
+          {
+            "key": "C",
+            "text": "Cách mạng tháng Mười Nga"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 175"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 86): Cách mạng Tháng Mười Nga thành công (1917) với nhà nước XHCN đầu tiên trên thế giới mới chính thức xác lập nền dân chủ XHCN; trước đó nó chỉ phôi thai từ đấu tranh giai cấp ở Pháp và Công xã Pari (1871).",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 86"
+      }
+    },
+    {
+      "id": "b-179",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về mặt thực tiễn, việc nghiên cứu chủ nghĩa xã hội khoa học có ý nghĩa gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thấy rõ khoảng cách giữa lý luận chủ nghĩa xã hội khoa học và thực tiễn vận dung nó"
+          },
+          {
+            "key": "B",
+            "text": "Sự sụp đổ của Liên Xô và Đông Âu là do đã nhận thức và hành động trên nhiều vấn đề trái với chủ nghĩa xã hội khoa học, trải với chủ nghĩa Mác - Lênin chủ không phải là do đi theo chủ nghĩa xã hội khoa học làm cho các nước này khủng hoảng"
+          },
+          {
+            "key": "C",
+            "text": "Cần có bản lĩnh vững vàng, sáng suốt và sáng tạo trong việc vận dụng chủ nghĩa xã hội khoa học và bối cảnh lịch sử cụ thể của từng quốc gia, tránh giáo điều, bảo thủ, duy ý chí."
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 179"
+      }
+    },
+    {
+      "id": "b-181",
+      "type": "multiple-choice",
+      "content": {
+        "question": "*Công cuộc đổi mới xã hội chủ nghĩa diễn ra ở nước nào sau đây",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cu Ba"
+          },
+          {
+            "key": "B",
+            "text": "Trung Quốc"
+          },
+          {
+            "key": "C",
+            "text": "Việt Nam"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 181"
+      }
+    },
+    {
+      "id": "b-187",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sau khi chế độ xã hội chủ nghĩa Liên Xô và Đông Âu sụp đổ, chủ nghĩa xã hội khoa học được bổ sung và phát triển như thế nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Được giới tri thức thế giới nghiên cứu như một học thuyết đã lỗi thời"
+          },
+          {
+            "key": "B",
+            "text": "Được các nước Xã hội chủ nghĩa bổ sung và phát triển trong tình hình mới, phù hợp với bối cảnh từng nước"
+          },
+          {
+            "key": "C",
+            "text": "Các nước tư bản chủ nghĩa nghiên cứu chủ nghĩa xã hội khoa học như một học thuyết nhằm khắc phục các khuyết tật của thời đại mới"
+          },
+          {
+            "key": "D",
+            "text": "Được dung hòa cùng với các học thuyết tư sản khác"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 187"
+      }
+    },
+    {
+      "id": "b-190",
+      "type": "multiple-choice",
+      "content": {
+        "question": "C.Mác và Ph.Ăngghen đánh giá: \"Giai cấp tư sản trong quá trình thống trị giai cấp chưa đầy một thế kỉ đã tạo ra một lực lượng sản xuất nhiều hơn và đồ sộ hơn lực lượng của tất cả các thế hệ trước đây gộp lại\" trong tác phẩm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chống Đuyrinh"
+          },
+          {
+            "key": "B",
+            "text": "Lược khảo khoa kinh tế - chính trị"
+          },
+          {
+            "key": "C",
+            "text": "Tuyên ngôn của Đảng Cộng sản"
+          },
+          {
+            "key": "D",
+            "text": "Bộ Tư bản"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 190"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 8): Câu về lực lượng sản xuất mà giai cấp tư sản tạo ra trong chưa đầy một thế kỷ được dẫn từ Tuyên ngôn của Đảng Cộng sản của Mác – Ăngghen.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 8"
+      }
+    },
+    {
+      "id": "b-191",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Từ sau khi V.I.Lênin mất đến năm 1953, ai là người có ảnh hưởng trực tiếp trong việc vận dụng và phát triển chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "J.Xtalin"
+          },
+          {
+            "key": "B",
+            "text": "S.Phurie"
+          },
+          {
+            "key": "C",
+            "text": "G.Đi-mi-trốp"
+          },
+          {
+            "key": "D",
+            "text": "S.Simon"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 191"
+      }
+    },
+    {
+      "id": "b-219",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là tiền đề khoa học tự nhiên cho sự ra đời của chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Định luật bảo toàn và chuyển hóa năng lượng"
+          },
+          {
+            "key": "B",
+            "text": "Học thuyết tế bào"
+          },
+          {
+            "key": "C",
+            "text": "Tất cả các đáp án đều đúng"
+          },
+          {
+            "key": "D",
+            "text": "Học thuyết tiến hóa"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 219"
+      }
+    },
+    {
+      "id": "b-235",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu là các đại biểu của chủ nghĩa xã hội không tưởng phê phán Pháp? ( Chọn 3 đáp án)",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xanh Ximông"
+          },
+          {
+            "key": "B",
+            "text": "S. Phurie"
+          },
+          {
+            "key": "C",
+            "text": "R.Oen"
+          },
+          {
+            "key": "D",
+            "text": "Ph.Hêghen"
+          }
+        ],
+        "answer": "ABC"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 235"
+      }
+    },
+    {
+      "id": "b-261",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Sống có việc làm hay là chết trong đấu tranh\" là khẩu hiệu của giai cấp công nhân ở đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công xã Pari"
+          },
+          {
+            "key": "B",
+            "text": "Vương Quôc Anh"
+          },
+          {
+            "key": "C",
+            "text": "Đức"
+          },
+          {
+            "key": "D",
+            "text": "Nhà máy dệt Lion"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 261"
+      }
+    },
+    {
+      "id": "b-267",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ba bộ phận hợp thành chủ nghĩa Mác - Lênin là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Triết học Mác - Lênin, Kinh tế chính trị Mác - Lênin và Chủ nghĩa xã hội không tưởng phê phán"
+          },
+          {
+            "key": "B",
+            "text": "Kinh tế chính trị Mác - Lênin, Tư tưởng Hồ Chí Minh và Chủ nghĩa xã hội không tưởng phê phán"
+          },
+          {
+            "key": "C",
+            "text": "Triết học Mác - Lênin, Tư tưởng Hồ Chí Minh và Kinh tế chính trị học cổ điển Anh"
+          },
+          {
+            "key": "D",
+            "text": "Triết học Mác - Lênin, Kinh tế chính trị Mác - Lênin và Chủ nghĩa xã hội khoa học"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 267"
+      }
+    },
+    {
+      "id": "b-268",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chủ nghĩa xã hội khoa học có chức năng giác ngộ và hướng dẫn giai cấp công nhân thực hiện sứ mệnh lịch sử của mình trong thời kỳ nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thời kỳ đấu tranh lật đổ sự thống trị của giai cấp tư sản, giành chính quyền"
+          },
+          {
+            "key": "B",
+            "text": "Thời kỳ thiết lập sự thống trị của giai cấp công nhân, thực hiện sự nghiệp cải tạo và xây dựng chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Thời kỳ phát triển chủ nghĩa xã hội tiến lên chủ nghĩa cộng sản"
+          },
+          {
+            "key": "D",
+            "text": "Tất cả các đáp án đều đúng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 268"
+      }
+    },
+    {
+      "id": "b-280",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điền cụm từ thích hợp vào (...): \"Giai cấp ..., trong quá trình thống trị giai cấp chưa đầy một thế kỷ, đã tạo ra những ... nhiều hơn và đồ sộ hơn lực lượng sản xuất của tất cả các thế hệ trước kia gộp lại\".",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tư sản/ Lực lượng sản xuất"
+          },
+          {
+            "key": "B",
+            "text": "Tư sản/ Quan hệ sản xuất"
+          },
+          {
+            "key": "C",
+            "text": "Vô sản/ Tư sản"
+          },
+          {
+            "key": "D",
+            "text": "Vô sản/ Giai cấp nông dân"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 280"
+      }
+    },
+    {
+      "id": "b-296",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu không phải là một trong những điều kiện kinh tế - xã hội cho sự ra đời của chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Các thành tựu khoa học tự nhiên của nhân loại thế kỉ XIX"
+          },
+          {
+            "key": "B",
+            "text": "Sự xuất hiện của nền đại công nghiệp"
+          },
+          {
+            "key": "C",
+            "text": "Sự ra đời của hai giai cấp: giai cấp tư sản và giai cấp vô sản"
+          },
+          {
+            "key": "D",
+            "text": "Phong trào đấu tranh của giai cấp vô sản chống lại sự thống trị áp bức của giai cấp tư sản"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 296"
+      }
+    },
+    {
+      "id": "b-299",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tư tưởng xã hội chủ nghĩa là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là một hệ thống những quan niệm phản ánh những nhu cầu, những ước mơ, nguyện vọng của các giai cấp lao động về một xã hội không có áp bức và bóc lột, mọi người đều bình đẳng và có cuộc sống ấm no, hạnh phúc."
+          },
+          {
+            "key": "B",
+            "text": "Là những thành tựu của con người đạt được trong quá trình đấu tranh giải phóng giai cấp."
+          },
+          {
+            "key": "C",
+            "text": "Là chế độ xã hội không có áp bức bóc lột, mọi người đều bình đẳng tự do."
+          },
+          {
+            "key": "D",
+            "text": "Cả a, b, c"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 299"
+      }
+    },
+    {
+      "id": "b-343",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tư duy của Nhà triết học nào được xem là \"cái hạt nhân\" hợp lý của phép biện chứng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "V.I.Lênin"
+          },
+          {
+            "key": "B",
+            "text": "C.Mác"
+          },
+          {
+            "key": "C",
+            "text": "G.V.Ph.Hêghen"
+          },
+          {
+            "key": "D",
+            "text": "Ph. Ăngghen"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 343"
+      }
+    },
+    {
+      "id": "b-352",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đánh giá sau được trích trong tác phẩm nào: \"tác phẩm chủ yếu và cơ bản ấy trình bày chủ nghĩa xã hội khoa học... những yếu tổ tử đó này sinh ra chế độ tương lai\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chống Đuyring"
+          },
+          {
+            "key": "B",
+            "text": "Đường Kách mệnh"
+          },
+          {
+            "key": "C",
+            "text": "Tuyên ngôn của Đảng Cộng sản"
+          },
+          {
+            "key": "D",
+            "text": "Tư bản"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 352"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 7): Giáo trình dẫn đánh giá bộ “Tư bản” là tác phẩm chủ yếu và cơ bản trình bày chủ nghĩa xã hội khoa học.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 7"
+      }
+    },
+    {
+      "id": "b-371",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tuyên ngôn của Đảng Cộng sản đánh dấu sự ra đời của:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa Mác - Lênin"
+          },
+          {
+            "key": "B",
+            "text": "Kinh tế chính trị Mác - Lênin"
+          },
+          {
+            "key": "C",
+            "text": "Chủ nghĩa xã hội khoa học"
+          },
+          {
+            "key": "D",
+            "text": "Triết học Mác - Lênin"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 371"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 12): Tuyên ngôn của Đảng Cộng sản (Mác – Ăngghen, tháng 2/1848) đánh dấu sự ra đời của chủ nghĩa xã hội khoa học.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 12"
+      }
+    },
+    {
+      "id": "b-382",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Công cuộc đổi mới do Đảng Cộng sản Việt Nam khởi xướng và lãnh đạo tại Đại hội lần thứ bao nhiêu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lần thứ IV"
+          },
+          {
+            "key": "B",
+            "text": "Lần thứ VI"
+          },
+          {
+            "key": "C",
+            "text": "Lần thứ X"
+          },
+          {
+            "key": "D",
+            "text": "Lần thứ XIII"
+          }
+        ],
+        "answer": "B"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 382"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 20): Công cuộc đổi mới do Đảng khởi xướng và lãnh đạo từ Đại hội VI (1986).",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 20"
+      }
+    },
+    {
+      "id": "b-383",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về mặt thực tiền, đâu không phải là một ý nghĩa của việc nghiên cứu chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thấy rõ khoảng cách giữa lý luận chủ nghĩa xã hội khoa học và thực tiễn vận dụng nó"
+          },
+          {
+            "key": "B",
+            "text": "Sự sụp đổ của Liên Xô và Đông Âu là do đã nhận thức và hành động trên nhiều vẫn đê trái với chủ nghĩa xã hội khoa học, trái với chủ nghĩa Mác - Lênin chứ không phải là do đi theo chủ nghĩa xã hội khoa học làm cho các nước này khủng hoảng"
+          },
+          {
+            "key": "C",
+            "text": "Cần có bản lĩnh vững vàng, sáng suốt và sáng tạo trong việc vận dụng chủ nghĩa xã hội khoa học vào bối cành lịch sử cụ thể của từng quốc gia, tránh giáo điều, bảo thủ, duy ý chí"
+          },
+          {
+            "key": "D",
+            "text": "Giúp chúng ta có căn cứ nhận thức khoa học để luôn cảnh giác, phân tích đúng và đấu tranh chống"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 383"
+      }
+    },
+    {
+      "id": "b-387",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu không phải là hạn chế của chủ nghĩa xã hội không tưởng Pháp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Không chỉ ra được những biện pháp để hiện thực hóa học thuyết của mình"
+          },
+          {
+            "key": "B",
+            "text": "Không phát hiện ra quy luật phát triển vận động của xã hội nói chung và của xã hội tư bản chủ nghĩa nói riêng"
+          },
+          {
+            "key": "C",
+            "text": "Không phát hiện ra sứ mệnh lịch sử của giai cấp công nhân"
+          },
+          {
+            "key": "D",
+            "text": "Không biết được vai trò của nô lệ trong cách mạng xã hội"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 387"
+      }
+    },
+    {
+      "id": "b-399",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chức năng và nhiệm vụ của chủ nghĩa xã hội khoa học là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là trang bị những tri thức khoa học của chủ nghĩa Mác - Lênin đã phát hiện ra và luận giải về quá trình tất yếu lịch sử dẫn đến hình thành, phát triển hình thái kinh tế - xã hội cộng sản, giải phóng xã hội, giải phóng con người."
+          },
+          {
+            "key": "B",
+            "text": "Là giáo dục, trang bị lập trường tư tưởng chính trị của giai cấp công nhân cho đảng cộng sản, giai cấp công nhân và nhân dân lao động."
+          },
+          {
+            "key": "C",
+            "text": "Là định hướng về chính trị - xã hội cho mọi hoạt động của giai cấp công nhân, của đảng cộng sản, của nhà nước và của nhân dân lao động trên mọi lĩnh vực."
+          },
+          {
+            "key": "D",
+            "text": "Cả a, b và c đều đúng"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 399"
+      }
+    },
+    {
+      "id": "b-407",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phát kiến học thuyết giá trị thặng dư của C.Mác và Ph.Ăngghen có ý nghĩa gì đối với chủ nghĩa xã hội khoa học?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ ra sự suy vong tự nhiên của chủ nghĩa tư bản"
+          },
+          {
+            "key": "B",
+            "text": "Chỉ ra con đường đấu tranh giai cấp tiến lên chủ nghĩa xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Khẳng định về phương diện kinh tế sự diệt vong không thể tránh khỏi của chủ nghĩa tư bản và sự ra đời tất yếu của chủ nghĩa xã hội"
+          },
+          {
+            "key": "D",
+            "text": "Khẳng định sự thiết lập nền chuyên chính vô sản bằng cách mạng xã hội là con đường duy nhất tiến đến chủ nghĩa xã hội"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 407"
+      }
+    },
+    {
+      "id": "b-409",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Chủ nghĩa xã hội khoa học sử dụng phương pháp luận nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa duy vật biện chứng và chủ nghĩa duy vật lịch sử"
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa duy vật siêu hình và chủ nghĩa duy vật lịch sử"
+          },
+          {
+            "key": "C",
+            "text": "Chủ nghĩa duy vật chất phác và chủ nghĩa duy vật lịch sử"
+          },
+          {
+            "key": "D",
+            "text": "Chủ nghĩa duy tâm biện chứng và chủ nghĩa duy vật lịch sử"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 409"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 24): CNXH khoa học dùng phương pháp luận chung nhất là chủ nghĩa duy vật biện chứng và chủ nghĩa duy vật lịch sử.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 24"
+      }
+    },
+    {
+      "id": "b-410",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tác phẩm \"Tuyên ngôn của Đảng Cộng sản\" đã đánh dấu sự ra đời của bộ phận lý luận nào của chủ nghĩa Mác - Lênin?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa Mác - Lênin"
+          },
+          {
+            "key": "B",
+            "text": "Kinh tế chính trị Mác - Lênin"
+          },
+          {
+            "key": "C",
+            "text": "Chủ nghĩa xã hội khoa học"
+          },
+          {
+            "key": "D",
+            "text": "Triết học Mác - Lênin"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 410"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 12): Tuyên ngôn của Đảng Cộng sản (tháng 2/1848) đánh dấu sự ra đời của chủ nghĩa xã hội khoa học.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 12"
+      }
+    },
+    {
+      "id": "b-417",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Những biểu hiện cơ bản của tư tưởng xã hội chủ nghĩa là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là những ước mơ nguyện vọng về một chế độ xã hội ai cũng có việc làm ai cũng lao động"
+          },
+          {
+            "key": "B",
+            "text": "Là quan niệm về một chế độ xã hội mà tư liệu sản xuất đều thuộc về mọi thành viên xã hội"
+          },
+          {
+            "key": "C",
+            "text": "Là những tư tưởng về một xã hội, trong đó mọi người đều bình đẳng, có cuộc sống ấm no, tự do, hạnh phúc."
+          },
+          {
+            "key": "D",
+            "text": "Cả a, b và c"
+          }
+        ],
+        "answer": "D"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 417"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1666 @@
+{
+  "id": "cnxhkh-chuong-5",
+  "title": "CNXH Khoa học – Chương 5",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "contentType": "multiple-choice",
+  "description": "Cơ cấu xã hội - giai cấp và liên minh giai cấp, tầng lớp trong tkqđ lên cnxh. Câu 1–50.",
+  "language": "vi",
+  "source": {
+    "document": "Bộ câu hỏi trắc nghiệm ôn tập Chủ nghĩa xã hội khoa học – Chương 5"
+  },
+  "items": [
+    {
+      "id": "q-001",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ cấu xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là sự tập hợp ngẫu nhiên của các cá nhân trong xã hội."
+          },
+          {
+            "key": "B",
+            "text": "Là những cộng đồng người cùng toàn bộ những mối quan hệ xã hội do sự tác động lẫn nhau của cộng đồng ấy tạo nên."
+          },
+          {
+            "key": "C",
+            "text": "Là sự phân chia giai cấp dựa trên mức thu nhập."
+          },
+          {
+            "key": "D",
+            "text": "Là cơ cấu nghề nghiệp của người lao động."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Theo định nghĩa trong giáo trình, cơ cấu xã hội là hệ thống các cộng đồng người và những mối quan hệ xã hội giữa chúng, bao gồm nhiều loại như cơ cấu XH-dân cư, XH-nghề nghiệp, XH-giai cấp..."
+      },
+      "source": {
+        "ref": "Câu 1"
+      },
+      "enrichment": {
+        "text": "Cơ cấu xã hội gồm nhiều loại: cơ cấu xã hội - dân cư, xã hội - nghề nghiệp, xã hội - giai cấp, xã hội - dân tộc, xã hội - tôn giáo… Chúng tác động qua lại với nhau, nhưng quan trọng hàng đầu là cơ cấu xã hội - giai cấp."
+      }
+    },
+    {
+      "id": "q-002",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong hệ thống xã hội, loại hình cơ cấu xã hội nào giữ vị trí quan trọng hàng đầu và chi phối các cơ cấu xã hội khác?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cơ cấu xã hội - dân số."
+          },
+          {
+            "key": "B",
+            "text": "Cơ cấu xã hội - tôn giáo."
+          },
+          {
+            "key": "C",
+            "text": "Cơ cấu xã hội - giai cấp."
+          },
+          {
+            "key": "D",
+            "text": "Cơ cấu xã hội - dân tộc."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Cơ cấu xã hội - giai cấp giữ vị trí quan trọng hàng đầu vì nó liên quan trực tiếp đến quyền sở hữu tư liệu sản xuất, quyền tổ chức quản lý lao động, phân phối thu nhập và quyền lực chính trị."
+      },
+      "source": {
+        "ref": "Câu 2"
+      },
+      "enrichment": {
+        "text": "Cơ cấu xã hội - giai cấp liên quan trực tiếp đến sở hữu tư liệu sản xuất, tổ chức quản lý lao động, phân phối thu nhập và quyền lực chính trị, nên chi phối các loại cơ cấu khác."
+      }
+    },
+    {
+      "id": "q-003",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội, sự biến đổi của cơ cấu xã hội - giai cấp bị quy định bởi yếu tố nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ý chí của Đảng cầm quyền."
+          },
+          {
+            "key": "B",
+            "text": "Trình độ văn hóa của nhân dân."
+          },
+          {
+            "key": "C",
+            "text": "Sự biến đổi của cơ cấu kinh tế."
+          },
+          {
+            "key": "D",
+            "text": "Quá trình gia tăng dân số."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Theo quy luật khách quan, cơ sở hạ tầng (cơ cấu kinh tế, thành phần kinh tế, phương thức sản xuất) quyết định kiến trúc thượng tầng và cơ cấu xã hội. Cơ cấu kinh tế chuyển đổi tất yếu dẫn đến cơ cấu XH-GC biến đổi."
+      },
+      "source": {
+        "ref": "Câu 3"
+      },
+      "enrichment": {
+        "text": "Theo chủ nghĩa duy vật lịch sử, cơ sở hạ tầng (cơ cấu kinh tế) quyết định kiến trúc thượng tầng và cơ cấu xã hội. Mác (Lời tựa 1859): phương thức sản xuất quyết định quá trình sinh hoạt xã hội, chính trị và tinh thần."
+      }
+    },
+    {
+      "id": "q-004",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự tồn tại của cơ cấu xã hội - giai cấp đa dạng, phức tạp trong thời kỳ quá độ lên CNXH là do đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Do sự tồn tại của nền kinh tế nhiều thành phần."
+          },
+          {
+            "key": "B",
+            "text": "Do sự can thiệp của các nước đế quốc."
+          },
+          {
+            "key": "C",
+            "text": "Do tàn dư của tư tưởng phong kiến."
+          },
+          {
+            "key": "D",
+            "text": "Do sự phát triển của hệ thống giáo dục."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Thời kỳ quá độ tồn tại nền kinh tế hàng hóa nhiều thành phần (kinh tế nhà nước, tập thể, tư nhân...). Chính kết cấu kinh tế đa dạng này dẫn đến sự tồn tại đan xen của nhiều giai cấp, tầng lớp khác nhau."
+      },
+      "source": {
+        "ref": "Câu 4"
+      },
+      "enrichment": {
+        "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa có nhiều thành phần: nhà nước giữ vai trò chủ đạo, kinh tế tập thể cùng kinh tế nhà nước là nền tảng; Nghị quyết 10-NQ/TW (2017) xác định kinh tế tư nhân là một động lực quan trọng."
+      }
+    },
+    {
+      "id": "q-005",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm biến đổi của cơ cấu xã hội - giai cấp trong thời kỳ quá độ lên CNXH là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đơn giản hóa, chỉ còn duy nhất giai cấp công nhân."
+          },
+          {
+            "key": "B",
+            "text": "Biến đổi phức tạp, đa dạng, xuất hiện các tầng lớp xã hội mới (doanh nhân, trung lưu...)."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ ngay lập tức giai cấp nông dân."
+          },
+          {
+            "key": "D",
+            "text": "Tái lập lại cơ cấu xã hội phong kiến."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Do sự phát triển đa dạng của nền kinh tế thị trường, bên cạnh các giai cấp cũ, tất yếu xuất hiện các nhóm, tầng lớp xã hội mới tạo nên sự phức tạp, đa dạng của cơ cấu XH-GC."
+      },
+      "source": {
+        "ref": "Câu 5"
+      },
+      "enrichment": {
+        "text": "Cùng với nền kinh tế thị trường, xuất hiện các nhóm xã hội mới như doanh nhân, tầng lớp trung lưu, lao động tự do, công nhân tri thức… làm cơ cấu xã hội - giai cấp đa dạng, phức tạp."
+      }
+    },
+    {
+      "id": "q-006",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xu hướng biến đổi của cơ cấu xã hội - giai cấp trong thời kỳ quá độ lên CNXH là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Các giai cấp, tầng lớp ngày càng mâu thuẫn gay gắt và tiêu diệt lẫn nhau."
+          },
+          {
+            "key": "B",
+            "text": "Vừa có đấu tranh, vừa có liên minh, dẫn đến sự xích lại gần nhau, từng bước xóa bỏ bất bình đẳng xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Các giai cấp tự nguyện từ bỏ tài sản để trở thành giai cấp công nhân."
+          },
+          {
+            "key": "D",
+            "text": "Chuyển hóa toàn bộ xã hội thành tầng lớp tiểu tư sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Sự xích lại gần nhau là một xu hướng có tính quy luật trong CNXH nhằm hướng tới xóa bỏ tình trạng bóc lột, vươn tới công bằng, bình đẳng."
+      },
+      "source": {
+        "ref": "Câu 6"
+      },
+      "enrichment": {
+        "text": "Trong thời kỳ quá độ, các giai cấp, tầng lớp vừa hợp tác vừa đấu tranh về lợi ích, nhưng xu hướng chung là xích lại gần nhau, từng bước thu hẹp khoảng cách và xóa bỏ bất bình đẳng."
+      }
+    },
+    {
+      "id": "q-007",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong cơ cấu xã hội - giai cấp của thời kỳ quá độ lên CNXH, lực lượng nào giữ vai trò chủ đạo, tiên phong?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tầng lớp trí thức."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp nông dân."
+          },
+          {
+            "key": "C",
+            "text": "Đội ngũ doanh nhân."
+          },
+          {
+            "key": "D",
+            "text": "Giai cấp công nhân."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Giai cấp công nhân là lực lượng tiêu biểu cho phương thức sản xuất mới, giữ vai trò lãnh đạo, tiên phong trong quá trình cải tạo xã hội cũ, xây dựng xã hội mới."
+      },
+      "source": {
+        "ref": "Câu 7"
+      },
+      "enrichment": {
+        "text": "Giai cấp công nhân đại diện cho phương thức sản xuất tiên tiến nên giữ vai trò lãnh đạo thông qua Đảng, là lực lượng tiên phong trong cải tạo xã hội cũ, xây dựng xã hội mới."
+      }
+    },
+    {
+      "id": "q-008",
+      "type": "multiple-choice",
+      "content": {
+        "question": "C.Mác đã gọi cuộc cách mạng vô sản mà không có sự liên minh với giai cấp nông dân là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cuộc cách mạng triệt để."
+          },
+          {
+            "key": "B",
+            "text": "Bài \"đơn ca ai điếu\"."
+          },
+          {
+            "key": "C",
+            "text": "Bước nhảy vọt vĩ đại."
+          },
+          {
+            "key": "D",
+            "text": "Chuyên chính vô sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "C.Mác và Ph.Ăngghen đúc kết từ thất bại của công nhân châu Âu thế kỷ XIX: GCCN \"đơn độc\", nếu không liên minh với \"người bạn đồng minh tự nhiên\" là nông dân thì cuộc cách mạng sẽ trở thành \"bài đơn ca ai điếu\" (tức là chắc chắn thất bại)."
+      },
+      "source": {
+        "ref": "Câu 8"
+      },
+      "enrichment": {
+        "text": "Ý này thường được dẫn từ “Ngày 18 tháng Sương mù của Lui Bô-na-pác” (1852) của Mác: nếu thiếu sự đồng tình của nông dân, cách mạng vô sản sẽ như bài đơn ca ai điếu ở các nước đông nông dân. Kết luận: công nhân phải liên minh với nông dân.",
+        "confidence": "uncertain",
+        "reference": "Xuất xứ chính xác của cụm “đơn ca ai điếu” nên đối chiếu giáo trình."
+      }
+    },
+    {
+      "id": "q-009",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo V.I. Lênin, nguyên tắc cao nhất của chuyên chính vô sản là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sử dụng bạo lực để trấn áp kẻ thù."
+          },
+          {
+            "key": "B",
+            "text": "Duy trì khối liên minh giữa giai cấp vô sản và nông dân."
+          },
+          {
+            "key": "C",
+            "text": "Xây dựng nền kinh tế kế hoạch hóa tập trung."
+          },
+          {
+            "key": "D",
+            "text": "Đưa nông dân vào các nông trang tập thể bằng mọi giá."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Lênin chỉ rõ: \"Nguyên tắc cao nhất của chuyên chính là duy trì khối liên minh giữa giai cấp vô sản và nông dân để giai cấp vô sản có thể giữ được vai trò lãnh đạo và chính quyền nhà nước\"."
+      },
+      "source": {
+        "ref": "Câu 9"
+      },
+      "enrichment": {
+        "text": "Lênin liên tục nhấn mạnh liên minh công - nông là nguyên tắc cao nhất của chuyên chính vô sản. Chính sách kinh tế mới (NEP, 1921) thay trưng thu lương thực bằng thuế lương thực nhằm củng cố khối liên minh này."
+      }
+    },
+    {
+      "id": "q-010",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Động lực lớn nhất để hình thành và củng cố khối liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên CNXH là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nhu cầu bảo vệ môi trường."
+          },
+          {
+            "key": "B",
+            "text": "Sự thống nhất về lợi ích cơ bản (kinh tế, chính trị) của các chủ thể."
+          },
+          {
+            "key": "C",
+            "text": "Sự ép buộc của chính quyền nhà nước."
+          },
+          {
+            "key": "D",
+            "text": "Do họ có cùng chung nguồn gốc xuất thân."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Sự thống nhất về lợi ích (đặc biệt là lợi ích kinh tế) dưới sự lãnh đạo của Đảng là nhân tố kết dính, tạo động lực thực sự cho khối liên minh bền vững."
+      },
+      "source": {
+        "ref": "Câu 10"
+      },
+      "enrichment": {
+        "text": "Lợi ích, nhất là lợi ích kinh tế, là động lực bền vững nhất. Khối liên minh vững mạnh khi lợi ích căn bản của công nhân, nông dân, trí thức được thống nhất và được bảo đảm dưới sự lãnh đạo của Đảng."
+      }
+    },
+    {
+      "id": "q-011",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Khối liên minh giai cấp, tầng lớp ở Việt Nam hiện nay lấy lực lượng nào làm nền tảng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Công nhân, nông dân và tiểu thương."
+          },
+          {
+            "key": "B",
+            "text": "Công nhân, nông dân và đội ngũ trí thức."
+          },
+          {
+            "key": "C",
+            "text": "Công nhân, doanh nhân và trí thức."
+          },
+          {
+            "key": "D",
+            "text": "Nông dân, trí thức và thanh niên."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đại hội XII (và các Đại hội khác của Đảng) đều khẳng định: Tăng cường khối đại đoàn kết toàn dân tộc trên nền tảng liên minh giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức."
+      },
+      "source": {
+        "ref": "Câu 11"
+      },
+      "enrichment": {
+        "text": "Văn kiện của Đảng khẳng định đại đoàn kết toàn dân tộc trên nền tảng liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức do Đảng lãnh đạo."
+      }
+    },
+    {
+      "id": "q-012",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong nội dung của liên minh giai cấp, tầng lớp ở nước ta, nội dung nào là cơ bản và quyết định nhất?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nội dung chính trị."
+          },
+          {
+            "key": "B",
+            "text": "Nội dung kinh tế."
+          },
+          {
+            "key": "C",
+            "text": "Nội dung văn hóa - xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Nội dung an ninh - quốc phòng."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nội dung kinh tế là cơ sở vật chất - kỹ thuật của liên minh, là nhân tố quyết định nhất nhằm thỏa mãn nhu cầu, lợi ích thiết thân của các giai cấp, tầng lớp."
+      },
+      "source": {
+        "ref": "Câu 12"
+      },
+      "enrichment": {
+        "text": "Nội dung kinh tế là cơ bản, quyết định nhất vì nó thỏa mãn lợi ích thiết thân và tạo cơ sở vật chất - kỹ thuật cho các nội dung khác (chính trị, văn hóa - xã hội)."
+      }
+    },
+    {
+      "id": "q-013",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thực chất của nội dung kinh tế trong khối liên minh công - nông - trí thức ở Việt Nam hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chia đều của cải cho tất cả mọi người."
+          },
+          {
+            "key": "B",
+            "text": "Sự hợp tác, liên kết kinh tế giữa các ngành công nghiệp, nông nghiệp, khoa học công nghệ để đẩy mạnh CNH, HĐH đất nước."
+          },
+          {
+            "key": "C",
+            "text": "Thu thuế của doanh nghiệp chia cho nông dân."
+          },
+          {
+            "key": "D",
+            "text": "Đóng cửa nền kinh tế để tự cung tự cấp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Liên minh kinh tế thể hiện ở sự gắn kết chặt chẽ giữa công nghiệp, nông nghiệp và khoa học công nghệ, ứng dụng kỹ thuật hiện đại vào sản xuất để nâng cao đời sống."
+      },
+      "source": {
+        "ref": "Câu 13"
+      },
+      "enrichment": {
+        "text": "Về kinh tế, liên minh là gắn kết công nghiệp, nông nghiệp, khoa học - công nghệ, ứng dụng khoa học công nghệ vào sản xuất để thực hiện công nghiệp hóa, hiện đại hóa."
+      }
+    },
+    {
+      "id": "q-014",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mục đích của nội dung chính trị trong khối liên minh giai cấp, tầng lớp ở Việt Nam là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thiết lập chế độ đa đảng để các giai cấp chia sẻ quyền lực."
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ hoàn toàn nhà nước."
+          },
+          {
+            "key": "C",
+            "text": "Giữ vững lập trường của giai cấp công nhân, đảm bảo vai trò lãnh đạo của Đảng Cộng sản, bảo vệ vững chắc chế độ XHCN."
+          },
+          {
+            "key": "D",
+            "text": "Bầu ra những người không phải là đảng viên vào các vị trí lãnh đạo chủ chốt."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Về mặt chính trị, liên minh nhằm tạo cơ sở chính trị - xã hội vững chắc, tập hợp lực lượng bảo vệ chế độ và định hướng đi lên CNXH dưới sự lãnh đạo của Đảng."
+      },
+      "source": {
+        "ref": "Câu 14"
+      },
+      "enrichment": {
+        "text": "Nội dung chính trị nhằm giữ vững lập trường của giai cấp công nhân, bảo đảm vai trò lãnh đạo của Đảng, giữ vững độc lập dân tộc và bảo vệ chế độ xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-015",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Yêu cầu \"Gắn tăng trưởng kinh tế với phát triển văn hóa, phát triển con người và thực hiện tiến bộ, công bằng xã hội\" phản ánh nội dung nào của khối liên minh?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nội dung kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Nội dung chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Nội dung văn hóa, xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Nội dung quốc phòng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Xây dựng nền văn hóa tiên tiến, đậm đà bản sắc, nâng cao dân trí, chăm sóc sức khỏe, an sinh xã hội... là những nhiệm vụ trọng tâm thuộc nội dung văn hóa - xã hội của khối liên minh."
+      },
+      "source": {
+        "ref": "Câu 15"
+      },
+      "enrichment": {
+        "text": "Gắn tăng trưởng kinh tế với phát triển văn hóa, con người, tiến bộ và công bằng xã hội thuộc nội dung văn hóa - xã hội của liên minh."
+      }
+    },
+    {
+      "id": "q-016",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự biến đổi của cơ cấu xã hội - giai cấp ở Việt Nam trong thời kỳ quá độ có đặc điểm gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ tuân theo tính quy luật phổ biến của thế giới, không có gì khác biệt."
+          },
+          {
+            "key": "B",
+            "text": "Vừa đảm bảo tính quy luật phổ biến, vừa mang tính đặc thù của xã hội Việt Nam."
+          },
+          {
+            "key": "C",
+            "text": "Hoàn toàn đi ngược lại các quy luật của chủ nghĩa Mác - Lênin."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ biến đổi ở khu vực nông thôn."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cơ cấu XH-GC ở Việt Nam biến đổi theo quy luật (chịu sự chi phối của cơ cấu kinh tế) nhưng có tính đặc thù do xuất phát điểm thấp, trải qua chiến tranh và đẩy mạnh hội nhập kinh tế quốc tế."
+      },
+      "source": {
+        "ref": "Câu 16"
+      },
+      "enrichment": {
+        "text": "Cơ cấu xã hội - giai cấp ở Việt Nam biến đổi theo quy luật chung (do cơ cấu kinh tế quyết định) và có tính đặc thù: xuất phát điểm thấp, trải qua chiến tranh, hội nhập quốc tế."
+      }
+    },
+    {
+      "id": "q-017",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp nông dân Việt Nam hiện nay có xu hướng biến đổi như thế nào về mặt số lượng?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tăng lên rất nhanh do dân số tăng."
+          },
+          {
+            "key": "B",
+            "text": "Có xu hướng giảm dần về số lượng và tỉ lệ trong cơ cấu xã hội - giai cấp."
+          },
+          {
+            "key": "C",
+            "text": "Không thay đổi trong nhiều thập kỷ qua."
+          },
+          {
+            "key": "D",
+            "text": "Trở thành giai cấp chiếm 100% lực lượng lao động."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Do quá trình công nghiệp hóa, hiện đại hóa và đô thị hóa, một bộ phận lớn nông dân chuyển sang làm công nghiệp và dịch vụ, nên tỷ lệ nông dân trong cơ cấu xã hội giảm dần."
+      },
+      "source": {
+        "ref": "Câu 17"
+      },
+      "enrichment": {
+        "text": "Quá trình công nghiệp hóa, hiện đại hóa, đô thị hóa làm số lượng và tỷ lệ nông dân trong cơ cấu xã hội giảm, trong khi công nhân, dịch vụ tăng. Đây vẫn là lực lượng quan trọng."
+      }
+    },
+    {
+      "id": "q-018",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tầng lớp nào được Đảng ta xác định là \"lực lượng lao động sáng tạo đặc biệt quan trọng trong tiến trình CNH, HĐH và hội nhập quốc tế\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đội ngũ doanh nhân."
+          },
+          {
+            "key": "B",
+            "text": "Tầng lớp thanh niên."
+          },
+          {
+            "key": "C",
+            "text": "Đội ngũ trí thức."
+          },
+          {
+            "key": "D",
+            "text": "Giai cấp nông dân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Trí thức là lực lượng sáng tạo đặc biệt, đóng vai trò nòng cốt trong phát triển kinh tế tri thức và nghiên cứu, ứng dụng khoa học - công nghệ."
+      },
+      "source": {
+        "ref": "Câu 18"
+      },
+      "enrichment": {
+        "text": "Nghị quyết 27-NQ/TW (Hội nghị Trung ương 7 khóa X, 2008) về xây dựng đội ngũ trí thức trong thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa khẳng định trí thức là lực lượng lao động sáng tạo đặc biệt quan trọng."
+      }
+    },
+    {
+      "id": "q-019",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đội ngũ nào ở Việt Nam hiện nay đang phát triển nhanh, đóng vai trò quan trọng trong việc tạo việc làm, xóa đói giảm nghèo và phát triển kinh tế - xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đội ngũ doanh nhân."
+          },
+          {
+            "key": "B",
+            "text": "Đội ngũ viên chức hành chính."
+          },
+          {
+            "key": "C",
+            "text": "Tầng lớp thợ thủ công truyền thống."
+          },
+          {
+            "key": "D",
+            "text": "Giai cấp địa chủ."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Trong nền kinh tế thị trường định hướng XHCN, đội ngũ doanh nhân đóng vai trò cực kỳ quan trọng, là động lực để phát triển kinh tế, giải quyết việc làm."
+      },
+      "source": {
+        "ref": "Câu 19"
+      },
+      "enrichment": {
+        "text": "Nghị quyết 09-NQ/TW (2011) về xây dựng đội ngũ doanh nhân Việt Nam thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa và hội nhập quốc tế. Ngày 13/10 hằng năm là Ngày Doanh nhân Việt Nam."
+      }
+    },
+    {
+      "id": "q-020",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tầng lớp nào được coi là \"rường cột của nước nhà, chủ nhân tương lai của đất nước, lực lượng xung kích trong xây dựng và bảo vệ Tổ quốc\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phụ nữ."
+          },
+          {
+            "key": "B",
+            "text": "Doanh nhân."
+          },
+          {
+            "key": "C",
+            "text": "Trí thức."
+          },
+          {
+            "key": "D",
+            "text": "Thanh niên."
+          }
+        ],
+        "answer": "D",
+        "explanation": "Đảng ta luôn xác định thanh niên là rường cột của quốc gia, là lực lượng xung kích sáng tạo. Chăm lo cho thanh niên vừa là mục tiêu, vừa là động lực của sự phát triển."
+      },
+      "source": {
+        "ref": "Câu 20"
+      },
+      "enrichment": {
+        "text": "Nghị quyết 25-NQ/TW (2008) về tăng cường lãnh đạo của Đảng đối với công tác thanh niên. Đoàn Thanh niên Cộng sản Hồ Chí Minh có ngày thành lập 26/3/1931."
+      }
+    },
+    {
+      "id": "q-021",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tổ chức nào ở Việt Nam đóng vai trò là \"cơ sở chính trị của chính quyền nhân dân\", có nhiệm vụ tập hợp khối đại đoàn kết toàn dân tộc, tăng cường liên minh giai cấp, tầng lớp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đảng Cộng sản Việt Nam."
+          },
+          {
+            "key": "B",
+            "text": "Quốc hội."
+          },
+          {
+            "key": "C",
+            "text": "Mặt trận Tổ quốc Việt Nam."
+          },
+          {
+            "key": "D",
+            "text": "Quân đội nhân dân Việt Nam."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Mặt trận Tổ quốc Việt Nam là tổ chức liên hiệp tự nguyện, đại diện bảo vệ quyền lợi của nhân dân, thực hiện giám sát, phản biện xã hội và củng cố khối đại đoàn kết."
+      },
+      "source": {
+        "ref": "Câu 21"
+      },
+      "enrichment": {
+        "text": "Mặt trận Tổ quốc Việt Nam có ngày truyền thống 18/11/1930 (Hội Phản đế đồng minh), nay là Ngày hội Đại đoàn kết toàn dân tộc; là cơ sở chính trị của chính quyền nhân dân (Hiến pháp 2013, Điều 9)."
+      }
+    },
+    {
+      "id": "q-022",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để xây dựng và phát triển đội ngũ trí thức trong thời kỳ đổi mới, Đảng và Nhà nước ta cần có chính sách gì nổi bật?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gò ép tư duy, hạn chế tranh luận."
+          },
+          {
+            "key": "B",
+            "text": "Trọng dụng trí thức, tôn trọng và phát huy tự do tư tưởng trong hoạt động nghiên cứu, sáng tạo."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ sử dụng trí thức được đào tạo trong nước."
+          },
+          {
+            "key": "D",
+            "text": "Trả lương trí thức bằng mức lương của lao động phổ thông."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trí thức là lực lượng lao động sáng tạo, do đó việc tôn trọng tự do học thuật, bảo hộ quyền sở hữu trí tuệ và có chính sách đãi ngộ xứng đáng là chìa khóa để phát huy vai trò của họ."
+      },
+      "source": {
+        "ref": "Câu 22"
+      },
+      "enrichment": {
+        "text": "Tôn trọng tự do học thuật, bảo hộ quyền sở hữu trí tuệ và đãi ngộ xứng đáng là điều kiện để phát huy năng lực sáng tạo của trí thức, theo tinh thần Nghị quyết 27-NQ/TW."
+      }
+    },
+    {
+      "id": "q-023",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc giải quyết tốt mối quan hệ giữa \"tăng trưởng kinh tế\" và \"đảm bảo tiến bộ, công bằng xã hội\" nhằm mục đích gì đối với cơ cấu xã hội - giai cấp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đẩy nhanh sự bần cùng hóa giai cấp nông dân."
+          },
+          {
+            "key": "B",
+            "text": "Tạo điều kiện để giai cấp tư sản phục hồi."
+          },
+          {
+            "key": "C",
+            "text": "Thúc đẩy biến đổi cơ cấu xã hội - giai cấp theo hướng tích cực, hạn chế phân hóa giàu nghèo."
+          },
+          {
+            "key": "D",
+            "text": "Cào bằng thu nhập của mọi tầng lớp."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Phát triển kinh tế gắn với công bằng xã hội sẽ tạo cơ hội bình đẳng cho mọi giai cấp, tầng lớp, giúp xã hội xích lại gần nhau, tránh xung đột lợi ích gay gắt."
+      },
+      "source": {
+        "ref": "Câu 23"
+      },
+      "enrichment": {
+        "text": "Kết hợp tăng trưởng với công bằng giúp biến đổi cơ cấu xã hội - giai cấp theo hướng tích cực, tạo cơ hội bình đẳng và hạn chế phân hóa giàu - nghèo quá mức, tránh xung đột lợi ích gay gắt."
+      }
+    },
+    {
+      "id": "q-024",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những phương hướng cơ bản để tăng cường liên minh giai cấp, tầng lớp là phải đẩy mạnh lĩnh vực nào để cải thiện đời sống nông dân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xây dựng và mở rộng hệ thống nhà máy điện hạt nhân."
+          },
+          {
+            "key": "B",
+            "text": "Đẩy mạnh CNH, HĐH nông nghiệp, nông thôn gắn với xây dựng nông thôn mới."
+          },
+          {
+            "key": "C",
+            "text": "Tăng thuế nông nghiệp."
+          },
+          {
+            "key": "D",
+            "text": "Buộc nông dân phải rời bỏ quê hương."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nông nghiệp, nông dân, nông thôn có vị trí chiến lược. Đẩy mạnh CNH, HĐH nông thôn là giải pháp căn bản để củng cố liên minh công - nông, nâng cao đời sống nông dân."
+      },
+      "source": {
+        "ref": "Câu 24"
+      },
+      "enrichment": {
+        "text": "Nghị quyết 26-NQ/TW (2008) về nông nghiệp, nông dân, nông thôn và Chương trình mục tiêu quốc gia xây dựng nông thôn mới là các chủ trương cụ thể để cải thiện đời sống nông dân."
+      }
+    },
+    {
+      "id": "q-025",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự xuất hiện của các tầng lớp xã hội mới (doanh nhân, người trung lưu...) trong thời kỳ quá độ ở Việt Nam chứng tỏ điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự suy thoái của chế độ xã hội chủ nghĩa."
+          },
+          {
+            "key": "B",
+            "text": "Cơ cấu xã hội - giai cấp biến đổi đa dạng, phức tạp, phản ánh sự phát triển năng động của nền kinh tế thị trường."
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp công nhân đã mất đi vai trò lãnh đạo."
+          },
+          {
+            "key": "D",
+            "text": "Chủ nghĩa Mác - Lênin đã lỗi thời."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Việc xuất hiện các tầng lớp mới là hệ quả tất yếu và mang tính quy luật của việc chuyển đổi sang nền kinh tế hàng hóa nhiều thành phần, góp phần làm cho nền kinh tế năng động hơn."
+      },
+      "source": {
+        "ref": "Câu 25"
+      },
+      "enrichment": {
+        "text": "Sự xuất hiện các tầng lớp mới (doanh nhân, trung lưu…) là hệ quả khách quan của kinh tế thị trường nhiều thành phần, không đồng nghĩa với việc chủ nghĩa xã hội suy thoái hay chủ nghĩa Mác - Lênin lỗi thời."
+      }
+    },
+    {
+      "id": "q-026",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc không tuyệt đối hóa vị trí của cơ cấu xã hội - giai cấp giúp chúng ta tránh được sai lầm nào trong chỉ đạo thực tiễn?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đầu tư dàn trải vào mọi lĩnh vực."
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ nhanh chóng các giai cấp, tầng lớp xã hội một cách đơn giản, chủ quan duy ý chí."
+          },
+          {
+            "key": "C",
+            "text": "Phụ thuộc vào viện trợ nước ngoài."
+          },
+          {
+            "key": "D",
+            "text": "Tập trung quá nhiều vào nông nghiệp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Dù cơ cấu XH-GC quan trọng hàng đầu, nhưng không được tuyệt đối hóa nó để rồi nôn nóng, dùng mệnh lệnh hành chính xóa bỏ các giai cấp, tầng lớp (như tư sản, tiểu chủ) một cách chủ quan."
+      },
+      "source": {
+        "ref": "Câu 26"
+      },
+      "enrichment": {
+        "text": "Không tuyệt đối hóa vị trí của cơ cấu xã hội - giai cấp để tránh nôn nóng, duy ý chí. Đại hội VI (1986) từng rút ra bài học về nóng vội, chủ quan duy ý chí trong cải tạo xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-027",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ quá độ, đặc điểm nào về sự phân hóa trong nội bộ giai cấp nông dân trở nên rõ nét nhất?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tất cả nông dân đều trở thành địa chủ."
+          },
+          {
+            "key": "B",
+            "text": "Không có sự phân hóa nào, mọi người đều làm trong hợp tác xã."
+          },
+          {
+            "key": "C",
+            "text": "Xuất hiện chủ trang trại lớn, nông dân làm thuê và sự phân hóa giàu - nghèo ngày càng rõ."
+          },
+          {
+            "key": "D",
+            "text": "Toàn bộ nông dân trở thành công nhân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dưới tác động của cơ chế thị trường, giai cấp nông dân tất yếu có sự phân hóa: một số tích lũy vốn mở rộng sản xuất thành chủ trang trại, một số khác mất đất trở thành người làm thuê."
+      },
+      "source": {
+        "ref": "Câu 27"
+      },
+      "enrichment": {
+        "text": "Từ “Khoán 10” (Nghị quyết 10 của Bộ Chính trị, 4/1988) giao ruộng đất ổn định cho hộ nông dân, kinh tế hộ và trang trại phát triển, kéo theo phân hóa giàu - nghèo trong nông dân."
+      }
+    },
+    {
+      "id": "q-028",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đâu KHÔNG phải là đặc điểm của giai cấp công nhân Việt Nam trong thời kỳ đẩy mạnh CNH, HĐH hiện nay?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đang phát triển nhanh cả về số lượng và chất lượng."
+          },
+          {
+            "key": "B",
+            "text": "Đa dạng về cơ cấu ngành nghề, có mặt trong mọi thành phần kinh tế."
+          },
+          {
+            "key": "C",
+            "text": "Trình độ chuyên môn, kỹ thuật ngày càng được nâng lên."
+          },
+          {
+            "key": "D",
+            "text": "Có lập trường tư tưởng ngả nghiêng, dễ bị kích động."
+          }
+        ],
+        "answer": "D",
+        "explanation": "GCCN Việt Nam là giai cấp tiên phong, lãnh đạo cách mạng, có lập trường chính trị vững vàng. Yếu tố D là sai so với bản chất của GCCN."
+      },
+      "source": {
+        "ref": "Câu 28"
+      },
+      "enrichment": {
+        "text": "Giai cấp công nhân Việt Nam có lập trường chính trị vững vàng, tinh thần cách mạng triệt để, không “ngả nghiêng”. Phương án D là sai về bản chất, nên là đáp án của câu hỏi “không phải đặc điểm”."
+      }
+    },
+    {
+      "id": "q-029",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ chế vận hành của hệ thống chính trị Việt Nam để thực hiện tốt nội dung chính trị của liên minh giai cấp, tầng lớp là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nhà nước lãnh đạo, Đảng quản lý, nhân dân làm chủ."
+          },
+          {
+            "key": "B",
+            "text": "Đảng lãnh đạo, Nhà nước quản lý, nhân dân làm chủ."
+          },
+          {
+            "key": "C",
+            "text": "Nhân dân lãnh đạo, Đảng quản lý, Nhà nước làm chủ."
+          },
+          {
+            "key": "D",
+            "text": "Đảng và Nhà nước làm chủ, nhân dân phục tùng."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cơ chế \"Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ\" là nguyên tắc cơ bản trong tổ chức và hoạt động của hệ thống chính trị ở nước ta."
+      },
+      "source": {
+        "ref": "Câu 29"
+      },
+      "enrichment": {
+        "text": "Cơ chế “Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ” được cụ thể hóa trong Hiến pháp 2013 (Điều 2, Điều 4) và văn kiện Đảng."
+      }
+    },
+    {
+      "id": "q-030",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc xây dựng \"Nhà nước phục vụ, kiến tạo phát triển\" trong thời kỳ hiện nay nhằm mục đích gì đối với các giai cấp, tầng lớp trong xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Gây khó khăn cho các doanh nghiệp tư nhân."
+          },
+          {
+            "key": "B",
+            "text": "Tạo môi trường và điều kiện thuận lợi, công bằng cho tất cả các thành viên trong xã hội phát triển trước pháp luật."
+          },
+          {
+            "key": "C",
+            "text": "Thu hồi tài sản của người giàu chia cho người nghèo."
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ hoàn toàn vai trò quản lý kinh tế của nhà nước."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nhà nước kiến tạo và phục vụ là nhà nước tạo ra khung pháp lý, môi trường đầu tư kinh doanh minh bạch, hỗ trợ mọi giai cấp, tầng lớp phát huy khả năng sáng tạo và phát triển."
+      },
+      "source": {
+        "ref": "Câu 30"
+      },
+      "enrichment": {
+        "text": "Nhà nước pháp quyền xã hội chủ nghĩa “phục vụ, kiến tạo” (cách nói trong văn kiện gần đây) tạo khung pháp lý và môi trường kinh doanh minh bạch, công bằng cho mọi chủ thể."
+      }
+    },
+    {
+      "id": "q-031",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phụ nữ đóng vai trò gì trong sự nghiệp xây dựng chủ nghĩa xã hội ở Việt Nam?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ đóng vai trò trong gia đình."
+          },
+          {
+            "key": "B",
+            "text": "Là một lực lượng quan trọng và đông đảo, có đóng góp to lớn trên mọi lĩnh vực của đời sống xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Không tham gia vào hoạt động kinh tế, chính trị."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ đóng vai trò phụ trợ cho nam giới."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Phụ nữ là lực lượng lao động chiếm tỷ lệ cao, tham gia vào mọi mặt từ chính trị, kinh tế, giáo dục đến chăm lo gia đình; thực hiện tốt bình đẳng giới là một nội dung quan trọng của chính sách xã hội."
+      },
+      "source": {
+        "ref": "Câu 31"
+      },
+      "enrichment": {
+        "text": "Hội Liên hiệp Phụ nữ Việt Nam có ngày truyền thống 20/10/1930. Luật Bình đẳng giới (2006) quy định bình đẳng giới trong các lĩnh vực của đời sống."
+      }
+    },
+    {
+      "id": "q-032",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lợi ích kinh tế giữa các giai cấp, tầng lớp trong thời kỳ quá độ mang tính chất gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hoàn toàn thống nhất, không có mâu thuẫn."
+          },
+          {
+            "key": "B",
+            "text": "Vừa có sự thống nhất, vừa xuất hiện những mâu thuẫn ở những mức độ khác nhau."
+          },
+          {
+            "key": "C",
+            "text": "Đối kháng quyết liệt, một mất một còn."
+          },
+          {
+            "key": "D",
+            "text": "Hoàn toàn phụ thuộc vào nước ngoài."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Do sự tồn tại của nhiều thành phần kinh tế, lợi ích kinh tế giữa các giai cấp, tầng lớp vừa có sự thống nhất căn bản (xây dựng đất nước) nhưng cũng tồn tại những khác biệt, mâu thuẫn nhất định cần được Đảng, Nhà nước điều hòa."
+      },
+      "source": {
+        "ref": "Câu 32"
+      },
+      "enrichment": {
+        "text": "Trong kinh tế nhiều thành phần, lợi ích các giai cấp, tầng lớp vừa thống nhất căn bản (xây dựng đất nước), vừa có mâu thuẫn ở nhiều mức độ; Nhà nước và Đảng phải điều hòa lợi ích."
+      }
+    },
+    {
+      "id": "q-033",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự liên minh, hợp tác giữa công nghiệp - nông nghiệp - khoa học công nghệ thực chất là biểu hiện của nội dung nào trong khối liên minh công - nông - trí thức?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nội dung kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Nội dung chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Nội dung văn hóa."
+          },
+          {
+            "key": "D",
+            "text": "Nội dung quốc phòng."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Sự gắn kết giữa các ngành kinh tế trọng yếu và KH-CN để tạo ra sản phẩm, nâng cao năng suất chính là sự hợp tác về mặt kinh tế giữa các giai cấp đại diện cho các ngành đó."
+      },
+      "source": {
+        "ref": "Câu 33"
+      },
+      "enrichment": {
+        "text": "Hợp tác công nghiệp - nông nghiệp - khoa học công nghệ chính là nội dung kinh tế của khối liên minh công - nông - trí thức."
+      }
+    },
+    {
+      "id": "q-034",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tổ chức liên minh để các lực lượng cùng nhau tiếp thu những tinh hoa, giá trị của nhân loại là thuộc nội dung nào của khối liên minh?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nội dung kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Nội dung chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Nội dung văn hóa - xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Nội dung ngoại giao."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Tiếp thu tinh hoa nhân loại và xây dựng nền văn hóa đậm đà bản sắc dân tộc là nhiệm vụ trọng tâm thuộc nội dung văn hóa - xã hội của khối liên minh."
+      },
+      "source": {
+        "ref": "Câu 34"
+      },
+      "enrichment": {
+        "text": "Tiếp thu tinh hoa nhân loại, xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc là nội dung văn hóa - xã hội của liên minh (xem Nghị quyết Trung ương 5 khóa VIII, 1998)."
+      }
+    },
+    {
+      "id": "q-035",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại sao nói sự biến đổi của cơ cấu xã hội - giai cấp ở Việt Nam mang tính quy luật phổ biến?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Vì nó hoàn toàn do Đảng Cộng sản quyết định."
+          },
+          {
+            "key": "B",
+            "text": "Vì nó bị chi phối bởi những biến đổi trong cơ cấu kinh tế, tương tự như các nước khác đang chuyển đổi."
+          },
+          {
+            "key": "C",
+            "text": "Vì Việt Nam học theo mô hình của Liên Xô."
+          },
+          {
+            "key": "D",
+            "text": "Vì nó không chịu ảnh hưởng của kinh tế thị trường."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Tính quy luật phổ biến của chủ nghĩa duy vật lịch sử là \"cơ sở hạ tầng quyết định kiến trúc thượng tầng\", \"kinh tế quyết định xã hội\". Khi kinh tế đổi mới (chuyển sang kinh tế thị trường), cơ cấu XH-GC tất yếu phải biến đổi theo."
+      },
+      "source": {
+        "ref": "Câu 35"
+      },
+      "enrichment": {
+        "text": "Tính quy luật phổ biến thể hiện ở chỗ kinh tế quyết định xã hội: khi cơ cấu kinh tế đổi mới, cơ cấu xã hội - giai cấp biến đổi theo, tương tự ở các nước khác đang chuyển đổi."
+      }
+    },
+    {
+      "id": "q-036",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Yếu tố nào sau đây gây ảnh hưởng tiêu cực đến khối đại đoàn kết toàn dân tộc và sự đồng thuận xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Việc phát triển kinh tế thị trường."
+          },
+          {
+            "key": "B",
+            "text": "Mở rộng dân chủ xã hội chủ nghĩa."
+          },
+          {
+            "key": "C",
+            "text": "Tình trạng quan liêu, tham nhũng, lãng phí, bất bình đẳng xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Việc nhà nước kiến tạo môi trường kinh doanh."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Bất công, tham nhũng, phân hóa giàu nghèo quá mức làm suy giảm niềm tin của nhân dân, gây mâu thuẫn lợi ích, phá hoại sự đồng thuận và khối đại đoàn kết."
+      },
+      "source": {
+        "ref": "Câu 36"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh gọi tham nhũng, lãng phí, quan liêu là “giặc nội xâm”. Chúng làm giảm lòng tin của nhân dân, khoét sâu bất bình đẳng và ảnh hưởng tới khối đại đoàn kết."
+      }
+    },
+    {
+      "id": "q-037",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ sở để thiết lập, củng cố và phát triển khối liên minh giữa giai cấp công nhân, giai cấp nông dân và đội ngũ trí thức là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hệ tư tưởng của giai cấp nông dân."
+          },
+          {
+            "key": "B",
+            "text": "Sự tự phát của các phong trào quần chúng."
+          },
+          {
+            "key": "C",
+            "text": "Hệ tư tưởng của giai cấp công nhân (chủ nghĩa Mác - Lênin)."
+          },
+          {
+            "key": "D",
+            "text": "Hệ tư tưởng của chủ nghĩa tư bản."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Khối liên minh phải được đặt dưới sự lãnh đạo của Đảng Cộng sản (đội tiên phong của GCCN) và dựa trên nền tảng tư tưởng Mác - Lênin để định hướng đi lên CNXH."
+      },
+      "source": {
+        "ref": "Câu 37"
+      },
+      "enrichment": {
+        "text": "Liên minh công - nông - trí thức được xây dựng trên nền tảng tư tưởng Mác - Lênin và dưới sự lãnh đạo của Đảng, đội tiên phong của giai cấp công nhân."
+      }
+    },
+    {
+      "id": "q-038",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung chính trị của khối liên minh ở nước ta đòi hỏi phải kiên quyết đấu tranh chống lại điều gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cạnh tranh kinh tế trên thương trường."
+          },
+          {
+            "key": "B",
+            "text": "Sự phát triển của các doanh nghiệp tư nhân."
+          },
+          {
+            "key": "C",
+            "text": "Mọi âm mưu \"diễn biến hòa bình\" của các thế lực thù địch và phản động."
+          },
+          {
+            "key": "D",
+            "text": "Việc hội nhập kinh tế quốc tế."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Bảo vệ vững chắc chế độ chính trị, bảo vệ nền độc lập, đập tan mưu đồ bạo loạn, \"diễn biến hòa bình\" là nội dung cốt lõi về chính trị của khối liên minh."
+      },
+      "source": {
+        "ref": "Câu 38"
+      },
+      "enrichment": {
+        "text": "Mọi âm mưu “diễn biến hòa bình”, lợi dụng dân chủ, nhân quyền, dân tộc, tôn giáo để chống phá và chia rẽ khối đại đoàn kết đều phải bị kiên quyết đấu tranh, giữ vững chế độ chính trị."
+      }
+    },
+    {
+      "id": "q-039",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo C.Mác, \"Trong mọi thời đại lịch sử, sản xuất kinh tế và cơ cấu xã hội... cấu thành cơ sở của lịch sử chính trị và lịch sử tư tưởng của thời đại ấy\". Khái niệm \"cơ cấu xã hội\" ở đây ám chỉ loại cơ cấu nào mang tính quyết định?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cơ cấu dân số."
+          },
+          {
+            "key": "B",
+            "text": "Cơ cấu xã hội - giai cấp."
+          },
+          {
+            "key": "C",
+            "text": "Cơ cấu tôn giáo."
+          },
+          {
+            "key": "D",
+            "text": "Cơ cấu nghề nghiệp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Câu nói của Ph.Ăngghen (tổng kết tư tưởng của Mác) chỉ ra rằng phương thức sản xuất kinh tế và cơ cấu xã hội - giai cấp là nền tảng quyết định lịch sử chính trị và tư tưởng."
+      },
+      "source": {
+        "ref": "Câu 39"
+      },
+      "enrichment": {
+        "text": "LƯU Ý: câu hỏi ghi “Theo C.Mác”, còn giải thích trong tài liệu gốc cho rằng đây là câu của Ph.Ăngghen (tổng kết tư tưởng Mác). Ý này xuất hiện trong lời tựa Ăngghen viết cho Tuyên ngôn Đảng Cộng sản; nên đối chiếu giáo trình khi ghi nguồn trích dẫn.",
+        "confidence": "uncertain"
+      }
+    },
+    {
+      "id": "q-040",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm \"tính độc lập tương đối\" của các giai cấp, tầng lớp trong thời kỳ quá độ dẫn đến hiện tượng gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự chia rẽ hoàn toàn giữa các giai cấp."
+          },
+          {
+            "key": "B",
+            "text": "Hiện tượng hòa nhập, chuyển đổi bộ phận giữa các nhóm xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ mọi sự liên kết kinh tế."
+          },
+          {
+            "key": "D",
+            "text": "Không ai được phép thay đổi nghề nghiệp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Do kinh tế thị trường, các giai cấp có tính độc lập nhưng cũng linh hoạt, dẫn đến sự dịch chuyển xã hội (một nông dân có thể trở thành công nhân, một công nhân có thể thành doanh nhân tiểu chủ...)."
+      },
+      "source": {
+        "ref": "Câu 40"
+      },
+      "enrichment": {
+        "text": "Tính độc lập tương đối giữa các giai cấp, tầng lớp trong kinh tế thị trường dẫn tới sự dịch chuyển xã hội: người nông dân có thể thành công nhân, công nhân có thể thành chủ doanh nghiệp nhỏ…"
+      }
+    },
+    {
+      "id": "q-041",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Yêu cầu \"Xây dựng Đảng trong sạch vững mạnh, nâng cao năng lực lãnh đạo...\" thuộc nội dung nào của khối liên minh?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Văn hóa."
+          },
+          {
+            "key": "D",
+            "text": "Xã hội."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Vai trò lãnh đạo của Đảng, giữ vững chế độ và nhà nước pháp quyền là vấn đề cốt lõi thuộc lĩnh vực chính trị."
+      },
+      "source": {
+        "ref": "Câu 41"
+      },
+      "enrichment": {
+        "text": "Xây dựng Đảng trong sạch, vững mạnh, nâng cao năng lực lãnh đạo thuộc nội dung chính trị của khối liên minh, vì Đảng là hạt nhân lãnh đạo liên minh."
+      }
+    },
+    {
+      "id": "q-042",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đổi mới chính sách, pháp luật về giáo dục, y tế, an sinh xã hội nhằm nâng cao đời sống cho công - nông - trí thức thuộc nội dung nào của liên minh?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Chính trị."
+          },
+          {
+            "key": "C",
+            "text": "Văn hóa - Xã hội."
+          },
+          {
+            "key": "D",
+            "text": "An ninh quốc phòng."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Giáo dục, y tế, an sinh xã hội, nâng cao dân trí và chất lượng sống là những nhiệm vụ trọng tâm thuộc nội dung Văn hóa - Xã hội của khối liên minh."
+      },
+      "source": {
+        "ref": "Câu 42"
+      },
+      "enrichment": {
+        "text": "Đổi mới chính sách, pháp luật về giáo dục, y tế, an sinh xã hội nhằm nâng cao đời sống công - nông - trí thức thuộc nội dung văn hóa - xã hội của liên minh."
+      }
+    },
+    {
+      "id": "q-043",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Lực lượng nào trong khối liên minh được coi là chủ thể của quá trình xây dựng nông thôn mới?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp công nhân."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp nông dân."
+          },
+          {
+            "key": "C",
+            "text": "Đội ngũ trí thức."
+          },
+          {
+            "key": "D",
+            "text": "Tầng lớp doanh nhân."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Giai cấp nông dân là chủ thể trực tiếp tham gia sản xuất nông nghiệp và là lực lượng đông đảo, quyết định sự thành công của chương trình xây dựng nông thôn mới."
+      },
+      "source": {
+        "ref": "Câu 43"
+      },
+      "enrichment": {
+        "text": "Trong xây dựng nông thôn mới, nông dân là chủ thể, Nhà nước hỗ trợ. Phương châm “Dân biết, dân bàn, dân làm, dân kiểm tra, dân thụ hưởng” được vận dụng ở đây (Nghị quyết 26-NQ/TW, 2008)."
+      }
+    },
+    {
+      "id": "q-044",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để đội ngũ doanh nhân phát huy tốt vai trò của mình, Đảng và Nhà nước cần phải làm gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tịch thu tài sản khi doanh nghiệp quá lớn mạnh."
+          },
+          {
+            "key": "B",
+            "text": "Tạo cơ chế, môi trường thuận lợi, tôn vinh những doanh nhân có đóng góp lớn cho đất nước."
+          },
+          {
+            "key": "C",
+            "text": "Hạn chế họ tham gia vào các hoạt động xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Cấm họ không được hợp tác với nước ngoài."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Chủ trương của Đảng là khuyến khích làm giàu hợp pháp, tạo môi trường kinh doanh minh bạch, bảo vệ quyền lợi và tôn vinh những doanh nhân có trách nhiệm xã hội."
+      },
+      "source": {
+        "ref": "Câu 44"
+      },
+      "enrichment": {
+        "text": "Chủ trương của Đảng là khuyến khích làm giàu hợp pháp, tạo môi trường kinh doanh minh bạch, bảo vệ quyền, lợi ích hợp pháp của doanh nhân và tôn vinh người có đóng góp, trách nhiệm xã hội."
+      }
+    },
+    {
+      "id": "q-045",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự xuất hiện của tầng lớp những người giàu có trong xã hội Việt Nam thời kỳ quá độ:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là hiện tượng tiêu cực cần xóa bỏ ngay."
+          },
+          {
+            "key": "B",
+            "text": "Là một hiện tượng khách quan, phản ánh sự năng động của kinh tế thị trường và chủ trương khuyến khích làm giàu hợp pháp của Đảng."
+          },
+          {
+            "key": "C",
+            "text": "Là do sự thất bại của công cuộc đổi mới."
+          },
+          {
+            "key": "D",
+            "text": "Đi ngược lại hoàn toàn với mục tiêu của CNXH."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đảng khuyến khích \"làm giàu hợp pháp đi đôi với xóa đói giảm nghèo\". Sự xuất hiện tầng lớp khá giả, giàu có là kết quả tất yếu và tích cực của việc phát triển kinh tế hàng hóa."
+      },
+      "source": {
+        "ref": "Câu 45"
+      },
+      "enrichment": {
+        "text": "Quan điểm “khuyến khích làm giàu hợp pháp đi đôi với xóa đói giảm nghèo” là chủ trương nhất quán trong thời kỳ đổi mới; làm giàu bất hợp pháp, trốn thuế, tham nhũng thì bị lên án và xử lý."
+      }
+    },
+    {
+      "id": "q-046",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mối quan hệ nào sau đây phản ánh sự liên minh giữa Công nhân và Trí thức trong lĩnh vực kinh tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cùng nhau tham gia bầu cử Quốc hội."
+          },
+          {
+            "key": "B",
+            "text": "Áp dụng tiến bộ khoa học kỹ thuật, công nghệ mới vào dây chuyền sản xuất công nghiệp."
+          },
+          {
+            "key": "C",
+            "text": "Tham gia các phong trào văn nghệ quần chúng."
+          },
+          {
+            "key": "D",
+            "text": "Cùng thực hiện nghĩa vụ quân sự."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trí thức nghiên cứu ra công nghệ, công nhân trực tiếp sử dụng công nghệ đó để tạo ra sản phẩm. Đây là biểu hiện cụ thể của liên minh kinh tế giữa hai lực lượng."
+      },
+      "source": {
+        "ref": "Câu 46"
+      },
+      "enrichment": {
+        "text": "Trí thức nghiên cứu, sáng tạo công nghệ; công nhân ứng dụng vào dây chuyền sản xuất, nên sự kết hợp giữa hai lực lượng là biểu hiện cụ thể của liên minh kinh tế trong sản xuất hiện đại."
+      }
+    },
+    {
+      "id": "q-047",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để tăng cường khối liên minh giai cấp, tầng lớp, vai trò của Mặt trận Tổ quốc Việt Nam là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ban hành các đạo luật kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Xét xử các vụ án tham nhũng."
+          },
+          {
+            "key": "C",
+            "text": "Tập hợp, đoàn kết rộng rãi các giai cấp, tầng lớp, đại diện bảo vệ quyền và lợi ích hợp pháp của nhân dân."
+          },
+          {
+            "key": "D",
+            "text": "Quản lý trực tiếp các doanh nghiệp nhà nước."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Mặt trận Tổ quốc và các đoàn thể chính trị - xã hội là tổ chức nòng cốt trong việc xây dựng khối đại đoàn kết toàn dân tộc, làm cầu nối giữa Đảng, Nhà nước và Nhân dân."
+      },
+      "source": {
+        "ref": "Câu 47"
+      },
+      "enrichment": {
+        "text": "Mặt trận Tổ quốc Việt Nam đóng vai trò nòng cốt trong việc xây dựng khối đại đoàn kết, là cầu nối giữa Đảng, Nhà nước và Nhân dân; hoạt động theo Luật Mặt trận Tổ quốc Việt Nam (2015)."
+      }
+    },
+    {
+      "id": "q-048",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Phương hướng \"Xây dựng và thực hiện hệ thống chính sách xã hội tổng thể\" nhằm mục đích gì đối với cơ cấu xã hội - giai cấp?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Làm tăng thêm sự phân hóa giàu nghèo."
+          },
+          {
+            "key": "B",
+            "text": "Đảm bảo an sinh xã hội, thu hẹp khoảng cách phát triển, tạo sự bình đẳng giữa các giai cấp, tầng lớp."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ hoàn toàn hệ thống giáo dục công lập."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ ưu tiên phục vụ cho tầng lớp trên của xã hội."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Chính sách xã hội (y tế, giáo dục, việc làm, hỗ trợ vùng khó khăn...) nhằm chia sẻ thành quả đổi mới, đảm bảo tiến bộ và công bằng xã hội, giúp các tầng lớp xích lại gần nhau."
+      },
+      "source": {
+        "ref": "Câu 48"
+      },
+      "enrichment": {
+        "text": "Nghị quyết 15-NQ/TW (Hội nghị Trung ương 5 khóa XI, 2012) về một số vấn đề chính sách xã hội giai đoạn 2012–2020 là một văn bản quan trọng về hệ thống chính sách xã hội của Đảng."
+      }
+    },
+    {
+      "id": "q-049",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời đại cách mạng công nghiệp lần thứ tư (4.0), khối liên minh Công - Nông - Trí thức cần đặc biệt chú trọng yếu tố nào để phát triển nền kinh tế?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lực lượng lao động thủ công giá rẻ."
+          },
+          {
+            "key": "B",
+            "text": "Khai thác cạn kiệt tài nguyên thiên nhiên."
+          },
+          {
+            "key": "C",
+            "text": "Nâng cao chất lượng nguồn nhân lực, đẩy mạnh nghiên cứu, ứng dụng khoa học và công nghệ, đổi mới sáng tạo."
+          },
+          {
+            "key": "D",
+            "text": "Mở rộng diện tích đất nông nghiệp bằng mọi giá."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Khoa học công nghệ và nguồn nhân lực chất lượng cao là động lực then chốt của Cách mạng 4.0 và kinh tế tri thức, đòi hỏi khối liên minh phải trí tuệ hóa mạnh mẽ."
+      },
+      "source": {
+        "ref": "Câu 49"
+      },
+      "enrichment": {
+        "text": "Nghị quyết 52-NQ/TW (Bộ Chính trị, 2019) về chủ trương, chính sách chủ động tham gia cuộc cách mạng công nghiệp lần thứ tư nhấn mạnh nguồn nhân lực chất lượng cao và đổi mới sáng tạo."
+      }
+    },
+    {
+      "id": "q-050",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xét đến cùng, vì sao phải xây dựng và tăng cường liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Để thực hiện yêu cầu của các nước tư bản."
+          },
+          {
+            "key": "B",
+            "text": "Vì không một giai cấp nào (kể cả giai cấp công nhân) có thể đơn độc thực hiện thành công sự nghiệp cải tạo xã hội cũ, xây dựng xã hội mới."
+          },
+          {
+            "key": "C",
+            "text": "Để duy trì chế độ phân phong kiến."
+          },
+          {
+            "key": "D",
+            "text": "Để có lý do duy trì bộ máy nhà nước khổng lồ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là nguyên lý cơ bản của chủ nghĩa Mác - Lênin. Cuộc cách mạng XHCN là sự nghiệp của quần chúng đông đảo, GCCN dù tiên phong cũng không thể thành công nếu không liên kết sức mạnh với nông dân, trí thức và các tầng lớp lao động khác."
+      },
+      "source": {
+        "ref": "Câu 50"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh viết trong “Đường Kách mệnh” (1927): công nông là gốc của cách mạng. Cách mạng xã hội chủ nghĩa là sự nghiệp của quần chúng, giai cấp công nhân phải liên minh với nông dân, trí thức và các tầng lớp lao động khác."
+      }
+    }
+  ]
+}

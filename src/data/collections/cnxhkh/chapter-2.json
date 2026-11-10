@@ -1,0 +1,1663 @@
+{
+  "id": "cnxhkh-chuong-2",
+  "title": "CNXH Khoa học – Chương 2",
+  "subject": "Chủ nghĩa xã hội khoa học",
+  "contentType": "multiple-choice",
+  "description": "Sứ mệnh lịch sử của giai cấp công nhân. Câu 1–50.",
+  "language": "vi",
+  "source": {
+    "document": "Bộ câu hỏi trắc nghiệm ôn tập Chủ nghĩa xã hội khoa học – Chương 2"
+  },
+  "items": [
+    {
+      "id": "q-001",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin, giai cấp công nhân là sản phẩm của nền sản xuất nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nền sản xuất nông nghiệp truyền thống."
+          },
+          {
+            "key": "B",
+            "text": "Nền đại công nghiệp tư bản chủ nghĩa."
+          },
+          {
+            "key": "C",
+            "text": "Nền kinh tế tri thức."
+          },
+          {
+            "key": "D",
+            "text": "Nền sản xuất hàng hóa nhỏ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "C.Mác và Ph.Ăngghen nhấn mạnh: \"Các giai cấp khác đều suy tàn và tiêu vong cùng với sự phát triển của đại công nghiệp, còn giai cấp vô sản lại là sản phẩm của bản thân nền đại công nghiệp\"."
+      },
+      "source": {
+        "ref": "Câu 1"
+      },
+      "enrichment": {
+        "text": "Đại công nghiệp ra đời từ cuộc cách mạng công nghiệp (Anh, nửa sau thế kỷ XVIII). Cùng với máy móc và nhà máy, một lực lượng lao động làm thuê tập trung, đông đảo xuất hiện: giai cấp công nhân hiện đại. Mác và Ăngghen phân tích điều này trong “Tuyên ngôn của Đảng Cộng sản” (1848)."
+      }
+    },
+    {
+      "id": "q-002",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Thuật ngữ nào sau đây KHÔNG được C.Mác và Ph.Ăngghen sử dụng để chỉ giai cấp công nhân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp vô sản."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp vô sản hiện đại."
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp tư sản hiện đại."
+          },
+          {
+            "key": "D",
+            "text": "Giai cấp công nhân đại công nghiệp."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Giai cấp tư sản hiện đại là giai cấp bóc lột, đối kháng trực tiếp với giai cấp công nhân. Các thuật ngữ A, B, D đều được các nhà kinh điển dùng để chỉ giai cấp công nhân."
+      },
+      "source": {
+        "ref": "Câu 2"
+      },
+      "enrichment": {
+        "text": "Từ “vô sản” (proletarius) vốn dùng ở La Mã cổ đại để chỉ những người nghèo không có tài sản, chỉ có con cái. Mác và Ăngghen dùng “giai cấp vô sản hiện đại” và “giai cấp công nhân đại công nghiệp” để chỉ lực lượng lao động làm thuê gắn với nền sản xuất tư bản chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-003",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về phương diện kinh tế - xã hội, đặc trưng cơ bản nhất của giai cấp công nhân trong chế độ tư bản chủ nghĩa là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là những người sở hữu phần lớn tư liệu sản xuất."
+          },
+          {
+            "key": "B",
+            "text": "Là những người lao động tự do, không có hoặc cơ bản không có tư liệu sản xuất, phải bán sức lao động."
+          },
+          {
+            "key": "C",
+            "text": "Là giai cấp nghèo khổ nhất trong xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Là lực lượng thống trị xã hội."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trong quan hệ sản xuất tư bản chủ nghĩa, giai cấp công nhân không có tư liệu sản xuất chủ yếu, buộc phải bán sức lao động để kiếm sống và bị bóc lột giá trị thặng dư."
+      },
+      "source": {
+        "ref": "Câu 3"
+      },
+      "enrichment": {
+        "text": "Mác gọi đó là sự “tự do hai mặt”: công nhân tự do về thân thể (không bị trói buộc như nô lệ, nông nô) và “tự do” không có tư liệu sản xuất, nên buộc phải bán sức lao động để sống. Đây là điều kiện để quan hệ làm thuê tư bản chủ nghĩa tồn tại."
+      }
+    },
+    {
+      "id": "q-004",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nguồn gốc giá trị thặng dư và sự giàu có của giai cấp tư sản chủ yếu nhờ vào đâu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự phát triển của máy móc."
+          },
+          {
+            "key": "B",
+            "text": "Lao động sống của giai cấp công nhân."
+          },
+          {
+            "key": "C",
+            "text": "Năng lực quản lý của nhà tư bản."
+          },
+          {
+            "key": "D",
+            "text": "Sự lưu thông hàng hóa trên thị trường."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Lao động sống của giai cấp công nhân là nguồn gốc của giá trị thặng dư và sự giàu có của giai cấp tư sản."
+      },
+      "source": {
+        "ref": "Câu 4"
+      },
+      "enrichment": {
+        "text": "Mác phân tích trong bộ “Tư bản” (1867): nhà tư bản trả công theo giá trị sức lao động, nhưng sức lao động khi sử dụng lại tạo ra giá trị lớn hơn; phần dôi ra đó là giá trị thặng dư mà nhà tư bản chiếm hữu. Máy móc chỉ chuyển giá trị cũ, không tự tạo ra giá trị mới."
+      }
+    },
+    {
+      "id": "q-005",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về phương diện chính trị - xã hội, giai cấp công nhân có đặc điểm nổi bật nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có tinh thần thỏa hiệp cao."
+          },
+          {
+            "key": "B",
+            "text": "Có tính tổ chức, kỷ luật cao và tinh thần cách mạng triệt để."
+          },
+          {
+            "key": "C",
+            "text": "Dễ bị lung lay, dao động trước khó khăn."
+          },
+          {
+            "key": "D",
+            "text": "Có tư tưởng tư hữu, cá nhân chủ nghĩa."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nền sản xuất đại công nghiệp và phương thức sản xuất tiên tiến đã rèn luyện cho giai cấp công nhân những phẩm chất đặc biệt về tính tổ chức, kỷ luật lao động và tinh thần cách mạng triệt để."
+      },
+      "source": {
+        "ref": "Câu 5"
+      },
+      "enrichment": {
+        "text": "Làm việc tập trung trong nhà máy rèn cho công nhân tác phong công nghiệp, tính tổ chức và kỷ luật; vì không có tư liệu sản xuất nên họ không bị ràng buộc bởi tư hữu, do đó có tinh thần cách mạng triệt để. Đây là cơ sở để công nhân trở thành lực lượng lãnh đạo cách mạng."
+      }
+    },
+    {
+      "id": "q-006",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn cơ bản của phương thức sản xuất tư bản chủ nghĩa bộc lộ về mặt xã hội là mâu thuẫn giữa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lực lượng sản xuất và quan hệ sản xuất."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp công nhân và giai cấp tư sản."
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp nông dân và địa chủ phong kiến."
+          },
+          {
+            "key": "D",
+            "text": "Tư bản độc quyền và tư bản cạnh tranh tự do."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Mâu thuẫn kinh tế (LLSX mang tính xã hội hóa >< QHSX tư nhân TBCN) thể hiện về mặt xã hội là mâu thuẫn về lợi ích không thể điều hòa giữa giai cấp công nhân và giai cấp tư sản."
+      },
+      "source": {
+        "ref": "Câu 6"
+      },
+      "enrichment": {
+        "text": "Mâu thuẫn giữa lực lượng sản xuất mang tính xã hội hóa và quan hệ sản xuất tư nhân được biểu hiện qua đấu tranh giữa công nhân và tư sản. Trong lịch sử có những phong trào tiêu biểu như khởi nghĩa của thợ dệt Lyon (Pháp, 1831, 1834) và phong trào Hiến chương ở Anh (1838–1848)."
+      }
+    },
+    {
+      "id": "q-007",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung sứ mệnh lịch sử của giai cấp công nhân là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thay thế chế độ tư hữu này bằng chế độ tư hữu khác."
+          },
+          {
+            "key": "B",
+            "text": "Lật đổ sự thống trị của giai cấp tư sản, xóa bỏ chế độ bóc lột, xây dựng thành công CNXH và CNCS."
+          },
+          {
+            "key": "C",
+            "text": "Trở thành giai cấp bóc lột mới trong xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Giải phóng riêng cho giai cấp mình khỏi ách áp bức."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Giai cấp công nhân có sứ mệnh lịch sử thủ tiêu CNTB, đồng thời là lực lượng tiên phong trong quá trình xây dựng CNXH, CNCS để giải phóng giai cấp và giải phóng con người."
+      },
+      "source": {
+        "ref": "Câu 7"
+      },
+      "enrichment": {
+        "text": "Tuyên ngôn của Đảng Cộng sản (2/1848) lần đầu nêu rõ sứ mệnh lịch sử của giai cấp vô sản. Nội dung được chia làm ba mặt: kinh tế (giải phóng và phát triển lực lượng sản xuất, xây dựng quan hệ sản xuất mới), chính trị - xã hội (giành chính quyền, xây dựng nhà nước kiểu mới), văn hóa - tư tưởng (xây dựng hệ giá trị mới)."
+      }
+    },
+    {
+      "id": "q-008",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung kinh tế trong sứ mệnh lịch sử của giai cấp công nhân là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xóa bỏ nhà nước của giai cấp bóc lột."
+          },
+          {
+            "key": "B",
+            "text": "Xây dựng hệ giá trị mới: lao động, công bằng, dân chủ."
+          },
+          {
+            "key": "C",
+            "text": "Đại biểu cho quan hệ sản xuất mới, tạo tiền đề vật chất - kỹ thuật cho sự ra đời của xã hội mới."
+          },
+          {
+            "key": "D",
+            "text": "Tiến hành cách mạng tư tưởng văn hóa."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Về kinh tế, giai cấp công nhân đóng vai trò nòng cốt trong việc giải phóng lực lượng sản xuất, thực hiện công nghiệp hóa và xây dựng quan hệ sản xuất mới (chế độ công hữu)."
+      },
+      "source": {
+        "ref": "Câu 8"
+      },
+      "enrichment": {
+        "text": "Về kinh tế, giai cấp công nhân đại diện cho lực lượng sản xuất hiện đại và quan hệ sản xuất mới. Sứ mệnh của họ là xóa bỏ quan hệ sản xuất tư bản chủ nghĩa đang kìm hãm sản xuất, để lực lượng sản xuất được giải phóng và phát triển."
+      }
+    },
+    {
+      "id": "q-009",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc giành quyền lực về tay giai cấp công nhân và nhân dân lao động, thiết lập nhà nước kiểu mới thuộc nội dung nào của sứ mệnh lịch sử giai cấp công nhân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nội dung kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Nội dung chính trị - xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Nội dung văn hóa - tư tưởng."
+          },
+          {
+            "key": "D",
+            "text": "Nội dung lịch sử - triết học."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Nội dung chính trị - xã hội của sứ mệnh lịch sử là tiến hành cách mạng chính trị lật đổ giai cấp tư sản, thiết lập nhà nước mang bản chất giai cấp công nhân (chuyên chính vô sản)."
+      },
+      "source": {
+        "ref": "Câu 9"
+      },
+      "enrichment": {
+        "text": "Công xã Pari (18/3–28/5/1871) là lần đầu tiên giai cấp vô sản nắm chính quyền và thiết lập nhà nước kiểu mới, dù chỉ tồn tại 72 ngày. Đây là kinh nghiệm quan trọng mà Mác, Ăngghen và Lênin đã tổng kết khi bàn về nhà nước vô sản."
+      }
+    },
+    {
+      "id": "q-010",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xây dựng hệ giá trị mới: lao động, công bằng, dân chủ, bình đẳng và tự do là thuộc nội dung nào trong sứ mệnh lịch sử của giai cấp công nhân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nội dung kinh tế."
+          },
+          {
+            "key": "B",
+            "text": "Nội dung chính trị - xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Nội dung văn hóa - tư tưởng."
+          },
+          {
+            "key": "D",
+            "text": "Nội dung khoa học - kỹ thuật."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Về văn hóa - tư tưởng, giai cấp công nhân phải xây dựng hệ giá trị mới để phủ định các giá trị tư sản và tàn dư lạc hậu của xã hội cũ."
+      },
+      "source": {
+        "ref": "Câu 10"
+      },
+      "enrichment": {
+        "text": "Nội dung văn hóa - tư tưởng của sứ mệnh lịch sử là phê phán, loại bỏ tư tưởng tư sản và tàn dư lạc hậu, xây dựng hệ giá trị mới (lao động, công bằng, dân chủ, bình đẳng, tự do) và con người mới xã hội chủ nghĩa."
+      }
+    },
+    {
+      "id": "q-011",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm sứ mệnh lịch sử của giai cấp công nhân khác với các giai cấp trước đây ở điểm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ mang lại lợi ích cho một thiểu số người."
+          },
+          {
+            "key": "B",
+            "text": "Là sự nghiệp cách mạng của đại đa số mưu lợi ích cho tuyệt đại đa số."
+          },
+          {
+            "key": "C",
+            "text": "Nhằm duy trì chế độ người bóc lột người dưới hình thức mới."
+          },
+          {
+            "key": "D",
+            "text": "Nhằm xác lập sự thống trị vĩnh viễn của một giai cấp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cách mạng vô sản là cuộc cách mạng của đại đa số mưu lợi ích cho tuyệt đại đa số, hướng tới xóa bỏ triệt để chế độ tư hữu - nguồn gốc của bóc lột."
+      },
+      "source": {
+        "ref": "Câu 11"
+      },
+      "enrichment": {
+        "text": "Tuyên ngôn 1848 viết: các phong trào trước đây đều là phong trào của thiểu số hoặc mưu lợi ích cho thiểu số, còn phong trào vô sản là phong trào độc lập của đại đa số, mưu lợi ích cho đại đa số. Đó là điểm khác biệt căn bản về bản chất."
+      }
+    },
+    {
+      "id": "q-012",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điều kiện khách quan nào quy định sứ mệnh lịch sử của giai cấp công nhân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trình độ học vấn của công nhân được nâng cao."
+          },
+          {
+            "key": "B",
+            "text": "Sự ra đời của Đảng Cộng sản."
+          },
+          {
+            "key": "C",
+            "text": "Địa vị kinh tế - xã hội và địa vị chính trị - xã hội của giai cấp công nhân."
+          },
+          {
+            "key": "D",
+            "text": "Sự liên minh giữa giai cấp công nhân và nông dân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Địa vị kinh tế (đại diện LLSX tiên tiến) và địa vị chính trị - xã hội (có tính tổ chức, kỷ luật, cách mạng triệt để) là 2 điều kiện khách quan quy định sứ mệnh của họ."
+      },
+      "source": {
+        "ref": "Câu 12"
+      },
+      "enrichment": {
+        "text": "Cần phân biệt: điều kiện khách quan (địa vị kinh tế - xã hội và chính trị - xã hội của giai cấp công nhân trong xã hội tư bản) quy định sứ mệnh; còn điều kiện chủ quan là sự phát triển của bản thân giai cấp công nhân và vai trò của Đảng Cộng sản."
+      }
+    },
+    {
+      "id": "q-013",
+      "type": "multiple-choice",
+      "content": {
+        "question": "C.Mác và Ph.Ăngghen chỉ rõ giai cấp tư sản đã tự sản sinh ra \"người đào huyệt chôn chính nó\". Lực lượng đó là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp nông dân."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp vô sản."
+          },
+          {
+            "key": "C",
+            "text": "Tầng lớp trí thức."
+          },
+          {
+            "key": "D",
+            "text": "Tầng lớp tiểu tư sản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trong \"Tuyên ngôn của Đảng Cộng sản\", Mác và Ăngghen khẳng định sự sụp đổ của giai cấp tư sản và thắng lợi của giai cấp vô sản đều tất yếu như nhau."
+      },
+      "source": {
+        "ref": "Câu 13"
+      },
+      "enrichment": {
+        "text": "Câu trong Tuyên ngôn Đảng Cộng sản: “Cái mà giai cấp tư sản sản sinh ra trước hết là những người đào huyệt chôn nó. Sự sụp đổ của giai cấp tư sản và thắng lợi của giai cấp vô sản đều là tất yếu như nhau”."
+      }
+    },
+    {
+      "id": "q-014",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhân tố chủ quan quan trọng nhất để giai cấp công nhân thực hiện thắng lợi sứ mệnh lịch sử của mình là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sự phát triển về số lượng của giai cấp công nhân."
+          },
+          {
+            "key": "B",
+            "text": "Sự liên minh giai cấp với nông dân."
+          },
+          {
+            "key": "C",
+            "text": "Sự ra đời và lãnh đạo của Đảng Cộng sản."
+          },
+          {
+            "key": "D",
+            "text": "Trình độ làm chủ khoa học công nghệ của công nhân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Đảng Cộng sản là đội tiên phong của GCCN, sự ra đời của Đảng là dấu hiệu GCCN đã chuyển từ đấu tranh tự phát sang tự giác, là nhân tố chủ quan quyết định nhất."
+      },
+      "source": {
+        "ref": "Câu 14"
+      },
+      "enrichment": {
+        "text": "Lênin trong “Làm gì?” (1902) chỉ ra rằng phong trào công nhân tự phát chỉ dừng ở ý thức nghiệp đoàn, ý thức xã hội chủ nghĩa phải được đưa vào từ bên ngoài. Vì vậy cần một đảng của giai cấp công nhân kiểu mới làm đội tiên phong, lãnh đạo cách mạng."
+      }
+    },
+    {
+      "id": "q-015",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Quy luật chung, phổ biến cho sự ra đời của Đảng Cộng sản trên thế giới là sự kết hợp giữa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chủ nghĩa xã hội khoa học (Chủ nghĩa Mác - Lênin) với phong trào công nhân."
+          },
+          {
+            "key": "B",
+            "text": "Chủ nghĩa Mác - Lênin với phong trào yêu nước."
+          },
+          {
+            "key": "C",
+            "text": "Phong trào công nhân với phong trào nông dân."
+          },
+          {
+            "key": "D",
+            "text": "Tư tưởng tiến bộ với giai cấp công nhân."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Theo quy luật phổ biến, Đảng Cộng sản là sản phẩm của sự kết hợp giữa lý luận tiên phong (CNXH KH) và phong trào thực tiễn của GCCN."
+      },
+      "source": {
+        "ref": "Câu 15"
+      },
+      "enrichment": {
+        "text": "Đảng Cộng sản là sự kết hợp giữa chủ nghĩa xã hội khoa học (lý luận) và phong trào công nhân (thực tiễn). Ví dụ: Đảng Công nhân dân chủ xã hội Nga (1898) hình thành khi chủ nghĩa Mác thâm nhập phong trào công nhân Nga."
+      }
+    },
+    {
+      "id": "q-016",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở Việt Nam, quy luật ra đời của Đảng Cộng sản Việt Nam có thêm yếu tố đặc thù nào so với quy luật chung?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Phong trào nông dân."
+          },
+          {
+            "key": "B",
+            "text": "Phong trào yêu nước."
+          },
+          {
+            "key": "C",
+            "text": "Phong trào trí thức."
+          },
+          {
+            "key": "D",
+            "text": "Phong trào giải phóng dân tộc."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Hồ Chí Minh đã phát kiến bổ sung yếu tố \"phong trào yêu nước\" vào quy luật ra đời của Đảng Cộng sản Việt Nam (CN Mác-Lênin + Phong trào công nhân + Phong trào yêu nước)."
+      },
+      "source": {
+        "ref": "Câu 16"
+      },
+      "enrichment": {
+        "text": "Hồ Chí Minh khẳng định: chủ nghĩa Mác - Lênin kết hợp với phong trào công nhân và phong trào yêu nước đã dẫn tới việc thành lập Đảng Cộng sản Việt Nam đầu năm 1930 (hội nghị hợp nhất, 3/2/1930). Phong trào yêu nước là yếu tố đặc thù của Việt Nam."
+      }
+    },
+    {
+      "id": "q-017",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sự phát triển của bản thân giai cấp công nhân (nhân tố chủ quan) về mặt chất lượng thể hiện ở:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Số lượng công nhân tăng lên nhanh chóng."
+          },
+          {
+            "key": "B",
+            "text": "Sự gia tăng số lượng các khu công nghiệp."
+          },
+          {
+            "key": "C",
+            "text": "Sự trưởng thành về ý thức chính trị và năng lực làm chủ khoa học, công nghệ hiện đại."
+          },
+          {
+            "key": "D",
+            "text": "Mức lương của công nhân được cải thiện."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Chất lượng của GCCN được đo bằng ý thức giác ngộ lý luận (nhận thức sứ mệnh) và trình độ học vấn, tay nghề, năng lực làm chủ công nghệ."
+      },
+      "source": {
+        "ref": "Câu 17"
+      },
+      "enrichment": {
+        "text": "Chất lượng của giai cấp công nhân thể hiện ở giác ngộ giai cấp (hiểu sứ mệnh lịch sử), bản lĩnh chính trị và trình độ học vấn, tay nghề, năng lực làm chủ công nghệ. Số lượng hay mức lương chỉ phản ánh một phần."
+      }
+    },
+    {
+      "id": "q-018",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong các điều kiện chủ quan để GCCN thực hiện sứ mệnh lịch sử, lực lượng nào là đồng minh tất yếu của GCCN?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Giai cấp tư sản."
+          },
+          {
+            "key": "B",
+            "text": "Giai cấp phong kiến."
+          },
+          {
+            "key": "C",
+            "text": "Giai cấp nông dân và các tầng lớp lao động khác."
+          },
+          {
+            "key": "D",
+            "text": "Tầng lớp tiểu tư sản thành thị."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Liên minh giữa GCCN với nông dân và các tầng lớp lao động khác là điều kiện quan trọng không thể thiếu để tạo nên sức mạnh tổng hợp thực hiện sứ mệnh lịch sử."
+      },
+      "source": {
+        "ref": "Câu 18"
+      },
+      "enrichment": {
+        "text": "Nông dân là đồng minh tự nhiên của giai cấp công nhân vì cùng bị bóc lột và chiếm đa số dân cư ở nhiều nước. Liên minh công - nông - trí thức do Đảng lãnh đạo là nguyên tắc nhất quán của cách mạng Việt Nam."
+      }
+    },
+    {
+      "id": "q-019",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điểm tương đồng của giai cấp công nhân hiện nay so với thế kỷ XIX là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đều chủ yếu là lao động cơ bắp, giản đơn."
+          },
+          {
+            "key": "B",
+            "text": "Đều đã nắm được chính quyền ở mọi quốc gia."
+          },
+          {
+            "key": "C",
+            "text": "Vẫn là lực lượng sản xuất hàng đầu và ở các nước TBCN vẫn bị bóc lột giá trị thặng dư."
+          },
+          {
+            "key": "D",
+            "text": "Đều không cần đến sự lãnh đạo của Đảng Cộng sản."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dù có những biến đổi về hình thức lao động, GCCN hiện nay vẫn là chủ thể của quá trình sản xuất công nghiệp và vẫn đối kháng lợi ích với giai cấp tư sản do bị bóc lột."
+      },
+      "source": {
+        "ref": "Câu 19"
+      },
+      "enrichment": {
+        "text": "Dù hình thức lao động đã khác (nhiều lao động trí óc, dịch vụ), giai cấp công nhân hiện nay vẫn là lực lượng sản xuất hàng đầu; ở các nước tư bản, họ vẫn là người làm thuê bị bóc lột giá trị thặng dư."
+      }
+    },
+    {
+      "id": "q-020",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Biểu hiện nào sau đây phản ánh sự biến đổi của giai cấp công nhân hiện đại (thế kỷ XXI)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Số lượng công nhân giảm đi và mất vai trò lãnh đạo."
+          },
+          {
+            "key": "B",
+            "text": "Xu hướng trí tuệ hóa, xuất hiện \"công nhân tri thức\", \"công nhân áo trắng\"."
+          },
+          {
+            "key": "C",
+            "text": "Không còn mâu thuẫn với giai cấp tư sản."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ hoạt động trong lĩnh vực nông nghiệp."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Gắn với cách mạng KH-CN hiện đại, hao phí lao động chủ yếu là trí lực, người công nhân phải có tri thức cao, dẫn đến xu hướng trí tuệ hóa GCCN."
+      },
+      "source": {
+        "ref": "Câu 20"
+      },
+      "enrichment": {
+        "text": "Cách mạng khoa học - công nghệ (đặc biệt cách mạng công nghiệp 4.0) làm tăng tỷ trọng lao động trí tuệ: xuất hiện “công nhân tri thức”, “công nhân áo trắng”, đòi hỏi trình độ chuyên môn và kỹ năng cao hơn."
+      }
+    },
+    {
+      "id": "q-021",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tính chất xã hội hóa của lao động công nghiệp hiện đại mang biểu hiện mới nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thu hẹp trong phạm vi một gia đình."
+          },
+          {
+            "key": "B",
+            "text": "Mở rộng thành \"chuỗi giá trị toàn cầu\", liên kết nhiều quốc gia, khu vực."
+          },
+          {
+            "key": "C",
+            "text": "Trở lại mô hình sản xuất thủ công khép kín."
+          },
+          {
+            "key": "D",
+            "text": "Tách rời hoàn toàn khỏi khoa học công nghệ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Quá trình sản xuất hiện đại vượt ra khỏi quốc gia, tạo thành chuỗi giá trị toàn cầu với các mô hình như \"xuất khẩu lao động tại chỗ\", \"nhóm chuyên gia quốc tế\"..."
+      },
+      "source": {
+        "ref": "Câu 21"
+      },
+      "enrichment": {
+        "text": "Sản xuất hiện đại ngày càng được chia nhỏ giữa nhiều nước (ví dụ một sản phẩm điện tử có linh kiện, lắp ráp, thiết kế ở nhiều quốc gia). Vì vậy lao động công nghiệp mang tính xã hội hóa ở phạm vi toàn cầu, tạo thành chuỗi giá trị toàn cầu."
+      }
+    },
+    {
+      "id": "q-022",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở các nước tư bản chủ nghĩa hiện nay, mục tiêu đấu tranh TRỰC TIẾP của giai cấp công nhân là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xóa bỏ ngay lập tức nhà nước tư bản."
+          },
+          {
+            "key": "B",
+            "text": "Tiến hành bạo lực cách mạng trên toàn cầu."
+          },
+          {
+            "key": "C",
+            "text": "Chống bất công và bất bình đẳng xã hội, vì dân sinh, dân chủ."
+          },
+          {
+            "key": "D",
+            "text": "Đòi chia đều tư liệu sản xuất cho mọi người."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Mục tiêu đấu tranh trực tiếp của GCCN ở các nước TBCN hiện nay là chống bất công, bất bình đẳng; mục tiêu lâu dài mới là giành chính quyền về tay GCCN."
+      },
+      "source": {
+        "ref": "Câu 22"
+      },
+      "enrichment": {
+        "text": "Ở các nước tư bản, công nhân thường đấu tranh đòi tiền lương, giờ làm việc, điều kiện lao động, bảo hiểm xã hội. Ngày Quốc tế Lao động 1/5 bắt nguồn từ cuộc đấu tranh đòi ngày làm 8 giờ của công nhân Chicago (Mỹ) năm 1886."
+      }
+    },
+    {
+      "id": "q-023",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở các nước xã hội chủ nghĩa, nội dung chính trị - xã hội của sứ mệnh lịch sử giai cấp công nhân là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lật đổ quyền thống trị của giai cấp tư sản."
+          },
+          {
+            "key": "B",
+            "text": "Lãnh đạo thành công sự nghiệp đổi mới, xây dựng Đảng cầm quyền trong sạch vững mạnh."
+          },
+          {
+            "key": "C",
+            "text": "Đấu tranh giành độc lập dân tộc."
+          },
+          {
+            "key": "D",
+            "text": "Tiến hành cách mạng tư sản dân quyền."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Ở các nước XHCN, GCCN đã giành được chính quyền, nên trọng trách là lãnh đạo công cuộc đổi mới, xây dựng Đảng, đẩy mạnh CNH, HĐH đưa đất nước phát triển."
+      },
+      "source": {
+        "ref": "Câu 23"
+      },
+      "enrichment": {
+        "text": "Ở nước xã hội chủ nghĩa, giai cấp công nhân đã nắm chính quyền thông qua Đảng. Nhiệm vụ chính trị - xã hội chuyển sang lãnh đạo xây dựng chế độ mới, giữ vững bản chất giai cấp công nhân của Đảng và Nhà nước, và đẩy mạnh đổi mới."
+      }
+    },
+    {
+      "id": "q-024",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp công nhân Việt Nam ra đời vào thời gian nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đầu thế kỷ XIX."
+          },
+          {
+            "key": "B",
+            "text": "Đầu thế kỷ XX, trong cuộc khai thác thuộc địa của Pháp."
+          },
+          {
+            "key": "C",
+            "text": "Sau Cách mạng Tháng Tám năm 1945."
+          },
+          {
+            "key": "D",
+            "text": "Sau khi đất nước thống nhất (1975)."
+          }
+        ],
+        "answer": "B",
+        "explanation": "GCCN Việt Nam ra đời và phát triển gắn liền với chính sách khai thác thuộc địa của thực dân Pháp ở Việt Nam (đầu thế kỷ XX)."
+      },
+      "source": {
+        "ref": "Câu 24"
+      },
+      "enrichment": {
+        "text": "Giai cấp công nhân Việt Nam hình thành trong cuộc khai thác thuộc địa lần thứ nhất của thực dân Pháp (khoảng 1897–1914), gắn với các đồn điền cao su, hầm mỏ, nhà máy, bến cảng."
+      }
+    },
+    {
+      "id": "q-025",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm nào sau đây KHÔNG thuộc về giai cấp công nhân Việt Nam lúc mới ra đời?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ra đời trước giai cấp tư sản Việt Nam."
+          },
+          {
+            "key": "B",
+            "text": "Trực tiếp đối kháng với tư bản thực dân Pháp."
+          },
+          {
+            "key": "C",
+            "text": "Chiếm đa số trong cơ cấu dân số Việt Nam."
+          },
+          {
+            "key": "D",
+            "text": "Có mối liên hệ tự nhiên, chặt chẽ với giai cấp nông dân."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Khi mới ra đời, số lượng GCCN Việt Nam còn rất ít (chỉ chiếm khoảng 1% dân số), đa số dân cư là nông dân."
+      },
+      "source": {
+        "ref": "Câu 25"
+      },
+      "enrichment": {
+        "text": "Công nhân Việt Nam ra đời trước giai cấp tư sản dân tộc, trực tiếp đối kháng với tư bản thực dân Pháp và có quan hệ tự nhiên với nông dân. Vì số lượng lúc đầu còn ít nên “chiếm đa số dân cư” không phải đặc điểm của họ."
+      }
+    },
+    {
+      "id": "q-026",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp công nhân Việt Nam phải chịu bao nhiêu tầng áp bức bóc lột khi mới ra đời?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Một (Đế quốc)."
+          },
+          {
+            "key": "B",
+            "text": "Hai (Đế quốc, phong kiến)."
+          },
+          {
+            "key": "C",
+            "text": "Ba (Đế quốc thực dân, phong kiến, tư sản bản xứ)."
+          },
+          {
+            "key": "D",
+            "text": "Bốn."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Chịu ba tầng áp bức bóc lột nên GCCN Việt Nam có tinh thần cách mạng vô cùng triệt để."
+      },
+      "source": {
+        "ref": "Câu 26"
+      },
+      "enrichment": {
+        "text": "Ba tầng áp bức: đế quốc thực dân, phong kiến và tư sản bản xứ. Chính điều này, cùng nỗi nhục mất nước, làm tinh thần cách mạng của công nhân Việt Nam rất cao."
+      }
+    },
+    {
+      "id": "q-027",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp công nhân Việt Nam sớm trở thành lực lượng lãnh đạo cách mạng là do:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Có số lượng áp đảo trong xã hội."
+          },
+          {
+            "key": "B",
+            "text": "Nhận được sự nhượng bộ của giai cấp tư sản dân tộc."
+          },
+          {
+            "key": "C",
+            "text": "Sớm được tôi luyện trong đấu tranh, sớm giác ngộ lý tưởng Mác - Lênin và có Đảng Cộng sản lãnh đạo."
+          },
+          {
+            "key": "D",
+            "text": "Được thực dân Pháp đào tạo bài bản về chính trị."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Dù số lượng ít, nhưng do ra đời trong hoàn cảnh mất nước, lại sớm tiếp thu chủ nghĩa Mác - Lênin và có Đảng Cộng sản ra đời, GCCN VN nhanh chóng vươn lên nắm quyền lãnh đạo."
+      },
+      "source": {
+        "ref": "Câu 27"
+      },
+      "enrichment": {
+        "text": "Từ Đảng Cộng sản Việt Nam ra đời (1930), Cương lĩnh xác định giai cấp công nhân lãnh đạo cách mạng thông qua đội tiên phong là Đảng. Dù nhỏ về số lượng, họ đại diện cho phương thức sản xuất tiến bộ và sớm giác ngộ lý luận Mác - Lênin."
+      }
+    },
+    {
+      "id": "q-028",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đa số công nhân Việt Nam lúc mới ra đời xuất thân từ tầng lớp nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Thợ thủ công thành thị."
+          },
+          {
+            "key": "B",
+            "text": "Nông dân bị phá sản, mất ruộng đất."
+          },
+          {
+            "key": "C",
+            "text": "Tầng lớp tiểu tư sản."
+          },
+          {
+            "key": "D",
+            "text": "Trí thức bất mãn với chế độ."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Do chính sách cướp đoạt ruộng đất của Pháp, phần lớn nông dân mất đất phải ra thành thị, hầm mỏ làm thuê và trở thành công nhân. Điều này tạo cơ sở vững chắc cho liên minh công - nông."
+      },
+      "source": {
+        "ref": "Câu 28"
+      },
+      "enrichment": {
+        "text": "Thực dân Pháp cưỡng đoạt ruộng đất lập đồn điền, khiến nhiều nông dân mất đất phải làm thuê trong đồn điền, hầm mỏ, nhà máy. Do đó công nhân Việt Nam có quan hệ máu thịt với nông dân, tạo cơ sở cho liên minh công - nông."
+      }
+    },
+    {
+      "id": "q-029",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong thời kỳ đổi mới hiện nay, giai cấp công nhân Việt Nam đóng vai trò đi đầu trong sự nghiệp nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cách mạng ruộng đất."
+          },
+          {
+            "key": "B",
+            "text": "Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước gắn với phát triển kinh tế tri thức."
+          },
+          {
+            "key": "C",
+            "text": "Khôi phục lại chế độ tập trung quan liêu bao cấp."
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ hoàn toàn kinh tế tư nhân."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là sứ mệnh lịch sử to lớn về mặt kinh tế của GCCN Việt Nam hiện nay, nhằm đưa nước ta sớm trở thành nước công nghiệp theo hướng hiện đại."
+      },
+      "source": {
+        "ref": "Câu 29"
+      },
+      "enrichment": {
+        "text": "Đường lối Đổi mới bắt đầu từ Đại hội VI (12/1986). Công nghiệp hóa, hiện đại hóa gắn với phát triển kinh tế tri thức là nhiệm vụ trung tâm; giai cấp công nhân giữ vai trò đi đầu."
+      }
+    },
+    {
+      "id": "q-030",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở Việt Nam hiện nay, đội ngũ công nhân trong khu vực kinh tế nào đóng vai trò nòng cốt, chủ đạo?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khu vực kinh tế tư nhân."
+          },
+          {
+            "key": "B",
+            "text": "Khu vực kinh tế nhà nước."
+          },
+          {
+            "key": "C",
+            "text": "Khu vực kinh tế có vốn đầu tư nước ngoài (FDI)."
+          },
+          {
+            "key": "D",
+            "text": "Khu vực kinh tế tập thể."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Mặc dù đa dạng về cơ cấu nghề nghiệp và có mặt ở mọi thành phần kinh tế, nhưng đội ngũ công nhân trong khu vực kinh tế nhà nước là tiêu biểu, đóng vai trò nòng cốt, chủ đạo."
+      },
+      "source": {
+        "ref": "Câu 30"
+      },
+      "enrichment": {
+        "text": "Văn kiện của Đảng xác định công nhân ở khu vực kinh tế nhà nước là nòng cốt, đồng thời công nhân có mặt trong mọi thành phần kinh tế (nhà nước, tư nhân, có vốn đầu tư nước ngoài, tập thể…)."
+      }
+    },
+    {
+      "id": "q-031",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những biến đổi quan trọng của giai cấp công nhân Việt Nam hiện nay là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Từ bỏ sứ mệnh lịch sử lãnh đạo cách mạng."
+          },
+          {
+            "key": "B",
+            "text": "Tri thức hóa, xuất hiện công nhân tri thức nắm vững khoa học - công nghệ tiên tiến."
+          },
+          {
+            "key": "C",
+            "text": "Trở thành giai cấp chiếm đoạt tư liệu sản xuất của các giai cấp khác."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ còn hoạt động trong lĩnh vực nông nghiệp công nghệ cao."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Công nhân tri thức và công nhân trẻ được đào tạo nghề đang trở thành lực lượng chủ đạo trong cơ cấu GCCN Việt Nam hiện nay."
+      },
+      "source": {
+        "ref": "Câu 31"
+      },
+      "enrichment": {
+        "text": "Công nhân tri thức là những công nhân có trình độ chuyên môn, học vấn cao, làm chủ khoa học - công nghệ hiện đại. Đây là xu hướng biến đổi cùng quá trình công nghiệp hóa, hiện đại hóa."
+      }
+    },
+    {
+      "id": "q-032",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nội dung chính trị - xã hội nổi bật nhất trong sứ mệnh lịch sử của giai cấp công nhân Việt Nam hiện nay là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tăng cường xây dựng, chỉnh đốn Đảng, giữ vững bản chất giai cấp công nhân của Đảng."
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ nền kinh tế thị trường."
+          },
+          {
+            "key": "C",
+            "text": "Tiến hành cách mạng bạo lực để giành chính quyền."
+          },
+          {
+            "key": "D",
+            "text": "Thiết lập chế độ đa đảng đối lập."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Trong điều kiện Đảng đã cầm quyền, nhiệm vụ trọng tâm là bảo vệ Đảng, bảo vệ chế độ, ngăn chặn sự suy thoái \"tự diễn biến\", \"tự chuyển hóa\" trong nội bộ."
+      },
+      "source": {
+        "ref": "Câu 32"
+      },
+      "enrichment": {
+        "text": "Các nghị quyết về xây dựng, chỉnh đốn Đảng (như Nghị quyết Trung ương 4 khóa XI năm 2012 và khóa XII năm 2016) nhấn mạnh ngăn chặn, đẩy lùi suy thoái tư tưởng chính trị, đạo đức, lối sống và “tự diễn biến”, “tự chuyển hóa”."
+      }
+    },
+    {
+      "id": "q-033",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Về văn hóa - tư tưởng, giai cấp công nhân Việt Nam hiện nay có trách nhiệm gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Lấy hệ tư tưởng tư sản làm nền tảng."
+          },
+          {
+            "key": "B",
+            "text": "Bảo vệ sự trong sáng của chủ nghĩa Mác - Lênin và tư tưởng Hồ Chí Minh."
+          },
+          {
+            "key": "C",
+            "text": "Xóa bỏ hoàn toàn các giá trị văn hóa truyền thống."
+          },
+          {
+            "key": "D",
+            "text": "Tiếp thu mọi trào lưu văn hóa ngoại lai không chọn lọc."
+          }
+        ],
+        "answer": "B",
+        "explanation": "GCCN có trách nhiệm bảo vệ nền tảng tư tưởng của Đảng, chống lại các quan điểm sai trái, xuyên tạc của các thế lực thù địch."
+      },
+      "source": {
+        "ref": "Câu 33"
+      },
+      "enrichment": {
+        "text": "Nền tảng tư tưởng của Đảng là chủ nghĩa Mác - Lênin và tư tưởng Hồ Chí Minh. Đấu tranh với các quan điểm sai trái, xuyên tạc là một nhiệm vụ tư tưởng thường xuyên của giai cấp công nhân và Đảng."
+      }
+    },
+    {
+      "id": "q-034",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Điểm then chốt để thực hiện thành công sứ mệnh lịch sử của giai cấp công nhân Việt Nam hiện nay là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tăng nhanh quy mô số lượng công nhân bằng mọi giá."
+          },
+          {
+            "key": "B",
+            "text": "Phát triển thật nhiều các khu công nghiệp."
+          },
+          {
+            "key": "C",
+            "text": "Coi trọng công tác xây dựng, chỉnh đốn Đảng, làm cho Đảng thực sự trong sạch vững mạnh."
+          },
+          {
+            "key": "D",
+            "text": "Mở rộng vô hạn độ nền kinh tế thị trường."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Sự lãnh đạo của Đảng Cộng sản là nhân tố quyết định nhất. Do đó, xây dựng Đảng trong sạch, vững mạnh là điểm then chốt đảm bảo hoàn thành sứ mệnh lịch sử."
+      },
+      "source": {
+        "ref": "Câu 34"
+      },
+      "enrichment": {
+        "text": "Các văn kiện Đại hội Đảng đều coi xây dựng, chỉnh đốn Đảng là nhiệm vụ then chốt, vì Đảng là nhân tố quyết định nhất để giai cấp công nhân hoàn thành sứ mệnh lịch sử."
+      }
+    },
+    {
+      "id": "q-035",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Tại Hội nghị Trung ương 6 khóa X (2008), Đảng ta ban hành Nghị quyết chuyên đề nào về giai cấp công nhân?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Về xây dựng giai cấp công nhân Việt Nam thời kỳ đẩy mạnh CNH, HĐH đất nước."
+          },
+          {
+            "key": "B",
+            "text": "Về phát triển kinh tế tư nhân."
+          },
+          {
+            "key": "C",
+            "text": "Về đổi mới căn bản, toàn diện giáo dục và đào tạo."
+          },
+          {
+            "key": "D",
+            "text": "Về xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Nghị quyết TW 6 khóa X chuyên bàn về việc \"Tiếp tục xây dựng giai cấp công nhân VN thời kỳ đẩy mạnh CNH, HĐH đất nước\"."
+      },
+      "source": {
+        "ref": "Câu 35"
+      },
+      "enrichment": {
+        "text": "Hội nghị Trung ương 6 khóa X (1/2008) ban hành Nghị quyết số 20-NQ/TW “Về tiếp tục xây dựng giai cấp công nhân Việt Nam thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước”."
+      }
+    },
+    {
+      "id": "q-036",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Để xây dựng giai cấp công nhân Việt Nam hiện nay lớn mạnh, giải pháp nào sau đây được Đảng ta đề ra?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kiên định quan điểm GCCN là giai cấp lãnh đạo cách mạng thông qua đội tiền phong là Đảng Cộng sản."
+          },
+          {
+            "key": "B",
+            "text": "Xóa bỏ kinh tế thị trường để bảo vệ quyền lợi công nhân."
+          },
+          {
+            "key": "C",
+            "text": "Ngừng hội nhập quốc tế để tránh cạnh tranh."
+          },
+          {
+            "key": "D",
+            "text": "Chỉ tập trung phát triển công nghiệp nặng."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Giải pháp đầu tiên và quan trọng nhất là nâng cao nhận thức, kiên định quan điểm GCCN là giai cấp lãnh đạo cách mạng."
+      },
+      "source": {
+        "ref": "Câu 36"
+      },
+      "enrichment": {
+        "text": "Nghị quyết nhấn mạnh: kiên định quan điểm giai cấp công nhân là giai cấp lãnh đạo cách mạng thông qua Đảng, nâng cao trình độ chính trị, học vấn, tay nghề và chăm lo đời sống công nhân."
+      }
+    },
+    {
+      "id": "q-037",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Xây dựng giai cấp công nhân Việt Nam lớn mạnh là trách nhiệm của ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ của tổ chức Công đoàn."
+          },
+          {
+            "key": "B",
+            "text": "Chỉ của Đảng Cộng sản Việt Nam."
+          },
+          {
+            "key": "C",
+            "text": "Của cả hệ thống chính trị, toàn xã hội và sự nỗ lực vươn lên của bản thân mỗi công nhân."
+          },
+          {
+            "key": "D",
+            "text": "Của giới chủ sử dụng lao động."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Xây dựng GCCN là trách nhiệm chung của cả hệ thống chính trị, xã hội, người sử dụng lao động và sự nỗ lực tự thân của công nhân."
+      },
+      "source": {
+        "ref": "Câu 37"
+      },
+      "enrichment": {
+        "text": "Xây dựng giai cấp công nhân là sự nghiệp của cả hệ thống chính trị, toàn xã hội (Công đoàn, Nhà nước, người sử dụng lao động) kết hợp với sự nỗ lực của bản thân công nhân."
+      }
+    },
+    {
+      "id": "q-038",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp công nhân chỉ có thể hoàn thành sứ mệnh lịch sử thế giới của mình khi nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Khi giành được chính quyền từ tay giai cấp tư sản."
+          },
+          {
+            "key": "B",
+            "text": "Khi xây dựng thành công chủ nghĩa xã hội và chủ nghĩa cộng sản (xác lập hình thái KT-XH CSCN)."
+          },
+          {
+            "key": "C",
+            "text": "Khi lật đổ được chế độ phong kiến."
+          },
+          {
+            "key": "D",
+            "text": "Khi thực hiện xong việc tước đoạt tài sản của các nhà tư bản."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Giành chính quyền chỉ là bước đầu. Hoàn thành SMLS tức là phải xây dựng thành công xã hội mới không còn bóc lột (CNXH và CNCS)."
+      },
+      "source": {
+        "ref": "Câu 38"
+      },
+      "enrichment": {
+        "text": "Theo Mác - Lênin, giành chính quyền chỉ là bước đầu. Sứ mệnh lịch sử chỉ hoàn thành khi xây dựng thành công chủ nghĩa xã hội và chủ nghĩa cộng sản, một quá trình lâu dài, qua nhiều thế hệ."
+      }
+    },
+    {
+      "id": "q-039",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ai là tác giả của câu nói: \"Sự sụp đổ của giai cấp tư sản và thắng lợi của giai cấp vô sản đều là tất yếu như nhau\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "V.I. Lênin"
+          },
+          {
+            "key": "B",
+            "text": "C.Mác và Ph.Ăngghen"
+          },
+          {
+            "key": "C",
+            "text": "Hồ Chí Minh"
+          },
+          {
+            "key": "D",
+            "text": "Trần Phú"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Đây là một trong những luận điểm cốt lõi nhất được Mác và Ăngghen khẳng định trong tác phẩm \"Tuyên ngôn của Đảng Cộng sản\" (1848)."
+      },
+      "source": {
+        "ref": "Câu 39"
+      },
+      "enrichment": {
+        "text": "“Tuyên ngôn của Đảng Cộng sản” do Mác và Ăngghen soạn theo ủy nhiệm của Đồng minh những người cộng sản, công bố tháng 2/1848. Đây là văn kiện cương lĩnh đầu tiên của chủ nghĩa cộng sản khoa học."
+      }
+    },
+    {
+      "id": "q-040",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đặc điểm nào KHÔNG phản ánh đúng giai cấp công nhân trong quan hệ sản xuất tư bản chủ nghĩa?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bị giai cấp tư sản bóc lột giá trị thặng dư."
+          },
+          {
+            "key": "B",
+            "text": "Là những người lao động tự do (tự do bán sức lao động)."
+          },
+          {
+            "key": "C",
+            "text": "Sở hữu phần lớn tư liệu sản xuất của xã hội."
+          },
+          {
+            "key": "D",
+            "text": "Phải chịu mọi sự may rủi của cạnh tranh, sự lên xuống của thị trường."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Đặc trưng của GCCN trong QHSX tư bản là không có hoặc cơ bản không có tư liệu sản xuất."
+      },
+      "source": {
+        "ref": "Câu 40"
+      },
+      "enrichment": {
+        "text": "Công nhân trong xã hội tư bản là người làm thuê: tự do bán sức lao động nhưng không có tư liệu sản xuất chủ yếu, bị bóc lột giá trị thặng dư và chịu rủi ro của thị trường như thất nghiệp, khủng hoảng."
+      }
+    },
+    {
+      "id": "q-041",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Sứ mệnh lịch sử của giai cấp công nhân khác biệt với sứ mệnh của giai cấp tư sản trong quá khứ ở điểm nào?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Xóa bỏ chế độ tư hữu, xóa bỏ tình trạng bóc lột."
+          },
+          {
+            "key": "B",
+            "text": "Giành chính quyền để thiết lập sự thống trị bóc lột mới."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ quan tâm đến việc phát triển lực lượng sản xuất."
+          },
+          {
+            "key": "D",
+            "text": "Dựa vào sự ủng hộ của các cường quốc."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Cách mạng tư sản thay thế chế độ bóc lột phong kiến bằng chế độ bóc lột tư bản. Cách mạng vô sản hướng tới xóa bỏ triệt để mọi hình thức bóc lột thông qua việc xóa bỏ tư hữu."
+      },
+      "source": {
+        "ref": "Câu 41"
+      },
+      "enrichment": {
+        "text": "Mác và Ăngghen viết: đặc trưng của chủ nghĩa cộng sản không phải là xóa bỏ quyền sở hữu nói chung, mà là xóa bỏ chế độ sở hữu tư sản. Cách mạng vô sản vì thế khác về chất với các cuộc cách mạng chỉ thay thế hình thức bóc lột."
+      }
+    },
+    {
+      "id": "q-042",
+      "type": "multiple-choice",
+      "content": {
+        "question": "\"Công nhân Anh là đứa con đầu lòng của nền công nghiệp hiện đại\" là nhận định của ai?",
+        "options": [
+          {
+            "key": "A",
+            "text": "V.I. Lênin"
+          },
+          {
+            "key": "B",
+            "text": "C.Mác và Ph.Ăngghen"
+          },
+          {
+            "key": "C",
+            "text": "David Ricardo"
+          },
+          {
+            "key": "D",
+            "text": "Adam Smith"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trích dẫn của Mác và Ăngghen khi mô tả sự hình thành của GCCN gắn liền với cuộc cách mạng công nghiệp bắt đầu từ nước Anh."
+      },
+      "source": {
+        "ref": "Câu 42"
+      },
+      "enrichment": {
+        "text": "Cách mạng công nghiệp bắt đầu ở Anh vào thế kỷ XVIII, nên giai cấp công nhân hiện đại xuất hiện sớm nhất ở đó. Ăngghen đã mô tả sinh động tình cảnh công nhân Anh trong “Tình cảnh của giai cấp lao động ở Anh” (1845)."
+      }
+    },
+    {
+      "id": "q-043",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Một trong những động lực quan trọng để xây dựng giai cấp công nhân Việt Nam hiện nay theo Nghị quyết của Đảng là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tăng cường bóc lột sức lao động để tích lũy tư bản."
+          },
+          {
+            "key": "B",
+            "text": "Đảm bảo hài hòa lợi ích giữa công nhân, người sử dụng lao động, Nhà nước và toàn xã hội."
+          },
+          {
+            "key": "C",
+            "text": "Hạn chế công nhân tiếp cận với khoa học công nghệ để dễ quản lý."
+          },
+          {
+            "key": "D",
+            "text": "Chia rẽ công nhân với đội ngũ trí thức."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Xử lý đúng đắn mối quan hệ lợi ích là động lực trực tiếp để chăm lo và phát triển GCCN lớn mạnh."
+      },
+      "source": {
+        "ref": "Câu 43"
+      },
+      "enrichment": {
+        "text": "Một trong các quan điểm của Nghị quyết 20-NQ/TW là giải quyết hài hòa lợi ích giữa công nhân, người sử dụng lao động, Nhà nước và xã hội; đây là động lực trực tiếp chăm lo xây dựng giai cấp công nhân."
+      }
+    },
+    {
+      "id": "q-044",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Giai cấp công nhân Việt Nam hiện nay có đặc điểm gì nổi bật về cơ cấu?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chỉ tập trung ở khu vực kinh tế nhà nước."
+          },
+          {
+            "key": "B",
+            "text": "Đa dạng về cơ cấu nghề nghiệp, có mặt trong mọi thành phần kinh tế."
+          },
+          {
+            "key": "C",
+            "text": "Chỉ làm việc trong các ngành công nghiệp nặng."
+          },
+          {
+            "key": "D",
+            "text": "Chủ yếu làm việc ở nước ngoài."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Cùng với quá trình phát triển nền kinh tế thị trường nhiều thành phần, GCCN Việt Nam hiện nay có mặt ở tất cả các khu vực kinh tế (Nhà nước, tư nhân, FDI, HTX...)."
+      },
+      "source": {
+        "ref": "Câu 44"
+      },
+      "enrichment": {
+        "text": "Cùng với kinh tế thị trường nhiều thành phần, công nhân Việt Nam hiện có mặt trong nhiều ngành, nhiều khu vực kinh tế (nhà nước, tư nhân, FDI, hợp tác xã…), cơ cấu nghề nghiệp ngày càng đa dạng."
+      }
+    },
+    {
+      "id": "q-045",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Đối tượng xóa bỏ trong sứ mệnh lịch sử của giai cấp công nhân về mặt kinh tế là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sở hữu tư nhân tư bản chủ nghĩa."
+          },
+          {
+            "key": "B",
+            "text": "Sở hữu toàn dân."
+          },
+          {
+            "key": "C",
+            "text": "Sở hữu tập thể."
+          },
+          {
+            "key": "D",
+            "text": "Sản xuất hàng hóa nhỏ."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Mục tiêu của GCCN không phải xóa bỏ mọi hình thức sở hữu cá nhân phục vụ sinh hoạt, mà là xóa bỏ sở hữu tư nhân TBCN - nguồn gốc sinh ra áp bức, bóc lột."
+      },
+      "source": {
+        "ref": "Câu 45"
+      },
+      "enrichment": {
+        "text": "Đối tượng cần xóa bỏ là chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất, nguồn gốc của bóc lột. Không có nghĩa là xóa bỏ tài sản dùng cho sinh hoạt cá nhân."
+      }
+    },
+    {
+      "id": "q-046",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Ở các nước XHCN, vai trò của giai cấp công nhân về mặt kinh tế thể hiện rõ nhất qua việc:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đình công đòi tăng lương."
+          },
+          {
+            "key": "B",
+            "text": "Đóng vai trò nòng cốt trong quá trình giải phóng lực lượng sản xuất, đẩy mạnh CNH, HĐH."
+          },
+          {
+            "key": "C",
+            "text": "Trở thành những nhà tư bản độc quyền."
+          },
+          {
+            "key": "D",
+            "text": "Đấu tranh vũ trang bảo vệ biên giới."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trong CNXH, GCCN không còn bị bóc lột, họ làm chủ TLSX và đóng vai trò nòng cốt phát triển kinh tế, thúc đẩy CNH-HĐH để xây dựng cơ sở vật chất cho CNXH."
+      },
+      "source": {
+        "ref": "Câu 46"
+      },
+      "enrichment": {
+        "text": "Ở nước xã hội chủ nghĩa, công nhân là chủ tư liệu sản xuất chủ yếu và không bị bóc lột; vai trò kinh tế thể hiện ở việc đi đầu công nghiệp hóa, hiện đại hóa, giải phóng và phát triển lực lượng sản xuất."
+      }
+    },
+    {
+      "id": "q-047",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Việc xây dựng giai cấp công nhân Việt Nam lớn mạnh hiện nay phải gắn liền với chiến lược nào của đất nước?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chiến lược phát triển kinh tế - xã hội, CNH, HĐH đất nước và hội nhập quốc tế."
+          },
+          {
+            "key": "B",
+            "text": "Chiến lược mở rộng lãnh thổ."
+          },
+          {
+            "key": "C",
+            "text": "Chiến lược \"diễn biến hòa bình\"."
+          },
+          {
+            "key": "D",
+            "text": "Chiến lược bế quan tỏa cảng."
+          }
+        ],
+        "answer": "A",
+        "explanation": "Phát triển GCCN không thể tách rời sự phát triển của đất nước, nhất là quá trình đẩy mạnh CNH, HĐH và hội nhập quốc tế sâu rộng."
+      },
+      "source": {
+        "ref": "Câu 47"
+      },
+      "enrichment": {
+        "text": "Giai cấp công nhân phát triển cùng sự phát triển của đất nước. Vì vậy cần gắn xây dựng giai cấp công nhân với chiến lược phát triển kinh tế - xã hội, công nghiệp hóa, hiện đại hóa và hội nhập quốc tế."
+      }
+    },
+    {
+      "id": "q-048",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Yếu tố nào sau đây được coi là \"thước đo quan trọng về sự phát triển chất lượng của giai cấp công nhân hiện đại\"?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tỷ lệ tham gia các cuộc bãi công."
+          },
+          {
+            "key": "B",
+            "text": "Trình độ học vấn, tay nghề, bậc thợ, văn hóa sản xuất và văn hóa lao động đáp ứng yêu cầu của kinh tế tri thức."
+          },
+          {
+            "key": "C",
+            "text": "Mức độ bất mãn với giới chủ."
+          },
+          {
+            "key": "D",
+            "text": "Số lượng các công đoàn độc lập được thành lập."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Trong thời đại 4.0 và kinh tế tri thức, chất lượng GCCN được đo đếm bằng năng lực trí tuệ, trình độ chuyên môn kỹ thuật và tác phong công nghiệp."
+      },
+      "source": {
+        "ref": "Câu 48"
+      },
+      "enrichment": {
+        "text": "Cách mạng công nghiệp 4.0 (thuật ngữ xuất hiện từ Hội chợ Hannover, Đức, 2011) đòi hỏi công nhân có học vấn, tay nghề, kỹ năng số, văn hóa lao động cao, nên các tiêu chí này là thước đo chất lượng."
+      }
+    },
+    {
+      "id": "q-049",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Theo chủ nghĩa Mác - Lênin, bạo lực cách mạng của giai cấp công nhân nhằm mục đích gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Trấn áp vĩnh viễn mọi giai cấp khác."
+          },
+          {
+            "key": "B",
+            "text": "Lật đổ quyền thống trị của giai cấp tư sản, giành chính quyền về tay giai cấp công nhân."
+          },
+          {
+            "key": "C",
+            "text": "Khủng bố nhân dân lao động."
+          },
+          {
+            "key": "D",
+            "text": "Xóa bỏ mọi nền văn hóa truyền thống."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Bạo lực cách mạng (cách mạng vô sản) là công cụ, phương pháp tất yếu để đánh đổ bộ máy bạo lực của giai cấp bóc lột, thiết lập chính quyền của nhân dân."
+      },
+      "source": {
+        "ref": "Câu 49"
+      },
+      "enrichment": {
+        "text": "Mác gọi bạo lực là “bà đỡ” của xã hội mới đang thai nghén trong lòng xã hội cũ. Mục đích của bạo lực cách mạng là đánh đổ bộ máy nhà nước của giai cấp bóc lột; Lênin cũng không loại trừ khả năng chuyển biến hòa bình khi có điều kiện."
+      }
+    },
+    {
+      "id": "q-050",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Trong Cương lĩnh của Đảng, lợi ích của giai cấp công nhân Việt Nam được đánh giá như thế nào so với lợi ích của dân tộc?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Đối lập hoàn toàn."
+          },
+          {
+            "key": "B",
+            "text": "Lợi ích của giai cấp công nhân đứng trên lợi ích dân tộc."
+          },
+          {
+            "key": "C",
+            "text": "Gắn bó mật thiết, thống nhất cơ bản với lợi ích của nhân dân lao động và của toàn dân tộc."
+          },
+          {
+            "key": "D",
+            "text": "Không liên quan gì đến lợi ích dân tộc."
+          }
+        ],
+        "answer": "C",
+        "explanation": "Đảng ta luôn khẳng định GCCN là giai cấp đại biểu cho lợi ích của chính mình, đồng thời đại biểu trung thành cho lợi ích của nhân dân lao động và của cả dân tộc Việt Nam."
+      },
+      "source": {
+        "ref": "Câu 50"
+      },
+      "enrichment": {
+        "text": "Cương lĩnh và Điều lệ Đảng xác định Đảng là đội tiên phong của giai cấp công nhân, đồng thời là đội tiên phong của nhân dân lao động và của dân tộc Việt Nam; lợi ích giai cấp công nhân thống nhất cơ bản với lợi ích dân tộc."
+      }
+    }
+  ]
+}
