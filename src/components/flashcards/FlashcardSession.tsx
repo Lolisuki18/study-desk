@@ -317,7 +317,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [go, grade, cur, handleToggleBookmark, handleFlip, pick, done])
+  }, [go, grade, cur, handleToggleBookmark, handleFlip, pick, done, flipped])
 
   const toggleSound = () => {
     const next = !sound
@@ -552,10 +552,10 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
             <div className="flex flex-1 flex-col justify-center">{backContent}</div>
             <div className="mt-6 flex items-center justify-center gap-1.5 text-[11px] font-medium text-muted">
               <span>Đánh giá:</span>
-              <kbd className="rounded-md bg-rose-50 dark:bg-rose-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-rose-600 dark:text-rose-300">U Quên</kbd>
-              <kbd className="rounded-md bg-amber-50 dark:bg-amber-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-amber-700 dark:text-amber-300">H Khó</kbd>
-              <kbd className="rounded-md bg-emerald-50 dark:bg-emerald-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700 dark:text-emerald-300">K Được</kbd>
-              <kbd className="rounded-md bg-sky-50 dark:bg-sky-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-sky-700 dark:text-sky-300">E Dễ</kbd>
+              <kbd className="rounded-md bg-rose-50 dark:bg-rose-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-rose-600 dark:text-rose-300">1 Quên</kbd>
+              <kbd className="rounded-md bg-amber-50 dark:bg-amber-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-amber-700 dark:text-amber-300">2 Khó</kbd>
+              <kbd className="rounded-md bg-emerald-50 dark:bg-emerald-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700 dark:text-emerald-300">3 Được</kbd>
+              <kbd className="rounded-md bg-sky-50 dark:bg-sky-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-sky-700 dark:text-sky-300">4 Dễ</kbd>
             </div>
           </div>
         </div>

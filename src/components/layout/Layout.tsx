@@ -249,7 +249,7 @@ export default function Layout() {
 
         {/* Main Content Area */}
         <main className="min-w-0 flex-1 px-4 py-6 md:px-8 md:py-8 pb-24 md:pb-8">
-          <div className="mx-auto max-w-4xl">{loaded ? <Outlet /> : <p className="text-sm text-slate-500 dark:text-muted">Đang nạp dữ liệu…</p>}</div>
+          <div className="mx-auto max-w-5xl">{loaded ? <Outlet /> : <p className="text-sm text-slate-500 dark:text-muted">Đang nạp dữ liệu…</p>}</div>
         </main>
 
         {/* Modern Mobile Bottom Navigation Bar */}
