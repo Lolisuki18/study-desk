@@ -23,16 +23,18 @@ export default function DailyGoal() {
   }
 
   return (
-    <Card className="mt-3 p-4">
+    <Card className="p-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-2 text-sm font-medium">
-          <Target size={17} className="text-muted" /> Mục tiêu hôm nay
+        <div className="flex items-center gap-2 text-sm font-bold text-slate-800 dark:text-ink">
+          <Target size={18} className="text-indigo-600 dark:text-indigo-400" />
+          <span>Mục tiêu hôm nay</span>
         </div>
         <div className="flex items-center gap-4 text-sm">
-          <span className="inline-flex items-center gap-1 font-semibold" title="Số ngày học liên tiếp">
-            <Flame size={16} className={current ? 'fill-orange-400 text-orange-500' : 'text-muted'} /> {current} ngày liên tiếp
+          <span className="inline-flex items-center gap-1.5 font-bold text-amber-700 dark:text-amber-400" title="Số ngày học liên tiếp">
+            <Flame size={16} className={current ? 'fill-amber-500 text-amber-500' : 'text-slate-400'} />
+            <span>{current} ngày liên tiếp</span>
           </span>
-          <label className="flex items-center gap-1.5 text-xs text-muted">
+          <label className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-muted font-medium">
             Chỉ tiêu
             <input
               type="number"
@@ -40,29 +42,30 @@ export default function DailyGoal() {
               max={999}
               value={goal}
               onChange={(e) => change(Number(e.target.value))}
-              className="w-16 rounded-lg border border-line bg-card px-2 py-1 text-right text-sm text-ink"
+              className="w-16 rounded-xl border border-slate-200 dark:border-line bg-card px-2.5 py-1 text-right text-xs font-bold text-slate-800 dark:text-ink outline-none focus:border-indigo-500"
               aria-label="Số câu cần học mỗi ngày"
             />
             câu/ngày
           </label>
         </div>
       </div>
-      <ProgressBar value={(done / goal) * 100} className="mt-3" />
-      <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-sm">
-        <span>
+      <ProgressBar value={(done / goal) * 100} className="mt-3.5 h-2.5" />
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-sm">
+        <span className="text-xs text-slate-600 dark:text-muted">
           {left > 0 ? (
             <>
-              Đã học <b>{done}</b> / {goal} câu, còn <b>{left}</b> câu nữa
+              Đã học <b className="text-slate-900 dark:text-white font-bold">{done}</b> / {goal} câu, còn <b className="text-indigo-600 font-bold">{left}</b> câu nữa.
             </>
           ) : (
-            <span className="font-medium text-ok">Đã đạt mục tiêu hôm nay: {done} câu 🎉</span>
+            <span className="font-bold text-emerald-600 dark:text-emerald-400">Đã đạt mục tiêu hôm nay: {done} câu 🎉</span>
           )}
         </span>
         <Link
           to="/today"
-          className="inline-flex items-center gap-1.5 rounded-xl bg-ink px-4 py-2 text-sm font-bold text-white shadow-2xs transition hover:bg-slate-800 active:scale-[0.98]"
+          className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all active:scale-[0.98]"
         >
-          <Play size={15} /> Học hôm nay{summary.needReview > 0 ? ` · ${summary.needReview} thẻ cần ôn` : ''}
+          <Play size={13} fill="white" />
+          <span>Học hôm nay{summary.needReview > 0 ? ` · ${summary.needReview} thẻ cần ôn` : ''}</span>
         </Link>
       </div>
     </Card>

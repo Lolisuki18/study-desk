@@ -37,7 +37,6 @@ export default function ExamPlan() {
       const [y, m, d] = dates[subject].split('-').map(Number)
       const exam = new Date(y, m - 1, d)
       const daysLeft = Math.round((exam.getTime() - today.getTime()) / DAY)
-      // distinct items of this subject touched today
       const ids = new Set(collections.filter((c) => c.subject === subject).map((c) => c.id))
       const doneToday = new Set(activity.filter((a) => ids.has(a.collectionId) && dayKey(a.ts) === todayKey).map((a) => `${a.collectionId}::${a.itemId}`)).size
       const perDay = daysLeft > 0 ? Math.ceil(notMastered / daysLeft) : notMastered
@@ -46,33 +45,36 @@ export default function ExamPlan() {
     .sort((a, b) => a.daysLeft - b.daysLeft)
 
   return (
-    <section className="mt-8">
-      <div className="mb-3 flex items-center justify-between">
-        <h2 className="flex items-center gap-2 text-lg font-semibold">
-          <Target size={18} className="text-muted" /> Kế hoạch ôn thi
+    <section>
+      <div className="mb-3.5 flex items-center justify-between">
+        <h2 className="flex items-center gap-2 text-base font-bold text-slate-800 dark:text-ink">
+          <Target size={18} className="text-indigo-600 dark:text-indigo-400" /> Kế hoạch ngày thi
         </h2>
-        <button onClick={() => setEditing((e) => !e)} className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted hover:text-ink">
+        <button
+          onClick={() => setEditing((e) => !e)}
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
+        >
           <CalendarDays size={14} /> {editing || !rows.length ? 'Xong' : 'Đặt / sửa ngày thi'}
         </button>
       </div>
 
       {(editing || !rows.length) && (
-        <Card className="mb-3 p-4">
-          <p className="mb-3 text-sm text-muted">Chọn ngày thi của từng môn, app sẽ tự chia số câu cần học mỗi ngày.</p>
-          <div className="grid grid-cols-2 gap-3">
+        <Card className="mb-4 p-5">
+          <p className="mb-3 text-xs text-slate-500 dark:text-muted">Chọn ngày thi của từng môn để hệ thống tự tính số câu cần học mỗi ngày.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {subjects.map((s) => (
-              <label key={s} className="flex items-center justify-between gap-3 text-sm">
+              <label key={s} className="flex items-center justify-between gap-3 text-xs font-semibold text-slate-700 dark:text-slate-200">
                 <span className="min-w-0 truncate">{s}</span>
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1.5">
                   <input
                     type="date"
                     value={dates[s] ?? ''}
                     min={dayKey(new Date())}
                     onChange={(e) => setDate(s, e.target.value)}
-                    className="rounded-lg border border-line bg-card px-2 py-1 text-sm"
+                    className="rounded-xl border border-slate-200 dark:border-line bg-card px-2.5 py-1 text-xs text-ink outline-none focus:border-indigo-500 cursor-pointer"
                   />
                   {dates[s] && (
-                    <button onClick={() => setDate(s, '')} className="text-xs text-muted hover:text-err" title="Xoá ngày thi">
+                    <button onClick={() => setDate(s, '')} className="text-xs text-slate-400 hover:text-rose-600 cursor-pointer" title="Xoá ngày thi">
                       ✕
                     </button>
                   )}
@@ -83,47 +85,49 @@ export default function ExamPlan() {
         </Card>
       )}
 
-      <div className="grid grid-cols-2 gap-3">
-        {rows.map((r) => {
-          const left = Math.max(0, r.perDay - r.doneToday)
-          const over = r.daysLeft < 0
-          return (
-            <Card key={r.subject} className="p-4">
-              <div className="flex items-baseline justify-between gap-2">
-                <div className="min-w-0 truncate font-medium">{r.subject}</div>
-                <div className={`shrink-0 text-xs font-semibold ${r.daysLeft <= 3 && !over ? 'text-err' : 'text-muted'}`}>
-                  {over ? 'Đã qua ngày thi' : r.daysLeft === 0 ? 'Thi hôm nay' : `Còn ${r.daysLeft} ngày`}
+      {rows.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+          {rows.map((r) => {
+            const left = Math.max(0, r.perDay - r.doneToday)
+            const over = r.daysLeft < 0
+            return (
+              <Card key={r.subject} className="p-5">
+                <div className="flex items-baseline justify-between gap-2">
+                  <div className="min-w-0 truncate font-bold text-slate-900 dark:text-white text-sm">{r.subject}</div>
+                  <div className={`shrink-0 text-xs font-bold ${r.daysLeft <= 3 && !over ? 'text-rose-600' : 'text-slate-500 dark:text-muted'}`}>
+                    {over ? 'Đã qua ngày thi' : r.daysLeft === 0 ? 'Thi hôm nay' : `Còn ${r.daysLeft} ngày`}
+                  </div>
                 </div>
-              </div>
-              {over ? (
-                <p className="mt-2 text-sm text-muted">Hãy đặt lại ngày thi mới nếu cần.</p>
-              ) : (
-                <>
-                  <div className="mt-2 text-sm">
-                    {left > 0 ? (
-                      <>
-                        Hôm nay cần học thêm <b className="text-lg">{left}</b> câu
-                      </>
-                    ) : (
-                      <span className="font-medium text-ok">Đã đủ chỉ tiêu hôm nay 🎉</span>
-                    )}
-                  </div>
-                  <ProgressBar value={r.perDay ? (r.doneToday / r.perDay) * 100 : 100} className="mt-2" />
-                  <div className="mt-2 flex justify-between text-xs text-muted">
-                    <span>
-                      Chỉ tiêu {r.perDay}/ngày · đã làm {r.doneToday}
-                    </span>
-                    <span>
-                      Chưa thuộc {r.notMastered}/{r.total}
-                      {r.due > 0 ? ` · ${r.due} đến hạn ôn` : ''}
-                    </span>
-                  </div>
-                </>
-              )}
-            </Card>
-          )
-        })}
-      </div>
+                {over ? (
+                  <p className="mt-2 text-xs text-muted">Hãy đặt lại ngày thi mới nếu cần.</p>
+                ) : (
+                  <>
+                    <div className="mt-2.5 text-xs text-slate-600 dark:text-muted">
+                      {left > 0 ? (
+                        <>
+                          Hôm nay cần học thêm <b className="text-sm font-black text-indigo-600 dark:text-indigo-400">{left}</b> câu.
+                        </>
+                      ) : (
+                        <span className="font-bold text-emerald-600 dark:text-emerald-400">Đã đủ chỉ tiêu hôm nay 🎉</span>
+                      )}
+                    </div>
+                    <ProgressBar value={r.perDay ? (r.doneToday / r.perDay) * 100 : 100} className="mt-2 h-2" />
+                    <div className="mt-2 flex justify-between text-[11px] text-slate-500 dark:text-muted font-medium">
+                      <span>
+                        Chỉ tiêu {r.perDay}/ngày · đã làm {r.doneToday}
+                      </span>
+                      <span>
+                        Chưa thuộc {r.notMastered}/{r.total}
+                        {r.due > 0 ? ` · ${r.due} cần ôn` : ''}
+                      </span>
+                    </div>
+                  </>
+                )}
+              </Card>
+            )
+          })}
+        </div>
+      ) : null}
     </section>
   )
 }

@@ -12,15 +12,20 @@ export default function BackupNotice() {
   const b = useAutoBackup()
   if (!progress.size) return null
 
-  const box = 'mt-3 flex flex-wrap items-center gap-3 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900'
+  const box = 'flex flex-wrap items-center gap-3 rounded-2xl border border-amber-200/80 dark:border-amber-900/60 bg-amber-50/60 dark:bg-amber-950/30 px-4 py-3 text-xs sm:text-sm text-amber-900 dark:text-amber-200 shadow-2xs'
 
   if (b.enabled && b.needsPermission)
     return (
       <div className={box}>
-        <ShieldAlert size={17} className="shrink-0 text-amber-600" />
-        <span className="min-w-0 flex-1">Sao lưu tự động vào “{b.fileName}” đang tạm dừng vì trình duyệt cần bạn cho phép ghi file lại.</span>
-        <button onClick={() => void grantAutoBackup(exportBackup())} className="rounded-lg bg-amber-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-amber-700">
-          Cho phép
+        <ShieldAlert size={18} className="shrink-0 text-amber-600 dark:text-amber-400" />
+        <span className="min-w-0 flex-1 leading-relaxed">
+          Sao lưu tự động vào “<b className="font-bold">{b.fileName}</b>” đang tạm dừng vì trình duyệt cần bạn cấp lại quyền ghi file.
+        </span>
+        <button
+          onClick={() => void grantAutoBackup(exportBackup())}
+          className="rounded-xl bg-amber-500 hover:bg-amber-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs transition-colors cursor-pointer"
+        >
+          Cấp quyền
         </button>
       </div>
     )
@@ -30,12 +35,15 @@ export default function BackupNotice() {
   if (age !== null && age < STALE_DAYS) return null
   return (
     <div className={box}>
-      <ShieldAlert size={17} className="shrink-0 text-amber-600" />
-      <span className="min-w-0 flex-1">
-        {age === null ? 'Tiến độ học chưa được sao lưu lần nào.' : `Đã ${age} ngày chưa sao lưu tiến độ.`} Dữ liệu chỉ nằm trong trình duyệt này.
+      <ShieldAlert size={18} className="shrink-0 text-amber-600 dark:text-amber-400" />
+      <span className="min-w-0 flex-1 leading-relaxed">
+        {age === null ? 'Tiến độ học chưa được sao lưu lần nào.' : `Đã ${age} ngày chưa sao lưu tiến độ.`} Dữ liệu hiện chỉ nằm an toàn trong trình duyệt này.
       </span>
-      <Link to="/settings" className="rounded-lg bg-amber-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-amber-700">
-        Sao lưu
+      <Link
+        to="/settings"
+        className="rounded-xl bg-amber-500 hover:bg-amber-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs transition-colors cursor-pointer"
+      >
+        Sao lưu ngay
       </Link>
     </div>
   )
