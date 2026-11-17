@@ -1,4 +1,4 @@
-import type { ProgressRecord } from '../../types'
+import type { Grade, ProgressRecord } from '../../types'
 
 /** Leitner boxes. Index = box level, value = days until next review after reaching that box. */
 export const INTERVAL_DAYS = [0, 1, 3, 7, 14, 30]
@@ -21,15 +21,23 @@ export function emptyProgress(collectionId: string, itemId: string): ProgressRec
   }
 }
 
-/** Apply a right / wrong outcome using Leitner rules. Pure function. */
+/**
+ * Apply a right / wrong outcome using Leitner rules. Pure function.
+ * An optional self-rated `grade` refines a remembered card: `hard` stays in its box and comes back after
+ * half the box interval, `good` moves up one box, `easy` moves up two. `again` is the same as a wrong answer.
+ * When `grade` is given it decides the outcome; otherwise `correct` does (good / again).
+ */
 export function applyResult(
   p: ProgressRecord,
   correct: boolean,
-  opts: { now?: Date; clearReview?: boolean } = {},
+  opts: { now?: Date; clearReview?: boolean; grade?: Grade } = {},
 ): ProgressRecord {
   const now = opts.now ?? new Date()
-  if (correct) {
-    const level = Math.min(MAX_LEVEL, p.level + 1)
+  const grade: Grade = opts.grade ?? (correct ? 'good' : 'again')
+  if (grade !== 'again') {
+    const step = grade === 'easy' ? 2 : grade === 'hard' ? 0 : 1
+    const level = Math.min(MAX_LEVEL, Math.max(1, p.level + step))
+    const days = grade === 'hard' ? Math.max(1, Math.floor(INTERVAL_DAYS[level] / 2)) : INTERVAL_DAYS[level]
     return {
       ...p,
       status: 'known',
@@ -37,7 +45,7 @@ export function applyResult(
       correct: p.correct + 1,
       lastResult: 'correct',
       lastStudied: now.toISOString(),
-      nextReview: new Date(now.getTime() + INTERVAL_DAYS[level] * DAY).toISOString(),
+      nextReview: new Date(now.getTime() + days * DAY).toISOString(),
       review: opts.clearReview ? false : p.review,
     }
   }
@@ -65,7 +73,8 @@ export function reviewReasons(p?: ProgressRecord, now = new Date()): ReviewReaso
   if (p.status === 'unknown') r.push('unknown')
   if (p.lastResult === 'incorrect') r.push('incorrect')
   if (p.review) r.push('marked')
-  if (isDue(p, now) && !isMastered(p)) r.push('due')
+  // Mastered cards come back too once their box interval has passed; otherwise boxes 3–5 would never be reviewed.
+  if (isDue(p, now)) r.push('due')
   return r
 }
 

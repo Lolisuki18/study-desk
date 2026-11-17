@@ -33,6 +33,11 @@ Quiz types are derived automatically (MC items → MC; vocabulary with examples 
 ## Extra question banks
 `scripts/import-quiz-bank.mjs` builds the MLN131 / VNR202 banks from `docs/source-bank-*.json`; textbook cross-check notes come from
 `docs/enrichment-bank-*.json`. Report and method: `docs/doi-chieu-giao-trinh.md`. `scripts/crosscheck.mjs` is a triage tool, not proof.
+`npm run import:mln131-full` rebuilds `cnxhkh/mln131-full.json` from `docs/source-mln131-full.json`: all 360 questions, as the learner
+asked, although ~310 of them also exist in the other CNXHKH collections (a deliberate exception to "don't duplicate"). It also writes
+the overlap / answer-conflict report `docs/mln131-full-doi-chieu.md`. Item ids are the position in the source file, so keep the source
+order when updating it. The collection is marked `"standalone": true`: such a deck is studied on its own and is left out of the
+subject-wide mock exam (`/exam`) and the readiness estimate (`examCollections` in `src/data/index.ts`); it still counts everywhere else.
 
 ## Rules
 - NEVER silently change original questions/answers. Copy verbatim; keep source wording.
@@ -45,12 +50,33 @@ Quiz types are derived automatically (MC items → MC; vocabulary with examples 
 
 ## Progress / SRS
 `src/services/review/srs.ts`: Leitner boxes 1–5 (1,3,7,14,30 days). Correct → up a box; wrong → box 1 and due now.
-Mastered = known and box ≥ 2 (two correct rounds in a row). Backup/restore of progress: Settings → Export / Restore.
+Flashcards are self-rated in 4 grades: Quên (= wrong) · Khó (same box, half interval) · Được (+1 box) · Dễ (+2 boxes).
+Mastered = known and box ≥ 2 (two correct rounds in a row). A card is due again when its interval passes, mastered or not.
+Personal notes (`notes` store) are keyed like progress and never written into collection content.
+Backup/restore of progress + notes: Settings → Export / Restore, or automatic backup to a chosen file (Chrome/Edge only).
+
+## Features beyond flashcards / quiz
+Mock exam per subject (`/exam`, chapters mixed in proportion; chapter = "Chương N" in the collection title, see
+`src/services/quiz/exam.ts`) · wrong-answer notebook (`/mistakes`) · global search (`/search`, `src/utils/search.ts`) ·
+daily goal, streak, heatmap, due forecast, estimated study time (`src/services/stats.ts`) ·
+"Học hôm nay" (`/today`, `src/services/review/today.ts`: due → wrong → new cards up to the daily goal) ·
+learn-until-known in `FlashcardSession` (a wrong card is re-queued 3 cards later; a repeat only earns the `hard` grade) ·
+exam readiness estimate (`src/services/readiness.ts`; the recall figures per box are assumptions, keep the on-screen caveat) ·
+Pomodoro (`src/services/pomodoro.ts`, state + log in localStorage) · print sheet on `/mistakes` (`print:` classes).
+
+## Dark theme
+`html.dark` (set by `src/services/theme.ts`) remaps the palette variables at the end of `src/index.css`; components keep their
+light classes. When adding a new colour shade, check it in dark mode and add it to that block if it reads badly.
+
+## PWA / offline
+`public/manifest.webmanifest` + icons (`node scripts/make-icons.mjs` regenerates the PNGs). `vite build` writes `dist/sw.js`
+from `scripts/sw-template.js` (plugin in `vite.config.ts`); it precaches every built file. The service worker is registered
+only in production builds, so test offline with `npm run build && npm run preview`, not `npm run dev`.
 
 ## Layout
-`src/data` loader + collections · `src/services/{storage,review,quiz}` · `src/features/learning` progress store ·
+`src/data` loader + collections · `src/services/{storage,review,quiz}`, `src/services/stats.ts` · `src/features/learning` progress store ·
 `src/components/{layout,flashcards,quiz,dashboard,ui}` · `src/pages` routes · `src/types`, `src/utils`.
 
 ## Commands
-`npm run dev` · `npm test` · `npm run build` · `npm run import:cnxhkh` / `npm run import:history` (regenerate the Lịch sử Đảng collections from `docs/`;
+`npm run dev` · `npm test` · `npm run build` · `npm run preview` (serve the built app, with offline support) · `npm run import:cnxhkh` / `npm run import:history` (regenerate the Lịch sử Đảng collections from `docs/`;
 NOTE: it overwrites those two JSON files).

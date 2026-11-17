@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowLeftRight,
   Bookmark,
+  Repeat,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -12,13 +13,15 @@ import {
   Sparkles,
   X,
 } from 'lucide-react'
-import type { Entry, Status } from '../../types'
+import type { Entry, Grade, Status } from '../../types'
+import NoteBox from '../ui/NoteBox'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { Button, Card, Empty, ProgressBar } from '../ui'
 import { CardBack, CardFront } from './CardContent'
 import { shuffle, cx } from '../../utils'
 import { isMulti, sameKeys, toggleKey } from '../../utils/answers'
-import { loadSettings } from '../../services/storage/settings'
+import { Link } from 'react-router-dom'
+import { loadSettings, saveSettings } from '../../services/storage/settings'
 
 type Filter = 'all' | Status | 'review'
 const FILTERS: { v: Filter; label: string }[] = [
@@ -29,18 +32,57 @@ const FILTERS: { v: Filter; label: string }[] = [
   { v: 'review', label: 'Cần ôn lại' },
 ]
 
+const GRADES: { g: Grade; label: string; hint: string; k: string; cls: string; icon?: typeof Check }[] = [
+  { g: 'again', label: 'Quên', hint: 'Chưa nhớ: về hộp 1, ôn lại ngay', k: 'U', cls: 'bg-rose-100 text-rose-700 hover:bg-rose-200', icon: X },
+  { g: 'hard', label: 'Khó', hint: 'Nhớ nhưng chật vật: giữ nguyên hộp, ôn lại sớm hơn', k: 'H', cls: 'bg-amber-100 text-amber-800 hover:bg-amber-200' },
+  { g: 'good', label: 'Được', hint: 'Nhớ đúng: lên 1 hộp', k: 'K', cls: 'bg-emerald-500 text-white shadow-md shadow-emerald-200 hover:bg-emerald-600', icon: Check },
+  { g: 'easy', label: 'Dễ', hint: 'Nhớ ngay lập tức: lên 2 hộp', k: 'E', cls: 'bg-sky-100 text-sky-800 hover:bg-sky-200' },
+]
+
+/** learn-until-known: a card answered wrong comes back this many cards later */
+const REQUEUE_GAP = 3
+type Slot = { e: Entry; repeat: boolean }
+
 interface Props {
   entries: Entry[]
   /** 'review' mode keeps the given order, hides filters and clears the review flag on success */
   mode?: 'study' | 'review'
+  /** study mode: remember the deck order and the current card under this key, so the next visit resumes there */
+  resumeKey?: string
 }
 
-export default function FlashcardSession({ entries, mode = 'study' }: Props) {
+/** Where the learner stopped: the deck order (item keys), the filter and the current card. */
+interface Resume {
+  filter: Filter
+  shuffled: boolean
+  keys: string[]
+  cur: string
+}
+const resumeStorageKey = (k: string) => `psh.flashcards.resume.${k}`
+const entryKey = (e: Entry) => `${e.collection.id}::${e.item.id}`
+
+function loadResume(resumeKey: string | undefined, entries: Entry[]): Resume | null {
+  if (!resumeKey) return null
+  try {
+    const r = JSON.parse(localStorage.getItem(resumeStorageKey(resumeKey)) ?? 'null') as Resume | null
+    if (!r || !Array.isArray(r.keys) || !r.keys.length) return null
+    const known = new Set(entries.map(entryKey))
+    // content changed (cards removed): the saved order is no longer reliable
+    return r.keys.every((k) => known.has(k)) && r.keys.includes(r.cur) ? r : null
+  } catch {
+    return null
+  }
+}
+
+export default function FlashcardSession({ entries, mode = 'study', resumeKey }: Props) {
   const { get, record, toggleReview } = useProgress()
-  const [filter, setFilter] = useState<Filter>('all')
-  const [shuffled, setShuffled] = useState(() => mode === 'study' && loadSettings().shuffleFlashcards)
+  const useResume = mode === 'study' ? resumeKey : undefined
+  // restored once; any change of filter / shuffle / restart drops it and builds a fresh deck
+  const [resume, setResume] = useState<Resume | null>(() => loadResume(useResume, entries))
+  const [filter, setFilter] = useState<Filter>(() => resume?.filter ?? 'all')
+  const [shuffled, setShuffled] = useState(() => resume?.shuffled ?? (mode === 'study' && loadSettings().shuffleFlashcards))
   const [seed, setSeed] = useState(0)
-  const [idx, setIdx] = useState(0)
+  const [idx, setIdx] = useState(() => (resume ? Math.max(0, resume.keys.indexOf(resume.cur)) : 0))
   const [flipped, setFlipped] = useState(false)
   const [inverted, setInverted] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
@@ -50,6 +92,10 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
 
   // The deck is a snapshot: changing a card's status must not make it vanish mid-session.
   const deck = useMemo(() => {
+    if (resume) {
+      const byKey = new Map(entries.map((e) => [entryKey(e), e]))
+      return resume.keys.map((k) => byKey.get(k)!)
+    }
     let list = entries
     if (filter !== 'all')
       list = list.filter((e) => {
@@ -59,14 +105,25 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
       })
     return shuffled ? shuffle(list) : list
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [entries, filter, shuffled, seed])
+  }, [entries, filter, shuffled, seed, resume])
+
+  // The running order starts as the deck; in learn-until-known mode wrong cards are re-inserted further down.
+  const [learn, setLearn] = useState(() => loadSettings().learnUntilKnown)
+  const [order, setOrder] = useState<Slot[]>(() => deck.map((e) => ({ e, repeat: false })))
+  const [repeats, setRepeats] = useState(0)
+  const [done, setDone] = useState(false)
 
   useEffect(() => {
-    setIdx(0)
+    setIdx(resume ? Math.max(0, resume.keys.indexOf(resume.cur)) : 0)
     setFlipped(false)
+    setOrder(deck.map((e) => ({ e, repeat: false })))
+    setRepeats(0)
+    setDone(false)
   }, [deck])
 
-  const cur = deck[idx]
+  const slot = order[idx]
+  const cur = slot?.e
+  const isRepeat = !!slot?.repeat
   const p = cur ? get(cur.collection.id, cur.item.id) : undefined
 
   // Answers picked directly on multiple-choice cards. A pick is graded once; Known/Unknown then only moves on.
@@ -77,19 +134,48 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
     setPicks({})
     setDrafts({})
   }, [deck])
-  const pickKey = cur ? `${cur.collection.id}::${cur.item.id}` : ''
+  // Remember where the learner is (study mode only); cleared when the deck is finished.
+  const curKey = cur ? entryKey(cur) : ''
+  useEffect(() => {
+    if (!useResume) return
+    try {
+      if (done || !curKey) localStorage.removeItem(resumeStorageKey(useResume))
+      else {
+        const r: Resume = { filter, shuffled, keys: deck.map(entryKey), cur: curKey }
+        localStorage.setItem(resumeStorageKey(useResume), JSON.stringify(r))
+      }
+    } catch {
+      /* storage unavailable: just don't resume */
+    }
+  }, [useResume, done, curKey, filter, shuffled, deck])
+
+  const pickKey = cur ? `${idx}::${cur.collection.id}::${cur.item.id}` : ''
   const picked = picks[pickKey]
+  /** Put the current card back into the queue a few cards later. Returns whether it was re-queued. */
+  const requeue = useCallback(() => {
+    if (!learn || !cur) return false
+    setOrder((o) => {
+      const at = Math.min(o.length, idx + 1 + REQUEUE_GAP)
+      return [...o.slice(0, at), { e: cur, repeat: true }, ...o.slice(at)]
+    })
+    setRepeats((n) => n + 1)
+    return true
+  }, [learn, cur, idx])
+
   const commitPick = useCallback(
     (keys: string) => {
       if (!cur || cur.item.type !== 'multiple-choice') return
+      const correct = sameKeys(keys, cur.item.content.answer)
       setPicks((s) => ({ ...s, [pickKey]: keys }))
       record(
-        [{ collectionId: cur.collection.id, itemId: cur.item.id, correct: sameKeys(keys, cur.item.content.answer) }],
+        // a card that already failed in this session only earns "hard": right after a miss is not real recall
+        [{ collectionId: cur.collection.id, itemId: cur.item.id, correct, grade: correct && isRepeat ? 'hard' : undefined }],
         mode === 'review' ? 'review' : 'flashcard',
         { clearReview: mode === 'review' },
       )
+      if (!correct) requeue()
     },
-    [cur, pickKey, record, mode],
+    [cur, pickKey, record, mode, isRepeat, requeue],
   )
   const pick = useCallback(
     (key: string) => {
@@ -106,38 +192,47 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
   const go = useCallback(
     (d: number) => {
       setFlipped(false)
-      setIdx((i) => Math.min(deck.length - 1, Math.max(0, i + d)))
+      setIdx((i) => Math.min(order.length - 1, Math.max(0, i + d)))
     },
-    [deck.length],
+    [order.length],
   )
 
   const grade = useCallback(
-    (correct: boolean) => {
+    (g: Grade) => {
       if (!cur) return
+      const last = idx >= order.length - 1
       if (picks[pickKey] !== undefined) {
-        go(1) // already graded by the pick: don't count the same card twice
+        // already graded by the pick: don't count the same card twice
+        if (last) setDone(true)
+        else go(1)
         return
       }
       record(
-        [{ collectionId: cur.collection.id, itemId: cur.item.id, correct }],
+        [{ collectionId: cur.collection.id, itemId: cur.item.id, correct: g !== 'again', grade: g !== 'again' && isRepeat ? 'hard' : g }],
         mode === 'review' ? 'review' : 'flashcard',
         { clearReview: mode === 'review' },
       )
-      go(1)
+      const grew = g === 'again' && requeue()
+      setFlipped(false)
+      if (last && !grew) setDone(true)
+      else setIdx((i) => i + 1) // the queue is at least one longer than idx here
     },
-    [cur, record, go, mode, picks, pickKey],
+    [cur, record, go, mode, picks, pickKey, idx, order.length, isRepeat, requeue],
   )
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement)?.closest('input,textarea,select')) return
+      if (done || (e.target as HTMLElement | null)?.closest?.('input,textarea,select')) return
       if (e.key === 'ArrowRight') go(1)
       else if (e.key === 'ArrowLeft') go(-1)
       else if (e.key === ' ' || e.key === 'Enter') {
         e.preventDefault()
         setFlipped((f) => !f)
-      } else if (e.key === 'k' || e.key === 'K') grade(true)
-      else if (e.key === 'u' || e.key === 'U') grade(false)
+      } else if (e.ctrlKey || e.metaKey || e.altKey) return
+      else if (e.key === 'k' || e.key === 'K') grade('good')
+      else if (e.key === 'u' || e.key === 'U') grade('again')
+      else if (e.key === 'h' || e.key === 'H') grade('hard')
+      else if (e.key === 'e' || e.key === 'E') grade('easy')
       else if (cur?.item.type === 'multiple-choice' && /^[1-4a-dA-D]$/.test(e.key)) {
         const opts = cur.item.content.options
         const idx = /\d/.test(e.key) ? Number(e.key) - 1 : e.key.toLowerCase().charCodeAt(0) - 97
@@ -152,7 +247,7 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [go, grade, cur, toggleReview, pick])
+  }, [go, grade, cur, toggleReview, pick, done])
 
   const pill = (active: boolean) =>
     cx(
@@ -167,7 +262,10 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
           <>
             <select
               value={filter}
-              onChange={(e) => setFilter(e.target.value as Filter)}
+              onChange={(e) => {
+                setResume(null)
+                setFilter(e.target.value as Filter)
+              }}
               className="rounded-xl bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 outline-none hover:bg-slate-100"
               aria-label="Lọc theo trạng thái"
             >
@@ -180,6 +278,7 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
             <button
               className={pill(shuffled)}
               onClick={() => {
+                setResume(null)
                 setShuffled((s) => !s)
                 setSeed((s) => s + 1)
               }}
@@ -187,7 +286,14 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
               <Shuffle size={13} /> Trộn thẻ
             </button>
             {shuffled && (
-              <button className={pill(false)} onClick={() => setSeed((s) => s + 1)} title="Trộn lại">
+              <button
+                className={pill(false)}
+                onClick={() => {
+                  setResume(null)
+                  setSeed((s) => s + 1)
+                }}
+                title="Trộn lại"
+              >
                 <RotateCcw size={13} />
               </button>
             )}
@@ -196,6 +302,16 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
             </button>
           </>
         )}
+        <button
+          className={pill(learn)}
+          onClick={() => {
+            saveSettings({ ...loadSettings(), learnUntilKnown: !learn })
+            setLearn(!learn)
+          }}
+          title="Thẻ trả lời sai sẽ quay lại sau vài thẻ, lặp đến khi bạn nhớ mới xong phiên"
+        >
+          <Repeat size={13} /> Học đến khi thuộc
+        </button>
       </div>
 
       <div className="flex items-center gap-1.5">
@@ -207,13 +323,41 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
           <HelpCircle size={16} />
         </button>
         <span className="rounded-xl bg-slate-900 px-3 py-1.5 font-mono text-xs font-bold text-white">
-          {deck.length ? `${idx + 1} / ${deck.length}` : '0 / 0'}
+          {order.length ? `${Math.min(idx + 1, order.length)} / ${order.length}` : '0 / 0'}
         </span>
       </div>
     </div>
   )
 
-  if (!deck.length)
+  if (done)
+    return (
+      <>
+        {toolbar}
+        <Card className="p-8 text-center">
+          <div className="text-4xl">🎉</div>
+          <h2 className="mt-2 text-xl font-bold text-ink">Xong phiên học</h2>
+          <p className="mt-2 text-sm text-muted">
+            Bạn đã đi hết {order.length - repeats} thẻ
+            {repeats > 0 ? `, trong đó có ${repeats} lượt phải ôn lại vì trả lời sai.` : ', không sai thẻ nào.'}
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-2">
+            <Button
+              onClick={() => {
+                setResume(null)
+                setSeed((s) => s + 1)
+              }}
+            >
+              <RotateCcw size={15} /> Học lại bộ thẻ này
+            </Button>
+            <Link to="/">
+              <Button variant="primary">Về Tổng quan</Button>
+            </Link>
+          </div>
+        </Card>
+      </>
+    )
+
+  if (!order.length || !cur)
     return (
       <>
         {toolbar}
@@ -236,13 +380,14 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
 
       {/* thanh tiến độ ôm sát mép thẻ */}
       <div className="mb-2 px-1">
-        <ProgressBar value={((idx + 1) / deck.length) * 100} />
+        <ProgressBar value={((idx + 1) / order.length) * 100} />
       </div>
 
       {/* thông tin thẻ */}
       <div className="mb-2 flex items-center justify-between px-1 text-xs text-muted">
         <span className="truncate pr-2 font-semibold text-slate-600">{cur.collection.title}</span>
         <div className="flex shrink-0 items-center gap-1.5">
+          {isRepeat && <span className="rounded-full bg-rose-50 px-2.5 py-0.5 font-bold text-rose-600">Ôn lại</span>}
           {p && p.level > 0 && (
             <span className="rounded-full bg-indigo-50 px-2.5 py-0.5 font-bold text-indigo-700">Hộp {p.level}/5</span>
           )}
@@ -256,11 +401,16 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
           >
             {statusLabel}
           </span>
-          {p?.review && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-2 py-0.5 font-bold text-amber-700">
-              <Bookmark size={11} className="fill-amber-600 text-amber-600" /> Cần ôn
-            </span>
-          )}
+          <button
+            onClick={() => toggleReview(cur.collection.id, cur.item.id)}
+            className={cx(
+              'inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-bold transition-colors',
+              p?.review ? 'bg-amber-500 text-white' : 'bg-amber-50 text-amber-700 hover:bg-amber-100',
+            )}
+            title="Đánh dấu cần ôn lại (phím R)"
+          >
+            <Bookmark size={11} className={cx(p?.review && 'fill-white')} /> {p?.review ? 'Đã đánh dấu' : 'Đánh dấu'}
+          </button>
         </div>
       </div>
 
@@ -288,8 +438,10 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
             <div className="flex flex-1 flex-col justify-center">{backContent}</div>
             <div className="mt-5 flex items-center justify-center gap-1.5 text-[11px] font-medium text-slate-400">
               <span>Tự đánh giá:</span>
-              <kbd className="rounded-md bg-emerald-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700">K Đã nhớ</kbd>
               <kbd className="rounded-md bg-rose-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-rose-600">U Quên</kbd>
+              <kbd className="rounded-md bg-amber-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-amber-700">H Khó</kbd>
+              <kbd className="rounded-md bg-emerald-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700">K Được</kbd>
+              <kbd className="rounded-md bg-sky-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-sky-700">E Dễ</kbd>
             </div>
           </div>
         </div>
@@ -306,43 +458,28 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
           <ChevronLeft size={18} /> <span className="hidden sm:inline">Trước</span>
         </button>
 
-        <div className="flex flex-1 items-center justify-center gap-2">
-          <button
-            onClick={() => grade(false)}
-            className="inline-flex h-12 flex-1 items-center justify-center gap-1.5 rounded-xl bg-rose-100 px-3 text-sm font-bold text-rose-700 transition hover:bg-rose-200 active:scale-95"
-            title="Quên / Chưa nhớ (phím U)"
-          >
-            <X size={17} strokeWidth={2.5} />
-            <span>{mode === 'review' ? 'Quên' : 'Chưa nhớ'}</span>
-            <kbd className="hidden rounded bg-white/70 px-1.5 font-mono text-[10px] sm:inline">U</kbd>
-          </button>
-
-          <button
-            onClick={() => toggleReview(cur.collection.id, cur.item.id)}
-            className={cx(
-              'inline-flex h-12 shrink-0 items-center justify-center gap-1.5 rounded-xl px-3.5 text-sm font-semibold transition active:scale-95',
-              p?.review ? 'bg-amber-500 text-white shadow-sm' : 'bg-amber-50 text-amber-700 hover:bg-amber-100',
-            )}
-            title="Đánh dấu cần ôn lại (phím R)"
-          >
-            <Bookmark size={16} className={cx(p?.review && 'fill-white')} />
-            <span className="hidden md:inline">{p?.review ? 'Đã đánh dấu' : 'Ôn lại'}</span>
-          </button>
-
-          <button
-            onClick={() => grade(true)}
-            className="inline-flex h-12 flex-[1.3] items-center justify-center gap-1.5 rounded-xl bg-emerald-500 px-4 text-base font-extrabold text-white shadow-md shadow-emerald-200 transition hover:bg-emerald-600 active:scale-95"
-            title="Đã nhớ chính xác (phím K)"
-          >
-            <Check size={19} strokeWidth={3} />
-            <span>{mode === 'review' ? 'Đã nhớ' : 'Đã thuộc'}</span>
-            <kbd className="hidden rounded bg-white/25 px-1.5 font-mono text-[10px] sm:inline">K</kbd>
-          </button>
+        {/* 4 mức tự tin: Quên về hộp 1 · Khó giữ hộp, ôn lại sớm · Được lên 1 hộp · Dễ lên 2 hộp */}
+        <div className="grid flex-1 grid-cols-4 gap-1.5 sm:gap-2">
+          {GRADES.map(({ g, label, hint, k, cls, icon: Icon }) => (
+            <button
+              key={g}
+              onClick={() => grade(g)}
+              title={`${hint} (phím ${k})`}
+              className={cx(
+                'inline-flex h-12 items-center justify-center gap-1 rounded-xl px-1 text-sm font-bold transition active:scale-95 sm:gap-1.5',
+                cls,
+              )}
+            >
+              {Icon && <Icon size={16} strokeWidth={2.75} className="hidden sm:block" />}
+              <span>{label}</span>
+              <kbd className="hidden rounded bg-white/50 px-1.5 font-mono text-[10px] md:inline">{k}</kbd>
+            </button>
+          ))}
         </div>
 
         <button
           onClick={() => go(1)}
-          disabled={idx >= deck.length - 1}
+          disabled={idx >= order.length - 1}
           aria-label="Thẻ sau"
           className="inline-flex h-12 items-center justify-center gap-1 rounded-xl bg-slate-50 px-3 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 active:scale-95 disabled:cursor-not-allowed disabled:opacity-35 sm:px-4"
         >
@@ -350,8 +487,10 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
         </button>
       </div>
 
+      <NoteBox collectionId={cur.collection.id} itemId={cur.item.id} className="mt-3" />
+
       <p className="mt-3 text-center text-[11px] text-slate-400">
-        Space lật · K thuộc · U quên · R ôn lại · ← → chuyển thẻ · A–D hoặc 1–4 chọn đáp án
+        Space lật · U quên · H khó · K được · E dễ · R đánh dấu · ← → chuyển thẻ · A–D hoặc 1–4 chọn đáp án
       </p>
 
       {/* Keyboard Shortcuts Modal */}
@@ -384,9 +523,21 @@ export default function FlashcardSession({ entries, mode = 'study' }: Props) {
                 </kbd>
               </div>
               <div className="flex items-center justify-between rounded-xl bg-slate-50 p-2.5">
-                <span className="font-medium text-slate-700">Đã nhớ / Thuộc (tăng bậc SRS)</span>
+                <span className="font-medium text-slate-700">Được: nhớ đúng (lên 1 hộp)</span>
                 <kbd className="rounded-md border border-emerald-200 bg-emerald-50 px-2 py-1 font-mono text-xs font-bold text-emerald-700 shadow-2xs">
                   K
+                </kbd>
+              </div>
+              <div className="flex items-center justify-between rounded-xl bg-slate-50 p-2.5">
+                <span className="font-medium text-slate-700">Dễ: nhớ ngay (lên 2 hộp)</span>
+                <kbd className="rounded-md border border-sky-200 bg-sky-50 px-2 py-1 font-mono text-xs font-bold text-sky-700 shadow-2xs">
+                  E
+                </kbd>
+              </div>
+              <div className="flex items-center justify-between rounded-xl bg-slate-50 p-2.5">
+                <span className="font-medium text-slate-700">Khó: nhớ chật vật (giữ hộp, ôn sớm)</span>
+                <kbd className="rounded-md border border-amber-200 bg-amber-50 px-2 py-1 font-mono text-xs font-bold text-amber-700 shadow-2xs">
+                  H
                 </kbd>
               </div>
               <div className="flex items-center justify-between rounded-xl bg-slate-50 p-2.5">

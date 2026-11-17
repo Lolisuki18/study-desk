@@ -17,6 +17,16 @@ export default function QuizPage() {
     return (
       <div>
         <PageHeader title="Trắc nghiệm" subtitle="Chọn bộ học để làm bài" />
+        <Link
+          to="/exam"
+          className="mb-6 flex items-center justify-between rounded-2xl border border-indigo-200 bg-indigo-50/60 px-5 py-4 text-sm transition-colors hover:border-indigo-400"
+        >
+          <span>
+            <span className="block font-bold text-indigo-900">Thi thử theo môn</span>
+            <span className="text-xs text-indigo-700">Đề trộn mọi chương theo tỉ lệ, tính giờ, chấm điểm theo chương</span>
+          </span>
+          <span className="font-semibold text-indigo-700">Vào thi →</span>
+        </Link>
         <CollectionPicker base="/quiz" />
       </div>
     )

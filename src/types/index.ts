@@ -79,6 +79,12 @@ export interface Collection {
   description: string
   language?: string
   source?: { document?: string; note?: string; [k: string]: unknown }
+  /**
+   * A self-contained deck whose questions mostly repeat other collections of the same subject.
+   * It is studied on its own, and left out of subject-wide mock exams and the exam-readiness estimate
+   * so the same question is not drawn or counted twice.
+   */
+  standalone?: boolean
   items: Item[]
 }
 
@@ -103,7 +109,19 @@ export interface ProgressRecord {
   lastResult?: 'correct' | 'incorrect'
 }
 
-export type ActivityKind = 'flashcard' | 'quiz' | 'review'
+/** Self-rated confidence on a flashcard. `again` = forgot; the rest count as remembered. */
+export type Grade = 'again' | 'hard' | 'good' | 'easy'
+
+/** Personal note on one item; stored apart from the collection content. */
+export interface NoteRecord {
+  key: string // `${collectionId}::${itemId}`
+  collectionId: string
+  itemId: string
+  text: string
+  updatedAt: string // ISO
+}
+
+export type ActivityKind ='flashcard' | 'quiz' | 'review'
 
 export interface ActivityRecord {
   id?: number
@@ -132,7 +150,19 @@ export interface Settings {
   quizPracticeDefault: boolean
   /** exam date per subject, YYYY-MM-DD */
   examDates: Record<string, string>
+  /** distinct items to study per day */
+  dailyGoal: number
+  /** mock-exam structure per subject */
+  examPresets: Record<string, { count: number; minutes: number }>
+  theme: Theme
+  /** flashcards: a card answered wrong comes back later in the same session until it is answered right */
+  learnUntilKnown: boolean
+  /** Pomodoro lengths in minutes */
+  pomodoroWork: number
+  pomodoroBreak: number
 }
+
+export type Theme = 'light' | 'dark' | 'system'
 
 export interface BackupFile {
   app: 'personal-study-hub'
@@ -141,4 +171,5 @@ export interface BackupFile {
   progress: ProgressRecord[]
   activity: ActivityRecord[]
   exams?: ExamRecord[]
+  notes?: NoteRecord[]
 }

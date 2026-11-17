@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import type { ActivityKind, ActivityRecord, BackupFile, ExamRecord, ProgressRecord } from '../../types'
+import type { ActivityKind, ActivityRecord, BackupFile, ExamRecord, Grade, NoteRecord, ProgressRecord } from '../../types'
 import * as db from '../../services/storage/db'
+import { initAutoBackup, scheduleAutoBackup } from '../../services/storage/autoBackup'
 import { applyResult, emptyProgress, isMastered, isStudied, reviewReasons } from '../../services/review/srs'
 import { collections, progressKey } from '../../data'
 
@@ -9,13 +10,17 @@ interface Ctx {
   progress: Map<string, ProgressRecord>
   activity: ActivityRecord[]
   exams: ExamRecord[]
+  /** personal notes, keyed like progress (`collectionId::itemId`) */
+  notes: Map<string, NoteRecord>
+  /** save a personal note; an empty text deletes it */
+  setNote: (collectionId: string, itemId: string, text: string) => void
   addExam: (e: Omit<ExamRecord, 'id'>) => void
-  /** wipe progress, activity and exam history of one collection */
+  /** wipe progress, activity and exam history of one collection (notes are kept) */
   resetCollection: (collectionId: string) => Promise<void>
   get: (collectionId: string, itemId: string) => ProgressRecord | undefined
-  /** record a right/wrong outcome (SRS update + activity log) */
+  /** record a right/wrong outcome (SRS update + activity log); `grade` refines a self-rated flashcard */
   record: (
-    results: { collectionId: string; itemId: string; correct: boolean }[],
+    results: { collectionId: string; itemId: string; correct: boolean; grade?: Grade }[],
     kind: ActivityKind,
     opts?: { clearReview?: boolean },
   ) => void
@@ -37,11 +42,14 @@ export interface Summary {
 
 const ProgressCtx = createContext<Ctx | null>(null)
 
+const noteMap = (list: NoteRecord[]) => new Map(list.map((n) => [n.key, n]))
+
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const [loaded, setLoaded] = useState(false)
   const [progress, setProgress] = useState<Map<string, ProgressRecord>>(new Map())
   const [activity, setActivity] = useState<ActivityRecord[]>([])
   const [exams, setExams] = useState<ExamRecord[]>([])
+  const [notes, setNotes] = useState<Map<string, NoteRecord>>(new Map())
   const ref = useRef(progress)
   ref.current = progress
 
@@ -51,7 +59,9 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         setProgress(new Map(d.progress.map((p) => [p.key, p])))
         setActivity(d.activity)
         setExams(d.exams)
+        setNotes(noteMap(d.notes))
       })
+      .then(initAutoBackup)
       .catch(console.error)
       .finally(() => setLoaded(true))
   }, [])
@@ -65,10 +75,10 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     const ts = new Date().toISOString()
     for (const r of results) {
       const k = progressKey(r.collectionId, r.itemId)
-      const upd = applyResult(next.get(k) ?? emptyProgress(r.collectionId, r.itemId), r.correct, opts)
+      const upd = applyResult(next.get(k) ?? emptyProgress(r.collectionId, r.itemId), r.correct, { ...opts, grade: r.grade })
       next.set(k, upd)
       changed.push(upd)
-      acts.push({ ts, collectionId: r.collectionId, itemId: r.itemId, kind, result: r.correct ? 'correct' : 'incorrect' })
+      acts.push({ ts, collectionId: r.collectionId, itemId: r.itemId, kind, result: upd.lastResult ?? 'incorrect' })
     }
     ref.current = next
     setProgress(next)
@@ -88,6 +98,24 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     db.putProgress([upd]).catch(console.error)
   }, [])
 
+  const setNote: Ctx['setNote'] = useCallback((c, i, raw) => {
+    const key = progressKey(c, i)
+    const text = raw.trim()
+    setNotes((m) => {
+      if ((m.get(key)?.text ?? '') === text) return m
+      const next = new Map(m)
+      if (text) {
+        const note: NoteRecord = { key, collectionId: c, itemId: i, text, updatedAt: new Date().toISOString() }
+        next.set(key, note)
+        db.putNote(note).catch(console.error)
+      } else {
+        next.delete(key)
+        db.putNote({ key }).catch(console.error)
+      }
+      return next
+    })
+  }, [])
+
   const exportBackup = useCallback(
     (): BackupFile => ({
       app: 'personal-study-hub',
@@ -96,20 +124,37 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       progress: [...ref.current.values()],
       activity,
       exams,
+      notes: [...notes.values()],
     }),
-    [activity, exams],
+    [activity, exams, notes],
   )
 
-  const importBackup = useCallback(async (b: BackupFile) => {
-    if (b?.app !== 'personal-study-hub' || !Array.isArray(b.progress)) throw new Error('File sao lưu không hợp lệ')
-    await db.replaceAll(b.progress, b.activity ?? [], b.exams ?? [])
+  // Keep the auto-backup file (if the user enabled one) in step with every change.
+  const exportRef = useRef(exportBackup)
+  exportRef.current = exportBackup
+  useEffect(() => {
+    if (loaded && (progress.size > 0 || notes.size > 0)) scheduleAutoBackup(() => exportRef.current())
+  }, [loaded, progress, activity, exams, notes])
+
+  const reload = useCallback(async () => {
     const d = await db.loadAll()
     const m = new Map(d.progress.map((p) => [p.key, p]))
     ref.current = m
     setProgress(m)
     setActivity(d.activity)
     setExams(d.exams)
+    setNotes(noteMap(d.notes))
   }, [])
+
+  const importBackup = useCallback(
+    async (b: BackupFile) => {
+      if (b?.app !== 'personal-study-hub' || !Array.isArray(b.progress)) throw new Error('File sao lưu không hợp lệ')
+      // older backups have no notes: keep the current ones in that case
+      await db.replaceAll(b.progress, b.activity ?? [], b.exams ?? [], Array.isArray(b.notes) ? b.notes : undefined)
+      await reload()
+    },
+    [reload],
+  )
 
   const resetAll = useCallback(async () => {
     await db.clearAll()
@@ -125,21 +170,18 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       .catch(console.error)
   }, [])
 
-  const resetCollection = useCallback(async (collectionId: string) => {
-    const d = await db.loadAll()
-    const keep = d.progress.filter((p) => p.collectionId !== collectionId)
-    await db.replaceAll(
-      keep,
-      d.activity.filter((a) => a.collectionId !== collectionId),
-      d.exams.filter((x) => x.collectionId !== collectionId),
-    )
-    const nd = await db.loadAll()
-    const m = new Map(nd.progress.map((p) => [p.key, p]))
-    ref.current = m
-    setProgress(m)
-    setActivity(nd.activity)
-    setExams(nd.exams)
-  }, [])
+  const resetCollection = useCallback(
+    async (collectionId: string) => {
+      const d = await db.loadAll()
+      await db.replaceAll(
+        d.progress.filter((p) => p.collectionId !== collectionId),
+        d.activity.filter((a) => a.collectionId !== collectionId),
+        d.exams.filter((x) => x.collectionId !== collectionId),
+      )
+      await reload()
+    },
+    [reload],
+  )
 
   const summary = useMemo<Summary>(() => {
     const now = new Date()
@@ -162,8 +204,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   }, [progress])
 
   const value = useMemo(
-    () => ({ loaded, progress, activity, exams, addExam, resetCollection, get, record, toggleReview, exportBackup, importBackup, resetAll, summary }),
-    [loaded, progress, activity, exams, addExam, resetCollection, get, record, toggleReview, exportBackup, importBackup, resetAll, summary],
+    () => ({ loaded, progress, activity, exams, notes, setNote, addExam, resetCollection, get, record, toggleReview, exportBackup, importBackup, resetAll, summary }),
+    [loaded, progress, activity, exams, notes, setNote, addExam, resetCollection, get, record, toggleReview, exportBackup, importBackup, resetAll, summary],
   )
   return <ProgressCtx.Provider value={value}>{children}</ProgressCtx.Provider>
 }

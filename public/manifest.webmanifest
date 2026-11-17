@@ -1,0 +1,17 @@
+{
+  "name": "Góc học tập – Personal Study Hub",
+  "short_name": "Góc học tập",
+  "description": "Thẻ ghi nhớ, trắc nghiệm, thi thử và ôn tập ngắt quãng. Chạy hoàn toàn trên máy, không cần mạng.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

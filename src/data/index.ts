@@ -46,6 +46,11 @@ export const allEntries = (list: Collection[] = collections): Entry[] =>
 export const entriesFor = (id: string): Entry[] =>
   id === 'all' ? allEntries() : allEntries(collections.filter((c) => c.id === id))
 
+/** Collections of a subject used for subject-wide mock exams and the readiness estimate (standalone decks excluded). */
+export const examCollections = (subject: string) => collections.filter((c) => c.subject === subject && !c.standalone)
+/** Standalone decks of a subject: studied on their own, not part of the subject's exam pool. */
+export const standaloneCollections = (subject: string) => collections.filter((c) => c.subject === subject && c.standalone)
+
 export const progressKey = (collectionId: string, itemId: string) => `${collectionId}::${itemId}`
 
 /** Short human title for any item type. */

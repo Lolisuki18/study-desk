@@ -19,7 +19,7 @@ const Label = ({ children }: { children: ReactNode }) => (
   </div>
 )
 
-function Enrichment({ item }: { item: Item }) {
+export function Enrichment({ item }: { item: Item }) {
   if (!item.enrichment) return null
   return (
     <div className="mt-3 rounded-2xl bg-indigo-50/60 p-4 text-sm text-slate-800">

@@ -22,7 +22,7 @@ export default function FlashcardsPage() {
         <ArrowLeft size={14} /> Chọn bộ khác
       </Link>
       <PageHeader title={id === 'all' ? 'Thẻ ghi nhớ · Tất cả' : getCollection(id)?.title ?? 'Thẻ ghi nhớ'} />
-      {entries.length ? <FlashcardSession entries={entries} /> : <Empty>Không tìm thấy bộ học.</Empty>}
+      {entries.length ? <FlashcardSession key={id} entries={entries} resumeKey={id} /> : <Empty>Không tìm thấy bộ học.</Empty>}
     </div>
   )
 }

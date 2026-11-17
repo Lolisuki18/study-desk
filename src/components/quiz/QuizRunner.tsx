@@ -6,6 +6,9 @@ import { Button, Card, ProgressBar } from '../ui'
 import { cx, pct } from '../../utils'
 import { isMulti, toggleKey } from '../../utils/answers'
 import type { QuizStartOptions } from './QuizSetup'
+import { getCollection } from '../../data'
+import { chapterLabel } from '../../services/quiz/exam'
+import NoteBox from '../ui/NoteBox'
 
 const fmtTime = (s: number) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
 
@@ -331,6 +334,22 @@ export default function QuizRunner({
 
   if (finished) {
     const wrong = questions.filter((x) => !result(x))
+    // per-chapter breakdown; the subject is prefixed only when the quiz spans several subjects
+    const cols = questions.map((x) => getCollection(x.collectionId))
+    const multiSubject = new Set(cols.map((c) => c?.subject)).size > 1
+    const chapters = new Map<string, { correct: number; total: number }>()
+    questions.forEach((x, n) => {
+      const c = cols[n]
+      if (!c) return
+      const label = multiSubject ? `${c.subject} · ${chapterLabel(c)}` : chapterLabel(c)
+      const g = chapters.get(label) ?? { correct: 0, total: 0 }
+      g.total++
+      if (result(x)) g.correct++
+      chapters.set(label, g)
+    })
+    const byChapter = [...chapters]
+      .map(([label, g]) => ({ label, ...g }))
+      .sort((a, b) => a.label.localeCompare(b.label, 'vi', { numeric: true }))
     const listFiltered =
       resultFilter === 'wrong' ? wrong : resultFilter === 'correct' ? questions.filter((x) => result(x)) : questions
 
@@ -369,6 +388,30 @@ export default function QuizRunner({
             <Button onClick={onExit}>Bài mới</Button>
           </div>
         </Card>
+
+        {byChapter.length > 1 && (
+          <Card className="mb-6 p-5">
+            <div className="mb-3 text-sm font-medium">Kết quả theo chương</div>
+            <div className="space-y-2.5">
+              {byChapter.map((g) => (
+                <div key={g.label} className="flex items-center gap-3 text-sm">
+                  <span className="w-2/5 min-w-0 truncate" title={g.label}>
+                    {g.label}
+                  </span>
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-line/80">
+                    <div
+                      className={cx('h-full rounded-full', pct(g.correct, g.total) >= 50 ? 'bg-ok' : 'bg-err')}
+                      style={{ width: `${pct(g.correct, g.total)}%` }}
+                    />
+                  </div>
+                  <span className="w-24 shrink-0 text-right text-xs text-muted">
+                    {g.correct}/{g.total} · sai {g.total - g.correct}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </Card>
+        )}
 
         {/* Tab lọc kết quả */}
         <div className="mb-4 flex items-center justify-between">
@@ -428,6 +471,7 @@ export default function QuizRunner({
                     {!ok && <div className="mt-1 whitespace-pre-line text-ok">Đáp án đúng: {correctText(x)}</div>}
                     {x.explanation && <div className="mt-1">{x.explanation}</div>}
                     {x.enrichment && <div className="mt-1 text-muted">Bổ sung: {x.enrichment}</div>}
+                    {x.kind !== 'match' && <NoteBox collectionId={x.collectionId} itemId={x.itemId} className="mt-2" />}
                   </div>
                 </div>
               </Card>
@@ -574,6 +618,7 @@ export default function QuizRunner({
                 Tôi trả lời đúng (cách diễn đạt khác)
               </button>
             )}
+            {q.kind !== 'match' && <NoteBox collectionId={q.collectionId} itemId={q.itemId} className="mt-3" />}
           </div>
         )}
       </Card>

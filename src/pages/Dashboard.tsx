@@ -4,6 +4,9 @@ import { useProgress } from '../features/learning/ProgressContext'
 import { CollectionsBySubject } from '../components/dashboard/CollectionCard'
 import RecentActivity from '../components/dashboard/RecentActivity'
 import ExamPlan from '../components/dashboard/ExamPlan'
+import DailyGoal from '../components/dashboard/DailyGoal'
+import BackupNotice from '../components/dashboard/BackupNotice'
+import Readiness from '../components/dashboard/Readiness'
 import { Card, Empty, PageHeader, ProgressBar, Stat } from '../components/ui'
 import { pct } from '../utils'
 
@@ -31,7 +34,11 @@ export default function Dashboard() {
         <ProgressBar value={overall} />
       </Card>
 
+      <DailyGoal />
+      <BackupNotice />
+
       <ExamPlan />
+      <Readiness />
 
       <h2 className="mb-3 mt-8 text-lg font-semibold">Bộ học</h2>
       {collections.length ? <CollectionsBySubject list={collections} /> : <Empty>Chưa có bộ học nào.</Empty>}
