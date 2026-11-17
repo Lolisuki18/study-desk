@@ -12,7 +12,7 @@ export default function BackupNotice() {
   const b = useAutoBackup()
   if (!progress.size) return null
 
-  const box = 'flex flex-wrap items-center gap-3 rounded-2xl border border-amber-200/80 dark:border-amber-900/60 bg-amber-50/60 dark:bg-amber-950/30 px-4 py-3 text-xs sm:text-sm text-amber-900 dark:text-amber-200 shadow-2xs'
+  const box = 'flex flex-wrap items-center gap-3 rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/40 px-4 py-3 text-xs sm:text-sm text-amber-900 dark:text-amber-200 shadow-2xs'
 
   if (b.enabled && b.needsPermission)
     return (

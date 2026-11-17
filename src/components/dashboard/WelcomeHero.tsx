@@ -26,10 +26,10 @@ export default function WelcomeHero() {
   }, [])
 
   return (
-    <div className="relative overflow-hidden rounded-3xl border border-indigo-100/90 dark:border-indigo-900/60 bg-gradient-to-r from-indigo-50/80 via-white to-sky-50/40 dark:from-slate-900 dark:via-slate-900 dark:to-indigo-950/30 p-6 sm:p-7 shadow-[0_2px_12px_rgba(99,102,241,0.06)] mb-6">
-      <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div className="rounded-3xl border border-indigo-100 dark:border-indigo-900/60 bg-gradient-to-r from-indigo-50/90 via-white to-sky-50/50 dark:from-slate-900/90 dark:via-slate-900 dark:to-indigo-950/40 p-6 sm:p-7 shadow-[0_2px_12px_rgba(99,102,241,0.06)] dark:shadow-none mb-6 transition-colors">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="space-y-2.5 max-w-xl">
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200/80 dark:border-indigo-800 bg-white/90 dark:bg-slate-800 px-3 py-1 text-xs font-bold text-indigo-700 dark:text-indigo-300 shadow-2xs">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-950/60 px-3 py-1 text-xs font-bold text-indigo-700 dark:text-indigo-300 shadow-2xs">
             <Sparkles size={13} className="text-indigo-600 dark:text-indigo-400" />
             <span>{greeting.text}</span>
           </div>
@@ -37,24 +37,24 @@ export default function WelcomeHero() {
           <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-white">
             Hôm nay bạn muốn học gì?
           </h1>
-          <p className="text-sm text-slate-600 dark:text-muted leading-relaxed">
+          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             {greeting.sub} Bạn đã làm chủ <b className="text-slate-900 dark:text-white font-bold">{summary.mastered}</b> / {summary.items} câu ({overall}%).
           </p>
 
           {/* Quick Metrics Badges */}
           <div className="flex flex-wrap items-center gap-2 pt-1">
-            <div className="flex items-center gap-1.5 rounded-xl border border-amber-200/80 dark:border-amber-900/60 bg-white dark:bg-slate-800 px-3 py-1.5 text-xs font-bold text-amber-700 dark:text-amber-300 shadow-2xs">
+            <div className="flex items-center gap-1.5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/90 dark:bg-amber-950/40 px-3 py-1.5 text-xs font-bold text-amber-800 dark:text-amber-300 shadow-2xs">
               <Flame size={15} className={streakDays > 0 ? 'fill-amber-500 text-amber-500' : 'text-slate-400'} />
               <span>{streakDays} ngày liên tiếp</span>
             </div>
 
-            <div className="flex items-center gap-1.5 rounded-xl border border-emerald-200/80 dark:border-emerald-900/60 bg-white dark:bg-slate-800 px-3 py-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-300 shadow-2xs">
-              <CalendarCheck2 size={15} className="text-emerald-500" />
+            <div className="flex items-center gap-1.5 rounded-xl border border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/90 dark:bg-emerald-950/40 px-3 py-1.5 text-xs font-bold text-emerald-800 dark:text-emerald-300 shadow-2xs">
+              <CalendarCheck2 size={15} className="text-emerald-600 dark:text-emerald-400" />
               <span>Hôm nay: {doneToday} / {goal} câu</span>
             </div>
 
             {summary.needReview > 0 && (
-              <div className="flex items-center gap-1.5 rounded-xl border border-rose-200 dark:border-rose-900/60 bg-white dark:bg-slate-800 px-3 py-1.5 text-xs font-bold text-rose-600 dark:text-rose-400 shadow-2xs">
+              <div className="flex items-center gap-1.5 rounded-xl border border-rose-200 dark:border-rose-900/60 bg-rose-50/90 dark:bg-rose-950/40 px-3 py-1.5 text-xs font-bold text-rose-700 dark:text-rose-300 shadow-2xs">
                 <span>{summary.needReview} thẻ đến hạn</span>
               </div>
             )}
@@ -73,7 +73,7 @@ export default function WelcomeHero() {
 
           <Link
             to="/exam"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-5 py-2.5 text-xs font-bold text-slate-700 dark:text-slate-200 shadow-2xs transition-all hover:bg-slate-50 dark:hover:bg-slate-750 hover:border-slate-300 active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 dark:border-line bg-white dark:bg-card px-5 py-2.5 text-xs font-bold text-slate-700 dark:text-slate-200 shadow-2xs transition-all hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 active:scale-[0.98]"
           >
             <Award size={15} className="text-indigo-600 dark:text-indigo-400" />
             <span>Thi thử theo môn</span>
