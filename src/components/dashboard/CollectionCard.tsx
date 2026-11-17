@@ -50,18 +50,25 @@ export default function CollectionCard({ c }: { c: Collection }) {
   const subjectStyle = getSubjectColor(c.subject)
 
   return (
-    <Card className="group relative flex flex-col justify-between overflow-hidden p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-indigo-200 dark:hover:border-slate-700 hover:shadow-md">
+    <Card className="group relative flex flex-col justify-between overflow-hidden p-5 transition-all duration-200 hover:-translate-y-1 hover:border-indigo-200 dark:hover:border-indigo-900/60 hover:shadow-lg hover:shadow-indigo-500/5">
       {/* Top badges: Subject & Content Type */}
       <div>
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-          <span
-            className={cx(
-              'inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider',
-              subjectStyle,
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span
+              className={cx(
+                'inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider',
+                subjectStyle,
+              )}
+            >
+              <span>{c.subject}</span>
+            </span>
+            {c.id.startsWith('custom-') && (
+              <span className="inline-flex items-center rounded-full border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/60 px-2 py-0.5 text-[10px] font-bold text-purple-700 dark:text-purple-300">
+                Tự tải lên
+              </span>
             )}
-          >
-            <span>{c.subject}</span>
-          </span>
+          </div>
 
           <span
             className={cx(
@@ -107,14 +114,14 @@ export default function CollectionCard({ c }: { c: Collection }) {
         <div className="mt-4 grid grid-cols-2 gap-2">
           <Link
             to={`/flashcards/${c.id}`}
-            className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-800/60 py-2 text-xs font-bold text-slate-700 dark:text-slate-200 transition-all hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 shadow-2xs active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700/80 bg-slate-50/80 dark:bg-slate-800/60 py-2 text-xs font-bold text-slate-700 dark:text-slate-200 transition-all hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 hover:text-indigo-700 dark:hover:text-indigo-300 shadow-2xs active:scale-[0.98]"
           >
-            <Layers size={14} className="text-indigo-600" />
+            <Layers size={14} className="text-indigo-600 dark:text-indigo-400" />
             <span>Thẻ ghi nhớ</span>
           </Link>
           <Link
             to={`/quiz/${c.id}`}
-            className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 py-2 text-xs font-bold text-white transition-all shadow-xs active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 py-2 text-xs font-bold text-white transition-all shadow-xs hover:shadow-indigo-500/20 active:scale-[0.98]"
           >
             <ListChecks size={14} />
             <span>Trắc nghiệm</span>

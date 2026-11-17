@@ -9,7 +9,7 @@ export function Card({ className, children, ...p }: HTMLAttributes<HTMLDivElemen
     <div
       {...p}
       className={cx(
-        'rounded-2xl border border-slate-200/80 dark:border-line bg-card shadow-[0_1px_3px_rgba(15,23,42,0.04),0_1px_2px_rgba(15,23,42,0.02)] transition-all',
+        'rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-card shadow-[0_1px_3px_rgba(15,23,42,0.03),0_1px_2px_rgba(15,23,42,0.02)] dark:shadow-none transition-all',
         className,
       )}
     >
@@ -82,24 +82,36 @@ export function Stat({
 }) {
   const iconBg =
     tone === 'ok'
-      ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/60 dark:text-emerald-400'
+      ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/60 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/40'
       : tone === 'err'
-      ? 'bg-rose-50 text-rose-600 dark:bg-rose-950/60 dark:text-rose-400'
-      : 'bg-indigo-50 text-indigo-600 dark:bg-indigo-950/60 dark:text-indigo-400'
+      ? 'bg-rose-50 text-rose-600 dark:bg-rose-950/60 dark:text-rose-400 border border-rose-100 dark:border-rose-900/40'
+      : tone === 'primary'
+      ? 'bg-indigo-50 text-indigo-600 dark:bg-indigo-950/60 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/40'
+      : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60'
 
   return (
-    <Card className="p-4 sm:p-5 hover:shadow-md transition-shadow relative overflow-hidden group">
+    <Card className="p-4 sm:p-5 hover:shadow-md transition-all duration-200 relative overflow-hidden group hover:-translate-y-0.5">
+      {/* Top subtle accent bar */}
+      <div
+        className={cx(
+          'absolute top-0 left-0 right-0 h-1 transition-opacity opacity-70 group-hover:opacity-100',
+          tone === 'ok' && 'bg-emerald-500',
+          tone === 'err' && 'bg-rose-500',
+          tone === 'primary' && 'bg-indigo-500',
+          !tone && 'bg-slate-300 dark:bg-slate-700',
+        )}
+      />
       <div className="flex items-center justify-between">
         <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-muted">{label}</div>
         {icon && (
-          <div className={cx('flex h-8 w-8 items-center justify-center rounded-xl transition-transform group-hover:scale-105', iconBg)}>
+          <div className={cx('flex h-8 w-8 items-center justify-center rounded-xl transition-transform group-hover:scale-110 duration-200', iconBg)}>
             {icon}
           </div>
         )}
       </div>
       <div
         className={cx(
-          'mt-2 text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100',
+          'mt-2.5 text-2xl sm:text-3xl font-black font-mono tracking-tight text-slate-900 dark:text-slate-100',
           tone === 'ok' && 'text-emerald-600 dark:text-emerald-400',
           tone === 'err' && 'text-rose-600 dark:text-rose-400',
           tone === 'primary' && 'text-indigo-600 dark:text-indigo-400',

@@ -173,7 +173,7 @@ export default function Layout() {
           {collapsed ? (
             <div className="mb-4 flex flex-col items-center gap-2.5">
               <div
-                className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20"
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/20"
                 title="Góc học tập (Study Hub)"
               >
                 <GraduationCap size={20} />
@@ -190,7 +190,7 @@ export default function Layout() {
           ) : (
             <div className="mb-4 flex items-center justify-between px-1">
               <div className="flex items-center gap-2.5 min-w-0">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-sm shadow-indigo-500/20">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/20">
                   <GraduationCap size={20} />
                 </div>
                 <div className="min-w-0">
@@ -198,30 +198,19 @@ export default function Layout() {
                     Góc học tập
                   </div>
                   <div className="text-[10px] text-slate-500 dark:text-muted font-medium tracking-tight whitespace-nowrap">
-                    Study Hub & SRS
+                    Study Hub &amp; SRS
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-0.5 shrink-0">
-                <button
-                  onClick={() => setShortcutsOpen(true)}
-                  className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer"
-                  title="Phím tắt học tập (?)"
-                  aria-label="Phím tắt học tập"
-                >
-                  <Keyboard size={14} />
-                </button>
-                <ThemeToggle className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors" />
-                <button
-                  onClick={toggleCollapsed}
-                  className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer"
-                  title="Thu gọn thanh điều hướng"
-                  aria-label="Thu gọn thanh điều hướng"
-                >
-                  <PanelLeftClose size={15} />
-                </button>
-              </div>
+              <button
+                onClick={toggleCollapsed}
+                className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer"
+                title="Thu gọn thanh điều hướng"
+                aria-label="Thu gọn thanh điều hướng"
+              >
+                <PanelLeftClose size={15} />
+              </button>
             </div>
           )}
 
@@ -311,31 +300,58 @@ export default function Layout() {
           <div className="mt-auto pt-3 w-full">
             <Pomodoro compact={collapsed} />
           </div>
-          {!collapsed && (
-            <div className="rounded-2xl border border-slate-200 dark:border-line bg-slate-50/90 dark:bg-slate-800/40 p-3 text-xs">
-              <div className="flex items-center justify-between text-slate-600 dark:text-muted mb-1.5 font-semibold">
-                <span>Độ thành thạo</span>
-                <span className="font-extrabold text-slate-900 dark:text-ink">
-                  {summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%
+          {!collapsed ? (
+            <>
+              <div className="rounded-2xl border border-slate-200/90 dark:border-line bg-slate-50/90 dark:bg-slate-800/40 p-3 text-xs">
+                <div className="flex items-center justify-between text-slate-600 dark:text-muted mb-1.5 font-semibold">
+                  <span>Độ thành thạo</span>
+                  <span className="font-extrabold text-slate-900 dark:text-ink">
+                    {summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%
+                  </span>
+                </div>
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300"
+                    style={{
+                      width: `${summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%`,
+                    }}
+                  />
+                </div>
+                <div className="mt-2 text-[11px] text-slate-500 dark:text-slate-400 flex justify-between font-medium">
+                  <span>{summary.mastered} đã thuộc</span>
+                  <span>{summary.items} mục</span>
+                </div>
+              </div>
+
+              {/* Utility action footer */}
+              <div className="mt-2.5 flex items-center justify-between border-t border-slate-100 dark:border-line/60 pt-2 px-1">
+                <div className="flex items-center gap-1">
+                  <ThemeToggle className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer" />
+                  <button
+                    onClick={() => setShortcutsOpen(true)}
+                    className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer"
+                    title="Phím tắt học tập (?)"
+                    aria-label="Phím tắt học tập"
+                  >
+                    <Keyboard size={15} />
+                  </button>
+                </div>
+                <span className="text-[10px] font-mono text-slate-400 dark:text-slate-500 select-none">
+                  v1.2 · Offline
                 </span>
               </div>
-              <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300"
-                  style={{
-                    width: `${summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%`,
-                  }}
-                />
-              </div>
-              <div className="mt-2 text-[11px] text-slate-500 dark:text-slate-400 flex justify-between font-medium">
-                <span>{summary.mastered} đã thuộc</span>
-                <span>{summary.items} mục</span>
-              </div>
-            </div>
-          )}
-          {collapsed && (
-            <div className="mt-2 flex flex-col items-center gap-2">
-              <ThemeToggle className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-line text-slate-600 dark:text-muted hover:text-ink" />
+            </>
+          ) : (
+            <div className="mt-2 flex flex-col items-center gap-1.5">
+              <ThemeToggle className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 dark:border-line text-slate-600 dark:text-muted hover:text-ink cursor-pointer" />
+              <button
+                onClick={() => setShortcutsOpen(true)}
+                className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 dark:border-line text-slate-600 dark:text-muted hover:text-ink cursor-pointer"
+                title="Phím tắt học tập (?)"
+                aria-label="Phím tắt học tập"
+              >
+                <Keyboard size={15} />
+              </button>
             </div>
           )}
         </aside>
