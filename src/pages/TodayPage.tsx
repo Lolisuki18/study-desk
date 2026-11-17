@@ -1,20 +1,24 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, CalendarClock, CheckCircle2, Play, Sparkles, XCircle } from 'lucide-react'
+import { ArrowLeft, CalendarClock, CheckCircle2, Layers, ListChecks, Play, Sparkles, XCircle } from 'lucide-react'
 import type { Entry } from '../types'
 import { allEntries } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
 import { buildToday, REVIEW_CAP } from '../services/review/today'
 import { dailyActivity } from '../services/stats'
 import { loadSettings } from '../services/storage/settings'
+import { availableKinds, buildQuiz, type Question } from '../services/quiz/generate'
 import FlashcardSession from '../components/flashcards/FlashcardSession'
+import QuizRunner from '../components/quiz/QuizRunner'
 import { Button, Card, Empty, PageHeader, ProgressBar } from '../components/ui'
 import { cx, dayKey } from '../utils'
+
+type Run = { kind: 'cards'; entries: Entry[] } | { kind: 'quiz'; qs: Question[]; n: number }
 
 /** One-button daily session: due cards, then cards answered wrong, then new cards up to the daily goal. */
 export default function TodayPage() {
   const { progress, activity, get, summary } = useProgress()
-  const [session, setSession] = useState<Entry[] | null>(null)
+  const [run, setRun] = useState<Run | null>(null)
   const settings = loadSettings()
   const doneToday = useMemo(() => dailyActivity(activity).get(dayKey(new Date()))?.items.size ?? 0, [activity])
   const goalLeft = Math.max(0, settings.dailyGoal - doneToday)
@@ -24,17 +28,38 @@ export default function TodayPage() {
     [progress, goalLeft],
   )
   const total = plan.due.length + plan.wrong.length + plan.fresh.length
+  const todayEntries = useMemo(() => [...plan.due, ...plan.wrong, ...plan.fresh], [plan])
 
-  if (session)
+  const startTodayQuiz = () => {
+    const qs = buildQuiz(todayEntries, {
+      count: todayEntries.length,
+      kinds: availableKinds(todayEntries).filter((k) => k !== 'match'),
+      randomize: true,
+      distractorPool: allEntries(),
+    })
+    if (qs.length) setRun({ kind: 'quiz', qs, n: 0 })
+  }
+
+  if (run)
     return (
       <div className="mx-auto max-w-3xl">
         <button
-          onClick={() => setSession(null)}
+          onClick={() => setRun(null)}
           className="mb-4 inline-flex items-center gap-1.5 text-xs font-bold text-muted hover:text-ink transition-colors cursor-pointer"
         >
           <ArrowLeft size={14} /> Quay lại kế hoạch học hôm nay
         </button>
-        <FlashcardSession entries={session} mode="review" />
+        {run.kind === 'cards' ? (
+          <FlashcardSession entries={run.entries} mode="review" />
+        ) : (
+          <QuizRunner
+            key={run.n}
+            questions={run.qs}
+            mode="practice"
+            onExit={() => setRun(null)}
+            onRetry={(qs) => setRun({ kind: 'quiz', qs: qs.map((q) => ({ ...q, id: `${q.id}r` })), n: run.n + 1 })}
+          />
+        )}
       </div>
     )
 
@@ -115,16 +140,25 @@ export default function TodayPage() {
         </p>
       )}
 
-      {/* Start Button Area */}
+      {/* Start Button Area: Dual Mode */}
       <div className="flex flex-wrap items-center gap-3 pt-2">
         <Button
           variant="primary"
           disabled={!total}
-          className="px-7 py-3 text-base font-bold shadow-md shadow-indigo-500/20"
-          onClick={() => setSession([...plan.due, ...plan.wrong, ...plan.fresh])}
+          className="px-6 py-3 text-sm sm:text-base font-bold shadow-md shadow-indigo-500/20 cursor-pointer"
+          onClick={() => setRun({ kind: 'cards', entries: todayEntries })}
         >
-          <Play size={18} fill="white" />
-          <span>Bắt đầu phiên học ({total} thẻ)</span>
+          <Layers size={18} />
+          <span>Ôn bằng Thẻ ({total})</span>
+        </Button>
+
+        <Button
+          disabled={!total}
+          className="px-6 py-3 text-sm sm:text-base font-bold border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 cursor-pointer"
+          onClick={startTodayQuiz}
+        >
+          <ListChecks size={18} />
+          <span>Làm Trắc nghiệm ({total})</span>
         </Button>
 
         {!total && (
