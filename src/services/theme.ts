@@ -1,7 +1,7 @@
 import type { Theme } from '../types'
 
 const media = () => window.matchMedia('(prefers-color-scheme: dark)')
-let current: Theme = 'system'
+let current: Theme = 'light'
 
 const isDark = (t: Theme) => t === 'dark' || (t === 'system' && media().matches)
 
@@ -10,7 +10,7 @@ export function applyTheme(theme: Theme) {
   current = theme
   const dark = isDark(theme)
   document.documentElement.classList.toggle('dark', dark)
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0b1120' : '#0f172a')
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0b1120' : '#ffffff')
 }
 
 /** Follow the operating-system setting while the theme is 'system'. Call once at startup. */
