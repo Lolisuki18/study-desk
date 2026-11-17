@@ -11,6 +11,7 @@ import {
   Minimize2,
   RotateCcw,
   Sparkles,
+  Star,
   X,
 } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
@@ -24,6 +25,7 @@ import { chapterLabel } from '../../services/quiz/exam'
 import NoteBox from '../ui/NoteBox'
 import { fireConfetti } from '../../utils/confetti'
 import { playSound } from '../../utils/sound'
+import { useStarred } from '../../services/storage/starred'
 
 const fmtTime = (s: number) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
 
@@ -229,6 +231,7 @@ export default function QuizRunner({
   onRetry: (qs: Question[]) => void
 }) {
   const { record, addExam } = useProgress()
+  const { isStarred, toggle: toggleStar } = useStarred()
   const startRef = useRef(Date.now())
   const [elapsed, setElapsed] = useState(0)
   const savedRef = useRef(false)
@@ -240,6 +243,13 @@ export default function QuizRunner({
   const [committed, setCommitted] = useState<Record<string, boolean>>({})
   const [flagged, setFlagged] = useState<Record<string, boolean>>({})
   const [eliminated, setEliminated] = useState<Record<string, Set<string>>>({})
+  const [showGrid, setShowGrid] = useState(false)
+  const [zenMode, setZenMode] = useState(false)
+  const [showConfirmSubmit, setShowConfirmSubmit] = useState(false)
+  const [resultFilter, setResultFilter] = useState<'all' | 'wrong' | 'correct'>('all')
+  const [finished, setFinished] = useState(false)
+  const [timeSpent, setTimeSpent] = useState<Record<string, number>>({})
+  const questionStartRef = useRef(Date.now())
 
   const toggleEliminate = (qid: string, key: string) => {
     setEliminated((prev) => {
@@ -249,13 +259,18 @@ export default function QuizRunner({
       return { ...prev, [qid]: nextSet }
     })
   }
-  const [showGrid, setShowGrid] = useState(false)
-  const [zenMode, setZenMode] = useState(false)
-  const [showConfirmSubmit, setShowConfirmSubmit] = useState(false)
-  const [resultFilter, setResultFilter] = useState<'all' | 'wrong' | 'correct'>('all')
-  const [finished, setFinished] = useState(false)
 
   const q = questions[i]
+
+  useEffect(() => {
+    questionStartRef.current = Date.now()
+    return () => {
+      const elapsedSec = Math.round((Date.now() - questionStartRef.current) / 1000)
+      if (elapsedSec > 0 && q) {
+        setTimeSpent((prev) => ({ ...prev, [q.id]: (prev[q.id] ?? 0) + elapsedSec }))
+      }
+    }
+  }, [i, q])
   const result = (x: Question) => override[x.id] ?? isCorrect(x, answers[x.id])
   const set = (a: Answer) => {
     playSound('click')
@@ -442,6 +457,10 @@ export default function QuizRunner({
     const listFiltered =
       resultFilter === 'wrong' ? wrong : resultFilter === 'correct' ? questions.filter((x) => result(x)) : questions
 
+    const avgSec = Math.max(1, Math.round(elapsed / Math.max(1, questions.length)))
+    const slowQuestions = questions.filter((x) => (timeSpent[x.id] ?? 0) >= 45)
+    const fastQuestions = questions.filter((x) => (timeSpent[x.id] ?? 0) > 0 && (timeSpent[x.id] ?? 0) <= 5)
+
     const rankBadge =
       score10 >= 9
         ? { label: 'Xuất sắc 🏆', cls: 'bg-emerald-50 text-emerald-700 border-emerald-300' }
@@ -486,6 +505,26 @@ export default function QuizRunner({
                 {pct(score, questions.length)}%
               </div>
             </>
+          )}
+
+          {/* Pacing Analysis */}
+          {elapsed > 0 && (
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-line/60 text-xs">
+              <span className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-card px-3 py-1 font-semibold text-ink shadow-2xs">
+                <Clock size={13} className="text-indigo-500" />
+                <span>Nhịp độ: <b>{avgSec}s</b> / câu</span>
+              </span>
+              {slowQuestions.length > 0 && (
+                <span className="inline-flex items-center gap-1 rounded-xl border border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 font-semibold text-amber-700 dark:text-amber-300">
+                  <span>🐢 {slowQuestions.length} câu mất &gt;45s</span>
+                </span>
+              )}
+              {fastQuestions.length > 0 && (
+                <span className="inline-flex items-center gap-1 rounded-xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1 font-semibold text-emerald-700 dark:text-emerald-300">
+                  <span>⚡ {fastQuestions.length} câu làm nhanh (&le;5s)</span>
+                </span>
+              )}
+            </div>
           )}
 
           <div className="mt-6 flex flex-wrap justify-center gap-2.5">
@@ -726,19 +765,39 @@ export default function QuizRunner({
             <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-muted">
               {KIND_LABEL[q.kind]}
             </span>
-            <button
-              onClick={() => toggleFlag(q.id)}
-              className={cx(
-                'inline-flex items-center gap-1.5 rounded-xl px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer',
-                flagged[q.id]
-                  ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900'
-                  : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink',
-              )}
-              title="Cắm cờ câu hỏi để xem lại sau (phím F)"
-            >
-              <Flag size={13} className={cx(flagged[q.id] && 'fill-rose-500')} />
-              <span>{flagged[q.id] ? 'Đã cắm cờ' : 'Cắm cờ (F)'}</span>
-            </button>
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => {
+                  playSound('click')
+                  toggleStar(q.collectionId, q.itemId)
+                }}
+                className={cx(
+                  'inline-flex items-center gap-1.5 rounded-xl px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer',
+                  isStarred(q.collectionId, q.itemId)
+                    ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900 font-bold'
+                    : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink',
+                )}
+                title="Gắn sao câu hỏi trọng tâm (Ôn tủ)"
+              >
+                <Star size={13} className={cx(isStarred(q.collectionId, q.itemId) && 'fill-amber-500 text-amber-500')} />
+                <span>{isStarred(q.collectionId, q.itemId) ? 'Đã gắn sao' : 'Gắn sao'}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => toggleFlag(q.id)}
+                className={cx(
+                  'inline-flex items-center gap-1.5 rounded-xl px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer',
+                  flagged[q.id]
+                    ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900'
+                    : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink',
+                )}
+                title="Cắm cờ câu hỏi để xem lại sau (phím F)"
+              >
+                <Flag size={13} className={cx(flagged[q.id] && 'fill-rose-500')} />
+                <span>{flagged[q.id] ? 'Đã cắm cờ' : 'Cắm cờ (F)'}</span>
+              </button>
+            </div>
           </div>
 
           {promptTitle(q) && <div className="mb-1 text-xs font-bold uppercase tracking-wider text-muted">{promptTitle(q)}</div>}
