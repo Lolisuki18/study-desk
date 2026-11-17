@@ -8,7 +8,7 @@ import { pomodoro } from '../services/pomodoro'
 import { applyTheme } from '../services/theme'
 import type { BackupFile, Theme } from '../types'
 import { Button, Card, ConfirmDialog, PageHeader, useToast } from '../components/ui'
-import { isSoundEnabled, setSoundEnabled } from '../utils/sound'
+import { isSoundEnabled, setSoundEnabled, getSoundVolume, setSoundVolume, playSound } from '../utils/sound'
 
 export default function SettingsPage() {
   const { exportBackup, importBackup, resetAll } = useProgress()
@@ -16,6 +16,7 @@ export default function SettingsPage() {
   const backup = useAutoBackup()
   const [settings, setSettings] = useState(loadSettings)
   const [sound, setSound] = useState(isSoundEnabled)
+  const [volume, setVolume] = useState(() => Math.round(getSoundVolume() * 100))
   const [showResetConfirm, setShowResetConfirm] = useState(false)
   const [pendingImport, setPendingImport] = useState<BackupFile | null>(null)
   const file = useRef<HTMLInputElement>(null)
@@ -111,15 +112,81 @@ export default function SettingsPage() {
             />
           </label>
 
-          <label className="flex items-center justify-between p-4 text-sm font-medium hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition-colors cursor-pointer">
-            Bật âm thanh hiệu ứng (Web Audio sound)
-            <input
-              type="checkbox"
-              checked={sound}
-              onChange={(e) => toggleSoundOption(e.target.checked)}
-              className="accent-indigo-600 h-4 w-4 rounded cursor-pointer"
-            />
-          </label>
+          <div className="p-4 space-y-3">
+            <label className="flex items-center justify-between text-sm font-medium hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition-colors cursor-pointer">
+              <span className="flex items-center gap-2">
+                <Volume2 size={16} className="text-indigo-600 dark:text-indigo-400" />
+                <span>Bật âm thanh hiệu ứng (Web Audio sound)</span>
+              </span>
+              <input
+                type="checkbox"
+                checked={sound}
+                onChange={(e) => toggleSoundOption(e.target.checked)}
+                className="accent-indigo-600 h-4 w-4 rounded cursor-pointer"
+              />
+            </label>
+
+            {sound && (
+              <div className="rounded-2xl border border-line bg-slate-50/60 dark:bg-slate-900/40 p-3.5 space-y-3 animate-in fade-in duration-150">
+                <div className="flex items-center justify-between text-xs font-semibold text-muted">
+                  <span>Âm lượng hiệu ứng</span>
+                  <span className="font-mono text-ink font-bold">{volume}%</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={100}
+                  value={volume}
+                  onChange={(e) => {
+                    const v = Number(e.target.value)
+                    setVolume(v)
+                    setSoundVolume(v / 100)
+                  }}
+                  className="w-full accent-indigo-600 cursor-pointer h-1.5 rounded-lg bg-slate-200 dark:bg-slate-700"
+                />
+                <div className="pt-1">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-muted mb-2">Nghe thử âm thanh</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => playSound('correct')}
+                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:border-emerald-300 cursor-pointer"
+                    >
+                      ✓ Đúng
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => playSound('wrong')}
+                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-rose-600 dark:text-rose-400 hover:border-rose-300 cursor-pointer"
+                    >
+                      ✕ Sai
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => playSound('flip')}
+                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:border-indigo-300 cursor-pointer"
+                    >
+                      🔄 Lật thẻ
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => playSound('bell')}
+                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-amber-600 dark:text-amber-400 hover:border-amber-300 cursor-pointer"
+                    >
+                      🔔 Chuông
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => playSound('fanfare')}
+                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-purple-600 dark:text-purple-400 hover:border-purple-300 cursor-pointer"
+                    >
+                      🎉 Hoàn thành
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
 
           <div className="flex items-center justify-between p-4 text-sm font-medium">
             <span>Số câu Quiz mặc định</span>

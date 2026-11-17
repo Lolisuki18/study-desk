@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
-import { Gauge } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ArrowRight, Gauge } from 'lucide-react'
 import { allEntries, collections, examCollections, standaloneCollections } from '../../data'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { estimateReadiness } from '../../services/readiness'
@@ -69,6 +70,15 @@ export default function Readiness() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-3.5 flex items-center justify-between border-t border-line/60 pt-2.5 text-xs">
+                <span className="text-[11px] text-muted">Có câu hay làm sai?</span>
+                <Link
+                  to="/mistakes"
+                  className="inline-flex items-center gap-1 font-bold text-rose-600 hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300 transition-colors"
+                >
+                  Xem Sổ câu sai <ArrowRight size={13} />
+                </Link>
+              </div>
             </Card>
           )
         })}

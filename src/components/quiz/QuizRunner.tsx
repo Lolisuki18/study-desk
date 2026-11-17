@@ -15,7 +15,7 @@ import {
 } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { isCorrect, itemResults, KIND_LABEL, type Answer, type Question } from '../../services/quiz/generate'
-import { Button, Card, ConfirmDialog, ProgressBar } from '../ui'
+import { Button, Card, ConfirmDialog, Modal, ProgressBar } from '../ui'
 import { cx, pct } from '../../utils'
 import { isMulti, toggleKey } from '../../utils/answers'
 import type { QuizStartOptions } from './QuizSetup'
@@ -60,12 +60,16 @@ function Input({
   onChange,
   locked,
   onEnter,
+  eliminated,
+  onToggleEliminate,
 }: {
   q: Question
   value: Answer
   onChange: (a: Answer) => void
   locked: boolean
   onEnter?: () => void
+  eliminated?: Set<string>
+  onToggleEliminate?: (key: string) => void
 }) {
   if (q.kind === 'mc') {
     const multi = isMulti(q.answer)
@@ -81,14 +85,20 @@ function Input({
           {q.options.map((o, idx) => {
             const sel = picked.includes(o.key)
             const showRes = locked
+            const isElim = eliminated?.has(o.key) && !locked
             return (
               <li key={o.key}>
                 <button
                   disabled={locked}
                   onClick={() => onChange(multi ? toggleKey(picked, o.key) : o.key)}
+                  onContextMenu={(e) => {
+                    e.preventDefault()
+                    if (!locked && onToggleEliminate) onToggleEliminate(o.key)
+                  }}
                   className={cx(
-                    'group flex w-full items-center rounded-2xl border-2 px-4 py-3.5 text-left text-[15px] transition-all duration-150 cursor-pointer',
-                    !showRes && (sel ? 'border-indigo-600 dark:border-indigo-500 bg-indigo-50/70 dark:bg-indigo-950/40 font-medium' : 'border-line bg-card hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/40'),
+                    'group flex w-full items-center rounded-2xl border-2 px-4 py-3.5 text-left text-[15px] transition-all duration-150 cursor-pointer relative',
+                    isElim && 'line-through opacity-45 bg-slate-100/50 dark:bg-slate-800/20 border-dashed border-line',
+                    !showRes && !isElim && (sel ? 'border-indigo-600 dark:border-indigo-500 bg-indigo-50/70 dark:bg-indigo-950/40 font-medium' : 'border-line bg-card hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/40'),
                     showRes && q.answer.includes(o.key) && 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-100 font-semibold',
                     showRes && sel && !q.answer.includes(o.key) && 'border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-100',
                     showRes && !sel && !q.answer.includes(o.key) && 'border-line bg-card/60 opacity-60 text-muted',
@@ -100,11 +110,27 @@ function Input({
                       sel && !showRes
                         ? 'border-indigo-600 bg-indigo-600 text-white'
                         : 'border-line bg-slate-100 dark:bg-slate-800 text-muted group-hover:border-ink',
+                      isElim && 'line-through opacity-50'
                     )}
                   >
                     {o.key}
                   </span>
                   <span className="flex-1 leading-relaxed">{o.text}</span>
+                  {!locked && onToggleEliminate && (
+                    <span
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        onToggleEliminate(o.key)
+                      }}
+                      title={isElim ? 'Bỏ gạch đáp án' : 'Gạch bỏ đáp án loại trừ (hoặc chuột phải)'}
+                      className={cx(
+                        'opacity-0 group-hover:opacity-100 transition-opacity px-2 py-0.5 rounded-lg text-xs font-bold text-muted hover:text-ink hover:bg-slate-200/60 dark:hover:bg-slate-700',
+                        isElim && 'opacity-100 text-rose-500 font-normal line-through'
+                      )}
+                    >
+                      {isElim ? 'Bỏ gạch' : 'Loại trừ'}
+                    </span>
+                  )}
                 </button>
               </li>
             )
@@ -213,6 +239,16 @@ export default function QuizRunner({
   const [override, setOverride] = useState<Record<string, boolean>>({})
   const [committed, setCommitted] = useState<Record<string, boolean>>({})
   const [flagged, setFlagged] = useState<Record<string, boolean>>({})
+  const [eliminated, setEliminated] = useState<Record<string, Set<string>>>({})
+
+  const toggleEliminate = (qid: string, key: string) => {
+    setEliminated((prev) => {
+      const nextSet = new Set(prev[qid] ?? [])
+      if (nextSet.has(key)) nextSet.delete(key)
+      else nextSet.add(key)
+      return { ...prev, [qid]: nextSet }
+    })
+  }
   const [showGrid, setShowGrid] = useState(false)
   const [zenMode, setZenMode] = useState(false)
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false)
@@ -791,19 +827,102 @@ export default function QuizRunner({
           Phím F để cắm cờ · ← → để chuyển câu
         </p>
 
-        {/* Submit Confirmation Modal */}
-        <ConfirmDialog
-          open={showConfirmSubmit}
-          onClose={() => setShowConfirmSubmit(false)}
-          onConfirm={finish}
-          title="Xác nhận nộp bài thi"
-          description={`Bạn đã trả lời ${answeredCount}/${questions.length} câu hỏi.\n${
-            questions.length - answeredCount > 0 ? `⚠️ Còn ${questions.length - answeredCount} câu chưa trả lời.\n` : '✅ Đã trả lời hết tất cả câu hỏi.\n'
-          }${flaggedCount > 0 ? `🚩 Có ${flaggedCount} câu đang cắm cờ xem lại.\n` : ''}Bạn có chắc chắn muốn nộp bài và kết thúc không?`}
-          confirmText="Nộp bài ngay"
-          cancelText="Kiểm tra lại"
-          tone={questions.length - answeredCount > 0 ? 'danger' : 'primary'}
-        />
+        {/* Pre-submission Review Checklist Modal */}
+        <Modal open={showConfirmSubmit} onClose={() => setShowConfirmSubmit(false)} title="Kiểm tra trước khi nộp bài" className="max-w-md">
+          <div className="space-y-4 pt-1">
+            <div className="grid grid-cols-3 gap-2 text-center text-xs">
+              <div className="rounded-2xl border border-line bg-card p-3">
+                <div className="text-muted font-medium">Tổng số câu</div>
+                <div className="text-lg font-bold font-mono text-ink mt-0.5">{questions.length}</div>
+              </div>
+              <div className="rounded-2xl border border-line bg-emerald-50/60 dark:bg-emerald-950/30 p-3">
+                <div className="text-emerald-700 dark:text-emerald-400 font-semibold">Đã làm</div>
+                <div className="text-lg font-bold font-mono text-emerald-700 dark:text-emerald-400 mt-0.5">{answeredCount}</div>
+              </div>
+              <div
+                className={cx(
+                  'rounded-2xl border p-3',
+                  questions.length - answeredCount > 0
+                    ? 'bg-rose-50/70 dark:bg-rose-950/30 border-rose-200 dark:border-rose-900 text-rose-700 dark:text-rose-400 font-semibold'
+                    : 'border-line bg-card text-muted'
+                )}
+              >
+                <div>Chưa làm</div>
+                <div className="text-lg font-bold font-mono mt-0.5">{questions.length - answeredCount}</div>
+              </div>
+            </div>
+
+            {/* Unanswered Questions Jump List */}
+            {questions.length - answeredCount > 0 && (
+              <div className="rounded-2xl border border-rose-200 dark:border-rose-900/60 bg-rose-50/40 dark:bg-rose-950/20 p-3.5 space-y-2">
+                <div className="text-xs font-bold text-rose-700 dark:text-rose-400">
+                  ⚠️ Câu chưa trả lời (bấm để xem ngay):
+                </div>
+                <div className="flex flex-wrap gap-1.5 max-h-24 overflow-y-auto">
+                  {questions.map((item, idx) => {
+                    const isAns = answers[item.id] !== undefined && answers[item.id] !== ''
+                    if (isAns) return null
+                    return (
+                      <button
+                        key={item.id}
+                        onClick={() => {
+                          setI(idx)
+                          setShowConfirmSubmit(false)
+                        }}
+                        className="rounded-xl border border-rose-300 dark:border-rose-800 bg-card px-2.5 py-1 text-xs font-bold text-rose-600 dark:text-rose-400 hover:bg-rose-500 hover:text-white transition-colors cursor-pointer"
+                      >
+                        Câu {idx + 1}
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Flagged Questions Jump List */}
+            {flaggedCount > 0 && (
+              <div className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-3.5 space-y-2">
+                <div className="text-xs font-bold text-amber-700 dark:text-amber-400 flex items-center gap-1">
+                  <Flag size={12} className="fill-amber-500 text-amber-500" />
+                  <span>Câu đang cắm cờ phân vân:</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5 max-h-20 overflow-y-auto">
+                  {questions.map((item, idx) => {
+                    if (!flagged[item.id]) return null
+                    return (
+                      <button
+                        key={item.id}
+                        onClick={() => {
+                          setI(idx)
+                          setShowConfirmSubmit(false)
+                        }}
+                        className="rounded-xl border border-amber-300 dark:border-amber-800 bg-card px-2.5 py-1 text-xs font-bold text-amber-700 dark:text-amber-400 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer"
+                      >
+                        Câu {idx + 1}
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
+            <div className="flex gap-2.5 pt-2">
+              <Button onClick={() => setShowConfirmSubmit(false)} className="flex-1 py-2.5">
+                Kiểm tra lại
+              </Button>
+              <Button
+                variant="primary"
+                onClick={() => {
+                  setShowConfirmSubmit(false)
+                  finish()
+                }}
+                className="flex-1 py-2.5"
+              >
+                Nộp bài ngay
+              </Button>
+            </div>
+          </div>
+        </Modal>
       </div>
     </div>
   )

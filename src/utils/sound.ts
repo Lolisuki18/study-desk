@@ -34,10 +34,31 @@ export function setSoundEnabled(enabled: boolean): void {
   } catch {}
 }
 
-export function playSound(type: 'correct' | 'wrong' | 'flip' | 'fanfare' | 'click') {
+export function getSoundVolume(): number {
+  try {
+    const val = localStorage.getItem('psh.sound.volume')
+    return val !== null ? Math.max(0, Math.min(1, Number(val))) : 0.7
+  } catch {
+    return 0.7
+  }
+}
+
+export function setSoundVolume(volume: number): void {
+  try {
+    const v = Math.max(0, Math.min(1, volume))
+    localStorage.setItem('psh.sound.volume', String(v))
+  } catch {}
+}
+
+export type SoundType = 'correct' | 'wrong' | 'flip' | 'fanfare' | 'click' | 'bell'
+
+export function playSound(type: SoundType) {
   if (!isSoundEnabled()) return
   const ctx = getAudioContext()
   if (!ctx) return
+
+  const vol = getSoundVolume()
+  if (vol <= 0) return
 
   const now = ctx.currentTime
 
@@ -46,7 +67,7 @@ export function playSound(type: 'correct' | 'wrong' | 'flip' | 'fanfare' | 'clic
     const gain = ctx.createGain()
     osc.type = 'sine'
     osc.frequency.setValueAtTime(800, now)
-    gain.gain.setValueAtTime(0.04, now)
+    gain.gain.setValueAtTime(0.04 * vol, now)
     gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05)
     osc.connect(gain)
     gain.connect(ctx.destination)
@@ -58,7 +79,7 @@ export function playSound(type: 'correct' | 'wrong' | 'flip' | 'fanfare' | 'clic
     osc.type = 'triangle'
     osc.frequency.setValueAtTime(300, now)
     osc.frequency.exponentialRampToValueAtTime(600, now + 0.08)
-    gain.gain.setValueAtTime(0.05, now)
+    gain.gain.setValueAtTime(0.05 * vol, now)
     gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08)
     osc.connect(gain)
     gain.connect(ctx.destination)
@@ -71,7 +92,7 @@ export function playSound(type: 'correct' | 'wrong' | 'flip' | 'fanfare' | 'clic
       const gain = ctx.createGain()
       osc.type = 'sine'
       osc.frequency.setValueAtTime(freq, start)
-      gain.gain.setValueAtTime(0.08, start)
+      gain.gain.setValueAtTime(0.08 * vol, start)
       gain.gain.exponentialRampToValueAtTime(0.001, start + dur)
       osc.connect(gain)
       gain.connect(ctx.destination)
@@ -87,23 +108,37 @@ export function playSound(type: 'correct' | 'wrong' | 'flip' | 'fanfare' | 'clic
     osc.type = 'sawtooth'
     osc.frequency.setValueAtTime(180, now)
     osc.frequency.exponentialRampToValueAtTime(120, now + 0.18)
-    gain.gain.setValueAtTime(0.06, now)
+    gain.gain.setValueAtTime(0.06 * vol, now)
     gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18)
     osc.connect(gain)
     gain.connect(ctx.destination)
     osc.start(now)
     osc.stop(now + 0.18)
+  } else if (type === 'bell') {
+    // 3 pleasant bell pulses (E5 -> A5)
+    ;[0, 0.25, 0.5].forEach((t) => {
+      const osc = ctx.createOscillator()
+      const gain = ctx.createGain()
+      osc.type = 'sine'
+      osc.frequency.setValueAtTime(880, now + t)
+      gain.gain.setValueAtTime(0.12 * vol, now + t)
+      gain.gain.exponentialRampToValueAtTime(0.001, now + t + 0.2)
+      osc.connect(gain)
+      gain.connect(ctx.destination)
+      osc.start(now + t)
+      osc.stop(now + t + 0.22)
+    })
   } else if (type === 'fanfare') {
-    // 3-note celebration chime (C5 -> E5 -> G5 -> C6)
+    // 4-note celebration chime (C5 -> E5 -> G5 -> C6)
     const notes = [523.25, 659.25, 783.99, 1046.5]
     notes.forEach((freq, idx) => {
       const start = now + idx * 0.1
-      const dur = idx === notes.length - 1 ? 0.4 : 0.18
+      const dur = idx === notes.length - 1 ? 0.45 : 0.18
       const osc = ctx.createOscillator()
       const gain = ctx.createGain()
       osc.type = 'sine'
       osc.frequency.setValueAtTime(freq, start)
-      gain.gain.setValueAtTime(0.09, start)
+      gain.gain.setValueAtTime(0.1 * vol, start)
       gain.gain.exponentialRampToValueAtTime(0.001, start + dur)
       osc.connect(gain)
       gain.connect(ctx.destination)

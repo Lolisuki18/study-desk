@@ -6,22 +6,26 @@ import {
   ChevronLeft,
   ChevronRight,
   HelpCircle,
+  LayoutGrid,
   Maximize2,
   Minimize2,
+  PauseCircle,
+  PlayCircle,
   Repeat,
   RotateCcw,
   RotateCw,
   Shuffle,
   Sparkles,
   Type,
+  Volume1,
   Volume2,
   VolumeX,
   X,
 } from 'lucide-react'
-import type { Entry, Grade, Status } from '../../types'
+import type { Entry, Grade, Item, Status } from '../../types'
 import NoteBox from '../ui/NoteBox'
 import { useProgress } from '../../features/learning/ProgressContext'
-import { Button, Card, Empty, ProgressBar, useToast } from '../ui'
+import { Button, Card, Empty, Modal, ProgressBar, useToast } from '../ui'
 import { CardBack, CardFront } from './CardContent'
 import { shuffle, cx } from '../../utils'
 import { isMulti, sameKeys, toggleKey } from '../../utils/answers'
@@ -29,6 +33,8 @@ import { Link } from 'react-router-dom'
 import { loadSettings, saveSettings } from '../../services/storage/settings'
 import { fireConfetti } from '../../utils/confetti'
 import { isSoundEnabled, playSound, setSoundEnabled } from '../../utils/sound'
+import { isSpeaking, speakText, stopSpeaking } from '../../utils/speech'
+import { itemTitle } from '../../data'
 
 type Filter = 'all' | Status | 'review'
 const FILTERS: { v: Filter; label: string }[] = [
@@ -80,6 +86,30 @@ function loadResume(resumeKey: string | undefined, entries: Entry[]): Resume | n
   }
 }
 
+function getTextToSpeak(item: Item, back: boolean): string {
+  if (back) {
+    if (item.type === 'multiple-choice') {
+      const ans = [...item.content.answer].map((k) => item.content.options.find((o) => o.key === k)?.text).filter(Boolean).join(', ')
+      return `Đáp án: ${ans}. ${item.content.explanation ?? ''}`
+    }
+    if (item.type === 'true-false') {
+      return `Đáp án: ${item.content.answer ? 'Đúng' : 'Sai'}. ${item.content.explanation ?? ''}`
+    }
+    if (item.type === 'theory' || item.type === 'programming') {
+      return `${item.content.definition}. ${item.content.explanation ?? ''}`
+    }
+    if (item.type === 'vocabulary') {
+      return `${item.content.meaning}. ${item.content.example ?? ''}`
+    }
+  } else {
+    if (item.type === 'multiple-choice') return item.content.question
+    if (item.type === 'true-false') return item.content.statement
+    if (item.type === 'theory' || item.type === 'programming') return item.content.concept
+    if (item.type === 'vocabulary') return item.content.term
+  }
+  return ''
+}
+
 export default function FlashcardSession({ entries, mode = 'study', resumeKey }: Props) {
   const { get, record, toggleReview } = useProgress()
   const { toast } = useToast()
@@ -104,6 +134,29 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   // Touch gesture swipe state
   const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null)
   const [swipeHint, setSwipeHint] = useState<string | null>(null)
+  const [showCardGrid, setShowCardGrid] = useState(false)
+  const [autoPlay, setAutoPlay] = useState(false)
+  const [reading, setReading] = useState(false)
+  const autoTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  // Dừng đọc TTS và dọn dẹp khi đổi thẻ
+  useEffect(() => {
+    stopSpeaking()
+    setReading(false)
+  }, [idx, flipped])
+
+  // Xử lý đọc Text-to-Speech
+  const handleSpeak = (e?: React.MouseEvent) => {
+    e?.stopPropagation()
+    if (isSpeaking() || reading) {
+      stopSpeaking()
+      setReading(false)
+    } else if (cur) {
+      const text = getTextToSpeak(cur.item, inverted ? !flipped : flipped)
+      setReading(true)
+      speakText(text, () => setReading(false))
+    }
+  }
 
   const getRef = useRef(get)
   getRef.current = get
@@ -127,6 +180,31 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   const [order, setOrder] = useState<Slot[]>(() => deck.map((e) => ({ e, repeat: false })))
   const [repeats, setRepeats] = useState(0)
   const [done, setDone] = useState(false)
+
+  // Chế độ tự động phát (Auto-Play Slideshow)
+  useEffect(() => {
+    if (!autoPlay || done) {
+      if (autoTimerRef.current) clearTimeout(autoTimerRef.current)
+      return
+    }
+
+    autoTimerRef.current = setTimeout(() => {
+      if (!flipped) {
+        setFlipped(true)
+      } else {
+        if (idx < order.length - 1) {
+          setFlipped(false)
+          setIdx((i) => i + 1)
+        } else {
+          setAutoPlay(false)
+        }
+      }
+    }, 4000)
+
+    return () => {
+      if (autoTimerRef.current) clearTimeout(autoTimerRef.current)
+    }
+  }, [autoPlay, flipped, idx, order.length, done])
 
   useEffect(() => {
     setIdx(resume ? Math.max(0, resume.keys.indexOf(resume.cur)) : 0)
@@ -385,9 +463,38 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
         >
           <Repeat size={13} /> <span className="hidden sm:inline">Học đến khi thuộc</span>
         </button>
+
+        <button
+          className={pill(autoPlay)}
+          onClick={() => setAutoPlay((a) => !a)}
+          title="Tự động lật và chuyển câu sau 4 giây"
+        >
+          {autoPlay ? <PauseCircle size={13} className="text-amber-400 animate-pulse" /> : <PlayCircle size={13} />}
+          <span className="hidden sm:inline">{autoPlay ? 'Dừng phát' : 'Tự động phát'}</span>
+        </button>
       </div>
 
       <div className="flex items-center gap-1.5">
+        {/* Nút đọc Text-to-Speech */}
+        <button
+          onClick={handleSpeak}
+          className={cx(
+            'inline-flex h-8 w-8 items-center justify-center rounded-xl transition-colors cursor-pointer',
+            reading ? 'bg-indigo-600 text-white animate-pulse' : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink'
+          )}
+          title={reading ? 'Dừng đọc (đang phát giọng nói)' : 'Đọc to nội dung thẻ (Text-to-Speech)'}
+        >
+          <Volume1 size={16} />
+        </button>
+
+        {/* Nút xem danh sách lưới tất cả thẻ */}
+        <button
+          onClick={() => setShowCardGrid(true)}
+          className="inline-flex h-8 w-8 items-center justify-center rounded-xl text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink cursor-pointer"
+          title="Xem bảng danh sách thẻ trong phiên"
+        >
+          <LayoutGrid size={16} />
+        </button>
         {/* Nút chỉnh cỡ chữ zoom */}
         <button
           onClick={cycleFontZoom}
@@ -606,6 +713,45 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
       <p className="mt-3 text-center text-[11px] text-muted">
         Vuốt trái: Quên · Vuốt phải: Được · Vuốt lên: Dễ · Phím Space để lật · K được · U quên · R đánh dấu
       </p>
+
+      {/* Card Grid Drawer Modal */}
+      <Modal open={showCardGrid} onClose={() => setShowCardGrid(false)} title="Danh sách thẻ trong phiên">
+        <div className="max-h-[60vh] overflow-y-auto space-y-3 pt-1">
+          <p className="text-xs text-muted">
+            Nhấn vào số thẻ để nhảy nhanh tới câu đó. Màu xanh: Đã thuộc, Đỏ: Chưa nhớ / Hộp 1, Xám: Mới.
+          </p>
+          <div className="grid grid-cols-6 sm:grid-cols-8 gap-2 pt-1">
+            {order.map((slot, i) => {
+              const it = slot.e.item
+              const p = get(slot.e.collection.id, it.id)
+              const isCur = i === idx
+              return (
+                <button
+                  key={`${slot.e.collection.id}::${it.id}::${i}`}
+                  onClick={() => {
+                    setIdx(i)
+                    setFlipped(false)
+                    setShowCardGrid(false)
+                  }}
+                  title={itemTitle(it)}
+                  className={cx(
+                    'flex flex-col items-center justify-center h-12 rounded-xl text-xs font-mono font-bold transition-all border cursor-pointer',
+                    isCur && 'ring-2 ring-indigo-500 scale-105 z-10 font-black shadow-md',
+                    p?.status === 'known'
+                      ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300'
+                      : p?.status === 'unknown'
+                      ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-800 text-rose-700 dark:text-rose-300'
+                      : 'bg-slate-100 dark:bg-slate-800 border-line text-muted'
+                  )}
+                >
+                  <span>{i + 1}</span>
+                  {p?.level ? <span className="text-[9px] font-normal opacity-70">H{p.level}</span> : null}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </Modal>
 
       {/* Keyboard Shortcuts Modal */}
       {showHelp && (
