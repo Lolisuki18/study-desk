@@ -20,9 +20,12 @@ import {
 import Pomodoro from './Pomodoro'
 import ThemeToggle from './ThemeToggle'
 import CommandPalette from './CommandPalette'
+import ShortcutsModal from './ShortcutsModal'
+import ScrollToTop from './ScrollToTop'
 import { ToastProvider } from '../ui'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { cx } from '../../utils'
+import { Keyboard } from 'lucide-react'
 
 interface NavItem {
   to: string
@@ -69,6 +72,7 @@ const navGroups: NavGroup[] = [
 export default function Layout() {
   const { summary, loaded } = useProgress()
   const [cmdOpen, setCmdOpen] = useState(false)
+  const [shortcutsOpen, setShortcutsOpen] = useState(false)
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
   const location = useLocation()
 
@@ -78,9 +82,14 @@ export default function Layout() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement
+      const isInput = target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
         setCmdOpen((prev) => !prev)
+      } else if (!isInput && e.key === '?') {
+        e.preventDefault()
+        setShortcutsOpen((prev) => !prev)
       }
     }
     window.addEventListener('keydown', onKey)
@@ -92,6 +101,12 @@ export default function Layout() {
       <div className="flex min-h-full flex-col md:flex-row bg-bg text-ink transition-colors duration-150">
         {/* Global Command Palette */}
         <CommandPalette open={cmdOpen} onClose={() => setCmdOpen(false)} />
+
+        {/* Global Shortcuts Modal */}
+        <ShortcutsModal open={shortcutsOpen} onClose={() => setShortcutsOpen(false)} />
+
+        {/* Smooth Scroll To Top */}
+        <ScrollToTop />
 
         {/* Top bar on Mobile */}
         <header className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200/90 dark:border-line bg-white/95 dark:bg-card/95 px-4 py-3 backdrop-blur-md md:hidden print:hidden">
@@ -136,6 +151,14 @@ export default function Layout() {
               <div className="font-black tracking-tight text-slate-900 dark:text-ink text-[15px] leading-snug">Góc học tập</div>
               <div className="text-[11px] text-slate-500 dark:text-muted font-semibold">Study Hub & SRS</div>
             </div>
+            <button
+              onClick={() => setShortcutsOpen(true)}
+              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-slate-500 dark:text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-ink cursor-pointer"
+              title="Phím tắt học tập (?)"
+              aria-label="Phím tắt học tập"
+            >
+              <Keyboard size={16} />
+            </button>
             <ThemeToggle className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-slate-500 dark:text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-ink" />
           </div>
 
@@ -373,6 +396,17 @@ export default function Layout() {
                   <Settings size={18} className="text-slate-600 dark:text-slate-300 shrink-0" />
                   <span>Cài đặt</span>
                 </NavLink>
+
+                <button
+                  onClick={() => {
+                    setMobileDrawerOpen(false)
+                    setShortcutsOpen(true)
+                  }}
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200 dark:border-line bg-slate-50 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-200 hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50/50 dark:hover:bg-slate-800 transition-colors col-span-2 cursor-pointer"
+                >
+                  <Keyboard size={18} className="text-indigo-600 dark:text-indigo-400 shrink-0" />
+                  <span>Bảng phím tắt học tập (?)</span>
+                </button>
               </div>
 
               {/* Pomodoro Mobile Container */}

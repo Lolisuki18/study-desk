@@ -24,7 +24,7 @@ export default function CollectionPicker({ base, allowAll = true }: { base: stri
                 <Sparkles size={20} />
               </div>
               <div>
-                <div className="font-bold text-base text-slate-900 group-hover:text-indigo-600 transition-colors">
+                <div className="font-bold text-base text-slate-900 dark:text-ink group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                   Tất cả bộ học (Ôn luyện toàn diện)
                 </div>
                 <div className="text-xs text-muted mt-0.5 font-medium">
@@ -32,7 +32,7 @@ export default function CollectionPicker({ base, allowAll = true }: { base: stri
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-indigo-600">
+            <div className="flex items-center gap-2 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
               <span>Bắt đầu ngay</span>
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </div>
@@ -41,13 +41,11 @@ export default function CollectionPicker({ base, allowAll = true }: { base: stri
       )}
 
       {subjects.map((s) => {
-        const subjectStyle = getSubjectColor(s)
-
         return (
           <section key={s}>
             <div className="mb-3 flex items-center gap-2">
-              <span className="inline-block h-2 w-2 rounded-full bg-indigo-600" />
-              <h2 className="text-xs font-bold uppercase tracking-wider text-slate-700">{s}</h2>
+              <span className="inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400" />
+              <h2 className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">{s}</h2>
             </div>
             <div className="space-y-2.5">
               {collections
@@ -60,7 +58,7 @@ export default function CollectionPicker({ base, allowAll = true }: { base: stri
 
                   return (
                     <Link key={c.id} to={`${base}/${c.id}`} className="block group">
-                      <Card className="flex items-center gap-4 p-4 transition-all duration-150 hover:border-slate-300 hover:shadow-xs">
+                      <Card className="flex items-center gap-4 p-4 transition-all duration-150 hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-xs">
                         <div className="min-w-0 flex-1">
                           <div className="flex items-center gap-2 mb-1">
                             <span
@@ -74,13 +72,13 @@ export default function CollectionPicker({ base, allowAll = true }: { base: stri
                             </span>
                             <span className="text-xs text-muted font-medium">· {c.items.length} mục</span>
                           </div>
-                          <div className="font-bold text-sm text-slate-800 group-hover:text-indigo-600 transition-colors truncate">
+                          <div className="font-bold text-sm text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors truncate">
                             {c.title}
                           </div>
                         </div>
 
                         <div className="w-32 shrink-0">
-                          <div className="mb-1 text-right text-xs font-mono font-bold text-slate-700">
+                          <div className="mb-1 text-right text-xs font-mono font-bold text-slate-700 dark:text-slate-300">
                             {percent}%
                           </div>
                           <ProgressBar value={percent} className="h-1.5" />
@@ -88,7 +86,7 @@ export default function CollectionPicker({ base, allowAll = true }: { base: stri
 
                         <ChevronRight
                           size={18}
-                          className="text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all"
+                          className="text-slate-400 dark:text-slate-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-0.5 transition-all"
                         />
                       </Card>
                     </Link>

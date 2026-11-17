@@ -40,10 +40,10 @@ const FILTERS: { v: Filter; label: string }[] = [
 ]
 
 const GRADES: { g: Grade; label: string; hint: string; k: string; cls: string; icon?: typeof Check }[] = [
-  { g: 'again', label: 'Quên', hint: 'Chưa nhớ: về hộp 1, ôn lại ngay', k: 'U', cls: 'bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:hover:bg-rose-900/60', icon: X },
-  { g: 'hard', label: 'Khó', hint: 'Nhớ nhưng chật vật: giữ nguyên hộp, ôn lại sớm hơn', k: 'H', cls: 'bg-amber-100 text-amber-800 hover:bg-amber-200 dark:bg-amber-950/60 dark:text-amber-300 dark:hover:bg-amber-900/60' },
-  { g: 'good', label: 'Được', hint: 'Nhớ đúng: lên 1 hộp', k: 'K', cls: 'bg-emerald-500 text-white shadow-md shadow-emerald-500/20 hover:bg-emerald-600', icon: Check },
-  { g: 'easy', label: 'Dễ', hint: 'Nhớ ngay lập tức: lên 2 hộp', k: 'E', cls: 'bg-sky-100 text-sky-800 hover:bg-sky-200 dark:bg-sky-950/60 dark:text-sky-300 dark:hover:bg-sky-900/60' },
+  { g: 'again', label: 'Quên', hint: 'Chưa nhớ: về hộp 1, ôn lại ngay', k: '1', cls: 'bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:hover:bg-rose-900/60', icon: X },
+  { g: 'hard', label: 'Khó', hint: 'Nhớ nhưng chật vật: giữ nguyên hộp, ôn lại sớm hơn', k: '2', cls: 'bg-amber-100 text-amber-800 hover:bg-amber-200 dark:bg-amber-950/60 dark:text-amber-300 dark:hover:bg-amber-900/60' },
+  { g: 'good', label: 'Được', hint: 'Nhớ đúng: lên 1 hộp', k: '3', cls: 'bg-emerald-500 text-white shadow-md shadow-emerald-500/20 hover:bg-emerald-600', icon: Check },
+  { g: 'easy', label: 'Dễ', hint: 'Nhớ ngay lập tức: lên 2 hộp', k: '4', cls: 'bg-sky-100 text-sky-800 hover:bg-sky-200 dark:bg-sky-950/60 dark:text-sky-300 dark:hover:bg-sky-900/60' },
 ]
 
 /** learn-until-known: a card answered wrong comes back this many cards later */
