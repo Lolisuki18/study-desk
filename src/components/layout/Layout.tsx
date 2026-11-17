@@ -164,53 +164,62 @@ export default function Layout() {
         <aside
           className={cx(
             'sticky top-0 hidden h-screen shrink-0 flex-col overflow-y-auto border-r border-slate-200 dark:border-line bg-white dark:bg-card py-5 md:flex print:hidden transition-all duration-200',
-            collapsed ? 'w-20 px-2.5 items-center' : 'w-64 px-4',
+            collapsed ? 'w-20 px-2.5 items-center' : 'w-64 px-3.5',
           )}
         >
           {/* Brand Header */}
           {collapsed ? (
-            <div className="mb-4 flex flex-col items-center gap-2">
+            <div className="mb-4 flex flex-col items-center gap-2.5">
               <div
-                className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20"
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20"
                 title="Góc học tập (Study Hub)"
               >
-                <GraduationCap size={22} />
+                <GraduationCap size={20} />
               </div>
               <button
                 onClick={toggleCollapsed}
-                className="inline-flex h-8 w-8 items-center justify-center rounded-xl text-slate-500 dark:text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink cursor-pointer transition-colors"
+                className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink cursor-pointer transition-colors"
                 title="Mở rộng thanh điều hướng"
                 aria-label="Mở rộng thanh điều hướng"
               >
-                <PanelLeftOpen size={16} />
+                <PanelLeftOpen size={15} />
               </button>
             </div>
           ) : (
-            <div className="mb-4 flex items-center gap-3 px-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20">
-                <GraduationCap size={22} />
+            <div className="mb-4 flex items-center justify-between px-1">
+              <div className="flex items-center gap-2.5 min-w-0">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-sm shadow-indigo-500/20">
+                  <GraduationCap size={20} />
+                </div>
+                <div className="min-w-0">
+                  <div className="font-extrabold tracking-tight text-slate-900 dark:text-ink text-sm leading-tight whitespace-nowrap">
+                    Góc học tập
+                  </div>
+                  <div className="text-[10px] text-slate-500 dark:text-muted font-medium tracking-tight whitespace-nowrap">
+                    Study Hub & SRS
+                  </div>
+                </div>
               </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-black tracking-tight text-slate-900 dark:text-ink text-[15px] leading-snug">Góc học tập</div>
-                <div className="text-[11px] text-slate-500 dark:text-muted font-semibold">Study Hub & SRS</div>
+
+              <div className="flex items-center gap-0.5 shrink-0">
+                <button
+                  onClick={() => setShortcutsOpen(true)}
+                  className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer"
+                  title="Phím tắt học tập (?)"
+                  aria-label="Phím tắt học tập"
+                >
+                  <Keyboard size={14} />
+                </button>
+                <ThemeToggle className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors" />
+                <button
+                  onClick={toggleCollapsed}
+                  className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-ink transition-colors cursor-pointer"
+                  title="Thu gọn thanh điều hướng"
+                  aria-label="Thu gọn thanh điều hướng"
+                >
+                  <PanelLeftClose size={15} />
+                </button>
               </div>
-              <button
-                onClick={toggleCollapsed}
-                className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-slate-500 dark:text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-ink cursor-pointer"
-                title="Thu gọn thanh điều hướng"
-                aria-label="Thu gọn thanh điều hướng"
-              >
-                <PanelLeftClose size={16} />
-              </button>
-              <button
-                onClick={() => setShortcutsOpen(true)}
-                className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-slate-500 dark:text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-ink cursor-pointer"
-                title="Phím tắt học tập (?)"
-                aria-label="Phím tắt học tập"
-              >
-                <Keyboard size={16} />
-              </button>
-              <ThemeToggle className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-slate-500 dark:text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-ink" />
             </div>
           )}
 
