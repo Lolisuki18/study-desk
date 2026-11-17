@@ -16,6 +16,7 @@ import {
   RotateCw,
   Shuffle,
   Sparkles,
+  Star,
   Type,
   Volume1,
   Volume2,
@@ -34,6 +35,7 @@ import { loadSettings, saveSettings } from '../../services/storage/settings'
 import { fireConfetti } from '../../utils/confetti'
 import { isSoundEnabled, playSound, setSoundEnabled } from '../../utils/sound'
 import { isSpeaking, speakText, stopSpeaking } from '../../utils/speech'
+import { useStarred } from '../../services/storage/starred'
 import { itemTitle } from '../../data'
 
 type Filter = 'all' | Status | 'review'
@@ -218,6 +220,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   const cur = slot?.e
   const isRepeat = !!slot?.repeat
   const p = cur ? get(cur.collection.id, cur.item.id) : undefined
+  const { isStarred, toggle: toggleStar } = useStarred()
 
   const [picks, setPicks] = useState<Record<string, string>>({})
   const [drafts, setDrafts] = useState<Record<string, string>>({})
@@ -611,12 +614,30 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
             {statusLabel}
           </span>
           <button
+            onClick={() => {
+              if (cur) {
+                toggleStar(cur.collection.id, cur.item.id)
+                playSound('click')
+              }
+            }}
+            className={cx(
+              'inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-bold transition-colors cursor-pointer border',
+              cur && isStarred(cur.collection.id, cur.item.id)
+                ? 'bg-amber-500 border-amber-600 text-white'
+                : 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-900 text-amber-700 dark:text-amber-300 hover:bg-amber-100',
+            )}
+            title="Đánh dấu sao câu hỏi trọng tâm (Ôn tủ)"
+          >
+            <Star size={11} className={cx(cur && isStarred(cur.collection.id, cur.item.id) && 'fill-white')} />
+            <span>{cur && isStarred(cur.collection.id, cur.item.id) ? 'Đã gắn sao' : 'Gắn sao'}</span>
+          </button>
+          <button
             onClick={handleToggleBookmark}
             className={cx(
               'inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-bold transition-colors cursor-pointer border',
               p?.review
-                ? 'bg-amber-500 border-amber-600 text-white'
-                : 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-900 text-amber-700 dark:text-amber-300 hover:bg-amber-100',
+                ? 'bg-rose-500 border-rose-600 text-white'
+                : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-900 text-rose-700 dark:text-rose-300 hover:bg-rose-100',
             )}
             title="Đánh dấu cần ôn lại (phím R)"
           >
