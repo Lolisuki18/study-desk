@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
-import { BookOpen, Library, Search, Sparkles, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { BookOpen, Library, Search, Sparkles, Upload, X } from 'lucide-react'
 import { collections } from '../data'
 import CollectionCard, { CollectionsBySubject } from '../components/dashboard/CollectionCard'
 import { Button, Card, Empty, PageHeader } from '../components/ui'
@@ -39,22 +40,29 @@ export default function Collections() {
         title="Bộ học của tôi"
         subtitle={`Quản lý và ôn luyện ${collections.length} bộ học (${totalItems} câu hỏi / mục kiến thức)`}
         actions={
-          <div className="relative">
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
-            <input
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder="Tìm theo tên, môn, mô tả…"
-              className="w-64 rounded-xl border border-line bg-card pl-9 pr-8 py-2 text-sm outline-none transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/10"
-            />
-            {q && (
-              <button
-                onClick={() => setQ('')}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded p-0.5 text-muted hover:text-ink"
-              >
-                <X size={14} />
-              </button>
-            )}
+          <div className="flex items-center gap-2.5">
+            <div className="relative">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Tìm theo tên, môn, mô tả…"
+                className="w-44 sm:w-60 rounded-xl border border-line bg-card pl-9 pr-8 py-2 text-xs sm:text-sm outline-none transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/10"
+              />
+              {q && (
+                <button
+                  onClick={() => setQ('')}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded p-0.5 text-muted hover:text-ink cursor-pointer"
+                >
+                  <X size={14} />
+                </button>
+              )}
+            </div>
+            <Link to="/import">
+              <Button variant="primary" className="py-2 px-3.5 text-xs font-bold shrink-0 cursor-pointer">
+                <Upload size={14} /> Tải lên JSON
+              </Button>
+            </Link>
           </div>
         }
       />

@@ -1,5 +1,6 @@
 import type { Collection, Entry, Item } from '../types'
 import { validateCollection } from '../utils/validate'
+import { getCustomCollections } from '../services/storage/customCollections'
 
 /**
  * Every *.json file under src/data/collections/** is one collection.
@@ -34,8 +35,20 @@ export function loadCollections(mods: Record<string, unknown> = modules) {
 }
 
 const loaded = loadCollections()
-export const collections: Collection[] = loaded.collections
+export const bundledCollections: Collection[] = loaded.collections
 export const loadReports: LoadReport[] = loaded.reports
+
+export function getLoadedCollections(): Collection[] {
+  const custom = getCustomCollections()
+  if (!custom.length) return bundledCollections
+  return [...bundledCollections, ...custom]
+}
+
+export let collections: Collection[] = getLoadedCollections()
+
+export function refreshDataCollections() {
+  collections = getLoadedCollections()
+}
 
 export const getCollection = (id: string) => collections.find((c) => c.id === id)
 

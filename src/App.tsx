@@ -12,6 +12,7 @@ import MistakesPage from './pages/MistakesPage'
 import SearchPage from './pages/SearchPage'
 import StatsPage from './pages/StatsPage'
 import SettingsPage from './pages/SettingsPage'
+import ImportPage from './pages/ImportPage'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route index element={<Dashboard />} />
         <Route path="collections" element={<Collections />} />
         <Route path="collections/:id" element={<CollectionDetail />} />
+        <Route path="import" element={<ImportPage />} />
         <Route path="flashcards/:id?" element={<FlashcardsPage />} />
         <Route path="quiz/:id?" element={<QuizPage />} />
         <Route path="review/:category?" element={<ReviewPage />} />

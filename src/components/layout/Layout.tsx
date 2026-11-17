@@ -17,6 +17,7 @@ import {
   Search,
   Settings,
   Sparkles,
+  Upload,
   X,
 } from 'lucide-react'
 import Pomodoro from './Pomodoro'
@@ -59,6 +60,7 @@ const navGroups: NavGroup[] = [
       { to: '/quiz', label: 'Trắc nghiệm', icon: ListChecks },
       { to: '/exam', label: 'Thi thử', icon: FileCheck2 },
       { to: '/mistakes', label: 'Sổ câu sai', icon: NotebookPen },
+      { to: '/import', label: 'Tải lên & Mẫu', icon: Upload },
     ],
   },
   {
