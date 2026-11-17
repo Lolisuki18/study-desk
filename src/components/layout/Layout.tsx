@@ -72,12 +72,10 @@ export default function Layout() {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
   const location = useLocation()
 
-  // Tự động đóng mobile drawer khi đổi trang
   useEffect(() => {
     setMobileDrawerOpen(false)
   }, [location.pathname])
 
-  // Lắng nghe phím tắt Ctrl+K hoặc ⌘K toàn cục
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
@@ -96,18 +94,18 @@ export default function Layout() {
         <CommandPalette open={cmdOpen} onClose={() => setCmdOpen(false)} />
 
         {/* Top bar on Mobile */}
-        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-line bg-card/90 px-4 py-3 backdrop-blur-md md:hidden print:hidden">
+        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200/80 dark:border-line bg-card/95 px-4 py-3 backdrop-blur-md md:hidden print:hidden">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-slate-900 to-indigo-600 text-white shadow-xs">
+            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-xs">
               <GraduationCap size={18} />
             </div>
-            <span className="font-bold tracking-tight text-ink">Góc học tập</span>
+            <span className="font-extrabold tracking-tight text-slate-900 dark:text-white">Góc học tập</span>
           </div>
 
           <div className="flex items-center gap-2">
             <button
               onClick={() => setCmdOpen(true)}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-line bg-card text-muted hover:text-ink active:scale-95 transition-all"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 dark:border-line bg-card text-slate-600 dark:text-muted hover:text-ink active:scale-95 transition-all cursor-pointer"
               aria-label="Tìm kiếm nhanh"
               title="Tìm kiếm nhanh (Ctrl + K)"
             >
@@ -117,40 +115,40 @@ export default function Layout() {
             {summary.needReview > 0 && (
               <NavLink
                 to="/today"
-                className="flex items-center gap-1.5 rounded-full bg-rose-50 dark:bg-rose-950/40 px-2.5 py-1 text-xs font-semibold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900"
+                className="flex items-center gap-1.5 rounded-full bg-rose-50 dark:bg-rose-950/40 px-2.5 py-1 text-xs font-bold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900"
               >
                 <RefreshCw size={12} className="animate-spin-slow" />
                 <span>{summary.needReview}</span>
               </NavLink>
             )}
-            <ThemeToggle className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-line text-muted hover:text-ink" />
+            <ThemeToggle className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 dark:border-line text-slate-600 dark:text-muted hover:text-ink" />
           </div>
         </header>
 
         {/* Desktop Sidebar */}
-        <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col overflow-y-auto border-r border-line bg-card px-4 py-5 md:flex print:hidden">
+        <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col overflow-y-auto border-r border-slate-200/80 dark:border-line bg-card px-4 py-5 md:flex print:hidden">
           {/* Brand Header */}
           <div className="mb-4 flex items-center gap-3 px-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-slate-950 via-slate-850 to-indigo-600 text-white shadow-md shadow-indigo-500/10">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20">
               <GraduationCap size={22} />
             </div>
             <div className="min-w-0 flex-1">
-              <div className="font-extrabold tracking-tight text-ink text-[15px] leading-snug">Góc học tập</div>
-              <div className="text-[11px] text-muted font-medium">Study Hub & SRS</div>
+              <div className="font-black tracking-tight text-slate-900 dark:text-white text-[15px] leading-snug">Góc học tập</div>
+              <div className="text-[11px] text-slate-500 dark:text-muted font-semibold">Study Hub & SRS</div>
             </div>
-            <ThemeToggle className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink" />
+            <ThemeToggle className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-slate-500 dark:text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-800" />
           </div>
 
           {/* Quick Search Button */}
           <button
             onClick={() => setCmdOpen(true)}
-            className="mb-5 flex w-full items-center justify-between gap-2 rounded-xl border border-line bg-slate-50/70 dark:bg-slate-900/60 px-3 py-2 text-xs font-medium text-muted transition-all hover:border-slate-300 dark:hover:border-slate-700 hover:text-ink cursor-pointer"
+            className="mb-5 flex w-full items-center justify-between gap-2 rounded-xl border border-slate-200 dark:border-line bg-slate-50/80 dark:bg-slate-900/60 px-3 py-2 text-xs font-semibold text-slate-500 dark:text-muted transition-all hover:border-indigo-300 dark:hover:border-slate-700 hover:text-slate-800 cursor-pointer"
           >
             <div className="flex items-center gap-2">
-              <Search size={14} />
+              <Search size={14} className="text-slate-400" />
               <span>Tìm kiếm nhanh…</span>
             </div>
-            <kbd className="rounded-md border border-line bg-card px-1.5 py-0.5 font-mono text-[10px] font-bold text-muted">
+            <kbd className="rounded-md border border-slate-200 dark:border-line bg-white dark:bg-card px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-600 dark:text-muted shadow-2xs">
               Ctrl K
             </kbd>
           </button>
@@ -159,10 +157,10 @@ export default function Layout() {
           <nav className="flex flex-col gap-5 flex-1 overflow-y-auto pr-1">
             {navGroups.map((group) => (
               <div key={group.groupName}>
-                <div className="px-3 mb-1.5 text-[10px] font-bold uppercase tracking-wider text-muted/80">
+                <div className="px-3 mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-muted/80">
                   {group.groupName}
                 </div>
-                <div className="flex flex-col gap-0.5">
+                <div className="flex flex-col gap-1">
                   {group.items.map(({ to, label, icon: Icon, end, badge }) => (
                     <NavLink
                       key={to}
@@ -170,22 +168,22 @@ export default function Layout() {
                       end={end}
                       className={({ isActive }) =>
                         cx(
-                          'group flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-all duration-150',
+                          'group flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-semibold transition-all duration-150',
                           isActive
-                            ? 'bg-ink text-white shadow-xs'
-                            : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800/60 hover:text-ink',
+                            ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 shadow-2xs'
+                            : 'text-slate-600 dark:text-muted hover:bg-slate-100/70 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-ink',
                         )
                       }
                     >
                       {({ isActive }) => (
                         <>
-                          <Icon size={17} strokeWidth={isActive ? 2.2 : 1.8} />
+                          <Icon size={17} strokeWidth={isActive ? 2.3 : 1.9} className={isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-400 dark:text-muted'} />
                           <span className="flex-1 truncate">{label}</span>
                           {badge && summary.needReview > 0 && (
                             <span
                               className={cx(
                                 'rounded-full px-2 py-0.5 text-xs font-bold leading-none transition-colors',
-                                isActive ? 'bg-white text-ink' : 'bg-rose-500 text-white shadow-2xs',
+                                isActive ? 'bg-indigo-600 text-white' : 'bg-rose-500 text-white shadow-2xs',
                               )}
                             >
                               {summary.needReview}
@@ -204,22 +202,22 @@ export default function Layout() {
           <div className="mt-auto pt-3">
             <Pomodoro />
           </div>
-          <div className="rounded-2xl border border-line bg-slate-50/70 dark:bg-slate-900/50 p-3 text-xs">
-            <div className="flex items-center justify-between text-muted mb-1.5 font-medium">
-              <span>Tiến độ thành thạo</span>
-              <span className="font-bold text-ink">
+          <div className="rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/80 dark:bg-slate-900/50 p-3 text-xs">
+            <div className="flex items-center justify-between text-slate-600 dark:text-muted mb-1.5 font-semibold">
+              <span>Độ thành thạo</span>
+              <span className="font-extrabold text-slate-900 dark:text-white">
                 {summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%
               </span>
             </div>
             <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
               <div
-                className="h-full rounded-full bg-emerald-500 transition-all duration-300"
+                className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-teal-500 transition-all duration-300"
                 style={{
                   width: `${summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%`,
                 }}
               />
             </div>
-            <div className="mt-2 text-[11px] text-muted flex justify-between">
+            <div className="mt-2 text-[11px] text-slate-500 dark:text-muted flex justify-between font-medium">
               <span>{summary.mastered} đã thuộc</span>
               <span>{summary.items} mục</span>
             </div>
@@ -228,18 +226,18 @@ export default function Layout() {
 
         {/* Main Content Area */}
         <main className="min-w-0 flex-1 px-4 py-6 md:px-8 md:py-8 pb-24 md:pb-8">
-          <div className="mx-auto max-w-4xl">{loaded ? <Outlet /> : <p className="text-sm text-muted">Đang nạp dữ liệu…</p>}</div>
+          <div className="mx-auto max-w-4xl">{loaded ? <Outlet /> : <p className="text-sm text-slate-500">Đang nạp dữ liệu…</p>}</div>
         </main>
 
-        {/* Modern Mobile Bottom Navigation Bar (5 core actions) */}
-        <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around border-t border-line bg-card/95 py-1.5 px-3 backdrop-blur-md md:hidden print:hidden shadow-lg">
+        {/* Modern Mobile Bottom Navigation Bar */}
+        <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around border-t border-slate-200/80 dark:border-line bg-card/95 py-1.5 px-3 backdrop-blur-md md:hidden print:hidden shadow-lg">
           <NavLink
             to="/"
             end
             className={({ isActive }) =>
               cx(
-                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition-colors',
-                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-muted hover:text-ink',
+                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-muted hover:text-slate-900',
               )
             }
           >
@@ -251,8 +249,8 @@ export default function Layout() {
             to="/today"
             className={({ isActive }) =>
               cx(
-                'relative flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition-colors',
-                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-muted hover:text-ink',
+                'relative flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-muted hover:text-slate-900',
               )
             }
           >
@@ -269,8 +267,8 @@ export default function Layout() {
             to="/collections"
             className={({ isActive }) =>
               cx(
-                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition-colors',
-                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-muted hover:text-ink',
+                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-muted hover:text-slate-900',
               )
             }
           >
@@ -282,8 +280,8 @@ export default function Layout() {
             to="/mistakes"
             className={({ isActive }) =>
               cx(
-                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition-colors',
-                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-muted hover:text-ink',
+                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-muted hover:text-slate-900',
               )
             }
           >
@@ -294,7 +292,7 @@ export default function Layout() {
           <button
             onClick={() => setMobileDrawerOpen(true)}
             className={cx(
-              'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition-colors text-muted hover:text-ink cursor-pointer',
+              'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors text-slate-500 dark:text-muted hover:text-slate-900 cursor-pointer',
               mobileDrawerOpen && 'text-indigo-600 dark:text-indigo-400',
             )}
           >
@@ -315,12 +313,12 @@ export default function Layout() {
             >
               <div className="mb-4 flex items-center justify-between border-b border-line pb-3">
                 <div className="flex items-center gap-2">
-                  <Menu size={18} className="text-muted" />
-                  <span className="font-bold text-ink text-base">Tính năng & Chế độ học</span>
+                  <Menu size={18} className="text-slate-400" />
+                  <span className="font-extrabold text-slate-900 dark:text-white text-base">Tính năng & Chế độ học</span>
                 </div>
                 <button
                   onClick={() => setMobileDrawerOpen(false)}
-                  className="rounded-lg p-1 text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink"
+                  className="rounded-lg p-1 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700"
                 >
                   <X size={18} />
                 </button>
@@ -330,7 +328,7 @@ export default function Layout() {
               <div className="grid grid-cols-2 gap-2.5 mb-5">
                 <NavLink
                   to="/flashcards"
-                  className="flex items-center gap-3 rounded-2xl border border-line bg-slate-50/50 dark:bg-slate-800/40 p-3 text-xs font-bold text-ink hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
                 >
                   <Layers size={18} className="text-indigo-600 shrink-0" />
                   <span>Thẻ ghi nhớ</span>
@@ -338,7 +336,7 @@ export default function Layout() {
 
                 <NavLink
                   to="/quiz"
-                  className="flex items-center gap-3 rounded-2xl border border-line bg-slate-50/50 dark:bg-slate-800/40 p-3 text-xs font-bold text-ink hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
                 >
                   <ListChecks size={18} className="text-emerald-600 shrink-0" />
                   <span>Trắc nghiệm</span>
@@ -346,7 +344,7 @@ export default function Layout() {
 
                 <NavLink
                   to="/exam"
-                  className="flex items-center gap-3 rounded-2xl border border-line bg-slate-50/50 dark:bg-slate-800/40 p-3 text-xs font-bold text-ink hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
                 >
                   <FileCheck2 size={18} className="text-purple-600 shrink-0" />
                   <span>Thi thử</span>
@@ -354,7 +352,7 @@ export default function Layout() {
 
                 <NavLink
                   to="/review"
-                  className="flex items-center gap-3 rounded-2xl border border-line bg-slate-50/50 dark:bg-slate-800/40 p-3 text-xs font-bold text-ink hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
                 >
                   <RefreshCw size={18} className="text-amber-600 shrink-0" />
                   <span>Ôn tập SRS</span>
@@ -362,7 +360,7 @@ export default function Layout() {
 
                 <NavLink
                   to="/statistics"
-                  className="flex items-center gap-3 rounded-2xl border border-line bg-slate-50/50 dark:bg-slate-800/40 p-3 text-xs font-bold text-ink hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
                 >
                   <BarChart3 size={18} className="text-blue-600 shrink-0" />
                   <span>Thống kê</span>
@@ -370,7 +368,7 @@ export default function Layout() {
 
                 <NavLink
                   to="/settings"
-                  className="flex items-center gap-3 rounded-2xl border border-line bg-slate-50/50 dark:bg-slate-800/40 p-3 text-xs font-bold text-ink hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-colors"
                 >
                   <Settings size={18} className="text-slate-600 shrink-0" />
                   <span>Cài đặt</span>
