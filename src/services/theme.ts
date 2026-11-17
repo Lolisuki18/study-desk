@@ -9,8 +9,15 @@ const isDark = (t: Theme) => t === 'dark' || (t === 'system' && media().matches)
 export function applyTheme(theme: Theme) {
   current = theme
   const dark = isDark(theme)
-  document.documentElement.classList.toggle('dark', dark)
+  if (dark) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0b1120' : '#ffffff')
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('theme-changed', { detail: { theme, dark } }))
+  }
 }
 
 /** Follow the operating-system setting while the theme is 'system'. Call once at startup. */

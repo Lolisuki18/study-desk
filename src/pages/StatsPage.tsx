@@ -10,7 +10,7 @@ import { Card, PageHeader, ProgressBar, Stat } from '../components/ui'
 import { cx, dayKey, pct } from '../utils'
 
 const WEEKS = 18
-const heat = (n: number) => (n === 0 ? 'bg-slate-100' : n < 10 ? 'bg-emerald-200' : n < 30 ? 'bg-emerald-400' : 'bg-emerald-600')
+const heat = (n: number) => (n === 0 ? 'bg-slate-100 dark:bg-slate-800' : n < 10 ? 'bg-emerald-200 dark:bg-emerald-900/60' : n < 30 ? 'bg-emerald-400 dark:bg-emerald-700' : 'bg-emerald-600 dark:bg-emerald-500')
 
 export default function StatsPage() {
   const { summary, progress, activity, exams } = useProgress()

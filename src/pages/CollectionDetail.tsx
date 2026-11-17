@@ -88,7 +88,7 @@ export default function CollectionDetail() {
 
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-ink">{c.title}</h1>
         {c.description && (
-          <p className="mt-2 text-sm text-slate-600 leading-relaxed max-w-3xl">{c.description}</p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">{c.description}</p>
         )}
         {c.source?.document && (
           <p className="mt-3 text-xs text-muted italic">Nguồn tài liệu: {c.source.document}</p>
@@ -98,21 +98,21 @@ export default function CollectionDetail() {
         <div className="mt-6 flex flex-wrap gap-2.5">
           <Link
             to={`/flashcards/${c.id}`}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-700 shadow-2xs hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 active:scale-[0.98] transition-all"
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-line bg-white dark:bg-card px-4 py-2.5 text-xs font-bold text-slate-700 dark:text-slate-200 shadow-2xs hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-700 dark:hover:text-indigo-300 active:scale-[0.98] transition-all"
           >
-            <Layers size={15} className="text-indigo-600" />
+            <Layers size={15} className="text-indigo-600 dark:text-indigo-400" />
             <span>Học thẻ ghi nhớ</span>
           </Link>
           <Link
             to={`/review?c=${c.id}`}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-700 shadow-2xs hover:border-amber-300 hover:bg-amber-50 hover:text-amber-700 active:scale-[0.98] transition-all"
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-line bg-white dark:bg-card px-4 py-2.5 text-xs font-bold text-slate-700 dark:text-slate-200 shadow-2xs hover:border-amber-300 dark:hover:border-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950/40 hover:text-amber-700 dark:hover:text-amber-300 active:scale-[0.98] transition-all"
           >
-            <RefreshCw size={15} className="text-amber-600" />
+            <RefreshCw size={15} className="text-amber-600 dark:text-amber-400" />
             <span>Ôn tập ({st.need})</span>
           </Link>
           <Link
             to={`/quiz/${c.id}`}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-900 bg-slate-900 px-5 py-2.5 text-xs font-bold text-white shadow-2xs hover:bg-indigo-600 hover:border-indigo-600 active:scale-[0.98] transition-all"
+            className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-xs font-bold text-white shadow-2xs hover:bg-indigo-700 active:scale-[0.98] transition-all"
           >
             <ListChecks size={15} />
             <span>Làm trắc nghiệm</span>
@@ -126,7 +126,7 @@ export default function CollectionDetail() {
               )
                 await resetCollection(c.id)
             }}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-500 shadow-2xs hover:border-rose-300 hover:bg-rose-50 hover:text-rose-700 active:scale-[0.98] transition-all"
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-line bg-white dark:bg-card px-4 py-2.5 text-xs font-bold text-slate-500 dark:text-muted shadow-2xs hover:border-rose-300 dark:hover:border-rose-700 hover:bg-rose-50 dark:hover:bg-rose-950/40 hover:text-rose-700 dark:hover:text-rose-300 active:scale-[0.98] transition-all cursor-pointer"
             title="Xoá tiến độ của riêng bộ này để học lại"
           >
             <RotateCcw size={15} />

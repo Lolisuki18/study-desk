@@ -28,10 +28,10 @@ export default function Pomodoro({ compact = false }: { compact?: boolean }) {
     )
 
   const iconBtn =
-    'inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-500 dark:text-muted transition-colors hover:bg-slate-200/60 dark:hover:bg-slate-800 hover:text-slate-900 cursor-pointer'
+    'inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-500 dark:text-muted transition-colors hover:bg-slate-200/60 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-ink cursor-pointer'
 
   return (
-    <div className="mb-3 rounded-2xl border border-slate-200/80 dark:border-line bg-slate-50/80 dark:bg-slate-900/50 p-3 text-xs">
+    <div className="mb-3 rounded-2xl border border-slate-200 dark:border-line bg-slate-50 dark:bg-slate-800/40 p-3 text-xs">
       <div className="flex items-center justify-between font-semibold text-slate-500 dark:text-muted">
         <span className="inline-flex items-center gap-1.5 font-bold text-slate-700 dark:text-slate-200">
           {work ? <Timer size={14} className="text-indigo-600 dark:text-indigo-400" /> : <Coffee size={14} className="text-emerald-600 dark:text-emerald-400" />}
@@ -50,7 +50,7 @@ export default function Pomodoro({ compact = false }: { compact?: boolean }) {
               ? work
                 ? 'text-indigo-600 dark:text-indigo-400'
                 : 'text-emerald-600 dark:text-emerald-400'
-              : 'text-slate-700 dark:text-slate-300',
+              : 'text-slate-800 dark:text-ink',
           )}
         >
           {fmtClock(s.remainingMs)}
