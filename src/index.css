@@ -3,7 +3,7 @@
 @theme {
   --color-bg: #f8fafc;
   --color-card: #ffffff;
-  --color-ink: #0f172a;
+  --color-ink: #1e293b;
   --color-muted: #64748b;
   --color-ok: #10b981;
   --color-err: #f43f5e;
@@ -67,11 +67,7 @@ body {
 
 /* ---------------------------------------------------------------------------------------------
    Dark theme. `html.dark` is set by src/services/theme.ts.
-   Components keep their light classes: the palette variables are remapped here instead, so a
-   soft tint such as bg-emerald-50 becomes a translucent green and slate text becomes light.
-   Mid tones (500/600 backgrounds with white text) are left alone; where one shade is used both
-   as a button background and as text, only the text utility is overridden.
-   Screen only, so printing always uses the light palette.
+   Components keep their light classes: the palette variables are remapped here instead.
    --------------------------------------------------------------------------------------------- */
 @media screen {
   html.dark {
@@ -126,7 +122,6 @@ body {
   .dark .bg-white {
     background-color: var(--color-card);
   }
-  /* near-black surfaces carry white text: turn them into the accent colour instead of inverting them */
   .dark .bg-ink,
   .dark .bg-slate-900 {
     background-color: #5458e6;
