@@ -204,6 +204,11 @@
   "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH năm 1991.",
   "confidence": "uncertain"
  },
+ "374": {
+  "question": "Tác phẩm \"Đường Kách mệnh\" của Nguyễn Ái Quốc (năm 1927) được xuất bản tại đâu?",
+  "note": "Đề gốc của ngân hàng bị mất (chỉ còn \"Trung Quốc xuất bản tại đầu?\", tức đáp án dính vào đề), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề suy ra từ đáp án: Đường Kách mệnh do Bộ Tuyên truyền của Hội Việt Nam Cách mạng Thanh niên xuất bản năm 1927 tại Quảng Châu (Trung Quốc). Câu gốc cũng có thể hỏi về một tác phẩm hoặc tờ báo khác xuất bản ở Trung Quốc (ví dụ báo Thanh niên); đáp án vẫn là Trung Quốc.",
+  "confidence": "uncertain"
+ },
  "382": {
   "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…hệ thống chính trị là nhắ…\".",
   "confidence": "uncertain"

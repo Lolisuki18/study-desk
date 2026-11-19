@@ -3583,7 +3583,7 @@
       "id": "b-374",
       "type": "multiple-choice",
       "content": {
-        "question": "Trung Quốc xuất bản tại đầu?",
+        "question": "Tác phẩm \"Đường Kách mệnh\" của Nguyễn Ái Quốc (năm 1927) được xuất bản tại đâu?",
         "options": [
           {
             "key": "A",
@@ -3605,10 +3605,11 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 374"
+        "ref": "Ngân hàng câu 374",
+        "originalQuestion": "Trung Quốc xuất bản tại đầu?"
       },
       "enrichment": {
-        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Trung Quốc xuất bản tại đầu?”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.",
+        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Trung Quốc xuất bản tại đầu?”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn \"Trung Quốc xuất bản tại đầu?\", tức đáp án dính vào đề), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề suy ra từ đáp án: Đường Kách mệnh do Bộ Tuyên truyền của Hội Việt Nam Cách mạng Thanh niên xuất bản năm 1927 tại Quảng Châu (Trung Quốc). Câu gốc cũng có thể hỏi về một tác phẩm hoặc tờ báo khác xuất bản ở Trung Quốc (ví dụ báo Thanh niên); đáp án vẫn là Trung Quốc.",
         "confidence": "uncertain"
       }
     },
