@@ -736,7 +736,7 @@
       "id": "b-063",
       "type": "multiple-choice",
       "content": {
-        "question": "Ngàn cân treo sợi tóc",
+        "question": "Ngay sau Cách mạng Tháng Tám 1945, tình thế của nước Việt Nam Dân chủ Cộng hòa được ví như:",
         "options": [
           {
             "key": "A",
@@ -758,11 +758,13 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 63"
+        "ref": "Ngân hàng câu 63",
+        "originalQuestion": "Ngàn cân treo sợi tóc"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 51: \"…tình thế… được ví như: Ngàn cân treo sợi tóc\").",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 2, câu 51"
       }
     },
     {
@@ -1017,7 +1019,7 @@
       "id": "b-081",
       "type": "multiple-choice",
       "content": {
-        "question": "Tất cả để đánh thắng giặc Mỹ xâm lược",
+        "question": "Hội nghị Trung ương 11 và 12 (năm 1965) đã nêu cao khẩu hiệu chung của nhân dân cả nước là gì?",
         "options": [
           {
             "key": "A",
@@ -1039,11 +1041,13 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 81"
+        "ref": "Ngân hàng câu 81",
+        "originalQuestion": "Tất cả để đánh thắng giặc Mỹ xâm lược"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 79: khẩu hiệu \"Tất cả để đánh thắng giặc Mỹ xâm lược\").",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 2, câu 79"
       }
     },
     {
@@ -1140,7 +1144,7 @@
       "id": "b-085",
       "type": "multiple-choice",
       "content": {
-        "question": "Chuyển hướng xây dựng kinh tế, bảo đảm tiếp tục xây dựng miền Bắc vững mạnh trong điều kiện có chiến tranh",
+        "question": "Hội nghị Trung ương lần thứ 11 (3/1965) xác định phương hướng nào đối với kinh tế miền Bắc?",
         "options": [
           {
             "key": "A",
@@ -1163,10 +1167,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 85",
+        "originalQuestion": "Chuyển hướng xây dựng kinh tế, bảo đảm tiếp tuc xây dựng miền Bắc vững mạnh trong điều kiện có chiến tranh",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Hội nghị TW 11 khóa III quyết định chuyển hướng xây dựng kinh tế miền Bắc sang thời chiến; xem Tạp chí Công Thương, Cổng thông tin Bộ Công Thương); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -2086,7 +2091,7 @@
       "id": "b-172",
       "type": "multiple-choice",
       "content": {
-        "question": "Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh",
+        "question": "Văn kiện nào chứa câu: \"Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ\"?",
         "options": [
           {
             "key": "A",
@@ -2109,7 +2114,12 @@
       },
       "source": {
         "ref": "Ngân hàng câu 172",
+        "originalQuestion": "Lời kêu goi toàn quốc kháng chiến của Chủ tich H ồ Chí Mi",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề được dựng từ nội dung phương án: câu nói trên là của Chủ tịch Hồ Chí Minh trong Lời kêu gọi toàn quốc kháng chiến (19/12/1946); ba phương án còn lại là các văn kiện khác nên không chứa câu này.",
+        "confidence": "uncertain"
       }
     },
     {
@@ -2782,7 +2792,7 @@
       "id": "b-254",
       "type": "multiple-choice",
       "content": {
-        "question": "Mặc dù lâu dài, gian khổ, khó khăn song nhất định thắng lợi",
+        "question": "Về triển vọng của cuộc kháng chiến chống thực dân Pháp, Đảng ta khẳng định điều gì?",
         "options": [
           {
             "key": "A",
@@ -2805,10 +2815,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 254",
+        "originalQuestion": "Mặc dù lâu dài, gian khổ, khó khăn song nhất đinh thắng lợi",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (đường lối \"kháng chiến nhất định thắng lợi\": lâu dài, gian khổ, khó khăn nhưng nhất định thắng lợi); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3089,7 +3100,7 @@
       "id": "b-283",
       "type": "multiple-choice",
       "content": {
-        "question": "Theo Hiệp định Giơ-ne-vơ năm 1954, Việt Nam tạm thời bị chia cắt ở vĩ tuyến nào?",
+        "question": "Theo Hiệp định Giơ-ne-vơ năm 1954, Việt Nam bị tạm thời chia cắt ở vĩ tuyến nào?",
         "options": [
           {
             "key": "A",
@@ -3115,9 +3126,9 @@
         "originalQuestion": "Vĩ tuyến 17"
       },
       "enrichment": {
-        "text": "Giáo trình (tr. PDF 43): Vĩ tuyến 17 là giới tuyến quân sự tạm thời theo Hiệp định Giơnevơ.\n\n⚠ Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: Hiệp định Giơ-ne-vơ lấy vĩ tuyến 17 (sông Bến Hải) làm giới tuyến quân sự tạm thời; các phương án còn lại là vĩ tuyến sai.",
-        "confidence": "uncertain",
-        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 43"
+        "text": "Giáo trình (tr. PDF 43): Vĩ tuyến 17 là giới tuyến quân sự tạm thời theo Hiệp định Giơnevơ.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 67: \"…bị tạm thời chia cắt ở vĩ tuyến bao nhiêu?\" – vĩ tuyến 17).",
+        "confidence": "verified",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 43; Bộ Lịch sử Đảng – Chương 2, câu 67; giáo trình tr. PDF 43"
       }
     },
     {

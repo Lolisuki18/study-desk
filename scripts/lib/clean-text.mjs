@@ -242,7 +242,7 @@ export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = 
     [/yếu k$/u, 'yếu kém'],
     [/thiết nhấ$/u, 'thiết nhất'],
     [/công ngh$/u, 'công nghệ'],
-    [/công- nôn$/u, 'công- nông'],
+    [/công- nôn$/u, 'công nông'],
     [/bao nhiêu đợ$/u, 'bao nhiêu đợt'],
     [/nghề biể$/u, 'nghề biển'],
     [/\bso ạn\b/gu, 'soạn'],

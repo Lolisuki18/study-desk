@@ -166,11 +166,11 @@
       "id": "b-017",
       "type": "multiple-choice",
       "content": {
-        "question": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu",
+        "question": "Chủ trương của Đảng về xây dựng đội ngũ cán bộ các cấp là gì?",
         "options": [
           {
             "key": "A",
-            "text": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh"
+            "text": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu"
           },
           {
             "key": "B",
@@ -189,12 +189,13 @@
       },
       "source": {
         "ref": "Ngân hàng câu 17",
+        "originalQuestion": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính tri vững vàng, đủ về số lượng, đồng bộ về cơ cấu",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Giáo trình (tr. PDF 145): Chủ trương của Đảng là xây dựng đội ngũ cán bộ các cấp có phẩm chất, năng lực, bản lĩnh chính trị vững vàng, đủ số lượng và đồng bộ cơ cấu.\n\n⚠ Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "verified",
-        "reference": "Giáo trình VNR202, trang PDF 145"
+        "text": "Giáo trình (tr. PDF 145): Chủ trương của Đảng là xây dựng đội ngũ cán bộ các cấp có phẩm chất, năng lực, bản lĩnh chính trị vững vàng, đủ số lượng và đồng bộ cơ cấu.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Phương án A bị cụt trong nguồn; phần còn thiếu được chép lại từ chính phần \"đề\" của câu này (nguồn đã đánh rơi câu trả lời vào ô đề). Phù hợp với giáo trình (tr. PDF 145).",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202, trang PDF 145; Giáo trình VNR202 (Tóm tắt), tr. PDF 145"
       }
     },
     {
@@ -1091,7 +1092,7 @@
       "id": "b-103",
       "type": "multiple-choice",
       "content": {
-        "question": "Trước đổi mới (1975 - 1985)",
+        "question": "Giai đoạn 1975 – 1985 của cách mạng Việt Nam được gọi là giai đoạn nào?",
         "options": [
           {
             "key": "A",
@@ -1113,10 +1114,11 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 103"
+        "ref": "Ngân hàng câu 103",
+        "originalQuestion": "Trước đổi mới (1975 - 1985)"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giai đoạn cả nước quá độ lên CNXH trước khi bắt đầu đổi mới (1986)); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -1189,7 +1191,7 @@
       "id": "b-106",
       "type": "multiple-choice",
       "content": {
-        "question": "7/1976",
+        "question": "Nước ta chính thức mang tên Cộng hòa xã hội chủ nghĩa Việt Nam vào thời gian nào?",
         "options": [
           {
             "key": "A",
@@ -1211,10 +1213,11 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 106"
+        "ref": "Ngân hàng câu 106",
+        "originalQuestion": "7/1976"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Quốc hội khóa VI (kỳ họp 24/6–3/7/1976) quyết định tên nước; xem câu 107 cùng ngân hàng); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -1485,7 +1488,7 @@
       "id": "b-133",
       "type": "multiple-choice",
       "content": {
-        "question": "Giai đoạn chuẩn bị các tiền đề công nghiệp hóa",
+        "question": "Đại hội VIII (6/1996) của Đảng nhận định như thế nào về tình hình công nghiệp hóa của đất nước?",
         "options": [
           {
             "key": "A",
@@ -1508,10 +1511,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 133",
+        "originalQuestion": "Giai đoạn chuẩn bi các tiền đề công nghiệp hóa",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đại hội VIII: giai đoạn chuẩn bị tiền đề công nghiệp hóa đã cơ bản hoàn thành, chuyển sang giai đoạn đẩy mạnh công nghiệp hóa, hiện đại hóa); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -1735,7 +1739,7 @@
       "id": "b-155",
       "type": "multiple-choice",
       "content": {
-        "question": "Giai cấp công nhân là giai cấp lãnh đạo cách",
+        "question": "Vị trí, vai trò của giai cấp công nhân Việt Nam hiện nay là gì?",
         "options": [
           {
             "key": "A",
@@ -1758,10 +1762,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 155",
+        "originalQuestion": "Giai cấp công nhân là giai cấp lãnh đạo cách",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (phương án đúng là đoạn mô tả giai cấp công nhân lãnh đạo cách mạng thông qua Đảng, tiên phong trong công nghiệp hóa, hiện đại hóa); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -1887,7 +1892,7 @@
       "id": "b-177",
       "type": "multiple-choice",
       "content": {
-        "question": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất",
+        "question": "Chủ trương của Đảng về xây dựng đội ngũ cán bộ các cấp là gì?",
         "options": [
           {
             "key": "A",
@@ -1910,12 +1915,13 @@
       },
       "source": {
         "ref": "Ngân hàng câu 177",
+        "originalQuestion": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Giáo trình (tr. PDF 145): Chủ trương của Đảng là xây dựng đội ngũ cán bộ các cấp có phẩm chất, năng lực, bản lĩnh chính trị vững vàng, đủ số lượng và đồng bộ cơ cấu.\n\n⚠ Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "verified",
-        "reference": "Giáo trình VNR202, trang PDF 145"
+        "text": "Giáo trình (tr. PDF 145): Chủ trương của Đảng là xây dựng đội ngũ cán bộ các cấp có phẩm chất, năng lực, bản lĩnh chính trị vững vàng, đủ số lượng và đồng bộ cơ cấu.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (cùng chủ đề với câu 17; đáp án là đoạn trích giáo trình tr. PDF 145); không phải đề gốc nên chỉ dùng tham khảo.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202, trang PDF 145; Giáo trình VNR202 (Tóm tắt), tr. PDF 145"
       }
     },
     {
@@ -2236,7 +2242,7 @@
       "id": "b-212",
       "type": "multiple-choice",
       "content": {
-        "question": "Hoàn thiện hệ thống luật pháp, cơ chế, chính sách",
+        "question": "Để tạo lập môi trường đầu tư, kinh doanh thuận lợi, lành mạnh, công bằng cho mọi thành phần kinh tế, Đảng chủ trương ưu tiên điều gì?",
         "options": [
           {
             "key": "A",
@@ -2259,12 +2265,13 @@
       },
       "source": {
         "ref": "Ngân hàng câu 212",
+        "originalQuestion": "Hoàn thiện hệ thống luật pháp, cơ chế, chính sách",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Giáo trình (tr. PDF 117): Ưu tiên hoàn thiện đồng bộ hệ thống luật pháp, cơ chế, chính sách để tạo môi trường đầu tư kinh doanh thuận lợi, lành mạnh, công bằng cho mọi thành phần kinh tế.\n\n⚠ Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "verified",
-        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 117"
+        "text": "Giáo trình (tr. PDF 117): Ưu tiên hoàn thiện đồng bộ hệ thống luật pháp, cơ chế, chính sách để tạo môi trường đầu tư kinh doanh thuận lợi, lành mạnh, công bằng cho mọi thành phần kinh tế.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giáo trình tr. PDF 117: \"Ưu tiên hoàn thiện đồng bộ hệ thống luật pháp, cơ chế, chính sách để tạo môi trường đầu tư kinh doanh thuận lợi, lành mạnh, công bằng cho mọi thành phần kinh tế\"; phương án D chính là vế \"mục đích\" của câu đó); không phải đề gốc nên chỉ dùng tham khảo.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202 (Tóm tắt), trang PDF 117; Giáo trình VNR202 (Tóm tắt), tr. PDF 117"
       }
     },
     {
@@ -2732,7 +2739,7 @@
       "id": "b-247",
       "type": "multiple-choice",
       "content": {
-        "question": "Phát triển nhanh nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao",
+        "question": "Một trong các khâu đột phá chiến lược của Đảng để đẩy mạnh công nghiệp hóa, hiện đại hóa là gì?",
         "options": [
           {
             "key": "A",
@@ -2754,12 +2761,13 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 247"
+        "ref": "Ngân hàng câu 247",
+        "originalQuestion": "Phát triển nhanh nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao"
       },
       "enrichment": {
-        "text": "Giáo trình (tr. PDF 177): Phát triển nhanh nguồn nhân lực, nhất là nhân lực chất lượng cao, gắn với đổi mới căn bản giáo dục quốc dân và ứng dụng khoa học – công nghệ.\n\n⚠ Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "verified",
-        "reference": "Giáo trình VNR202, trang PDF 177"
+        "text": "Giáo trình (tr. PDF 177): Phát triển nhanh nguồn nhân lực, nhất là nhân lực chất lượng cao, gắn với đổi mới căn bản giáo dục quốc dân và ứng dụng khoa học – công nghệ.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giáo trình tr. PDF 177: \"Phát triển nhanh nguồn nhân lực, nhất là nhân lực chất lượng cao…\"; ba phương án còn lại là nội dung chung của công nghiệp hóa, không phải khâu đột phá); không phải đề gốc nên chỉ dùng tham khảo.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202, trang PDF 177; Giáo trình VNR202 (Tóm tắt), tr. PDF 177"
       }
     },
     {

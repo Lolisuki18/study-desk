@@ -741,7 +741,7 @@
       "id": "b-102",
       "type": "multiple-choice",
       "content": {
-        "question": "Đảng Cộng sản Việt Nam",
+        "question": "Từ Đại hội IV (12/1976), Đảng ta mang tên gọi nào?",
         "options": [
           {
             "key": "A",
@@ -763,10 +763,11 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 102"
+        "ref": "Ngân hàng câu 102",
+        "originalQuestion": "Đảng Cộng sản Việt Nam"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đảng Cộng sản Việt Nam (2/1930) → Đảng Cộng sản Đông Dương (10/1930) → Đảng Lao động Việt Nam (2/1951) → Đảng Cộng sản Việt Nam (12/1976); câu gốc cũng có thể hỏi tên gọi của Đảng tại Hội nghị hợp nhất 2/1930 – đáp án vẫn là Đảng Cộng sản Việt Nam); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -1350,7 +1351,7 @@
       "id": "b-162",
       "type": "multiple-choice",
       "content": {
-        "question": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt",
+        "question": "Nhật đảo chính Pháp ở Đông Dương (9/3/1945) vì lý do nào sau đây?",
         "options": [
           {
             "key": "A",
@@ -1372,10 +1373,11 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 162"
+        "ref": "Ngân hàng câu 162",
+        "originalQuestion": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mâu thuẫn Pháp – Nhật ngày càng gay gắt là nguyên nhân Nhật đảo chính Pháp); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3311,7 +3313,7 @@
       "id": "b-344",
       "type": "multiple-choice",
       "content": {
-        "question": "1-5-1930",
+        "question": "Lần đầu tiên công nhân và nhân dân lao động Việt Nam biểu tình kỷ niệm Ngày Quốc tế Lao động dưới sự lãnh đạo của Đảng vào ngày nào?",
         "options": [
           {
             "key": "A",
@@ -3333,10 +3335,11 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 344"
+        "ref": "Ngân hàng câu 344",
+        "originalQuestion": "1-5-1930"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mốc 1/5/1930 mở đầu cao trào cách mạng 1930 – 1931); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3400,8 +3403,9 @@
         "originalQuestion": "Bãi công của công nhân Ba Son"
       },
       "enrichment": {
-        "text": "Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: các tài liệu lịch sử xem cuộc bãi công của công nhân Ba Son (8/1925) là mốc công nhân bước đầu đấu tranh có mục tiêu chính trị rõ ràng, tự giác; các phương án còn lại là sự kiện 1930, 1936–1939 và 1945.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 1: cuộc bãi công Ba Son (8/1925) \"đánh dấu bước chuyển của phong trào công nhân từ tự phát sang tự giác\").",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 1, câu 37 (phần bổ sung)"
       }
     },
     {
@@ -3468,7 +3472,7 @@
       "id": "b-360",
       "type": "multiple-choice",
       "content": {
-        "question": "Khẳng định vai trò lãnh đạo cách mạng của Đảng Cộng sản",
+        "question": "Việc thành lập Đảng Cộng sản Việt Nam (2/1930) có ý nghĩa nào sau đây?",
         "options": [
           {
             "key": "A",
@@ -3484,17 +3488,18 @@
           },
           {
             "key": "D",
-            "text": "Xác định lực lượng là công- nông"
+            "text": "Xác định lực lượng là công nông"
           }
         ],
         "answer": "A"
       },
       "source": {
         "ref": "Ngân hàng câu 360",
+        "originalQuestion": "Khẳng đinh vai trò lãnh đạo cách mạng của Đảng Cộng sản",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (các phương án B và D là nội dung Cương lĩnh chính trị đầu tiên, không phải ý nghĩa; A (vai trò lãnh đạo) là ý nghĩa của sự ra đời của Đảng); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },

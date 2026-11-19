@@ -9212,7 +9212,7 @@
       "id": "b-329",
       "type": "multiple-choice",
       "content": {
-        "question": "Bốn hình thức vận động cơ bản",
+        "question": "Theo Ph. Ăngghen, vận động của vật chất có mấy hình thức cơ bản?",
         "options": [
           {
             "key": "A",
@@ -9230,10 +9230,11 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 329"
+        "ref": "Ngân hàng câu 329",
+        "originalQuestion": "Bốn hình thức vận động cơ bản"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này có vẻ bị mất phần câu hỏi: đề chỉ lặp lại nội dung của một phương án (hoặc quá ngắn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn đoạn trùng với một phương án), nên đề này do Claude dựng lại, không phải đề gốc. Triết học Mác – Lênin chia vận động của vật chất thành 5 hình thức cơ bản: cơ học, vật lý, hóa học, sinh học, xã hội.",
         "confidence": "uncertain"
       }
     },

@@ -36,6 +36,11 @@ const TEXT_FIXES = [
   ['mln111', /nguyên nhan khách quan/u, 'nguyên nhân khách quan'],
 ]
 
+// Lost stems rebuilt by hand (the bank kept only an answer text in the stem field). [bank, position, question, why]
+const STEM_FIXES = [
+  ['mln111', 329, 'Theo Ph. Ăngghen, vận động của vật chất có mấy hình thức cơ bản?', 'Triết học Mác – Lênin chia vận động của vật chất thành 5 hình thức cơ bản: cơ học, vật lý, hóa học, sinh học, xã hội.'],
+]
+
 const LOST_STEM =
   'Đề gốc của ngân hàng này có vẻ bị mất phần câu hỏi: đề chỉ lặp lại nội dung của một phương án (hoặc quá ngắn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo.'
 
@@ -62,6 +67,7 @@ for (const b of BANKS) {
     const lost = key.length <= 3 || options.some((o) => norm(o.text) === key)
     if (lost) flagged.push(id)
     const explanation = q.explanation?.trim()
+    const stemFix = STEM_FIXES.find(([bank, pos]) => bank === b.id && pos === n)
     const cleanQuestion = clean(q.question.trim())
     const cleanOptions = options.map((o) => ({ key: o.key, text: clean(o.text) }))
     const changedText = cleanQuestion !== q.question.trim() || cleanOptions.some((o, k) => o.text !== options[k].text)
@@ -69,9 +75,13 @@ for (const b of BANKS) {
     items.push({
       id,
       type: 'multiple-choice',
-      content: { question: cleanQuestion, options: cleanOptions, answer, ...(explanation ? { explanation } : {}) },
-      source: { ref: `Ngân hàng câu ${n}`, ...(changedText ? { textCleaned: true } : {}) },
-      ...(lost ? { enrichment: { text: LOST_STEM, confidence: 'uncertain' } } : {}),
+      content: { question: stemFix ? stemFix[2] : cleanQuestion, options: cleanOptions, answer, ...(explanation ? { explanation } : {}) },
+      source: { ref: `Ngân hàng câu ${n}`, ...(changedText ? { textCleaned: true } : {}), ...(stemFix ? { originalQuestion: q.question.trim() } : {}) },
+      ...(stemFix
+        ? { enrichment: { text: `Đề gốc của ngân hàng bị mất (chỉ còn đoạn trùng với một phương án), nên đề này do Claude dựng lại, không phải đề gốc. ${stemFix[3]}`, confidence: 'uncertain' } }
+        : lost
+          ? { enrichment: { text: LOST_STEM, confidence: 'uncertain' } }
+          : {}),
     })
   })
   const col = {

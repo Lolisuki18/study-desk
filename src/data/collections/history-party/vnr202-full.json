@@ -4,7 +4,7 @@
   "subject": "Lịch sử Đảng",
   "contentType": "multiple-choice",
   "standalone": true,
-  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 396 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
+  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 379 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
   "source": {
     "document": "VNR202 - Lịch sử Đảng Cộng sản Việt Nam (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-vnr202.json)",
     "note": "Câu hỏi, phương án và đáp án chép nguyên văn. Số câu là vị trí trong file gốc. Đối chiếu đáp án với các bộ đã có: docs/vnr202-full-doi-chieu.md"
@@ -485,11 +485,11 @@
       "id": "q-017",
       "type": "multiple-choice",
       "content": {
-        "question": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu",
+        "question": "Chủ trương của Đảng về xây dựng đội ngũ cán bộ các cấp là gì?",
         "options": [
           {
             "key": "A",
-            "text": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh"
+            "text": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu"
           },
           {
             "key": "B",
@@ -508,11 +508,13 @@
       },
       "source": {
         "ref": "VNR202 Full câu 17",
+        "originalQuestion": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính tri vững vàng, đủ về số lượng, đồng bộ về cơ cấu",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Phương án A bị cụt trong nguồn; phần còn thiếu được chép lại từ chính phần \"đề\" của câu này (nguồn đã đánh rơi câu trả lời vào ô đề). Phù hợp với giáo trình (tr. PDF 145).",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 145"
       }
     },
     {
@@ -1864,7 +1866,7 @@
       "id": "q-063",
       "type": "multiple-choice",
       "content": {
-        "question": "Ngàn cân treo sợi tóc",
+        "question": "Ngay sau Cách mạng Tháng Tám 1945, tình thế của nước Việt Nam Dân chủ Cộng hòa được ví như:",
         "options": [
           {
             "key": "A",
@@ -1886,11 +1888,13 @@
         "answer": "D"
       },
       "source": {
-        "ref": "VNR202 Full câu 63"
+        "ref": "VNR202 Full câu 63",
+        "originalQuestion": "Ngàn cân treo sợi tóc"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 51: \"…tình thế… được ví như: Ngàn cân treo sợi tóc\").",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 2, câu 51"
       }
     },
     {
@@ -2404,7 +2408,7 @@
       "id": "q-081",
       "type": "multiple-choice",
       "content": {
-        "question": "Tất cả để đánh thắng giặc Mỹ xâm lược",
+        "question": "Hội nghị Trung ương 11 và 12 (năm 1965) đã nêu cao khẩu hiệu chung của nhân dân cả nước là gì?",
         "options": [
           {
             "key": "A",
@@ -2426,11 +2430,13 @@
         "answer": "A"
       },
       "source": {
-        "ref": "VNR202 Full câu 81"
+        "ref": "VNR202 Full câu 81",
+        "originalQuestion": "Tất cả để đánh thắng giặc Mỹ xâm lược"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 79: khẩu hiệu \"Tất cả để đánh thắng giặc Mỹ xâm lược\").",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 2, câu 79"
       }
     },
     {
@@ -2527,7 +2533,7 @@
       "id": "q-085",
       "type": "multiple-choice",
       "content": {
-        "question": "Chuyển hướng xây dựng kinh tế, bảo đảm tiếp tục xây dựng miền Bắc vững mạnh trong điều kiện có chiến tranh",
+        "question": "Hội nghị Trung ương lần thứ 11 (3/1965) xác định phương hướng nào đối với kinh tế miền Bắc?",
         "options": [
           {
             "key": "A",
@@ -2550,10 +2556,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 85",
+        "originalQuestion": "Chuyển hướng xây dựng kinh tế, bảo đảm tiếp tuc xây dựng miền Bắc vững mạnh trong điều kiện có chiến tranh",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Hội nghị TW 11 khóa III quyết định chuyển hướng xây dựng kinh tế miền Bắc sang thời chiến; xem Tạp chí Công Thương, Cổng thông tin Bộ Công Thương); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3037,7 +3044,7 @@
       "id": "q-102",
       "type": "multiple-choice",
       "content": {
-        "question": "Đảng Cộng sản Việt Nam",
+        "question": "Từ Đại hội IV (12/1976), Đảng ta mang tên gọi nào?",
         "options": [
           {
             "key": "A",
@@ -3059,10 +3066,11 @@
         "answer": "B"
       },
       "source": {
-        "ref": "VNR202 Full câu 102"
+        "ref": "VNR202 Full câu 102",
+        "originalQuestion": "Đảng Cộng sản Việt Nam"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đảng Cộng sản Việt Nam (2/1930) → Đảng Cộng sản Đông Dương (10/1930) → Đảng Lao động Việt Nam (2/1951) → Đảng Cộng sản Việt Nam (12/1976); câu gốc cũng có thể hỏi tên gọi của Đảng tại Hội nghị hợp nhất 2/1930 – đáp án vẫn là Đảng Cộng sản Việt Nam); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3070,7 +3078,7 @@
       "id": "q-103",
       "type": "multiple-choice",
       "content": {
-        "question": "Trước đổi mới (1975 - 1985)",
+        "question": "Giai đoạn 1975 – 1985 của cách mạng Việt Nam được gọi là giai đoạn nào?",
         "options": [
           {
             "key": "A",
@@ -3092,10 +3100,11 @@
         "answer": "D"
       },
       "source": {
-        "ref": "VNR202 Full câu 103"
+        "ref": "VNR202 Full câu 103",
+        "originalQuestion": "Trước đổi mới (1975 - 1985)"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giai đoạn cả nước quá độ lên CNXH trước khi bắt đầu đổi mới (1986)); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3163,7 +3172,7 @@
       "id": "q-106",
       "type": "multiple-choice",
       "content": {
-        "question": "7/1976",
+        "question": "Nước ta chính thức mang tên Cộng hòa xã hội chủ nghĩa Việt Nam vào thời gian nào?",
         "options": [
           {
             "key": "A",
@@ -3185,10 +3194,11 @@
         "answer": "B"
       },
       "source": {
-        "ref": "VNR202 Full câu 106"
+        "ref": "VNR202 Full câu 106",
+        "originalQuestion": "7/1976"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Quốc hội khóa VI (kỳ họp 24/6–3/7/1976) quyết định tên nước; xem câu 107 cùng ngân hàng); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3966,7 +3976,7 @@
       "id": "q-133",
       "type": "multiple-choice",
       "content": {
-        "question": "Giai đoạn chuẩn bị các tiền đề công nghiệp hóa",
+        "question": "Đại hội VIII (6/1996) của Đảng nhận định như thế nào về tình hình công nghiệp hóa của đất nước?",
         "options": [
           {
             "key": "A",
@@ -3989,10 +3999,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 133",
+        "originalQuestion": "Giai đoạn chuẩn bi các tiền đề công nghiệp hóa",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đại hội VIII: giai đoạn chuẩn bị tiền đề công nghiệp hóa đã cơ bản hoàn thành, chuyển sang giai đoạn đẩy mạnh công nghiệp hóa, hiện đại hóa); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -4628,7 +4639,7 @@
       "id": "q-155",
       "type": "multiple-choice",
       "content": {
-        "question": "Giai cấp công nhân là giai cấp lãnh đạo cách",
+        "question": "Vị trí, vai trò của giai cấp công nhân Việt Nam hiện nay là gì?",
         "options": [
           {
             "key": "A",
@@ -4651,10 +4662,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 155",
+        "originalQuestion": "Giai cấp công nhân là giai cấp lãnh đạo cách",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (phương án đúng là đoạn mô tả giai cấp công nhân lãnh đạo cách mạng thông qua Đảng, tiên phong trong công nghiệp hóa, hiện đại hóa); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -4841,7 +4853,7 @@
       "id": "q-162",
       "type": "multiple-choice",
       "content": {
-        "question": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt",
+        "question": "Nhật đảo chính Pháp ở Đông Dương (9/3/1945) vì lý do nào sau đây?",
         "options": [
           {
             "key": "A",
@@ -4863,10 +4875,11 @@
         "answer": "D"
       },
       "source": {
-        "ref": "VNR202 Full câu 162"
+        "ref": "VNR202 Full câu 162",
+        "originalQuestion": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mâu thuẫn Pháp – Nhật ngày càng gay gắt là nguyên nhân Nhật đảo chính Pháp); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -5144,7 +5157,7 @@
       "id": "q-172",
       "type": "multiple-choice",
       "content": {
-        "question": "Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh",
+        "question": "Văn kiện nào chứa câu: \"Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ\"?",
         "options": [
           {
             "key": "A",
@@ -5167,7 +5180,12 @@
       },
       "source": {
         "ref": "VNR202 Full câu 172",
+        "originalQuestion": "Lời kêu goi toàn quốc kháng chiến của Chủ tich H ồ Chí Mi",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề được dựng từ nội dung phương án: câu nói trên là của Chủ tịch Hồ Chí Minh trong Lời kêu gọi toàn quốc kháng chiến (19/12/1946); ba phương án còn lại là các văn kiện khác nên không chứa câu này.",
+        "confidence": "uncertain"
       }
     },
     {
@@ -5292,7 +5310,7 @@
       "id": "q-177",
       "type": "multiple-choice",
       "content": {
-        "question": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất",
+        "question": "Chủ trương của Đảng về xây dựng đội ngũ cán bộ các cấp là gì?",
         "options": [
           {
             "key": "A",
@@ -5315,11 +5333,13 @@
       },
       "source": {
         "ref": "VNR202 Full câu 177",
+        "originalQuestion": "Xây dựng đội ngũ cán bộ các cấp có phẩm chất",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (cùng chủ đề với câu 17; đáp án là đoạn trích giáo trình tr. PDF 145); không phải đề gốc nên chỉ dùng tham khảo.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 145"
       }
     },
     {
@@ -6345,7 +6365,7 @@
       "id": "q-212",
       "type": "multiple-choice",
       "content": {
-        "question": "Hoàn thiện hệ thống luật pháp, cơ chế, chính sách",
+        "question": "Để tạo lập môi trường đầu tư, kinh doanh thuận lợi, lành mạnh, công bằng cho mọi thành phần kinh tế, Đảng chủ trương ưu tiên điều gì?",
         "options": [
           {
             "key": "A",
@@ -6368,11 +6388,13 @@
       },
       "source": {
         "ref": "VNR202 Full câu 212",
+        "originalQuestion": "Hoàn thiện hệ thống luật pháp, cơ chế, chính sách",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giáo trình tr. PDF 117: \"Ưu tiên hoàn thiện đồng bộ hệ thống luật pháp, cơ chế, chính sách để tạo môi trường đầu tư kinh doanh thuận lợi, lành mạnh, công bằng cho mọi thành phần kinh tế\"; phương án D chính là vế \"mục đích\" của câu đó); không phải đề gốc nên chỉ dùng tham khảo.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 117"
       }
     },
     {
@@ -7393,7 +7415,7 @@
       "id": "q-247",
       "type": "multiple-choice",
       "content": {
-        "question": "Phát triển nhanh nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao",
+        "question": "Một trong các khâu đột phá chiến lược của Đảng để đẩy mạnh công nghiệp hóa, hiện đại hóa là gì?",
         "options": [
           {
             "key": "A",
@@ -7415,11 +7437,13 @@
         "answer": "D"
       },
       "source": {
-        "ref": "VNR202 Full câu 247"
+        "ref": "VNR202 Full câu 247",
+        "originalQuestion": "Phát triển nhanh nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giáo trình tr. PDF 177: \"Phát triển nhanh nguồn nhân lực, nhất là nhân lực chất lượng cao…\"; ba phương án còn lại là nội dung chung của công nghiệp hóa, không phải khâu đột phá); không phải đề gốc nên chỉ dùng tham khảo.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 177"
       }
     },
     {
@@ -7606,7 +7630,7 @@
       "id": "q-254",
       "type": "multiple-choice",
       "content": {
-        "question": "Mặc dù lâu dài, gian khổ, khó khăn song nhất định thắng lợi",
+        "question": "Về triển vọng của cuộc kháng chiến chống thực dân Pháp, Đảng ta khẳng định điều gì?",
         "options": [
           {
             "key": "A",
@@ -7629,10 +7653,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 254",
+        "originalQuestion": "Mặc dù lâu dài, gian khổ, khó khăn song nhất đinh thắng lợi",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (đường lối \"kháng chiến nhất định thắng lợi\": lâu dài, gian khổ, khó khăn nhưng nhất định thắng lợi); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -8477,7 +8502,7 @@
       "id": "q-283",
       "type": "multiple-choice",
       "content": {
-        "question": "Theo Hiệp định Giơ-ne-vơ năm 1954, Việt Nam tạm thời bị chia cắt ở vĩ tuyến nào?",
+        "question": "Theo Hiệp định Giơ-ne-vơ năm 1954, Việt Nam bị tạm thời chia cắt ở vĩ tuyến nào?",
         "options": [
           {
             "key": "A",
@@ -8503,8 +8528,9 @@
         "originalQuestion": "Vĩ tuyến 17"
       },
       "enrichment": {
-        "text": "Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: Hiệp định Giơ-ne-vơ lấy vĩ tuyến 17 (sông Bến Hải) làm giới tuyến quân sự tạm thời; các phương án còn lại là vĩ tuyến sai.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 67: \"…bị tạm thời chia cắt ở vĩ tuyến bao nhiêu?\" – vĩ tuyến 17).",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 2, câu 67; giáo trình tr. PDF 43"
       }
     },
     {
@@ -10301,7 +10327,7 @@
       "id": "q-344",
       "type": "multiple-choice",
       "content": {
-        "question": "1-5-1930",
+        "question": "Lần đầu tiên công nhân và nhân dân lao động Việt Nam biểu tình kỷ niệm Ngày Quốc tế Lao động dưới sự lãnh đạo của Đảng vào ngày nào?",
         "options": [
           {
             "key": "A",
@@ -10323,10 +10349,11 @@
         "answer": "A"
       },
       "source": {
-        "ref": "VNR202 Full câu 344"
+        "ref": "VNR202 Full câu 344",
+        "originalQuestion": "1-5-1930"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mốc 1/5/1930 mở đầu cao trào cách mạng 1930 – 1931); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -10420,8 +10447,9 @@
         "originalQuestion": "Bãi công của công nhân Ba Son"
       },
       "enrichment": {
-        "text": "Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: các tài liệu lịch sử xem cuộc bãi công của công nhân Ba Son (8/1925) là mốc công nhân bước đầu đấu tranh có mục tiêu chính trị rõ ràng, tự giác; các phương án còn lại là sự kiện 1930, 1936–1939 và 1945.",
-        "confidence": "uncertain"
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 1: cuộc bãi công Ba Son (8/1925) \"đánh dấu bước chuyển của phong trào công nhân từ tự phát sang tự giác\").",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 1, câu 37 (phần bổ sung)"
       }
     },
     {
@@ -10791,7 +10819,7 @@
       "id": "q-360",
       "type": "multiple-choice",
       "content": {
-        "question": "Khẳng định vai trò lãnh đạo cách mạng của Đảng Cộng sản",
+        "question": "Việc thành lập Đảng Cộng sản Việt Nam (2/1930) có ý nghĩa nào sau đây?",
         "options": [
           {
             "key": "A",
@@ -10807,17 +10835,18 @@
           },
           {
             "key": "D",
-            "text": "Xác định lực lượng là công- nông"
+            "text": "Xác định lực lượng là công nông"
           }
         ],
         "answer": "A"
       },
       "source": {
         "ref": "VNR202 Full câu 360",
+        "originalQuestion": "Khẳng đinh vai trò lãnh đạo cách mạng của Đảng Cộng sản",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (các phương án B và D là nội dung Cương lĩnh chính trị đầu tiên, không phải ý nghĩa; A (vai trò lãnh đạo) là ý nghĩa của sự ra đời của Đảng); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },

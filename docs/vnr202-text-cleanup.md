@@ -46,6 +46,8 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 ## Câu 17
 - trước: Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính tri vững vàng, đủ về số lượng, đồng bộ về cơ cấu
 - sau:   Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu
+- trước: A. Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh
+- sau:   A. Xây dựng đội ngũ cán bộ các cấp có phẩm chất và năng lực, có bản lĩnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu
 - trước: D. Xây dựng Đảng trong sạch, vững mạnh chính tri vững vàng, đủ về số lượng, đồng bộ về cơ cấ
 - sau:   D. Xây dựng Đảng trong sạch, vững mạnh chính trị vững vàng, đủ về số lượng, đồng bộ về cơ cấu
 
@@ -1643,7 +1645,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: C. Ảnh hưởng quan trong đối với cách mạng Đông Dương
 - sau:   C. Ảnh hưởng quan trọng đối với cách mạng Đông Dương
 - trước: D. Xác đinh lực lượng là công- nôn
-- sau:   D. Xác định lực lượng là công- nông
+- sau:   D. Xác định lực lượng là công nông
 
 ## Câu 361
 - trước: Hiện nay, trong nền kinh tế thi trường ở nước ta, nhà nước có chức năng kinh tế gì?
