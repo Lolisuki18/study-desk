@@ -13,6 +13,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { loadCleanCorpus, buildCleaner } from './lib/clean-text.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = resolve(root, 'docs/source-mln131-full.json')
@@ -58,6 +59,28 @@ const sameText = (a, b) => bare(a) === bare(b) || (Math.min(bare(a).length, bare
 const sameAnswers = (a, b) => a.length === b.length && a.every((x) => b.some((y) => sameText(x, y))) && b.every((y) => a.some((x) => sameText(x, y)))
 
 const src = JSON.parse(readFileSync(SRC, 'utf8'))
+const fixesFile = resolve(root, 'docs/question-fixes-mln131-full.json')
+const fixes = existsSync(fixesFile) ? JSON.parse(readFileSync(fixesFile, 'utf8')) : {}
+const textChanges = []
+// keyboard typos confirmed one by one in this file (context shows the intended word)
+const WORD_FIXES = {
+  chủa: 'chủ', đáu: 'đấu', hính: 'hình', vởi: 'với', hể: 'hệ', họi: 'hội', phầm: 'phẩm', xuát: 'xuất', biêu: 'biểu', khong: 'không',
+  đỏi: 'đổi', cua: 'của', thuãn: 'thuẫn', xõa: 'xóa', thùa: 'thừa', cở: 'cơ', thõa: 'thỏa', chiễm: 'chiếm', đòng: 'đồng', rọng: 'rộng',
+  tọc: 'tộc', pải: 'phải', đén: 'đến', dượng: 'dựng', giap: 'giai', cuong: 'cương',
+}
+// whole-word match that understands Vietnamese letters (\b does not)
+const W = (text) => new RegExp(String.raw`(?<![\p{L}])` + text + String.raw`(?![\p{L}])`, 'gu')
+const PHRASES = [
+  [W('bản than'), 'bản thân'],
+  [W('thành tự'), 'thành tựu'],
+  [W('các án'), 'các đáp án'],
+  [W('luân cảnh giác'), 'luôn cảnh giác'],
+  [W('nối cảnh'), 'bối cảnh'],
+  [W('lật đỏi'), 'lật đổ'],
+  [W('giải phóng cong người'), 'giải phóng con người'],
+  [W('xã hộ'), 'xã hội'],
+]
+const { clean } = buildCleaner(loadCleanCorpus(root), src.questions.flatMap((q) => [q.question, ...q.options]), { wordFixes: WORD_FIXES, phrases: PHRASES })
 const overridesFile = resolve(root, 'docs/answer-overrides-bank-mln131.json')
 const overrides = existsSync(overridesFile) ? JSON.parse(readFileSync(overridesFile, 'utf8')) : {}
 
@@ -128,16 +151,38 @@ src.questions.forEach((q, i) => {
     } else fresh.push(pos)
   }
 
+  // copy damage is repaired on the way in (raw file untouched); docs/question-fixes-mln131-full.json holds the few
+  // answer / option corrections, each with its reason
+  const fix = fixes[pos]
+  const cleanQuestion = clean(q.question.trim())
+  let opts = q.options.map((text) => clean(text.trim()))
+  let ansIdx = fix?.answerIndex ?? answerIdx
+  const removed = fix?.removeOptionIndexes ?? []
+  if (removed.length) {
+    if (ansIdx.some((a) => removed.includes(a))) throw new Error(`Câu ${pos}: không thể bỏ phương án là đáp án`)
+    opts = opts.filter((_, n) => !removed.includes(n))
+    ansIdx = ansIdx.map((a) => a - removed.filter((r) => r < a).length)
+  }
+  const letters = (idx) => idx.map((a) => String.fromCharCode(65 + a)).sort().join('')
+  const changedText = cleanQuestion !== q.question.trim() || q.options.some((t, n) => clean(t.trim()) !== t.trim())
+  if (changedText) textChanges.push({ pos, before: [q.question.trim(), ...q.options.map((t, n) => `${String.fromCharCode(65 + n)}. ${t.trim()}`)], after: [cleanQuestion, ...q.options.map((t, n) => `${String.fromCharCode(65 + n)}. ${clean(t.trim())}`)] })
+
   items.push({
     // position in the source file: the file's own "id" field has repeats (3, 303) and gaps, so it cannot be used
     id: `q-${String(pos).padStart(3, '0')}`,
     type: 'multiple-choice',
     content: {
-      question: q.question,
-      options: q.options.map((text, n) => ({ key: String.fromCharCode(65 + n), text })),
-      answer: answerIdx.map((a) => String.fromCharCode(65 + a)).sort().join(''),
+      question: cleanQuestion,
+      options: opts.map((text, n) => ({ key: String.fromCharCode(65 + n), text })),
+      answer: letters(ansIdx),
     },
-    source: { ref: `MLN131 Full câu ${pos}` },
+    source: {
+      ref: `MLN131 Full câu ${pos}`,
+      ...(fix?.answerIndex ? { sourceAnswer: letters(answerIdx), answerChanged: true } : {}),
+      ...(removed.length ? { removedOptions: removed.map((r) => `${String.fromCharCode(65 + r)}. ${q.options[r]}`) } : {}),
+      ...(changedText ? { textCleaned: true } : {}),
+    },
+    ...(fix ? { enrichment: { text: fix.note, confidence: fix.confidence, ...(fix.reference ? { reference: fix.reference } : {}) } } : {}),
   })
 })
 
@@ -188,6 +233,19 @@ const report = [
   '',
 ]
 writeFileSync(REPORT, report.join('\n'))
+
+// every text the cleaner changed, so the repair can be reviewed (the raw source file is not modified)
+writeFileSync(
+  resolve(root, 'docs/mln131-full-text-cleanup.md'),
+  [
+    '# MLN131 Full: sửa lỗi chép / gõ',
+    '',
+    'Tự sinh bởi `node scripts/import-mln131-full.mjs`. File nguồn `docs/source-mln131-full.json` giữ nguyên; bản sửa chỉ nằm trong bộ học.',
+    `Số câu được sửa chữ: ${textChanges.length}/${src.questions.length}. Sửa đáp án / phương án: \`docs/question-fixes-mln131-full.json\`.`,
+    '',
+    ...textChanges.flatMap((c) => [`## Câu ${c.pos}`, ...c.before.flatMap((b, n) => (b === c.after[n] ? [] : [`- trước: ${b}`, `- sau:   ${c.after[n]}`])), '']),
+  ].join('\n'),
+)
 
 console.log(`${src.questions.length} câu trong file → ${items.length} câu trong bộ học`)
 console.log(`  trong đó ${dup} câu cũng có ở bộ khác, ${repeats.length} câu lặp trong file, ${fresh.length} câu chỉ có ở đây`)

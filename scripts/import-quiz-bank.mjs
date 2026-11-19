@@ -7,6 +7,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { loadCleanCorpus, buildCleaner } from './lib/clean-text.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const colDir = resolve(root, 'src/data/collections')
@@ -51,13 +52,28 @@ const BANKS = [
   },
 ]
 
+/**
+ * Identity of a multiple-choice question: stem + options + answer text. The bank often reuses one stem for several
+ * different questions (only the options differ), so the stem alone must not be used to detect duplicates.
+ */
+const fullKey = (question, options, answer) =>
+  [norm(question), ...options.map((o) => norm(o.text)).sort(), '=>', ...[...answer].map((c) => norm(options.find((o) => o.key === c)?.text ?? '')).sort()].join('|')
+
 // questions already in other (non-bank) collections
 const existing = new Map()
 for (const dir of readdirSync(colDir)) {
   for (const f of readdirSync(resolve(colDir, dir))) {
     if (!f.endsWith('.json') || f.startsWith('bank-')) continue
     const c = JSON.parse(readFileSync(resolve(colDir, dir, f), 'utf8'))
-    for (const it of c.items) if (it.content?.question) existing.set(norm(it.content.question), `${c.id}/${it.id}`)
+    // "Full" decks deliberately repeat the banks (standalone): they must not make the banks look like duplicates
+    if (c.standalone) continue
+    for (const it of c.items) {
+      if (!it.content?.question) continue
+      // multiple-choice: same stem AND same options AND same answer; other types: same stem
+      const k = it.type === 'multiple-choice' ? fullKey(it.content.question, it.content.options, it.content.answer) : norm(it.content.question)
+      // scoped by subject: the same question in another subject's deck is not a duplicate of this one
+      existing.set(`${c.subject}::${k}`, `${c.id}/${it.id}`)
+    }
   }
 }
 
@@ -67,31 +83,59 @@ for (const b of BANKS) {
   const enrichment = existsSync(enrichFile) ? JSON.parse(readFileSync(enrichFile, 'utf8')) : {}
   const overrideFile = resolve(root, `docs/answer-overrides-bank-${b.id}.json`)
   const overrides = existsSync(overrideFile) ? JSON.parse(readFileSync(overrideFile, 'utf8')) : {}
+  // docs/question-fixes-*.json: questions whose stem was lost/garbled in the bank, keyed by position in the bank
+  const fixesFile = resolve(root, `docs/question-fixes-${b.id}.json`)
+  const fixes = existsSync(fixesFile) ? JSON.parse(readFileSync(fixesFile, 'utf8')) : {}
+  // VNR202 only: repair copy/OCR damage (split words, lost tone marks, cut-off endings); see scripts/lib/clean-text.mjs.
+  // Duplicate detection below keeps using the raw text so the set of imported questions does not change.
+  const clean =
+    b.id === 'vnr202'
+      ? buildCleaner(loadCleanCorpus(root), src.questions.flatMap((q) => [q.question, ...Object.values(q.options)])).clean
+      : (s) => s
   const seen = new Map()
   const items = []
   const skipped = { existing: [], repeated: [], emptyOptions: [] }
   src.questions.forEach((q, i) => {
     const n = i + 1
     const id = `b-${String(n).padStart(3, '0')}`
-    const key = norm(q.question)
-    if (existing.has(key)) return skipped.existing.push(`${id} = ${existing.get(key)}`)
-    if (seen.has(key)) return skipped.repeated.push(`${id} = ${seen.get(key)}`)
-    seen.set(key, id)
     // empty option text = option not present in the bank (e.g. a blank "D"): drop it
     const options = Object.entries(q.options)
       .map(([k, text]) => ({ key: k, text: String(text).trim() }))
       .filter((o) => o.text)
+    const key = fullKey(q.question, options, String(q.answer))
+    if (existing.has(key)) return skipped.existing.push(`${id} = ${existing.get(key)}`)
+    if (seen.has(key)) return skipped.repeated.push(`${id} = ${seen.get(key)}`)
+    seen.set(key, id)
     if (options.length < Object.keys(q.options).length) skipped.emptyOptions.push(id)
     const bankAnswer = [...String(q.answer)].sort().join('')
     // answers deliberately changed to follow the textbook (docs/answer-overrides-bank-*.json); the bank's own answer is kept in source
     const answer = overrides[id] ? overrides[id].answer : bankAnswer
+    const fix = fixes[n]
+    const cleanQuestion = clean(q.question.trim())
+    const cleanOptions = options.map((o) => ({ key: o.key, text: fix?.options?.[o.key] ?? clean(o.text) }))
+    const changedText = cleanQuestion !== q.question.trim() || cleanOptions.some((o, k) => o.text !== options[k].text)
     const item = {
       id,
       type: 'multiple-choice',
-      content: { question: q.question.trim(), options, answer, ...(q.explanation ? { explanation: q.explanation } : {}) },
-      source: { ref: `Ngân hàng câu ${n}`, ...(overrides[id] ? { bankAnswer, answerChangedToTextbook: true } : {}) },
+      content: { question: (fix?.question ?? cleanQuestion).trim(), options: cleanOptions, answer, ...(q.explanation ? { explanation: q.explanation } : {}) },
+      source: {
+        ref: `Ngân hàng câu ${n}`,
+        ...(overrides[id] ? { bankAnswer, answerChangedToTextbook: true } : {}),
+        ...(fix?.question ? { originalQuestion: q.question.trim() } : {}),
+        ...(changedText ? { textCleaned: true } : {}),
+      },
     }
     if (enrichment[id]) item.enrichment = enrichment[id]
+    if (fix) {
+      // keep any textbook note; the warning about the damaged stem is added to it
+      const e = item.enrichment
+      const reference = [e?.reference, fix.reference].filter(Boolean).join('; ')
+      item.enrichment = {
+        text: e ? `${e.text}\n\n⚠ ${fix.note}` : fix.note,
+        confidence: e && !fix.question ? e.confidence : fix.confidence,
+        ...(reference ? { reference } : {}),
+      }
+    }
     items.push(item)
   })
   const base = {

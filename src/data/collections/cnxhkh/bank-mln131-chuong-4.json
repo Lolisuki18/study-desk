@@ -2,7 +2,7 @@
   "id": "cnxhkh-ngan-hang-chuong-4",
   "title": "CNXH Khoa học – Ngân hàng bổ sung – Chương 4",
   "subject": "Chủ nghĩa xã hội khoa học",
-  "description": "Ngân hàng MLN131 bổ sung, Chương 4 – Dân chủ XHCN và Nhà nước XHCN. 59 câu.",
+  "description": "Ngân hàng MLN131 bổ sung, Chương 4 – Dân chủ XHCN và Nhà nước XHCN. 60 câu.",
   "contentType": "multiple-choice",
   "language": "vi",
   "source": {
@@ -756,6 +756,40 @@
       },
       "source": {
         "ref": "Ngân hàng câu 160"
+      }
+    },
+    {
+      "id": "b-192",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Nhà nước xã hội chủ nghĩa ra đời là kết quả của:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Cuộc cách mạng do giai cấp vô sản và nhân dân lao động tiến hành dưới sự lãnh đạo của Đảng Cộng sản"
+          },
+          {
+            "key": "B",
+            "text": "Sự chuyển biến tích cực của nhà nước tư sản"
+          },
+          {
+            "key": "C",
+            "text": "Cuộc cách mạng tư sản do giai cấp tư sản và nhân dân lao động tiến hành dưới sự lãnh đạo của Đảng Cộng sản"
+          },
+          {
+            "key": "D",
+            "text": "Cuộc cách mạng vô sản do giai cấp nông nhân tiến hành"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 192"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 93): Nhà nước XHCN là kết quả của cuộc cách mạng do giai cấp vô sản và nhân dân lao động tiến hành dưới sự lãnh đạo của Đảng Cộng sản.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 93"
       }
     },
     {
