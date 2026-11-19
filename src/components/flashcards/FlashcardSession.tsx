@@ -417,7 +417,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
 
   const pill = (active: boolean) =>
     cx(
-      'inline-flex items-center gap-1.5 rounded-xl px-2.5 sm:px-3 py-1.5 text-xs font-semibold transition-colors cursor-pointer select-none',
+      'inline-flex min-h-9 items-center gap-1.5 rounded-xl px-2.5 sm:px-3 py-1.5 text-xs font-semibold transition-colors cursor-pointer select-none sm:min-h-0',
       active ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-2xs' : 'bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700',
     )
 
@@ -582,7 +582,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   const zoomClass = fontZoom === 'large' ? 'text-lg' : fontZoom === 'xl' ? 'text-xl' : 'text-base'
 
   const cardFace =
-    'flip-face flex min-h-[280px] flex-col justify-between rounded-3xl border border-slate-200/90 dark:border-slate-800 bg-card p-6 sm:p-8 shadow-[0_10px_28px_-6px_rgba(15,23,42,0.08),0_3px_8px_-2px_rgba(15,23,42,0.04)] transition-shadow hover:shadow-[0_14px_36px_-6px_rgba(15,23,42,0.12)]'
+    'flip-face flex min-h-[240px] flex-col justify-between rounded-3xl border border-slate-200/90 dark:border-slate-800 bg-card p-4 sm:min-h-[280px] sm:p-8 shadow-[0_10px_28px_-6px_rgba(15,23,42,0.08),0_3px_8px_-2px_rgba(15,23,42,0.04)] transition-shadow hover:shadow-[0_14px_36px_-6px_rgba(15,23,42,0.12)]'
 
   return (
     <div className="mx-auto w-full max-w-3xl">
@@ -594,9 +594,9 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
       </div>
 
       {/* Thông tin thẻ & Tags */}
-      <div className="mb-2 flex items-center justify-between px-1 text-xs text-muted">
-        <span className="truncate pr-2 font-bold text-ink">{cur.collection.title}</span>
-        <div className="flex shrink-0 items-center gap-1.5">
+      <div className="mb-2 flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5 px-1 text-xs text-muted">
+        <span className="min-w-0 basis-full truncate font-bold text-ink sm:flex-1 sm:basis-auto sm:pr-2">{cur.collection.title}</span>
+        <div className="flex shrink-0 flex-wrap items-center gap-1.5">
           {isRepeat && <span className="rounded-full bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900 px-2.5 py-0.5 font-bold text-rose-600 dark:text-rose-400">Ôn lại</span>}
           {p && p.level > 0 && (
             <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-900 px-2.5 py-0.5 font-bold text-indigo-700 dark:text-indigo-300">
@@ -621,27 +621,27 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
               }
             }}
             className={cx(
-              'inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-bold transition-colors cursor-pointer border',
+              'inline-flex h-9 items-center justify-center gap-1 rounded-full px-3 font-bold transition-colors cursor-pointer border sm:h-auto sm:px-2.5 sm:py-0.5',
               cur && isStarred(cur.collection.id, cur.item.id)
                 ? 'bg-amber-500 border-amber-600 text-white'
                 : 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-900 text-amber-700 dark:text-amber-300 hover:bg-amber-100',
             )}
             title="Đánh dấu sao câu hỏi trọng tâm (Ôn tủ)"
           >
-            <Star size={11} className={cx(cur && isStarred(cur.collection.id, cur.item.id) && 'fill-white')} />
-            <span>{cur && isStarred(cur.collection.id, cur.item.id) ? 'Đã gắn sao' : 'Gắn sao'}</span>
+            <Star size={13} className={cx(cur && isStarred(cur.collection.id, cur.item.id) && 'fill-white')} />
+            <span className="hidden sm:inline">{cur && isStarred(cur.collection.id, cur.item.id) ? 'Đã gắn sao' : 'Gắn sao'}</span>
           </button>
           <button
             onClick={handleToggleBookmark}
             className={cx(
-              'inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-bold transition-colors cursor-pointer border',
+              'inline-flex h-9 items-center justify-center gap-1 rounded-full px-3 font-bold transition-colors cursor-pointer border sm:h-auto sm:px-2.5 sm:py-0.5',
               p?.review
                 ? 'bg-rose-500 border-rose-600 text-white'
                 : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-900 text-rose-700 dark:text-rose-300 hover:bg-rose-100',
             )}
             title="Đánh dấu cần ôn lại (phím R)"
           >
-            <Bookmark size={11} className={cx(p?.review && 'fill-white')} /> {p?.review ? 'Đã đánh dấu' : 'Đánh dấu'}
+            <Bookmark size={13} className={cx(p?.review && 'fill-white')} /> <span className="hidden sm:inline">{p?.review ? 'Đã đánh dấu' : 'Đánh dấu'}</span>
           </button>
         </div>
       </div>
@@ -667,10 +667,12 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
           {/* Mặt trước */}
           <div className={cx(cardFace, zoomClass, flipped && 'pointer-events-none absolute inset-0 overflow-hidden')}>
             <div className="flex flex-1 flex-col justify-center">{frontContent}</div>
-            <div className="mt-6 flex items-center justify-center gap-1.5 text-[11px] font-medium text-muted">
+            <div className="mt-4 flex items-center justify-center gap-1.5 text-[11px] font-medium text-muted sm:mt-6">
               <RotateCw size={12} />
-              <span>Chạm thẻ hoặc nhấn</span>
-              <kbd className="rounded-md border border-line bg-slate-50 dark:bg-slate-800 px-1.5 py-0.5 font-mono text-[10px] font-bold text-ink">Space</kbd>
+              <span>Chạm thẻ</span>
+              <span className="hidden items-center gap-1.5 sm:inline-flex">
+                hoặc nhấn <kbd className="rounded-md border border-line bg-slate-50 dark:bg-slate-800 px-1.5 py-0.5 font-mono text-[10px] font-bold text-ink">Space</kbd>
+              </span>
               <span>để lật</span>
             </div>
           </div>
@@ -678,7 +680,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
           {/* Mặt sau */}
           <div className={cx(cardFace, zoomClass, 'flip-back', !flipped && 'pointer-events-none absolute inset-0 overflow-hidden')}>
             <div className="flex flex-1 flex-col justify-center">{backContent}</div>
-            <div className="mt-6 flex items-center justify-center gap-1.5 text-[11px] font-medium text-muted">
+            <div className="mt-6 hidden items-center justify-center gap-1.5 text-[11px] font-medium text-muted sm:flex">
               <span>Đánh giá:</span>
               <kbd className="rounded-md bg-rose-50 dark:bg-rose-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-rose-600 dark:text-rose-300">1 Quên</kbd>
               <kbd className="rounded-md bg-amber-50 dark:bg-amber-950/60 px-1.5 py-0.5 font-mono text-[10px] font-bold text-amber-700 dark:text-amber-300">2 Khó</kbd>
@@ -690,7 +692,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
       </div>
 
       {/* Action Dock: 4 nút tự tin + Trước / Sau */}
-      <div className="mt-3.5 flex items-center gap-2 rounded-2xl border border-line bg-card p-2 shadow-xs">
+      <div className="sticky bottom-[calc(var(--bottom-nav-h)+0.5rem)] z-20 mt-3.5 flex items-center gap-2 rounded-2xl border border-line bg-card p-2 shadow-lg md:static md:bottom-auto md:shadow-xs">
         <button
           onClick={() => go(-1)}
           disabled={idx === 0}
@@ -732,7 +734,8 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
       <NoteBox collectionId={cur.collection.id} itemId={cur.item.id} className="mt-3.5" />
 
       <p className="mt-3 text-center text-[11px] text-muted">
-        Vuốt trái: Quên · Vuốt phải: Được · Vuốt lên: Dễ · Phím Space để lật · K được · U quên · R đánh dấu
+        <span>Vuốt trái: Quên · Vuốt phải: Được · Vuốt lên: Dễ</span>
+        <span className="hidden md:inline"> · Phím Space để lật · K được · U quên · R đánh dấu</span>
       </p>
 
       {/* Card Grid Drawer Modal */}

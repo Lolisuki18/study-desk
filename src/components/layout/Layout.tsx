@@ -131,7 +131,7 @@ export default function Layout() {
         <ScrollToTop />
 
         {/* Top bar on Mobile */}
-        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200/90 dark:border-line bg-white/95 dark:bg-card/95 px-4 py-3 backdrop-blur-md md:hidden print:hidden">
+        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200/90 dark:border-line bg-white/95 dark:bg-card/95 px-4 pb-2 pt-[calc(0.5rem+env(safe-area-inset-top,0px))] backdrop-blur-md md:hidden print:hidden">
           <div className="flex items-center gap-2.5">
             <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-xs">
               <GraduationCap size={18} />
@@ -142,23 +142,23 @@ export default function Layout() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setCmdOpen(true)}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 dark:border-line bg-white dark:bg-card text-slate-600 dark:text-muted hover:text-slate-900 dark:hover:text-ink active:scale-95 transition-all cursor-pointer"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 dark:border-line bg-white dark:bg-card text-slate-600 dark:text-muted hover:text-slate-900 dark:hover:text-ink active:scale-95 transition-all cursor-pointer"
               aria-label="Tìm kiếm nhanh"
               title="Tìm kiếm nhanh (Ctrl + K)"
             >
-              <Search size={15} />
+              <Search size={17} />
             </button>
             <Pomodoro compact />
             {summary.needReview > 0 && (
               <NavLink
                 to="/today"
-                className="flex items-center gap-1.5 rounded-full bg-rose-50 dark:bg-rose-950/60 px-2.5 py-1 text-xs font-bold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900"
+                className="flex h-10 items-center gap-1.5 rounded-full bg-rose-50 dark:bg-rose-950/60 px-3 text-xs font-bold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900"
               >
                 <RefreshCw size={12} className="animate-spin-slow" />
                 <span>{summary.needReview}</span>
               </NavLink>
             )}
-            <ThemeToggle className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 dark:border-line text-slate-600 dark:text-muted hover:text-slate-900 dark:hover:text-ink" />
+            <ThemeToggle className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 dark:border-line text-slate-600 dark:text-muted hover:text-slate-900 dark:hover:text-ink" />
           </div>
         </header>
 
@@ -357,18 +357,18 @@ export default function Layout() {
         </aside>
 
         {/* Main Content Area */}
-        <main className="min-w-0 flex-1 px-4 py-6 md:px-8 md:py-8 pb-24 md:pb-8">
+        <main className="min-w-0 flex-1 px-4 pt-4 pb-[calc(var(--bottom-nav-h)+1.25rem)] md:px-8 md:py-8 md:pb-8">
           <div className="mx-auto max-w-5xl">{loaded ? <Outlet /> : <p className="text-sm text-slate-500 dark:text-muted">Đang nạp dữ liệu…</p>}</div>
         </main>
 
         {/* Modern Mobile Bottom Navigation Bar */}
-        <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around border-t border-slate-200 dark:border-line bg-white/95 dark:bg-card/95 py-1.5 px-3 backdrop-blur-md md:hidden print:hidden shadow-lg">
+        <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-stretch justify-around border-t border-slate-200 dark:border-line bg-white/95 dark:bg-card/95 px-1 pt-1 pb-[max(0.25rem,env(safe-area-inset-bottom,0px))] backdrop-blur-md md:hidden print:hidden shadow-lg" aria-label="Điều hướng chính">
           <NavLink
             to="/"
             end
             className={({ isActive }) =>
               cx(
-                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                'flex min-h-[3.25rem] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-[11px] font-bold transition-colors active:bg-slate-100 dark:active:bg-slate-800',
                 isActive ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-ink',
               )
             }
@@ -381,7 +381,7 @@ export default function Layout() {
             to="/today"
             className={({ isActive }) =>
               cx(
-                'relative flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                'relative flex min-h-[3.25rem] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-[11px] font-bold transition-colors active:bg-slate-100 dark:active:bg-slate-800',
                 isActive ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-ink',
               )
             }
@@ -389,7 +389,7 @@ export default function Layout() {
             <Sparkles size={20} strokeWidth={2} />
             <span>Học ngay</span>
             {summary.needReview > 0 && (
-              <span className="absolute top-0.5 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-rose-500 text-[9px] font-bold text-white">
+              <span className="absolute right-[18%] top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-rose-500 px-1 text-[9px] font-bold text-white">
                 {summary.needReview > 99 ? '99+' : summary.needReview}
               </span>
             )}
@@ -399,7 +399,7 @@ export default function Layout() {
             to="/collections"
             className={({ isActive }) =>
               cx(
-                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                'flex min-h-[3.25rem] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-[11px] font-bold transition-colors active:bg-slate-100 dark:active:bg-slate-800',
                 isActive ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-ink',
               )
             }
@@ -412,7 +412,7 @@ export default function Layout() {
             to="/mistakes"
             className={({ isActive }) =>
               cx(
-                'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors',
+                'flex min-h-[3.25rem] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-[11px] font-bold transition-colors active:bg-slate-100 dark:active:bg-slate-800',
                 isActive ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-ink',
               )
             }
@@ -424,7 +424,7 @@ export default function Layout() {
           <button
             onClick={() => setMobileDrawerOpen(true)}
             className={cx(
-              'flex flex-col items-center gap-1 rounded-xl px-2.5 py-1 text-[11px] font-bold transition-colors text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-ink cursor-pointer',
+              'flex min-h-[3.25rem] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-[11px] font-bold transition-colors text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-ink cursor-pointer',
               mobileDrawerOpen && 'text-indigo-600 dark:text-indigo-400',
             )}
           >
@@ -440,7 +440,7 @@ export default function Layout() {
             onClick={() => setMobileDrawerOpen(false)}
           >
             <div
-              className="max-h-[80vh] overflow-y-auto rounded-t-3xl border-t border-slate-200 dark:border-line bg-white dark:bg-card p-5 shadow-2xl animate-in slide-in-from-bottom duration-200"
+              className="max-h-[85dvh] overflow-y-auto rounded-t-3xl pb-[calc(1.25rem+env(safe-area-inset-bottom,0px))] border-t border-slate-200 dark:border-line bg-white dark:bg-card p-5 shadow-2xl animate-in slide-in-from-bottom duration-200"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="mb-4 flex items-center justify-between border-b border-slate-100 dark:border-line pb-3">
@@ -450,9 +450,10 @@ export default function Layout() {
                 </div>
                 <button
                   onClick={() => setMobileDrawerOpen(false)}
-                  className="rounded-lg p-1 text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-slate-200"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-700 dark:hover:text-slate-200"
+                  aria-label="Đóng"
                 >
-                  <X size={18} />
+                  <X size={20} />
                 </button>
               </div>
 

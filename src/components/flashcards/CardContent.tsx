@@ -81,7 +81,7 @@ export function CardFront({
               {multi ? `Chọn ${item.content.answer.length} đáp án` : 'Trắc nghiệm'}
             </span>
           </div>
-          <h2 className="text-center text-lg font-bold leading-relaxed tracking-tight text-ink md:text-xl">{item.content.question}</h2>
+          <h2 className={`${item.content.question.length > 90 ? 'text-left sm:text-center' : 'text-center'} text-[17px] font-bold leading-relaxed tracking-tight text-ink sm:text-lg md:text-xl`}>{item.content.question}</h2>
 
           {/* Phương án dạng thẻ lựa chọn: huy hiệu chữ cái màu, hover nhấc nhẹ */}
           <div className="mt-5 space-y-2.5" onClick={(e) => done && e.stopPropagation()}>

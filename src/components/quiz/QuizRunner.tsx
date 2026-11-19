@@ -661,20 +661,20 @@ export default function QuizRunner({
     <div className={containerClass}>
       <div className="mx-auto w-full max-w-3xl">
         {/* Top Status & Controls Bar */}
-        <div className="mb-4 flex flex-wrap items-center gap-2.5 sm:gap-3 rounded-2xl border border-line bg-card p-3 shadow-xs">
+        <div className={cx('sticky z-20 mb-3 flex items-center gap-2 rounded-2xl border border-line bg-card p-2.5 shadow-xs sm:mb-4 sm:gap-3 sm:p-3 md:top-0', zenMode ? 'top-0' : 'top-[calc(3.5rem+env(safe-area-inset-top,0px))]')}>
           <div className="text-xs font-mono font-bold text-ink">
             {i + 1} / {questions.length}
           </div>
-          <ProgressBar value={((i + 1) / questions.length) * 100} className="flex-1 min-w-[100px] h-2" />
+          <ProgressBar value={((i + 1) / questions.length) * 100} className="h-2 min-w-[40px] flex-1" />
 
           {/* Palette button */}
           <Button
             variant={showGrid ? 'primary' : 'outline'}
-            className="h-8 px-2.5 text-xs"
+            className="h-10 px-3 text-xs sm:h-8 sm:px-2.5"
             onClick={() => setShowGrid((s) => !s)}
             title="Xem danh sách câu hỏi"
           >
-            <LayoutGrid size={14} /> Danh sách ({answeredCount}/{questions.length})
+            <LayoutGrid size={14} /> <span className="hidden sm:inline">Danh sách</span> ({answeredCount}/{questions.length})
           </Button>
 
           {/* Countdown Clock */}
@@ -693,13 +693,13 @@ export default function QuizRunner({
           {/* Focus / Zen mode toggle */}
           <button
             onClick={() => setZenMode((z) => !z)}
-            className="inline-flex h-8 w-8 items-center justify-center rounded-xl text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink transition-colors cursor-pointer"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink transition-colors cursor-pointer sm:h-8 sm:w-8"
             title={zenMode ? 'Thoát toàn màn hình' : 'Chế độ tập trung (Zen Mode)'}
           >
             {zenMode ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
           </button>
 
-          <Button variant="ghost" onClick={onExit} className="h-8 px-2 text-xs">
+          <Button variant="ghost" onClick={onExit} className="h-10 px-2.5 text-xs sm:h-8 sm:px-2">
             Thoát
           </Button>
         </div>
@@ -760,7 +760,7 @@ export default function QuizRunner({
         )}
 
         {/* Main Question Card */}
-        <Card className="p-6 sm:p-8 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-8">
           <div className="mb-4 flex items-center justify-between">
             <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-muted">
               {KIND_LABEL[q.kind]}
@@ -773,29 +773,29 @@ export default function QuizRunner({
                   toggleStar(q.collectionId, q.itemId)
                 }}
                 className={cx(
-                  'inline-flex items-center gap-1.5 rounded-xl px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer',
+                  'inline-flex h-10 min-w-10 items-center justify-center gap-1.5 rounded-xl px-2.5 text-xs font-semibold transition-colors cursor-pointer sm:h-auto sm:min-w-0 sm:py-1',
                   isStarred(q.collectionId, q.itemId)
                     ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900 font-bold'
                     : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink',
                 )}
                 title="Gắn sao câu hỏi trọng tâm (Ôn tủ)"
               >
-                <Star size={13} className={cx(isStarred(q.collectionId, q.itemId) && 'fill-amber-500 text-amber-500')} />
-                <span>{isStarred(q.collectionId, q.itemId) ? 'Đã gắn sao' : 'Gắn sao'}</span>
+                <Star size={16} className={cx(isStarred(q.collectionId, q.itemId) && 'fill-amber-500 text-amber-500')} />
+                <span className="hidden sm:inline">{isStarred(q.collectionId, q.itemId) ? 'Đã gắn sao' : 'Gắn sao'}</span>
               </button>
               <button
                 type="button"
                 onClick={() => toggleFlag(q.id)}
                 className={cx(
-                  'inline-flex items-center gap-1.5 rounded-xl px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer',
+                  'inline-flex h-10 min-w-10 items-center justify-center gap-1.5 rounded-xl px-2.5 text-xs font-semibold transition-colors cursor-pointer sm:h-auto sm:min-w-0 sm:py-1',
                   flagged[q.id]
                     ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900'
                     : 'text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink',
                 )}
                 title="Cắm cờ câu hỏi để xem lại sau (phím F)"
               >
-                <Flag size={13} className={cx(flagged[q.id] && 'fill-rose-500')} />
-                <span>{flagged[q.id] ? 'Đã cắm cờ' : 'Cắm cờ (F)'}</span>
+                <Flag size={16} className={cx(flagged[q.id] && 'fill-rose-500')} />
+                <span className="hidden sm:inline">{flagged[q.id] ? 'Đã cắm cờ' : 'Cắm cờ (F)'}</span>
               </button>
             </div>
           </div>
@@ -838,7 +838,12 @@ export default function QuizRunner({
         </Card>
 
         {/* Navigation Toolbar */}
-        <div className="mt-5 flex items-center justify-between">
+        <div
+          className={cx(
+            'sticky z-20 -mx-4 mt-4 flex items-center justify-between gap-2 border-t border-line bg-bg/95 px-4 py-3 backdrop-blur-md md:static md:bottom-auto md:mx-0 md:mt-5 md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none',
+            zenMode ? 'bottom-0' : 'bottom-[var(--bottom-nav-h)]',
+          )}
+        >
           <Button onClick={() => setI(i - 1)} disabled={i === 0} className="py-2.5 px-4">
             <ChevronLeft size={16} /> Trước
           </Button>
@@ -850,12 +855,12 @@ export default function QuizRunner({
               </Button>
             ) : (
               <Button variant="primary" disabled={!canCheck} onClick={() => setChecked((c) => ({ ...c, [q.id]: true }))} className="py-2.5 px-6">
-                Kiểm tra (Enter)
+                Kiểm tra<span className="hidden md:inline"> (Enter)</span>
               </Button>
             )
           ) : (
             <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold text-muted">
+              <span className="hidden text-xs font-semibold text-muted sm:inline">
                 Đã làm {answeredCount}/{questions.length}
               </span>
               {i < questions.length - 1 && (
@@ -880,7 +885,7 @@ export default function QuizRunner({
           )}
         </div>
 
-        <p className="mt-4 text-center text-xs text-muted">
+        <p className="mt-4 hidden text-center text-xs text-muted md:block">
           {q.kind === 'mc' && 'Nhấn 1, 2, 3, 4 hoặc A, B, C, D để chọn nhanh · '}
           {q.kind === 'tf' && 'Nhấn 1/D (Đúng), 2/S (Sai) · '}
           Phím F để cắm cờ · ← → để chuyển câu

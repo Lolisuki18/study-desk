@@ -14,7 +14,7 @@ export default function Pomodoro({ compact = false }: { compact?: boolean }) {
         onClick={pomodoro.toggle}
         title={`${label}: bấm để ${s.running ? 'tạm dừng' : 'bắt đầu'}`}
         className={cx(
-          'inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-mono text-xs font-bold transition-all cursor-pointer',
+          'inline-flex h-10 items-center gap-1.5 rounded-full border px-3 font-mono text-xs font-bold transition-all cursor-pointer',
           s.running
             ? work
               ? 'border-indigo-200 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300'
@@ -28,7 +28,7 @@ export default function Pomodoro({ compact = false }: { compact?: boolean }) {
     )
 
   const iconBtn =
-    'inline-flex h-7 w-7 items-center justify-center rounded-lg text-slate-500 dark:text-muted transition-colors hover:bg-slate-200/60 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-ink cursor-pointer'
+    'inline-flex h-9 w-9 md:h-7 md:w-7 items-center justify-center rounded-lg text-slate-500 dark:text-muted transition-colors hover:bg-slate-200/60 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-ink cursor-pointer'
 
   return (
     <div className="mb-3 rounded-2xl border border-slate-200 dark:border-line bg-slate-50 dark:bg-slate-800/40 p-3 text-xs">
