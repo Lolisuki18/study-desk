@@ -4,9 +4,9 @@ Tự sinh bởi `node scripts/import-mln131-full.mjs`. Không sửa tay: chạy 
 
 - File gốc: 360 câu (`docs/source-mln131-full.json`).
 - Bộ "CNXH Khoa học – MLN131 Full (360 câu)" chứa đủ 360 câu, kể cả câu trùng.
-- Cũng có trong bộ khác của app (giống hệt, hoặc chỉ khác lỗi chính tả / cách diễn đạt): 309 câu.
+- Cũng có trong bộ khác của app (giống hệt, hoặc chỉ khác lỗi chính tả / cách diễn đạt): 310 câu.
 - Lặp lại trong chính file: 13 câu.
-- Không có ở bộ nào khác: 38 câu (câu 4, 6, 14, 25, 30, 45, 46, 48, 99, 100, 101, 105, 111, 115, 156, 158, 174, 182, 189, 192, 207, 210, 218, 223, 239, 243, 248, 270, 282, 295, 315, 343, 346, 349, 356, 358, 359, 360).
+- Không có ở bộ nào khác: 37 câu (câu 4, 6, 14, 25, 30, 45, 46, 48, 99, 100, 101, 105, 111, 115, 156, 158, 174, 182, 189, 192, 207, 210, 218, 223, 239, 243, 248, 270, 295, 315, 343, 346, 349, 356, 358, 359, 360).
 
 ## 17 câu trùng nhưng đáp án khác với app
 

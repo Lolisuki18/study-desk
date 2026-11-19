@@ -39,6 +39,11 @@ the overlap / answer-conflict report `docs/mln131-full-doi-chieu.md`. Item ids a
 order when updating it. The collection is marked `"standalone": true`: such a deck is studied on its own and is left out of the
 subject-wide mock exam (`/exam`) and the readiness estimate (`examCollections` in `src/data/index.ts`); it still counts everywhere else.
 
+Repairs to community banks (never edit `docs/source-*.json`): `scripts/lib/clean-text.mjs` fixes copy/OCR damage while importing
+(VNR202 bank + VNR202 Full + MLN131 Full; changes listed in `docs/*-text-cleanup.md`); `docs/question-fixes-*.json` hold hand-made fixes
+(lost stems, answer corrections) with a reason and `confidence`. New subjects from the FPT quiz site: `npm run import:fpt-banks`
+(HCM202, ITE302c, MLN111, MLN122). `npm run import:vnr202-full` / `import:mln131-full` rebuild the two Full decks.
+
 ## Rules
 - NEVER silently change original questions/answers. Copy verbatim; keep source wording.
 - NEVER invent facts/explanations. Researched extras go in `enrichment` (never in `content`), flagged `uncertain` if unsure.
