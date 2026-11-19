@@ -7,7 +7,7 @@
   "language": "vi",
   "source": {
     "document": "MLN111 - Triết học Mác-Lênin – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-mln111.json)",
-    "note": "Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép nguyên văn."
+    "note": "Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép từ nguồn; chỉ sửa vài lỗi chép đã kiểm tra tay (cụt chữ cuối câu, mất dấu), file nguồn giữ nguyên."
   },
   "items": [
     {
@@ -6186,7 +6186,7 @@
       "id": "b-217",
       "type": "multiple-choice",
       "content": {
-        "question": "Có rất nhiều loại nguyên nhân như: nguyên nhân cơ bản, nguyên nhân chủ yếu, nguyên nhân bên trong, nguyên nhân bên ngoài, nguyên nhân chủ quan, nguyên nhan khách quan...điều đó chứng tỏ là...",
+        "question": "Có rất nhiều loại nguyên nhân như: nguyên nhân cơ bản, nguyên nhân chủ yếu, nguyên nhân bên trong, nguyên nhân bên ngoài, nguyên nhân chủ quan, nguyên nhân khách quan...điều đó chứng tỏ là...",
         "options": [
           {
             "key": "A",
@@ -6208,7 +6208,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 217"
+        "ref": "Ngân hàng câu 217",
+        "textCleaned": true
       }
     },
     {
@@ -7352,7 +7353,7 @@
       "id": "b-259",
       "type": "multiple-choice",
       "content": {
-        "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn luc?",
+        "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn lực?",
         "options": [
           {
             "key": "A",
@@ -7370,7 +7371,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 259"
+        "ref": "Ngân hàng câu 259",
+        "textCleaned": true
       }
     },
     {
@@ -12820,7 +12822,7 @@
       "id": "b-456",
       "type": "multiple-choice",
       "content": {
-        "question": "Các hình thức tồn tại của các dạng cụ thế của vật chất ở một vị trí nhất định, có một quảng tinh nhất định và tồn tại trong mối tương quan nhất định với các dạng cụ thế khác của vật chất được goi là",
+        "question": "Các hình thức tồn tại của các dạng cụ thế của vật chất ở một vị trí nhất định, có một quảng tinh nhất định và tồn tại trong mối tương quan nhất định với các dạng cụ thế khác của vật chất được gọi là",
         "options": [
           {
             "key": "A",
@@ -12842,7 +12844,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 456"
+        "ref": "Ngân hàng câu 456",
+        "textCleaned": true
       }
     },
     {

@@ -47,6 +47,29 @@ export function loadCleanCorpus(root, extraFiles = []) {
   return texts
 }
 
+
+/** whole-word match that understands Vietnamese letters (\b does not) */
+export const W = (text) => new RegExp(String.raw`(?<![\p{L}])` + text + String.raw`(?![\p{L}])`, 'gu')
+
+/** Keyboard typos confirmed one by one in the MLN131 banks (the context shows the intended word). */
+export const MLN_TYPOS = {
+  wordFixes: {
+    chủa: 'chủ', đáu: 'đấu', hính: 'hình', vởi: 'với', hể: 'hệ', họi: 'hội', phầm: 'phẩm', xuát: 'xuất', biêu: 'biểu', khong: 'không',
+    đỏi: 'đổi', cua: 'của', thuãn: 'thuẫn', xõa: 'xóa', thùa: 'thừa', cở: 'cơ', thõa: 'thỏa', chiễm: 'chiếm', đòng: 'đồng', rọng: 'rộng',
+    tọc: 'tộc', pải: 'phải', đén: 'đến', dượng: 'dựng', giap: 'giai', cuong: 'cương',
+  },
+  phrases: [
+    [W('bản than'), 'bản thân'],
+    [W('thành tự'), 'thành tựu'],
+    [W('các án'), 'các đáp án'],
+    [W('luân cảnh giác'), 'luôn cảnh giác'],
+    [W('nối cảnh'), 'bối cảnh'],
+    [W('lật đỏi'), 'lật đổ'],
+    [W('giải phóng cong người'), 'giải phóng con người'],
+    [W('xã hộ'), 'xã hội'],
+  ],
+}
+
 export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = [] } = {}) {
   const uni = new Map()
   const big = new Map()
@@ -86,7 +109,8 @@ export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = 
     for (let j = 15; j <= text.length - 20; j++) {
       // the repeat may start mid-word (a cut word followed by its own continuation)
       const tail = text.slice(j)
-      if (tail.length >= 20 && text.indexOf(tail) < j) return text.slice(0, j).trimEnd()
+      // the glued tail must be a copy of the end of the text before it ("... xã hội" + "vật chất ... xã hội")
+      if (tail.length >= 20 && text.slice(0, j).endsWith(tail)) return text.slice(0, j).trimEnd()
     }
     return text
   }
@@ -158,7 +182,7 @@ export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = 
         if (SAFE.has(lw)) {
           const pick = best?.c ?? [...cands].sort((x, y) => U(y) - U(x))[0]
           segs[i] = { t: keepCase(orig, pick), w: true }
-        } else if (best && own === 0 && best.sc >= 2 && (lw !== 'trong' || TRONG_BEFORE.has(prev) || TRONG_AFTER.has(next))) {
+        } else if (best && best.sc >= 2 && (own === 0 || (lw === 'trong' && TRONG_BEFORE.has(prev))) && (lw !== 'trong' || TRONG_BEFORE.has(prev) || TRONG_AFTER.has(next))) {
           segs[i] = { t: keepCase(orig, best.c), w: true }
         }
       })
@@ -166,28 +190,39 @@ export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = 
     return segs
   }
 
+  const NO_COMPLETE = new Set(['là', 'và', 'đó', 'này', 'ấy', 'nào', 'gì', 'mà', 'thì', 'của', 'các', 'có', 'cho', 'với', 'một', 'để', 'khi', 'nếu', 'vì', 'do', 'bị', 'được', 'trong', 'ngoài', 'như', 'nên', 'ra', 'ở', 'tại', 'theo', 'từ', 'đến', 'sau', 'trên', 'dưới'])
+
   function completeLastWord(segs) {
     const last = segs.length - 1
     if (last < 0 || !segs[last].w) return segs
     const orig = segs[last].t
     const lw = orig.toLowerCase()
-    if (U(lw) > 2 && lw.length > 2) return segs
     // a capitalised stub longer than 3 letters may be a whole name ("Pari"): left alone
     if (orig[0] !== orig[0].toLowerCase() && lw.length > 3) return segs
     const prevSeg = segs[last - 2]
     const prev = segs[last - 1]?.t === ' ' && prevSeg?.w ? prevSeg.t.toLowerCase() : ''
-    if (!prev || B(prev, lw) > 0) return segs
+    if (!prev) return segs
+    // a stub that is itself a real function word ("thứ tự là", "cá nhân đó") or a roman numeral ("Đại hội VII") is never 'completed'
+    if (/^[ivxlcdm]+$/.test(lw) || NO_COMPLETE.has(lw)) return segs
+    // one letter says too little: the few known cases ("kinh t", "quản l", a closing "l" = "là") are phrases above
+    if (lw.length < 2) return segs
+    // the word before may itself have lost its dot ("thi" for "thị"): its dotted forms count as the same context
+    const prevForms = [prev, ...(withDot.get(prev) ?? [])]
+    const BP = (w) => Math.max(...prevForms.map((p) => B(p, w)))
+    const own = BP(lw)
     // "Đại hội l", "khóa X": a lone roman numeral after these words is a number, not a cut word
     if (/^[ivxlcdm]$/.test(lw) && ['hội', 'khóa', 'lần', 'thứ', 'chương'].includes(prev)) return segs
     // the cut word is completed only when ONE continuation clearly wins in this context
     const scored = []
     for (const c of vocabList) {
-      if (c.length <= lw.length || c.length > lw.length + 3 || !c.startsWith(lw) || U(c) < 3) continue
-      const s = B(prev, c)
+      // the cut can also have swallowed the tone mark ("giáo du" -> "giáo dục"), so compare without the dot-below
+      if (c.length <= lw.length || c.length > lw.length + 3 || !(c.startsWith(lw) || noDot(c).startsWith(lw)) || U(c) < 3) continue
+      const s = BP(c)
       if (s > 0) scored.push({ c, s })
     }
     scored.sort((x, y) => y.s - x.s)
-    const best = scored[0] && scored[0].s >= (lw.length === 1 ? 3 : 1) && scored[0].s >= 2 * (scored[1]?.s ?? 0) ? scored[0] : null
+    // ... and only when it beats the word as written (a bank typo may make "xã hộ" appear once in the clean text too)
+    const best = scored[0] && scored[0].s >= (lw.length === 1 ? 3 : 2) && scored[0].s >= 2 * (scored[1]?.s ?? 0) && scored[0].s >= 4 * own ? scored[0] : null
     if (best) segs[last] = { t: keepCase(orig, best.c), w: true }
     return segs
   }
@@ -197,19 +232,50 @@ export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = 
     [/toàn ve n\b/gi, 'toàn vẹn'],
     [/\bta y\b/g, 'tay'],
     [/\bsử dung\b/gi, (m) => (m[0] === 'S' ? 'Sử dụng' : 'sử dụng')],
+    // endings cut off in the VNR202 bank where the whole phrase is unambiguous
+    [/Mỹ - Diệ$/u, 'Mỹ - Diệm'],
+    [/nhỏ và vừ$/u, 'nhỏ và vừa'],
+    [/Trung ương Đản$/u, 'Trung ương Đảng'],
+    [/quân Tưởn$/u, 'quân Tưởng'],
+    [/hoàn tấ$/u, 'hoàn tất'],
+    [/Bửu Lộ$/u, 'Bửu Lộc'],
+    [/yếu k$/u, 'yếu kém'],
+    [/thiết nhấ$/u, 'thiết nhất'],
+    [/công ngh$/u, 'công nghệ'],
+    [/công- nôn$/u, 'công- nông'],
+    [/bao nhiêu đợ$/u, 'bao nhiêu đợt'],
+    [/nghề biể$/u, 'nghề biển'],
+    [/\bso ạn\b/gu, 'soạn'],
+    [/\b(tỉ|tỷ) trong\b/gu, '$1 trọng'],
+    [/Việt N$/u, 'Việt Nam'],
+    [/xã h$/u, 'xã hội'],
+    [/Hồ Chí Mi$/u, 'Hồ Chí Minh'],
+    [/Đảng là g$/u, 'Đảng là gì'],
+    [/quản l$/u, 'quản lý'],
+    [/kinh t$/u, 'kinh tế'],
+    // a lone "l" at the end is a cut "là" (not the roman numeral: "Đại hội l")
+    [/(?<!(?:hội|khóa|khoá|lần|thứ|chương) )(?<=\p{L} )l$/u, 'là'],
   ]
+
+  // phrase patterns are matched against NFC text, so the patterns themselves must be NFC too
+  const ALL_PHRASES = [...PHRASES, ...phrases].map(([re, to]) => [new RegExp(re.source.normalize('NFC'), re.flags), to])
 
   function clean(text) {
     if (typeof text !== 'string' || !text) return text
     let t = dropRepeatedTail(NFC(text))
-    for (const [re, to] of [...PHRASES, ...phrases]) t = t.replace(re, to)
+    for (const [re, to] of ALL_PHRASES) t = t.replace(re, to)
     // typos confirmed one by one in the bank (key = wrong word, lower case)
     if (Object.keys(wordFixes).length) t = t.replace(/\p{L}+/gu, (w) => (wordFixes[w.toLowerCase()] ? keepCase(w, wordFixes[w.toLowerCase()]) : w))
     let segs = segments(t)
     segs = joinSplitWords(segs)
+    // tones first ("thi trườn" -> "thị trườn"), then the cut word, which may need the restored word before it
+    segs = restoreTones(segs)
     if (!/[.?!"”)…:;]\s*$/.test(t)) segs = completeLastWord(segs)
     segs = restoreTones(segs)
-    return segs.map((s) => s.t).join('')
+    // phrases once more: some only match after split words were joined ("Trun g ương Đản")
+    let out = segs.map((s) => s.t).join('')
+    for (const [re, to] of ALL_PHRASES) out = out.replace(re, to)
+    return out
   }
   return { clean, stats: { words: uni.size, bigrams: big.size } }
 }

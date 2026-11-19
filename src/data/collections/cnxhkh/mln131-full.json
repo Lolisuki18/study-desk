@@ -6230,7 +6230,7 @@
           },
           {
             "key": "C",
-            "text": "Là lực lượng duy trì khỏi đại đoàn kết của giai cấp công nhân, nông dân với tư sản và trí thứ"
+            "text": "Là lực lượng duy trì khỏi đại đoàn kết của giai cấp công nhân, nông dân với tư sản và trí thức"
           },
           {
             "key": "D",
@@ -6958,25 +6958,26 @@
         "options": [
           {
             "key": "A",
-            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về sỡ hưu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó"
+            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về sỡ hưu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó"
           },
           {
             "key": "B",
-            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về sở hữu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó"
+            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về sở hữu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó"
           },
           {
             "key": "C",
-            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trong một chế độ xã hội nhất định, thông qua những mỗi quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp, tầng lớp đó"
+            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trọng một chế độ xã hội nhất định, thông qua những mỗi quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp, tầng lớp đó"
           },
           {
             "key": "D",
-            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp tầng lớp đó"
+            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp tầng lớp đó"
           }
         ],
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 239"
+        "ref": "MLN131 Full câu 239",
+        "textCleaned": true
       }
     },
     {
@@ -8245,7 +8246,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Khi có sự thắng lợi của chế độ tư hữu đói với chế độ công hữu nguyên thủ"
+            "text": "Khi có sự thắng lợi của chế độ tư hữu đói với chế độ công hữu nguyên thủy"
           },
           {
             "key": "B",
@@ -8263,7 +8264,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 283"
+        "ref": "MLN131 Full câu 283",
+        "textCleaned": true
       }
     },
     {

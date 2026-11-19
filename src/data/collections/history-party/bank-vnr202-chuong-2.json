@@ -89,7 +89,7 @@
           },
           {
             "key": "C",
-            "text": "Chấp nhận tất cả mọi yêu cầu đảm bảo trật tự trị an , phương tiện đi lại của quân Tưởn"
+            "text": "Chấp nhận tất cả mọi yêu cầu đảm bảo trật tự trị an , phương tiện đi lại của quân Tưởng"
           },
           {
             "key": "D",
@@ -987,7 +987,7 @@
       "id": "b-071",
       "type": "multiple-choice",
       "content": {
-        "question": "Chiến dịch Điện Biên Phủ được coi là một chiến dịch li ch sử của quân đội ta và được chia làm bao nhiêu đợ",
+        "question": "Chiến dịch Điện Biên Phủ được coi là một chiến dịch li ch sử của quân đội ta và được chia làm bao nhiêu đợt",
         "options": [
           {
             "key": "A",
@@ -1114,7 +1114,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Đòn đánh quan trong"
+            "text": "Đòn đánh quan trọng"
           },
           {
             "key": "B",
@@ -1208,7 +1208,7 @@
       "id": "b-087",
       "type": "multiple-choice",
       "content": {
-        "question": "Tại hội nghị nào, Ban Chấp hành Trung ương Đảng quyết định để nhân dân miền Nam sử dụng bạo lực cách mạng đánh đổ chính quyền Mỹ - Diệ",
+        "question": "Tại hội nghị nào, Ban Chấp hành Trung ương Đảng quyết định để nhân dân miền Nam sử dụng bạo lực cách mạng đánh đổ chính quyền Mỹ - Diệm",
         "options": [
           {
             "key": "A",
@@ -1301,7 +1301,7 @@
           },
           {
             "key": "B",
-            "text": "Có biểu hiện chủ quan trong việc đánh giá tình hình, đề ra yêu cầu chưa sát với thực tế"
+            "text": "Có biểu hiện chủ quan trọng việc đánh giá tình hình, đề ra yêu cầu chưa sát với thực tế"
           },
           {
             "key": "C",
@@ -1662,7 +1662,7 @@
       "id": "b-140",
       "type": "multiple-choice",
       "content": {
-        "question": "Ý nghĩa quan trong của phong trào Đồng Khởi là:",
+        "question": "Ý nghĩa quan trọng của phong trào Đồng Khởi là:",
         "options": [
           {
             "key": "A",
@@ -1678,7 +1678,7 @@
           },
           {
             "key": "D",
-            "text": "Mỹ phải kí hiệp định Par"
+            "text": "Mỹ phải kí hiệp định Paris"
           }
         ],
         "answer": "A"
@@ -1891,7 +1891,7 @@
           },
           {
             "key": "D",
-            "text": "Hội nghị quốc dân ở Tân Trà"
+            "text": "Hội nghị quốc dân ở Tân Trào"
           }
         ],
         "answer": "A"
@@ -2060,7 +2060,7 @@
       "id": "b-171",
       "type": "multiple-choice",
       "content": {
-        "question": "Ngày 19/10/1946, Ban Thường vụ Trung ương Đảng mở Hội nghị quân sự toàn quốc lần thứ nhất, do Tổng Bí thư Trường Chinh chủ trì, Hội nghị xác đi",
+        "question": "Ngày 19/10/1946, Ban Thường vụ Trung ương Đảng mở Hội nghị quân sự toàn quốc lần thứ nhất, do Tổng Bí thư Trường Chinh chủ trì, Hội nghị xác định",
         "options": [
           {
             "key": "A",
@@ -2116,7 +2116,7 @@
       "id": "b-173",
       "type": "multiple-choice",
       "content": {
-        "question": "Đường lối kháng chiến chống thực dân Pháp thể hiện tập trung trong ba văn kiện quan trong, đó là:",
+        "question": "Đường lối kháng chiến chống thực dân Pháp thể hiện tập trung trong ba văn kiện quan trọng, đó là:",
         "options": [
           {
             "key": "A",
@@ -2449,11 +2449,11 @@
         "options": [
           {
             "key": "A",
-            "text": "Tất cả mọi điều khoản được quy định tại Hiệp định đã được hoàn toàn"
+            "text": "Tất cả mọi điều khoản được quy định tại Hiệp định đã được hoàn t"
           },
           {
             "key": "B",
-            "text": "Pháp đã hoàn tất chuyển giao mọi trách nhiệm thi hành Hiệp định Giơ-ne-vơ cho chính quyền Bửu Lộ"
+            "text": "Pháp đã hoàn tất chuyển giao mọi trách nhiệm thi hành Hiệp định Giơ-ne-vơ cho chính quyền Bửu Lộc"
           },
           {
             "key": "C",
@@ -2461,7 +2461,7 @@
           },
           {
             "key": "D",
-            "text": "Rất nhiều điều khoản trong Hiệp định Giơ-ne-vơ chưa được hoàn tấ"
+            "text": "Rất nhiều điều khoản trong Hiệp định Giơ-ne-vơ chưa được hoàn tất"
           }
         ],
         "answer": "D"
@@ -2555,7 +2555,7 @@
           },
           {
             "key": "D",
-            "text": "Cách mạng hai miền có quan hệ độc lập với nhau và có tác dụng thúc đẩy lẫn nha"
+            "text": "Cách mạng hai miền có quan hệ độc lập với nhau và có tác dụng thúc đẩy lẫn nhau"
           }
         ],
         "answer": "A"
@@ -3071,7 +3071,7 @@
           },
           {
             "key": "C",
-            "text": "Đất nước bị chia cắt thành hai miền với hai chế độ chính trị - xã hội khác nha"
+            "text": "Đất nước bị chia cắt thành hai miền với hai chế độ chính trị - xã hội khác nhau"
           },
           {
             "key": "D",
@@ -3311,7 +3311,7 @@
           },
           {
             "key": "B",
-            "text": "Công nghiệp quốc doanh chiếm tỉ trong 93% trong tổng giá trị sản lượng ngành công nghiệp toàn miền Bắc"
+            "text": "Công nghiệp quốc doanh chiếm tỉ trọng 93% trong tổng giá trị sản lượng ngành công nghiệp toàn miền Bắc"
           },
           {
             "key": "C",
@@ -3319,7 +3319,7 @@
           },
           {
             "key": "D",
-            "text": "Thương nghiệp tư nhân được Nhà nước ưu tiên phát triển nên đã chiếm lĩnh được thi trườn"
+            "text": "Thương nghiệp tư nhân được Nhà nước ưu tiên phát triển nên đã chiếm lĩnh được thị trường"
           }
         ],
         "answer": "D"
@@ -3362,7 +3362,7 @@
       "id": "b-313",
       "type": "multiple-choice",
       "content": {
-        "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bản",
+        "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bả",
         "options": [
           {
             "key": "A",
@@ -3386,6 +3386,10 @@
       "source": {
         "ref": "Ngân hàng câu 313",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…tiếp tục kí với Pháp bả…\".",
+        "confidence": "uncertain"
       }
     },
     {
@@ -3396,7 +3400,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Kháng chiến trên mọi lĩnh vực kinh tế, quân sự, chính trị, văn hóa, giáo du"
+            "text": "Kháng chiến trên mọi lĩnh vực kinh tế, quân sự, chính trị, văn hóa, giáo dục"
           },
           {
             "key": "B",
@@ -3613,7 +3617,7 @@
           },
           {
             "key": "B",
-            "text": "Nạn đói, nạn dốt đe doa nghiêm trong đến nhân dân tộc"
+            "text": "Nạn đói, nạn dốt đe doa nghiêm trong đến nhân dân t"
           },
           {
             "key": "C",
@@ -3698,11 +3702,11 @@
         "options": [
           {
             "key": "A",
-            "text": "Hai nhiệm vụ chiến lược ấy có quan hệ mật thiết với nhau và có tác dụng thúc đẩy lẫn nha"
+            "text": "Hai nhiệm vụ chiến lược ấy có quan hệ mật thiết với nhau và có tác dụng thúc đẩy lẫn nhau"
           },
           {
             "key": "B",
-            "text": "Hai nhiệm vụ chiến lược ấy có quan hệ quyết định lẫn nha"
+            "text": "Hai nhiệm vụ chiến lược ấy có quan hệ quyết định lẫn nhau"
           },
           {
             "key": "C",

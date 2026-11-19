@@ -1,13 +1,13 @@
 # VNR202: sửa lỗi chép (chữ tách, mất dấu, cụt chữ)
 
 Tự sinh bởi `node scripts/import-vnr202-full.mjs`. File nguồn `docs/source-bank-vnr202.json` giữ nguyên; bản sửa chỉ nằm trong bộ học.
-Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question-fixes-vnr202.json`.
+Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question-fixes-vnr202.json`.
 
 ## Câu 3
 - trước: A. Chấp nhận moi yêu câu cải tổ Chính phủ, Quốc hội theo ý chúng Trung Hoa Dân quốc
 - sau:   A. Chấp nhận mọi yêu câu cải tổ Chính phủ, Quốc hội theo ý chúng Trung Hoa Dân quốc
 - trước: C. Chấp nhận tất cả moi yêu cầu đảm bảo trật tự tri an , phương tiện đi lại của quân Tưởn
-- sau:   C. Chấp nhận tất cả mọi yêu cầu đảm bảo trật tự trị an , phương tiện đi lại của quân Tưởn
+- sau:   C. Chấp nhận tất cả mọi yêu cầu đảm bảo trật tự trị an , phương tiện đi lại của quân Tưởng
 
 ## Câu 4
 - trước: Pháp chấp nhận đàm phán với Việt Nam ở Hội nghi Giơnevơ năm 1954 về Đông Dương vì:
@@ -57,13 +57,13 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: B. Đổi mới tổ chức và phương thức hoạt động của hệ thống chính tri là nhằm tăng cường vai trò lãnh đạo của Đảng, hiệu lực quản lý của nhà nước, phát huy quyền làm chủ của nhân dân
 - sau:   B. Đổi mới tổ chức và phương thức hoạt động của hệ thống chính trị là nhằm tăng cường vai trò lãnh đạo của Đảng, hiệu lực quản lý của nhà nước, phát huy quyền làm chủ của nhân dân
 - trước: C. Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính tri, lấy đổi mới kinh tế làm trong tâm, từng bước đổi mớ i chính tr
-- sau:   C. Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính trị, lấy đổi mới kinh tế làm trong tâm, từng bước đổi mới chính tr
+- sau:   C. Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính trị, lấy đổi mới kinh tế làm trong tâm, từng bước đổi mới chính trị
 - trước: D. Đổi mới tổ chức và phương thức hoạt động của hệ thống chính tri là nhằm giảm bớt vai trò lãnh đạo của Đảng, hiệu lực quản lý của nhà nước, phát huy quyền làm chủ của nhân dâ
 - sau:   D. Đổi mới tổ chức và phương thức hoạt động của hệ thống chính trị là nhằm giảm bớt vai trò lãnh đạo của Đảng, hiệu lực quản lý của nhà nước, phát huy quyền làm chủ của nhân dân
 
 ## Câu 19
 - trước: Từ ngày 15-21/11/1975, Hội nghi Hiệp thương chính tri của 2 đoàn đại biểu miền Bắc - Nam đã hop tạ
-- sau:   Từ ngày 15-21/11/1975, Hội nghị Hiệp thương chính trị của 2 đoàn đại biểu miền Bắc - Nam đã hop tạ
+- sau:   Từ ngày 15-21/11/1975, Hội nghị Hiệp thương chính trị của 2 đoàn đại biểu miền Bắc - Nam đã họp tại
 
 ## Câu 20
 - trước: D. Dân giàu, nước mạnh, dân chủ, công bằng, văn minh do nhân dân làm chủ minh do nhân dân làm chủ
@@ -131,7 +131,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 34
 - trước: Hoạt động của Phan Bội Châu, Phan Châu Trinh và một số người sống ở nước ngoài có tác dung quan tron g nhất là
-- sau:   Hoạt động của Phan Bội Châu, Phan Châu Trinh và một số người sống ở nước ngoài có tác dung quan trong nhất là
+- sau:   Hoạt động của Phan Bội Châu, Phan Châu Trinh và một số người sống ở nước ngoài có tác dung quan trọng nhất là
 
 ## Câu 35
 - trước: Chánh cương vắn tắt, Sách lược vẫn tắt do Hội nghi thành lập Đảng thông qua đã đặt nhiệm vu gì lên hàn g đầu
@@ -157,7 +157,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Một trong những bài hoc về kinh tế mà Đảng rút ra trong 10 năm đổi mới đất nước 1986 - 1996 là gì?
 - sau:   Một trong những bài học về kinh tế mà Đảng rút ra trong 10 năm đổi mới đất nước 1986 - 1996 là gì?
 - trước: D. Xây dựng nền kinh tế hàng hóa nhiều thành phần vận hành theo cơ chế thi trườn
-- sau:   D. Xây dựng nền kinh tế hàng hóa nhiều thành phần vận hành theo cơ chế thị trườn
+- sau:   D. Xây dựng nền kinh tế hàng hóa nhiều thành phần vận hành theo cơ chế thị trường
 
 ## Câu 40
 - trước: Nhiệm vu nào được đặt ra một cách bức thiết sau năm 1975?
@@ -195,13 +195,13 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 52
 - trước: A. Tình trạng quan liêu, hách dich, nhũng nhiễu của một bộ phận công chức chưa được khắc phu
-- sau:   A. Tình trạng quan liêu, hách dịch, nhũng nhiễu của một bộ phận công chức chưa được khắc phu
+- sau:   A. Tình trạng quan liêu, hách dịch, nhũng nhiễu của một bộ phận công chức chưa được khắc phục
 - trước: B. Tình trạng quan liêu, hách dich, nhũng nhiễu của tất cả công chức còn phổ biến
 - sau:   B. Tình trạng quan liêu, hách dịch, nhũng nhiễu của tất cả công chức còn phổ biến
 - trước: C. Tình trạng quan liêu, hách dich, nhũng nhiễu của một bộ phận công chức đã được khắc phu
-- sau:   C. Tình trạng quan liêu, hách dịch, nhũng nhiễu của một bộ phận công chức đã được khắc phu
+- sau:   C. Tình trạng quan liêu, hách dịch, nhũng nhiễu của một bộ phận công chức đã được khắc phục
 - trước: D. Tình trạng quan liêu, hách dich, nhũng nhiễu của tất cả công chức chưa được khắc phu
-- sau:   D. Tình trạng quan liêu, hách dịch, nhũng nhiễu của tất cả công chức chưa được khắc phu
+- sau:   D. Tình trạng quan liêu, hách dịch, nhũng nhiễu của tất cả công chức chưa được khắc phục
 
 ## Câu 53
 - trước: Trong thời kỳ 1954 - 1975, cuộc cách mạng dân tộc dân chủ nhân dân ở miền Nam Việt Nam có vai trò quyết đinh trực tiếp đối với sự nghiệp giải phóng miền Nam vì cuộc cách mạng này:
@@ -277,7 +277,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 71
 - trước: Chiến dich Điện Biên Phủ được coi là một chiến dich li ch sử của quân đội ta và được chia làm bao nhiêu đợ
-- sau:   Chiến dịch Điện Biên Phủ được coi là một chiến dịch li ch sử của quân đội ta và được chia làm bao nhiêu đợ
+- sau:   Chiến dịch Điện Biên Phủ được coi là một chiến dịch li ch sử của quân đội ta và được chia làm bao nhiêu đợt
 
 ## Câu 72
 - trước: Hội nghi Trung ương VII khóa IX tháng 3/2003 đã thống nhất coi:
@@ -287,11 +287,15 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: C. Đối mới hệ thống chính tri một cách toàn diện, đồng bộ có kế thừa, có bước đi hình thức và cách làm phù hợp
 - sau:   C. Đối mới hệ thống chính trị một cách toàn diện, đồng bộ có kế thừa, có bước đi hình thức và cách làm phù hợp
 - trước: D. Đổi mới quan hệ giữa các bộ phận cấu thành của hệ thống chính tri với nhau và với xã hội là rất quan tro
-- sau:   D. Đổi mới quan hệ giữa các bộ phận cấu thành của hệ thống chính trị với nhau và với xã hội là rất quan trong
+- sau:   D. Đổi mới quan hệ giữa các bộ phận cấu thành của hệ thống chính trị với nhau và với xã hội là rất quan trọng
 
 ## Câu 73
 - trước: Hội nghi Trung ương V khóa IX tháng 3/2002 đã thống nhất nhận thức về sự cần thiết phát triển kinh tế tập thể và thảo luận, thống nhất nhận thức coi:
 - sau:   Hội nghị Trung ương V khóa IX tháng 3/2002 đã thống nhất nhận thức về sự cần thiết phát triển kinh tế tập thể và thảo luận, thống nhất nhận thức coi:
+- trước: A. Kinh tế tư nhân đã phát triển rộng khắp trong cả nước, đóng góp quan trong vào phát triển kinh tế
+- sau:   A. Kinh tế tư nhân đã phát triển rộng khắp trong cả nước, đóng góp quan trọng vào phát triển kinh tế
+- trước: B. Kinh tế nhà nước đã phát triển rộng khắp trong cả nước, đóng góp quan trong vào phát triển kinh tế
+- sau:   B. Kinh tế nhà nước đã phát triển rộng khắp trong cả nước, đóng góp quan trọng vào phát triển kinh tế
 - trước: C. Sự lãnh đạo của Đảng quyết đinh sự phát triển kinh tế đất nước
 - sau:   C. Sự lãnh đạo của Đảng quyết định sự phát triển kinh tế đất nước
 
@@ -299,7 +303,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: A. Nhiệm vu then chốt
 - sau:   A. Nhiệm vụ then chốt
 - trước: B. Nhiệm vu quan tron
-- sau:   B. Nhiệm vụ quan trong
+- sau:   B. Nhiệm vụ quan trọng
 
 ## Câu 75
 - trước: Hội nghi Trung ương III, khóa VIII tháng 12/1996 đã chủ trương:
@@ -328,6 +332,8 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 ## Câu 80
 - trước: Nghi quyết Hội nghi Trung ương 2 khóa VIII (12/1996 ) coi khoa hoc và công nghệ, giáo duc và đào tạo
 - sau:   Nghị quyết Hội nghị Trung ương 2 khóa VIII (12/1996 ) coi khoa học và công nghệ, giáo dục và đào tạo
+- trước: D. Quốc sách quan trong nhấ
+- sau:   D. Quốc sách quan trọng nhất
 
 ## Câu 82
 - trước: Hiệp đinh Pari về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết (1973) đã cam kết:
@@ -346,6 +352,8 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   C. Chiến tranh cục bộ
 
 ## Câu 84
+- trước: A. Đòn đánh quan trong
+- sau:   A. Đòn đánh quan trọng
 - trước: B. Đòn đánh quyết đinh
 - sau:   B. Đòn đánh quyết định
 
@@ -373,7 +381,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 87
 - trước: Tại hội nghi nào, Ban Chấp hành Trung ương Đảng quyết đinh để nhân dân miền Nam sử dung bạo lực cách mạ ng đánh đổ chính quyền Mỹ - Diệ
-- sau:   Tại hội nghị nào, Ban Chấp hành Trung ương Đảng quyết định để nhân dân miền Nam sử dụng bạo lực cách mạng đánh đổ chính quyền Mỹ - Diệ
+- sau:   Tại hội nghị nào, Ban Chấp hành Trung ương Đảng quyết định để nhân dân miền Nam sử dụng bạo lực cách mạng đánh đổ chính quyền Mỹ - Diệm
 - trước: A. Hội nghi Trung ương lần thứ 15 (1/1959)
 - sau:   A. Hội nghị Trung ương lần thứ 15 (1/1959)
 - trước: B. Hội nghi Trung ương lần thứ 11 (3/1965)
@@ -392,6 +400,8 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   C. Tiến hành cách mạng dân tộc dân chủ ở miền Bắc. Giải phóng miền Nam khỏi ách thống tri của đế quốc Mỹ và bọn tay sai, thực hiện thống nhất nước nhà, hoàn thành độc lập và dân chủ trong cả nước
 
 ## Câu 90
+- trước: B. Có biểu hiện chủ quan trong việc đánh giá tình hình, đề ra yêu cầu chưa sát với thực tế
+- sau:   B. Có biểu hiện chủ quan trọng việc đánh giá tình hình, đề ra yêu cầu chưa sát với thực tế
 - trước: D. Không buộc đich phải xuống thang chiến tran
 - sau:   D. Không buộc địch phải xuống thang chiến tranh
 
@@ -419,7 +429,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 98
 - trước: D. Mặt trận Tổ quốc Việt Nam và các tổ chức chính tri - xã hộ
-- sau:   D. Mặt trận Tổ quốc Việt Nam và các tổ chức chính trị - xã hộ
+- sau:   D. Mặt trận Tổ quốc Việt Nam và các tổ chức chính trị - xã hội
 
 ## Câu 99
 - trước: Sau đại thẳng mùa xuân 1975, đất nước độc lập thống nhất, Chủ tich nước là:
@@ -439,7 +449,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: B. Hoàn thiện thể chế về chính tri và ổn đinh về kinh t
 - sau:   B. Hoàn thiện thể chế về chính trị và ổn định về kinh tế
 - trước: C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thi trường và phát triển đồng bộ các loại thi trườn
-- sau:   C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thị trường và phát triển đồng bộ các loại thị trườn
+- sau:   C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thị trường và phát triển đồng bộ các loại thị trường
 
 ## Câu 107
 - trước: Kỳ hop thứ nhất Quốc hội khóa VI (24/6 - 3/7/1976) quyết đinh đặt tên nước ta là
@@ -545,7 +555,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 130
 - trước: C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thi trường và phát triển đồng bộ các loại thi trườn
-- sau:   C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thị trường và phát triển đồng bộ các loại thị trườn
+- sau:   C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thị trường và phát triển đồng bộ các loại thị trường
 - trước: D. Hoàn thiện thể chế chính tri
 - sau:   D. Hoàn thiện thể chế chính trị
 
@@ -553,7 +563,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Tổng kết thành tựu 35 năm lãnh đạo công cuộc Đổi mới, Đại hội XIII của Đảng (1/2021) khẳng đinh:
 - sau:   Tổng kết thành tựu 35 năm lãnh đạo công cuộc Đổi mới, Đại hội XIII của Đảng (1/2021) khẳng định:
 - trước: D. Đất nước ta đã trở thành một nước công nghiệp hiện đại, theo đinh hướng xã hội chủ nghĩ
-- sau:   D. Đất nước ta đã trở thành một nước công nghiệp hiện đại, theo định hướng xã hội chủ nghĩ
+- sau:   D. Đất nước ta đã trở thành một nước công nghiệp hiện đại, theo định hướng xã hội chủ nghĩa
 
 ## Câu 133
 - trước: Giai đoạn chuẩn bi các tiền đề công nghiệp hóa
@@ -569,13 +579,15 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: B. Hợp tác xã nông nghiệp theo đinh hướng xã hội chủ nghĩa
 - sau:   B. Hợp tác xã nông nghiệp theo định hướng xã hội chủ nghĩa
 - trước: C. Kinh tế thi trường đinh hướng xã hội chủ nghĩ
-- sau:   C. Kinh tế thị trường định hướng xã hội chủ nghĩ
+- sau:   C. Kinh tế thị trường định hướng xã hội chủ nghĩa
 
 ## Câu 135
 - trước: Hội nghi Trung ương VIII khóa IX đã ban hành Nghi quyết số 36 - NQ/TW ngày 26/3/2004 về công tác đố i với
 - sau:   Hội nghị Trung ương VIII khóa IX đã ban hành Nghi quyết số 36 - NQ/TW ngày 26/3/2004 về công tác đối với
 - trước: A. Biến đổi khí hâu
 - sau:   A. Biến đổi khí hậu
+- trước: D. Phát triển giáo du
+- sau:   D. Phát triển giáo dục
 
 ## Câu 137
 - trước: C. Miền Nam trở thành thuộc đia kiểu mới, do chính quyền đối phương quản lý
@@ -594,8 +606,10 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   C. Thực hiện chiến dịch lập ấp chiến lược
 
 ## Câu 140
+- trước: Ý nghĩa quan trong của phong trào Đồng Khởi là:
+- sau:   Ý nghĩa quan trọng của phong trào Đồng Khởi là:
 - trước: D. Mỹ phải kí hiệp đinh Par
-- sau:   D. Mỹ phải kí hiệp định Par
+- sau:   D. Mỹ phải kí hiệp định Paris
 
 ## Câu 142
 - trước: Ai là Tư lệnh Chiến dich Hồ Chí Minh giải phóng Sài Gòn - Gia Đinh tháng 4/1975
@@ -609,7 +623,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Thành phần nào dưới đây trở thành bi tri trong thời Phá p thuộc
 - sau:   Thành phần nào dưới đây trở thành bị trị trong thời Pháp thuộc
 - trước: D. Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, đia chủ nhỏ và vừ
-- sau:   D. Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, địa chủ nhỏ và vừ
+- sau:   D. Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, địa chủ nhỏ và vừa
 
 ## Câu 145
 - trước: Đâu là luận điểm sáng tạo của Hồ Chí Minh khi vận dung chủ nghĩa Mác - Lênin về việc ra đời của Đảng Cộng sản Việt Nam?
@@ -695,7 +709,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: B. Bác ra lời kêu goi toàn quốc kháng chiến
 - sau:   B. Bác ra lời kêu gọi toàn quốc kháng chiến
 - trước: D. Hội nghi quốc dân ở Tân Trà
-- sau:   D. Hội nghị quốc dân ở Tân Trà
+- sau:   D. Hội nghị quốc dân ở Tân Trào
 
 ## Câu 167
 - trước: Ngày 12/12/1946, Ban Thường vu Trung ương Đảng đã ra:
@@ -731,7 +745,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 171
 - trước: Ngày 19/10/1946, Ban Thường vu Trung ương Đảng mở Hội nghi quân sự toàn quốc lần thứ nhất, do Tổng Bí th ư Trường Chinh chủ trì, Hội nghi xác đi
-- sau:   Ngày 19/10/1946, Ban Thường vụ Trung ương Đảng mở Hội nghị quân sự toàn quốc lần thứ nhất, do Tổng Bí thư Trường Chinh chủ trì, Hội nghị xác đi
+- sau:   Ngày 19/10/1946, Ban Thường vụ Trung ương Đảng mở Hội nghị quân sự toàn quốc lần thứ nhất, do Tổng Bí thư Trường Chinh chủ trì, Hội nghị xác định
 - trước: A. "Không sớm thì muộn, Pháp sẽ đánh mình và mình nhất đinh phải đánh Pháp"
 - sau:   A. "Không sớm thì muộn, Pháp sẽ đánh mình và mình nhất định phải đánh Pháp"
 - trước: B. "Không sớm thì muộn, Pháp sẽ tấn công mình và mình nhất đinh phải đánh Pháp"
@@ -752,6 +766,8 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   D. Chỉ thị sửa soạn khởi nghĩa của Tổng bộ Việt Minh
 
 ## Câu 173
+- trước: Đường lối kháng chiến chống thực dân Pháp thể hiện tập trung trong ba văn kiện quan trong, đó là:
+- sau:   Đường lối kháng chiến chống thực dân Pháp thể hiện tập trung trong ba văn kiện quan trọng, đó là:
 - trước: A. Toàn dân kháng chiến, Lời kêu goi toàn quốc kháng chiến, Kháng chiến nhất đin h thắng l lợi
 - sau:   A. Toàn dân kháng chiến, Lời kêu gọi toàn quốc kháng chiến, Kháng chiến nhất đin h thắng l lợi
 - trước: B. Nhật - Pháp bắn nhau và hành động của chúng ta, Kháng chiến kiến quốc, Kháng chiến nhất đinh thắng
@@ -817,7 +833,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 186
 - trước: Sự kiện nào được Nguyễn Ái Quốc đánh giá "là một bước ngoặt vô cùng quan trong trong lich sử Cách mạn g Việt Nam ta"
-- sau:   Sự kiện nào được Nguyễn Ái Quốc đánh giá "là một bước ngoặt vô cùng quan trong trong lịch sử Cách mạng Việt Nam ta"
+- sau:   Sự kiện nào được Nguyễn Ái Quốc đánh giá "là một bước ngoặt vô cùng quan trọng trong lịch sử Cách mạng Việt Nam ta"
 
 ## Câu 187
 - trước: A. Chiến dich Hồ Chí Minh toàn thắng (4/1975)
@@ -829,7 +845,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Mặt trận Tổ quốc Việt Nam, Đoàn thanh niên Lao động Hồ Chí Minh, Tổng Công đoàn Việt Nam, Hội Liên hiệp phu nữ Việt Nam v.v. được goi là
 - sau:   Mặt trận Tổ quốc Việt Nam, Đoàn thanh niên Lao động Hồ Chí Minh, Tổng Công đoàn Việt Nam, Hội Liên hiệp phụ nữ Việt Nam v.v. được gọi là
 - trước: D. Các tổ chức chính tri - xã hộ
-- sau:   D. Các tổ chức chính trị - xã hộ
+- sau:   D. Các tổ chức chính trị - xã hội
 
 ## Câu 189
 - trước: Hội nghi Trung ương 6 (8/1979) được coi là bước đột phá đầu tiên của Đảng trong lĩnh vực:
@@ -838,8 +854,12 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   B. Đổi mới hệ thống chính trị
 
 ## Câu 190
+- trước: B. Kiểm tra, giám sát là nội dung rất quan trong trong lãnh đạo của Đảng
+- sau:   B. Kiểm tra, giám sát là nội dung rất quan trọng trong lãnh đạo của Đảng
+- trước: C. Kiểm tra, giám sát là nội dung rất quan trong trong lãnh đạo của Đảng, điều kiện để xây dựng Đảng trong sạch vững mạnh
+- sau:   C. Kiểm tra, giám sát là nội dung rất quan trọng trong lãnh đạo của Đảng, điều kiện để xây dựng Đảng trong sạch vững mạnh
 - trước: D. Kiểm tra, giám sát là nội dung rất quan trong trong lãnh đạo của Đảng, là nhiệm vu thường xuyên của toà n Đảng, trước hết là cấp ủ y và người đứng đầu cấp
-- sau:   D. Kiểm tra, giám sát là nội dung rất quan trong trong lãnh đạo của Đảng, là nhiệm vụ thường xuyên của toàn Đảng, trước hết là cấp ủy và người đứng đầu cấp
+- sau:   D. Kiểm tra, giám sát là nội dung rất quan trọng trong lãnh đạo của Đảng, là nhiệm vụ thường xuyên của toàn Đảng, trước hết là cấp ủy và người đứng đầu cấp
 
 ## Câu 191
 - trước: Trong thời kỳ 1954-1975, cuộc cách mạng dân tộc dân chủ nhân dân ở miền Nam Việt Nam có vai trò quyết đinh trực tiếp đối với sự nghiệp giải phóng miền Nam vì cuộc cách mạng này:
@@ -899,7 +919,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Trung ương nhận đinh như thế nào về Chiến lược kinh tế Biển ở thế kỉ XXI?
 - sau:   Trung ương nhận định như thế nào về Chiến lược kinh tế Biển ở thế kỉ XXI?
 - trước: D. Việt Nam phải trở thành quốc gia mạnh về biển, làm giàu từ biển, trên cơ sở phát huy moi tiềm năng từ biển, phát triển toàn diện các ngành, nghề biể
-- sau:   D. Việt Nam phải trở thành quốc gia mạnh về biển, làm giàu từ biển, trên cơ sở phát huy mọi tiềm năng từ biển, phát triển toàn diện các ngành, nghề biể
+- sau:   D. Việt Nam phải trở thành quốc gia mạnh về biển, làm giàu từ biển, trên cơ sở phát huy mọi tiềm năng từ biển, phát triển toàn diện các ngành, nghề biển
 
 ## Câu 203
 - trước: Trong các nội dung sau đây, nội dung nào không thuộc luận cương chính tri tháng 10/1930?
@@ -927,13 +947,13 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 208
 - trước: A. Tất cả moi điều khoản được quy đinh tại Hiệp đinh đã được hoàn t
-- sau:   A. Tất cả mọi điều khoản được quy định tại Hiệp định đã được hoàn toàn
+- sau:   A. Tất cả mọi điều khoản được quy định tại Hiệp định đã được hoàn t
 - trước: B. Pháp đã hoàn tất chuyển giao moi trách nhiệm thi hành Hiệp đinh Giơ-ne-vơ cho chính quyền Bửu Lộ
-- sau:   B. Pháp đã hoàn tất chuyển giao mọi trách nhiệm thi hành Hiệp định Giơ-ne-vơ cho chính quyền Bửu Lộ
+- sau:   B. Pháp đã hoàn tất chuyển giao mọi trách nhiệm thi hành Hiệp định Giơ-ne-vơ cho chính quyền Bửu Lộc
 - trước: C. Pháp đã xúc tiến moi việc cho công cuộc thống nhất đất nước bằng con đường tổng tuyển cử hai miền
 - sau:   C. Pháp đã xúc tiến mọi việc cho công cuộc thống nhất đất nước bằng con đường tổng tuyển cử hai miền
 - trước: D. Rất nhiều điều khoản trong Hiệp đinh Giơ-ne-vơ chưa được hoàn tấ
-- sau:   D. Rất nhiều điều khoản trong Hiệp định Giơ-ne-vơ chưa được hoàn tấ
+- sau:   D. Rất nhiều điều khoản trong Hiệp định Giơ-ne-vơ chưa được hoàn tất
 
 ## Câu 210
 - trước: Mô hình kinh tế tổng quát của nước ta trong thời kỳ quá độ lên chủ nghĩa xã hội được Đại hội IX của Đảng (2001) xác đinh là:
@@ -941,7 +961,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: A. Kinh tế thi trường tự do
 - sau:   A. Kinh tế thị trường tự do
 - trước: C. Kinh tế thi trường đinh hướng xã hội chủ nghĩ
-- sau:   C. Kinh tế thị trường định hướng xã hội chủ nghĩ
+- sau:   C. Kinh tế thị trường định hướng xã hội chủ nghĩa
 
 ## Câu 212
 - trước: D. Tạo lập môi trường đầu tư, kinh doanh thuận lợi, lành mạnh, công bằng cho moi thành phần kinh t tư, kinh doanh thuận lợi, lành mạnh, công bằng cho moi thành phần kinh t
@@ -979,7 +999,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: B. Cách mạng hai miền có quan hệ quyết đinh lẫn nhau
 - sau:   B. Cách mạng hai miền có quan hệ quyết định lẫn nhau
 - trước: D. Cách mạng hai miền có quan hệ độc lập với nhau và có tác dung thúc đẩy lẫn nha
-- sau:   D. Cách mạng hai miền có quan hệ độc lập với nhau và có tác dụng thúc đẩy lẫn nha
+- sau:   D. Cách mạng hai miền có quan hệ độc lập với nhau và có tác dụng thúc đẩy lẫn nhau
 
 ## Câu 221
 - trước: Trong lich sử Đảng Cộng sản Việt Nam, giai đoạn 1932 - 1935 là giai đoạn:
@@ -1015,7 +1035,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 226
 - trước: D. Đảng phải tiếp tuc tự đổi mới, tự chỉnh đốn, nâng cao hơn nữa sức chiến đấu và năng lực lãnh đạo của mình, khắc phuc cho được các biểu hiện tiêu cực và yếu k c các biểu hiện tiêu cực v à yếu k
-- sau:   D. Đảng phải tiếp tục tự đổi mới, tự chỉnh đốn, nâng cao hơn nữa sức chiến đấu và năng lực lãnh đạo của mình, khắc phục cho được các biểu hiện tiêu cực và yếu k c các biểu hiện tiêu cực và yếu k
+- sau:   D. Đảng phải tiếp tục tự đổi mới, tự chỉnh đốn, nâng cao hơn nữa sức chiến đấu và năng lực lãnh đạo của mình, khắc phục cho được các biểu hiện tiêu cực và yếu k c các biểu hiện tiêu cực và yếu kém
 
 ## Câu 227
 - trước: C. Kinh tế thi trường
@@ -1037,7 +1057,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 231
 - trước: D. Trong từng bước và suốt quá trình xây dựng thể chế kinh tế thi trườn
-- sau:   D. Trong từng bước và suốt quá trình xây dựng thể chế kinh tế thị trườn
+- sau:   D. Trong từng bước và suốt quá trình xây dựng thể chế kinh tế thị trường
 
 ## Câu 233
 - trước: D. Công nghiệp hóa được thực hiện thông qua cơ chế thi trường đinh hướng x ã hội chủ ngh
@@ -1049,7 +1069,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 240
 - trước: Nhiệm vu của cách mạng Việt Nam được xác đinh tron g Luận cương chính tri tháng 10/1930 do Trần Phú so ạn thảo l
-- sau:   Nhiệm vụ của cách mạng Việt Nam được xác định trong Luận cương chính trị tháng 10/1930 do Trần Phú so ạn thảo l
+- sau:   Nhiệm vụ của cách mạng Việt Nam được xác định trong Luận cương chính trị tháng 10/1930 do Trần Phú soạn thảo là
 
 ## Câu 242
 - trước: Đại hội Đảng lần thứ VIII hop tại Hà Nội từ ngày 28/6 1/7/1996 diễn ra trong bối cảnh nào?
@@ -1093,13 +1113,13 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 252
 - trước: D. Thức tỉnh phong trào đấu giải phóng dân tộc ở các nước thuộc đia, phu thu đia, phu thuộ
-- sau:   D. Thức tỉnh phong trào đấu giải phóng dân tộc ở các nước thuộc địa, phu thu địa, phu thuộ
+- sau:   D. Thức tỉnh phong trào đấu giải phóng dân tộc ở các nước thuộc địa, phu thu địa, phụ thuộc
 
 ## Câu 253
 - trước: Một trong những bài hoc về đổi mới đất nước (1986-1996) là:
 - sau:   Một trong những bài học về đổi mới đất nước (1986-1996) là:
 - trước: A. Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính tri, lấy đổi mới kinh tế làm trong tâm, từng bước đổi mớ i chính tr
-- sau:   A. Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính trị, lấy đổi mới kinh tế làm trong tâm, từng bước đổi mới chính tr
+- sau:   A. Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính trị, lấy đổi mới kinh tế làm trong tâm, từng bước đổi mới chính trị
 
 ## Câu 254
 - trước: Mặc dù lâu dài, gian khổ, khó khăn song nhất đinh thắng lợi
@@ -1193,13 +1213,13 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Hội nghi trung ương VIII tháng 5/1941 nhấn mạnh điều gì?
 - sau:   Hội nghị trung ương VIII tháng 5/1941 nhấn mạnh điều gì?
 - trước: A. Giải phóng dân tộc là nhiệm vu quan tron
-- sau:   A. Giải phóng dân tộc là nhiệm vụ quan trong
+- sau:   A. Giải phóng dân tộc là nhiệm vụ quan trọng
 - trước: B. Giải phóng dân tộc là nhiệm vu cần thiết
 - sau:   B. Giải phóng dân tộc là nhiệm vụ cần thiết
 - trước: C. Giải phóng giai cấp là nhiệm vu bức thiết nhất
 - sau:   C. Giải phóng giai cấp là nhiệm vụ bức thiết nhất
 - trước: D. Giải phóng dân tộc là nhiệm vu bức thiết nhấ
-- sau:   D. Giải phóng dân tộc là nhiệm vụ bức thiết nhấ
+- sau:   D. Giải phóng dân tộc là nhiệm vụ bức thiết nhất
 
 ## Câu 271
 - trước: Hội nghi Trung ương V khóa XII, tháng 5/2017 chủ trương:
@@ -1229,13 +1249,11 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Nét nổi bật nhất về tình hình chính tri ở Việt Nam sau khi Hiệp đinh Giơnevơ về Đông Dương được ký kết là
 - sau:   Nét nổi bật nhất về tình hình chính trị ở Việt Nam sau khi Hiệp định Giơnevơ về Đông Dương được ký kết là
 - trước: C. Đất nước bi chia cắt thành hai miền với hai chế độ chính tri - xã hội khác nha
-- sau:   C. Đất nước bị chia cắt thành hai miền với hai chế độ chính trị - xã hội khác nha
+- sau:   C. Đất nước bị chia cắt thành hai miền với hai chế độ chính trị - xã hội khác nhau
 
 ## Câu 281
 - trước: A. Tất yếu lich sử, nó là sản phẩm kết hợp giữa chủ nghĩa Mác với phong trào công nhân Việt Nam
 - sau:   A. Tất yếu lịch sử, nó là sản phẩm kết hợp giữa chủ nghĩa Mác với phong trào công nhân Việt Nam
-- trước: D. Sự kết hợp phong trào công nhân và phong trào yêu nước Việt Nam với phong trào công nhân và phong trào yêu nước
-- sau:   D. Sự kết hợp phong trào công nhân và phong trào yêu nước Việt Nam với
 
 ## Câu 284
 - trước: C. Chủ trì Hội nghi thành Đảng cộng sản Việt Nam
@@ -1280,10 +1298,12 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   B. Nhẹ như lông hồng
 
 ## Câu 293
+- trước: Quan điểm quan trong về giải quyết các vấn đề xã hội thời kỳ đổi mới là:
+- sau:   Quan điểm quan trọng về giải quyết các vấn đề xã hội thời kỳ đổi mới là:
 - trước: A. Ưu tiên muc tiêu xã hội trên muc tiêu kinh t
 - sau:   A. Ưu tiên mục tiêu xã hội trên mục tiêu kinh tế
 - trước: B. Kết hợp các muc tiêu kinh tế với các muc tiêu xã hộ
-- sau:   B. Kết hợp các mục tiêu kinh tế với các mục tiêu xã hộ
+- sau:   B. Kết hợp các mục tiêu kinh tế với các mục tiêu xã hội
 - trước: C. Chú trong các muc tiêu kinh tế, từng bước thực hiệ n muc tiêu xã h
 - sau:   C. Chú trong các mục tiêu kinh tế, từng bước thực hiện mục tiêu xã hội
 - trước: D. Thực hiện muc tiêu xã hội trên cơ sở thực hiện thắng lợi các muc tiêu kinh
@@ -1359,9 +1379,11 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: A. Giá tri sản lượng công nghiệp nặng năm 1965 tăng 3 lần so với năm 1960
 - sau:   A. Giá trị sản lượng công nghiệp nặng năm 1965 tăng 3 lần so với năm 1960
 - trước: B. Công nghiệp quốc doanh chiếm tỉ trong 93% trong tổng giá tri sản lượng ngành công nghiệp toàn miền Bắ
-- sau:   B. Công nghiệp quốc doanh chiếm tỉ trong 93% trong tổng giá trị sản lượng ngành công nghiệp toàn miền Bắc
+- sau:   B. Công nghiệp quốc doanh chiếm tỉ trọng 93% trong tổng giá trị sản lượng ngành công nghiệp toàn miền Bắc
 - trước: C. Công nghiệp nhe, tiểu thủ công nghiệp đã giải quyết được 80% hàng tiêu dùng thiết yếu cho nhân dân
 - sau:   C. Công nghiệp nhẹ, tiểu thủ công nghiệp đã giải quyết được 80% hàng tiêu dùng thiết yếu cho nhân dân
+- trước: D. Thương nghiệp tư nhân được Nhà nước ưu tiên phát triển nên đã chiếm lĩnh được thi trườn
+- sau:   D. Thương nghiệp tư nhân được Nhà nước ưu tiên phát triển nên đã chiếm lĩnh được thị trường
 
 ## Câu 310
 - trước: Trong cuộc khai thác thuộc đia lần thứ nhất của thực dân Pháp (1897 - 1913) ở Việt Nam đã xuất hiện những giai cấp, tầng lớp mới nào?
@@ -1376,6 +1398,8 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   Cương lĩnh đầu tiên của Đảng đã xác định mục tiêu chiến lược của cách mạng Việt Nam là gì
 - trước: C. Làm tư sản dân quyền cách mạng và thổ đia cách mạng để đi tới xã hội cộng sản
 - sau:   C. Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản
+- trước: D. Cách mạng tư sản dân quyền, lập chính quyền của công nông bằng hình thức Xô viết, để dự bi điều kiện đi tới cách mạng xã hội chủ nghĩ
+- sau:   D. Cách mạng tư sản dân quyền, lập chính quyền của công nông bằng hình thức Xô viết, để dự bi điều kiện đi tới cách mạng xã hội chủ nghĩa
 
 ## Câu 312
 - trước: Hội nghi Ban Chấp hành Trung ương tháng 5/194 Luận điểm trên được đưa ra tại Hội nghi nào của Đảng
@@ -1391,7 +1415,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 313
 - trước: Để kéo dài thời gian chuẩn bi lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp đinh Sơ b ộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộn g hòa tiếp tuc kí với Pháp bả
-- sau:   Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bản
+- sau:   Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bả
 - trước: A. Hiệp đinh Giơnevơ
 - sau:   A. Hiệp định Giơnevơ
 - trước: C. Hiệp đinh Paris
@@ -1407,7 +1431,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: C. Nhiệm vu hàng đầu
 - sau:   C. Nhiệm vụ hàng đầu
 - trước: D. Nhiệm vu đặc biệt quan tro
-- sau:   D. Nhiệm vụ đặc biệt quan trong
+- sau:   D. Nhiệm vụ đặc biệt quan trọng
 
 ## Câu 315
 - trước: Điểm khác nhau giữa Luận cương chính tri tháng 10/1930 với Cương lĩnh chính tri đầu tiên (2/1930) củ a Đàng là
@@ -1415,7 +1439,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 316
 - trước: A. Kháng chiến trên moi lĩnh vực kinh tế, quân sự, chính tri, văn hóa, giáo du
-- sau:   A. Kháng chiến trên mọi lĩnh vực kinh tế, quân sự, chính trị, văn hóa, giáo du
+- sau:   A. Kháng chiến trên mọi lĩnh vực kinh tế, quân sự, chính trị, văn hóa, giáo dục
 - trước: B. Tất cả moi người dân đều tham gia kháng chiến
 - sau:   B. Tất cả mọi người dân đều tham gia kháng chiến
 
@@ -1429,9 +1453,11 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 320
 - trước: Hội nghi Trung ương II, khóa VIII tháng 12/1996 nhận đinh phát triển khoa hoc và công nghệ l
-- sau:   Hội nghị Trung ương II, khóa VIII tháng 12/1996 nhận định phát triển khoa học và công nghệ l
+- sau:   Hội nghị Trung ương II, khóa VIII tháng 12/1996 nhận định phát triển khoa học và công nghệ là
+- trước: B. Quan trong nhất trong quá trình đổi mới đất nước
+- sau:   B. Quan trọng nhất trong quá trình đổi mới đất nước
 - trước: D. Nhân tố quyết đinh tăng trưởng kinh tế xã hộ
-- sau:   D. Nhân tố quyết định tăng trưởng kinh tế xã hộ
+- sau:   D. Nhân tố quyết định tăng trưởng kinh tế xã hội
 
 ## Câu 321
 - trước: Căn cứ đia cách mạng của ta trong cuộc kháng chiến chống Pháp xâm lược lần thứ hai là:
@@ -1463,7 +1489,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 331
 - trước: A. Giáo duc và đào tạo, khoa hoc và công ngh
-- sau:   A. Giáo dục và đào tạo, khoa học và công ngh
+- sau:   A. Giáo dục và đào tạo, khoa học và công nghệ
 - trước: B. Khoa hoc và công nghệ
 - sau:   B. Khoa học và công nghệ
 - trước: D. Giáo duc và đào tạ
@@ -1479,7 +1505,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 334
 - trước: Hội nghi lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) đã nhấn mạnh nhiệm vu trong tâm của toàn Đảng, toàn dân l
-- sau:   Hội nghị lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) đã nhấn mạnh nhiệm vụ trong tâm của toàn Đảng, toàn dân l
+- sau:   Hội nghị lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) đã nhấn mạnh nhiệm vụ trong tâm của toàn Đảng, toàn dân là
 - trước: A. Xây dựng lực lượng chính tri
 - sau:   A. Xây dựng lực lượng chính trị
 - trước: C. Chuẩn bi khởi nghĩa
@@ -1515,13 +1541,17 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Tác động của chương trình khai thác thuộc đia lần thứ hai của Pháp đến kinh tế Việt Nam làm cho:
 - sau:   Tác động của chương trình khai thác thuộc địa lần thứ hai của Pháp đến kinh tế Việt Nam làm cho:
 - trước: D. Kinh tế Việt Nam phu thuộc kinh tế Phá
-- sau:   D. Kinh tế Việt Nam phụ thuộc kinh tế Phá
+- sau:   D. Kinh tế Việt Nam phụ thuộc kinh tế Phát
 
 ## Câu 342
 - trước: Sự kiện lich sử nào mở ra tiền đề để Việt Nam thúc đẩy quan hệ với khu vực và cộng đồng quốc tế?
 - sau:   Sự kiện lịch sử nào mở ra tiền đề để Việt Nam thúc đẩy quan hệ với khu vực và cộng đồng quốc tế?
 - trước: B. Việt Nam tham gia ký Hiệp đinh Pari (23/10/1991) về một giải pháp toàn diện cho vấn đề Campuchia
 - sau:   B. Việt Nam tham gia ký Hiệp định Pari (23/10/1991) về một giải pháp toàn diện cho vấn đề Campuchia
+
+## Câu 343
+- trước: B. Các dân tộc trong cộng đồng Việt Nam bình đẳng, đoàn kết, tôn trong và giúp nhau cùng phát triển
+- sau:   B. Các dân tộc trong cộng đồng Việt Nam bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng phát triển
 
 ## Câu 345
 - trước: Hội nghi Trung ương 3 khóa X ban hành Nghi quyết s ố 04-NQ/TW ngày 21/8/2006 về
@@ -1553,7 +1583,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 350
 - trước: B. Nạn đói, nạn dốt đe doa nghiêm trong đến nhân dâ n t
-- sau:   B. Nạn đói, nạn dốt đe doa nghiêm trong đến nhân dân tộc
+- sau:   B. Nạn đói, nạn dốt đe doa nghiêm trong đến nhân dân t
 
 ## Câu 351
 - trước: Nghi quyết Trung ương IV, khóa VIII tháng 12/1997 bầu ai làm Tổng bí thư của Đảng?
@@ -1575,7 +1605,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 
 ## Câu 354
 - trước: Lãnh tu cao nhất của Đảng bi đich bắt sau Cao trào cá ch mạng 1930 - 1931 là a
-- sau:   Lãnh tụ cao nhất của Đảng bi địch bắt sau Cao trào cá ch mạng 1930 - 1931 là ai
+- sau:   Lãnh tụ cao nhất của Đảng bi địch bắt sau Cao trào cá ch mạng 1930 - 1931 là a
 
 ## Câu 355
 - trước: Đảng xác đinh muc tiêu của chính sách xã hội thống nhấ t với muc tiêu phát triển kinh tế là ở ch
@@ -1589,9 +1619,9 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: B. Láng giềng hữu nghi, hợp tác toàn diện, ổn đinh lâ u dài, hướng tới ngày mai
 - sau:   B. Láng giềng hữu nghị, hợp tác toàn diện, ổn định lâu dài, hướng tới ngày mai
 - trước: C. Láng giềng hữu nghi, hợp tác toàn diện, ổn đinh lâ u dài, hướng tới tương la
-- sau:   C. Láng giềng hữu nghị, hợp tác toàn diện, ổn định lâu dài, hướng tới tương lai
+- sau:   C. Láng giềng hữu nghị, hợp tác toàn diện, ổn định lâu dài, hướng tới tương lao
 - trước: D. Láng giềng bạn bè, hợp tác toàn diện, ổn đinh lâu dài, hướng tới tương la
-- sau:   D. Láng giềng bạn bè, hợp tác toàn diện, ổn định lâu dài, hướng tới tương lai
+- sau:   D. Láng giềng bạn bè, hợp tác toàn diện, ổn định lâu dài, hướng tới tương lao
 
 ## Câu 357
 - trước: Khi nói về đấu tranh giai cấp trong thời kỳ quá độ lên CNXH, Đảng khẳng đinh
@@ -1610,8 +1640,10 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - sau:   A. Khẳng định vai trò lãnh đạo cách mạng của Đảng Cộng sản
 - trước: B. Xác đinh nhiệm vu cách mạng là chống đế quốc, phon g kiế
 - sau:   B. Xác định nhiệm vụ cách mạng là chống đế quốc, phong kiến
+- trước: C. Ảnh hưởng quan trong đối với cách mạng Đông Dương
+- sau:   C. Ảnh hưởng quan trọng đối với cách mạng Đông Dương
 - trước: D. Xác đinh lực lượng là công- nôn
-- sau:   D. Xác định lực lượng là công- nôn
+- sau:   D. Xác định lực lượng là công- nông
 
 ## Câu 361
 - trước: Hiện nay, trong nền kinh tế thi trường ở nước ta, nhà nước có chức năng kinh tế gì?
@@ -1653,9 +1685,9 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: Mối quan hệ giữa hai nhiệm vu cách mạng của hai miền được Đại hội III của Đảng xác đinh là
 - sau:   Mối quan hệ giữa hai nhiệm vụ cách mạng của hai miền được Đại hội III của Đảng xác định là
 - trước: A. Hai nhiệm vu chiến lược ấy có quan hệ mật thiết với nhau và có tác dung thúc đẩy lẫn nha
-- sau:   A. Hai nhiệm vụ chiến lược ấy có quan hệ mật thiết với nhau và có tác dụng thúc đẩy lẫn nha
+- sau:   A. Hai nhiệm vụ chiến lược ấy có quan hệ mật thiết với nhau và có tác dụng thúc đẩy lẫn nhau
 - trước: B. Hai nhiệm vu chiến lược ấy có quan hệ quyết đinh lẫ n nha
-- sau:   B. Hai nhiệm vụ chiến lược ấy có quan hệ quyết định lẫn nha
+- sau:   B. Hai nhiệm vụ chiến lược ấy có quan hệ quyết định lẫn nhau
 - trước: C. Hai nhiệm vu chiến lược ấy có quan hệ mật thiết với nhau
 - sau:   C. Hai nhiệm vụ chiến lược ấy có quan hệ mật thiết với nhau
 - trước: D. Hai nhiệm vu chiến lược ấy có quan hệ độc lập với nhau và có tác dung thúc đẩy lẫn nh
@@ -1674,6 +1706,8 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 ## Câu 370
 - trước: Đảng ta xác đinh công nghiệp hóa XHCN là:
 - sau:   Đảng ta xác định công nghiệp hóa XHCN là:
+- trước: A. Quan trong hàng đầu trong suốt thời kỳ xây dựng chủ nghĩa xã hội ở Việt Nam
+- sau:   A. Quan trọng hàng đầu trong suốt thời kỳ xây dựng chủ nghĩa xã hội ở Việt Nam
 
 ## Câu 372
 - trước: Điểm cốt lõi của cơ sở chính tri trong hệ thống chuyên chính vô sản là:
@@ -1707,7 +1741,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: A. Công nghiệp hóa theo mô hình nền kinh tế khép kín, hướng nội và thiên về phát triển công nghiệp nhe
 - sau:   A. Công nghiệp hóa theo mô hình nền kinh tế khép kín, hướng nội và thiên về phát triển công nghiệp nhẹ
 - trước: C. Việc phân bổ nguồn lực để công nghiệp hóa chủ yếu bằng cơ chế kinh tế thi trườn
-- sau:   C. Việc phân bổ nguồn lực để công nghiệp hóa chủ yếu bằng cơ chế kinh tế thị trườn
+- sau:   C. Việc phân bổ nguồn lực để công nghiệp hóa chủ yếu bằng cơ chế kinh tế thị trường
 
 ## Câu 381
 - trước: Đại hội X xác đinh muc tiêu cu thể đẩy mạnh công nghi ệp hóa, hiện đại hóa
@@ -1785,7 +1819,7 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: C. Kinh tế thi trường ở Việt Nam có cơ cấu nhiều thành phần, trong đó kinh tế nhà nước giữ vai trò chủ đạo
 - sau:   C. Kinh tế thị trường ở Việt Nam có cơ cấu nhiều thành phần, trong đó kinh tế nhà nước giữ vai trò chủ đạo
 - trước: D. Kinh tế thi trường ở Việt Nam có nền kinh tế thi trườn g đã rất phát tri
-- sau:   D. Kinh tế thị trường ở Việt Nam có nền kinh tế thị trường đã rất phát tri
+- sau:   D. Kinh tế thị trường ở Việt Nam có nền kinh tế thị trường đã rất phát triển
 
 ## Câu 398
 - trước: Chon nội dung sai trong chủ trương đối ngoại của Đảng tại Đại hội lần thứ V (3-1982) của Đảng?
@@ -1805,9 +1839,11 @@ Số câu được sửa chữ: 295/404. Câu có mất đề xem `docs/question
 - trước: C. Muc tiêu của chính sách xã hội thống nhất với mu c tiêu phát triển kinh tế ở chỗ đều nhằm phát huy sứ c manh của nhân tố văn hóa
 - sau:   C. Mục tiêu của chính sách xã hội thống nhất với mu c tiêu phát triển kinh tế ở chỗ đều nhằm phát huy sức manh của nhân tố văn hóa
 - trước: D. Muc tiêu của chính sách xã hội thống nhất với mu c tiêu phát triển kinh tế ở chỗ đều nhằm phát huy sứ c mạnh của nhân tố giáo du
-- sau:   D. Mục tiêu của chính sách xã hội thống nhất với mu c tiêu phát triển kinh tế ở chỗ đều nhằm phát huy sức mạnh của nhân tố giáo du
+- sau:   D. Mục tiêu của chính sách xã hội thống nhất với mu c tiêu phát triển kinh tế ở chỗ đều nhằm phát huy sức mạnh của nhân tố giáo dục
 
 ## Câu 401
+- trước: Biện pháp "Xử lý triệt để những ô nhiễm môi trường nghiêm trong và ngăn chặn để không phát sinh thêm" phù hợp với chủ trương nào sau đây của Đảng:
+- sau:   Biện pháp "Xử lý triệt để những ô nhiễm môi trường nghiêm trọng và ngăn chặn để không phát sinh thêm" phù hợp với chủ trương nào sau đây của Đảng:
 - trước: A. Thống nhất nhận thức về kinh tế thi trường đin h hướng XHCN
 - sau:   A. Thống nhất nhận thức về kinh tế thị trường đin h hướng XHCN
 - trước: C. Hoàn thiện thể chế đảm bảo đồng bộ các yếu tố thi trường và phát triển đồng bộ các loại thi trường

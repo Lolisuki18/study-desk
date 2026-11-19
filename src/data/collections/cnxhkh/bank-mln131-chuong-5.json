@@ -609,7 +609,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Tôn trong và phát huy tư do tư tường trong hoạt động nghiên cứu. sáng tạo"
+            "text": "Tôn trọng và phát huy tư do tư tường trong hoạt động nghiên cứu. sáng tạo"
           },
           {
             "key": "B",
@@ -627,7 +627,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 139"
+        "ref": "Ngân hàng câu 139",
+        "textCleaned": true
       }
     },
     {
@@ -1193,7 +1194,7 @@
           },
           {
             "key": "C",
-            "text": "Từng bước xác lập vị trí chủ đạo của nền kinh tế tri thức và vai trò quan trong bật nhất của đội ngũ trí thức"
+            "text": "Từng bước xác lập vị trí chủ đạo của nền kinh tế tri thức và vai trò quan trọng bật nhất của đội ngũ trí thức"
           },
           {
             "key": "D",
@@ -1203,7 +1204,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 270"
+        "ref": "Ngân hàng câu 270",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 130): Đẩy mạnh công nghiệp hóa, hiện đại hóa, xây dựng nông thôn mới, phát triển kinh tế tri thức là phương thức căn bản và quan trọng để thực hiện, tăng cường liên minh công – nông – trí thức.",
@@ -1282,7 +1284,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Tăng trưởng kinh tế bảng moi giá"
+            "text": "Tăng trưởng kinh tế bảng mọi giá"
           },
           {
             "key": "B",
@@ -1300,7 +1302,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 288"
+        "ref": "Ngân hàng câu 288",
+        "textCleaned": true
       }
     },
     {

@@ -153,7 +153,7 @@
           },
           {
             "key": "B",
-            "text": "Chế đó ta là do Đảng Cộng sản Việt Nam làm chủ, là đai diện ý chí, nguyện vọng của nhân dân"
+            "text": "Chế đó ta là do Đảng Cộng sản Việt Nam làm chủ, là đại diện ý chí, nguyện vọng của nhân dân"
           },
           {
             "key": "C",
@@ -167,7 +167,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 40"
+        "ref": "Ngân hàng câu 40",
+        "textCleaned": true
       }
     },
     {
@@ -570,13 +571,14 @@
           },
           {
             "key": "D",
-            "text": "Không ngừng mở rộng cơ sở hạ tầng, nâng cao mức độ giải phóng cho những người lao động, thu hút họ tham gia tự giác vào công việc quản lý nhà nước, quản l"
+            "text": "Không ngừng mở rộng cơ sở hạ tầng, nâng cao mức độ giải phóng cho những người lao động, thu hút họ tham gia tự giác vào công việc quản lý nhà nước, quản lý"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 126"
+        "ref": "Ngân hàng câu 126",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 86): Nguyên tắc cơ bản của dân chủ XHCN: không ngừng mở rộng dân chủ, nâng cao mức độ giải phóng người lao động, thu hút họ tự giác tham gia quản lý nhà nước và xã hội.",

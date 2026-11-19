@@ -587,13 +587,14 @@
           },
           {
             "key": "D",
-            "text": "Chức năng thỏa mãn nhu cầu tâm sinh lý, duy trì tình cảm gia đinh"
+            "text": "Chức năng thỏa mãn nhu cầu tâm sinh lý, duy trì tình cảm gia định"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 142"
+        "ref": "Ngân hàng câu 142",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 170): Tái sản xuất ra con người là chức năng đặc thù của gia đình, không cộng đồng nào khác thay thế được.",
@@ -609,7 +610,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Tùy theo từng nơi, theo từng nhu cầu cụ thể của xã hôi"
+            "text": "Tùy theo từng nơi, theo từng nhu cầu cụ thể của xã hội"
           },
           {
             "key": "B",
@@ -627,7 +628,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 147"
+        "ref": "Ngân hàng câu 147",
+        "textCleaned": true
       }
     },
     {
@@ -823,7 +825,7 @@
       "id": "b-221",
       "type": "multiple-choice",
       "content": {
-        "question": "Nếu thiếu đi cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính tri, thì sẽ ảnh hưởng đến vấn đề gì?",
+        "question": "Nếu thiếu đi cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính trị, thì sẽ ảnh hưởng đến vấn đề gì?",
         "options": [
           {
             "key": "A",
@@ -847,7 +849,8 @@
       "source": {
         "ref": "Ngân hàng câu 221",
         "bankAnswer": "A",
-        "answerChangedToTextbook": true
+        "answerChangedToTextbook": true,
+        "textCleaned": true
       },
       "enrichment": {
         "text": "ĐÃ ĐỔI THEO GIÁO TRÌNH: giáo trình MLN131 viết “Thiếu đi cơ sở văn hóa, hoặc cơ sở văn hóa không đi liền với cơ sở kinh tế, chính trị, thì việc xây dựng gia đình sẽ lệch lạc, không đạt hiệu quả cao”, nên đáp án là C. Ngân hàng câu hỏi gốc ghi A. Ngân hàng còn có câu b-391 giống hệt, đáp án là C, nên b-221 là lỗi của ngân hàng.",
@@ -1355,13 +1358,14 @@
           },
           {
             "key": "D",
-            "text": "Mọi thành viên trong gia đình phải tôn trong, phát huy quyền làm chủ trong gia định"
+            "text": "Mọi thành viên trong gia đình phải tôn trọng, phát huy quyền làm chủ trong gia định"
           }
         ],
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 334"
+        "ref": "Ngân hàng câu 334",
+        "textCleaned": true
       }
     },
     {
@@ -1591,29 +1595,30 @@
       "id": "b-369",
       "type": "multiple-choice",
       "content": {
-        "question": "Trong gia đình Việt Nam hiện đại, sự bền vững của hôn nhân phụ thuộc rất nhiều vào yếu tố nào?",
+        "question": "Trong gia đình Việt Nam hiện đại, sự bền vững của hôn nhân phụ thuộc rất nhiều vào yếu tố nào?",
         "options": [
           {
             "key": "A",
-            "text": "Có con hay không có con"
+            "text": "Có con hay không có con"
           },
           {
             "key": "B",
-            "text": "Có con trai hay không có con trai"
+            "text": "Có con trai hay không có con trai"
           },
           {
             "key": "C",
-            "text": "Tâm lý, tình cảm, kinh tế"
+            "text": "Tâm lý, tình cảm, kinh tế"
           },
           {
             "key": "D",
-            "text": "Địa vị xã hội, kinh tế"
+            "text": "Địa vị xã hội, kinh tế"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 369"
+        "ref": "Ngân hàng câu 369",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 181): Ở gia đình hiện đại, sự bền vững của hôn nhân phụ thuộc nhiều vào yếu tố tâm lý, tình cảm, kinh tế, không chỉ vào việc có con hay có con trai.",
@@ -1759,7 +1764,7 @@
           },
           {
             "key": "B",
-            "text": "Gia đinh"
+            "text": "Gia định"
           },
           {
             "key": "C",
@@ -1773,7 +1778,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 397"
+        "ref": "Ngân hàng câu 397",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 166): Gia đình là cộng đồng người đặc biệt, có vai trò quyết định đến sự tồn tại và phát triển của xã hội.",

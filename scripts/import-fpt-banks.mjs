@@ -21,15 +21,32 @@ const BANKS = [
   { id: 'mln111', folder: 'mln111', subject: 'Triết học Mác – Lênin', title: 'Triết học Mác – Lênin – MLN111' },
   { id: 'mln122', folder: 'mln122', subject: 'Kinh tế chính trị Mác – Lênin', title: 'Kinh tế chính trị Mác – Lênin – MLN122' },
 ]
+// Typos / cut endings checked by hand against their context (raw file untouched). [bank, pattern, replacement]
+const TEXT_FIXES = [
+  ['hcm202', /kế th$/u, 'kế thừa'],
+  ['hcm202', /quan hệ kinh tề$/u, 'quan hệ kinh tế'],
+  ['hcm202', /của đai đoàn kết toàn dân tôc$/u, 'của đại đoàn kết toàn dân tộc'],
+  ['hcm202', /quốc tế trong sắng$/u, 'quốc tế trong sáng'],
+  ['hcm202', /Mục tiêu bên vũng$/u, 'Mục tiêu bền vững'],
+  ['mln122', /tư bản lớn hơ$/u, 'tư bản lớn hơn'],
+  ['mln122', /giá trị sử dung$/u, 'giá trị sử dụng'],
+  ['mln122', /các nguồn luc\?$/u, 'các nguồn lực?'],
+  ['mln111', /các nguồn luc\?$/u, 'các nguồn lực?'],
+  ['mln111', /được goi là$/u, 'được gọi là'],
+  ['mln111', /nguyên nhan khách quan/u, 'nguyên nhân khách quan'],
+]
+
 const LOST_STEM =
   'Đề gốc của ngân hàng này có vẻ bị mất phần câu hỏi: đề chỉ lặp lại nội dung của một phương án (hoặc quá ngắn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo.'
 
 for (const b of BANKS) {
   const src = JSON.parse(readFileSync(resolve(root, `docs/source-bank-${b.id}.json`), 'utf8'))
+  const clean = (t) => TEXT_FIXES.filter(([bank]) => bank === b.id).reduce((s, [, re, to]) => s.replace(re, to), t)
   const seen = new Map()
   const items = []
   const repeated = []
   const flagged = []
+  let textChanged = 0
   src.questions.forEach((q, i) => {
     const n = i + 1
     const id = `b-${String(n).padStart(3, '0')}`
@@ -45,11 +62,15 @@ for (const b of BANKS) {
     const lost = key.length <= 3 || options.some((o) => norm(o.text) === key)
     if (lost) flagged.push(id)
     const explanation = q.explanation?.trim()
+    const cleanQuestion = clean(q.question.trim())
+    const cleanOptions = options.map((o) => ({ key: o.key, text: clean(o.text) }))
+    const changedText = cleanQuestion !== q.question.trim() || cleanOptions.some((o, k) => o.text !== options[k].text)
+    if (changedText) textChanged++
     items.push({
       id,
       type: 'multiple-choice',
-      content: { question: q.question.trim(), options, answer, ...(explanation ? { explanation } : {}) },
-      source: { ref: `Ngân hàng câu ${n}` },
+      content: { question: cleanQuestion, options: cleanOptions, answer, ...(explanation ? { explanation } : {}) },
+      source: { ref: `Ngân hàng câu ${n}`, ...(changedText ? { textCleaned: true } : {}) },
       ...(lost ? { enrichment: { text: LOST_STEM, confidence: 'uncertain' } } : {}),
     })
   })
@@ -62,12 +83,12 @@ for (const b of BANKS) {
     language: 'vi',
     source: {
       document: `${src.name} – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-${b.id}.json)`,
-      note: 'Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép nguyên văn.',
+      note: 'Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép từ nguồn; chỉ sửa vài lỗi chép đã kiểm tra tay (cụt chữ cuối câu, mất dấu), file nguồn giữ nguyên.',
     },
     items,
   }
   const dir = resolve(root, 'src/data/collections', b.folder)
   mkdirSync(dir, { recursive: true })
   writeFileSync(resolve(dir, `${b.id}-ngan-hang.json`), JSON.stringify(col, null, 2) + '\n')
-  console.log(`${b.id}: ${src.questions.length} trong file → ${items.length} câu; lặp ${repeated.length}; đề nghi mất ${flagged.length}`)
+  console.log(`${b.id}: ${src.questions.length} trong file → ${items.length} câu; lặp ${repeated.length}; đề nghi mất ${flagged.length}; sửa chữ ${textChanged}`)
 }

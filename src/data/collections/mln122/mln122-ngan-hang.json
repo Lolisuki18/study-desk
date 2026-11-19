@@ -7,7 +7,7 @@
   "language": "vi",
   "source": {
     "document": "MLN122 - Kinh tế chính trị – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-mln122.json)",
-    "note": "Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép nguyên văn."
+    "note": "Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép từ nguồn; chỉ sửa vài lỗi chép đã kiểm tra tay (cụt chữ cuối câu, mất dấu), file nguồn giữ nguyên."
   },
   "items": [
     {
@@ -6855,13 +6855,14 @@
           },
           {
             "key": "D",
-            "text": "Quá trình liên kết, hợp nhất các tư bản thương nghiệp trong xã hội thành một tư bản lớn hơ"
+            "text": "Quá trình liên kết, hợp nhất các tư bản thương nghiệp trong xã hội thành một tư bản lớn hơn"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 244"
+        "ref": "Ngân hàng câu 244",
+        "textCleaned": true
       }
     },
     {
@@ -7009,7 +7010,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Bộ phận trực tiếp tạo ra giá trị sử dung"
+            "text": "Bộ phận trực tiếp tạo ra giá trị sử dụng"
           },
           {
             "key": "B",
@@ -7027,7 +7028,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 250"
+        "ref": "Ngân hàng câu 250",
+        "textCleaned": true
       }
     },
     {
@@ -12034,7 +12036,7 @@
       "id": "b-432",
       "type": "multiple-choice",
       "content": {
-        "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn luc?",
+        "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn lực?",
         "options": [
           {
             "key": "A",
@@ -12052,7 +12054,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 432"
+        "ref": "Ngân hàng câu 432",
+        "textCleaned": true
       }
     },
     {

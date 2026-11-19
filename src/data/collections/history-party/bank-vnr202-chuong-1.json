@@ -74,7 +74,7 @@
       "id": "b-034",
       "type": "multiple-choice",
       "content": {
-        "question": "Hoạt động của Phan Bội Châu, Phan Châu Trinh và một số người sống ở nước ngoài có tác dung quan trong nhất là",
+        "question": "Hoạt động của Phan Bội Châu, Phan Châu Trinh và một số người sống ở nước ngoài có tác dung quan trọng nhất là",
         "options": [
           {
             "key": "A",
@@ -1058,7 +1058,7 @@
           },
           {
             "key": "D",
-            "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, địa chủ nhỏ và vừ"
+            "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, địa chủ nhỏ và vừa"
           }
         ],
         "answer": "D"
@@ -1442,7 +1442,7 @@
       "id": "b-186",
       "type": "multiple-choice",
       "content": {
-        "question": "Sự kiện nào được Nguyễn Ái Quốc đánh giá \"là một bước ngoặt vô cùng quan trong trong lịch sử Cách mạng Việt Nam ta\"",
+        "question": "Sự kiện nào được Nguyễn Ái Quốc đánh giá \"là một bước ngoặt vô cùng quan trọng trong lịch sử Cách mạng Việt Nam ta\"",
         "options": [
           {
             "key": "A",
@@ -2034,7 +2034,7 @@
       "id": "b-240",
       "type": "multiple-choice",
       "content": {
-        "question": "Nhiệm vụ của cách mạng Việt Nam được xác định trong Luận cương chính trị tháng 10/1930 do Trần Phú so ạn thảo l",
+        "question": "Nhiệm vụ của cách mạng Việt Nam được xác định trong Luận cương chính trị tháng 10/1930 do Trần Phú soạn thảo là",
         "options": [
           {
             "key": "A",
@@ -2144,7 +2144,7 @@
           },
           {
             "key": "D",
-            "text": "Thức tỉnh phong trào đấu giải phóng dân tộc ở các nước thuộc địa, phu thu địa, phu thuộ"
+            "text": "Thức tỉnh phong trào đấu giải phóng dân tộc ở các nước thuộc địa, phu thu địa, phụ thuộc"
           }
         ],
         "answer": "D"
@@ -2316,7 +2316,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Giải phóng dân tộc là nhiệm vụ quan trong"
+            "text": "Giải phóng dân tộc là nhiệm vụ quan trọng"
           },
           {
             "key": "B",
@@ -2328,7 +2328,7 @@
           },
           {
             "key": "D",
-            "text": "Giải phóng dân tộc là nhiệm vụ bức thiết nhấ"
+            "text": "Giải phóng dân tộc là nhiệm vụ bức thiết nhất"
           }
         ],
         "answer": "D"
@@ -2485,7 +2485,7 @@
           },
           {
             "key": "D",
-            "text": "Sự kết hợp phong trào công nhân và phong trào yêu nước Việt Nam với"
+            "text": "Sự kết hợp phong trào công nhân và phong trào yêu nước Việt Nam với phong trào công nhân và phong trào yêu nước"
           }
         ],
         "answer": "C"
@@ -2847,7 +2847,7 @@
           },
           {
             "key": "D",
-            "text": "Cách mạng tư sản dân quyền, lập chính quyền của công nông bằng hình thức Xô viết, để dự bi điều kiện đi tới cách mạng xã hội chủ nghĩ"
+            "text": "Cách mạng tư sản dân quyền, lập chính quyền của công nông bằng hình thức Xô viết, để dự bi điều kiện đi tới cách mạng xã hội chủ nghĩa"
           }
         ],
         "answer": "C"
@@ -3132,7 +3132,7 @@
       "id": "b-334",
       "type": "multiple-choice",
       "content": {
-        "question": "Hội nghị lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) đã nhấn mạnh nhiệm vụ trong tâm của toàn Đảng, toàn dân l",
+        "question": "Hội nghị lần thứ 8 Ban chấp hành Trung ương Đảng Cộng sản Đông Dương (5/1941) đã nhấn mạnh nhiệm vụ trong tâm của toàn Đảng, toàn dân là",
         "options": [
           {
             "key": "A",
@@ -3268,7 +3268,7 @@
           },
           {
             "key": "D",
-            "text": "Kinh tế Việt Nam phụ thuộc kinh tế Phá"
+            "text": "Kinh tế Việt Nam phụ thuộc kinh tế Phát"
           }
         ],
         "answer": "A"
@@ -3438,7 +3438,7 @@
       "id": "b-354",
       "type": "multiple-choice",
       "content": {
-        "question": "Lãnh tụ cao nhất của Đảng bi địch bắt sau Cao trào cá ch mạng 1930 - 1931 là ai",
+        "question": "Lãnh tụ cao nhất của Đảng bi địch bắt sau Cao trào cá ch mạng 1930 - 1931 là a",
         "options": [
           {
             "key": "A",
@@ -3480,11 +3480,11 @@
           },
           {
             "key": "C",
-            "text": "Ảnh hưởng quan trong đối với cách mạng Đông Dương"
+            "text": "Ảnh hưởng quan trọng đối với cách mạng Đông Dương"
           },
           {
             "key": "D",
-            "text": "Xác định lực lượng là công- nôn"
+            "text": "Xác định lực lượng là công- nông"
           }
         ],
         "answer": "A"

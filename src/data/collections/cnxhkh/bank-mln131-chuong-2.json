@@ -1171,7 +1171,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Đấu tranh bảo vệ nền tảng tư tưởng của Đảng Cộng sản, giáo dục nhận thức và cũng có nẽm tin khoa học đoi vôi lí tưởng, muc tiêu của chủ nghĩa xã hội"
+            "text": "Đấu tranh bảo vệ nền tảng tư tưởng của Đảng Cộng sản, giáo dục nhận thức và cũng có nẽm tin khoa học đoi vôi lí tưởng, mục tiêu của chủ nghĩa xã hội"
           },
           {
             "key": "B",
@@ -1189,7 +1189,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 307"
+        "ref": "Ngân hàng câu 307",
+        "textCleaned": true
       }
     },
     {

@@ -1728,7 +1728,7 @@
           },
           {
             "key": "B",
-            "text": "Tư tưởng vô sản và tư tưởng đia chủ phong kiến"
+            "text": "Tư tưởng vô sản và tư tưởng địa chủ phong kiến"
           },
           {
             "key": "C",
@@ -1742,7 +1742,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 313"
+        "ref": "Ngân hàng câu 313",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 68): Thời kỳ quá độ còn tồn tại nhiều tư tưởng khác nhau, chủ yếu là tư tưởng vô sản và tư tưởng tư sản.",

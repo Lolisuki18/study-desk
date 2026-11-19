@@ -13,7 +13,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { loadCleanCorpus, buildCleaner } from './lib/clean-text.mjs'
+import { loadCleanCorpus, buildCleaner, MLN_TYPOS } from './lib/clean-text.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = resolve(root, 'docs/source-mln131-full.json')
@@ -62,25 +62,7 @@ const src = JSON.parse(readFileSync(SRC, 'utf8'))
 const fixesFile = resolve(root, 'docs/question-fixes-mln131-full.json')
 const fixes = existsSync(fixesFile) ? JSON.parse(readFileSync(fixesFile, 'utf8')) : {}
 const textChanges = []
-// keyboard typos confirmed one by one in this file (context shows the intended word)
-const WORD_FIXES = {
-  chủa: 'chủ', đáu: 'đấu', hính: 'hình', vởi: 'với', hể: 'hệ', họi: 'hội', phầm: 'phẩm', xuát: 'xuất', biêu: 'biểu', khong: 'không',
-  đỏi: 'đổi', cua: 'của', thuãn: 'thuẫn', xõa: 'xóa', thùa: 'thừa', cở: 'cơ', thõa: 'thỏa', chiễm: 'chiếm', đòng: 'đồng', rọng: 'rộng',
-  tọc: 'tộc', pải: 'phải', đén: 'đến', dượng: 'dựng', giap: 'giai', cuong: 'cương',
-}
-// whole-word match that understands Vietnamese letters (\b does not)
-const W = (text) => new RegExp(String.raw`(?<![\p{L}])` + text + String.raw`(?![\p{L}])`, 'gu')
-const PHRASES = [
-  [W('bản than'), 'bản thân'],
-  [W('thành tự'), 'thành tựu'],
-  [W('các án'), 'các đáp án'],
-  [W('luân cảnh giác'), 'luôn cảnh giác'],
-  [W('nối cảnh'), 'bối cảnh'],
-  [W('lật đỏi'), 'lật đổ'],
-  [W('giải phóng cong người'), 'giải phóng con người'],
-  [W('xã hộ'), 'xã hội'],
-]
-const { clean } = buildCleaner(loadCleanCorpus(root), src.questions.flatMap((q) => [q.question, ...q.options]), { wordFixes: WORD_FIXES, phrases: PHRASES })
+const { clean } = buildCleaner(loadCleanCorpus(root), src.questions.flatMap((q) => [q.question, ...q.options]), MLN_TYPOS)
 const overridesFile = resolve(root, 'docs/answer-overrides-bank-mln131.json')
 const overrides = existsSync(overridesFile) ? JSON.parse(readFileSync(overridesFile, 'utf8')) : {}
 

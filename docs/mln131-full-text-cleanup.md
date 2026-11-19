@@ -1,7 +1,7 @@
 # MLN131 Full: sửa lỗi chép / gõ
 
 Tự sinh bởi `node scripts/import-mln131-full.mjs`. File nguồn `docs/source-mln131-full.json` giữ nguyên; bản sửa chỉ nằm trong bộ học.
-Số câu được sửa chữ: 49/360. Sửa đáp án / phương án: `docs/question-fixes-mln131-full.json`.
+Số câu được sửa chữ: 51/360. Sửa đáp án / phương án: `docs/question-fixes-mln131-full.json`.
 
 ## Câu 4
 - trước: A. Chức năng xã hội và chức năng giap cấp
@@ -90,6 +90,8 @@ Số câu được sửa chữ: 49/360. Sửa đáp án / phương án: `docs/qu
 - sau:   D. Tất cả các đáp án đều đúng
 
 ## Câu 214
+- trước: C. Là lực lượng duy trì khỏi đại đoàn kết của giai cấp công nhân, nông dân với tư sản và trí thứ
+- sau:   C. Là lực lượng duy trì khỏi đại đoàn kết của giai cấp công nhân, nông dân với tư sản và trí thức
 - trước: D. Tất cả các án đều đúng
 - sau:   D. Tất cả các đáp án đều đúng
 
@@ -133,6 +135,16 @@ Số câu được sửa chữ: 49/360. Sửa đáp án / phương án: `docs/qu
 - trước: Cở sở kinh tế - xã hội để xây dựng gia đình trong thời kỳ quá độ lên chủ nghĩa xã hội là gì?
 - sau:   Cơ sở kinh tế - xã hội để xây dựng gia đình trong thời kỳ quá độ lên chủ nghĩa xã hội là gì?
 
+## Câu 239
+- trước: A. Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về sỡ hưu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó
+- sau:   A. Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về sỡ hưu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó
+- trước: B. Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về sở hữu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó
+- sau:   B. Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về sở hữu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó
+- trước: C. Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trong một chế độ xã hội nhất định, thông qua những mỗi quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp, tầng lớp đó
+- sau:   C. Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trọng một chế độ xã hội nhất định, thông qua những mỗi quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp, tầng lớp đó
+- trước: D. Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp tầng lớp đó
+- sau:   D. Là hệ thống giai cấp, tầng lớp xã hội tồn tại chủ quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về phân chia quyền lực nhà nước... giữa các giai cấp tầng lớp đó
+
 ## Câu 257
 - trước: C. Chức năng thõa mãn nhu cầu tâm sinh lý, duy trì tình cảm
 - sau:   C. Chức năng thỏa mãn nhu cầu tâm sinh lý, duy trì tình cảm
@@ -160,6 +172,10 @@ Số câu được sửa chữ: 49/360. Sửa đáp án / phương án: `docs/qu
 ## Câu 282
 - trước: B. Mâu thuẫn giữa quan hệ sản xuất xã hội hóa ngày càng rọng lớn với lực lượng sản xuất tư bản chủ nghĩa dựa trên chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất
 - sau:   B. Mâu thuẫn giữa quan hệ sản xuất xã hội hóa ngày càng rộng lớn với lực lượng sản xuất tư bản chủ nghĩa dựa trên chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất
+
+## Câu 283
+- trước: A. Khi có sự thắng lợi của chế độ tư hữu đói với chế độ công hữu nguyên thủ
+- sau:   A. Khi có sự thắng lợi của chế độ tư hữu đói với chế độ công hữu nguyên thủy
 
 ## Câu 297
 - trước: B. Các dân tộc cư trú xen kẽ nhau, không có một dân tọc nào tập trung duy nhất trên một địa bàn

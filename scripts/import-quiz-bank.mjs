@@ -7,7 +7,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { loadCleanCorpus, buildCleaner } from './lib/clean-text.mjs'
+import { loadCleanCorpus, buildCleaner, MLN_TYPOS } from './lib/clean-text.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const colDir = resolve(root, 'src/data/collections')
@@ -86,12 +86,9 @@ for (const b of BANKS) {
   // docs/question-fixes-*.json: questions whose stem was lost/garbled in the bank, keyed by position in the bank
   const fixesFile = resolve(root, `docs/question-fixes-${b.id}.json`)
   const fixes = existsSync(fixesFile) ? JSON.parse(readFileSync(fixesFile, 'utf8')) : {}
-  // VNR202 only: repair copy/OCR damage (split words, lost tone marks, cut-off endings); see scripts/lib/clean-text.mjs.
+  // repair copy/OCR damage (split words, lost tone marks, cut-off endings); see scripts/lib/clean-text.mjs.
   // Duplicate detection below keeps using the raw text so the set of imported questions does not change.
-  const clean =
-    b.id === 'vnr202'
-      ? buildCleaner(loadCleanCorpus(root), src.questions.flatMap((q) => [q.question, ...Object.values(q.options)])).clean
-      : (s) => s
+  const { clean } = buildCleaner(loadCleanCorpus(root), src.questions.flatMap((q) => [q.question, ...Object.values(q.options)]), b.id === 'mln131' ? MLN_TYPOS : {})
   const seen = new Map()
   const items = []
   const skipped = { existing: [], repeated: [], emptyOptions: [] }

@@ -96,6 +96,10 @@
   "note": "Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: Hiệp định Giơ-ne-vơ lấy vĩ tuyến 17 (sông Bến Hải) làm giới tuyến quân sự tạm thời; các phương án còn lại là vĩ tuyến sai.",
   "confidence": "uncertain"
  },
+ "313": {
+  "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…tiếp tục kí với Pháp bả…\".",
+  "confidence": "uncertain"
+ },
  "344": {
   "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
   "confidence": "uncertain"
@@ -105,8 +109,16 @@
   "note": "Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: các tài liệu lịch sử xem cuộc bãi công của công nhân Ba Son (8/1925) là mốc công nhân bước đầu đấu tranh có mục tiêu chính trị rõ ràng, tự giác; các phương án còn lại là sự kiện 1930, 1936–1939 và 1945.",
   "confidence": "uncertain"
  },
+ "355": {
+  "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…là ở ch…\".",
+  "confidence": "uncertain"
+ },
  "360": {
   "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
+  "confidence": "uncertain"
+ },
+ "382": {
+  "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…hệ thống chính trị là nhắ…\".",
   "confidence": "uncertain"
  },
  "055": {

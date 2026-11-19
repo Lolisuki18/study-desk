@@ -1333,7 +1333,7 @@
           },
           {
             "key": "B",
-            "text": "Loại bỏ các giá trị văn hóa truyền thông của các dân tộc thiểu sỡ đẽ phù hợp hơn với thời đai"
+            "text": "Loại bỏ các giá trị văn hóa truyền thông của các dân tộc thiểu sỡ đẽ phù hợp hơn với thời đại"
           },
           {
             "key": "C",
@@ -1347,7 +1347,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 290"
+        "ref": "Ngân hàng câu 290",
+        "textCleaned": true
       }
     },
     {
@@ -1420,7 +1421,7 @@
           },
           {
             "key": "B",
-            "text": "Quyền tự do tín ngưỡng, tôn giáo được tôn trong và bảo vệ, không ai có quyền can thiệp bằng bất cứ hình thức nào"
+            "text": "Quyền tự do tín ngưỡng, tôn giáo được tôn trọng và bảo vệ, không ai có quyền can thiệp bằng bất cứ hình thức nào"
           },
           {
             "key": "C",
@@ -1434,7 +1435,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 303"
+        "ref": "Ngân hàng câu 303",
+        "textCleaned": true
       }
     },
     {

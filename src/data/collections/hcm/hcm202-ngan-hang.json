@@ -7,7 +7,7 @@
   "language": "vi",
   "source": {
     "document": "HCM202 - Tư tưởng Hồ Chí Minh – ngân hàng câu hỏi (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-hcm202.json)",
-    "note": "Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép nguyên văn."
+    "note": "Nguồn cộng đồng, chưa đối chiếu giáo trình. Câu hỏi, phương án và đáp án chép từ nguồn; chỉ sửa vài lỗi chép đã kiểm tra tay (cụt chữ cuối câu, mất dấu), file nguồn giữ nguyên."
   },
   "items": [
     {
@@ -14213,13 +14213,14 @@
           },
           {
             "key": "C",
-            "text": "Ba là, trong quá trình hoạt động, Đảng ta phải chú ý học tập, kế th"
+            "text": "Ba là, trong quá trình hoạt động, Đảng ta phải chú ý học tập, kế thừa"
           }
         ],
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 513"
+        "ref": "Ngân hàng câu 513",
+        "textCleaned": true
       }
     },
     {
@@ -16355,7 +16356,7 @@
           },
           {
             "key": "B",
-            "text": "Vấn đề dân tộc và vấn đề giai cấp là quan hệ kinh tề"
+            "text": "Vấn đề dân tộc và vấn đề giai cấp là quan hệ kinh tế"
           },
           {
             "key": "C",
@@ -16365,7 +16366,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 591"
+        "ref": "Ngân hàng câu 591",
+        "textCleaned": true
       }
     },
     {
@@ -17155,13 +17157,14 @@
           },
           {
             "key": "D",
-            "text": "Nói về vai trò của đai đoàn kết toàn dân tôc"
+            "text": "Nói về vai trò của đại đoàn kết toàn dân tộc"
           }
         ],
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 619"
+        "ref": "Ngân hàng câu 619",
+        "textCleaned": true
       }
     },
     {
@@ -17234,7 +17237,7 @@
           },
           {
             "key": "B",
-            "text": "Có tinh thần quốc tế trong sắng"
+            "text": "Có tinh thần quốc tế trong sáng"
           },
           {
             "key": "C",
@@ -17248,7 +17251,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 622"
+        "ref": "Ngân hàng câu 622",
+        "textCleaned": true
       }
     },
     {
@@ -17271,13 +17275,14 @@
           },
           {
             "key": "D",
-            "text": "Mục tiêu bên vũng"
+            "text": "Mục tiêu bền vững"
           }
         ],
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 623"
+        "ref": "Ngân hàng câu 623",
+        "textCleaned": true
       }
     },
     {
