@@ -625,8 +625,12 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
 
       {/* Thẻ lật 3D có hỗ trợ Touch Gesture */}
       <div
-        className="flip-scene relative cursor-pointer select-none"
-        onClick={handleFlip}
+        className="flip-scene relative cursor-pointer select-text"
+        onClick={() => {
+          // dragging to copy text must not flip the card
+          if (window.getSelection()?.toString()) return
+          handleFlip()
+        }}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         role="button"
