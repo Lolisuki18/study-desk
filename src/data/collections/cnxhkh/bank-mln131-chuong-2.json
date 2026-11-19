@@ -2,7 +2,7 @@
   "id": "cnxhkh-ngan-hang-chuong-2",
   "title": "CNXH Khoa học – Ngân hàng bổ sung – Chương 2",
   "subject": "Chủ nghĩa xã hội khoa học",
-  "description": "Ngân hàng MLN131 bổ sung, Chương 2 – Sứ mệnh lịch sử của giai cấp công nhân. 52 câu.",
+  "description": "Ngân hàng MLN131 bổ sung, Chương 2 – Sứ mệnh lịch sử của giai cấp công nhân. 53 câu.",
   "contentType": "multiple-choice",
   "language": "vi",
   "source": {
@@ -1403,6 +1403,35 @@
       },
       "source": {
         "ref": "Ngân hàng câu 344"
+      }
+    },
+    {
+      "id": "b-348",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Mâu thuẫn cơ bản của phương thức sản xuất tư bản chủ nghĩa là:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mâu thuẫn giữa lực lượng sản xuất xã hội hóa ngày càng rộng lớn với quan hệ sản xuất tư bản chủ nghĩa dựa trên chế độ tư hữu tư bàn chủ nghĩa về tư liệu sản xuất"
+          },
+          {
+            "key": "B",
+            "text": "Mẫu thuân giữa quan hệ sản xuất xã hội hóa ngày càng rộng lớn với lực lượng sàn xuất tư bản chủ nghĩa dựa trên chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất"
+          },
+          {
+            "key": "C",
+            "text": "Mầu thuẫn giữa cơ sở hạ tầng và kiến trúc thượng tầng"
+          },
+          {
+            "key": "D",
+            "text": "Mâu thuẫn giữa tôn tại xã hội và ý thức xã hội"
+          }
+        ],
+        "answer": "A"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 348"
       }
     },
     {

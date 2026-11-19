@@ -10,7 +10,9 @@
     "test": "vitest run",
     "import:history": "node scripts/import-history-md.mjs",
     "import:cnxhkh": "node scripts/import-cnxhkh-md.mjs",
-    "import:mln131-full": "node scripts/import-mln131-full.mjs"
+    "import:mln131-full": "node scripts/import-mln131-full.mjs",
+    "import:vnr202-full": "node scripts/import-vnr202-full.mjs",
+    "import:fpt-banks": "node scripts/import-fpt-banks.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.460.0",

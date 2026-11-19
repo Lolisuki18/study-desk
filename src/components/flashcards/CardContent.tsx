@@ -81,7 +81,7 @@ export function CardFront({
               {multi ? `Chọn ${item.content.answer.length} đáp án` : 'Trắc nghiệm'}
             </span>
           </div>
-          <h2 className="text-center text-lg font-bold leading-relaxed tracking-tight text-ink md:text-xl">{item.content.question}</h2>
+          <h2 className={`${item.content.question.length > 90 ? 'text-left sm:text-center' : 'text-center'} text-[17px] font-bold leading-relaxed tracking-tight text-ink sm:text-lg md:text-xl`}>{item.content.question}</h2>
 
           {/* Phương án dạng thẻ lựa chọn: huy hiệu chữ cái màu, hover nhấc nhẹ */}
           <div className="mt-5 space-y-2.5" onClick={(e) => done && e.stopPropagation()}>
@@ -102,11 +102,11 @@ export function CardFront({
                   }}
                   className={cx(
                     'group flex w-full items-center gap-3.5 rounded-2xl border-2 px-3.5 py-3 text-left transition-all duration-200',
-                    !done && !isChosen && 'border-slate-200 bg-white shadow-xs hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md active:translate-y-0',
-                    !done && isChosen && 'border-indigo-500 bg-indigo-50 shadow-md',
-                    done && right && 'border-emerald-400 bg-emerald-50',
-                    wrongPick && 'border-rose-400 bg-rose-50',
-                    done && !right && !wrongPick && 'border-slate-100 bg-slate-50/60 opacity-60',
+                    !done && !isChosen && 'border-slate-200 dark:border-line bg-white dark:bg-card shadow-xs hover:-translate-y-0.5 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-md active:translate-y-0',
+                    !done && isChosen && 'border-indigo-500 bg-indigo-50 dark:bg-indigo-950/60 shadow-md',
+                    done && right && 'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/60',
+                    wrongPick && 'border-rose-400 bg-rose-50 dark:bg-rose-950/60',
+                    done && !right && !wrongPick && 'border-slate-100 dark:border-line bg-slate-50/60 dark:bg-slate-800/40 opacity-60',
                   )}
                 >
                   <span
@@ -116,12 +116,12 @@ export function CardFront({
                       !done && isChosen && 'bg-indigo-600 text-white',
                       done && right && 'bg-emerald-500 text-white',
                       wrongPick && 'bg-rose-500 text-white',
-                      done && !right && !wrongPick && 'bg-slate-200 text-slate-500',
+                      done && !right && !wrongPick && 'bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-300',
                     )}
                   >
                     {done && right ? <Check size={16} strokeWidth={3} /> : wrongPick ? <X size={16} strokeWidth={3} /> : o.key}
                   </span>
-                  <span className="flex-1 text-[15px] font-medium leading-relaxed text-slate-800">{o.text}</span>
+                  <span className="flex-1 text-[15px] font-medium leading-relaxed text-slate-800 dark:text-ink">{o.text}</span>
                 </button>
               )
             })}
@@ -240,8 +240,8 @@ export function CardBack({ item }: { item: Item }) {
       return (
         <div className="mx-auto w-full max-w-2xl space-y-3">
           {/* 1 giây: đáp án đúng, chữ to, nền xanh dịu */}
-          <div className="rounded-2xl bg-emerald-50 p-4 md:p-5">
-            <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-emerald-700">
+          <div className="rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 p-4 md:p-5">
+            <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
               <CheckCircle2 size={14} /> Đáp án đúng
             </div>
             <div className="mt-2.5 space-y-2">
@@ -250,7 +250,7 @@ export function CardBack({ item }: { item: Item }) {
                   <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500 text-sm font-extrabold text-white shadow-sm">
                     {o!.key}
                   </span>
-                  <span className="text-lg font-bold leading-snug text-emerald-900 md:text-xl">{o!.text}</span>
+                  <span className="text-lg font-bold leading-snug text-emerald-950 dark:text-emerald-200 md:text-xl">{o!.text}</span>
                 </div>
               ))}
             </div>
@@ -258,11 +258,11 @@ export function CardBack({ item }: { item: Item }) {
 
           {/* Giải thích: nhỏ hơn, nền trắng, có vạch nhấn */}
           {(c.explanation || !item.enrichment) && (
-            <div className="rounded-2xl border border-slate-200 border-l-4 border-l-indigo-400 bg-white p-4">
-              <div className="mb-1 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+            <div className="rounded-2xl border border-slate-200 dark:border-line border-l-4 border-l-indigo-400 bg-white dark:bg-card p-4">
+              <div className="mb-1 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-muted">
                 <BookOpen size={13} className="text-indigo-500" /> Giải thích
               </div>
-              <p className={cx('text-[14.5px] leading-relaxed', c.explanation ? 'text-slate-700' : 'italic text-muted')}>
+              <p className={cx('text-[14.5px] leading-relaxed', c.explanation ? 'text-slate-700 dark:text-slate-200' : 'italic text-muted')}>
                 {c.explanation ?? 'Tài liệu gốc chưa có giải thích cho câu này.'}
               </p>
             </div>
@@ -276,16 +276,16 @@ export function CardBack({ item }: { item: Item }) {
     case 'true-false':
       return (
         <div className="space-y-4">
-          <div className="rounded-2xl border-2 border-emerald-300 bg-emerald-50 p-6 text-center shadow-xs">
-            <div className="text-xs font-bold uppercase tracking-wider text-emerald-700">Kết luận chính xác</div>
-            <div className={cx('mt-2 text-4xl font-black', item.content.answer ? 'text-emerald-700' : 'text-rose-600')}>
+          <div className="rounded-2xl border-2 border-emerald-300 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/40 p-6 text-center shadow-xs">
+            <div className="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">Kết luận chính xác</div>
+            <div className={cx('mt-2 text-4xl font-black', item.content.answer ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400')}>
               {item.content.answer ? 'ĐÚNG' : 'SAI'}
             </div>
           </div>
           {item.content.explanation && (
-            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+            <div className="rounded-2xl border border-slate-200 dark:border-line bg-white dark:bg-card p-4">
               <Label>Giải thích</Label>
-              <p className="text-[15px] leading-relaxed text-slate-800">{item.content.explanation}</p>
+              <p className="text-[15px] leading-relaxed text-slate-800 dark:text-slate-200">{item.content.explanation}</p>
             </div>
           )}
           <Enrichment item={item} />
@@ -297,12 +297,12 @@ export function CardBack({ item }: { item: Item }) {
         <div className="space-y-4 text-[15px]">
           <div>
             <Label>Định nghĩa chuẩn</Label>
-            <p className="text-xl font-bold leading-relaxed text-slate-900">{item.content.definition}</p>
+            <p className="text-xl font-bold leading-relaxed text-slate-900 dark:text-ink">{item.content.definition}</p>
           </div>
           {!!item.content.points?.length && (
-            <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-4">
+            <div className="rounded-2xl border border-slate-200 dark:border-line bg-slate-50/70 dark:bg-slate-800/40 p-4">
               <Label>Ý chính cần nhớ</Label>
-              <ul className="mt-2 list-disc space-y-1.5 pl-5 text-slate-800">
+              <ul className="mt-2 list-disc space-y-1.5 pl-5 text-slate-800 dark:text-slate-200">
                 {item.content.points.map((p, i) => (
                   <li key={i}>{p}</li>
                 ))}
@@ -312,7 +312,7 @@ export function CardBack({ item }: { item: Item }) {
           {item.content.explanation && (
             <div>
               <Label>Giải thích</Label>
-              <p className="leading-relaxed text-slate-700">{item.content.explanation}</p>
+              <p className="leading-relaxed text-slate-700 dark:text-slate-300">{item.content.explanation}</p>
             </div>
           )}
           <Enrichment item={item} />
@@ -324,12 +324,12 @@ export function CardBack({ item }: { item: Item }) {
         <div className="space-y-4 text-[15px]">
           <div>
             <Label>Định nghĩa</Label>
-            <p className="text-xl font-bold leading-relaxed text-slate-900">{item.content.definition}</p>
+            <p className="text-xl font-bold leading-relaxed text-slate-900 dark:text-ink">{item.content.definition}</p>
           </div>
           {item.content.code && (
             <div>
               <Label>Code minh hoạ {item.content.language ? `(${item.content.language})` : ''}</Label>
-              <pre className="mt-1 overflow-x-auto rounded-2xl bg-slate-900 p-4 text-[13px] leading-relaxed text-slate-100 shadow-md">
+              <pre className="mt-1 overflow-x-auto rounded-2xl bg-slate-900 dark:bg-slate-950 p-4 text-[13px] leading-relaxed text-slate-100 shadow-md border border-transparent dark:border-line">
                 <code>{item.content.code}</code>
               </pre>
             </div>
@@ -337,7 +337,7 @@ export function CardBack({ item }: { item: Item }) {
           {item.content.explanation && (
             <div>
               <Label>Giải thích</Label>
-              <p className="leading-relaxed text-slate-700">{item.content.explanation}</p>
+              <p className="leading-relaxed text-slate-700 dark:text-slate-300">{item.content.explanation}</p>
             </div>
           )}
           {item.content.application && (

@@ -142,7 +142,7 @@ export default function QuizSetup({
         <input type="checkbox" checked={randomize} onChange={(e) => setRandomize(e.target.checked)} className="accent-ink" />
         Trộn ngẫu nhiên câu hỏi
       </label>
-      <Button variant="primary" disabled={!active.length || n === 0} onClick={start}>
+      <Button variant="primary" disabled={!active.length || n === 0} onClick={start} className="h-12 w-full text-base sm:h-auto sm:w-auto sm:text-sm">
         Bắt đầu
       </Button>
       <ExamHistory collectionId={collectionId} limit={5} compact />

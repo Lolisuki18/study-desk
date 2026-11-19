@@ -2,7 +2,7 @@
   "id": "cnxhkh-ngan-hang-chuong-5",
   "title": "CNXH Khoa học – Ngân hàng bổ sung – Chương 5",
   "subject": "Chủ nghĩa xã hội khoa học",
-  "description": "Ngân hàng MLN131 bổ sung, Chương 5 – Cơ cấu xã hội – giai cấp và liên minh giai cấp, tầng lớp. 59 câu.",
+  "description": "Ngân hàng MLN131 bổ sung, Chương 5 – Cơ cấu xã hội – giai cấp và liên minh giai cấp, tầng lớp. 60 câu.",
   "contentType": "multiple-choice",
   "language": "vi",
   "source": {
@@ -1446,6 +1446,40 @@
       },
       "source": {
         "ref": "Ngân hàng câu 322"
+      }
+    },
+    {
+      "id": "b-324",
+      "type": "multiple-choice",
+      "content": {
+        "question": "Cơ cấu xã hội là gì?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Là những cộng đồng người hợp thành một chế độ xã hội"
+          },
+          {
+            "key": "B",
+            "text": "Là những người trong cùng một giai cấp, tầng lớp thực hiện phần chia quyền lực"
+          },
+          {
+            "key": "C",
+            "text": "Là những cộng đồng người cùng toàn bộ những mối quan hệ xã hội do sự tác động lẫn nhau của các cộng đồng ấy tạo nên"
+          },
+          {
+            "key": "D",
+            "text": "Là những cộng đồng người cùng toàn bộ những mối quan hệ xã hội do sự tác động của cộng đồng người ấy với tự nhiên tạo nên"
+          }
+        ],
+        "answer": "C"
+      },
+      "source": {
+        "ref": "Ngân hàng câu 324"
+      },
+      "enrichment": {
+        "text": "Giáo trình (tr. PDF 110): Cơ cấu xã hội là những cộng đồng người cùng toàn bộ quan hệ xã hội do sự tác động lẫn nhau của các cộng đồng đó tạo nên.",
+        "confidence": "verified",
+        "reference": "Giáo trình MLN131, trang PDF 110"
       }
     },
     {

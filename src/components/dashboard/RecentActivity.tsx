@@ -7,7 +7,12 @@ import { Card } from '../ui'
 export default function RecentActivity({ limit = 8 }: { limit?: number }) {
   const { activity } = useProgress()
   const recent = [...activity].reverse().slice(0, limit)
-  if (!recent.length) return <p className="text-sm text-muted">Chưa có hoạt động nào.</p>
+  if (!recent.length)
+    return (
+      <Card className="p-8 text-center text-xs text-muted">
+        Chưa có hoạt động nào hôm nay. Hãy bắt đầu một phiên học thẻ hoặc làm bài trắc nghiệm nhé!
+      </Card>
+    )
   return (
     <Card className="divide-y divide-line">
       {recent.map((a, i) => {

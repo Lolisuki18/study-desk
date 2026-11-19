@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-bg: #f8fafc;
   --color-card: #ffffff;
@@ -20,11 +22,67 @@ body,
 }
 
 body {
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Mobile / touch
+   --------------------------------------------------------------------------------------------- */
+:root {
+  /* height of the fixed bottom navigation (icons + labels) plus the iPhone home-indicator area */
+  --bottom-nav-h: calc(3.75rem + env(safe-area-inset-bottom, 0px));
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* no 300ms delay / double-tap zoom on controls; pull-to-refresh and rubber-banding do not fire in the middle of a card */
+button,
+a,
+[role="button"],
+summary,
+label {
+  touch-action: manipulation;
+}
+body {
+  overscroll-behavior-y: none;
+}
+
+@layer base {
+  @media (max-width: 767px) {
+    /* comfortable thumb targets; explicit h-* utilities still win because they are in a later layer */
+    main button,
+    main select,
+    main summary,
+    main a.inline-flex,
+    main a[class*="rounded-xl"],
+    main a[class*="rounded-lg"] {
+      min-height: 2.5rem;
+    }
+    main input[type="checkbox"],
+    main input[type="radio"] {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    main input[type="range"] {
+      min-height: 2rem;
+    }
+  }
+}
+
+/* iOS Safari zooms the page when a field under 16px gets focus */
+@media (max-width: 767px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
 }
 
 /* 3D Flip Scene Styling with depth & spring feel */
@@ -66,113 +124,122 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------------------
-   Dark theme. `html.dark` is set by src/services/theme.ts.
-   Components keep their light classes: the palette variables are remapped here instead, so a
-   soft tint such as bg-emerald-50 becomes a translucent green and slate text becomes light.
-   Mid tones (500/600 backgrounds with white text) are left alone; where one shade is used both
-   as a button background and as text, only the text utility is overridden.
-   Screen only, so printing always uses the light palette.
+   Dark theme clean support
    --------------------------------------------------------------------------------------------- */
-@media screen {
-  html.dark {
-    color-scheme: dark;
-    --color-bg: #0b1120;
-    --color-card: #141c2e;
-    --color-ink: #e6eaf2;
-    --color-muted: #94a3b8;
-    --color-line: #26324a;
-    --color-primary-light: rgb(99 102 241 / 0.16);
+html.dark {
+  color-scheme: dark;
+  --color-bg: #0b1120;
+  --color-card: #141c2e;
+  --color-ink: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-line: #1e293b;
+}
 
-    --color-slate-50: #1a2438;
-    --color-slate-100: #212c43;
-    --color-slate-200: #2c3954;
-    --color-slate-300: #3d4b69;
-    --color-slate-400: #7f8da6;
-    --color-slate-500: #96a3b9;
-    --color-slate-600: #b3bfd1;
-    --color-slate-700: #cdd6e3;
+html.dark body {
+  background-color: #0b1120;
+  color: #f8fafc;
+}
 
-    --color-emerald-50: rgb(16 185 129 / 0.13);
-    --color-emerald-100: rgb(16 185 129 / 0.22);
-    --color-emerald-200: #14573f;
-    --color-emerald-300: rgb(52 211 153 / 0.5);
-    --color-emerald-800: #a7f3d0;
-    --color-emerald-900: #d1fae5;
-    --color-rose-50: rgb(244 63 94 / 0.13);
-    --color-rose-100: rgb(244 63 94 / 0.22);
-    --color-rose-200: rgb(244 63 94 / 0.38);
-    --color-rose-300: rgb(251 113 133 / 0.55);
-    --color-amber-50: rgb(245 158 11 / 0.12);
-    --color-amber-100: rgb(245 158 11 / 0.22);
-    --color-amber-200: rgb(245 158 11 / 0.36);
-    --color-amber-300: rgb(251 191 36 / 0.55);
-    --color-amber-800: #fcd34d;
-    --color-amber-900: #fde68a;
-    --color-indigo-50: rgb(99 102 241 / 0.15);
-    --color-indigo-100: rgb(99 102 241 / 0.26);
-    --color-indigo-200: rgb(129 140 248 / 0.4);
-    --color-indigo-300: rgb(129 140 248 / 0.6);
-    --color-indigo-900: #e0e7ff;
-    --color-sky-50: rgb(14 165 233 / 0.13);
-    --color-sky-100: rgb(14 165 233 / 0.22);
-    --color-sky-200: rgb(14 165 233 / 0.38);
-    --color-sky-800: #bae6fd;
-    --color-blue-50: rgb(59 130 246 / 0.14);
-    --color-blue-100: rgb(59 130 246 / 0.28);
-    --color-violet-100: rgb(139 92 246 / 0.24);
-    --color-teal-100: rgb(20 184 166 / 0.22);
-  }
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
 
-  .dark .bg-white {
-    background-color: var(--color-card);
-  }
-  /* near-black surfaces carry white text: turn them into the accent colour instead of inverting them */
-  .dark .bg-ink,
-  .dark .bg-slate-900 {
-    background-color: #5458e6;
-  }
-  .dark .bg-ink.border-ink,
-  .dark .border-slate-900 {
-    border-color: #5458e6;
-  }
-  .dark .text-slate-800,
-  .dark .text-slate-900 {
-    color: #e6eaf2;
-  }
-  .dark .text-emerald-600,
-  .dark .text-emerald-700 {
-    color: #6ee7b7;
-  }
-  .dark .text-rose-600,
-  .dark .text-rose-700,
-  .dark .hover\:text-rose-700:hover {
-    color: #fda4af;
-  }
-  .dark .text-amber-600,
-  .dark .text-amber-700,
-  .dark .hover\:text-amber-700:hover {
-    color: #fcd34d;
-  }
-  .dark .text-indigo-500,
-  .dark .text-indigo-600,
-  .dark .text-indigo-700,
-  .dark .hover\:text-indigo-700:hover,
-  .dark .group:hover .group-hover\:text-indigo-600 {
-    color: #a5b4fc;
-  }
-  .dark .text-sky-700,
-  .dark .text-blue-600,
-  .dark .text-blue-700 {
-    color: #7dd3fc;
-  }
-  .dark .text-violet-700 {
-    color: #c4b5fd;
-  }
-  .dark .text-teal-700 {
-    color: #5eead4;
-  }
-  .dark ::-webkit-scrollbar-thumb {
-    background: #3d4b69;
+/* ---------------------------------------------------------------------------------------------
+   Accent colours: the UI is written with the indigo scale; choosing another accent in Settings remaps
+   that scale (and the "primary" token), so every button / badge / ring follows. Default = indigo.
+   --------------------------------------------------------------------------------------------- */
+html[data-accent="violet"] {
+  --color-indigo-50: #f5f3ff;
+  --color-indigo-100: #ede9fe;
+  --color-indigo-200: #ddd6fe;
+  --color-indigo-300: #c4b5fd;
+  --color-indigo-400: #a78bfa;
+  --color-indigo-500: #8b5cf6;
+  --color-indigo-600: #7c3aed;
+  --color-indigo-700: #6d28d9;
+  --color-indigo-800: #5b21b6;
+  --color-indigo-900: #4c1d95;
+  --color-indigo-950: #2e1065;
+  --color-primary: #7c3aed;
+  --color-primary-light: #f5f3ff;
+}
+html[data-accent="sky"] {
+  --color-indigo-50: #f0f9ff;
+  --color-indigo-100: #e0f2fe;
+  --color-indigo-200: #bae6fd;
+  --color-indigo-300: #7dd3fc;
+  --color-indigo-400: #38bdf8;
+  --color-indigo-500: #0ea5e9;
+  --color-indigo-600: #0284c7;
+  --color-indigo-700: #0369a1;
+  --color-indigo-800: #075985;
+  --color-indigo-900: #0c4a6e;
+  --color-indigo-950: #082f49;
+  --color-primary: #0284c7;
+  --color-primary-light: #f0f9ff;
+}
+html[data-accent="teal"] {
+  --color-indigo-50: #f0fdfa;
+  --color-indigo-100: #ccfbf1;
+  --color-indigo-200: #99f6e4;
+  --color-indigo-300: #5eead4;
+  --color-indigo-400: #2dd4bf;
+  --color-indigo-500: #14b8a6;
+  --color-indigo-600: #0d9488;
+  --color-indigo-700: #0f766e;
+  --color-indigo-800: #115e59;
+  --color-indigo-900: #134e4a;
+  --color-indigo-950: #042f2e;
+  --color-primary: #0d9488;
+  --color-primary-light: #f0fdfa;
+}
+html[data-accent="pink"] {
+  --color-indigo-50: #fdf2f8;
+  --color-indigo-100: #fce7f3;
+  --color-indigo-200: #fbcfe8;
+  --color-indigo-300: #f9a8d4;
+  --color-indigo-400: #f472b6;
+  --color-indigo-500: #ec4899;
+  --color-indigo-600: #db2777;
+  --color-indigo-700: #be185d;
+  --color-indigo-800: #9d174d;
+  --color-indigo-900: #831843;
+  --color-indigo-950: #500724;
+  --color-primary: #db2777;
+  --color-primary-light: #fdf2f8;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Polish: visible keyboard focus, accent-tinted selection and page glow, respect reduced motion
+   --------------------------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--color-indigo-500);
+  outline-offset: 2px;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-offset: 0;
+}
+::selection {
+  background: color-mix(in srgb, var(--color-indigo-500) 28%, transparent);
+}
+body {
+  background-image: radial-gradient(1100px 480px at 88% -8%, color-mix(in srgb, var(--color-indigo-500) 7%, transparent), transparent 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html.dark body {
+  background-image: radial-gradient(1100px 480px at 88% -8%, color-mix(in srgb, var(--color-indigo-500) 13%, transparent), transparent 70%);
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
@@ -183,5 +250,6 @@ body {
   #root {
     height: auto;
     background: #fff;
+    background-image: none;
   }
 }

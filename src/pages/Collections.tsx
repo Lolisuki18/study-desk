@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
-import { BookOpen, Library, Search, Sparkles, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { BookOpen, Library, Search, Sparkles, Upload, X } from 'lucide-react'
 import { collections } from '../data'
 import CollectionCard, { CollectionsBySubject } from '../components/dashboard/CollectionCard'
 import { Button, Card, Empty, PageHeader } from '../components/ui'
@@ -39,22 +40,29 @@ export default function Collections() {
         title="Bộ học của tôi"
         subtitle={`Quản lý và ôn luyện ${collections.length} bộ học (${totalItems} câu hỏi / mục kiến thức)`}
         actions={
-          <div className="relative">
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
-            <input
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder="Tìm theo tên, môn, mô tả…"
-              className="w-64 rounded-xl border border-line bg-card pl-9 pr-8 py-2 text-sm outline-none transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/10"
-            />
-            {q && (
-              <button
-                onClick={() => setQ('')}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded p-0.5 text-muted hover:text-ink"
-              >
-                <X size={14} />
-              </button>
-            )}
+          <div className="flex items-center gap-2.5">
+            <div className="relative">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Tìm theo tên, môn, mô tả…"
+                className="w-44 sm:w-60 rounded-xl border border-line bg-card pl-9 pr-8 py-2 text-xs sm:text-sm outline-none transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/10"
+              />
+              {q && (
+                <button
+                  onClick={() => setQ('')}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded p-0.5 text-muted hover:text-ink cursor-pointer"
+                >
+                  <X size={14} />
+                </button>
+              )}
+            </div>
+            <Link to="/import">
+              <Button variant="primary" className="py-2 px-3.5 text-xs font-bold shrink-0 cursor-pointer">
+                <Upload size={14} /> Tải lên JSON
+              </Button>
+            </Link>
           </div>
         }
       />
@@ -66,8 +74,8 @@ export default function Collections() {
           className={cx(
             'rounded-xl px-3.5 py-1.5 text-xs font-semibold transition-all duration-150 cursor-pointer',
             selectedSubject === 'all'
-              ? 'bg-slate-900 text-white shadow-xs'
-              : 'border border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50',
+              ? 'bg-indigo-600 text-white shadow-xs'
+              : 'border border-slate-200 dark:border-line bg-white dark:bg-card text-slate-600 dark:text-muted hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800',
           )}
         >
           Tất cả môn ({collections.length})
@@ -84,7 +92,7 @@ export default function Collections() {
                 'rounded-xl px-3.5 py-1.5 text-xs font-semibold transition-all duration-150 cursor-pointer',
                 active
                   ? 'bg-indigo-600 text-white shadow-xs'
-                  : 'border border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:text-indigo-700',
+                  : 'border border-slate-200 dark:border-line bg-white dark:bg-card text-slate-600 dark:text-muted hover:border-indigo-200 dark:hover:border-indigo-800 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/40 hover:text-indigo-700 dark:hover:text-indigo-300',
               )}
             >
               {sub} ({count})
@@ -111,10 +119,10 @@ export default function Collections() {
         )
       ) : (
         <Card className="p-12 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-500">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-muted">
             <Search size={22} />
           </div>
-          <h3 className="mt-3 text-base font-bold text-slate-900">Không tìm thấy bộ học nào</h3>
+          <h3 className="mt-3 text-base font-bold text-slate-900 dark:text-ink">Không tìm thấy bộ học nào</h3>
           <p className="mt-1 text-sm text-muted">
             Không có bộ học nào khớp với từ khoá "{q}" hoặc bộ lọc đang chọn.
           </p>

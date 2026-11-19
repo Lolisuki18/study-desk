@@ -19,13 +19,19 @@ export default function QuizPage() {
         <PageHeader title="Trắc nghiệm" subtitle="Chọn bộ học để làm bài" />
         <Link
           to="/exam"
-          className="mb-6 flex items-center justify-between rounded-2xl border border-indigo-200 bg-indigo-50/60 px-5 py-4 text-sm transition-colors hover:border-indigo-400"
+          className="mb-6 flex items-center justify-between rounded-2xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/70 dark:bg-indigo-950/40 px-5 py-4 text-sm transition-all hover:border-indigo-400 dark:hover:border-indigo-700 hover:shadow-xs group"
         >
           <span>
-            <span className="block font-bold text-indigo-900">Thi thử theo môn</span>
-            <span className="text-xs text-indigo-700">Đề trộn mọi chương theo tỉ lệ, tính giờ, chấm điểm theo chương</span>
+            <span className="block font-bold text-indigo-950 dark:text-indigo-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+              Thi thử theo môn
+            </span>
+            <span className="text-xs text-indigo-700/80 dark:text-indigo-400">
+              Đề trộn mọi chương theo tỉ lệ, tính giờ, chấm điểm theo chương
+            </span>
           </span>
-          <span className="font-semibold text-indigo-700">Vào thi →</span>
+          <span className="font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition-transform">
+            Vào thi →
+          </span>
         </Link>
         <CollectionPicker base="/quiz" />
       </div>

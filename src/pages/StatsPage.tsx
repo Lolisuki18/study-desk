@@ -1,16 +1,19 @@
 import { useMemo } from 'react'
+import AppIcon from '../components/ui/AppIcon'
+import { Medal, Check } from 'lucide-react'
 import { collections } from '../data'
 import { collectionStats, useProgress } from '../features/learning/ProgressContext'
 import { accuracyByCollection, addDays, dailyActivity, dueForecast, fmtMinutes, streaks, studyMinutesByDay } from '../services/stats'
 import { pomodoroLog } from '../services/pomodoro'
 import { loadSettings } from '../services/storage/settings'
+import { computeBadges } from '../services/badges'
 import RecentActivity from '../components/dashboard/RecentActivity'
 import ExamHistory from '../components/quiz/ExamHistory'
 import { Card, PageHeader, ProgressBar, Stat } from '../components/ui'
 import { cx, dayKey, pct } from '../utils'
 
 const WEEKS = 18
-const heat = (n: number) => (n === 0 ? 'bg-slate-100' : n < 10 ? 'bg-emerald-200' : n < 30 ? 'bg-emerald-400' : 'bg-emerald-600')
+const heat = (n: number) => (n === 0 ? 'bg-slate-100 dark:bg-slate-800' : n < 10 ? 'bg-emerald-200 dark:bg-emerald-900/60' : n < 30 ? 'bg-emerald-400 dark:bg-emerald-700' : 'bg-emerald-600 dark:bg-emerald-500')
 
 export default function StatsPage() {
   const { summary, progress, activity, exams } = useProgress()
@@ -50,6 +53,20 @@ export default function StatsPage() {
   })
   const maxDue = Math.max(1, ...forecast)
 
+  const badges = useMemo(
+    () =>
+      computeBadges({
+        progress,
+        activity,
+        exams,
+        longestStreak: streak.longest,
+        studiedCount: summary.studied,
+        masteredCount: summary.mastered,
+      }),
+    [progress, activity, exams, streak.longest, summary.studied, summary.mastered],
+  )
+  const unlockedBadges = badges.filter((b) => b.unlocked).length
+
   return (
     <div>
       <PageHeader title="Thống kê" />
@@ -62,6 +79,52 @@ export default function StatsPage() {
         <Stat label="Chuỗi dài nhất" value={streak.longest} hint="ngày" />
         <Stat label="Số ngày đã học" value={byDay.size} />
         <Stat label="Ngày đạt mục tiêu" value={goalDays} hint={`mục tiêu ${goal} câu/ngày`} />
+      </div>
+
+      {/* Huy hiệu & Cột mốc */}
+      <div className="mb-3 mt-8 flex items-center justify-between">
+        <h2 className="text-lg font-semibold flex items-center gap-2">
+          <Medal size={18} className="text-amber-500" />
+          <span>Huy hiệu & Cột mốc học tập</span>
+          <span className="rounded-full bg-amber-100 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-800 px-2 py-0.5 text-xs font-bold text-amber-700 dark:text-amber-300">
+            {unlockedBadges}/{badges.length} đã mở khóa
+          </span>
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+        {badges.map((b) => (
+          <Card
+            key={b.id}
+            className={cx(
+              'p-4 transition-all relative overflow-hidden',
+              b.unlocked
+                ? 'border-amber-300/80 dark:border-amber-700/60 bg-gradient-to-br from-amber-50/50 via-card to-card dark:from-amber-950/20 shadow-xs'
+                : 'opacity-70 border-line bg-card/60',
+            )}
+          >
+            <div className="flex items-start gap-3">
+              <span className={cx('shrink-0 rounded-2xl p-2.5', b.unlocked ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/40 dark:text-amber-400' : 'bg-slate-100 text-slate-400 dark:bg-slate-800 dark:text-slate-500')}>
+                <AppIcon name={b.icon} size={22} />
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-1.5">
+                  <span className={cx('font-bold text-xs sm:text-sm', b.unlocked ? 'text-amber-900 dark:text-amber-200' : 'text-ink')}>
+                    {b.title}
+                  </span>
+                  {b.unlocked && <Check size={13} className="text-amber-600 dark:text-amber-400" />}
+                </div>
+                <p className="mt-0.5 text-[11px] text-muted leading-snug">{b.desc}</p>
+                <div className="mt-2.5">
+                  <div className="flex justify-between text-[10px] text-muted mb-1 font-semibold">
+                    <span>{b.unlocked ? 'Hoàn thành' : 'Tiến độ'}</span>
+                    <span className="font-mono">{b.progressText}</span>
+                  </div>
+                  <ProgressBar value={b.progressPct} className="h-1.5" />
+                </div>
+              </div>
+            </div>
+          </Card>
+        ))}
       </div>
 
       <h2 className="mb-3 mt-8 text-lg font-semibold">Hoạt động 7 ngày</h2>
