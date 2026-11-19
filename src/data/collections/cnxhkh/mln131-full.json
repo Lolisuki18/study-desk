@@ -7530,10 +7530,17 @@
             "text": "Là những quy luật, tính quy luật chính trị - xã hội của quá trình phát sinh, hình thành và phát triển của hình thái kinh tế - xã hội tư bản chủ nghĩa và cộng sản chủ nghĩa"
           }
         ],
-        "answer": "B"
+        "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 258"
+        "ref": "MLN131 Full câu 258",
+        "sourceAnswer": "B",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ B (\"…hình thái kinh tế - xã hội xã hội chủ nghĩa\") thành A (\"…cộng sản chủ nghĩa\"). Theo giáo trình, đối tượng nghiên cứu của CNXH khoa học là những quy luật, tính quy luật chính trị - xã hội của quá trình phát sinh, hình thành và phát triển của hình thái kinh tế - xã hội cộng sản chủ nghĩa; bộ Ngân hàng bổ sung MLN131 (câu 118) cũng chọn A. Đáp án gốc của file (B) lưu trong source.sourceAnswer.",
+        "confidence": "verified",
+        "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT), Chương 1; Ngân hàng bổ sung MLN131 câu 118"
       }
     },
     {

@@ -1,14 +1,26 @@
 {
  "129": {
-  "answerIndex": [2],
+  "answerIndex": [
+   2
+  ],
   "note": "Đáp án đã được sửa từ \"Thống trị\" (D) thành \"Công nhân\" (C). Cùng đề với câu 127 trong chính file này (đáp án \"Công nhân\") và theo giáo trình: giai cấp công nhân là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất hiện đại. Đáp án gốc của file (D) được lưu trong source.sourceAnswer.",
   "confidence": "verified",
   "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT): sứ mệnh lịch sử của giai cấp công nhân; câu 127 của cùng file"
  },
  "253": {
-  "removeOptionIndexes": [1],
+  "removeOptionIndexes": [
+   1
+  ],
   "note": "Trong file gốc, phương án B và C giống hệt nhau (\"Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa\"; đáp án là C). Đã bỏ phương án trùng B để không có hai lựa chọn cùng nội dung; các phương án sau được đánh lại chữ cái. Văn kiện Đại hội XI: phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa. Phương án bị bỏ được lưu trong source.removedOptions.",
   "confidence": "verified",
   "reference": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH (bổ sung, phát triển 2011); Văn kiện Đại hội XI"
+ },
+ "258": {
+  "answerIndex": [
+   0
+  ],
+  "note": "Đáp án đã sửa từ B (\"…hình thái kinh tế - xã hội xã hội chủ nghĩa\") thành A (\"…cộng sản chủ nghĩa\"). Theo giáo trình, đối tượng nghiên cứu của CNXH khoa học là những quy luật, tính quy luật chính trị - xã hội của quá trình phát sinh, hình thành và phát triển của hình thái kinh tế - xã hội cộng sản chủ nghĩa; bộ Ngân hàng bổ sung MLN131 (câu 118) cũng chọn A. Đáp án gốc của file (B) lưu trong source.sourceAnswer.",
+  "confidence": "verified",
+  "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT), Chương 1; Ngân hàng bổ sung MLN131 câu 118"
  }
 }
