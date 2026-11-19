@@ -131,7 +131,7 @@ export default function SearchPage() {
           )}
         >
           <Star size={13} className={cx(filterType === 'starred' && 'fill-white')} />
-          <span>⭐ Đã gắn sao (Ôn tủ)</span>
+          <span>Đã gắn sao (Ôn tủ)</span>
         </button>
         <button
           onClick={() => setFilterType(filterType === 'explanation' ? 'all' : 'explanation')}
@@ -225,7 +225,7 @@ export default function SearchPage() {
           </div>
           <h3 className="text-base font-bold text-ink">Bắt đầu tra cứu hoặc chọn bộ lọc</h3>
           <p className="mt-1 max-w-md mx-auto text-xs text-muted leading-relaxed">
-            Nhập ít nhất 2 ký tự (hỗ trợ cả tiếng Việt không dấu và có dấu) hoặc bấm chọn nhanh bộ lọc phía trên (như <b>⭐ Đã gắn sao</b>) để xem danh sách câu hỏi.
+            Nhập ít nhất 2 ký tự (hỗ trợ cả tiếng Việt không dấu và có dấu) hoặc bấm chọn nhanh bộ lọc phía trên (như <b><Star size={12} className="inline -mt-0.5" /> Đã gắn sao</b>) để xem danh sách câu hỏi.
           </p>
         </Card>
       ) : results.length === 0 ? (

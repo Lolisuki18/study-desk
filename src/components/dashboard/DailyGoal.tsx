@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Flame, Play, Target } from 'lucide-react'
+import { Flame, Play, Target, PartyPopper } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { dailyActivity, streaks } from '../../services/stats'
 import { loadSettings, saveSettings } from '../../services/storage/settings'
@@ -57,7 +57,7 @@ export default function DailyGoal() {
               Đã học <b className="text-slate-900 dark:text-white font-bold">{done}</b> / {goal} câu, còn <b className="text-indigo-600 font-bold">{left}</b> câu nữa.
             </>
           ) : (
-            <span className="font-bold text-emerald-600 dark:text-emerald-400">Đã đạt mục tiêu hôm nay: {done} câu 🎉</span>
+            <span className="font-bold text-emerald-600 dark:text-emerald-400">Đã đạt mục tiêu hôm nay: {done} câu <PartyPopper size={15} className="ml-1 inline" /></span>
           )}
         </span>
         <Link

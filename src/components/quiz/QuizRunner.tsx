@@ -1,19 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import {
-  Award,
-  Check,
-  ChevronLeft,
-  ChevronRight,
-  Clock,
-  Flag,
-  LayoutGrid,
-  Maximize2,
-  Minimize2,
-  RotateCcw,
-  Sparkles,
-  Star,
-  X,
-} from 'lucide-react'
+import { Award, Check, ChevronLeft, ChevronRight, Clock, Flag, LayoutGrid, Maximize2, Minimize2, RotateCcw, Sparkles, Star, X, Turtle, Zap, AlertTriangle } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { isCorrect, itemResults, KIND_LABEL, type Answer, type Question } from '../../services/quiz/generate'
 import { Button, Card, ConfirmDialog, Modal, ProgressBar } from '../ui'
@@ -463,14 +449,14 @@ export default function QuizRunner({
 
     const rankBadge =
       score10 >= 9
-        ? { label: 'Xuất sắc 🏆', cls: 'bg-emerald-50 text-emerald-700 border-emerald-300' }
+        ? { label: 'Xuất sắc', cls: 'bg-emerald-50 text-emerald-700 border-emerald-300' }
         : score10 >= 8
-        ? { label: 'Giỏi 🌟', cls: 'bg-emerald-50 text-emerald-700 border-emerald-300' }
+        ? { label: 'Giỏi', cls: 'bg-emerald-50 text-emerald-700 border-emerald-300' }
         : score10 >= 6.5
-        ? { label: 'Khá 👏', cls: 'bg-indigo-50 text-indigo-700 border-indigo-300' }
+        ? { label: 'Khá', cls: 'bg-indigo-50 text-indigo-700 border-indigo-300' }
         : score10 >= 5
-        ? { label: 'Đạt yêu cầu 📚', cls: 'bg-amber-50 text-amber-700 border-amber-300' }
-        : { label: 'Cần ôn thêm 💪', cls: 'bg-rose-50 text-rose-700 border-rose-300' }
+        ? { label: 'Đạt yêu cầu', cls: 'bg-amber-50 text-amber-700 border-amber-300' }
+        : { label: 'Cần ôn thêm', cls: 'bg-rose-50 text-rose-700 border-rose-300' }
 
     return (
       <div className="mx-auto max-w-3xl py-2">
@@ -516,12 +502,12 @@ export default function QuizRunner({
               </span>
               {slowQuestions.length > 0 && (
                 <span className="inline-flex items-center gap-1 rounded-xl border border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 font-semibold text-amber-700 dark:text-amber-300">
-                  <span>🐢 {slowQuestions.length} câu mất &gt;45s</span>
+                  <span className="inline-flex items-center gap-1"><Turtle size={14} /> {slowQuestions.length} câu mất &gt;45s</span>
                 </span>
               )}
               {fastQuestions.length > 0 && (
                 <span className="inline-flex items-center gap-1 rounded-xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1 font-semibold text-emerald-700 dark:text-emerald-300">
-                  <span>⚡ {fastQuestions.length} câu làm nhanh (&le;5s)</span>
+                  <span className="inline-flex items-center gap-1"><Zap size={14} /> {fastQuestions.length} câu làm nhanh (&le;5s)</span>
                 </span>
               )}
             </div>
@@ -818,7 +804,7 @@ export default function QuizRunner({
           {locked && (
             <div className={cx('mt-6 rounded-2xl p-4 sm:p-5 text-sm', ok ? 'bg-emerald-50 dark:bg-emerald-950/40' : 'bg-rose-50 dark:bg-rose-950/40')}>
               <div className={cx('font-bold text-base', ok ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300')}>
-                {ok ? 'Chính xác! 🎉' : 'Chưa đúng'}
+                {ok ? 'Chính xác!' : 'Chưa đúng'}
               </div>
               {!ok && <div className="mt-2 whitespace-pre-line text-slate-800 dark:text-slate-100 font-semibold">Đáp án đúng: {correctText(q)}</div>}
               {(q.explanation || !q.enrichment) && (
@@ -920,7 +906,7 @@ export default function QuizRunner({
             {questions.length - answeredCount > 0 && (
               <div className="rounded-2xl border border-rose-200 dark:border-rose-900/60 bg-rose-50/40 dark:bg-rose-950/20 p-3.5 space-y-2">
                 <div className="text-xs font-bold text-rose-700 dark:text-rose-400">
-                  ⚠️ Câu chưa trả lời (bấm để xem ngay):
+                  <AlertTriangle size={14} className="mr-1 inline" /> Câu chưa trả lời (bấm để xem ngay):
                 </div>
                 <div className="flex flex-wrap gap-1.5 max-h-24 overflow-y-auto">
                   {questions.map((item, idx) => {

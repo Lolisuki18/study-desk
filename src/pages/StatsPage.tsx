@@ -1,4 +1,6 @@
 import { useMemo } from 'react'
+import AppIcon from '../components/ui/AppIcon'
+import { Medal, Check } from 'lucide-react'
 import { collections } from '../data'
 import { collectionStats, useProgress } from '../features/learning/ProgressContext'
 import { accuracyByCollection, addDays, dailyActivity, dueForecast, fmtMinutes, streaks, studyMinutesByDay } from '../services/stats'
@@ -82,7 +84,8 @@ export default function StatsPage() {
       {/* Huy hiệu & Cột mốc */}
       <div className="mb-3 mt-8 flex items-center justify-between">
         <h2 className="text-lg font-semibold flex items-center gap-2">
-          <span>🎖️ Huy hiệu & Cột mốc học tập</span>
+          <Medal size={18} className="text-amber-500" />
+          <span>Huy hiệu & Cột mốc học tập</span>
           <span className="rounded-full bg-amber-100 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-800 px-2 py-0.5 text-xs font-bold text-amber-700 dark:text-amber-300">
             {unlockedBadges}/{badges.length} đã mở khóa
           </span>
@@ -100,15 +103,15 @@ export default function StatsPage() {
             )}
           >
             <div className="flex items-start gap-3">
-              <span className={cx('text-2xl shrink-0 p-2 rounded-2xl', b.unlocked ? 'bg-amber-100 dark:bg-amber-900/40' : 'bg-slate-100 dark:bg-slate-800')}>
-                {b.icon}
+              <span className={cx('shrink-0 rounded-2xl p-2.5', b.unlocked ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/40 dark:text-amber-400' : 'bg-slate-100 text-slate-400 dark:bg-slate-800 dark:text-slate-500')}>
+                <AppIcon name={b.icon} size={22} />
               </span>
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-1.5">
                   <span className={cx('font-bold text-xs sm:text-sm', b.unlocked ? 'text-amber-900 dark:text-amber-200' : 'text-ink')}>
                     {b.title}
                   </span>
-                  {b.unlocked && <span className="text-[10px] text-amber-600 dark:text-amber-400 font-bold">✓</span>}
+                  {b.unlocked && <Check size={13} className="text-amber-600 dark:text-amber-400" />}
                 </div>
                 <p className="mt-0.5 text-[11px] text-muted leading-snug">{b.desc}</p>
                 <div className="mt-2.5">

@@ -1,12 +1,12 @@
 import { useRef, useState } from 'react'
-import { AlertTriangle, CheckCircle2, Download, Trash2, Upload, Volume2 } from 'lucide-react'
+import { AlertTriangle, CheckCircle2, Download, Trash2, Upload, Volume2, Check, X, RefreshCw, Bell, PartyPopper } from 'lucide-react'
 import { loadReports } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
 import { loadSettings, saveSettings } from '../services/storage/settings'
 import { disableAutoBackup, enableAutoBackup, grantAutoBackup, markBackedUp, useAutoBackup } from '../services/storage/autoBackup'
 import { pomodoro } from '../services/pomodoro'
-import { applyTheme } from '../services/theme'
-import type { BackupFile, Theme } from '../types'
+import { ACCENTS, applyAccent, applyTheme } from '../services/theme'
+import type { Accent, BackupFile, Theme } from '../types'
 import { Button, Card, ConfirmDialog, PageHeader, useToast } from '../components/ui'
 import { isSoundEnabled, setSoundEnabled, getSoundVolume, setSoundVolume, playSound } from '../utils/sound'
 
@@ -150,37 +150,37 @@ export default function SettingsPage() {
                     <button
                       type="button"
                       onClick={() => playSound('correct')}
-                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:border-emerald-300 cursor-pointer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:border-emerald-300 cursor-pointer"
                     >
-                      ✓ Đúng
+                      <Check size={13} /> Đúng
                     </button>
                     <button
                       type="button"
                       onClick={() => playSound('wrong')}
-                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-rose-600 dark:text-rose-400 hover:border-rose-300 cursor-pointer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-rose-600 dark:text-rose-400 hover:border-rose-300 cursor-pointer"
                     >
-                      ✕ Sai
+                      <X size={13} /> Sai
                     </button>
                     <button
                       type="button"
                       onClick={() => playSound('flip')}
-                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:border-indigo-300 cursor-pointer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:border-indigo-300 cursor-pointer"
                     >
-                      🔄 Lật thẻ
+                      <RefreshCw size={13} /> Lật thẻ
                     </button>
                     <button
                       type="button"
                       onClick={() => playSound('bell')}
-                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-amber-600 dark:text-amber-400 hover:border-amber-300 cursor-pointer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-amber-600 dark:text-amber-400 hover:border-amber-300 cursor-pointer"
                     >
-                      🔔 Chuông
+                      <Bell size={13} /> Chuông
                     </button>
                     <button
                       type="button"
                       onClick={() => playSound('fanfare')}
-                      className="rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-purple-600 dark:text-purple-400 hover:border-purple-300 cursor-pointer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line bg-card px-2.5 py-1 text-xs font-semibold text-purple-600 dark:text-purple-400 hover:border-purple-300 cursor-pointer"
                     >
-                      🎉 Hoàn thành
+                      <PartyPopper size={13} /> Hoàn thành
                     </button>
                   </div>
                 </div>
@@ -215,6 +215,34 @@ export default function SettingsPage() {
               <option value="dark">Chế độ tối (Dark mode)</option>
               <option value="system">Theo hệ thống</option>
             </select>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-3 p-4 text-sm font-medium">
+            <span>Màu chủ đạo</span>
+            <div className="flex items-center gap-2.5" role="radiogroup" aria-label="Màu chủ đạo">
+              {ACCENTS.map((a) => {
+                const active = (settings.accent ?? 'indigo') === a.id
+                return (
+                  <button
+                    key={a.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={active}
+                    aria-label={a.label}
+                    title={a.label}
+                    onClick={() => {
+                      update({ accent: a.id as Accent })
+                      applyAccent(a.id as Accent)
+                    }}
+                    style={{ backgroundColor: a.swatch }}
+                    className={
+                      'h-8 w-8 cursor-pointer rounded-full border-2 border-white shadow-sm transition-transform hover:scale-110 dark:border-slate-900 ' +
+                      (active ? 'ring-2 ring-offset-2 ring-offset-card ring-slate-900 dark:ring-white' : 'ring-1 ring-slate-200 dark:ring-slate-700')
+                    }
+                  />
+                )
+              })}
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-2 p-4 text-sm font-medium">

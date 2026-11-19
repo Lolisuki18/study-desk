@@ -1,21 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {
-  ArrowRight,
-  BookOpen,
-  CalendarCheck2,
-  FileCheck2,
-  Layers,
-  LayoutDashboard,
-  Library,
-  ListChecks,
-  NotebookPen,
-  RefreshCw,
-  Search,
-  Settings,
-  Sparkles,
-  X,
-} from 'lucide-react'
+import { ArrowRight, BookOpen, CalendarCheck2, FileCheck2, Layers, LayoutDashboard, Library, ListChecks, NotebookPen, RefreshCw, Search, Settings, Sparkles, X, ArrowUp, ArrowDown } from 'lucide-react'
 import { allEntries, collections, itemTitle } from '../../data'
 import { matcher, searchText } from '../../utils/search'
 import { cx } from '../../utils'
@@ -225,8 +210,8 @@ export default function CommandPalette({ open, onClose }: CommandPaletteProps) {
         <div className="flex items-center justify-between border-t border-line bg-slate-50/60 dark:bg-slate-900/60 px-4 py-2 text-[11px] text-muted">
           <div className="flex items-center gap-2">
             <span>Dùng</span>
-            <kbd className="rounded border border-line bg-card px-1.5 py-0.5 font-mono text-[10px]">↑</kbd>
-            <kbd className="rounded border border-line bg-card px-1.5 py-0.5 font-mono text-[10px]">↓</kbd>
+            <kbd className="rounded border border-line bg-card px-1.5 py-0.5 font-mono text-[10px]"><ArrowUp size={10} /></kbd>
+            <kbd className="rounded border border-line bg-card px-1.5 py-0.5 font-mono text-[10px]"><ArrowDown size={10} /></kbd>
             <span>để chọn</span>
           </div>
           <div className="flex items-center gap-2">

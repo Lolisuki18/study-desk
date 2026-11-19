@@ -1,22 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {
-  AlertCircle,
-  ArrowRight,
-  BookOpen,
-  Check,
-  CheckCircle2,
-  Copy,
-  Download,
-  FileCode,
-  FileJson,
-  Layers,
-  ListChecks,
-  Plus,
-  Trash2,
-  Upload,
-  UploadCloud,
-} from 'lucide-react'
+import { AlertCircle, ArrowRight, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb } from 'lucide-react'
 import type { Collection } from '../types'
 import { validateCollection } from '../utils/validate'
 import { refreshDataCollections } from '../data'
@@ -344,7 +328,7 @@ export default function ImportPage() {
 
             {/* Quick Schema Guide */}
             <div className="rounded-2xl border border-line bg-slate-50/60 dark:bg-slate-900/40 p-4 text-xs space-y-2">
-              <div className="font-bold text-ink">💡 Hướng dẫn điền thông tin:</div>
+              <div className="flex items-center gap-1.5 font-bold text-ink"><Lightbulb size={14} className="text-amber-500" /> Hướng dẫn điền thông tin:</div>
               <ul className="space-y-1 text-muted leading-relaxed list-disc pl-5">
                 <li><b className="text-ink">id:</b> Mã định danh viết liền không dấu, duy nhất (VD: <code>triet-hoc-chuong-1</code>).</li>
                 <li><b className="text-ink">title & subject:</b> Tên hiển thị của bộ học và tên môn học để lọc.</li>

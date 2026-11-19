@@ -420,7 +420,7 @@ export default function ExamPage() {
                 { id: 'all', label: 'Tất cả câu hỏi', hint: 'Toàn bộ ngân hàng' },
                 { id: 'unseen', label: 'Chưa từng học', hint: 'Chưa làm lần nào' },
                 { id: 'weak', label: 'Câu còn yếu', hint: 'Hộp Leitner 1 & 2' },
-                { id: 'starred', label: 'Câu gắn sao ⭐', hint: 'Ôn tủ trọng tâm' },
+                { id: 'starred', label: 'Câu gắn sao', hint: 'Ôn tủ trọng tâm' },
               ].map((p) => {
                 const active = poolType === p.id
                 return (

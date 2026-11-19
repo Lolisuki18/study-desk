@@ -155,6 +155,8 @@ export interface Settings {
   /** mock-exam structure per subject */
   examPresets: Record<string, { count: number; minutes: number }>
   theme: Theme
+  /** accent colour of the interface (remaps the indigo scale, see src/index.css) */
+  accent?: Accent
   /** flashcards: a card answered wrong comes back later in the same session until it is answered right */
   learnUntilKnown: boolean
   /** Pomodoro lengths in minutes */
@@ -163,6 +165,7 @@ export interface Settings {
 }
 
 export type Theme = 'light' | 'dark' | 'system'
+export type Accent = 'indigo' | 'violet' | 'sky' | 'teal' | 'pink'
 
 export interface BackupFile {
   app: 'personal-study-hub'

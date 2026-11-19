@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
-import { ArrowLeft, Layers, ListChecks, NotebookPen, Printer, Target, Zap, Tag, Sparkles } from 'lucide-react'
+import AppIcon from '../components/ui/AppIcon'
+import { ArrowLeft, Layers, ListChecks, NotebookPen, Printer, Target, Zap, Tag, Sparkles, X } from 'lucide-react'
 import type { Entry } from '../types'
 import { allEntries, collections, itemTitle, progressKey } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
@@ -28,28 +29,28 @@ export const MISTAKE_TAGS: MistakeTag[] = [
     id: 'gap',
     label: 'Chưa học kỹ lý thuyết',
     shortLabel: 'Chưa học kỹ',
-    icon: '📖',
+    icon: 'book',
     pillClass: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/60 dark:text-blue-300 dark:border-blue-900',
   },
   {
     id: 'careless',
     label: 'Đọc ẩu / Nhầm đáp án',
     shortLabel: 'Đọc ẩu / Nhầm',
-    icon: '⚡',
+    icon: 'zap',
     pillClass: 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/60 dark:text-amber-300 dark:border-amber-900',
   },
   {
     id: 'timeline',
     label: 'Nhầm mốc thời gian / Số liệu',
     shortLabel: 'Mốc TG / Số liệu',
-    icon: '📅',
+    icon: 'calendar',
     pillClass: 'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-950/60 dark:text-purple-300 dark:border-purple-900',
   },
   {
     id: 'tricky',
     label: 'Câu hỏi bẫy / Khó hiểu',
     shortLabel: 'Câu bẫy / Khó',
-    icon: '❓',
+    icon: 'help',
     pillClass: 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:border-rose-900',
   },
 ]
@@ -350,7 +351,7 @@ export default function MistakesPage() {
                     : 'border border-line bg-card text-muted hover:border-slate-300 dark:hover:border-slate-700 hover:text-ink',
                 )}
               >
-                <span>{t.icon}</span>
+                <AppIcon name={t.icon} size={13} />
                 <span>{t.shortLabel}</span>
                 <span className="font-mono text-[10px] opacity-75">({count})</span>
               </button>
@@ -446,7 +447,7 @@ export default function MistakesPage() {
                       <div className="flex items-center gap-1.5">
                         {currentTag && (
                           <span className={cx('rounded-lg border px-2 py-0.5 text-[11px] font-bold shrink-0', currentTag.pillClass)}>
-                            {currentTag.icon} {currentTag.shortLabel}
+                            <AppIcon name={currentTag.icon} size={12} className="inline" /> {currentTag.shortLabel}
                           </span>
                         )}
                         <span className="rounded-lg bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 px-2 py-0.5 text-[11px] font-bold text-rose-600 dark:text-rose-400">
@@ -482,7 +483,7 @@ export default function MistakesPage() {
                                   )}
                                   title={t.label}
                                 >
-                                  <span>{t.icon}</span>
+                                  <AppIcon name={t.icon} size={13} />
                                   <span>{t.shortLabel}</span>
                                 </button>
                               )
@@ -497,7 +498,7 @@ export default function MistakesPage() {
                                 className="rounded-lg border border-line bg-card px-2 py-0.5 text-[11px] font-semibold text-muted hover:text-rose-500 cursor-pointer"
                                 title="Xóa nhãn"
                               >
-                                ✕ Bỏ nhãn
+                                <X size={12} className="inline" /> Bỏ nhãn
                               </button>
                             )}
                           </div>
@@ -545,7 +546,7 @@ export default function MistakesPage() {
                   </span>
                   {tagObj && (
                     <span className="font-bold text-amber-900 bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200">
-                      {tagObj.icon} {tagObj.label}
+                      <AppIcon name={tagObj.icon} size={13} className="inline" /> {tagObj.label}
                     </span>
                   )}
                 </div>

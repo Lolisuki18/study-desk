@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, CalendarClock, CheckCircle2, Layers, ListChecks, Play, Sparkles, XCircle } from 'lucide-react'
+import { ArrowLeft, CalendarClock, CheckCircle2, Layers, ListChecks, Play, Sparkles, XCircle, PartyPopper, Lightbulb } from 'lucide-react'
 import type { Entry } from '../types'
 import { allEntries } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
@@ -109,7 +109,7 @@ export default function TodayPage() {
             {goalLeft > 0 ? (
               <>Cần học thêm <b className="text-ink">{goalLeft}</b> câu để đạt chỉ tiêu hôm nay.</>
             ) : (
-              <span className="text-ok font-semibold">Đã hoàn thành mục tiêu ngày hôm nay 🎉</span>
+              <span className="text-ok font-semibold">Đã hoàn thành mục tiêu ngày hôm nay <PartyPopper size={15} className="ml-1 inline" /></span>
             )}
           </span>
           <Link to="/settings" className="font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
@@ -136,7 +136,7 @@ export default function TodayPage() {
 
       {backlog > 0 && (
         <p className="text-xs text-muted italic">
-          💡 Còn {backlog} thẻ cần ôn nữa được giữ lại cho phiên tiếp theo (mỗi phiên giới hạn tối đa {REVIEW_CAP} thẻ ôn để tránh quá tải não bộ).
+          <Lightbulb size={13} className="mr-1 inline text-amber-500" /> Còn {backlog} thẻ cần ôn nữa được giữ lại cho phiên tiếp theo (mỗi phiên giới hạn tối đa {REVIEW_CAP} thẻ ôn để tránh quá tải não bộ).
         </p>
       )}
 

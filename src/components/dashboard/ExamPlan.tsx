@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { CalendarDays, Target } from 'lucide-react'
+import { CalendarDays, Target, PartyPopper, X } from 'lucide-react'
 import { collections, progressKey } from '../../data'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { isMastered, reviewReasons } from '../../services/review/srs'
@@ -75,7 +75,7 @@ export default function ExamPlan() {
                   />
                   {dates[s] && (
                     <button onClick={() => setDate(s, '')} className="text-xs text-slate-400 hover:text-rose-600 cursor-pointer" title="Xoá ngày thi">
-                      ✕
+                      <X size={14} />
                     </button>
                   )}
                 </span>
@@ -108,7 +108,7 @@ export default function ExamPlan() {
                           Hôm nay cần học thêm <b className="text-sm font-black text-indigo-600 dark:text-indigo-400">{left}</b> câu.
                         </>
                       ) : (
-                        <span className="font-bold text-emerald-600 dark:text-emerald-400">Đã đủ chỉ tiêu hôm nay 🎉</span>
+                        <span className="font-bold text-emerald-600 dark:text-emerald-400">Đã đủ chỉ tiêu hôm nay <PartyPopper size={15} className="ml-1 inline" /></span>
                       )}
                     </div>
                     <ProgressBar value={r.perDay ? (r.doneToday / r.perDay) * 100 : 100} className="mt-2 h-2" />

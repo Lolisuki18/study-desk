@@ -1,28 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import {
-  ArrowLeftRight,
-  Bookmark,
-  Check,
-  ChevronLeft,
-  ChevronRight,
-  HelpCircle,
-  LayoutGrid,
-  Maximize2,
-  Minimize2,
-  PauseCircle,
-  PlayCircle,
-  Repeat,
-  RotateCcw,
-  RotateCw,
-  Shuffle,
-  Sparkles,
-  Star,
-  Type,
-  Volume1,
-  Volume2,
-  VolumeX,
-  X,
-} from 'lucide-react'
+import { ArrowLeftRight, Bookmark, Check, ChevronLeft, ChevronRight, HelpCircle, LayoutGrid, Maximize2, Minimize2, PauseCircle, PlayCircle, Repeat, RotateCcw, RotateCw, Shuffle, Sparkles, Star, Type, Volume1, Volume2, VolumeX, X, PartyPopper } from 'lucide-react'
 import type { Entry, Grade, Item, Status } from '../../types'
 import NoteBox from '../ui/NoteBox'
 import { useProgress } from '../../features/learning/ProgressContext'
@@ -354,16 +331,16 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     if (dt < 450) {
       if (Math.abs(dx) > 70 && Math.abs(dy) < 50) {
         if (dx > 0) {
-          setSwipeHint('Được ✓')
+          setSwipeHint('Được')
           setTimeout(() => setSwipeHint(null), 500)
           grade('good')
         } else {
-          setSwipeHint('Quên ✕')
+          setSwipeHint('Quên')
           setTimeout(() => setSwipeHint(null), 500)
           grade('again')
         }
       } else if (dy < -70 && Math.abs(dx) < 50) {
-        setSwipeHint('Dễ 🚀')
+        setSwipeHint('Dễ')
         setTimeout(() => setSwipeHint(null), 500)
         grade('easy')
       }
@@ -539,7 +516,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
       <div className="mx-auto w-full max-w-2xl py-4">
         {toolbar}
         <Card className="p-8 sm:p-12 text-center animate-in zoom-in-95 duration-200">
-          <div className="text-5xl animate-bounce">🎉</div>
+          <PartyPopper size={56} className="mx-auto animate-bounce text-amber-500" />
           <h2 className="mt-4 text-2xl font-extrabold text-ink">Hoàn thành xuất sắc!</h2>
           <p className="mt-2 text-sm text-muted max-w-md mx-auto leading-relaxed">
             Bạn đã hoàn thành toàn bộ {order.length - repeats} thẻ trong phiên học
@@ -569,7 +546,7 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     return (
       <div className="mx-auto w-full max-w-2xl">
         {toolbar}
-        <Empty>{mode === 'review' ? 'Tuyệt vời! Không còn mục nào cần ôn hôm nay 🎉' : 'Không có thẻ nào khớp bộ lọc này.'}</Empty>
+        <Empty>{mode === 'review' ? 'Tuyệt vời! Không còn mục nào cần ôn hôm nay' : 'Không có thẻ nào khớp bộ lọc này.'}</Empty>
       </div>
     )
 
