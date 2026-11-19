@@ -4,7 +4,7 @@
   "subject": "Lịch sử Đảng",
   "contentType": "multiple-choice",
   "standalone": true,
-  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 377 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
+  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 376 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
   "source": {
     "document": "VNR202 - Lịch sử Đảng Cộng sản Việt Nam (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-vnr202.json)",
     "note": "Câu hỏi, phương án và đáp án chép nguyên văn. Số câu là vị trí trong file gốc. Đối chiếu đáp án với các bộ đã có: docs/vnr202-full-doi-chieu.md"
@@ -6133,7 +6133,7 @@
       "id": "q-204",
       "type": "multiple-choice",
       "content": {
-        "question": "Chính trị pháp:",
+        "question": "Chính sách \"chia để trị\" của thực dân Pháp ở Việt Nam (chia Việt Nam thành ba kỳ với ba chế độ cai trị khác nhau) thuộc lĩnh vực nào?",
         "options": [
           {
             "key": "A",
@@ -6156,7 +6156,12 @@
       },
       "source": {
         "ref": "VNR202 Full câu 204",
+        "originalQuestion": "Chính tri pháp:",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn \"Chính trị pháp:\"), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề dựng từ bốn phương án là bốn lĩnh vực: chính sách chia để trị, chia ba kỳ là chính sách thống trị về chính trị của thực dân Pháp, nên đáp án Chính trị vẫn đúng.",
+        "confidence": "uncertain"
       }
     },
     {

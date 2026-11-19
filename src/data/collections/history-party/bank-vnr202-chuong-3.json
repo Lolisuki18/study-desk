@@ -2178,7 +2178,7 @@
       "id": "b-204",
       "type": "multiple-choice",
       "content": {
-        "question": "Chính trị pháp:",
+        "question": "Chính sách \"chia để trị\" của thực dân Pháp ở Việt Nam (chia Việt Nam thành ba kỳ với ba chế độ cai trị khác nhau) thuộc lĩnh vực nào?",
         "options": [
           {
             "key": "A",
@@ -2201,10 +2201,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 204",
+        "originalQuestion": "Chính tri pháp:",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Chính tri pháp:”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.",
+        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Chính tri pháp:”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn \"Chính trị pháp:\"), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề dựng từ bốn phương án là bốn lĩnh vực: chính sách chia để trị, chia ba kỳ là chính sách thống trị về chính trị của thực dân Pháp, nên đáp án Chính trị vẫn đúng.",
         "confidence": "uncertain"
       }
     },
