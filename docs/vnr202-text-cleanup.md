@@ -375,11 +375,13 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: Giương cao ngon cờ độc lập dân tộc và dân ch
 - sau:   Giương cao ngọn cờ độc lập dân tộc và dân chủ
 - trước: A. Giương cao ngon cờ độc lập dân tộc và dân chủ
-- sau:   A. Giương cao ngọn cờ độc lập dân tộc và dân chủ
+- sau:   A. Giương cao ngọn cờ độc lập dân tộc, kết hợp đúng đắn hai nhiệm vụ chống đế quốc và chống phong kiến
 - trước: B. Kiên đinh tư tưởng chiến lược tiến công quyết đánh và quyết thắng đế quốc Mỹ xâm lược
-- sau:   B. Kiên định tư tưởng chiến lược tiến công quyết đánh và quyết thắng đế quốc Mỹ xâm lược
+- sau:   B. Sử dụng lực lượng vũ trang áp đảo tiêu diệt kẻ thù
+- trước: C. Thực hiện chiến tranh nhân dân linh hoạt sáng tạo
+- sau:   C. Lợi dụng mâu thuẫn trong hàng ngũ kẻ thù
 - trước: D. Coi trong công tác tổ chức, công tác xây dựng Đản
-- sau:   D. Coi trong công tác tổ chức, công tác xây dựng Đảng
+- sau:   D. Nắm vững nghệ thuật khởi nghĩa, nghệ thuật chọn đúng thời cơ
 
 ## Câu 87
 - trước: Tại hội nghi nào, Ban Chấp hành Trung ương Đảng quyết đinh để nhân dân miền Nam sử dung bạo lực cách mạ ng đánh đổ chính quyền Mỹ - Diệ
@@ -993,7 +995,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 
 ## Câu 219
 - trước: D. Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở vật chất kỹ thuật của chủ nghĩa xã hội vật chất kỹ thuật của chủ nghĩa xã hội
-- sau:   D. Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở vật chất kỹ thuật của chủ nghĩa xã hội
+- sau:   D. Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở vật chất – kỹ thuật của chủ nghĩa xã hội
 
 ## Câu 220
 - trước: A. Cách mạng hai miền có mối quan hệ mật thiết với nhau và có tác dung thúc đẩy lẫn nhau

@@ -344,11 +344,11 @@
         "options": [
           {
             "key": "A",
-            "text": "Trong lĩnh vưc kinh tế và chính trị"
+            "text": "Trong lĩnh vực kinh tế và chính trị"
           },
           {
             "key": "B",
-            "text": "Trong lĩnh vưc văn hóa tinh thần và tư tưởng"
+            "text": "Trong lĩnh vực văn hóa tinh thần và tư tưởng"
           },
           {
             "key": "C",
@@ -364,7 +364,8 @@
       "source": {
         "ref": "Ngân hàng câu 73",
         "bankAnswer": "A",
-        "answerChangedToTextbook": true
+        "answerChangedToTextbook": true,
+        "textCleaned": true
       },
       "enrichment": {
         "text": "ĐÃ ĐỔI THEO GIÁO TRÌNH: giáo trình MLN131 viết hai lĩnh vực dân chủ “quan trọng hàng đầu và nổi bật nhất” là dân chủ trong kinh tế và dân chủ trong đời sống văn hóa – tinh thần, tư tưởng, nên đáp án là D. Ngân hàng câu hỏi gốc ghi A.",
@@ -559,7 +560,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Không ngừng mở rộng kiến trúc thượng tầng, nâng cao mức độ giải phóng cho những ngưòi lao động, thu hút họ tham gia tự giác vào công việc quản lý nhà nước, quản lý xã hội"
+            "text": "Không ngừng mở rộng kiến trúc thượng tầng, nâng cao mức độ giải phóng cho những người lao động, thu hút họ tham gia tự giác vào công việc quản lý nhà nước, quản lý xã hội"
           },
           {
             "key": "B",
@@ -1059,7 +1060,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Đồng nhât, có sự phân công và phối hợp giữa các cơ quan nhà nước"
+            "text": "Đồng nhất, có sự phân công và phối hợp giữa các cơ quan nhà nước"
           },
           {
             "key": "B",
@@ -1077,7 +1078,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 239"
+        "ref": "Ngân hàng câu 239",
+        "textCleaned": true
       }
     },
     {
@@ -1092,7 +1094,7 @@
           },
           {
             "key": "B",
-            "text": "Pham trù vĩnh viễn, tồn tại trong mọi chế độ xã hội"
+            "text": "Phạm trù vĩnh viễn, tồn tại trong mọi chế độ xã hội"
           },
           {
             "key": "C",
@@ -1100,13 +1102,14 @@
           },
           {
             "key": "D",
-            "text": "Pham trù lịch sử, mất đi khi nhà nước tiêu vong"
+            "text": "Phạm trù lịch sử, mất đi khi nhà nước tiêu vong"
           }
         ],
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 247"
+        "ref": "Ngân hàng câu 247",
+        "textCleaned": true
       }
     },
     {
@@ -1432,7 +1435,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Bản lĩnh kinh tế, phẩm chất đạo đức, nấng lưc lãnh đạo, điều hành quản lý đất nước"
+            "text": "Bản lĩnh kinh tế, phẩm chất đạo đức, năng lực lãnh đạo, điều hành quản lý đất nước"
           },
           {
             "key": "B",
@@ -1450,7 +1453,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 306"
+        "ref": "Ngân hàng câu 306",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 108): Cần nâng cao bản lĩnh chính trị, phẩm chất đạo đức, năng lực lãnh đạo, quản lý của cán bộ, công chức, kèm chính sách đãi ngộ, khuyến khích.",
@@ -1719,7 +1723,7 @@
       "id": "b-362",
       "type": "multiple-choice",
       "content": {
-        "question": "Dân chủ xã hội chủ nghĩa được xem là phôi thai tử thực tiễn đấu tranh giai cấp ở quốc gia nào?",
+        "question": "Dân chủ xã hội chủ nghĩa được xem là phôi thai từ thực tiễn đấu tranh giai cấp ở quốc gia nào?",
         "options": [
           {
             "key": "A",
@@ -1741,7 +1745,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 362"
+        "ref": "Ngân hàng câu 362",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 86): Dân chủ XHCN được phôi thai từ thực tiễn đấu tranh giai cấp ở Pháp và Công xã Pari năm 1871.",

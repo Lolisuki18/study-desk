@@ -9,8 +9,10 @@
   "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 145"
  },
  "45": {
-  "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-  "confidence": "uncertain"
+  "question": "Đoàn đại biểu miền Nam do ai dẫn đầu để hiệp thương thống nhất với miền Bắc sau năm 1975?",
+  "note": "Nguồn chỉ còn lại tên đáp án làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án A). Phù hợp lịch sử: Hội nghị hiệp thương chính trị 11/1975 tại Sài Gòn, đoàn miền Nam do Phạm Hùng dẫn đầu, đoàn miền Bắc do Trường Chinh.",
+  "confidence": "verified",
+  "reference": "Hội nghị Hiệp thương chính trị thống nhất đất nước (15–21/11/1975)"
  },
  "55": {
   "question": "(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
@@ -38,8 +40,17 @@
   "confidence": "uncertain"
  },
  "86": {
-  "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-  "confidence": "uncertain"
+  "question": "Nội dung nào chưa đúng trong các bài học lãnh đạo cách mạng của Đảng để dẫn tới Cách mạng Tháng Tám năm 1945 thắng lợi?",
+  "options": {
+   "A": "Giương cao ngọn cờ độc lập dân tộc, kết hợp đúng đắn hai nhiệm vụ chống đế quốc và chống phong kiến",
+   "B": "Sử dụng lực lượng vũ trang áp đảo tiêu diệt kẻ thù",
+   "C": "Lợi dụng mâu thuẫn trong hàng ngũ kẻ thù",
+   "D": "Nắm vững nghệ thuật khởi nghĩa, nghệ thuật chọn đúng thời cơ"
+  },
+  "answer": "B",
+  "note": "Câu này trong nguồn bị mất đề và chỉ còn các phương án của một câu khác (bài học kháng chiến chống Mỹ). Theo yêu cầu của người học, nội dung được thay bằng câu \"Nội dung nào chưa đúng trong các bài học lãnh đạo…\" (đáp án B) lấy từ ảnh đề gốc. Lưu ý: câu này trùng với một câu khác đã có trong cùng bộ. Đề, phương án và đáp án gốc của nguồn lưu trong source.originalQuestion / source.bankAnswer.",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 1 (bài học kinh nghiệm của Cách mạng Tháng Tám)"
  },
  "102": {
   "question": "Từ Đại hội IV (12/1976), Đảng ta mang tên gọi nào?",
@@ -62,8 +73,10 @@
   "confidence": "uncertain"
  },
  "148": {
-  "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-  "confidence": "uncertain"
+  "question": "Lãnh tụ Nguyễn Ái Quốc sáng lập tờ báo Le Paria và viết nhiều bài trên đó là sự chuẩn bị cho sự ra đời của Đảng Cộng sản Việt Nam về mặt nào?",
+  "note": "Nguồn chỉ còn lại chữ \"Tư tưởng\" làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án A). Phù hợp giáo trình: báo Le Paria (1922) và các tác phẩm của Nguyễn Ái Quốc là sự chuẩn bị về tư tưởng cho sự ra đời của Đảng.",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Nguyễn Ái Quốc chuẩn bị về tư tưởng, chính trị, tổ chức)"
  },
  "155": {
   "question": "Vị trí, vai trò của giai cấp công nhân Việt Nam hiện nay là gì?",
@@ -118,8 +131,13 @@
   "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 117"
  },
  "219": {
-  "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-  "confidence": "uncertain"
+  "question": "Một trong những mục tiêu của kế hoạch phát triển kinh tế và văn hóa 5 năm lần thứ hai (1976–1980) của cả nước là:",
+  "options": {
+   "D": "Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở vật chất – kỹ thuật của chủ nghĩa xã hội"
+  },
+  "note": "Nguồn chỉ còn lại phần đầu của đáp án D làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án D); phương án D được viết lại đầy đủ theo ảnh. Phù hợp lịch sử: kế hoạch 5 năm 1976–1980 do Đại hội IV (12/1976) thông qua, với mục tiêu xây dựng cơ sở vật chất – kỹ thuật của CNXH và bảo đảm đời sống nhân dân.",
+  "confidence": "verified",
+  "reference": "Văn kiện Đại hội IV (12/1976): kế hoạch 5 năm 1976–1980"
  },
  "247": {
   "question": "Một trong các khâu đột phá chiến lược của Đảng để đẩy mạnh công nghiệp hóa, hiện đại hóa là gì?",
@@ -140,8 +158,10 @@
   "confidence": "verified"
  },
  "277": {
-  "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-  "confidence": "uncertain"
+  "question": "Đại hội lần thứ III của Đảng (9/1960) xác định cách mạng Việt Nam trong giai đoạn mới phải đồng thời thực hiện mấy chiến lược cách mạng?",
+  "note": "Nguồn chỉ còn lại chữ số \"2\" làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề kèm gợi ý đáp án A: \"2 chiến lược cách mạng cho cả 2 miền, mỗi miền 1 chiến lược riêng\").",
+  "confidence": "verified",
+  "reference": "Văn kiện Đại hội III (9/1960): cách mạng XHCN ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam"
  },
  "283": {
   "question": "Theo Hiệp định Giơ-ne-vơ năm 1954, Việt Nam bị tạm thời chia cắt ở vĩ tuyến nào?",
@@ -167,8 +187,10 @@
   "reference": "Bộ Lịch sử Đảng – Chương 1 (sau đảo chính 9/3/1945)"
  },
  "313": {
-  "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…tiếp tục kí với Pháp bả…\".",
-  "confidence": "uncertain"
+  "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chống Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bản văn kiện nào?",
+  "note": "Đề gốc bị cụt ở cuối câu (\"…tiếp tục kí với Pháp bả…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Đáp án D (Tạm ước 14/9/1946) khớp lịch sử.",
+  "confidence": "uncertain",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Tạm ước 14/9/1946)"
  },
  "344": {
   "question": "Lần đầu tiên công nhân và nhân dân lao động Việt Nam biểu tình kỷ niệm Ngày Quốc tế Lao động dưới sự lãnh đạo của Đảng vào ngày nào?",
@@ -189,7 +211,8 @@
   "confidence": "verified"
  },
  "355": {
-  "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…là ở ch…\".",
+  "question": "Đảng xác định mục tiêu của chính sách xã hội thống nhất với mục tiêu phát triển kinh tế là ở chỗ:",
+  "note": "Đề gốc bị cụt ở cuối câu (\"…là ở ch…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Chỗ thiếu là \"chỗ:\".",
   "confidence": "uncertain"
  },
  "360": {
@@ -210,7 +233,8 @@
   "confidence": "uncertain"
  },
  "382": {
-  "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…hệ thống chính trị là nhắ…\".",
+  "question": "Mục tiêu chủ yếu của đổi mới hệ thống chính trị là nhằm:",
+  "note": "Đề gốc bị cụt ở cuối câu (\"…là nhắ…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Chỗ thiếu là \"nhằm:\".",
   "confidence": "uncertain"
  }
 }

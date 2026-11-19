@@ -110,7 +110,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Là khách thể của quá trình sản xuất vật chất để sản xuất ra của cải vật chất ngày càng nhiều đáp ứng nhu cầu ngày càng tăng của con ngưòi và xã hội"
+            "text": "Là khách thể của quá trình sản xuất vật chất để sản xuất ra của cải vật chất ngày càng nhiều đáp ứng nhu cầu ngày càng tăng của con người và xã hội"
           },
           {
             "key": "B",
@@ -128,7 +128,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 29"
+        "ref": "Ngân hàng câu 29",
+        "textCleaned": true
       }
     },
     {
@@ -638,7 +639,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Giai cấp công nhân Việt Nam chưa hăng hái tỏng các phong trào đấu tranh như công nhân các nước tư bản chủ nghĩa"
+            "text": "Giai cấp công nhân Việt Nam chưa hăng hái trong các phong trào đấu tranh như công nhân các nước tư bản chủ nghĩa"
           },
           {
             "key": "B",
@@ -656,7 +657,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 148"
+        "ref": "Ngân hàng câu 148",
+        "textCleaned": true
       }
     },
     {
@@ -841,7 +843,7 @@
           },
           {
             "key": "B",
-            "text": "Thống nhất với lợi ích cơ bản của đa số nhân dân tao động"
+            "text": "Thống nhất với lợi ích cơ bản của đa số nhân dân lao động"
           },
           {
             "key": "C",
@@ -855,7 +857,8 @@
         "answer": "AB"
       },
       "source": {
-        "ref": "Ngân hàng câu 214"
+        "ref": "Ngân hàng câu 214",
+        "textCleaned": true
       }
     },
     {
@@ -866,7 +869,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Tâm lý tiểu nông, thói quen, tập quán lạc hậu tứ truyền thông xã hội nông nghiệp cổ truyền"
+            "text": "Tâm lý tiểu nông, thói quen, tập quán lạc hậu từ truyền thống xã hội nông nghiệp cổ truyền"
           },
           {
             "key": "B",
@@ -884,7 +887,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 215"
+        "ref": "Ngân hàng câu 215",
+        "textCleaned": true
       }
     },
     {
@@ -1142,7 +1146,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Vi sinh ra và lớn lên ở một nước thuộc địa, nứa phong kiến dưới ách thống trị của thưc dân Pháp"
+            "text": "Vi sinh ra và lớn lên ở một nước thuộc địa, nửa phong kiến dưới ách thống trị của thưc dân Pháp"
           },
           {
             "key": "B",
@@ -1150,7 +1154,7 @@
           },
           {
             "key": "C",
-            "text": "Vì không có tinh thần kỷ luật và cách mạng triệt đế như đặc điếm chung của giai cấp công nhân các nước tư bản phát triễn"
+            "text": "Vì không có tinh thần kỷ luật và cách mạng triệt đế như đặc điểm chung của giai cấp công nhân các nước tư bản phát triễn"
           },
           {
             "key": "D",
@@ -1160,7 +1164,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 300"
+        "ref": "Ngân hàng câu 300",
+        "textCleaned": true
       }
     },
     {
@@ -1171,11 +1176,11 @@
         "options": [
           {
             "key": "A",
-            "text": "Đấu tranh bảo vệ nền tảng tư tưởng của Đảng Cộng sản, giáo dục nhận thức và cũng có nẽm tin khoa học đoi vôi lí tưởng, mục tiêu của chủ nghĩa xã hội"
+            "text": "Đấu tranh bảo vệ nền tảng tư tưởng của Đảng Cộng sản, giáo dục nhận thức và cũng có niềm tin khoa học đối với lí tưởng, mục tiêu của chủ nghĩa xã hội"
           },
           {
             "key": "B",
-            "text": "Tuyên truyền cho quần chúng lao động vệ hệ tư tướng Mác - Lênin đê tiến đến chủ nghĩa cộng sản"
+            "text": "Tuyên truyền cho quần chúng lao động vệ hệ tư tướng Mác - Lênin để tiến đến chủ nghĩa cộng sản"
           },
           {
             "key": "C",
@@ -1335,7 +1340,7 @@
           },
           {
             "key": "C",
-            "text": "Kết nạp ngày càng nhiêu các giai cấp, tầng lớp lao động khác vào hàng ngũ của Đảng Cộng sản để tăng trường nhanh vê số lượng"
+            "text": "Kết nạp ngày càng nhiều các giai cấp, tầng lớp lao động khác vào hàng ngũ của Đảng Cộng sản để tăng trưởng nhanh về số lượng"
           },
           {
             "key": "D",
@@ -1345,14 +1350,15 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 336"
+        "ref": "Ngân hàng câu 336",
+        "textCleaned": true
       }
     },
     {
       "id": "b-341",
       "type": "multiple-choice",
       "content": {
-        "question": "Trong thời đại hiện nay, ở các nước tư bàn chủ nghĩa, mục tiêu đấu tranh lầu dài để thực hiện sứ mệnh lịch sử của giai cấp công nhân vẽ chính trị - xã hội là gì?",
+        "question": "Trong thời đại hiện nay, ở các nước tư bàn chủ nghĩa, mục tiêu đấu tranh lâu dài để thực hiện sứ mệnh lịch sử của giai cấp công nhân vẽ chính trị - xã hội là gì?",
         "options": [
           {
             "key": "A",
@@ -1364,17 +1370,18 @@
           },
           {
             "key": "C",
-            "text": "Giảnh chính quyền về tay giai cấp công nhân và nhân dân lao động"
+            "text": "Giành chính quyền về tay giai cấp công nhân và nhân dân lao động"
           },
           {
             "key": "D",
-            "text": "Đấu tranh đồi các quyền tự do, dân chủ"
+            "text": "Đấu tranh đòi các quyền tự do, dân chủ"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 341"
+        "ref": "Ngân hàng câu 341",
+        "textCleaned": true
       }
     },
     {
@@ -1418,11 +1425,11 @@
           },
           {
             "key": "B",
-            "text": "Mẫu thuân giữa quan hệ sản xuất xã hội hóa ngày càng rộng lớn với lực lượng sàn xuất tư bản chủ nghĩa dựa trên chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất"
+            "text": "Mâu thuẫn giữa quan hệ sản xuất xã hội hóa ngày càng rộng lớn với lực lượng sản xuất tư bản chủ nghĩa dựa trên chế độ tư hữu tư bản chủ nghĩa về tư liệu sản xuất"
           },
           {
             "key": "C",
-            "text": "Mầu thuẫn giữa cơ sở hạ tầng và kiến trúc thượng tầng"
+            "text": "Mâu thuẫn giữa cơ sở hạ tầng và kiến trúc thượng tầng"
           },
           {
             "key": "D",
@@ -1432,7 +1439,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 348"
+        "ref": "Ngân hàng câu 348",
+        "textCleaned": true
       }
     },
     {

@@ -7,6 +7,14 @@
   "confidence": "verified",
   "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT): sứ mệnh lịch sử của giai cấp công nhân; câu 127 của cùng file"
  },
+ "156": {
+  "answerIndex": [
+   1
+  ],
+  "note": "Đáp án đã sửa từ C (\"Chiếm hữu nô lệ\") thành B (\"Tư bản chủ nghĩa\"). Theo Cương lĩnh 1991 và giáo trình, quá độ lên CNXH ở Việt Nam là quá độ gián tiếp, bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa; Ngân hàng bổ sung MLN131 (câu 2) cũng chọn B. Đáp án gốc của file (C) lưu trong source.sourceAnswer.",
+  "confidence": "verified",
+  "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT), Chương 3; Ngân hàng bổ sung MLN131 câu 2"
+ },
  "253": {
   "removeOptionIndexes": [
    1

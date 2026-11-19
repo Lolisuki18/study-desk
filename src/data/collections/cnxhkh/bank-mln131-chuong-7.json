@@ -424,7 +424,7 @@
           },
           {
             "key": "B",
-            "text": "Hôn nhân một vợ một chồng, vợ chồng bỉnh đảng"
+            "text": "Hôn nhân một vợ một chồng, vợ chồng bình đẳng"
           },
           {
             "key": "C",
@@ -438,7 +438,8 @@
         "answer": "ABC"
       },
       "source": {
-        "ref": "Ngân hàng câu 97"
+        "ref": "Ngân hàng câu 97",
+        "textCleaned": true
       }
     },
     {
@@ -737,7 +738,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Gia đình là tớ ấm mang lại các giá trị hạnh phúc, sự hài hòa trong đười sóng Cả nhân của môi thành viện"
+            "text": "Gia đình là tớ ấm mang lại các giá trị hạnh phúc, sự hài hòa trong đời sống cá nhân của môi thành viện"
           },
           {
             "key": "B",
@@ -755,7 +756,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 183"
+        "ref": "Ngân hàng câu 183",
+        "textCleaned": true
       }
     },
     {
@@ -920,7 +922,7 @@
       "id": "b-245",
       "type": "multiple-choice",
       "content": {
-        "question": "Trong bối cảnh hội nhập kinh tế quốc tế và cạnh tranh hàng hóa trong khu vực và thế giới, kinh té gia đình gặp khó khăn, trở ngại do nguyên nhân gì?",
+        "question": "Trong bối cảnh hội nhập kinh tế quốc tế và cạnh tranh hàng hóa trong khu vực và thế giới, kinh tế gia đình gặp khó khăn, trở ngại do nguyên nhân gì?",
         "options": [
           {
             "key": "A",
@@ -942,7 +944,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 245"
+        "ref": "Ngân hàng câu 245",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 182): Trong hội nhập và cạnh tranh hàng hóa, kinh tế gia đình khó chuyển sang sản xuất hàng hóa chuyên sâu vì phần lớn quy mô nhỏ, ít lao động.",
@@ -1646,13 +1649,14 @@
           },
           {
             "key": "D",
-            "text": "Vẫn đê kế hoạch hóa gia đình"
+            "text": "Vấn đề kế hoạch hóa gia đình"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 372"
+        "ref": "Ngân hàng câu 372",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 186): Thách thức lớn nhất của gia đình Việt Nam hiện nay là mâu thuẫn giữa các thế hệ do khác biệt tuổi tác khi sống chung.",
@@ -1676,7 +1680,7 @@
           },
           {
             "key": "C",
-            "text": "Nguời lớn tuổi nhất và có trình độ cao nhất trong gia đình"
+            "text": "Người lớn tuổi nhất và có trình độ cao nhất trong gia đình"
           },
           {
             "key": "D",
@@ -1686,7 +1690,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 390"
+        "ref": "Ngân hàng câu 390",
+        "textCleaned": true
       }
     },
     {

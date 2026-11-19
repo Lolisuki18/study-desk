@@ -137,7 +137,7 @@ src.questions.forEach((q, i) => {
     // position in the source file (the file has no ids of its own)
     id: `q-${String(pos).padStart(3, '0')}`,
     type: 'multiple-choice',
-    content: { question: (fixes[pos]?.question ?? cleanQuestion).trim(), options: cleanOptions, answer: answerKeys.sort().join('') },
+    content: { question: (fixes[pos]?.question ?? cleanQuestion).trim(), options: cleanOptions, answer: fixes[pos]?.answer ?? answerKeys.sort().join('') },
     source: {
       ref: `VNR202 Full câu ${pos}`,
       ...(fixes[pos]?.question ? { originalQuestion: q.question.trim() } : {}),

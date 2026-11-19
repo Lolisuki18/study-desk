@@ -2385,7 +2385,7 @@
       "id": "b-277",
       "type": "multiple-choice",
       "content": {
-        "question": "2",
+        "question": "Đại hội lần thứ III của Đảng (9/1960) xác định cách mạng Việt Nam trong giai đoạn mới phải đồng thời thực hiện mấy chiến lược cách mạng?",
         "options": [
           {
             "key": "A",
@@ -2407,11 +2407,13 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 277"
+        "ref": "Ngân hàng câu 277",
+        "originalQuestion": "2"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Nguồn chỉ còn lại chữ số \"2\" làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề kèm gợi ý đáp án A: \"2 chiến lược cách mạng cho cả 2 miền, mỗi miền 1 chiến lược riêng\").",
+        "confidence": "verified",
+        "reference": "Văn kiện Đại hội III (9/1960): cách mạng XHCN ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam"
       }
     },
     {

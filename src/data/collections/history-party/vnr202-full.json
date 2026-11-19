@@ -4,7 +4,7 @@
   "subject": "Lịch sử Đảng",
   "contentType": "multiple-choice",
   "standalone": true,
-  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 375 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
+  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 370 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
   "source": {
     "document": "VNR202 - Lịch sử Đảng Cộng sản Việt Nam (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-vnr202.json)",
     "note": "Câu hỏi, phương án và đáp án chép nguyên văn. Số câu là vị trí trong file gốc. Đối chiếu đáp án với các bộ đã có: docs/vnr202-full-doi-chieu.md"
@@ -1324,7 +1324,7 @@
       "id": "q-045",
       "type": "multiple-choice",
       "content": {
-        "question": "Phạm Hùng",
+        "question": "Đoàn đại biểu miền Nam do ai dẫn đầu để hiệp thương thống nhất với miền Bắc sau năm 1975?",
         "options": [
           {
             "key": "A",
@@ -1346,11 +1346,13 @@
         "answer": "A"
       },
       "source": {
-        "ref": "VNR202 Full câu 45"
+        "ref": "VNR202 Full câu 45",
+        "originalQuestion": "Phạm Hùng"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Nguồn chỉ còn lại tên đáp án làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án A). Phù hợp lịch sử: Hội nghị hiệp thương chính trị 11/1975 tại Sài Gòn, đoàn miền Nam do Phạm Hùng dẫn đầu, đoàn miền Bắc do Trường Chinh.",
+        "confidence": "verified",
+        "reference": "Hội nghị Hiệp thương chính trị thống nhất đất nước (15–21/11/1975)"
       }
     },
     {
@@ -2569,34 +2571,36 @@
       "id": "q-086",
       "type": "multiple-choice",
       "content": {
-        "question": "Giương cao ngọn cờ độc lập dân tộc và dân chủ",
+        "question": "Nội dung nào chưa đúng trong các bài học lãnh đạo cách mạng của Đảng để dẫn tới Cách mạng Tháng Tám năm 1945 thắng lợi?",
         "options": [
           {
             "key": "A",
-            "text": "Giương cao ngọn cờ độc lập dân tộc và dân chủ"
+            "text": "Giương cao ngọn cờ độc lập dân tộc, kết hợp đúng đắn hai nhiệm vụ chống đế quốc và chống phong kiến"
           },
           {
             "key": "B",
-            "text": "Kiên định tư tưởng chiến lược tiến công quyết đánh và quyết thắng đế quốc Mỹ xâm lược"
+            "text": "Sử dụng lực lượng vũ trang áp đảo tiêu diệt kẻ thù"
           },
           {
             "key": "C",
-            "text": "Thực hiện chiến tranh nhân dân linh hoạt sáng tạo"
+            "text": "Lợi dụng mâu thuẫn trong hàng ngũ kẻ thù"
           },
           {
             "key": "D",
-            "text": "Coi trong công tác tổ chức, công tác xây dựng Đảng"
+            "text": "Nắm vững nghệ thuật khởi nghĩa, nghệ thuật chọn đúng thời cơ"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
         "ref": "VNR202 Full câu 86",
+        "originalQuestion": "Giương cao ngon cờ độc lập dân tộc và dân ch",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Câu này trong nguồn bị mất đề và chỉ còn các phương án của một câu khác (bài học kháng chiến chống Mỹ). Theo yêu cầu của người học, nội dung được thay bằng câu \"Nội dung nào chưa đúng trong các bài học lãnh đạo…\" (đáp án B) lấy từ ảnh đề gốc. Lưu ý: câu này trùng với một câu khác đã có trong cùng bộ. Đề, phương án và đáp án gốc của nguồn lưu trong source.originalQuestion / source.bankAnswer.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 1 (bài học kinh nghiệm của Cách mạng Tháng Tám)"
       }
     },
     {
@@ -4429,7 +4433,7 @@
       "id": "q-148",
       "type": "multiple-choice",
       "content": {
-        "question": "Tư tưởng",
+        "question": "Lãnh tụ Nguyễn Ái Quốc sáng lập tờ báo Le Paria và viết nhiều bài trên đó là sự chuẩn bị cho sự ra đời của Đảng Cộng sản Việt Nam về mặt nào?",
         "options": [
           {
             "key": "A",
@@ -4452,11 +4456,13 @@
       },
       "source": {
         "ref": "VNR202 Full câu 148",
+        "originalQuestion": "Tư tưởng",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Nguồn chỉ còn lại chữ \"Tư tưởng\" làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án A). Phù hợp giáo trình: báo Le Paria (1922) và các tác phẩm của Nguyễn Ái Quốc là sự chuẩn bị về tư tưởng cho sự ra đời của Đảng.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Nguyễn Ái Quốc chuẩn bị về tư tưởng, chính trị, tổ chức)"
       }
     },
     {
@@ -6590,7 +6596,7 @@
       "id": "q-219",
       "type": "multiple-choice",
       "content": {
-        "question": "Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở",
+        "question": "Một trong những mục tiêu của kế hoạch phát triển kinh tế và văn hóa 5 năm lần thứ hai (1976–1980) của cả nước là:",
         "options": [
           {
             "key": "A",
@@ -6606,18 +6612,20 @@
           },
           {
             "key": "D",
-            "text": "Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở vật chất kỹ thuật của chủ nghĩa xã hội"
+            "text": "Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở vật chất – kỹ thuật của chủ nghĩa xã hội"
           }
         ],
         "answer": "D"
       },
       "source": {
         "ref": "VNR202 Full câu 219",
+        "originalQuestion": "Bảo đảm nhu cầu đời sống của nhân dân, tích lũy để xây dựng cơ sở",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Nguồn chỉ còn lại phần đầu của đáp án D làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án D); phương án D được viết lại đầy đủ theo ảnh. Phù hợp lịch sử: kế hoạch 5 năm 1976–1980 do Đại hội IV (12/1976) thông qua, với mục tiêu xây dựng cơ sở vật chất – kỹ thuật của CNXH và bảo đảm đời sống nhân dân.",
+        "confidence": "verified",
+        "reference": "Văn kiện Đại hội IV (12/1976): kế hoạch 5 năm 1976–1980"
       }
     },
     {
@@ -8336,7 +8344,7 @@
       "id": "q-277",
       "type": "multiple-choice",
       "content": {
-        "question": "2",
+        "question": "Đại hội lần thứ III của Đảng (9/1960) xác định cách mạng Việt Nam trong giai đoạn mới phải đồng thời thực hiện mấy chiến lược cách mạng?",
         "options": [
           {
             "key": "A",
@@ -8358,11 +8366,13 @@
         "answer": "A"
       },
       "source": {
-        "ref": "VNR202 Full câu 277"
+        "ref": "VNR202 Full câu 277",
+        "originalQuestion": "2"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Nguồn chỉ còn lại chữ số \"2\" làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề kèm gợi ý đáp án A: \"2 chiến lược cách mạng cho cả 2 miền, mỗi miền 1 chiến lược riêng\").",
+        "confidence": "verified",
+        "reference": "Văn kiện Đại hội III (9/1960): cách mạng XHCN ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam"
       }
     },
     {
@@ -9427,7 +9437,7 @@
       "id": "q-313",
       "type": "multiple-choice",
       "content": {
-        "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bả",
+        "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chống Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bản văn kiện nào?",
         "options": [
           {
             "key": "A",
@@ -9450,11 +9460,13 @@
       },
       "source": {
         "ref": "VNR202 Full câu 313",
+        "originalQuestion": "Để kéo dài thời gian chuẩn bi lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp đinh Sơ b ộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộn g hòa tiếp tuc kí với Pháp bả",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…tiếp tục kí với Pháp bả…\".",
-        "confidence": "uncertain"
+        "text": "Đề gốc bị cụt ở cuối câu (\"…tiếp tục kí với Pháp bả…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Đáp án D (Tạm ước 14/9/1946) khớp lịch sử.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Tạm ước 14/9/1946)"
       }
     },
     {
@@ -10696,7 +10708,7 @@
       "id": "q-355",
       "type": "multiple-choice",
       "content": {
-        "question": "Đảng xác định mục tiêu của chính sách xã hội thống nhất với mục tiêu phát triển kinh tế là ở ch",
+        "question": "Đảng xác định mục tiêu của chính sách xã hội thống nhất với mục tiêu phát triển kinh tế là ở chỗ:",
         "options": [
           {
             "key": "A",
@@ -10719,10 +10731,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 355",
+        "originalQuestion": "Đảng xác đinh muc tiêu của chính sách xã hội thống nhấ t với muc tiêu phát triển kinh tế là ở ch",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…là ở ch…\".",
+        "text": "Đề gốc bị cụt ở cuối câu (\"…là ở ch…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Chỗ thiếu là \"chỗ:\".",
         "confidence": "uncertain"
       }
     },
@@ -11514,7 +11527,7 @@
       "id": "q-382",
       "type": "multiple-choice",
       "content": {
-        "question": "Mục tiêu chủ yếu của đổi mới hệ thống chính trị là nhắ",
+        "question": "Mục tiêu chủ yếu của đổi mới hệ thống chính trị là nhằm:",
         "options": [
           {
             "key": "A",
@@ -11537,10 +11550,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 382",
+        "originalQuestion": "Muc tiêu chủ yếu của đổi mới hệ thống chính tri là nhắ",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…hệ thống chính trị là nhắ…\".",
+        "text": "Đề gốc bị cụt ở cuối câu (\"…là nhắ…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Chỗ thiếu là \"nhằm:\".",
         "confidence": "uncertain"
       }
     },

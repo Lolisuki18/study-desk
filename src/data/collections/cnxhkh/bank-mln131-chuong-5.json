@@ -18,7 +18,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Duy trì khối liên minh giữa giai cấp vô sản và nông dân để giai cấp vô sản có thẻ giữ được vai trò lãnh đạo"
+            "text": "Duy trì khối liên minh giữa giai cấp vô sản và nông dân để giai cấp vô sản có thể giữ được vai trò lãnh đạo"
           },
           {
             "key": "B",
@@ -36,7 +36,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 8"
+        "ref": "Ngân hàng câu 8",
+        "textCleaned": true
       }
     },
     {
@@ -147,7 +148,7 @@
           },
           {
             "key": "C",
-            "text": "Giảm dần về Số lượng nhưng tăng dân về tỷ lệ trong cơ cảu xã hội - giai cấp"
+            "text": "Giảm dần về Số lượng nhưng tăng dân về tỷ lệ trong cơ cấu xã hội - giai cấp"
           },
           {
             "key": "D",
@@ -157,7 +158,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 25"
+        "ref": "Ngân hàng câu 25",
+        "textCleaned": true
       }
     },
     {
@@ -605,7 +607,7 @@
       "id": "b-139",
       "type": "multiple-choice",
       "content": {
-        "question": "Đâu không phải là một trong những chính sách đối với đội ngũ trí thức nhằm phát huy vai trò của tầng lớp này, trong cơ cấu xã hỏi - giai cấp ở Việt Nam hiện nay?",
+        "question": "Đâu không phải là một trong những chính sách đối với đội ngũ trí thức nhằm phát huy vai trò của tầng lớp này, trong cơ cấu xã hội - giai cấp ở Việt Nam hiện nay?",
         "options": [
           {
             "key": "A",
@@ -613,7 +615,7 @@
           },
           {
             "key": "B",
-            "text": "Đảm bảo tư tường của giai cấp công nhân giữ vị trí chủ đạo trong hoat động nghiên cứu, sáng tạo"
+            "text": "Đảm bảo tư tường của giai cấp công nhân giữ vị trí chủ đạo trong hoạt động nghiên cứu, sáng tạo"
           },
           {
             "key": "C",
@@ -1221,11 +1223,11 @@
         "options": [
           {
             "key": "A",
-            "text": "Họ cùng nhau chung sức cải tạo xã hội cũ, xây dưng xã hội mới trong mọi lĩnh vực của đời sống xã hội"
+            "text": "Họ cùng nhau chung sức cải tạo xã hội cũ, xây dựng xã hội mới trong mọi lĩnh vực của đời sống xã hội"
           },
           {
             "key": "B",
-            "text": "Họ cùng nhau phân chia quyền lực trong một chế độ nhà nước, vừa canh tranh, vữa động hành cùng nhau trong mọi lĩnh vực của đời sống xã hội"
+            "text": "Họ cùng nhau phân chia quyền lực trong một chế độ nhà nước, vừa cạnh tranh, vừa đồng hành cùng nhau trong mọi lĩnh vực của đời sống xã hội"
           },
           {
             "key": "C",
@@ -1239,7 +1241,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 271"
+        "ref": "Ngân hàng câu 271",
+        "textCleaned": true
       }
     },
     {
@@ -1284,7 +1287,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Tăng trưởng kinh tế bảng mọi giá"
+            "text": "Tăng trưởng kinh tế bằng mọi giá"
           },
           {
             "key": "B",
@@ -1557,7 +1560,7 @@
       "id": "b-338",
       "type": "multiple-choice",
       "content": {
-        "question": "Trong hệ thống chính sách xã hội, các chính sách liên quan đến vẫn để gì được đặt lên vị trí hãng đầu?",
+        "question": "Trong hệ thống chính sách xã hội, các chính sách liên quan đến vấn đề gì được đặt lên vị trí hàng đầu?",
         "options": [
           {
             "key": "A",
@@ -1573,13 +1576,14 @@
           },
           {
             "key": "D",
-            "text": "Cơ cầu giai cấp, giảo dục"
+            "text": "Cơ cầu giai cấp, giáo dục"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 338"
+        "ref": "Ngân hàng câu 338",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 128): Trong hệ thống chính sách xã hội, chính sách liên quan đến cơ cấu xã hội – giai cấp cần được đặt ở vị trí hàng đầu.",
@@ -1595,7 +1599,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Hỗ trợ, khuyến khích nông dân học nghề, chuyến dịch cơ cấu lao động"
+            "text": "Hỗ trợ, khuyến khích nông dân học nghề, chuyển dịch cơ cấu lao động"
           },
           {
             "key": "B",
@@ -1603,7 +1607,7 @@
           },
           {
             "key": "C",
-            "text": "Tạo điều kiện thuận lợi để nông dẫn chuyển sang làm công nghiệp và dịch vụ"
+            "text": "Tạo điều kiện thuận lợi để nông dân chuyển sang làm công nghiệp và dịch vụ"
           },
           {
             "key": "D",
@@ -1613,7 +1617,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 339"
+        "ref": "Ngân hàng câu 339",
+        "textCleaned": true
       }
     },
     {
@@ -1661,7 +1666,7 @@
           },
           {
             "key": "C",
-            "text": "Sự tôn tại các giai cấp, tầng lớp trong thời kì quá độ lên chủ nghĩa xã hội là vấn đề mang tính quy luật, chỉ có thê cải tạo dần chứ chưa thế xóa bò triệt để, ngay lập tức được"
+            "text": "Sự tôn tại các giai cấp, tầng lớp trong thời kì quá độ lên chủ nghĩa xã hội là vấn đề mang tính quy luật, chỉ có thể cải tạo dần chứ chưa thế xóa bò triệt để, ngay lập tức được"
           },
           {
             "key": "D",
@@ -1671,7 +1676,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 376"
+        "ref": "Ngân hàng câu 376",
+        "textCleaned": true
       }
     },
     {
@@ -1707,7 +1713,7 @@
       "id": "b-385",
       "type": "multiple-choice",
       "content": {
-        "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội, yếu tố nào quyết định mỗi quan hệ hợp tác, gẵn bó chặt chẽ giữa các giai cấp, tầng lớp?",
+        "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội, yếu tố nào quyết định mỗi quan hệ hợp tác, gắn bó chặt chẽ giữa các giai cấp, tầng lớp?",
         "options": [
           {
             "key": "A",
@@ -1729,7 +1735,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 385"
+        "ref": "Ngân hàng câu 385",
+        "textCleaned": true
       }
     },
     {
@@ -1799,7 +1806,7 @@
       "id": "b-414",
       "type": "multiple-choice",
       "content": {
-        "question": "Giai cấp công nhân Việt Nam, giai cấp nông dân, đội ngũ trí thức, đội ngũ đoanh nhân. Đâu là lực lượng đi đấu trong sự nghiệp công nghiệp hoa, hiện đại hoa đất nước?",
+        "question": "Giai cấp công nhân Việt Nam, giai cấp nông dân, đội ngũ trí thức, đội ngũ doanh nhân. Đâu là lực lượng đi đấu trong sự nghiệp công nghiệp hoa, hiện đại hoa đất nước?",
         "options": [
           {
             "key": "A",
@@ -1821,14 +1828,15 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 414"
+        "ref": "Ngân hàng câu 414",
+        "textCleaned": true
       }
     },
     {
       "id": "b-418",
       "type": "multiple-choice",
       "content": {
-        "question": "Sự liên minh giữa giai cấp công nhãn vối giai cấp nông dẫn và tầng lớp trí thức là do điều gì quy định?",
+        "question": "Sự liên minh giữa giai cấp công nhãn vối giai cấp nông dân và tầng lớp trí thức là do điều gì quy định?",
         "options": [
           {
             "key": "A",
@@ -1850,7 +1858,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 418"
+        "ref": "Ngân hàng câu 418",
+        "textCleaned": true
       }
     }
   ]

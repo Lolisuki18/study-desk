@@ -607,7 +607,7 @@
           },
           {
             "key": "C",
-            "text": "Xuất phát từ một xã hội phong kiến lặc hậu, trình độ lực lượng sản xuất nông nghiệp kém, được sự khai hóa của thực dân Pháp nhưng không có sự cải biến tốt hơn"
+            "text": "Xuất phát từ một xã hội phong kiến lạc hậu, trình độ lực lượng sản xuất nông nghiệp kém, được sự khai hóa của thực dân Pháp nhưng không có sự cải biến tốt hơn"
           },
           {
             "key": "D",
@@ -617,7 +617,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 21"
+        "ref": "MLN131 Full câu 21",
+        "textCleaned": true
       }
     },
     {
@@ -1118,7 +1119,7 @@
       "id": "q-039",
       "type": "multiple-choice",
       "content": {
-        "question": "Ai đã đưa ra quan nhiệm: \"Chủ nghĩa xã hội là sự phản kháng và đấu tranh chống sự bóc lọt người lao đọng, mốt cuộc đấu tranh nằm hoàn toàn xóa bỏ sự bóc lột\"?",
+        "question": "Ai đã đưa ra quan nhiệm: \"Chủ nghĩa xã hội là sự phản kháng và đấu tranh chống sự bóc lột người lao động, một cuộc đấu tranh nằm hoàn toàn xóa bỏ sự bóc lột\"?",
         "options": [
           {
             "key": "A",
@@ -1140,7 +1141,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "MLN131 Full câu 39"
+        "ref": "MLN131 Full câu 39",
+        "textCleaned": true
       }
     },
     {
@@ -1467,7 +1469,7 @@
       "id": "q-051",
       "type": "multiple-choice",
       "content": {
-        "question": "Chủ nghĩa xã hội khoa học ra đợi dựa trên mấy tiền đề?",
+        "question": "Chủ nghĩa xã hội khoa học ra đời dựa trên mấy tiền đề?",
         "options": [
           {
             "key": "A",
@@ -1489,7 +1491,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 51"
+        "ref": "MLN131 Full câu 51",
+        "textCleaned": true
       }
     },
     {
@@ -2164,7 +2167,7 @@
       "id": "q-075",
       "type": "multiple-choice",
       "content": {
-        "question": "Theo chủ nghĩa Mác - Lenin, điều cần thiết trước hết để khắc phục dằn các ảnh hưởng tiêu cực của tôn giáo là gì?",
+        "question": "Theo chủ nghĩa Mác - Lenin, điều cần thiết trước hết để khắc phục dần các ảnh hưởng tiêu cực của tôn giáo là gì?",
         "options": [
           {
             "key": "A",
@@ -2186,7 +2189,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "MLN131 Full câu 75"
+        "ref": "MLN131 Full câu 75",
+        "textCleaned": true
       }
     },
     {
@@ -2950,7 +2954,7 @@
       "id": "q-102",
       "type": "multiple-choice",
       "content": {
-        "question": "Vấn đề \"Giai cấp tư sản, trong quá trình thống trị giai cấp chưa đầy một thế kỷ, đã tạo ra những lực lượng sản xuất nhiều hơn và dồ sộ hơn lực lượng sản xuất của tất cả các thế hệ trước kia góp lại\" được C. Mác và Ph Angghen viết trong tác phẩm nào?",
+        "question": "Vấn đề \"Giai cấp tư sản, trong quá trình thống trị giai cấp chưa đầy một thế kỷ, đã tạo ra những lực lượng sản xuất nhiều hơn và đồ sộ hơn lực lượng sản xuất của tất cả các thế hệ trước kia góp lại\" được C. Mác và Ph Angghen viết trong tác phẩm nào?",
         "options": [
           {
             "key": "A",
@@ -2972,7 +2976,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "MLN131 Full câu 102"
+        "ref": "MLN131 Full câu 102",
+        "textCleaned": true
       }
     },
     {
@@ -3241,7 +3246,7 @@
       "id": "q-112",
       "type": "multiple-choice",
       "content": {
-        "question": "C. Nác và Ph. Angghen từng choi rằng:\"Quan hệ thứ ba tham dự ngay từ đầu vào quá trình phát triển lịch sử hằng ngày tái tạo ra đời sống của bản thân mình, con người bắt đầu tạo ra những người khác, sinh sôi nảy nở\" cụm từ \"quan hệ thứ ba\" trong câu trên dừng để chỉ cái gì?",
+        "question": "C. Nác và Ph. Angghen từng choi rằng:\"Quan hệ thứ ba tham dự ngay từ đầu vào quá trình phát triển lịch sử hằng ngày tái tạo ra đời sống của bản thân mình, con người bắt đầu tạo ra những người khác, sinh sôi nảy nở\" cụm từ \"quan hệ thứ ba\" trong câu trên dùng để chỉ cái gì?",
         "options": [
           {
             "key": "A",
@@ -3263,7 +3268,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "MLN131 Full câu 112"
+        "ref": "MLN131 Full câu 112",
+        "textCleaned": true
       }
     },
     {
@@ -3695,7 +3701,7 @@
             "text": "Thống trị"
           }
         ],
-        "answer": "C"
+        "answer": "D"
       },
       "source": {
         "ref": "MLN131 Full câu 127"
@@ -3757,7 +3763,7 @@
       },
       "source": {
         "ref": "MLN131 Full câu 129",
-        "sourceAnswer": "C",
+        "sourceAnswer": "D",
         "answerChanged": true
       },
       "enrichment": {
@@ -4547,10 +4553,17 @@
             "text": "Cộng sản nguyên thủy"
           }
         ],
-        "answer": "C"
+        "answer": "B"
       },
       "source": {
-        "ref": "MLN131 Full câu 156"
+        "ref": "MLN131 Full câu 156",
+        "sourceAnswer": "C",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ C (\"Chiếm hữu nô lệ\") thành B (\"Tư bản chủ nghĩa\"). Theo Cương lĩnh 1991 và giáo trình, quá độ lên CNXH ở Việt Nam là quá độ gián tiếp, bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa; Ngân hàng bổ sung MLN131 (câu 2) cũng chọn B. Đáp án gốc của file (C) lưu trong source.sourceAnswer.",
+        "confidence": "verified",
+        "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT), Chương 3; Ngân hàng bổ sung MLN131 câu 2"
       }
     },
     {
@@ -4586,7 +4599,7 @@
       "id": "q-158",
       "type": "multiple-choice",
       "content": {
-        "question": "Tôn giáo là một hiện tượng xã hội phản ánh sự bất lực và bế tắc của con người trước tự nhiên và xã hội. Tuy nhiên, tôn giáo cũng chứa đụng một số giá trị phù hợp với đạo đức, đạo lí của con người, thể hiện nội dung gì?",
+        "question": "Tôn giáo là một hiện tượng xã hội phản ánh sự bất lực và bế tắc của con người trước tự nhiên và xã hội. Tuy nhiên, tôn giáo cũng chứa đựng một số giá trị phù hợp với đạo đức, đạo lí của con người, thể hiện nội dung gì?",
         "options": [
           {
             "key": "A",
@@ -4608,7 +4621,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "MLN131 Full câu 158"
+        "ref": "MLN131 Full câu 158",
+        "textCleaned": true
       }
     },
     {
@@ -6662,7 +6676,7 @@
       "id": "q-229",
       "type": "multiple-choice",
       "content": {
-        "question": "Các chủ trương, chính sách phát triển kinh tế - xã hội miền núi, vùng đồng bào các dân tộc thiểu số ở nước ta nhàm mục đích gì?",
+        "question": "Các chủ trương, chính sách phát triển kinh tế - xã hội miền núi, vùng đồng bào các dân tộc thiểu số ở nước ta nhằm mục đích gì?",
         "options": [
           {
             "key": "A",
@@ -6684,7 +6698,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 229"
+        "ref": "MLN131 Full câu 229",
+        "textCleaned": true
       }
     },
     {
@@ -6728,7 +6743,7 @@
           },
           {
             "key": "B",
-            "text": "Vị trí của một giai cấp dừng ở vị trí trung tâm"
+            "text": "Vị trí của một giai cấp đứng ở vị trí trung tâm"
           },
           {
             "key": "C",
@@ -6791,7 +6806,7 @@
           },
           {
             "key": "C",
-            "text": "Là điều kiện lao động, công ăn, việc làm và thu thấp của cong dân"
+            "text": "Là điều kiện lao động, công ăn, việc làm và thu thấp của công dân"
           },
           {
             "key": "D",
@@ -6838,7 +6853,7 @@
       "id": "q-235",
       "type": "multiple-choice",
       "content": {
-        "question": "Cương lĩnh xây dựng đát nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011) xã định phương hướng đầu tiên, phản ánh con đường đi lên chủ nghĩa xã hội ở nước ta là gì?",
+        "question": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011) xã định phương hướng đầu tiên, phản ánh con đường đi lên chủ nghĩa xã hội ở nước ta là gì?",
         "options": [
           {
             "key": "A",
@@ -6860,7 +6875,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 235"
+        "ref": "MLN131 Full câu 235",
+        "textCleaned": true
       }
     },
     {
@@ -6883,13 +6899,14 @@
           },
           {
             "key": "D",
-            "text": "Là những cộng đồng người cùng toàn bộ những mối quan hẹ xã hội do sự tác động của cộng đồng người ấy với tự nhiên tạo nên"
+            "text": "Là những cộng đồng người cùng toàn bộ những mối quan hệ xã hội do sự tác động của cộng đồng người ấy với tự nhiên tạo nên"
           }
         ],
         "answer": "C"
       },
       "source": {
-        "ref": "MLN131 Full câu 236"
+        "ref": "MLN131 Full câu 236",
+        "textCleaned": true
       }
     },
     {
@@ -6958,7 +6975,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về sỡ hưu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó"
+            "text": "Là hệ thống giai cấp, tầng lớp xã hội tồn tại khách quan trọng một chế độ xã hội nhất định, thông qua những mối quan hệ về sở hữu tư liệu sản xuất, về tổ chức, quản lý quá trình sản xuất, về địa vị chính trị - xã hội... giữa các giai cấp, tầng lớp đó"
           },
           {
             "key": "B",
@@ -7050,7 +7067,7 @@
           },
           {
             "key": "B",
-            "text": "Quyền hoàn toàn bình đẵng giữa các dân tộc"
+            "text": "Quyền hoàn toàn bình đẳng giữa các dân tộc"
           },
           {
             "key": "C",
@@ -7064,7 +7081,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "MLN131 Full câu 242"
+        "ref": "MLN131 Full câu 242",
+        "textCleaned": true
       }
     },
     {
@@ -7672,7 +7690,7 @@
           },
           {
             "key": "B",
-            "text": "Dân tộc thiểu số ở Việt Nam phân bổi chủ yếu ở các địa bàn có vị trí chiến lược quan trọng"
+            "text": "Dân tộc thiểu số ở Việt Nam phân bố chủ yếu ở các địa bàn có vị trí chiến lược quan trọng"
           },
           {
             "key": "C",
@@ -7686,7 +7704,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "MLN131 Full câu 263"
+        "ref": "MLN131 Full câu 263",
+        "textCleaned": true
       }
     },
     {
@@ -7933,7 +7952,7 @@
           },
           {
             "key": "B",
-            "text": "Mọi ván đề, mọi pháp luật khi đưa ra đều phải thông qua tất cả công dân để được ban hành, đảm bảo tính đồng thuận tuyệt đối"
+            "text": "Mọi vấn đề, mọi pháp luật khi đưa ra đều phải thông qua tất cả công dân để được ban hành, đảm bảo tính đồng thuận tuyệt đối"
           },
           {
             "key": "C",
@@ -8716,7 +8735,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Là những người nắm giữ tư liệu sản xuất của xã hội tư bản chủ nghĩa, tự tỏ chức sản xuất kinh doanh lớn mà không hợp tác vối giai cấp nào"
+            "text": "Là những người nắm giữ tư liệu sản xuất của xã hội tư bản chủ nghĩa, tự tỏ chức sản xuất kinh doanh lớn mà không hợp tác với giai cấp nào"
           },
           {
             "key": "B",
@@ -9096,7 +9115,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Xây dựng thành công chủ nghĩa cộng sản, đưa tát cả các giai cấp, tầng lớp lên địa vị làm chủ trên tất các mặt của đời sống xã hội trong một xã hội phát triển cao - xã hội cộng sản chủ nghĩa"
+            "text": "Xây dựng thành công chủ nghĩa cộng sản, đưa tất cả các giai cấp, tầng lớp lên địa vị làm chủ trên tất các mặt của đời sống xã hội trong một xã hội phát triển cao - xã hội cộng sản chủ nghĩa"
           },
           {
             "key": "B",
@@ -9114,7 +9133,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "MLN131 Full câu 312"
+        "ref": "MLN131 Full câu 312",
+        "textCleaned": true
       }
     },
     {
@@ -9162,7 +9182,7 @@
           },
           {
             "key": "C",
-            "text": "Xóa bỏ sự thống trị áp bức của chế đọ cộng xã nguyên thủy, xây dựng thành công chế độ xã hội mới - xã hội chủ nghĩa và cộng sản chủ nghĩa, tiến tới một xã hội  không còn giai cấp"
+            "text": "Xóa bỏ sự thống trị áp bức của chế độ công xã nguyên thủy, xây dựng thành công chế độ xã hội mới - xã hội chủ nghĩa và cộng sản chủ nghĩa, tiến tới một xã hội  không còn giai cấp"
           },
           {
             "key": "D",
@@ -9172,7 +9192,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 314"
+        "ref": "MLN131 Full câu 314",
+        "textCleaned": true
       }
     },
     {
@@ -9824,7 +9845,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Các dân tộc hoàn toàn bình dẳng, các dân tộc được quyền tự quyết, liên hiệp công nhân tất cả các dân tộc lại"
+            "text": "Các dân tộc hoàn toàn bình đẳng, các dân tộc được quyền tự quyết, liên hiệp công nhân tất cả các dân tộc lại"
           },
           {
             "key": "B",
@@ -9862,7 +9883,7 @@
           },
           {
             "key": "C",
-            "text": "Nhà nước liên hiệp với giáo hội các tôn giáo để điều chỉnh họ theo hướng duy vật, vô thần dằn dằn theo thời gian"
+            "text": "Nhà nước liên hiệp với giáo hội các tôn giáo để điều chỉnh họ theo hướng duy vật, vô thần dần dần theo thời gian"
           },
           {
             "key": "D",
@@ -9872,7 +9893,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "MLN131 Full câu 338"
+        "ref": "MLN131 Full câu 338",
+        "textCleaned": true
       }
     },
     {
@@ -10245,13 +10267,14 @@
           },
           {
             "key": "D",
-            "text": "Vì giai cấp công nhân được lãnh đạo bới Đảng Cộng sản"
+            "text": "Vì giai cấp công nhân được lãnh đạo bởi Đảng Cộng sản"
           }
         ],
         "answer": "A"
       },
       "source": {
-        "ref": "MLN131 Full câu 351"
+        "ref": "MLN131 Full câu 351",
+        "textCleaned": true
       }
     },
     {

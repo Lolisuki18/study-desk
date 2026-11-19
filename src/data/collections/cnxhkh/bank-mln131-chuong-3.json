@@ -210,7 +210,7 @@
           },
           {
             "key": "C",
-            "text": "Hình thái kinh tế — xã hội công sản chủ nghĩa là phiên bản điều chỉnh tốt hơn tứ tư bản chủ nghĩa"
+            "text": "Hình thái kinh tế — xã hội công sản chủ nghĩa là phiên bản điều chỉnh tốt hơn từ tư bản chủ nghĩa"
           },
           {
             "key": "D",
@@ -220,7 +220,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 32"
+        "ref": "Ngân hàng câu 32",
+        "textCleaned": true
       }
     },
     {
@@ -681,7 +682,7 @@
         "options": [
           {
             "key": "A",
-            "text": "\"Cuộc đấu tranh giai cấp trong bôi cảnh mới\""
+            "text": "\"Cuộc đấu tranh giai cấp trong bối cảnh mới\""
           },
           {
             "key": "B",
@@ -699,7 +700,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 125"
+        "ref": "Ngân hàng câu 125",
+        "textCleaned": true
       }
     },
     {
@@ -940,7 +942,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Sở hữu tư nhân tư bản chủ nghĩa và thành phần kình tế tập thể"
+            "text": "Sở hữu tư nhân tư bản chủ nghĩa và thành phần kinh tế tập thể"
           },
           {
             "key": "B",
@@ -952,13 +954,14 @@
           },
           {
             "key": "D",
-            "text": "Sở hữu hổn hợp và thành phần kinh tế tư nhân tư bản chủ nghĩa"
+            "text": "Sở hữu hỗn hợp và thành phần kinh tế tư nhân tư bản chủ nghĩa"
           }
         ],
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 182"
+        "ref": "Ngân hàng câu 182",
+        "textCleaned": true
       }
     },
     {
@@ -1666,7 +1669,7 @@
         "options": [
           {
             "key": "A",
-            "text": "Con đường cách mạng chủ quan, con đường xây dựng đất nước trong thời kỳ quá độ lên chủ nợía xă hội ở nước ta"
+            "text": "Con đường cách mạng chủ quan, con đường xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta"
           },
           {
             "key": "B",
@@ -1684,7 +1687,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 310"
+        "ref": "Ngân hàng câu 310",
+        "textCleaned": true
       }
     },
     {
@@ -1825,7 +1829,7 @@
           },
           {
             "key": "C",
-            "text": "Chủ nghĩa xã hội giài phóng giai cấp công nhân, nhân dân lao động và đông thời đàn áp giai cấp thống trị tàn bạo là giai cấp tư sản"
+            "text": "Chủ nghĩa xã hội giải phóng giai cấp công nhân, nhân dân lao động và đông thời đàn áp giai cấp thống trị tàn bạo là giai cấp tư sản"
           },
           {
             "key": "D",
@@ -1835,7 +1839,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 333"
+        "ref": "Ngân hàng câu 333",
+        "textCleaned": true
       }
     },
     {
@@ -2017,7 +2022,7 @@
           },
           {
             "key": "B",
-            "text": "Chủ nghĩa tư băn/ Giai cấp công nhân"
+            "text": "Chủ nghĩa tư bản/ Giai cấp công nhân"
           },
           {
             "key": "C",
@@ -2031,7 +2036,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 375"
+        "ref": "Ngân hàng câu 375",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 54): Lênin: về lý luận, giữa chủ nghĩa tư bản và chủ nghĩa cộng sản chắc chắn có một thời kỳ quá độ nhất định.",
@@ -2043,7 +2049,7 @@
       "id": "b-386",
       "type": "multiple-choice",
       "content": {
-        "question": "Vấn đề: \"Xây dựng nhà nước do nhân dân lao động làm chủ, đó là Nhà nước của dân, do dân, vì dân\" là đặc điềm thứ mấy trong các đặc điểm của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam?",
+        "question": "Vấn đề: \"Xây dựng nhà nước do nhân dân lao động làm chủ, đó là Nhà nước của dân, do dân, vì dân\" là đặc điểm thứ mấy trong các đặc điểm của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam?",
         "options": [
           {
             "key": "A",
@@ -2065,7 +2071,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 386"
+        "ref": "Ngân hàng câu 386",
+        "textCleaned": true
       }
     },
     {

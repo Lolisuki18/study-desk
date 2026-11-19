@@ -8,7 +8,7 @@ Tự sinh bởi `node scripts/import-mln131-full.mjs`. Không sửa tay: chạy 
 - Lặp lại trong chính file: 13 câu.
 - Không có ở bộ nào khác: 37 câu (câu 4, 6, 14, 25, 30, 45, 46, 48, 99, 100, 101, 105, 111, 115, 156, 158, 174, 182, 189, 192, 207, 210, 218, 223, 239, 243, 248, 270, 295, 315, 343, 346, 349, 356, 358, 359, 360).
 
-## 17 câu trùng nhưng đáp án khác với app
+## 18 câu trùng nhưng đáp án khác với app
 
 Các bộ khác trong app được giữ nguyên; bộ MLN131 Full dùng đáp án của file. Cột "File mới" là đáp án theo MLN131_Full. Chưa kiểm chứng bên nào đúng: hãy đối chiếu giáo trình.
 Dấu (*) = đáp án trong app là đáp án đã được đổi theo giáo trình trước đây (`docs/answer-overrides-bank-mln131.json`).
@@ -25,6 +25,7 @@ Dấu (*) = đáp án trong app là đáp án đã được đổi theo giáo tr
 | 78 | Theo chủ nghĩa Mác - Lenin, quy luật chung, phổ biến cho sự ra đời của Đảng Cộng sản là gì? | Là sự kết hợp giữa chủ nghĩa Mác - Lenin với phong trào công nhân | Là sự kết hợp giữa chủ nghĩa xã hội khoa học với phong trào công nhân | Ngân hàng bổ sung – Chương 2, Ngân hàng câu 135 |
 | 96 | Điều kiện chủ quan để giai cấp công nhân thực hiện sứ mệnh lịch sử của mình là gì? | Sự phát triển của bản than giai cấp công nhân về cả số lượng và chất lượng + Phải có Đảng Cộng sản lãnh đạo + Phải có sự liên minh giữa giai cấp công nhân với giai cấp nông dân và các tầng lớp lao động khác | Tất cả các đáp án đều đúng | Ngân hàng bổ sung – Chương 2, Ngân hàng câu 96 |
 | 108 | Sự kiện gì được xem là cuộc cách mạng vô sản đầu tiên trên thế giới xóa bỏ được giai cấp tư sản và thiết lập chính quyền của giai cấp vô sản? | Công xã Pari | Cách mạng tháng Mười Nga | Ngân hàng bổ sung – Chương 4, Ngân hàng câu 109 |
+| 127 | Giai cấp nào là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất hiện đại? | Thống trị | Công nhân | Ngân hàng bổ sung – Chương 2, Ngân hàng câu 335 |
 | 149 | Sự biến đổi của cơ cấu xã hội - giai cấp gắn liền và được quy định bởi sự biến động của cơ cấu nào? | Cơ cấu kinh tế | Cơ cấu xã hội - kinh tế | Ngân hàng bổ sung – Chương 5, Ngân hàng câu 365 |
 | 157 | Tôn giáo nào du nhập vào Việt Nam mà không chịu ảnh hưởng của bản sắc văn hóa Việt Nam? | Công giáo | Không có | Ngân hàng bổ sung – Chương 6, Ngân hàng câu 61 |
 | 222 | Chức năng và nhiệm vụ của chủ nghĩa xã hội khoa học là gì? | Tất cả các án đều đúng | Cả a, b và c đều đúng | Ngân hàng bổ sung – Chương 1, Ngân hàng câu 399 |
@@ -38,7 +39,7 @@ Dấu (*) = đáp án trong app là đáp án đã được đổi theo giáo tr
 | Câu | Lặp lại của câu | Đáp án |
 |---|---|---|
 | 97 | 96 | giống nhau |
-| 129 | 127 | **khác nhau** |
+| 129 | 127 | giống nhau |
 | 155 | 153 | giống nhau |
 | 178 | 115 | giống nhau |
 | 188 | 143 | giống nhau |

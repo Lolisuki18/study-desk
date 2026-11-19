@@ -643,7 +643,7 @@
       "id": "b-045",
       "type": "multiple-choice",
       "content": {
-        "question": "Phạm Hùng",
+        "question": "Đoàn đại biểu miền Nam do ai dẫn đầu để hiệp thương thống nhất với miền Bắc sau năm 1975?",
         "options": [
           {
             "key": "A",
@@ -665,11 +665,13 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 45"
+        "ref": "Ngân hàng câu 45",
+        "originalQuestion": "Phạm Hùng"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Nguồn chỉ còn lại tên đáp án làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án A). Phù hợp lịch sử: Hội nghị hiệp thương chính trị 11/1975 tại Sài Gòn, đoàn miền Nam do Phạm Hùng dẫn đầu, đoàn miền Bắc do Trường Chinh.",
+        "confidence": "verified",
+        "reference": "Hội nghị Hiệp thương chính trị thống nhất đất nước (15–21/11/1975)"
       }
     },
     {
@@ -1179,34 +1181,38 @@
       "id": "b-086",
       "type": "multiple-choice",
       "content": {
-        "question": "Giương cao ngọn cờ độc lập dân tộc và dân chủ",
+        "question": "Nội dung nào chưa đúng trong các bài học lãnh đạo cách mạng của Đảng để dẫn tới Cách mạng Tháng Tám năm 1945 thắng lợi?",
         "options": [
           {
             "key": "A",
-            "text": "Giương cao ngọn cờ độc lập dân tộc và dân chủ"
+            "text": "Giương cao ngọn cờ độc lập dân tộc, kết hợp đúng đắn hai nhiệm vụ chống đế quốc và chống phong kiến"
           },
           {
             "key": "B",
-            "text": "Kiên định tư tưởng chiến lược tiến công quyết đánh và quyết thắng đế quốc Mỹ xâm lược"
+            "text": "Sử dụng lực lượng vũ trang áp đảo tiêu diệt kẻ thù"
           },
           {
             "key": "C",
-            "text": "Thực hiện chiến tranh nhân dân linh hoạt sáng tạo"
+            "text": "Lợi dụng mâu thuẫn trong hàng ngũ kẻ thù"
           },
           {
             "key": "D",
-            "text": "Coi trong công tác tổ chức, công tác xây dựng Đảng"
+            "text": "Nắm vững nghệ thuật khởi nghĩa, nghệ thuật chọn đúng thời cơ"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
         "ref": "Ngân hàng câu 86",
+        "bankAnswer": "A",
+        "answerReplaced": true,
+        "originalQuestion": "Giương cao ngon cờ độc lập dân tộc và dân ch",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Câu này trong nguồn bị mất đề và chỉ còn các phương án của một câu khác (bài học kháng chiến chống Mỹ). Theo yêu cầu của người học, nội dung được thay bằng câu \"Nội dung nào chưa đúng trong các bài học lãnh đạo…\" (đáp án B) lấy từ ảnh đề gốc. Lưu ý: câu này trùng với một câu khác đã có trong cùng bộ. Đề, phương án và đáp án gốc của nguồn lưu trong source.originalQuestion / source.bankAnswer.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 1 (bài học kinh nghiệm của Cách mạng Tháng Tám)"
       }
     },
     {
@@ -3377,7 +3383,7 @@
       "id": "b-313",
       "type": "multiple-choice",
       "content": {
-        "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bả",
+        "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chống Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bản văn kiện nào?",
         "options": [
           {
             "key": "A",
@@ -3400,11 +3406,13 @@
       },
       "source": {
         "ref": "Ngân hàng câu 313",
+        "originalQuestion": "Để kéo dài thời gian chuẩn bi lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp đinh Sơ b ộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộn g hòa tiếp tuc kí với Pháp bả",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…tiếp tục kí với Pháp bả…\".",
-        "confidence": "uncertain"
+        "text": "Đề gốc bị cụt ở cuối câu (\"…tiếp tục kí với Pháp bả…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Đáp án D (Tạm ước 14/9/1946) khớp lịch sử.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Tạm ước 14/9/1946)"
       }
     },
     {

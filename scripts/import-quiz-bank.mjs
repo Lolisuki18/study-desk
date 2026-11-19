@@ -104,9 +104,10 @@ for (const b of BANKS) {
     if (seen.has(key)) return skipped.repeated.push(`${id} = ${seen.get(key)}`)
     seen.set(key, id)
     if (options.length < Object.keys(q.options).length) skipped.emptyOptions.push(id)
+    const fix0 = fixes[n]
     const bankAnswer = [...String(q.answer)].sort().join('')
     // answers deliberately changed to follow the textbook (docs/answer-overrides-bank-*.json); the bank's own answer is kept in source
-    const answer = overrides[id] ? overrides[id].answer : bankAnswer
+    const answer = fix0?.answer ?? (overrides[id] ? overrides[id].answer : bankAnswer)
     const fix = fixes[n]
     const cleanQuestion = clean(q.question.trim())
     const cleanOptions = options.map((o) => ({ key: o.key, text: fix?.options?.[o.key] ?? clean(o.text) }))
@@ -118,6 +119,7 @@ for (const b of BANKS) {
       source: {
         ref: `Ngân hàng câu ${n}`,
         ...(overrides[id] ? { bankAnswer, answerChangedToTextbook: true } : {}),
+        ...(fix?.answer ? { bankAnswer, answerReplaced: true } : {}),
         ...(fix?.question ? { originalQuestion: q.question.trim() } : {}),
         ...(changedText ? { textCleaned: true } : {}),
       },

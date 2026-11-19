@@ -111,7 +111,7 @@
       "id": "b-043",
       "type": "multiple-choice",
       "content": {
-        "question": "Ai đã khẳng định: \"Từ khi bộ Tư bản ra đời... quan niệm duy vật lịch sử không còn là một giả thuyết của, ma la một nguyên lý đã được chứng minh một cách khoa học?",
+        "question": "Ai đã khẳng định: \"Từ khi bộ Tư bản ra đời... quan niệm duy vật lịch sử không còn là một giả thuyết của, mà là một nguyên lý đã được chứng minh một cách khoa học?",
         "options": [
           {
             "key": "A",
@@ -133,7 +133,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 43"
+        "ref": "Ngân hàng câu 43",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 13): Giáo trình dẫn ý của Lênin: từ khi bộ “Tư bản” ra đời, quan niệm duy vật lịch sử không còn là giả thuyết mà là nguyên lý đã được chứng minh khoa học.",
@@ -1233,11 +1234,11 @@
           },
           {
             "key": "B",
-            "text": "Sự sụp đổ của Liên Xô và Đông Âu là do đã nhận thức và hành động trên nhiều vẫn đê trái với chủ nghĩa xã hội khoa học, trái với chủ nghĩa Mác - Lênin chứ không phải là do đi theo chủ nghĩa xã hội khoa học làm cho các nước này khủng hoảng"
+            "text": "Sự sụp đổ của Liên Xô và Đông Âu là do đã nhận thức và hành động trên nhiều vấn đề trái với chủ nghĩa xã hội khoa học, trái với chủ nghĩa Mác - Lênin chứ không phải là do đi theo chủ nghĩa xã hội khoa học làm cho các nước này khủng hoảng"
           },
           {
             "key": "C",
-            "text": "Cần có bản lĩnh vững vàng, sáng suốt và sáng tạo trong việc vận dụng chủ nghĩa xã hội khoa học vào bối cành lịch sử cụ thể của từng quốc gia, tránh giáo điều, bảo thủ, duy ý chí"
+            "text": "Cần có bản lĩnh vững vàng, sáng suốt và sáng tạo trong việc vận dụng chủ nghĩa xã hội khoa học vào bối cảnh lịch sử cụ thể của từng quốc gia, tránh giáo điều, bảo thủ, duy ý chí"
           },
           {
             "key": "D",
@@ -1247,7 +1248,8 @@
         "answer": "D"
       },
       "source": {
-        "ref": "Ngân hàng câu 383"
+        "ref": "Ngân hàng câu 383",
+        "textCleaned": true
       }
     },
     {

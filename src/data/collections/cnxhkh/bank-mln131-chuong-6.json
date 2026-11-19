@@ -356,7 +356,7 @@
           },
           {
             "key": "B",
-            "text": "Khi xă hội đã thủ tiêu được giai cấp"
+            "text": "Khi xã hội đã thủ tiêu được giai cấp"
           },
           {
             "key": "C",
@@ -370,7 +370,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 66"
+        "ref": "Ngân hàng câu 66",
+        "textCleaned": true
       }
     },
     {
@@ -663,7 +664,7 @@
           },
           {
             "key": "B",
-            "text": "Điêu hòa mâu thuẫn giữa các dân tộc"
+            "text": "Điều hòa mâu thuẫn giữa các dân tộc"
           },
           {
             "key": "C",
@@ -677,7 +678,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 143"
+        "ref": "Ngân hàng câu 143",
+        "textCleaned": true
       }
     },
     {
@@ -912,7 +914,7 @@
           },
           {
             "key": "B",
-            "text": "Là sự liên kết, tác động qua lại, chi phối lẫn nhau giữa dân tộc với tôn giáo trong nội bộ một quốc gia trong mọi lĩnh vưc đời sống xã hội"
+            "text": "Là sự liên kết, tác động qua lại, chi phối lẫn nhau giữa dân tộc với tôn giáo trong nội bộ một quốc gia trong mọi lĩnh vực đời sống xã hội"
           },
           {
             "key": "C",
@@ -926,7 +928,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 163"
+        "ref": "Ngân hàng câu 163",
+        "textCleaned": true
       },
       "enrichment": {
         "text": "Giáo trình (tr. PDF 157): Quan hệ dân tộc – tôn giáo là sự liên kết, tác động qua lại và chi phối lẫn nhau giữa dân tộc và tôn giáo trong một quốc gia hoặc giữa các quốc gia, trên mọi lĩnh vực đời sống xã hội.",
@@ -950,7 +953,7 @@
           },
           {
             "key": "C",
-            "text": "Tôn giáo ra đời, tồn tại và biến đã trong một giai doan lịch sử nhất định của loài người"
+            "text": "Tôn giáo ra đời, tồn tại và biến đã trong một giai đoạn lịch sử nhất định của loài người"
           },
           {
             "key": "D",
@@ -960,7 +963,8 @@
         "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 185"
+        "ref": "Ngân hàng câu 185",
+        "textCleaned": true
       }
     },
     {
@@ -1425,7 +1429,7 @@
           },
           {
             "key": "C",
-            "text": "Nhà nước liên hiệp với giáo hội các tôn giáo để đĩệu chính họ theo hướng duy vật, vô thần dần dần theo thời gian"
+            "text": "Nhà nước liên hiệp với giáo hội các tôn giáo để điều chỉnh họ theo hướng duy vật, vô thần dần dần theo thời gian"
           },
           {
             "key": "D",
@@ -1581,7 +1585,7 @@
           },
           {
             "key": "C",
-            "text": "Tương đối đồng đều, trong đó dẫn tộc Kinh phát triển cao nhất"
+            "text": "Tương đối đồng đều, trong đó dân tộc Kinh phát triển cao nhất"
           },
           {
             "key": "D",
@@ -1591,7 +1595,8 @@
         "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 350"
+        "ref": "Ngân hàng câu 350",
+        "textCleaned": true
       }
     },
     {
@@ -1947,19 +1952,19 @@
       "id": "b-401",
       "type": "multiple-choice",
       "content": {
-        "question": "Vấn đê nào dễ dẫn tối nguy cơ gây mất ổn định chính trị, xã hội, dễ tạo cơ hội cho các thế lực thủ địch bên ngoài can thiệp vào công việc nội bộ của đất nước?",
+        "question": "Vấn đề nào dễ dẫn tới nguy cơ gây mất ổn định chính trị, xã hội, dễ tạo cơ hội cho các thế lực thủ địch bên ngoài can thiệp vào công việc nội bộ của đất nước?",
         "options": [
           {
             "key": "A",
-            "text": "Vẫn đê tôn giáo và dẫn tộc"
+            "text": "Vấn đề tôn giáo và dân tộc"
           },
           {
             "key": "B",
-            "text": "Vãn đê mê tín dị đoan và thờ cúng ông bà"
+            "text": "Vấn đề mê tín dị đoan và thờ cúng ông bà"
           },
           {
             "key": "C",
-            "text": "Vấn đê ngoại giao"
+            "text": "Vấn đề ngoại giao"
           },
           {
             "key": "D",
@@ -1969,7 +1974,8 @@
         "answer": "A"
       },
       "source": {
-        "ref": "Ngân hàng câu 401"
+        "ref": "Ngân hàng câu 401",
+        "textCleaned": true
       }
     },
     {
