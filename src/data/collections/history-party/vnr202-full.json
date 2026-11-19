@@ -4,7 +4,7 @@
   "subject": "Lịch sử Đảng",
   "contentType": "multiple-choice",
   "standalone": true,
-  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 379 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
+  "description": "Toàn bộ 404 câu của ngân hàng VNR202, giữ nguyên thứ tự. Lưu ý: 377 câu cũng có trong các bộ Lịch sử Đảng khác của app và 4 câu lặp lại ngay trong file. File gốc không có giải thích.",
   "source": {
     "document": "VNR202 - Lịch sử Đảng Cộng sản Việt Nam (dinh-vien.github.io/fpt-political-quiz; docs/source-bank-vnr202.json)",
     "note": "Câu hỏi, phương án và đáp án chép nguyên văn. Số câu là vị trí trong file gốc. Đối chiếu đáp án với các bộ đã có: docs/vnr202-full-doi-chieu.md"
@@ -1623,7 +1623,7 @@
       "id": "q-055",
       "type": "multiple-choice",
       "content": {
-        "question": "Hội nghị Ban Chấp hành Trung ương tháng 5/194 giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
+        "question": "(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
         "options": [
           {
             "key": "A",
@@ -1639,17 +1639,18 @@
           },
           {
             "key": "D",
-            "text": "Hội nghị Ban Chấp hành Trung ương tháng 5/194"
+            "text": "Hội nghị Ban Chấp hành Trung ương tháng 5/1941"
           }
         ],
         "answer": "D"
       },
       "source": {
         "ref": "VNR202 Full câu 55",
+        "originalQuestion": "Hội nghi Ban Chấp hành Trung ương tháng 5/194 giải phóng dân tộc được đặt ra từ Hội nghi nào của Đảng?",
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc bị lỗi: phần đầu đề trùng với đáp án D. Về lịch sử: Hội nghị Trung ương 8 (5/1941) đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
+        "text": "Phần đầu của đề gốc bị mất và phương án D bị chép lẫn một đoạn đề. Phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất); phương án D được chép lại thành \"tháng 5/1941\" theo các phương án còn lại. Về lịch sử: Hội nghị Trung ương 8 (5/1941) hoàn chỉnh chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
         "confidence": "uncertain"
       }
     },
@@ -1716,7 +1717,7 @@
       "id": "q-058",
       "type": "multiple-choice",
       "content": {
-        "question": "Mục tiêu cụ thể trước mắt của cao trào cách mạng 193 6 - 1939 là",
+        "question": "Mục tiêu cụ thể trước mắt của cao trào cách mạng 1936 - 1939 là",
         "options": [
           {
             "key": "A",
@@ -4839,7 +4840,7 @@
           },
           {
             "key": "D",
-            "text": "Hội nghị trung ương VIII tháng 5/194"
+            "text": "Hội nghị trung ương VIII tháng 5/1941"
           }
         ],
         "answer": "D"
@@ -4847,6 +4848,11 @@
       "source": {
         "ref": "VNR202 Full câu 161",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hội nghị Trung ương 8 họp tháng 5/1941.",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 1 (Hội nghị TW 8, 5/1941)"
       }
     },
     {
@@ -7950,7 +7956,7 @@
           },
           {
             "key": "D",
-            "text": "Ngay sau khi Hiệp định Pari được ký kết 197"
+            "text": "Ngay sau khi Hiệp định Pari được ký kết 1973"
           }
         ],
         "answer": "A"
@@ -7958,6 +7964,10 @@
       "source": {
         "ref": "VNR202 Full câu 264",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hiệp định Pari ký 27/1/1973.",
+        "confidence": "verified"
       }
     },
     {
@@ -9030,7 +9040,7 @@
           },
           {
             "key": "D",
-            "text": "Hội nghị trung ương VIII tháng 5/194"
+            "text": "Hội nghị trung ương VIII tháng 5/1941"
           }
         ],
         "answer": "D"
@@ -9038,6 +9048,11 @@
       "source": {
         "ref": "VNR202 Full câu 300",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hội nghị Trung ương 8 họp tháng 5/1941.",
+        "confidence": "verified",
+        "reference": "Bộ Lịch sử Đảng – Chương 1 (Hội nghị TW 8, 5/1941)"
       }
     },
     {
@@ -9371,7 +9386,7 @@
       "id": "q-312",
       "type": "multiple-choice",
       "content": {
-        "question": "Hội nghị Ban Chấp hành Trung ương tháng 5/194 Luận điểm trên được đưa ra tại Hội nghị nào của Đảng",
+        "question": "(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?",
         "options": [
           {
             "key": "A",
@@ -9387,14 +9402,20 @@
           },
           {
             "key": "D",
-            "text": "Hội nghị Ban Thường vụ Trung ương tháng 3/19"
+            "text": "Hội nghị Ban Thường vụ Trung ương tháng 3/1945"
           }
         ],
         "answer": "C"
       },
       "source": {
         "ref": "VNR202 Full câu 312",
+        "originalQuestion": "Hội nghi Ban Chấp hành Trung ương tháng 5/194 Luận điểm trên được đưa ra tại Hội nghi nào của Đảng",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Phần đầu của đề gốc bị mất và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"); phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất). Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
+        "confidence": "uncertain",
+        "reference": "Bộ Lịch sử Đảng – Chương 1 (sau đảo chính 9/3/1945)"
       }
     },
     {
@@ -10592,7 +10613,7 @@
           },
           {
             "key": "D",
-            "text": "Chiến dịch Hồ Chí Minh 197"
+            "text": "Chiến dịch Hồ Chí Minh 1975"
           }
         ],
         "answer": "B"
@@ -10600,6 +10621,10 @@
       "source": {
         "ref": "VNR202 Full câu 352",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Chiến dịch Hồ Chí Minh 4/1975.",
+        "confidence": "verified"
       }
     },
     {
@@ -11198,7 +11223,7 @@
           },
           {
             "key": "D",
-            "text": "Cương lĩnh chính trị của Đảng năm 199"
+            "text": "Cương lĩnh chính trị của Đảng năm 1991"
           }
         ],
         "answer": "A"
@@ -11206,6 +11231,10 @@
       "source": {
         "ref": "VNR202 Full câu 372",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH năm 1991.",
+        "confidence": "uncertain"
       }
     },
     {

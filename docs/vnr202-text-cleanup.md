@@ -221,7 +221,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: C. Hội nghi Cán bộ Trung ương tháng 11/1940
 - sau:   C. Hội nghị Cán bộ Trung ương tháng 11/1940
 - trước: D. Hội nghi Ban Chấp hành Trung ương tháng 5/194
-- sau:   D. Hội nghị Ban Chấp hành Trung ương tháng 5/194
+- sau:   D. Hội nghị Ban Chấp hành Trung ương tháng 5/1941
 
 ## Câu 57
 - trước: Mặt trận được xây dựng thời kỳ cách mạng 1930 - 1931 goi tên là:
@@ -229,7 +229,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 
 ## Câu 58
 - trước: Muc tiêu cu thể trước mắt của cao trào cách mạng 193 6 - 1939 là
-- sau:   Mục tiêu cụ thể trước mắt của cao trào cách mạng 193 6 - 1939 là
+- sau:   Mục tiêu cụ thể trước mắt của cao trào cách mạng 1936 - 1939 là
 
 ## Câu 59
 - trước: Nhiệm vu cách mạng nào được xác đinh bởi Cương lĩn h chính tri
@@ -699,7 +699,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: C. Hội nghi trung ương VII tháng 11/1940
 - sau:   C. Hội nghị trung ương VII tháng 11/1940
 - trước: D. Hội nghi trung ương VIII tháng 5/194
-- sau:   D. Hội nghị trung ương VIII tháng 5/194
+- sau:   D. Hội nghị trung ương VIII tháng 5/1941
 
 ## Câu 164
 - trước: Đường lối toàn quốc kháng chiến của Đảng vạch ra muc tiêu của kháng chiến là:
@@ -1183,7 +1183,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 
 ## Câu 264
 - trước: D. Ngay sau khi Hiệp đinh Pari được ký kết 197
-- sau:   D. Ngay sau khi Hiệp định Pari được ký kết 197
+- sau:   D. Ngay sau khi Hiệp định Pari được ký kết 1973
 
 ## Câu 265
 - trước: Hội nghi Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam (10-1930) đã đổi tên đảng thành:
@@ -1353,7 +1353,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: C. Hội nghi trung ương VII tháng 11/1940
 - sau:   C. Hội nghị trung ương VII tháng 11/1940
 - trước: D. Hội nghi trung ương VIII tháng 5/194
-- sau:   D. Hội nghị trung ương VIII tháng 5/194
+- sau:   D. Hội nghị trung ương VIII tháng 5/1941
 
 ## Câu 303
 - trước: C. Tiếp tuc thực hiện hai khẩu hiệu trên một cách đồng bộ
@@ -1413,7 +1413,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: C. Hội nghi Ban Chấp hành Trung ương tháng 5/1941
 - sau:   C. Hội nghị Ban Chấp hành Trung ương tháng 5/1941
 - trước: D. Hội nghi Ban Thường vu Trung ương tháng 3/19
-- sau:   D. Hội nghị Ban Thường vụ Trung ương tháng 3/19
+- sau:   D. Hội nghị Ban Thường vụ Trung ương tháng 3/1945
 
 ## Câu 313
 - trước: Để kéo dài thời gian chuẩn bi lực lượng cho cuộc kháng chiến toàn quốc chông Pháp, sau Hiệp đinh Sơ b ộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộn g hòa tiếp tuc kí với Pháp bả
@@ -1599,7 +1599,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: C. Chiến dich Huế - Đà Nẵng 1975
 - sau:   C. Chiến dịch Huế - Đà Nẵng 1975
 - trước: D. Chiến dich Hồ Chí Minh 197
-- sau:   D. Chiến dịch Hồ Chí Minh 197
+- sau:   D. Chiến dịch Hồ Chí Minh 1975
 
 ## Câu 353
 - trước: Theo quan điểm của Đại hội X, nội dung nào sau đây không thể hiện tính đinh hướng xã hội chủ nghĩa đối với kinh tế thi trường nước ta
@@ -1715,7 +1715,7 @@ Số câu được sửa chữ: 296/404. Câu có mất đề xem `docs/question
 - trước: Điểm cốt lõi của cơ sở chính tri trong hệ thống chuyên chính vô sản là:
 - sau:   Điểm cốt lõi của cơ sở chính trị trong hệ thống chuyên chính vô sản là:
 - trước: D. Cương lĩnh chính tri của Đảng năm 199
-- sau:   D. Cương lĩnh chính trị của Đảng năm 199
+- sau:   D. Cương lĩnh chính trị của Đảng năm 1991
 
 ## Câu 373
 - trước: Đảng cộng sản Việt Nam đóng vai trò gì trong hệ thống chính tri ở nước ta?

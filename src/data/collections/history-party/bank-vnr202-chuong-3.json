@@ -4079,7 +4079,7 @@
           },
           {
             "key": "D",
-            "text": "Cương lĩnh chính trị của Đảng năm 199"
+            "text": "Cương lĩnh chính trị của Đảng năm 1991"
           }
         ],
         "answer": "A"
@@ -4087,6 +4087,10 @@
       "source": {
         "ref": "Ngân hàng câu 372",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH năm 1991.",
+        "confidence": "uncertain"
       }
     },
     {

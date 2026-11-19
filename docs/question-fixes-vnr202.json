@@ -13,7 +13,11 @@
   "confidence": "uncertain"
  },
  "55": {
-  "note": "Đề gốc bị lỗi: phần đầu đề trùng với đáp án D. Về lịch sử: Hội nghị Trung ương 8 (5/1941) đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
+  "question": "(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
+  "options": {
+   "D": "Hội nghị Ban Chấp hành Trung ương tháng 5/1941"
+  },
+  "note": "Phần đầu của đề gốc bị mất và phương án D bị chép lẫn một đoạn đề. Phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất); phương án D được chép lại thành \"tháng 5/1941\" theo các phương án còn lại. Về lịch sử: Hội nghị Trung ương 8 (5/1941) hoàn chỉnh chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
   "confidence": "uncertain"
  },
  "63": {
@@ -66,6 +70,14 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (phương án đúng là đoạn mô tả giai cấp công nhân lãnh đạo cách mạng thông qua Đảng, tiên phong trong công nghiệp hóa, hiện đại hóa); không phải đề gốc nên chỉ dùng tham khảo.",
   "confidence": "uncertain"
  },
+ "161": {
+  "options": {
+   "D": "Hội nghị trung ương VIII tháng 5/1941"
+  },
+  "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hội nghị Trung ương 8 họp tháng 5/1941.",
+  "confidence": "verified",
+  "reference": "Bộ Lịch sử Đảng – Chương 1 (Hội nghị TW 8, 5/1941)"
+ },
  "162": {
   "question": "Nhật đảo chính Pháp ở Đông Dương (9/3/1945) vì lý do nào sau đây?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mâu thuẫn Pháp – Nhật ngày càng gay gắt là nguyên nhân Nhật đảo chính Pháp); không phải đề gốc nên chỉ dùng tham khảo.",
@@ -115,6 +127,13 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (đường lối \"kháng chiến nhất định thắng lợi\": lâu dài, gian khổ, khó khăn nhưng nhất định thắng lợi); không phải đề gốc nên chỉ dùng tham khảo.",
   "confidence": "uncertain"
  },
+ "264": {
+  "options": {
+   "D": "Ngay sau khi Hiệp định Pari được ký kết 1973"
+  },
+  "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hiệp định Pari ký 27/1/1973.",
+  "confidence": "verified"
+ },
  "277": {
   "note": "Đề gốc của ngân hàng này bị mất phần câu hỏi: chỉ còn lại nội dung của đáp án đúng (hoặc đề bị cắt/chép lẫn). Không thể biết chắc câu hỏi nguyên bản, nên đáp án chỉ nên coi là tham khảo; hãy đối chiếu giáo trình.",
   "confidence": "uncertain"
@@ -124,6 +143,23 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 67: \"…bị tạm thời chia cắt ở vĩ tuyến bao nhiêu?\" – vĩ tuyến 17).",
   "confidence": "verified",
   "reference": "Bộ Lịch sử Đảng – Chương 2, câu 67; giáo trình tr. PDF 43"
+ },
+ "300": {
+  "options": {
+   "D": "Hội nghị trung ương VIII tháng 5/1941"
+  },
+  "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hội nghị Trung ương 8 họp tháng 5/1941.",
+  "confidence": "verified",
+  "reference": "Bộ Lịch sử Đảng – Chương 1 (Hội nghị TW 8, 5/1941)"
+ },
+ "312": {
+  "question": "(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?",
+  "options": {
+   "D": "Hội nghị Ban Thường vụ Trung ương tháng 3/1945"
+  },
+  "note": "Phần đầu của đề gốc bị mất và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"); phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất). Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
+  "confidence": "uncertain",
+  "reference": "Bộ Lịch sử Đảng – Chương 1 (sau đảo chính 9/3/1945)"
  },
  "313": {
   "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…tiếp tục kí với Pháp bả…\".",
@@ -140,6 +176,13 @@
   "confidence": "verified",
   "reference": "Bộ Lịch sử Đảng – Chương 1, câu 37 (phần bổ sung)"
  },
+ "352": {
+  "options": {
+   "D": "Chiến dịch Hồ Chí Minh 1975"
+  },
+  "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Chiến dịch Hồ Chí Minh 4/1975.",
+  "confidence": "verified"
+ },
  "355": {
   "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…là ở ch…\".",
   "confidence": "uncertain"
@@ -149,21 +192,15 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (các phương án B và D là nội dung Cương lĩnh chính trị đầu tiên, không phải ý nghĩa; A (vai trò lãnh đạo) là ý nghĩa của sự ra đời của Đảng); không phải đề gốc nên chỉ dùng tham khảo.",
   "confidence": "uncertain"
  },
+ "372": {
+  "options": {
+   "D": "Cương lĩnh chính trị của Đảng năm 1991"
+  },
+  "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH năm 1991.",
+  "confidence": "uncertain"
+ },
  "382": {
   "note": "Đề gốc của ngân hàng này bị cụt ở cuối câu (mất vài chữ cuối) và chưa khôi phục được vì không đoán chắc từ còn thiếu. Nội dung phía trước vẫn đủ để hiểu câu hỏi; đáp án giữ nguyên theo nguồn. Chỗ cụt: \"…hệ thống chính trị là nhắ…\".",
-  "confidence": "uncertain"
- },
- "055": {
-  "question": "(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
-  "options": {
-   "D": "Hội nghị Ban Chấp hành Trung ương tháng 5/1941"
-  },
-  "note": "Phần đầu của đề gốc bị mất và phương án D bị chép lẫn một đoạn đề. Phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất); phương án D được chép lại thành \"tháng 5/1941\" theo các phương án còn lại. Về lịch sử: Hội nghị Trung ương 8 (5/1941) hoàn chỉnh chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
-  "confidence": "uncertain"
- },
- "063": {
-  "question": "Tình thế của nước Việt Nam Dân chủ Cộng hòa sau Cách mạng tháng Tám năm 1945 được ví như:",
-  "note": "Đề gốc bị mất (chỉ còn đáp án). Đề này do Claude dựng lại từ nội dung các phương án và kiến thức lịch sử, KHÔNG phải đề gốc; đã tra mạng nhưng không tìm được bản gốc của ngân hàng. Đề gốc lưu trong source.originalQuestion. Căn cứ: \"ngàn cân treo sợi tóc\" là cách ví quen thuộc về tình thế đầu năm 1946; các phương án khác chỉ diễn đạt chung chung.",
   "confidence": "uncertain"
  }
 }

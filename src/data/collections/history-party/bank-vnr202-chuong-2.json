@@ -2938,7 +2938,7 @@
           },
           {
             "key": "D",
-            "text": "Ngay sau khi Hiệp định Pari được ký kết 197"
+            "text": "Ngay sau khi Hiệp định Pari được ký kết 1973"
           }
         ],
         "answer": "A"
@@ -2946,6 +2946,10 @@
       "source": {
         "ref": "Ngân hàng câu 264",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hiệp định Pari ký 27/1/1973.",
+        "confidence": "verified"
       }
     },
     {
@@ -3666,7 +3670,7 @@
           },
           {
             "key": "D",
-            "text": "Chiến dịch Hồ Chí Minh 197"
+            "text": "Chiến dịch Hồ Chí Minh 1975"
           }
         ],
         "answer": "B"
@@ -3674,6 +3678,10 @@
       "source": {
         "ref": "Ngân hàng câu 352",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Chiến dịch Hồ Chí Minh 4/1975.",
+        "confidence": "verified"
       }
     },
     {

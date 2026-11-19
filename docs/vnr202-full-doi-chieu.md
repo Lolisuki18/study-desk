@@ -4,9 +4,9 @@ Tự sinh bởi `node scripts/import-vnr202-full.mjs`. Không sửa tay: chạy 
 
 - File gốc: 404 câu (`docs/source-bank-vnr202.json`).
 - Bộ "Lịch sử Đảng – VNR202 Full (404 câu)" chứa đủ 404 câu, kể cả câu trùng.
-- Cũng có trong bộ khác của app (giống hệt, hoặc chỉ khác lỗi chính tả / cách diễn đạt): 379 câu.
+- Cũng có trong bộ khác của app (giống hệt, hoặc chỉ khác lỗi chính tả / cách diễn đạt): 377 câu.
 - Lặp lại trong chính file: 4 câu.
-- Không có ở bộ nào khác: 21 câu (câu 17, 63, 81, 85, 102, 103, 106, 133, 155, 162, 170, 172, 177, 180, 212, 247, 254, 283, 344, 347, 360).
+- Không có ở bộ nào khác: 23 câu (câu 17, 55, 63, 81, 85, 102, 103, 106, 133, 155, 162, 170, 172, 177, 180, 212, 247, 254, 283, 312, 344, 347, 360).
 
 ## 1 câu trùng nhưng đáp án khác với app
 

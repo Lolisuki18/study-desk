@@ -247,6 +247,7 @@ export function buildCleaner(corpus, evidence = [], { wordFixes = {}, phrases = 
     [/nghề biể$/u, 'nghề biển'],
     [/\bso ạn\b/gu, 'soạn'],
     [/\b(tỉ|tỷ) trong\b/gu, '$1 trọng'],
+    [/(?<!\d)193 6(?!\d)/gu, '1936'],
     [/Việt N$/u, 'Việt Nam'],
     [/xã h$/u, 'xã hội'],
     [/Hồ Chí Mi$/u, 'Hồ Chí Minh'],
