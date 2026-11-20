@@ -164,7 +164,7 @@ export interface Settings {
   pomodoroBreak: number
 }
 
-export type Theme = 'light' | 'dark' | 'system'
+export type Theme = 'light' | 'dark' | 'system' | 'sepia' | 'oled'
 export type Accent = 'indigo' | 'violet' | 'sky' | 'teal' | 'pink'
 
 export interface BackupFile {
