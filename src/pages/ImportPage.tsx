@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AlertCircle, ArrowRight, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb } from 'lucide-react'
 import type { Collection } from '../types'
 import { validateCollection } from '../utils/validate'
-import { refreshDataCollections } from '../data'
+import { isBundledId, refreshDataCollections } from '../data'
 import { useCustomCollections } from '../services/storage/customCollections'
 import { TEMPLATES, downloadJsonFile, type JsonTemplate } from '../services/templates/examples'
 import { Button, Card, ConfirmDialog, Empty, PageHeader, useToast } from '../components/ui'
@@ -47,7 +47,10 @@ export default function ImportPage() {
     try {
       const parsed = JSON.parse(text)
       const res = validateCollection(parsed)
-      if (res.ok) {
+      if (res.ok && isBundledId(parsed.id)) {
+        setParsedData(null)
+        setValidationErrors([`Mã bộ "${parsed.id}" trùng với một bộ học có sẵn trong app. Hãy đổi "id" thành mã khác để không lẫn tiến độ học.`])
+      } else if (res.ok) {
         setParsedData(parsed as Collection)
         setValidationErrors([])
       } else {
@@ -330,8 +333,10 @@ export default function ImportPage() {
             <div className="rounded-2xl border border-line bg-slate-50/60 dark:bg-slate-900/40 p-4 text-xs space-y-2">
               <div className="flex items-center gap-1.5 font-bold text-ink"><Lightbulb size={14} className="text-amber-500" /> Hướng dẫn điền thông tin:</div>
               <ul className="space-y-1 text-muted leading-relaxed list-disc pl-5">
-                <li><b className="text-ink">id:</b> Mã định danh viết liền không dấu, duy nhất (VD: <code>triet-hoc-chuong-1</code>).</li>
-                <li><b className="text-ink">title & subject:</b> Tên hiển thị của bộ học và tên môn học để lọc.</li>
+                <li><b className="text-ink">id:</b> Mã định danh chỉ gồm chữ thường, số và dấu gạch ngang (VD: <code>triet-hoc-chuong-1</code>), không trùng bộ nào có sẵn. Đổi <code>id</code> sau khi đã học sẽ mất tiến độ.</li>
+                <li><b className="text-ink">title, subject, description:</b> Tên bộ học, tên môn học để lọc, và mô tả ngắn (<code>description</code> là bắt buộc).</li>
+                <li><b className="text-ink">contentType:</b> <code>multiple-choice</code>, <code>true-false</code>, <code>theory</code>, <code>vocabulary</code>, <code>programming</code> hoặc <code>mixed</code> (nếu bộ có nhiều loại).</li>
+                <li><b className="text-ink">items:</b> Mỗi mục cần <code>id</code> riêng trong bộ (không chứa <code>::</code>), <code>type</code> và <code>content</code>. Tùy chọn: <code>tags</code>, <code>source.ref</code>, <code>enrichment</code>.</li>
                 <li><b className="text-ink">options (với trắc nghiệm):</b> Mảng các phương án gồm <code>key</code> (A, B, C, D) và <code>text</code>.</li>
                 <li><b className="text-ink">answer:</b> Phím đáp án đúng (ví dụ <code>"A"</code>, hoặc <code>"ABC"</code> nếu câu hỏi chọn nhiều đáp án).</li>
                 <li><b className="text-ink">explanation:</b> Lời giải thích hiển thị sau khi nộp bài hoặc khi lật mặt sau thẻ.</li>

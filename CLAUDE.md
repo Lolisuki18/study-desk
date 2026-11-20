@@ -1,7 +1,10 @@
 # Personal Study Hub – Guide for the AI Coding Agent
 
-Local-only study app (React + TS + Tailwind v4 + IndexedDB). No backend, no in-app import.
-**You** (the agent) prepare content; the app only studies / reviews / tracks progress.
+Local-only study app (React + TS + Tailwind v4 + IndexedDB). No backend.
+**You** (the agent) prepare content; the app only studies / reviews / tracks progress. The learner can also upload their own deck
+JSON (page `/import`, kept in localStorage): the sample library there is `src/services/templates/examples.ts` (one sample per content
+type, covered by `examples.test.ts`). Uploaded decks are checked by the same `validateCollection`; their `id` must be a lowercase
+hyphenated slug and must not reuse a bundled collection id.
 
 ## Add a collection (the whole workflow)
 1. Read the source the user gives you (put a copy in `docs/`). Identify subject + content type.

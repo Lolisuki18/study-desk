@@ -8,6 +8,8 @@ export interface ValidationResult {
 
 const isStr = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0
 const isStrArr = (v: unknown) => Array.isArray(v) && v.every((x) => typeof x === 'string')
+/** collection ids: lowercase words joined by hyphens, e.g. "triet-hoc-chuong-1" */
+export const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const ITEM_TYPES = ['vocabulary', 'multiple-choice', 'true-false', 'theory', 'programming']
 
 /** Content profile validators: one per item type. Return list of problems. */
@@ -53,6 +55,7 @@ export function validateCollection(raw: unknown): ValidationResult {
   const c = raw as Partial<Collection> | null
   if (!c || typeof c !== 'object') return { ok: false, errors: ['not an object'], warnings }
   for (const f of ['id', 'title', 'subject', 'description'] as const) if (!isStr(c[f])) errors.push(`"${f}" is required`)
+  if (isStr(c.id) && !SLUG.test(c.id)) errors.push(`"id" must use lowercase letters, digits and hyphens only, e.g. "triet-hoc-chuong-1" (got "${c.id}")`)
   if (c.contentType !== 'mixed' && !ITEM_TYPES.includes(c.contentType as string)) errors.push('"contentType" is invalid')
   if (!Array.isArray(c.items) || c.items.length === 0) {
     errors.push('"items" must be a non-empty array')
@@ -62,6 +65,8 @@ export function validateCollection(raw: unknown): ValidationResult {
   c.items.forEach((item: any, i) => {
     const label = `items[${i}]${item?.id ? ` (${item.id})` : ''}`
     if (!isStr(item?.id)) return errors.push(`${label}: id is required`)
+    // progress is stored under "collectionId::itemId", so "::" inside an id would make keys ambiguous
+    if (item.id.includes('::')) errors.push(`${label}: id must not contain "::"`)
     if (seen.has(item.id)) errors.push(`${label}: duplicate id`)
     seen.add(item.id)
     if (!ITEM_TYPES.includes(item.type)) return errors.push(`${label}: unknown type "${item.type}"`)

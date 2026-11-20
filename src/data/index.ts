@@ -38,8 +38,12 @@ const loaded = loadCollections()
 export const bundledCollections: Collection[] = loaded.collections
 export const loadReports: LoadReport[] = loaded.reports
 
+/** True when a collection with this id ships with the app (an uploaded deck must not reuse it). */
+export const isBundledId = (id: string) => bundledCollections.some((c) => c.id === id)
+
 export function getLoadedCollections(): Collection[] {
-  const custom = getCustomCollections()
+  // a custom deck with a bundled id would share progress with it, so the bundled one always wins
+  const custom = getCustomCollections().filter((c) => !isBundledId(c.id))
   if (!custom.length) return bundledCollections
   return [...bundledCollections, ...custom]
 }

@@ -10,7 +10,7 @@ export const TEMPLATES: JsonTemplate[] = [
   {
     id: 'multiple-choice',
     name: 'Trắc nghiệm (MCQ)',
-    desc: 'Hỗ trợ cả câu hỏi chọn 1 đáp án (A) hoặc chọn nhiều đáp án đúng (AB).',
+    desc: 'Hỗ trợ cả câu hỏi chọn 1 đáp án (A) hoặc chọn nhiều đáp án đúng (AB). Câu 1 minh họa thêm tags và enrichment (kiến thức mở rộng, tách riêng khỏi nội dung gốc).',
     badge: 'Phổ biến nhất',
     data: {
       id: 'triet-hoc-chuong-1-mau',
@@ -25,7 +25,13 @@ export const TEMPLATES: JsonTemplate[] = [
         {
           id: 'th-c1-01',
           type: 'multiple-choice',
+          tags: ['triết học', 'chương 1'],
           source: { ref: 'Câu 1' },
+          enrichment: {
+            text: 'Ph. Ăngghen nêu vấn đề cơ bản này trong tác phẩm "Lútvích Phoiơbắc và sự cáo chung của triết học cổ điển Đức" (1886).',
+            confidence: 'verified',
+            reference: 'Ph. Ăngghen, Lútvích Phoiơbắc và sự cáo chung của triết học cổ điển Đức (1886)',
+          },
           content: {
             question: 'Vấn đề cơ bản của triết học là vấn đề về mối quan hệ giữa:',
             options: [
@@ -98,7 +104,7 @@ export const TEMPLATES: JsonTemplate[] = [
   {
     id: 'theory',
     name: 'Lý thuyết & Khái niệm',
-    desc: 'Học định nghĩa, nguyên lý và luận điểm chính. Tự động sinh bài tập nối cặp (Matching).',
+    desc: 'Học định nghĩa, nguyên lý và luận điểm chính. Từ 4 mục trở lên, app tự sinh thêm bài tập nối cặp (Matching), trắc nghiệm định nghĩa và trả lời ngắn.',
     badge: 'Tự sinh nối cặp',
     data: {
       id: 'kinh-te-chinh-tri-khai-niem-mau',
@@ -135,13 +141,35 @@ export const TEMPLATES: JsonTemplate[] = [
             ],
           },
         },
+        {
+          id: 'ktct-th-03',
+          type: 'theory',
+          content: {
+            concept: 'Tiền tệ',
+            definition: 'Là hàng hóa đặc biệt được tách ra làm vật ngang giá chung thống nhất cho các hàng hóa khác.',
+            points: ['Thước đo giá trị', 'Phương tiện lưu thông', 'Phương tiện cất trữ', 'Phương tiện thanh toán', 'Tiền tệ thế giới'],
+            explanation: 'Năm điểm trên là năm chức năng của tiền tệ.',
+          },
+        },
+        {
+          id: 'ktct-th-04',
+          type: 'theory',
+          content: {
+            concept: 'Sức lao động',
+            definition: 'Là toàn bộ những năng lực thể chất và tinh thần tồn tại trong một con người, được người đó vận dụng mỗi khi sản xuất ra một giá trị sử dụng nào đó.',
+            points: [
+              'Điều kiện 1: người lao động tự do về thân thể, làm chủ được sức lao động của mình',
+              'Điều kiện 2: người lao động không có tư liệu sản xuất cần thiết nên buộc phải bán sức lao động để sống',
+            ],
+          },
+        },
       ],
     },
   },
   {
     id: 'vocabulary',
     name: 'Từ vựng & Thuật ngữ',
-    desc: 'Học từ ngữ chuyên ngành, thuật ngữ, phát âm và câu ví dụ ứng dụng.',
+    desc: 'Học từ ngữ chuyên ngành, thuật ngữ, phát âm và câu ví dụ. Có ví dụ chứa từ cần học thì app tự sinh bài điền chỗ trống. collocations và synonyms là tùy chọn.',
     badge: 'Có phát âm TTS',
     data: {
       id: 'tieng-anh-chuyen-nganh-mau',
@@ -157,6 +185,8 @@ export const TEMPLATES: JsonTemplate[] = [
             term: 'Pragmatism',
             meaning: 'Chủ nghĩa thực dụng',
             partOfSpeech: 'noun',
+            collocations: ['philosophical pragmatism', 'political pragmatism'],
+            synonyms: ['practicality'],
             pronunciation: '/ˈpræɡ.mə.tɪ.zəm/',
             example: 'His political career was characterized by pragmatism rather than ideology.',
             translation: 'Sự nghiệp chính trị của ông được đặc trưng bởi tính thực dụng hơn là hệ tư tưởng.',
@@ -171,6 +201,65 @@ export const TEMPLATES: JsonTemplate[] = [
             partOfSpeech: 'noun',
             pronunciation: '/hɪˈɡem.ə.ni/',
             example: 'The nation sought cultural and economic hegemony in the region.',
+          },
+        },
+      ],
+    },
+  },
+  {
+    id: 'programming',
+    name: 'Lập trình (Code)',
+    desc: 'Khái niệm kèm đoạn code minh họa, ngôn ngữ và ví dụ ứng dụng. Từ 4 mục trở lên app tự sinh thêm bài nối cặp và trắc nghiệm định nghĩa.',
+    badge: 'Có code minh họa',
+    data: {
+      id: 'lap-trinh-co-ban-mau',
+      title: 'Lập trình cơ bản (Mẫu)',
+      subject: 'Lập trình',
+      description: 'Các khái niệm nền tảng kèm đoạn code JavaScript minh họa',
+      contentType: 'programming',
+      items: [
+        {
+          id: 'lt-01',
+          type: 'programming',
+          content: {
+            concept: 'Biến (variable)',
+            definition: 'Là vùng nhớ có tên dùng để lưu một giá trị; giá trị này có thể thay đổi trong lúc chương trình chạy.',
+            language: 'javascript',
+            code: 'let count = 0\ncount = count + 1\nconsole.log(count) // 1',
+            explanation: 'Từ khóa let khai báo biến; phép gán = đặt giá trị mới cho biến.',
+            application: 'Lưu điểm số, bộ đếm, dữ liệu người dùng nhập vào.',
+          },
+        },
+        {
+          id: 'lt-02',
+          type: 'programming',
+          content: {
+            concept: 'Vòng lặp for',
+            definition: 'Là cấu trúc điều khiển lặp lại một khối lệnh theo điều kiện lặp cho trước.',
+            language: 'javascript',
+            code: 'for (let i = 0; i < 3; i++) {\n  console.log(i)\n}\n// in ra 0, 1, 2',
+            application: 'Duyệt từng phần tử của danh sách, lặp một thao tác nhiều lần.',
+          },
+        },
+        {
+          id: 'lt-03',
+          type: 'programming',
+          content: {
+            concept: 'Hàm (function)',
+            definition: 'Là khối lệnh có tên, nhận đầu vào (tham số) và có thể trả về kết quả, giúp tái sử dụng mã.',
+            language: 'javascript',
+            code: 'function add(a, b) {\n  return a + b\n}\nadd(2, 3) // 5',
+            application: 'Tách một việc lặp đi lặp lại thành một đơn vị gọi lại được.',
+          },
+        },
+        {
+          id: 'lt-04',
+          type: 'programming',
+          content: {
+            concept: 'Mảng (array)',
+            definition: 'Là cấu trúc dữ liệu lưu nhiều phần tử có thứ tự, truy cập từng phần tử bằng chỉ số bắt đầu từ 0.',
+            language: 'javascript',
+            code: "const names = ['An', 'Bình']\nnames[0] // 'An'",
           },
         },
       ],
