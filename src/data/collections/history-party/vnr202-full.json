@@ -2594,6 +2594,8 @@
       },
       "source": {
         "ref": "VNR202 Full câu 86",
+        "sourceAnswer": "A",
+        "answerChanged": true,
         "originalQuestion": "Giương cao ngon cờ độc lập dân tộc và dân ch",
         "textCleaned": true
       },
@@ -3499,11 +3501,18 @@
             "text": "Lê Duẩn"
           }
         ],
-        "answer": "A"
+        "answer": "C"
       },
       "source": {
         "ref": "VNR202 Full câu 116",
+        "sourceAnswer": "A",
+        "answerChanged": true,
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Nguyễn Ái Quốc) thành C (Trường Chinh). Hội nghị Trung ương 8 (10–19/5/1941, họp tại Pác Bó) do Nguyễn Ái Quốc chủ trì, nhưng người được bầu làm Tổng Bí thư là Trường Chinh. Đáp án gốc của nguồn (A) lưu trong source.bankAnswer.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội nghị Trung ương 8, 5/1941)"
       }
     },
     {
@@ -7070,10 +7079,17 @@
             "text": "Khuynh hướng tiểu tư sản"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
-        "ref": "VNR202 Full câu 234"
+        "ref": "VNR202 Full câu 234",
+        "sourceAnswer": "A",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Khuynh hướng phong kiến) thành B (Khuynh hướng vô sản). Hội Việt Nam Cách mạng Thanh niên (6/1925) do Nguyễn Ái Quốc sáng lập, truyền bá chủ nghĩa Mác - Lênin, chuẩn bị thành lập chính đảng vô sản nên hoạt động theo khuynh hướng vô sản. Đáp án gốc của nguồn (A) lưu trong source.bankAnswer.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội Việt Nam Cách mạng Thanh niên)"
       }
     },
     {

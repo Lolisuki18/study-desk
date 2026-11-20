@@ -67,6 +67,12 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Quốc hội khóa VI (kỳ họp 24/6–3/7/1976) quyết định tên nước; xem câu 107 cùng ngân hàng); không phải đề gốc nên chỉ dùng tham khảo.",
   "confidence": "uncertain"
  },
+ "116": {
+  "answer": "C",
+  "note": "Đáp án đã sửa từ A (Nguyễn Ái Quốc) thành C (Trường Chinh). Hội nghị Trung ương 8 (10–19/5/1941, họp tại Pác Bó) do Nguyễn Ái Quốc chủ trì, nhưng người được bầu làm Tổng Bí thư là Trường Chinh. Đáp án gốc của nguồn (A) lưu trong source.bankAnswer.",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội nghị Trung ương 8, 5/1941)"
+ },
  "133": {
   "question": "Đại hội VIII (6/1996) của Đảng nhận định như thế nào về tình hình công nghiệp hóa của đất nước?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đại hội VIII: giai đoạn chuẩn bị tiền đề công nghiệp hóa đã cơ bản hoàn thành, chuyển sang giai đoạn đẩy mạnh công nghiệp hóa, hiện đại hóa); không phải đề gốc nên chỉ dùng tham khảo.",
@@ -138,6 +144,12 @@
   "note": "Nguồn chỉ còn lại phần đầu của đáp án D làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án D); phương án D được viết lại đầy đủ theo ảnh. Phù hợp lịch sử: kế hoạch 5 năm 1976–1980 do Đại hội IV (12/1976) thông qua, với mục tiêu xây dựng cơ sở vật chất – kỹ thuật của CNXH và bảo đảm đời sống nhân dân.",
   "confidence": "verified",
   "reference": "Văn kiện Đại hội IV (12/1976): kế hoạch 5 năm 1976–1980"
+ },
+ "234": {
+  "answer": "B",
+  "note": "Đáp án đã sửa từ A (Khuynh hướng phong kiến) thành B (Khuynh hướng vô sản). Hội Việt Nam Cách mạng Thanh niên (6/1925) do Nguyễn Ái Quốc sáng lập, truyền bá chủ nghĩa Mác - Lênin, chuẩn bị thành lập chính đảng vô sản nên hoạt động theo khuynh hướng vô sản. Đáp án gốc của nguồn (A) lưu trong source.bankAnswer.",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội Việt Nam Cách mạng Thanh niên)"
  },
  "247": {
   "question": "Một trong các khâu đột phá chiến lược của Đảng để đẩy mạnh công nghiệp hóa, hiện đại hóa là gì?",

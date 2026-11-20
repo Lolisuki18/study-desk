@@ -140,6 +140,7 @@ src.questions.forEach((q, i) => {
     content: { question: (fixes[pos]?.question ?? cleanQuestion).trim(), options: cleanOptions, answer: fixes[pos]?.answer ?? answerKeys.sort().join('') },
     source: {
       ref: `VNR202 Full câu ${pos}`,
+      ...(fixes[pos]?.answer ? { sourceAnswer: answerKeys.slice().sort().join(''), answerChanged: true } : {}),
       ...(fixes[pos]?.question ? { originalQuestion: q.question.trim() } : {}),
       ...(changedText ? { textCleaned: true } : {}),
     },
