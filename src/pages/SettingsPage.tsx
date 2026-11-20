@@ -9,6 +9,9 @@ import { ACCENTS, applyAccent, applyTheme } from '../services/theme'
 import type { Accent, BackupFile, Theme } from '../types'
 import { Button, Card, ConfirmDialog, PageHeader, useToast } from '../components/ui'
 import { isSoundEnabled, setSoundEnabled, getSoundVolume, setSoundVolume, playSound } from '../utils/sound'
+import { isMechSoundEnabled, setMechSoundEnabled, playMechSound } from '../utils/mechSound'
+import { isHapticEnabled, setHapticEnabled, haptic } from '../utils/haptic'
+import { getReadingFont, setReadingFont, type ReadingFont } from '../utils/fonts'
 
 export default function SettingsPage() {
   const { exportBackup, importBackup, resetAll } = useProgress()
@@ -17,6 +20,9 @@ export default function SettingsPage() {
   const [settings, setSettings] = useState(loadSettings)
   const [sound, setSound] = useState(isSoundEnabled)
   const [volume, setVolume] = useState(() => Math.round(getSoundVolume() * 100))
+  const [mechSound, setMechSound] = useState(isMechSoundEnabled)
+  const [hapticOn, setHapticOn] = useState(isHapticEnabled)
+  const [fontFamily, setFontFamily] = useState<ReadingFont>(getReadingFont)
   const [showResetConfirm, setShowResetConfirm] = useState(false)
   const [pendingImport, setPendingImport] = useState<BackupFile | null>(null)
   const file = useRef<HTMLInputElement>(null)
@@ -188,6 +194,36 @@ export default function SettingsPage() {
             )}
           </div>
 
+          <label className="flex items-center justify-between p-4 text-sm font-medium hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition-colors cursor-pointer">
+            <span>Hiệu ứng gõ phím cơ khi bấm đáp án / phím tắt</span>
+            <input
+              type="checkbox"
+              checked={mechSound}
+              onChange={(e) => {
+                const next = e.target.checked
+                setMechSound(next)
+                setMechSoundEnabled(next)
+                if (next) playMechSound('keydown')
+              }}
+              className="accent-indigo-600 h-4 w-4 rounded cursor-pointer"
+            />
+          </label>
+
+          <label className="flex items-center justify-between p-4 text-sm font-medium hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition-colors cursor-pointer">
+            <span>Rung phản hồi xúc giác (điện thoại Android; iPhone không hỗ trợ)</span>
+            <input
+              type="checkbox"
+              checked={hapticOn}
+              onChange={(e) => {
+                const next = e.target.checked
+                setHapticOn(next)
+                setHapticEnabled(next)
+                if (next) haptic('success')
+              }}
+              className="accent-indigo-600 h-4 w-4 rounded cursor-pointer"
+            />
+          </label>
+
           <div className="flex items-center justify-between p-4 text-sm font-medium">
             <span>Số câu Quiz mặc định</span>
             <input
@@ -207,13 +243,32 @@ export default function SettingsPage() {
               onChange={(e) => {
                 const theme = e.target.value as Theme
                 update({ theme })
-                applyTheme(theme)
+                applyTheme(theme, { animate: true })
               }}
               className="rounded-xl border border-line bg-card px-3 py-1.5 text-xs font-semibold text-ink outline-none cursor-pointer"
             >
               <option value="light">Chế độ sáng (Mặc định)</option>
               <option value="dark">Chế độ tối (Dark mode)</option>
+              <option value="sepia">Giấy vàng ấm áp (Warm Sepia)</option>
+              <option value="oled">Đen tuyền AMOLED (OLED Pitch Black)</option>
               <option value="system">Theo hệ thống</option>
+            </select>
+          </div>
+
+          <div className="flex items-center justify-between p-4 text-sm font-medium">
+            <span>Phông chữ hiển thị nội dung</span>
+            <select
+              value={fontFamily}
+              onChange={(e) => {
+                const f = e.target.value as ReadingFont
+                setFontFamily(f)
+                setReadingFont(f)
+                toast.info(`Đã đổi sang phông: ${f === 'serif' ? 'Có chân cổ điển (Serif)' : 'Hiện đại (Sans-serif)'}`)
+              }}
+              className="rounded-xl border border-line bg-card px-3 py-1.5 text-xs font-semibold text-ink outline-none cursor-pointer"
+            >
+              <option value="sans">Hiện đại (Inter / Sans-serif)</option>
+              <option value="serif">Sách cổ điển (Serif: Merriweather nếu máy có, không thì Georgia)</option>
             </select>
           </div>
 

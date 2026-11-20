@@ -3,19 +3,63 @@ import type { Accent, Theme } from '../types'
 const media = () => window.matchMedia('(prefers-color-scheme: dark)')
 let current: Theme = 'light'
 
-const isDark = (t: Theme) => t === 'dark' || (t === 'system' && media().matches)
+const isDark = (t: Theme) => t === 'dark' || t === 'oled' || (t === 'system' && media().matches)
 
-/** Apply a theme by toggling `html.dark` (the dark palette lives in src/index.css). */
-export function applyTheme(theme: Theme) {
+/**
+ * Run a DOM change as one smooth cross-fade of the whole page.
+ * Where the browser has View Transitions the page is snapshotted and faded to the new look as a single image, so
+ * every surface changes together. Otherwise a short class fades colours on all elements at the same pace. Either way
+ * the per-element `transition-all` classes are paused meanwhile, because a few of them run (150 ms on buttons) and
+ * most do not, which is what made the switch look uneven.
+ */
+function crossFade(change: () => void) {
+  const root = document.documentElement
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const startViewTransition = (document as unknown as { startViewTransition?: (cb: () => void) => { finished: Promise<void> } }).startViewTransition
+
+  if (reduceMotion) {
+    change()
+  } else if (startViewTransition) {
+    root.classList.add('theme-switching')
+    const t = startViewTransition.call(document, change)
+    const done = () => root.classList.remove('theme-switching')
+    t.finished.then(done, done)
+  } else {
+    root.classList.add('theme-fade')
+    change()
+    setTimeout(() => root.classList.remove('theme-fade'), 350)
+  }
+}
+
+/**
+ * Apply a theme by toggling `html.dark` (the dark palette lives in src/index.css).
+ * `animate` cross-fades the change; leave it off at startup so the page never fades in from the wrong palette.
+ */
+export function applyTheme(theme: Theme, opts: { animate?: boolean } = {}) {
   current = theme
+  if (opts.animate) crossFade(() => paint(theme))
+  else paint(theme)
+}
+
+function paint(theme: Theme) {
   const dark = isDark(theme)
   if (dark) {
     document.documentElement.classList.add('dark')
   } else {
     document.documentElement.classList.remove('dark')
   }
+
+  if (theme === 'sepia') {
+    document.documentElement.dataset.extraTheme = 'sepia'
+  } else if (theme === 'oled') {
+    document.documentElement.dataset.extraTheme = 'oled'
+  } else {
+    delete document.documentElement.dataset.extraTheme
+  }
+
   // one meta per colour scheme in index.html; the one the browser uses must follow the in-app choice too
-  document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', dark ? '#0b1120' : '#ffffff'))
+  const metaColor = theme === 'oled' ? '#000000' : theme === 'sepia' ? '#f7f2e7' : dark ? '#0b1120' : '#ffffff'
+  document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', metaColor))
   if (typeof window !== 'undefined') {
     window.dispatchEvent(new CustomEvent('theme-changed', { detail: { theme, dark } }))
   }
@@ -24,7 +68,7 @@ export function applyTheme(theme: Theme) {
 /** Follow the operating-system setting while the theme is 'system'. Call once at startup. */
 export function watchSystemTheme() {
   media().addEventListener('change', () => {
-    if (current === 'system') applyTheme('system')
+    if (current === 'system') applyTheme('system', { animate: true })
   })
 }
 
