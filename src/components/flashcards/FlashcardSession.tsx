@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowLeftRight, Bookmark, Check, ChevronLeft, ChevronRight, HelpCircle, LayoutGrid, Maximize2, Minimize2, PauseCircle, PlayCircle, Repeat, RotateCcw, RotateCw, Shuffle, Sparkles, Star, Type, Volume1, Volume2, VolumeX, X, PartyPopper } from 'lucide-react'
+import { ArrowLeftRight, Bookmark, BookOpen, Check, ChevronLeft, ChevronRight, HelpCircle, LayoutGrid, Maximize2, Minimize2, PauseCircle, PlayCircle, Repeat, RotateCcw, RotateCw, Shuffle, Sparkles, Star, Type, Volume1, Volume2, VolumeX, X, PartyPopper } from 'lucide-react'
 import type { Entry, Grade, Item, Status } from '../../types'
 import NoteBox from '../ui/NoteBox'
+import CramView from '../ui/CramView'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { Button, Card, Empty, Modal, ProgressBar, useToast } from '../ui'
 import { CardBack, CardFront } from './CardContent'
@@ -11,6 +12,9 @@ import { Link } from 'react-router-dom'
 import { loadSettings, saveSettings } from '../../services/storage/settings'
 import { fireConfetti } from '../../utils/confetti'
 import { isSoundEnabled, playSound, setSoundEnabled } from '../../utils/sound'
+import { playMechSound } from '../../utils/mechSound'
+import { haptic } from '../../utils/haptic'
+import { exitZen, isZenMode, toggleZen, useZen } from '../../utils/zen'
 import { isSpeaking, speakText, stopSpeaking } from '../../utils/speech'
 import { useStarred } from '../../services/storage/starred'
 import { itemTitle } from '../../data'
@@ -114,9 +118,17 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null)
   const [swipeHint, setSwipeHint] = useState<string | null>(null)
   const [showCardGrid, setShowCardGrid] = useState(false)
+  const [showCram, setShowCram] = useState(false)
+  const zenMode = useZen()
   const [autoPlay, setAutoPlay] = useState(false)
   const [reading, setReading] = useState(false)
   const autoTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  useEffect(() => {
+    return () => {
+      exitZen()
+    }
+  }, [])
 
   // Dừng đọc TTS và dọn dẹp khi đổi thẻ
   useEffect(() => {
@@ -273,7 +285,14 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     (g: Grade) => {
       if (!cur) return
       const last = idx >= order.length - 1
-      playSound(g === 'again' ? 'wrong' : 'correct')
+      if (g === 'again') {
+        playSound('wrong')
+        haptic('error')
+      } else {
+        playSound('correct')
+        haptic(g === 'hard' ? 'medium' : 'success')
+      }
+      playMechSound('keydown')
 
       if (picks[pickKey] !== undefined) {
         if (last) {
@@ -304,6 +323,8 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
 
   const handleFlip = useCallback(() => {
     playSound('flip')
+    playMechSound('space')
+    haptic('light')
     setFlipped((f) => !f)
   }, [])
 
@@ -350,7 +371,8 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   // Phím tắt bàn phím
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (done || (e.target as HTMLElement | null)?.closest?.('input,textarea,select')) return
+      // while the Cram list is on screen the hidden card must not react (it would silently record answers)
+      if (done || showCram || (e.target as HTMLElement | null)?.closest?.('input,textarea,select')) return
       if (e.key === 'ArrowRight') go(1)
       else if (e.key === 'ArrowLeft') go(-1)
       else if (e.key === ' ' || e.key === 'Enter') {
@@ -369,13 +391,17 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
         handleToggleBookmark()
       } else if (e.key === 'f' || e.key === 'F') {
         setInverted((v) => !v)
+      } else if (e.key === 'z' || e.key === 'Z') {
+        toggleZen()
+      } else if (e.key === 'Escape' && isZenMode()) {
+        exitZen()
       } else if (e.key === '?') {
         setShowHelp((s) => !s)
       }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [go, grade, cur, handleToggleBookmark, handleFlip, pick, done, flipped])
+  }, [go, grade, cur, handleToggleBookmark, handleFlip, pick, done, flipped, showCram])
 
   const toggleSound = () => {
     const next = !sound
@@ -485,6 +511,25 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
           <span className="uppercase text-[10px]">{fontZoom}</span>
         </button>
 
+        {/* Nút lướt nhanh Cram Mode */}
+        <button
+          onClick={() => setShowCram(true)}
+          className="inline-flex h-8 items-center gap-1 rounded-xl px-2 text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-900 transition-colors hover:bg-indigo-100 dark:hover:bg-indigo-900/40 cursor-pointer"
+          title="Chế độ lướt nhanh siêu tốc (Cram Mode)"
+        >
+          <BookOpen size={14} />
+          <span className="hidden sm:inline text-[11px]">Lướt nhanh</span>
+        </button>
+
+        {/* Nút Focus Zen Mode */}
+        <button
+          onClick={toggleZen}
+          className="inline-flex h-8 w-8 items-center justify-center rounded-xl text-muted transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink cursor-pointer"
+          title={zenMode ? 'Thoát tập trung' : 'Chế độ tập trung (Zen Mode)'}
+        >
+          {zenMode ? <Minimize2 size={15} /> : <Maximize2 size={15} />}
+        </button>
+
         {/* Nút bật tắt âm thanh */}
         <button
           onClick={toggleSound}
@@ -510,6 +555,10 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
       </div>
     </div>
   )
+
+  if (showCram) {
+    return <CramView entries={entries} onClose={() => setShowCram(false)} />
+  }
 
   if (done)
     return (

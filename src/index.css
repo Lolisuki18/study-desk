@@ -145,6 +145,53 @@ html.dark ::-webkit-scrollbar-thumb {
 }
 
 /* ---------------------------------------------------------------------------------------------
+   Sepia (Warm Paper) & OLED Black Themes
+   --------------------------------------------------------------------------------------------- */
+html[data-extra-theme="sepia"] {
+  --color-bg: #f7f2e7;
+  --color-card: #fffdf9;
+  --color-ink: #3a2e24;
+  --color-muted: #827263;
+  --color-line: #e8dfcf;
+  --color-primary: #854d0e;
+  --color-primary-light: #fefce8;
+}
+html[data-extra-theme="sepia"] body {
+  background-color: #f7f2e7;
+  color: #3a2e24;
+}
+
+html[data-extra-theme="oled"] {
+  color-scheme: dark;
+  --color-bg: #000000;
+  --color-card: #09090b;
+  --color-ink: #f4f4f5;
+  --color-muted: #71717a;
+  --color-line: #27272a;
+}
+html[data-extra-theme="oled"] body {
+  background-color: #000000;
+  color: #f4f4f5;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Zen Focus Mode (Distraction-free)
+   --------------------------------------------------------------------------------------------- */
+html.zen-mode aside,
+html.zen-mode header,
+html.zen-mode nav[aria-label="Điều hướng chính"],
+html.zen-mode .zen-hide {
+  display: none !important;
+}
+html.zen-mode main {
+  padding-top: 1.5rem !important;
+  padding-bottom: 2rem !important;
+  max-width: 64rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ---------------------------------------------------------------------------------------------
    Accent colours: the UI is written with the indigo scale; choosing another accent in Settings remaps
    that scale (and the "primary" token), so every button / badge / ring follows. Default = indigo.
    --------------------------------------------------------------------------------------------- */
@@ -231,6 +278,30 @@ body {
 }
 html.dark body {
   background-image: radial-gradient(1100px 480px at 88% -8%, color-mix(in srgb, var(--color-indigo-500) 13%, transparent), transparent 70%);
+}
+/* Theme switch (see crossFade in src/services/theme.ts): one even cross-fade of the whole page. */
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition: none !important;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 320ms;
+  animation-timing-function: ease;
+}
+/* Fallback for browsers without View Transitions: fade colours on every element at the same pace. */
+html.theme-fade,
+html.theme-fade *,
+html.theme-fade *::before,
+html.theme-fade *::after {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    fill 0.3s ease,
+    stroke 0.3s ease,
+    box-shadow 0.3s ease !important;
 }
 @media (prefers-reduced-motion: reduce) {
   *,

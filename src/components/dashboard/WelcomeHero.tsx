@@ -1,13 +1,15 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Award, CalendarCheck2, Flame, Play, Sparkles } from 'lucide-react'
+import { Award, CalendarCheck2, Flame, Play, Share2, Sparkles } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { dailyActivity, streaks } from '../../services/stats'
 import { loadSettings } from '../../services/storage/settings'
 import { dayKey, pct } from '../../utils'
+import ShareCard from '../ui/ShareCard'
 
 export default function WelcomeHero() {
   const { summary, activity } = useProgress()
+  const [shareOpen, setShareOpen] = useState(false)
   const settings = loadSettings()
   const days = useMemo(() => dailyActivity(activity), [activity])
   const todayActivities = days.get(dayKey(new Date()))
@@ -82,8 +84,29 @@ export default function WelcomeHero() {
             <Award size={15} className="text-indigo-600 dark:text-indigo-400" />
             <span>Thi thử theo môn</span>
           </Link>
+
+          <button
+            onClick={() => setShareOpen(true)}
+            className="inline-flex items-center justify-center gap-2 rounded-2xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/70 dark:bg-indigo-950/40 px-5 py-2 text-xs font-bold text-indigo-700 dark:text-indigo-300 shadow-2xs transition-all hover:bg-indigo-100 hover:border-indigo-300 active:scale-[0.98] cursor-pointer"
+            title="Tạo ảnh chia sẻ tiến độ học tập (Story / Vuông)"
+          >
+            <Share2 size={14} className="text-indigo-600 dark:text-indigo-400" />
+            <span>Chia sẻ thành tích</span>
+          </button>
         </div>
       </div>
+
+      {/* Shareable Achievement Card Modal */}
+      <ShareCard
+        open={shareOpen}
+        onClose={() => setShareOpen(false)}
+        stats={{
+          mastered: summary.mastered,
+          total: summary.items,
+          streak: streakDays,
+          studiedToday: doneToday,
+        }}
+      />
     </div>
   )
 }

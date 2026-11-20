@@ -68,10 +68,15 @@ daily goal, streak, heatmap, due forecast, estimated study time (`src/services/s
 learn-until-known in `FlashcardSession` (a wrong card is re-queued 3 cards later; a repeat only earns the `hard` grade) ·
 exam readiness estimate (`src/services/readiness.ts`; the recall figures per box are assumptions, keep the on-screen caveat) ·
 Pomodoro (`src/services/pomodoro.ts`, state + log in localStorage) · print sheet on `/mistakes` (`print:` classes).
+Zen / focus mode: one shared state in `src/utils/zen.ts`, read with `useZen()` (never a local copy; Z toggles it, Esc leaves it).
+Cram list (`CramView`, `src/utils/preview.ts`): key cards by `collectionId::itemId`, item ids repeat between collections.
+React: keep every hook above any early `return` in a component (an early return before a later hook blanks the whole app).
 
 ## Dark theme
 `html.dark` (set by `src/services/theme.ts`) remaps the palette variables at the end of `src/index.css`; components keep their
 light classes. When adding a new colour shade, check it in dark mode and add it to that block if it reads badly.
+Switching theme at runtime must go through `applyTheme(theme, { animate: true })`: it cross-fades the whole page (View Transitions,
+with a CSS fallback) so surfaces change together; startup calls omit `animate`.
 
 ## PWA / offline
 `public/manifest.webmanifest` + icons (`node scripts/make-icons.mjs` regenerates the PNGs). `vite build` writes `dist/sw.js`
