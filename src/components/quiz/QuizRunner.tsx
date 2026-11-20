@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Award, Check, ChevronLeft, ChevronRight, Clock, Flag, LayoutGrid, Maximize2, Minimize2, RotateCcw, Sparkles, Star, X, Turtle, Zap, AlertTriangle } from 'lucide-react'
+import { Award, Check, ChevronLeft, ChevronRight, Clock, Flag, LayoutGrid, Maximize2, Minimize2, RotateCcw, Sparkles, Star, X, Turtle, Zap, AlertTriangle, PenLine } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { isCorrect, itemResults, KIND_LABEL, type Answer, type Question } from '../../services/quiz/generate'
 import { Button, Card, ConfirmDialog, Modal, ProgressBar } from '../ui'
+import Scratchpad from '../ui/Scratchpad'
 import { cx, pct } from '../../utils'
 import { isMulti, toggleKey } from '../../utils/answers'
 import type { QuizStartOptions } from './QuizSetup'
@@ -11,7 +12,13 @@ import { chapterLabel } from '../../services/quiz/exam'
 import NoteBox from '../ui/NoteBox'
 import { fireConfetti } from '../../utils/confetti'
 import { playSound } from '../../utils/sound'
+import { playMechSound, playLevelUp, playPerfectScore } from '../../utils/mechSound'
+import { haptic } from '../../utils/haptic'
+import { exitZen, isZenMode, toggleZen, useZen } from '../../utils/zen'
 import { useStarred } from '../../services/storage/starred'
+
+/** fewest questions for which a 100% result gets the perfect-score fanfare */
+const PERFECT_MIN_QUESTIONS = 5
 
 const fmtTime = (s: number) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
 
@@ -78,13 +85,17 @@ function Input({
               <li key={o.key}>
                 <button
                   disabled={locked}
-                  onClick={() => onChange(multi ? toggleKey(picked, o.key) : o.key)}
+                  onClick={() => {
+                    haptic('select')
+                    playMechSound('keydown')
+                    onChange(multi ? toggleKey(picked, o.key) : o.key)
+                  }}
                   onContextMenu={(e) => {
                     e.preventDefault()
                     if (!locked && onToggleEliminate) onToggleEliminate(o.key)
                   }}
                   className={cx(
-                    'group flex w-full items-center rounded-2xl border-2 px-4 py-3.5 text-left text-[15px] transition-all duration-150 cursor-pointer relative',
+                    'group flex w-full items-center rounded-2xl border-2 px-4 py-3.5 text-left text-[15px] transition-all duration-150 cursor-pointer relative active:scale-[0.98]',
                     isElim && 'line-through opacity-45 bg-slate-100/50 dark:bg-slate-800/20 border-dashed border-line',
                     !showRes && !isElim && (sel ? 'border-indigo-600 dark:border-indigo-500 bg-indigo-50/70 dark:bg-indigo-950/40 font-medium' : 'border-line bg-card hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/40'),
                     showRes && q.answer.includes(o.key) && 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-100 font-semibold',
@@ -104,6 +115,9 @@ function Input({
                     {o.key}
                   </span>
                   <span className="flex-1 leading-relaxed">{o.text}</span>
+                  <kbd className="ml-2 hidden sm:inline-flex items-center justify-center h-5 min-w-5 px-1.5 rounded-md border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-[10px] font-mono font-bold text-muted group-hover:text-ink shadow-2xs">
+                    {o.key}
+                  </kbd>
                   {!locked && onToggleEliminate && (
                     <span
                       onClick={(e) => {
@@ -112,7 +126,7 @@ function Input({
                       }}
                       title={isElim ? 'Bỏ gạch đáp án' : 'Gạch bỏ đáp án loại trừ (hoặc chuột phải)'}
                       className={cx(
-                        'opacity-0 group-hover:opacity-100 transition-opacity px-2 py-0.5 rounded-lg text-xs font-bold text-muted hover:text-ink hover:bg-slate-200/60 dark:hover:bg-slate-700',
+                        'opacity-0 group-hover:opacity-100 transition-opacity ml-2 px-2 py-0.5 rounded-lg text-xs font-bold text-muted hover:text-ink hover:bg-slate-200/60 dark:hover:bg-slate-700',
                         isElim && 'opacity-100 text-rose-500 font-normal line-through'
                       )}
                     >
@@ -134,9 +148,13 @@ function Input({
           <button
             key={String(v)}
             disabled={locked}
-            onClick={() => onChange(v)}
+            onClick={() => {
+              haptic('select')
+              playMechSound('keydown')
+              onChange(v)
+            }}
             className={cx(
-              'group flex flex-1 items-center justify-center gap-2.5 rounded-2xl border-2 px-4 py-4 text-base font-bold transition-all cursor-pointer',
+              'group flex flex-1 items-center justify-center gap-2.5 rounded-2xl border-2 px-4 py-4 text-base font-bold transition-all cursor-pointer active:scale-[0.98]',
               !locked && (value === v ? 'border-indigo-600 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300' : 'border-line bg-card hover:bg-slate-50 dark:hover:bg-slate-800'),
               locked && v === q.answer && 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300',
               locked && value === v && v !== q.answer && 'border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300',
@@ -230,12 +248,19 @@ export default function QuizRunner({
   const [flagged, setFlagged] = useState<Record<string, boolean>>({})
   const [eliminated, setEliminated] = useState<Record<string, Set<string>>>({})
   const [showGrid, setShowGrid] = useState(false)
-  const [zenMode, setZenMode] = useState(false)
+  const [showScratchpad, setShowScratchpad] = useState(false)
+  const zenMode = useZen()
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false)
   const [resultFilter, setResultFilter] = useState<'all' | 'wrong' | 'correct'>('all')
   const [finished, setFinished] = useState(false)
   const [timeSpent, setTimeSpent] = useState<Record<string, number>>({})
   const questionStartRef = useRef(Date.now())
+
+  useEffect(() => {
+    return () => {
+      exitZen()
+    }
+  }, [])
 
   const toggleEliminate = (qid: string, key: string) => {
     setEliminated((prev) => {
@@ -283,9 +308,13 @@ export default function QuizRunner({
     const correct = questions.filter((x) => result(x)).length
     const score10 = Math.round((correct / questions.length) * 100) / 10
 
-    if (score10 >= 8) {
-      playSound('fanfare')
-      fireConfetti()
+    // a perfect score only counts on a quiz long enough for it to mean something (not 1/1 when retrying one question)
+    if (correct === questions.length && questions.length >= PERFECT_MIN_QUESTIONS) {
+      playPerfectScore()
+      fireConfetti(3500)
+    } else if (score10 >= 8) {
+      playLevelUp()
+      fireConfetti(2500)
     } else if (score10 >= 5) {
       playSound('correct')
     } else {
@@ -306,7 +335,7 @@ export default function QuizRunner({
       })
     }
     setFinished(true)
-    setZenMode(false)
+    exitZen()
   }
   finishRef.current = finish
 
@@ -355,6 +384,14 @@ export default function QuizRunner({
     }
   }, [mode, locked, canCheck, q, next, i, questions.length, result])
 
+  // Practice mode: one haptic pulse the moment a question is checked, whichever way it was checked
+  const buzzedRef = useRef('')
+  useEffect(() => {
+    if (mode !== 'practice' || !q || !checked[q.id] || buzzedRef.current === q.id) return
+    buzzedRef.current = q.id
+    haptic(result(q) ? 'success' : 'error')
+  }, [checked, q, mode, result])
+
   // Phím tắt bàn phím tiện lợi
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -368,6 +405,16 @@ export default function QuizRunner({
       }
 
       if (inInput) return
+
+      if (e.ctrlKey || e.metaKey || e.altKey) return
+      if (e.key === 'z' || e.key === 'Z') {
+        toggleZen()
+        return
+      }
+      if (e.key === 'Escape' && isZenMode()) {
+        exitZen()
+        return
+      }
 
       if (e.key === 'ArrowRight') {
         if (mode === 'exam' || locked) {
@@ -385,6 +432,8 @@ export default function QuizRunner({
 
         if (optIndex >= 0 && optIndex < q.options.length) {
           const key = q.options[optIndex].key
+          haptic('select')
+          playMechSound('keydown')
           if (isMulti(q.answer)) set(toggleKey(String(answers[q.id] ?? ''), key))
           else {
             set(key)
@@ -397,12 +446,16 @@ export default function QuizRunner({
       } else if (!locked && q.kind === 'tf') {
         const k = e.key.toLowerCase()
         if (k === '1' || k === 't' || k === 'd') {
+          haptic('select')
+          playMechSound('keydown')
           set(true)
           if (autoCheck) {
             setChecked((c) => ({ ...c, [q.id]: true }))
             playSound(q.answer === true ? 'correct' : 'wrong')
           }
         } else if (k === '2' || k === 'f' || k === 's') {
+          haptic('select')
+          playMechSound('keydown')
           set(false)
           if (autoCheck) {
             setChecked((c) => ({ ...c, [q.id]: true }))
@@ -663,6 +716,21 @@ export default function QuizRunner({
             <LayoutGrid size={14} /> <span className="hidden sm:inline">Danh sách</span> ({answeredCount}/{questions.length})
           </Button>
 
+          {/* Scratchpad button */}
+          <button
+            onClick={() => setShowScratchpad((s) => !s)}
+            className={cx(
+              'inline-flex h-10 px-2.5 items-center gap-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer sm:h-8',
+              showScratchpad
+                ? 'border-indigo-500 bg-indigo-50 text-indigo-600 dark:bg-indigo-950/60 dark:text-indigo-300'
+                : 'border-line text-muted hover:text-ink',
+            )}
+            title="Bảng nháp nhanh"
+          >
+            <PenLine size={13} />
+            <span className="hidden md:inline">Nháp</span>
+          </button>
+
           {/* Countdown Clock */}
           {remaining !== null && (
             <div
@@ -678,7 +746,7 @@ export default function QuizRunner({
 
           {/* Focus / Zen mode toggle */}
           <button
-            onClick={() => setZenMode((z) => !z)}
+            onClick={toggleZen}
             className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-muted hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-ink transition-colors cursor-pointer sm:h-8 sm:w-8"
             title={zenMode ? 'Thoát toàn màn hình' : 'Chế độ tập trung (Zen Mode)'}
           >
@@ -973,6 +1041,9 @@ export default function QuizRunner({
             </div>
           </div>
         </Modal>
+
+        {/* Floating Scratchpad */}
+        <Scratchpad open={showScratchpad} onClose={() => setShowScratchpad(false)} />
       </div>
     </div>
   )

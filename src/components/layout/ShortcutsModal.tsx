@@ -38,6 +38,7 @@ const SHORTCUT_GROUPS: ShortcutGroup[] = [
       { keys: ['1', '2', '3', '4'], desc: 'Chọn tương ứng đáp án A, B, C, D' },
       { keys: ['A', 'B', 'C', 'D'], desc: 'Chọn nhanh đáp án theo chữ cái' },
       { keys: ['Enter'], desc: 'Xác nhận đáp án / Sang câu hỏi tiếp theo' },
+      { keys: ['F'], desc: 'Cắm cờ câu hỏi phân vân để kiểm tra lại' },
       { keys: ['Z'], desc: 'Bật / Tắt chế độ tập trung (Zen / Focus Mode)' },
     ],
   },

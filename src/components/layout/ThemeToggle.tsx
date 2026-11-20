@@ -17,7 +17,7 @@ export default function ThemeToggle({ className }: { className?: string }) {
     const nextDark = !dark
     const theme = nextDark ? 'dark' : 'light'
     saveSettings({ ...loadSettings(), theme })
-    applyTheme(theme)
+    applyTheme(theme, { animate: true })
     setDark(nextDark)
   }
 
