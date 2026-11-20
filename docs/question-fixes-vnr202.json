@@ -21,12 +21,13 @@
   "reference": "Hội nghị Hiệp thương chính trị thống nhất đất nước (15–21/11/1975)"
  },
  "55": {
-  "question": "(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
+  "question": "Chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu được hoàn chỉnh tại Hội nghị nào của Đảng?",
   "options": {
    "D": "Hội nghị Ban Chấp hành Trung ương tháng 5/1941"
   },
-  "note": "Phần đầu của đề gốc bị mất và phương án D bị chép lẫn một đoạn đề. Phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất); phương án D được chép lại thành \"tháng 5/1941\" theo các phương án còn lại. Về lịch sử: Hội nghị Trung ương 8 (5/1941) hoàn chỉnh chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
-  "confidence": "uncertain"
+  "note": "Đề gốc bị mất phần đầu (chỉ còn \"(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với các phương án và đáp án D (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, hoàn chỉnh chuyển hướng chiến lược bắt đầu từ Hội nghị tháng 11/1939) — KHÔNG phải đề gốc. Đề gốc lưu trong source.originalQuestion.",
+  "confidence": "uncertain",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Hội nghị Trung ương 8, 5/1941)"
  },
  "63": {
   "question": "Ngay sau Cách mạng Tháng Tám 1945, tình thế của nước Việt Nam Dân chủ Cộng hòa được ví như:",
@@ -233,13 +234,13 @@
   "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
  },
  "312": {
-  "question": "(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?",
+  "question": "Hội nghị nào của Đảng đã quyết định đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương và xác định chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm?",
   "options": {
    "D": "Hội nghị Ban Thường vụ Trung ương tháng 3/1945"
   },
-  "note": "Phần đầu của đề gốc bị mất và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"); phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất). Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
+  "note": "Đề gốc bị mất phần đầu (chỉ còn \"(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?\"), và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với phương án và đáp án C (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương, chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm) — KHÔNG phải đề gốc. Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
   "confidence": "uncertain",
-  "reference": "Bộ Lịch sử Đảng – Chương 1 (sau đảo chính 9/3/1945)"
+  "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Hội nghị Trung ương 8, 5/1941)"
  },
  "313": {
   "question": "Để kéo dài thời gian chuẩn bị lực lượng cho cuộc kháng chiến toàn quốc chống Pháp, sau Hiệp định Sơ bộ (6/3/1946), Chính phủ nước Việt Nam Dân chủ Cộng hòa tiếp tục kí với Pháp bản văn kiện nào?",
@@ -285,6 +286,12 @@
   "question": "Việc thành lập Đảng Cộng sản Việt Nam (2/1930) có ý nghĩa nào sau đây?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (các phương án B và D là nội dung Cương lĩnh chính trị đầu tiên, không phải ý nghĩa; A (vai trò lãnh đạo) là ý nghĩa của sự ra đời của Đảng); không phải đề gốc nên chỉ dùng tham khảo.",
   "confidence": "uncertain"
+ },
+ "366": {
+  "question": "Đại hội toàn quốc nào của Đảng rút ra bài học kinh nghiệm \"Một là: Trong toàn bộ hoạt động của mình, Đảng phải quán triệt tư tưởng “lấy dân làm gốc”\"?",
+  "note": "Đề gốc bị hỏng ở cuối câu (\"tư tưởng \\\" ấy dân làm gốc\\\"\", mất chữ \"l\"); đã khôi phục thành \"lấy dân làm gốc\" (bài học thứ nhất của Đại hội VI, 1986). Đáp án C (Đại hội VI) giữ nguyên. Đề gốc lưu trong source.originalQuestion.",
+  "confidence": "verified",
+  "reference": "Văn kiện Đại hội VI (12/1986): bài học \"lấy dân làm gốc\""
  },
  "372": {
   "options": {

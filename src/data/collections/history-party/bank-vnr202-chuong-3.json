@@ -3967,7 +3967,7 @@
       "id": "b-366",
       "type": "multiple-choice",
       "content": {
-        "question": "Đại hội toàn quốc nào của Đảng rút ra bài học kinh nghiệm \"Một là: Trong toàn bộ hoạt động của mình, đảng phải quán triệt tư tưởng \" ấy dân làm gốc\"'?",
+        "question": "Đại hội toàn quốc nào của Đảng rút ra bài học kinh nghiệm \"Một là: Trong toàn bộ hoạt động của mình, Đảng phải quán triệt tư tưởng “lấy dân làm gốc”\"?",
         "options": [
           {
             "key": "A",
@@ -3990,7 +3990,13 @@
       },
       "source": {
         "ref": "Ngân hàng câu 366",
+        "originalQuestion": "Đại hội toàn quốc nào của Đảng rút ra bài hoc kinh nghiệm \"Một là: Trong toàn bộ hoạt động của mình, đảng phải quán triệt tư tưởng \" ấy dân làm gốc\"'?",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc bị hỏng ở cuối câu (\"tư tưởng \\\" ấy dân làm gốc\\\"\", mất chữ \"l\"); đã khôi phục thành \"lấy dân làm gốc\" (bài học thứ nhất của Đại hội VI, 1986). Đáp án C (Đại hội VI) giữ nguyên. Đề gốc lưu trong source.originalQuestion.",
+        "confidence": "verified",
+        "reference": "Văn kiện Đại hội VI (12/1986): bài học \"lấy dân làm gốc\""
       }
     },
     {

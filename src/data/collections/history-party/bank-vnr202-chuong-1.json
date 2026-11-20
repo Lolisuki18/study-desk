@@ -315,7 +315,7 @@
       "id": "b-055",
       "type": "multiple-choice",
       "content": {
-        "question": "(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?",
+        "question": "Chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu được hoàn chỉnh tại Hội nghị nào của Đảng?",
         "options": [
           {
             "key": "A",
@@ -342,8 +342,9 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Phần đầu của đề gốc bị mất và phương án D bị chép lẫn một đoạn đề. Phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất); phương án D được chép lại thành \"tháng 5/1941\" theo các phương án còn lại. Về lịch sử: Hội nghị Trung ương 8 (5/1941) hoàn chỉnh chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu. Chưa đối chiếu giáo trình.",
-        "confidence": "uncertain"
+        "text": "Đề gốc bị mất phần đầu (chỉ còn \"(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với các phương án và đáp án D (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, hoàn chỉnh chuyển hướng chiến lược bắt đầu từ Hội nghị tháng 11/1939) — KHÔNG phải đề gốc. Đề gốc lưu trong source.originalQuestion.",
+        "confidence": "uncertain",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Hội nghị Trung ương 8, 5/1941)"
       }
     },
     {
@@ -2900,7 +2901,7 @@
       "id": "b-312",
       "type": "multiple-choice",
       "content": {
-        "question": "(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?",
+        "question": "Hội nghị nào của Đảng đã quyết định đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương và xác định chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm?",
         "options": [
           {
             "key": "A",
@@ -2927,9 +2928,9 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Phần đầu của đề gốc bị mất và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"); phần đề còn lại được giữ (\"(…)\" đánh dấu chỗ mất). Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
+        "text": "Đề gốc bị mất phần đầu (chỉ còn \"(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?\"), và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với phương án và đáp án C (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương, chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm) — KHÔNG phải đề gốc. Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
         "confidence": "uncertain",
-        "reference": "Bộ Lịch sử Đảng – Chương 1 (sau đảo chính 9/3/1945)"
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Hội nghị Trung ương 8, 5/1941)"
       }
     },
     {
