@@ -8,7 +8,7 @@ Tự sinh bởi `node scripts/import-vnr202-full.mjs`. Không sửa tay: chạy 
 - Lặp lại trong chính file: 4 câu.
 - Không có ở bộ nào khác: 30 câu (câu 17, 45, 55, 63, 81, 85, 86, 102, 103, 106, 133, 148, 155, 162, 170, 172, 177, 180, 204, 212, 219, 247, 254, 277, 283, 312, 344, 347, 360, 374).
 
-## 3 câu trùng nhưng đáp án khác với app
+## 4 câu trùng nhưng đáp án khác với app
 
 Các bộ khác trong app được giữ nguyên; bộ VNR202 Full dùng đáp án của file. Chưa kiểm chứng bên nào đúng: hãy đối chiếu giáo trình.
 
@@ -17,6 +17,7 @@ Các bộ khác trong app được giữ nguyên; bộ VNR202 Full dùng đáp �
 | 26 | Cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 bắt đầu bằng chiến dich nào? | Chiến dịch Tây Nguyên (3/1975) | Chiến dịch Tây Nguyên (đánh Buôn Ma Thuột) | Chương 2, Câu 93 |
 | 116 | Hội nghi Trung ương 8 (5/1941) đã bầu ai làm Tổng Bí thư của Đảng? | Nguyễn Ái Quốc | Trường Chinh | Ngân hàng bổ sung – Chương 1, Ngân hàng câu 116 |
 | 234 | Hội Việt Nam Cách mạng Thanh niên hoạt động theo khuynh hướng nào? | Khuynh hướng phong kiến | Khuynh hướng vô sản | Ngân hàng bổ sung – Chương 1, Ngân hàng câu 234 |
+| 341 | Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập vài thời gian nào? | 10-1930 | 11-1939 | Ngân hàng bổ sung – Chương 1, Ngân hàng câu 341 |
 
 ## Câu lặp lại trong file
 

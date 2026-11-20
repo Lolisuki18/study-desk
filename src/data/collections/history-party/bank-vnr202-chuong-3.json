@@ -411,12 +411,13 @@
         "ref": "Ngân hàng câu 41",
         "bankAnswer": "A",
         "answerChangedToTextbook": true,
+        "answerReplaced": true,
         "textCleaned": true
       },
       "enrichment": {
-        "text": "ĐÃ ĐỔI THEO GIÁO TRÌNH: tài liệu VNR202 (Tóm tắt) viết Đại hội V (1982) chủ trương “coi nông nghiệp là mặt trận hàng đầu”, nên đáp án là B (Nông nghiệp). Ngân hàng câu hỏi gốc ghi A.",
-        "reference": "VNR202 (Tóm tắt), trang PDF 70",
-        "confidence": "verified"
+        "text": "ĐÃ ĐỔI THEO GIÁO TRÌNH: tài liệu VNR202 (Tóm tắt) viết Đại hội V (1982) chủ trương “coi nông nghiệp là mặt trận hàng đầu”, nên đáp án là B (Nông nghiệp). Ngân hàng câu hỏi gốc ghi A.\n\n⚠ Đáp án đã sửa từ A (Công nghiệp) thành B. Đại hội V (3/1982) xác định nông nghiệp là mặt trận hàng đầu; câu 218 trong cùng bộ cũng nói như vậy. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "confidence": "verified",
+        "reference": "VNR202 (Tóm tắt), trang PDF 70; Giáo trình Lịch sử Đảng, Chương 3 (Đại hội V, 1982; câu 218 cùng bộ)"
       }
     },
     {
@@ -858,9 +859,9 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Giáo trình (tr. PDF 186): Đến năm 2012, có 36 nước công nhận quy chế kinh tế thị trường của Việt Nam.",
+        "text": "Giáo trình (tr. PDF 186): Đến năm 2012, có 36 nước công nhận quy chế kinh tế thị trường của Việt Nam.\n\n⚠ Giáo trình ghi nhận đến năm 2012 có 36 nước công nhận cơ chế kinh tế thị trường của Việt Nam.",
         "confidence": "verified",
-        "reference": "Giáo trình VNR202, trang PDF 186"
+        "reference": "Giáo trình VNR202, trang PDF 186; Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -1274,10 +1275,17 @@
             "text": "Đại hội XII (2016)"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 110"
+        "ref": "Ngân hàng câu 110",
+        "bankAnswer": "A",
+        "answerReplaced": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Đại hội IX, 2001) thành B (Đại hội X, 2006). Đại hội IX mới khuyến khích kinh tế tư nhân phát triển; chủ trương chính thức cho phép đảng viên làm kinh tế tư nhân được thông qua tại Đại hội X (2006), khớp với câu 79 cùng bộ và đã được đối chiếu lại với nguồn người học cung cấp. Đáp án gốc của nguồn lưu trong dữ liệu của câu.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 3 (Đại hội X, 2006; câu 79 cùng bộ)"
       }
     },
     {
@@ -1858,6 +1866,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 175"
+      },
+      "enrichment": {
+        "text": "Giai đoạn 1979–1989, sau chiến tranh biên giới phía Bắc (2/1979), quan hệ Việt – Trung rơi vào tình trạng căng thẳng, phức tạp (xung đột cục bộ kéo dài ở biên giới đến cuối thập niên 80), trước khi bình thường hóa quan hệ năm 1991.",
+        "confidence": "verified",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -2708,6 +2721,11 @@
       "source": {
         "ref": "Ngân hàng câu 245",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Trong 5 bài học kinh nghiệm qua 30 năm đổi mới tại Đại hội XII (2016), bài học thứ 5 lần đầu tiên khẳng định rõ: hội nhập quốc tế trên cơ sở giữ vững độc lập, tự chủ, lấy lợi ích quốc gia, dân tộc làm mục tiêu cao nhất.",
+        "confidence": "uncertain",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {

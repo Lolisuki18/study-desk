@@ -1718,6 +1718,11 @@
       "source": {
         "ref": "Ngân hàng câu 203",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Theo nguồn người học cung cấp: đoạn \"phải biết liên lạc với tiểu tư sản, trí thức, trung nông… để kéo họ về phe vô sản giai cấp\" nằm trong Cương lĩnh chính trị đầu tiên (2/1930) của Nguyễn Ái Quốc, không có trong Luận cương tháng 10/1930 của Trần Phú. Hạn chế đặc trưng của Luận cương là chỉ xác định động lực cách mạng gồm công nhân và nông dân, chưa đánh giá đúng vai trò của tiểu tư sản, trí thức, trung nông. Lưu ý: chỗ này chưa được đối chiếu trực tiếp với văn bản gốc, nên cần kiểm tra lại với giáo trình.",
+        "confidence": "uncertain",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -2487,6 +2492,11 @@
       "source": {
         "ref": "Ngân hàng câu 279",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Trước Chiến tranh thế giới thứ nhất, phong trào yêu nước chỉ có khuynh hướng dân chủ tư sản (cùng tàn dư phong kiến). Từ 1919–1930, khuynh hướng vô sản xuất hiện và phát triển song song với khuynh hướng dân chủ tư sản. Loại B vì trước 1914 cũng chịu tác động khai thác thuộc địa lần 1; loại C vì đến năm 1930 giai cấp công nhân mới giành được vai trò lãnh đạo; loại D vì giai đoạn này chưa có sự giúp đỡ của Liên Xô, Trung Quốc.",
+        "confidence": "verified",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -3336,10 +3346,17 @@
             "text": "5-1941"
           }
         ],
-        "answer": "A"
+        "answer": "C"
       },
       "source": {
-        "ref": "Ngân hàng câu 341"
+        "ref": "Ngân hàng câu 341",
+        "bankAnswer": "A",
+        "answerReplaced": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (10-1930) thành C. Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập tại Hội nghị Trung ương 6 (11/1939); tháng 10/1930 là thời điểm đổi tên Đảng và lập Hội phản đế đồng minh. Câu 278 trong cùng bộ cũng chọn 11-1939. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 1 (Hội nghị Trung ương 6, 11/1939; câu 278 cùng bộ)"
       }
     },
     {

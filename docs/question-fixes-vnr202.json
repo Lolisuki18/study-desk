@@ -8,6 +8,12 @@
   "confidence": "uncertain",
   "reference": "Giáo trình VNR202 (Tóm tắt), tr. PDF 145"
  },
+ "41": {
+  "answer": "B",
+  "note": "Đáp án đã sửa từ A (Công nghiệp) thành B. Đại hội V (3/1982) xác định nông nghiệp là mặt trận hàng đầu; câu 218 trong cùng bộ cũng nói như vậy. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 3 (Đại hội V, 1982; câu 218 cùng bộ)"
+ },
  "45": {
   "question": "Đoàn đại biểu miền Nam do ai dẫn đầu để hiệp thương thống nhất với miền Bắc sau năm 1975?",
   "note": "Nguồn chỉ còn lại tên đáp án làm đề. Đề được người học cung cấp lại từ bản gốc (ảnh chụp đề, đáp án A). Phù hợp lịch sử: Hội nghị hiệp thương chính trị 11/1975 tại Sài Gòn, đoàn miền Nam do Phạm Hùng dẫn đầu, đoàn miền Bắc do Trường Chinh.",
@@ -27,6 +33,11 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 51: \"…tình thế… được ví như: Ngàn cân treo sợi tóc\").",
   "confidence": "verified",
   "reference": "Bộ Lịch sử Đảng – Chương 2, câu 51"
+ },
+ "77": {
+  "note": "Giáo trình ghi nhận đến năm 2012 có 36 nước công nhận cơ chế kinh tế thị trường của Việt Nam.",
+  "confidence": "uncertain",
+  "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
  },
  "81": {
   "question": "Hội nghị Trung ương 11 và 12 (năm 1965) đã nêu cao khẩu hiệu chung của nhân dân cả nước là gì?",
@@ -66,6 +77,12 @@
   "question": "Nước ta chính thức mang tên Cộng hòa xã hội chủ nghĩa Việt Nam vào thời gian nào?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Quốc hội khóa VI (kỳ họp 24/6–3/7/1976) quyết định tên nước; xem câu 107 cùng ngân hàng); không phải đề gốc nên chỉ dùng tham khảo.",
   "confidence": "uncertain"
+ },
+ "110": {
+  "answer": "B",
+  "note": "Đáp án đã sửa từ A (Đại hội IX, 2001) thành B (Đại hội X, 2006). Đại hội IX mới khuyến khích kinh tế tư nhân phát triển; chủ trương chính thức cho phép đảng viên làm kinh tế tư nhân được thông qua tại Đại hội X (2006), khớp với câu 79 cùng bộ và đã được đối chiếu lại với nguồn người học cung cấp. Đáp án gốc của nguồn lưu trong dữ liệu của câu.",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 3 (Đại hội X, 2006; câu 79 cùng bộ)"
  },
  "116": {
   "answer": "C",
@@ -113,6 +130,11 @@
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề được dựng từ nội dung phương án: câu nói trên là của Chủ tịch Hồ Chí Minh trong Lời kêu gọi toàn quốc kháng chiến (19/12/1946); ba phương án còn lại là các văn kiện khác nên không chứa câu này.",
   "confidence": "uncertain"
  },
+ "175": {
+  "note": "Giai đoạn 1979–1989, sau chiến tranh biên giới phía Bắc (2/1979), quan hệ Việt – Trung rơi vào tình trạng căng thẳng, phức tạp (xung đột cục bộ kéo dài ở biên giới đến cuối thập niên 80), trước khi bình thường hóa quan hệ năm 1991.",
+  "confidence": "verified",
+  "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
+ },
  "177": {
   "question": "Chủ trương của Đảng về xây dựng đội ngũ cán bộ các cấp là gì?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (cùng chủ đề với câu 17; đáp án là đoạn trích giáo trình tr. PDF 145); không phải đề gốc nên chỉ dùng tham khảo.",
@@ -124,6 +146,11 @@
   "note": "Đề gốc ở câu này bị lỗi (chép lẫn một đoạn ở đáp án). Đề đã được khôi phục từ một câu khác trong ngân hàng có đúng 4 phương án và cùng đáp án (Ngân hàng câu 174). Đề gốc lưu trong source.originalQuestion.",
   "confidence": "verified",
   "reference": "Ngân hàng câu 174 (cùng phương án, cùng đáp án B)"
+ },
+ "203": {
+  "note": "Theo nguồn người học cung cấp: đoạn \"phải biết liên lạc với tiểu tư sản, trí thức, trung nông… để kéo họ về phe vô sản giai cấp\" nằm trong Cương lĩnh chính trị đầu tiên (2/1930) của Nguyễn Ái Quốc, không có trong Luận cương tháng 10/1930 của Trần Phú. Hạn chế đặc trưng của Luận cương là chỉ xác định động lực cách mạng gồm công nhân và nông dân, chưa đánh giá đúng vai trò của tiểu tư sản, trí thức, trung nông. Lưu ý: chỗ này chưa được đối chiếu trực tiếp với văn bản gốc, nên cần kiểm tra lại với giáo trình.",
+  "confidence": "uncertain",
+  "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
  },
  "204": {
   "question": "Chính sách \"chia để trị\" của thực dân Pháp ở Việt Nam (chia Việt Nam thành ba kỳ với ba chế độ cai trị khác nhau) thuộc lĩnh vực nào?",
@@ -151,6 +178,11 @@
   "confidence": "verified",
   "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội Việt Nam Cách mạng Thanh niên)"
  },
+ "245": {
+  "note": "Trong 5 bài học kinh nghiệm qua 30 năm đổi mới tại Đại hội XII (2016), bài học thứ 5 lần đầu tiên khẳng định rõ: hội nhập quốc tế trên cơ sở giữ vững độc lập, tự chủ, lấy lợi ích quốc gia, dân tộc làm mục tiêu cao nhất.",
+  "confidence": "uncertain",
+  "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
+ },
  "247": {
   "question": "Một trong các khâu đột phá chiến lược của Đảng để đẩy mạnh công nghiệp hóa, hiện đại hóa là gì?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (giáo trình tr. PDF 177: \"Phát triển nhanh nguồn nhân lực, nhất là nhân lực chất lượng cao…\"; ba phương án còn lại là nội dung chung của công nghiệp hóa, không phải khâu đột phá); không phải đề gốc nên chỉ dùng tham khảo.",
@@ -175,6 +207,11 @@
   "confidence": "verified",
   "reference": "Văn kiện Đại hội III (9/1960): cách mạng XHCN ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam"
  },
+ "279": {
+  "note": "Trước Chiến tranh thế giới thứ nhất, phong trào yêu nước chỉ có khuynh hướng dân chủ tư sản (cùng tàn dư phong kiến). Từ 1919–1930, khuynh hướng vô sản xuất hiện và phát triển song song với khuynh hướng dân chủ tư sản. Loại B vì trước 1914 cũng chịu tác động khai thác thuộc địa lần 1; loại C vì đến năm 1930 giai cấp công nhân mới giành được vai trò lãnh đạo; loại D vì giai đoạn này chưa có sự giúp đỡ của Liên Xô, Trung Quốc.",
+  "confidence": "verified",
+  "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
+ },
  "283": {
   "question": "Theo Hiệp định Giơ-ne-vơ năm 1954, Việt Nam bị tạm thời chia cắt ở vĩ tuyến nào?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 2, câu 67: \"…bị tạm thời chia cắt ở vĩ tuyến bao nhiêu?\" – vĩ tuyến 17).",
@@ -188,6 +225,12 @@
   "note": "Năm bị cụt trong nguồn (thiếu chữ số cuối); đã điền lại: Hội nghị Trung ương 8 họp tháng 5/1941.",
   "confidence": "verified",
   "reference": "Bộ Lịch sử Đảng – Chương 1 (Hội nghị TW 8, 5/1941)"
+ },
+ "309": {
+  "answer": "B",
+  "note": "Đáp án đã sửa từ A (Đại hội II) thành B. Đường lối chung xây dựng chủ nghĩa xã hội ở miền Bắc được đề ra ở Đại hội III (9/1960), không phải Đại hội II (Đại hội II năm 1951 đề ra Chính cương kháng chiến). Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
  },
  "312": {
   "question": "(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?",
@@ -203,6 +246,17 @@
   "note": "Đề gốc bị cụt ở cuối câu (\"…tiếp tục kí với Pháp bả…\"). Phần chữ còn thiếu được điền lại theo cấu trúc câu và các phương án; phần phía trước và đáp án giữ nguyên theo nguồn. Đề gốc lưu trong source.originalQuestion. Đáp án D (Tạm ước 14/9/1946) khớp lịch sử.",
   "confidence": "uncertain",
   "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Tạm ước 14/9/1946)"
+ },
+ "325": {
+  "note": "Khởi nghĩa từng phần chống Mỹ – Diệm nổ ra sớm nhất tại Vĩnh Thạnh (Bình Định) và Bác Ái (Ninh Thuận) vào tháng 2/1959, sau đó đến Trà Bồng (Quảng Ngãi, tháng 8/1959), rồi bùng nổ mạnh mẽ và tiêu biểu nhất tại Bến Tre (1/1960).",
+  "confidence": "verified",
+  "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
+ },
+ "341": {
+  "answer": "C",
+  "note": "Đáp án đã sửa từ A (10-1930) thành C. Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập tại Hội nghị Trung ương 6 (11/1939); tháng 10/1930 là thời điểm đổi tên Đảng và lập Hội phản đế đồng minh. Câu 278 trong cùng bộ cũng chọn 11-1939. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 1 (Hội nghị Trung ương 6, 11/1939; câu 278 cùng bộ)"
  },
  "344": {
   "question": "Lần đầu tiên công nhân và nhân dân lao động Việt Nam biểu tình kỷ niệm Ngày Quốc tế Lao động dưới sự lãnh đạo của Đảng vào ngày nào?",
@@ -243,6 +297,12 @@
   "question": "Tác phẩm \"Đường Kách mệnh\" của Nguyễn Ái Quốc (năm 1927) được xuất bản tại đâu?",
   "note": "Đề gốc của ngân hàng bị mất (chỉ còn \"Trung Quốc xuất bản tại đầu?\", tức đáp án dính vào đề), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề suy ra từ đáp án: Đường Kách mệnh do Bộ Tuyên truyền của Hội Việt Nam Cách mạng Thanh niên xuất bản năm 1927 tại Quảng Châu (Trung Quốc). Câu gốc cũng có thể hỏi về một tác phẩm hoặc tờ báo khác xuất bản ở Trung Quốc (ví dụ báo Thanh niên); đáp án vẫn là Trung Quốc.",
   "confidence": "uncertain"
+ },
+ "375": {
+  "question": "Đại hội lần thứ III (9-1960) Đảng Lao động Việt Nam khẳng định nhiệm vụ cách mạng giữ vai trò quyết định nhất đối với sự phát triển cách mạng cả nước là",
+  "note": "Đề gốc ghi nhầm \"Đại hội lần thứ II (9-1960)\"; Đại hội họp tháng 9/1960 là Đại hội III (câu 260 cùng bộ). Đã sửa số đại hội, đáp án A giữ nguyên. Đề gốc lưu trong source.originalQuestion.",
+  "confidence": "verified",
+  "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
  },
  "382": {
   "question": "Mục tiêu chủ yếu của đổi mới hệ thống chính trị là nhằm:",

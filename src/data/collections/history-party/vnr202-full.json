@@ -1223,11 +1223,18 @@
             "text": "Dịch v"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
         "ref": "VNR202 Full câu 41",
+        "sourceAnswer": "A",
+        "answerChanged": true,
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Công nghiệp) thành B. Đại hội V (3/1982) xác định nông nghiệp là mặt trận hàng đầu; câu 218 trong cùng bộ cũng nói như vậy. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 3 (Đại hội V, 1982; câu 218 cùng bộ)"
       }
     },
     {
@@ -2316,6 +2323,11 @@
       "source": {
         "ref": "VNR202 Full câu 77",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Giáo trình ghi nhận đến năm 2012 có 36 nước công nhận cơ chế kinh tế thị trường của Việt Nam.",
+        "confidence": "uncertain",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -3322,10 +3334,17 @@
             "text": "Đại hội XII (2016)"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
-        "ref": "VNR202 Full câu 110"
+        "ref": "VNR202 Full câu 110",
+        "sourceAnswer": "A",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Đại hội IX, 2001) thành B (Đại hội X, 2006). Đại hội IX mới khuyến khích kinh tế tư nhân phát triển; chủ trương chính thức cho phép đảng viên làm kinh tế tư nhân được thông qua tại Đại hội X (2006), khớp với câu 79 cùng bộ và đã được đối chiếu lại với nguồn người học cung cấp. Đáp án gốc của nguồn lưu trong dữ liệu của câu.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 3 (Đại hội X, 2006; câu 79 cùng bộ)"
       }
     },
     {
@@ -5295,6 +5314,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 175"
+      },
+      "enrichment": {
+        "text": "Giai đoạn 1979–1989, sau chiến tranh biên giới phía Bắc (2/1979), quan hệ Việt – Trung rơi vào tình trạng căng thẳng, phức tạp (xung đột cục bộ kéo dài ở biên giới đến cuối thập niên 80), trước khi bình thường hóa quan hệ năm 1991.",
+        "confidence": "verified",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -6142,6 +6166,11 @@
       "source": {
         "ref": "VNR202 Full câu 203",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Theo nguồn người học cung cấp: đoạn \"phải biết liên lạc với tiểu tư sản, trí thức, trung nông… để kéo họ về phe vô sản giai cấp\" nằm trong Cương lĩnh chính trị đầu tiên (2/1930) của Nguyễn Ái Quốc, không có trong Luận cương tháng 10/1930 của Trần Phú. Hạn chế đặc trưng của Luận cương là chỉ xác định động lực cách mạng gồm công nhân và nông dân, chưa đánh giá đúng vai trò của tiểu tư sản, trí thức, trung nông. Lưu ý: chỗ này chưa được đối chiếu trực tiếp với văn bản gốc, nên cần kiểm tra lại với giáo trình.",
+        "confidence": "uncertain",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -7414,6 +7443,11 @@
       "source": {
         "ref": "VNR202 Full câu 245",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Trong 5 bài học kinh nghiệm qua 30 năm đổi mới tại Đại hội XII (2016), bài học thứ 5 lần đầu tiên khẳng định rõ: hội nhập quốc tế trên cơ sở giữ vững độc lập, tự chủ, lấy lợi ích quốc gia, dân tộc làm mục tiêu cao nhất.",
+        "confidence": "uncertain",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -8448,6 +8482,11 @@
       "source": {
         "ref": "VNR202 Full câu 279",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Trước Chiến tranh thế giới thứ nhất, phong trào yêu nước chỉ có khuynh hướng dân chủ tư sản (cùng tàn dư phong kiến). Từ 1919–1930, khuynh hướng vô sản xuất hiện và phát triển song song với khuynh hướng dân chủ tư sản. Loại B vì trước 1914 cũng chịu tác động khai thác thuộc địa lần 1; loại C vì đến năm 1930 giai cấp công nhân mới giành được vai trò lãnh đạo; loại D vì giai đoạn này chưa có sự giúp đỡ của Liên Xô, Trung Quốc.",
+        "confidence": "verified",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -9347,10 +9386,17 @@
             "text": "Đại hội V"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
-        "ref": "VNR202 Full câu 309"
+        "ref": "VNR202 Full câu 309",
+        "sourceAnswer": "A",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Đại hội II) thành B. Đường lối chung xây dựng chủ nghĩa xã hội ở miền Bắc được đề ra ở Đại hội III (9/1960), không phải Đại hội II (Đại hội II năm 1951 đề ra Chính cương kháng chiến). Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
       }
     },
     {
@@ -9839,6 +9885,11 @@
       },
       "source": {
         "ref": "VNR202 Full câu 325"
+      },
+      "enrichment": {
+        "text": "Khởi nghĩa từng phần chống Mỹ – Diệm nổ ra sớm nhất tại Vĩnh Thạnh (Bình Định) và Bác Ái (Ninh Thuận) vào tháng 2/1959, sau đó đến Trà Bồng (Quảng Ngãi, tháng 8/1959), rồi bùng nổ mạnh mẽ và tiêu biểu nhất tại Bến Tre (1/1960).",
+        "confidence": "verified",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -10311,10 +10362,17 @@
             "text": "5-1941"
           }
         ],
-        "answer": "A"
+        "answer": "C"
       },
       "source": {
-        "ref": "VNR202 Full câu 341"
+        "ref": "VNR202 Full câu 341",
+        "sourceAnswer": "A",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (10-1930) thành C. Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập tại Hội nghị Trung ương 6 (11/1939); tháng 10/1930 là thời điểm đổi tên Đảng và lập Hội phản đế đồng minh. Câu 278 trong cùng bộ cũng chọn 11-1939. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 1 (Hội nghị Trung ương 6, 11/1939; câu 278 cùng bộ)"
       }
     },
     {
@@ -11339,7 +11397,7 @@
       "id": "q-375",
       "type": "multiple-choice",
       "content": {
-        "question": "Đại hội lần thứ II (9-1960) Đàng Lao động Việt Nam khẳng định nhiệm vụ cách mạng giữ vai trò quyết đi nh nhất đó là",
+        "question": "Đại hội lần thứ III (9-1960) Đảng Lao động Việt Nam khẳng định nhiệm vụ cách mạng giữ vai trò quyết định nhất đối với sự phát triển cách mạng cả nước là",
         "options": [
           {
             "key": "A",
@@ -11362,7 +11420,13 @@
       },
       "source": {
         "ref": "VNR202 Full câu 375",
+        "originalQuestion": "Đại hội lần thứ II (9-1960) Đàng Lao động Việt Nam khẳng đinh nhiệm vu cách mạng giữ vai trò quyết đi nh nhất đó l",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc ghi nhầm \"Đại hội lần thứ II (9-1960)\"; Đại hội họp tháng 9/1960 là Đại hội III (câu 260 cùng bộ). Đã sửa số đại hội, đáp án A giữ nguyên. Đề gốc lưu trong source.originalQuestion.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
       }
     },
     {

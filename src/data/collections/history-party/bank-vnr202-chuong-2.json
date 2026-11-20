@@ -3373,10 +3373,17 @@
             "text": "Đại hội V"
           }
         ],
-        "answer": "A"
+        "answer": "B"
       },
       "source": {
-        "ref": "Ngân hàng câu 309"
+        "ref": "Ngân hàng câu 309",
+        "bankAnswer": "A",
+        "answerReplaced": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã sửa từ A (Đại hội II) thành B. Đường lối chung xây dựng chủ nghĩa xã hội ở miền Bắc được đề ra ở Đại hội III (9/1960), không phải Đại hội II (Đại hội II năm 1951 đề ra Chính cương kháng chiến). Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
       }
     },
     {
@@ -3561,6 +3568,11 @@
       },
       "source": {
         "ref": "Ngân hàng câu 325"
+      },
+      "enrichment": {
+        "text": "Khởi nghĩa từng phần chống Mỹ – Diệm nổ ra sớm nhất tại Vĩnh Thạnh (Bình Định) và Bác Ái (Ninh Thuận) vào tháng 2/1959, sau đó đến Trà Bồng (Quảng Ngãi, tháng 8/1959), rồi bùng nổ mạnh mẽ và tiêu biểu nhất tại Bến Tre (1/1960).",
+        "confidence": "verified",
+        "reference": "Giải thích do người học cung cấp (đối chiếu theo giáo trình Lịch sử Đảng)"
       }
     },
     {
@@ -3755,7 +3767,7 @@
       "id": "b-375",
       "type": "multiple-choice",
       "content": {
-        "question": "Đại hội lần thứ II (9-1960) Đàng Lao động Việt Nam khẳng định nhiệm vụ cách mạng giữ vai trò quyết đi nh nhất đó là",
+        "question": "Đại hội lần thứ III (9-1960) Đảng Lao động Việt Nam khẳng định nhiệm vụ cách mạng giữ vai trò quyết định nhất đối với sự phát triển cách mạng cả nước là",
         "options": [
           {
             "key": "A",
@@ -3778,7 +3790,13 @@
       },
       "source": {
         "ref": "Ngân hàng câu 375",
+        "originalQuestion": "Đại hội lần thứ II (9-1960) Đàng Lao động Việt Nam khẳng đinh nhiệm vu cách mạng giữ vai trò quyết đi nh nhất đó l",
         "textCleaned": true
+      },
+      "enrichment": {
+        "text": "Đề gốc ghi nhầm \"Đại hội lần thứ II (9-1960)\"; Đại hội họp tháng 9/1960 là Đại hội III (câu 260 cùng bộ). Đã sửa số đại hội, đáp án A giữ nguyên. Đề gốc lưu trong source.originalQuestion.",
+        "confidence": "verified",
+        "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Đại hội III, 9/1960)"
       }
     },
     {
