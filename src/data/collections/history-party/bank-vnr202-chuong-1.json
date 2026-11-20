@@ -342,7 +342,7 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc bị mất phần đầu (chỉ còn \"(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với các phương án và đáp án D (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, hoàn chỉnh chuyển hướng chiến lược bắt đầu từ Hội nghị tháng 11/1939) — KHÔNG phải đề gốc. Đề gốc lưu trong source.originalQuestion.",
+        "text": "Đề gốc bị mất phần đầu (chỉ còn \"(…) giải phóng dân tộc được đặt ra từ Hội nghị nào của Đảng?\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với các phương án và đáp án D (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, hoàn chỉnh chuyển hướng chiến lược bắt đầu từ Hội nghị tháng 11/1939) — KHÔNG phải đề gốc. Đề gốc được lưu kèm trong dữ liệu.",
         "confidence": "uncertain",
         "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Hội nghị Trung ương 8, 5/1941)"
       }
@@ -769,7 +769,7 @@
         "originalQuestion": "Đảng Cộng sản Việt Nam"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đảng Cộng sản Việt Nam (2/1930) → Đảng Cộng sản Đông Dương (10/1930) → Đảng Lao động Việt Nam (2/1951) → Đảng Cộng sản Việt Nam (12/1976); câu gốc cũng có thể hỏi tên gọi của Đảng tại Hội nghị hợp nhất 2/1930 – đáp án vẫn là Đảng Cộng sản Việt Nam); không phải đề gốc nên chỉ dùng tham khảo.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc được lưu kèm trong dữ liệu. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (Đảng Cộng sản Việt Nam (2/1930) → Đảng Cộng sản Đông Dương (10/1930) → Đảng Lao động Việt Nam (2/1951) → Đảng Cộng sản Việt Nam (12/1976); câu gốc cũng có thể hỏi tên gọi của Đảng tại Hội nghị hợp nhất 2/1930 – đáp án vẫn là Đảng Cộng sản Việt Nam); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -925,7 +925,7 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đáp án đã sửa từ A (Nguyễn Ái Quốc) thành C (Trường Chinh). Hội nghị Trung ương 8 (10–19/5/1941, họp tại Pác Bó) do Nguyễn Ái Quốc chủ trì, nhưng người được bầu làm Tổng Bí thư là Trường Chinh. Đáp án gốc của nguồn (A) lưu trong source.bankAnswer.",
+        "text": "Đáp án đã sửa từ A (Nguyễn Ái Quốc) thành C (Trường Chinh). Hội nghị Trung ương 8 (10–19/5/1941, họp tại Pác Bó) do Nguyễn Ái Quốc chủ trì, nhưng người được bầu làm Tổng Bí thư là Trường Chinh. Đáp án gốc của nguồn (A) được lưu kèm trong dữ liệu.",
         "confidence": "verified",
         "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội nghị Trung ương 8, 5/1941)"
       }
@@ -1391,7 +1391,7 @@
         "originalQuestion": "Mâu thuẫn với Pháp - Nhật trở nên gay gắt"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mâu thuẫn Pháp – Nhật ngày càng gay gắt là nguyên nhân Nhật đảo chính Pháp); không phải đề gốc nên chỉ dùng tham khảo.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc được lưu kèm trong dữ liệu. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mâu thuẫn Pháp – Nhật ngày càng gay gắt là nguyên nhân Nhật đảo chính Pháp); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -1966,7 +1966,7 @@
         "answerReplaced": true
       },
       "enrichment": {
-        "text": "Đáp án đã sửa từ A (Khuynh hướng phong kiến) thành B (Khuynh hướng vô sản). Hội Việt Nam Cách mạng Thanh niên (6/1925) do Nguyễn Ái Quốc sáng lập, truyền bá chủ nghĩa Mác - Lênin, chuẩn bị thành lập chính đảng vô sản nên hoạt động theo khuynh hướng vô sản. Đáp án gốc của nguồn (A) lưu trong source.bankAnswer.",
+        "text": "Đáp án đã sửa từ A (Khuynh hướng phong kiến) thành B (Khuynh hướng vô sản). Hội Việt Nam Cách mạng Thanh niên (6/1925) do Nguyễn Ái Quốc sáng lập, truyền bá chủ nghĩa Mác - Lênin, chuẩn bị thành lập chính đảng vô sản nên hoạt động theo khuynh hướng vô sản. Đáp án gốc của nguồn (A) được lưu kèm trong dữ liệu.",
         "confidence": "verified",
         "reference": "Giáo trình Lịch sử Đảng Cộng sản Việt Nam, Chương 1 (Hội Việt Nam Cách mạng Thanh niên)"
       }
@@ -2928,7 +2928,7 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc bị mất phần đầu (chỉ còn \"(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?\"), và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với phương án và đáp án C (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương, chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm) — KHÔNG phải đề gốc. Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc lưu trong source.originalQuestion.",
+        "text": "Đề gốc bị mất phần đầu (chỉ còn \"(…) Luận điểm trên được đưa ra tại Hội nghị nào của Đảng?\"), và dính một đoạn của phương án C (\"Hội nghị Ban Chấp hành Trung ương tháng 5/194\"). Câu hỏi này do trợ lý VIẾT LẠI cho khớp với phương án và đáp án C (Hội nghị Trung ương 8, 5/1941: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương, chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm) — KHÔNG phải đề gốc. Phương án D bị cụt năm, đã điền \"3/1945\" (Ban Thường vụ Trung ương ra chỉ thị \"Nhật – Pháp bắn nhau và hành động của chúng ta\", 12/3/1945). Đề gốc được lưu kèm trong dữ liệu.",
         "confidence": "uncertain",
         "reference": "Giáo trình Lịch sử Đảng, Chương 2 (Hội nghị Trung ương 8, 5/1941)"
       }
@@ -3355,7 +3355,7 @@
         "answerReplaced": true
       },
       "enrichment": {
-        "text": "Đáp án đã sửa từ A (10-1930) thành C. Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập tại Hội nghị Trung ương 6 (11/1939); tháng 10/1930 là thời điểm đổi tên Đảng và lập Hội phản đế đồng minh. Câu 278 trong cùng bộ cũng chọn 11-1939. Đáp án gốc của nguồn lưu trong dữ liệu của câu (source.sourceAnswer / source.bankAnswer).",
+        "text": "Đáp án đã sửa từ A (10-1930) thành C. Mặt trận dân tộc thống nhất phản đế Đông Dương được thành lập tại Hội nghị Trung ương 6 (11/1939); tháng 10/1930 là thời điểm đổi tên Đảng và lập Hội phản đế đồng minh. Câu 278 trong cùng bộ cũng chọn 11-1939. Đáp án gốc của nguồn lưu trong dữ liệu của câu.",
         "confidence": "verified",
         "reference": "Giáo trình Lịch sử Đảng, Chương 1 (Hội nghị Trung ương 6, 11/1939; câu 278 cùng bộ)"
       }
@@ -3390,7 +3390,7 @@
         "originalQuestion": "1-5-1930"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mốc 1/5/1930 mở đầu cao trào cách mạng 1930 – 1931); không phải đề gốc nên chỉ dùng tham khảo.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc được lưu kèm trong dữ liệu. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (mốc 1/5/1930 mở đầu cao trào cách mạng 1930 – 1931); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3454,7 +3454,7 @@
         "originalQuestion": "Bãi công của công nhân Ba Son"
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 1: cuộc bãi công Ba Son (8/1925) \"đánh dấu bước chuyển của phong trào công nhân từ tự phát sang tự giác\").",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc được lưu kèm trong dữ liệu. Đề được dựng theo câu tương ứng trong bộ câu hỏi/giáo trình đã có trong app (Lịch sử Đảng chương 1: cuộc bãi công Ba Son (8/1925) \"đánh dấu bước chuyển của phong trào công nhân từ tự phát sang tự giác\").",
         "confidence": "verified",
         "reference": "Bộ Lịch sử Đảng – Chương 1, câu 37 (phần bổ sung)"
       }
@@ -3550,7 +3550,7 @@
         "textCleaned": true
       },
       "enrichment": {
-        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc lưu trong source.originalQuestion. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (các phương án B và D là nội dung Cương lĩnh chính trị đầu tiên, không phải ý nghĩa; A (vai trò lãnh đạo) là ý nghĩa của sự ra đời của Đảng); không phải đề gốc nên chỉ dùng tham khảo.",
+        "text": "Đề gốc của ngân hàng bị mất (chỉ còn nội dung đáp án), nên đề hiện tại do Claude dựng lại. Đề gốc được lưu kèm trong dữ liệu. Đề được suy ra từ nội dung các phương án và kiến thức lịch sử (các phương án B và D là nội dung Cương lĩnh chính trị đầu tiên, không phải ý nghĩa; A (vai trò lãnh đạo) là ý nghĩa của sự ra đời của Đảng); không phải đề gốc nên chỉ dùng tham khảo.",
         "confidence": "uncertain"
       }
     },
@@ -3643,7 +3643,7 @@
         "originalQuestion": "Trung Quốc xuất bản tại đầu?"
       },
       "enrichment": {
-        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Trung Quốc xuất bản tại đầu?”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn \"Trung Quốc xuất bản tại đầu?\", tức đáp án dính vào đề), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc lưu trong source.originalQuestion. Đề suy ra từ đáp án: Đường Kách mệnh do Bộ Tuyên truyền của Hội Việt Nam Cách mạng Thanh niên xuất bản năm 1927 tại Quảng Châu (Trung Quốc). Câu gốc cũng có thể hỏi về một tác phẩm hoặc tờ báo khác xuất bản ở Trung Quốc (ví dụ báo Thanh niên); đáp án vẫn là Trung Quốc.",
+        "text": "CÂU HỎI BỊ CẮT/HỎNG trong nguồn (“Trung Quốc xuất bản tại đầu?”): không đủ thông tin để đối chiếu giáo trình. Nên bỏ qua câu này.\n\n⚠ Đề gốc của ngân hàng bị mất (chỉ còn \"Trung Quốc xuất bản tại đầu?\", tức đáp án dính vào đề), nên đề hiện tại do Claude dựng lại, không phải đề gốc; đề gốc được lưu kèm trong dữ liệu. Đề suy ra từ đáp án: Đường Kách mệnh do Bộ Tuyên truyền của Hội Việt Nam Cách mạng Thanh niên xuất bản năm 1927 tại Quảng Châu (Trung Quốc). Câu gốc cũng có thể hỏi về một tác phẩm hoặc tờ báo khác xuất bản ở Trung Quốc (ví dụ báo Thanh niên); đáp án vẫn là Trung Quốc.",
         "confidence": "uncertain"
       }
     },
