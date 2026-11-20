@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import {
   ArrowLeft,
   Bookmark,
+  BookOpen,
   CheckCircle2,
   HelpCircle,
   Layers,
@@ -17,6 +18,7 @@ import { getCollection, itemTitle } from '../data'
 import { collectionStats, useProgress } from '../features/learning/ProgressContext'
 import { isMastered, reviewReasons } from '../services/review/srs'
 import { Card, Empty, PageHeader, ProgressBar, Stat } from '../components/ui'
+import CramView from '../components/ui/CramView'
 import { cx, pct } from '../utils'
 import { getContentTypeBadge, getSubjectColor } from '../components/dashboard/CollectionCard'
 
@@ -28,16 +30,12 @@ export default function CollectionDetail() {
   const { progress, get, resetCollection } = useProgress()
   const [q, setQ] = useState('')
   const [filter, setFilter] = useState<StatusFilter>('all')
+  const [showCram, setShowCram] = useState(false)
 
-  if (!c) return <Empty>Không tìm thấy bộ học "{id}".</Empty>
-
-  const st = collectionStats(c.id, c.items.map((i) => i.id), progress)
-  const percent = pct(st.mastered, st.total)
-  const badge = getContentTypeBadge(c.contentType)
-  const BadgeIcon = badge.icon
-  const subjectStyle = getSubjectColor(c.subject)
-
+  // Every hook stays above the early returns below: returning early between hooks changes their number from one
+  // render to the next, and React then throws and blanks the whole app (that is what the Cram button used to do).
   const filteredItems = useMemo(() => {
+    if (!c) return []
     return c.items.map((it, n) => ({ it, originalIdx: n })).filter(({ it }) => {
       const p = get(c.id, it.id)
       const reasons = reviewReasons(p)
@@ -52,7 +50,20 @@ export default function CollectionDetail() {
       if (filter === 'new') return !p || p.status === 'new'
       return true
     })
-  }, [c, q, filter, get])
+  }, [c, q, filter, get, progress])
+
+  if (!c) return <Empty>Không tìm thấy bộ học "{id}".</Empty>
+
+  if (showCram) {
+    const entries = c.items.map((item) => ({ collection: c, item }))
+    return <CramView entries={entries} title={`Lướt nhanh: ${c.title}`} onClose={() => setShowCram(false)} />
+  }
+
+  const st = collectionStats(c.id, c.items.map((i) => i.id), progress)
+  const percent = pct(st.mastered, st.total)
+  const badge = getContentTypeBadge(c.contentType)
+  const BadgeIcon = badge.icon
+  const subjectStyle = getSubjectColor(c.subject)
 
   return (
     <div>
@@ -117,6 +128,13 @@ export default function CollectionDetail() {
             <ListChecks size={15} />
             <span>Làm trắc nghiệm</span>
           </Link>
+          <button
+            onClick={() => setShowCram(true)}
+            className="inline-flex items-center gap-2 rounded-xl border border-indigo-200 dark:border-indigo-900 bg-indigo-50/70 dark:bg-indigo-950/40 px-4 py-2.5 text-xs font-bold text-indigo-700 dark:text-indigo-300 shadow-2xs hover:bg-indigo-100 hover:border-indigo-300 active:scale-[0.98] transition-all cursor-pointer"
+          >
+            <BookOpen size={15} className="text-indigo-600 dark:text-indigo-400" />
+            <span>Lướt nhanh (Cram)</span>
+          </button>
           <button
             onClick={async () => {
               if (
