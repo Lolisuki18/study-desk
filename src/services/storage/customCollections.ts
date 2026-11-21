@@ -32,6 +32,7 @@ export function saveCustomCollections(list: Collection[]): void {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
   } catch {}
   notify()
+  if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('custom-collections-changed'))
 }
 
 export function addCustomCollection(collection: Collection): { ok: boolean; errors: string[] } {

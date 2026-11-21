@@ -175,4 +175,10 @@ export interface BackupFile {
   activity: ActivityRecord[]
   exams?: ExamRecord[]
   notes?: NoteRecord[]
+  /** in-text highlights, keyed `${collectionId}::${itemId}#q|e` */
+  highlights?: Record<string, { id: string; start: number; end: number; text: string; color: string; createdAt: string }[]>
+  /** decks the learner uploaded or pasted */
+  customCollections?: Collection[]
+  /** best Survival score */
+  survivalHighScore?: number
 }
