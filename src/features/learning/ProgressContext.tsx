@@ -3,9 +3,13 @@ import type { ActivityKind, ActivityRecord, BackupFile, ExamRecord, Grade, NoteR
 import * as db from '../../services/storage/db'
 import { initAutoBackup, scheduleAutoBackup } from '../../services/storage/autoBackup'
 import { getAllHighlights, replaceAllHighlights } from '../../services/storage/highlights'
+import { getAllAnswerFlags, replaceAllAnswerFlags } from '../../services/storage/answerFlags'
 import { getCustomCollections, saveCustomCollections } from '../../services/storage/customCollections'
 import { getSavedHighScore, saveHighScore } from '../../services/survival'
 import { validateCollection } from '../../utils/validate'
+import { getTwinIndex, planTwinSync, refKey } from '../../services/twins'
+import { requestPersistenceOnce } from '../../services/storage/persistence'
+import { reportStorageError } from '../../services/storage/errors'
 import { applyResult, emptyProgress, isMastered, isStudied, reviewReasons } from '../../services/review/srs'
 import { collections, isBundledId, progressKey, refreshDataCollections } from '../../data'
 
@@ -29,6 +33,8 @@ interface Ctx {
     opts?: { clearReview?: boolean },
   ) => void
   toggleReview: (collectionId: string, itemId: string) => void
+  /** give every twin of a studied question the schedule of the furthest-along copy; returns how many records changed */
+  syncTwinProgress: () => Promise<number>
   exportBackup: () => BackupFile
   importBackup: (b: BackupFile) => Promise<void>
   resetAll: () => Promise<void>
@@ -77,19 +83,42 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     const changed: ProgressRecord[] = []
     const acts: ActivityRecord[] = []
     const ts = new Date().toISOString()
+    // the same question in another deck (a "twin") is learned together with this one
+    const twins = getTwinIndex(collections)
+    const explicit = new Set(results.map((r) => progressKey(r.collectionId, r.itemId)))
+    const touched = new Set<string>()
     for (const r of results) {
-      const k = progressKey(r.collectionId, r.itemId)
-      const upd = applyResult(next.get(k) ?? emptyProgress(r.collectionId, r.itemId), r.correct, { ...opts, grade: r.grade })
-      next.set(k, upd)
-      changed.push(upd)
-      acts.push({ ts, collectionId: r.collectionId, itemId: r.itemId, kind, result: upd.lastResult ?? 'incorrect' })
+      const own = { collectionId: r.collectionId, itemId: r.itemId }
+      const targets = [own, ...(twins.get(refKey(own)) ?? []).filter((t) => !explicit.has(refKey(t)))]
+      targets.forEach((t, n) => {
+        const k = refKey(t)
+        if (n > 0 && touched.has(k)) return
+        touched.add(k)
+        // the bookmark flag is personal to one copy: only the copy that was answered is un-bookmarked
+        const upd = applyResult(next.get(k) ?? emptyProgress(t.collectionId, t.itemId), r.correct, { ...opts, clearReview: n === 0 ? opts?.clearReview : false, grade: r.grade })
+        next.set(k, upd)
+        changed.push(upd)
+        if (n === 0) acts.push({ ts, collectionId: r.collectionId, itemId: r.itemId, kind, result: upd.lastResult ?? 'incorrect' })
+      })
     }
+    requestPersistenceOnce()
     ref.current = next
     setProgress(next)
-    db.putProgress(changed).catch(console.error)
+    db.putProgress(changed).catch(reportStorageError)
     db.addActivity(acts)
       .then((saved) => setActivity((a) => [...a, ...saved]))
       .catch(console.error)
+  }, [])
+
+  const syncTwinProgress = useCallback(async () => {
+    const plan = planTwinSync(ref.current, getTwinIndex(collections))
+    if (!plan.length) return 0
+    const next = new Map(ref.current)
+    plan.forEach((p) => next.set(p.key, p))
+    ref.current = next
+    setProgress(next)
+    await db.putProgress(plan)
+    return plan.length
   }, [])
 
   const toggleReview: Ctx['toggleReview'] = useCallback((c, i) => {
@@ -99,7 +128,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     const next = new Map(ref.current).set(k, upd)
     ref.current = next
     setProgress(next)
-    db.putProgress([upd]).catch(console.error)
+    db.putProgress([upd]).catch(reportStorageError)
   }, [])
 
   const setNote: Ctx['setNote'] = useCallback((c, i, raw) => {
@@ -111,10 +140,10 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       if (text) {
         const note: NoteRecord = { key, collectionId: c, itemId: i, text, updatedAt: new Date().toISOString() }
         next.set(key, note)
-        db.putNote(note).catch(console.error)
+        db.putNote(note).catch(reportStorageError)
       } else {
         next.delete(key)
-        db.putNote({ key }).catch(console.error)
+        db.putNote({ key }).catch(reportStorageError)
       }
       return next
     })
@@ -133,6 +162,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       highlights: getAllHighlights(),
       customCollections: getCustomCollections(),
       survivalHighScore: getSavedHighScore(),
+      answerFlags: getAllAnswerFlags(),
     }),
     [activity, exams, notes],
   )
@@ -146,7 +176,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   // highlights, uploaded decks and the Survival record are not part of the progress state: they announce changes
   useEffect(() => {
-    const events = ['highlights-changed', 'custom-collections-changed', 'survival-highscore-changed']
+    const events = ['highlights-changed', 'custom-collections-changed', 'survival-highscore-changed', 'answer-flags-changed']
     const onChange = () => {
       if (loaded) scheduleAutoBackup(() => exportRef.current())
     }
@@ -177,6 +207,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         refreshDataCollections()
       }
       if (typeof b.survivalHighScore === 'number') saveHighScore(b.survivalHighScore)
+      if (b.answerFlags && typeof b.answerFlags === 'object') replaceAllAnswerFlags(b.answerFlags)
       await reload()
     },
     [reload],
@@ -230,8 +261,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   }, [progress])
 
   const value = useMemo(
-    () => ({ loaded, progress, activity, exams, notes, setNote, addExam, resetCollection, get, record, toggleReview, exportBackup, importBackup, resetAll, summary }),
-    [loaded, progress, activity, exams, notes, setNote, addExam, resetCollection, get, record, toggleReview, exportBackup, importBackup, resetAll, summary],
+    () => ({ loaded, progress, activity, exams, notes, setNote, addExam, resetCollection, get, record, toggleReview, syncTwinProgress, exportBackup, importBackup, resetAll, summary }),
+    [loaded, progress, activity, exams, notes, setNote, addExam, resetCollection, get, record, toggleReview, syncTwinProgress, exportBackup, importBackup, resetAll, summary],
   )
   return <ProgressCtx.Provider value={value}>{children}</ProgressCtx.Provider>
 }
