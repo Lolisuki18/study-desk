@@ -26,13 +26,18 @@ export function isCustomCollection(id: string): boolean {
   return getCustomCollections().some((c) => c.id === id)
 }
 
-export function saveCustomCollections(list: Collection[]): void {
+/** Returns false when the browser refused to store the list (quota full, storage blocked). */
+export function saveCustomCollections(list: Collection[]): boolean {
   customCache = list
+  let stored = true
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
-  } catch {}
+  } catch {
+    stored = false
+  }
   notify()
   if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('custom-collections-changed'))
+  return stored
 }
 
 export function addCustomCollection(collection: Collection): { ok: boolean; errors: string[] } {
@@ -50,7 +55,14 @@ export function addCustomCollection(collection: Collection): { ok: boolean; erro
     nextList = [collection, ...list]
   }
 
-  saveCustomCollections(nextList)
+  if (!saveCustomCollections(nextList)) {
+    // keep memory and storage in step: without this the deck would show now and be gone after a reload
+    saveCustomCollections(list)
+    return {
+      ok: false,
+      errors: ['Bộ nhớ của trình duyệt đã đầy hoặc đang bị chặn nên không lưu được bộ này. Hãy xóa bớt bộ tự tải lên, xuất file sao lưu rồi thử lại.'],
+    }
+  }
   return { ok: true, errors: [] }
 }
 
