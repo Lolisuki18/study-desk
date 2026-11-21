@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, Library, Search, Sparkles, Upload, X } from 'lucide-react'
+import { Search, Upload, X } from 'lucide-react'
 import { collections } from '../data'
 import CollectionCard, { CollectionsBySubject } from '../components/dashboard/CollectionCard'
-import { Button, Card, Empty, PageHeader } from '../components/ui'
+import { Button, Card, PageHeader } from '../components/ui'
 import { cx } from '../utils'
 
 export default function Collections() {

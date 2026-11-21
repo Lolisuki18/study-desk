@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Award, Check, Clock, FileCheck2, Filter, Settings2, Sparkles, Star, TrendingUp, Zap } from 'lucide-react'
+import { Check, Clock, FileCheck2, Settings2, Sparkles, Zap } from 'lucide-react'
 import { allEntries, collections, examCollections, standaloneCollections } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
 import { availableKinds, buildQuiz, type Question } from '../services/quiz/generate'

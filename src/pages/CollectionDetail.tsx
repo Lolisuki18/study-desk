@@ -4,20 +4,20 @@ import {
   ArrowLeft,
   Bookmark,
   BookOpen,
-  CheckCircle2,
-  HelpCircle,
+  
+  
   Layers,
   ListChecks,
   RefreshCw,
   RotateCcw,
   Search,
-  Sparkles,
+  
   X,
 } from 'lucide-react'
 import { getCollection, itemTitle } from '../data'
 import { collectionStats, useProgress } from '../features/learning/ProgressContext'
 import { isMastered, reviewReasons } from '../services/review/srs'
-import { Card, Empty, PageHeader, ProgressBar, Stat } from '../components/ui'
+import { Card, Empty, Stat } from '../components/ui'
 import CramView from '../components/ui/CramView'
 import { cx, pct } from '../utils'
 import { getContentTypeBadge, getSubjectColor } from '../components/dashboard/CollectionCard'
