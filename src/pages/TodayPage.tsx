@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, CalendarClock, CheckCircle2, Layers, ListChecks, Play, Sparkles, XCircle, PartyPopper, Lightbulb } from 'lucide-react'
+import { ArrowLeft, CalendarClock, CheckCircle2, Layers, ListChecks, Sparkles, XCircle, PartyPopper, Lightbulb } from 'lucide-react'
 import type { Entry } from '../types'
 import { allEntries } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
@@ -10,7 +10,7 @@ import { loadSettings } from '../services/storage/settings'
 import { availableKinds, buildQuiz, type Question } from '../services/quiz/generate'
 import FlashcardSession from '../components/flashcards/FlashcardSession'
 import QuizRunner from '../components/quiz/QuizRunner'
-import { Button, Card, Empty, PageHeader, ProgressBar } from '../components/ui'
+import { Button, Card, PageHeader, ProgressBar } from '../components/ui'
 import { cx, dayKey } from '../utils'
 
 type Run = { kind: 'cards'; entries: Entry[] } | { kind: 'quiz'; qs: Question[]; n: number }
