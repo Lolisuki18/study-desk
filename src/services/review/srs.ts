@@ -63,6 +63,10 @@ export function applyResult(
 export const isMastered = (p?: ProgressRecord) => !!p && p.status === 'known' && p.level >= MASTERED_LEVEL
 export const isDue = (p?: ProgressRecord, now = new Date()) =>
   !!p && p.level > 0 && !!p.nextReview && new Date(p.nextReview).getTime() <= now.getTime()
+/** A card answered wrong this many times is a "leech": more repetition of the same kind is not working for it. */
+export const LEECH_THRESHOLD = 4
+/** Wrong at least LEECH_THRESHOLD times and wrong at least as often as right (a card you now mostly get right is not a leech). */
+export const isLeech = (p?: ProgressRecord) => !!p && p.incorrect >= LEECH_THRESHOLD && p.incorrect >= p.correct
 export const isStudied = (p?: ProgressRecord) => !!p && !!p.lastStudied
 
 export type ReviewReason = 'unknown' | 'incorrect' | 'marked' | 'due'

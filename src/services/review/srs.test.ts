@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { ProgressRecord } from '../../types'
-import { applyResult, emptyProgress, isDue, isMastered, priority, reviewReasons } from './srs'
+import { applyResult, emptyProgress, isDue, isLeech, isMastered, priority, reviewReasons } from './srs'
 
 const now = new Date('2026-01-01T00:00:00Z')
 
@@ -68,5 +68,15 @@ describe('Leitner SRS', () => {
     const p = { ...emptyProgress('c', 'i'), review: true }
     expect(applyResult(p, true, { now }).review).toBe(true)
     expect(applyResult(p, true, { now, clearReview: true }).review).toBe(false)
+  })
+  it('flags a leech: wrong 4+ times and not mostly right any more', () => {
+    let p = emptyProgress('c', 'i')
+    for (let i = 0; i < 3; i++) p = applyResult(p, false, { now })
+    expect(isLeech(p)).toBe(false) // only 3 misses
+    p = applyResult(p, false, { now })
+    expect(isLeech(p)).toBe(true)
+    for (let i = 0; i < 5; i++) p = applyResult(p, true, { now }) // learned it after all: 4 wrong, 5 right
+    expect(isLeech(p)).toBe(false)
+    expect(isLeech(undefined)).toBe(false)
   })
 })
