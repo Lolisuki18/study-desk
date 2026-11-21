@@ -1,354 +1,313 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import {
-  AlertTriangle,
-  Award,
-  Check,
-  Flame,
-  Heart,
-  HelpCircle,
-  Play,
-  RotateCcw,
-  Sparkles,
-  Trophy,
-  X,
-  Zap,
-} from 'lucide-react'
+import { Award, Check, Flame, Heart, HeartCrack, Play, RotateCcw, Target, Timer, Trophy, X, Zap } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import { allEntries, collections } from '../data'
-import { Button, Card, PageHeader, ProgressBar } from '../components/ui'
+import { useProgress } from '../features/learning/ProgressContext'
+import { buildSurvivalPool, getSavedHighScore, isSurvivalCorrect, MAX_LIVES, pointsFor, QUESTION_TIME_LIMIT, saveHighScore } from '../services/survival'
+import { isMulti, toggleKey } from '../utils/answers'
+import { Button, PageHeader } from '../components/ui'
 import { cx, shuffle } from '../utils'
+import { previewOf } from '../utils/preview'
 import { playSound } from '../utils/sound'
 import { playLevelUp, playPerfectScore, playMechSound } from '../utils/mechSound'
 import { fireConfetti } from '../utils/confetti'
 import { haptic } from '../utils/haptic'
 import type { Entry, MultipleChoiceContent } from '../types'
 
-const QUESTION_TIME_LIMIT = 15 // seconds
-const HIGH_SCORE_KEY = 'psh.survival.highscore'
-
-function getSavedHighScore(): number {
-  try {
-    return Number(localStorage.getItem(HIGH_SCORE_KEY) ?? '0')
-  } catch {
-    return 0
-  }
-}
-
-function saveHighScore(score: number): void {
-  try {
-    const cur = getSavedHighScore()
-    if (score > cur) {
-      localStorage.setItem(HIGH_SCORE_KEY, String(score))
-    }
-  } catch {}
-}
-
 export default function SurvivalPage() {
+  const { record } = useProgress()
   const [playing, setPlaying] = useState(false)
   const [gameOver, setGameOver] = useState(false)
-  const [lives, setLives] = useState(3)
+  const [lives, setLives] = useState(MAX_LIVES)
   const [score, setScore] = useState(0)
   const [combo, setCombo] = useState(0)
   const [highScore, setHighScore] = useState(getSavedHighScore)
+  const [newRecord, setNewRecord] = useState(false)
   const [selectedSubject, setSelectedSubject] = useState<string>('all')
 
-  // Available multiple-choice questions pool
-  const pool = useMemo(() => {
-    let list = allEntries().filter((e) => e.item.type === 'multiple-choice')
-    if (selectedSubject !== 'all') {
-      list = list.filter((e) => e.collection.subject === selectedSubject)
-    }
-    return list
-  }, [selectedSubject])
+  // one entry per distinct question (several decks repeat the same bank)
+  const fullPool = useMemo(() => buildSurvivalPool(allEntries()), [])
+  const pool = useMemo(() => (selectedSubject === 'all' ? fullPool : fullPool.filter((e) => e.collection.subject === selectedSubject)), [fullPool, selectedSubject])
 
   const subjects = useMemo(() => {
     const set = new Set<string>()
     collections.forEach((c) => set.add(c.subject))
     return Array.from(set)
   }, [])
+  const subjectCounts = useMemo(() => {
+    const m = new Map<string, number>()
+    for (const e of fullPool) m.set(e.collection.subject, (m.get(e.collection.subject) ?? 0) + 1)
+    return m
+  }, [fullPool])
+  const totalCount = fullPool.length
 
   const [queue, setQueue] = useState<Entry[]>([])
   const [curIndex, setCurIndex] = useState(0)
   const [timeLeft, setTimeLeft] = useState(QUESTION_TIME_LIMIT)
-  const [selectedKey, setSelectedKey] = useState<string | null>(null)
+  const [selectedKey, setSelectedKey] = useState<string | null>(null) // what was submitted
+  const [picked, setPicked] = useState('') // select-all questions: keys ticked so far
   const [answerLocked, setAnswerLocked] = useState(false)
   const [mistakes, setMistakes] = useState<{ entry: Entry; picked: string }[]>([])
+  const [answeredCount, setAnsweredCount] = useState(0)
+  const [correctCount, setCorrectCount] = useState(0)
+  const [lastGain, setLastGain] = useState<number | null>(null)
+
+  // the lock is a ref so a click and the clock running out in the same instant cannot both be counted
+  const lockRef = useRef(false)
+  const prevBestRef = useRef(0)
 
   const curEntry = queue[curIndex]
   const curItem = curEntry?.item
   const mcContent = curItem?.type === 'multiple-choice' ? (curItem.content as MultipleChoiceContent) : null
+  const multi = !!mcContent && isMulti(mcContent.answer)
 
-  // Start game
   const startGame = () => {
-    const shuffled = shuffle(pool)
-    setQueue(shuffled)
+    prevBestRef.current = getSavedHighScore()
+    lockRef.current = false
+    setQueue(shuffle(pool))
     setCurIndex(0)
-    setLives(3)
+    setLives(MAX_LIVES)
     setScore(0)
     setCombo(0)
     setTimeLeft(QUESTION_TIME_LIMIT)
     setSelectedKey(null)
+    setPicked('')
     setAnswerLocked(false)
     setMistakes([])
+    setAnsweredCount(0)
+    setCorrectCount(0)
+    setLastGain(null)
+    setNewRecord(false)
     setGameOver(false)
     setPlaying(true)
     playSound('fanfare')
   }
 
-  // Timer countdown
-  useEffect(() => {
-    if (!playing || gameOver || answerLocked) return
+  /** The game ends when the lives run out ('lost') or the whole pool has been answered ('cleared'). */
+  const finishGame = (finalScore: number, reason: 'lost' | 'cleared') => {
+    const isNew = finalScore > prevBestRef.current
+    saveHighScore(finalScore)
+    setHighScore(Math.max(prevBestRef.current, finalScore))
+    setNewRecord(isNew)
+    setPlaying(false)
+    setGameOver(true)
+    if (reason === 'cleared') playPerfectScore()
+    else playSound('bell')
+    if (isNew) fireConfetti(2000)
+  }
 
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          // Time's up! Count as wrong
-          handleAnswer('')
-          return 0
-        }
-        return prev - 1
-      })
-    }, 1000)
+  const advance = (currentScore: number) => {
+    if (curIndex + 1 >= queue.length) return finishGame(currentScore, 'cleared')
+    setCurIndex((i) => i + 1)
+    setTimeLeft(QUESTION_TIME_LIMIT)
+    setSelectedKey(null)
+    setPicked('')
+    setAnswerLocked(false)
+    setLastGain(null)
+    lockRef.current = false
+  }
 
-    return () => clearInterval(timer)
-  }, [playing, gameOver, answerLocked, curIndex])
+  /** Lock in an answer (`keys` is '' when the time ran out). */
+  const submit = (keys: string) => {
+    if (lockRef.current || !mcContent || !curEntry) return
+    lockRef.current = true
+    setAnswerLocked(true)
+    setSelectedKey(keys)
+    setAnsweredCount((n) => n + 1)
 
-  // Answer handling
-  const handleAnswer = useCallback(
-    (key: string) => {
-      if (answerLocked || !mcContent) return
-      setAnswerLocked(true)
-      setSelectedKey(key)
+    const ok = isSurvivalCorrect(keys, mcContent.answer)
+    // the answer counts for the spaced-repetition schedule, the wrong-answer notebook and today's goal like any quiz
+    record([{ collectionId: curEntry.collection.id, itemId: curEntry.item.id, correct: ok }], 'quiz')
 
-      const isCorrect = mcContent.answer.includes(key) && key !== ''
-
-      if (isCorrect) {
-        playSound('correct')
-        haptic('success')
-        playMechSound('keydown')
-        const bonus = Math.max(10, timeLeft * 2)
-        const nextScore = score + bonus
-        const nextCombo = combo + 1
-        setScore(nextScore)
-        setCombo(nextCombo)
-
-        if (nextCombo > 0 && nextCombo % 5 === 0) {
-          playLevelUp()
-          fireConfetti(1800)
-        }
-
-        setTimeout(() => {
-          if (curIndex + 1 < queue.length) {
-            setCurIndex((prev) => prev + 1)
-            setTimeLeft(QUESTION_TIME_LIMIT)
-            setSelectedKey(null)
-            setAnswerLocked(false)
-          } else {
-            // Finished entire pool!
-            setPlaying(false)
-            setGameOver(true)
-            saveHighScore(nextScore)
-            setHighScore(Math.max(highScore, nextScore))
-            playPerfectScore()
-          }
-        }, 600)
-      } else {
-        playSound('wrong')
-        haptic('error')
-        playMechSound('keydown')
-        setCombo(0)
-        setMistakes((prev) => (curEntry ? [...prev, { entry: curEntry, picked: key }] : prev))
-
-        const nextLives = lives - 1
-        setLives(nextLives)
-
-        if (nextLives <= 0) {
-          setTimeout(() => {
-            setPlaying(false)
-            setGameOver(true)
-            saveHighScore(score)
-            setHighScore(Math.max(highScore, score))
-            playSound('bell')
-          }, 1000)
-        } else {
-          setTimeout(() => {
-            if (curIndex + 1 < queue.length) {
-              setCurIndex((prev) => prev + 1)
-              setTimeLeft(QUESTION_TIME_LIMIT)
-              setSelectedKey(null)
-              setAnswerLocked(false)
-            }
-          }, 1200)
-        }
+    if (ok) {
+      playSound('correct')
+      haptic('success')
+      const pts = pointsFor(timeLeft, combo)
+      const nextScore = score + pts.total
+      const nextCombo = combo + 1
+      setScore(nextScore)
+      setCombo(nextCombo)
+      setCorrectCount((n) => n + 1)
+      setLastGain(pts.total)
+      if (nextCombo % 5 === 0) {
+        playLevelUp()
+        fireConfetti(1800)
       }
-    },
-    [answerLocked, mcContent, timeLeft, score, combo, curIndex, queue.length, lives, curEntry, highScore],
-  )
-
-  // Keyboard controls
-  useEffect(() => {
-    if (!playing || gameOver || answerLocked || !mcContent) return
-
-    const onKey = (e: KeyboardEvent) => {
-      const k = e.key.toLowerCase()
-      let key = ''
-      if (['1', '2', '3', '4'].includes(k)) {
-        const idx = Number(k) - 1
-        if (mcContent.options[idx]) key = mcContent.options[idx].key
-      } else if (['a', 'b', 'c', 'd'].includes(k)) {
-        key = k.toUpperCase()
-      }
-
-      if (key && mcContent.options.some((o) => o.key === key)) {
-        handleAnswer(key)
-      }
+      setTimeout(() => advance(nextScore), 600)
+    } else {
+      playSound('wrong')
+      haptic('error')
+      setCombo(0)
+      setMistakes((prev) => [...prev, { entry: curEntry, picked: keys }])
+      const nextLives = lives - 1
+      setLives(nextLives)
+      // out of lives, or the last question of the pool: either way the run ends instead of freezing
+      setTimeout(() => (nextLives <= 0 ? finishGame(score, 'lost') : advance(score)), nextLives <= 0 ? 1000 : 1200)
     }
+  }
+  const submitRef = useRef(submit)
+  submitRef.current = submit
 
+  const chooseOption = (key: string) => {
+    if (answerLocked || !mcContent) return
+    playMechSound('keydown')
+    haptic('select')
+    if (multi) setPicked((p) => toggleKey(p, key))
+    else submit(key)
+  }
+  const chooseRef = useRef(chooseOption)
+  chooseRef.current = chooseOption
+
+  // clock: only counts down (a pure state update); running out is handled in the next effect
+  useEffect(() => {
+    if (!playing || answerLocked) return
+    const timer = setInterval(() => setTimeLeft((t) => (t > 0 ? t - 1 : 0)), 1000)
+    return () => clearInterval(timer)
+  }, [playing, answerLocked, curIndex])
+
+  useEffect(() => {
+    if (playing && !answerLocked && timeLeft <= 0) submitRef.current(multi ? picked : '')
+  }, [timeLeft, playing, answerLocked]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // keyboard: 1-4 / A-D pick an option, Enter confirms a select-all answer
+  useEffect(() => {
+    if (!playing || answerLocked || !mcContent) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return
+      const k = e.key.toLowerCase()
+      if (k === 'enter' && multi && picked) {
+        e.preventDefault()
+        submitRef.current(picked)
+        return
+      }
+      let key = ''
+      if (['1', '2', '3', '4'].includes(k)) key = mcContent.options[Number(k) - 1]?.key ?? ''
+      else if (/^[a-d]$/.test(k)) key = k.toUpperCase()
+      if (key && mcContent.options.some((o) => o.key === key)) chooseRef.current(key)
+    }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [playing, gameOver, answerLocked, mcContent, handleAnswer])
+  }, [playing, answerLocked, mcContent, multi, picked])
+
 
   return (
-    <div className="space-y-6 max-w-2xl mx-auto">
-      <PageHeader
-        title="Thử thách Sinh tồn (Survival Mode)"
-        subtitle="3 mạng sống, 15 giây mỗi câu — bạn có thể sống sót và lập kỷ lục chuỗi câu đúng dài nhất?"
-      />
+    <div className="mx-auto max-w-2xl space-y-5">
+      {!playing && <PageHeader title="Thử thách Sinh tồn" subtitle="Phản xạ nhanh, 3 mạng sống, 15 giây mỗi câu. Bạn lập được kỷ lục điểm bao nhiêu?" />}
 
-      {/* Start Game Screen */}
+      {/* ---------------------------------------------------------------- start screen */}
       {!playing && !gameOver && (
-        <Card className="p-6 sm:p-10 text-center space-y-6">
-          <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-gradient-to-tr from-rose-500 to-amber-500 text-white shadow-xl shadow-rose-500/25 mx-auto animate-pulse">
-            <Flame size={40} />
-          </div>
+        <div className="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_14px_44px_-18px_rgba(244,63,94,0.35)]">
+          <div className="relative px-5 pb-7 pt-9 text-center sm:px-9">
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-60 bg-gradient-to-b from-rose-500/[0.13] via-amber-400/[0.07] to-transparent" />
 
-          <div>
-            <h2 className="text-2xl font-black text-ink">Sẵn sàng thử thách phản xạ?</h2>
-            <p className="mt-2 text-xs sm:text-sm text-muted max-w-md mx-auto leading-relaxed">
-              Bạn có 3 mạng ❤️❤️❤️. Mỗi câu hỏi chỉ có 15 giây. Trả lời đúng càng nhanh điểm càng cao!
-            </p>
-          </div>
+            <div className="relative">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-[28px] bg-gradient-to-br from-rose-500 via-orange-500 to-amber-400 text-white shadow-lg shadow-rose-500/30 ring-8 ring-rose-500/10">
+                <Flame size={38} strokeWidth={2.2} />
+              </div>
+              <h2 className="mt-5 text-[28px] font-black tracking-tight text-ink">Sẵn sàng thử thách phản xạ?</h2>
+              <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted">
+                Trả lời đúng để ghi điểm. Trả lời sai hoặc hết giờ là mất một mạng; hết cả 3 mạng là kết thúc.
+              </p>
 
-          {/* High score badge */}
-          <div className="inline-flex items-center gap-2 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-900/60 px-4 py-2 text-sm font-bold text-amber-700 dark:text-amber-300">
-            <Trophy size={16} className="text-amber-500" />
-            <span>Kỷ lục điểm cao nhất: {highScore} điểm</span>
-          </div>
+              {/* rules */}
+              <div className="mt-6 grid grid-cols-3 gap-2.5 text-left sm:gap-3">
+                <Rule icon={Heart} tone="rose" title="3 mạng" text="Sai hoặc hết giờ mất 1 mạng" />
+                <Rule icon={Timer} tone="amber" title="15 giây" text="Cho mỗi câu hỏi" />
+                <Rule icon={Zap} tone="indigo" title="Càng nhanh" text="Nhanh và đúng liên tiếp, điểm càng cao" />
+              </div>
 
-          {/* Subject selector */}
-          <div className="space-y-2 pt-2 text-left">
-            <label className="text-xs font-bold text-ink">Chọn môn thi đấu:</label>
-            <div className="flex flex-wrap gap-1.5">
-              <button
-                onClick={() => setSelectedSubject('all')}
-                className={cx(
-                  'px-3.5 py-1.5 text-xs font-bold rounded-xl transition-all cursor-pointer',
-                  selectedSubject === 'all'
-                    ? 'bg-indigo-600 text-white shadow-xs'
-                    : 'border border-line bg-card text-muted hover:text-ink',
-                )}
-              >
-                Tất cả các môn ({pool.length} câu)
-              </button>
-              {subjects.map((s) => (
-                <button
-                  key={s}
-                  onClick={() => setSelectedSubject(s)}
-                  className={cx(
-                    'px-3.5 py-1.5 text-xs font-bold rounded-xl transition-all cursor-pointer',
-                    selectedSubject === s
-                      ? 'bg-indigo-600 text-white shadow-xs'
-                      : 'border border-line bg-card text-muted hover:text-ink',
-                  )}
-                >
-                  {s}
-                </button>
-              ))}
+              {/* record */}
+              <div className="mt-4 flex items-center justify-between gap-3 rounded-2xl border border-amber-200/80 bg-amber-50/70 px-4 py-3 text-left dark:border-amber-900/50 dark:bg-amber-950/30">
+                <span className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-600 dark:bg-amber-900/40 dark:text-amber-300">
+                    <Trophy size={20} />
+                  </span>
+                  <span>
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">Kỷ lục điểm cao nhất</span>
+                    <span className="block text-xs text-muted">Lưu trên máy này</span>
+                  </span>
+                </span>
+                <span className="font-mono text-3xl font-black text-amber-600 dark:text-amber-300">{highScore}</span>
+              </div>
             </div>
           </div>
 
-          <div className="pt-4">
+          {/* subject picker */}
+          <div className="border-t border-line px-5 py-6 sm:px-9">
+            <div className="mb-3 flex items-center justify-between">
+              <span className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted">
+                <Target size={14} /> Chọn môn thi đấu
+              </span>
+              <span className="text-xs text-muted">{pool.length} câu trong lượt này</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+              <SubjectCard label="Tất cả các môn" count={totalCount} selected={selectedSubject === 'all'} onClick={() => setSelectedSubject('all')} wide />
+              {subjects.map((s) => (
+                <SubjectCard key={s} label={s} count={subjectCounts.get(s) ?? 0} selected={selectedSubject === s} onClick={() => setSelectedSubject(s)} />
+              ))}
+            </div>
+
             <Button
               variant="primary"
               disabled={pool.length === 0}
               onClick={startGame}
-              className="py-3.5 px-8 text-base font-extrabold shadow-lg shadow-indigo-500/25 cursor-pointer w-full sm:w-auto"
+              className="mt-6 w-full cursor-pointer py-3.5 text-base font-extrabold shadow-lg shadow-indigo-500/25"
             >
-              <Play size={18} fill="white" /> Bắt đầu thử thách ngay
+              <Play size={18} fill="currentColor" /> Bắt đầu thử thách
             </Button>
+            <p className="mt-2.5 text-center text-[11px] text-muted">Dùng phím 1–4 hoặc A–D để trả lời nhanh.</p>
           </div>
-        </Card>
+        </div>
       )}
 
-      {/* In-Game Active Screen */}
+      {/* ---------------------------------------------------------------- in game */}
       {playing && curItem && mcContent && (
-        <div className="space-y-4 animate-in fade-in duration-150">
-          {/* Game HUD Bar: Lives, Score, Timer */}
-          <div className="flex items-center justify-between rounded-2xl border border-line bg-card p-3 shadow-xs">
-            {/* Lives */}
-            <div className="flex items-center gap-1">
-              {[1, 2, 3].map((heart) => (
-                <Heart
-                  key={heart}
-                  size={20}
-                  className={cx(
-                    'transition-all duration-300',
-                    heart <= lives ? 'fill-rose-500 text-rose-500 scale-105' : 'text-slate-300 dark:text-slate-700 opacity-40',
-                  )}
-                />
-              ))}
+        <div className="space-y-3.5">
+          {/* HUD */}
+          <div className="flex items-center justify-between gap-3 rounded-2xl border border-line bg-card p-3 pl-4 shadow-xs">
+            <div className="flex items-center gap-1" role="img" aria-label={`Còn ${lives} mạng`}>
+              {[1, 2, 3].map((heart) =>
+                heart <= lives ? (
+                  <Heart key={heart} size={24} className="fill-rose-500 text-rose-500 drop-shadow-sm" />
+                ) : (
+                  <HeartCrack key={heart} size={24} className="text-slate-300 dark:text-slate-600" />
+                ),
+              )}
             </div>
 
-            {/* Score & Combo */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-1 items-center justify-center gap-3">
+              <div className="text-center leading-none">
+                <span className="block text-[10px] font-bold uppercase tracking-wider text-muted">Điểm</span>
+                <span className="mt-1 block font-mono text-2xl font-black text-indigo-600 dark:text-indigo-400">{score}</span>
+              </div>
+              {lastGain !== null && <span className="text-sm font-extrabold text-emerald-600 dark:text-emerald-400">+{lastGain}</span>}
               {combo >= 2 && (
-                <span className="flex items-center gap-1 rounded-full bg-amber-500 text-white px-2.5 py-0.5 text-xs font-black shadow-xs animate-bounce">
-                  <Flame size={12} /> x{combo} Combo
+                <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-2.5 py-1 text-xs font-black text-white shadow-sm">
+                  <Flame size={13} /> x{combo}
                 </span>
               )}
-              <span className="font-mono text-sm font-extrabold text-ink">
-                Điểm: <b className="text-indigo-600 dark:text-indigo-400">{score}</b>
-              </span>
             </div>
 
-            {/* Timer countdown */}
-            <div
-              className={cx(
-                'flex items-center gap-1 font-mono text-sm font-black px-2.5 py-1 rounded-xl border',
-                timeLeft <= 5
-                  ? 'border-rose-400 bg-rose-50 text-rose-600 dark:bg-rose-950/60 dark:text-rose-400 animate-pulse'
-                  : 'border-line text-ink',
-              )}
-            >
-              <Zap size={14} className={timeLeft <= 5 ? 'text-rose-500' : 'text-amber-500'} />
-              <span>{timeLeft}s</span>
-            </div>
+            <TimerRing timeLeft={timeLeft} total={QUESTION_TIME_LIMIT} />
           </div>
 
-          {/* Time Bar */}
-          <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
-            <div
-              className={cx(
-                'h-full transition-all duration-1000 ease-linear rounded-full',
-                timeLeft <= 5 ? 'bg-rose-500' : timeLeft <= 8 ? 'bg-amber-500' : 'bg-emerald-500',
-              )}
-              style={{ width: `${(timeLeft / QUESTION_TIME_LIMIT) * 100}%` }}
-            />
-          </div>
-
-          {/* Question Card */}
-          <Card className="p-5 sm:p-7 space-y-5">
-            <div className="flex items-center justify-between text-xs text-muted">
-              <span className="font-bold text-indigo-600 dark:text-indigo-400">Câu hỏi #{curIndex + 1}</span>
-              <span>{curEntry?.collection.subject}</span>
+          {/* question */}
+          <div className="rounded-3xl border border-line bg-card p-5 shadow-sm sm:p-7">
+            <div className="mb-4 flex items-center justify-between gap-3">
+              <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-bold text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300">Câu {curIndex + 1}</span>
+              <span className="truncate text-xs font-medium text-muted">{curEntry?.collection.subject}</span>
             </div>
 
-            <p className="text-base sm:text-lg font-bold leading-relaxed text-ink">{mcContent.question}</p>
+            <p className="text-lg font-bold leading-relaxed text-ink sm:text-xl">{mcContent.question}</p>
+            {multi && !answerLocked && (
+              <p className="mt-2 text-xs font-semibold text-indigo-600 dark:text-indigo-300">Câu chọn nhiều đáp án: chọn đủ {mcContent.answer.length} đáp án rồi bấm Xác nhận (hoặc Enter).</p>
+            )}
 
-            {/* Options */}
-            <div className="space-y-2.5">
-              {mcContent.options.map((o) => {
-                const isSelected = selectedKey === o.key
+            <div className="mt-5 space-y-2.5">
+              {mcContent.options.map((o, idx) => {
+                const chosen = answerLocked ? selectedKey ?? '' : picked
+                const isSelected = chosen.includes(o.key)
                 const isRight = mcContent.answer.includes(o.key)
                 const showFeedback = answerLocked
 
@@ -356,85 +315,198 @@ export default function SurvivalPage() {
                   <button
                     key={o.key}
                     disabled={answerLocked}
-                    onClick={() => handleAnswer(o.key)}
+                    onClick={() => chooseOption(o.key)}
                     className={cx(
-                      'flex w-full items-center gap-3 rounded-2xl border-2 p-3.5 text-left text-sm font-semibold transition-all cursor-pointer active:scale-[0.98]',
-                      !showFeedback && 'border-line bg-card hover:border-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-800/40',
-                      showFeedback && isRight && 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-900 dark:text-emerald-100 font-bold',
-                      showFeedback && isSelected && !isRight && 'border-rose-500 bg-rose-50 dark:bg-rose-950/60 text-rose-900 dark:text-rose-100',
-                      showFeedback && !isSelected && !isRight && 'border-line opacity-40',
+                      'group flex w-full cursor-pointer items-center gap-3 rounded-2xl border-2 px-3.5 py-3 text-left text-[15px] font-semibold transition-all active:scale-[0.985]',
+                      !showFeedback && !isSelected && 'border-line bg-card hover:-translate-y-px hover:border-indigo-400 hover:bg-indigo-50/50 hover:shadow-sm dark:hover:bg-indigo-950/20',
+                      !showFeedback && isSelected && 'border-indigo-500 bg-indigo-50 shadow-sm dark:bg-indigo-950/40',
+                      showFeedback && isRight && 'border-emerald-500 bg-emerald-50 text-emerald-900 dark:bg-emerald-950/50 dark:text-emerald-100',
+                      showFeedback && isSelected && !isRight && 'border-rose-500 bg-rose-50 text-rose-900 dark:bg-rose-950/50 dark:text-rose-100',
+                      showFeedback && !isSelected && !isRight && 'border-line opacity-45',
                     )}
                   >
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-xl border border-line bg-slate-100 dark:bg-slate-800 text-xs font-bold font-mono">
-                      {o.key}
+                    <span
+                      className={cx(
+                        'flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-sm font-extrabold transition-colors',
+                        !showFeedback && !isSelected && 'bg-slate-100 text-slate-600 group-hover:bg-indigo-600 group-hover:text-white dark:bg-slate-800 dark:text-slate-300',
+                        !showFeedback && isSelected && 'bg-indigo-600 text-white',
+                        showFeedback && isRight && 'bg-emerald-500 text-white',
+                        showFeedback && isSelected && !isRight && 'bg-rose-500 text-white',
+                        showFeedback && !isSelected && !isRight && 'bg-slate-100 text-slate-500 dark:bg-slate-800',
+                      )}
+                    >
+                      {showFeedback && isRight ? <Check size={16} strokeWidth={3} /> : showFeedback && isSelected ? <X size={16} strokeWidth={3} /> : o.key}
                     </span>
                     <span className="flex-1 leading-snug">{o.text}</span>
+                    <kbd className="hidden h-6 min-w-6 items-center justify-center rounded-md border border-line bg-slate-50 px-1.5 font-mono text-[10px] font-bold text-muted sm:inline-flex dark:bg-slate-800">{idx + 1}</kbd>
                   </button>
                 )
               })}
             </div>
-          </Card>
+
+            {multi && !answerLocked && (
+              <Button variant="primary" disabled={!picked} onClick={() => submit(picked)} className="mt-4 w-full cursor-pointer py-3 font-extrabold">
+                <Check size={17} /> Xác nhận ({picked.length}/{mcContent.answer.length})
+              </Button>
+            )}
+          </div>
         </div>
       )}
 
-      {/* Game Over Screen */}
+      {/* ---------------------------------------------------------------- game over */}
       {gameOver && (
-        <Card className="p-6 sm:p-10 text-center space-y-6 animate-in zoom-in-95 duration-200">
-          <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-slate-900 text-white shadow-xl mx-auto">
-            {score >= highScore && score > 0 ? <Trophy size={40} className="text-amber-400 animate-bounce" /> : <Award size={40} className="text-indigo-400" />}
-          </div>
+        <div className="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_14px_44px_-18px_rgba(99,102,241,0.35)]">
+          <div className="relative px-5 pb-7 pt-9 text-center sm:px-9">
+            <div
+              className={cx(
+                'pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b to-transparent',
+                newRecord ? 'from-amber-400/[0.18] via-orange-400/[0.06]' : 'from-indigo-500/[0.12] via-sky-400/[0.05]',
+              )}
+            />
+            <div className="relative">
+              <div
+                className={cx(
+                  'mx-auto flex h-20 w-20 items-center justify-center rounded-[28px] text-white shadow-lg ring-8',
+                  newRecord ? 'bg-gradient-to-br from-amber-400 to-orange-500 shadow-amber-500/30 ring-amber-400/15' : 'bg-gradient-to-br from-indigo-500 to-violet-600 shadow-indigo-500/30 ring-indigo-500/10',
+                )}
+              >
+                {newRecord ? <Trophy size={38} /> : <Award size={38} />}
+              </div>
+              <h2 className="mt-5 text-[28px] font-black tracking-tight text-ink">{newRecord ? 'Kỷ lục mới!' : 'Kết thúc thử thách'}</h2>
+              <p className="mt-1.5 text-sm text-muted">
+                Bạn đã trả lời <b className="text-ink">{answeredCount}</b> câu, đúng <b className="text-ink">{correctCount}</b>
+                {mistakes.length > 0 ? ` và sai ${mistakes.length} câu.` : '.'}
+              </p>
 
-          <div>
-            <h2 className="text-2xl font-black text-ink">{score >= highScore && score > 0 ? 'KỶ LỤC MỚI!' : 'KẾT THÚC THỬ THÁCH'}</h2>
-            <p className="mt-1 text-sm text-muted">
-              Bạn đã vượt qua <b className="text-ink">{curIndex}</b> câu hỏi và đạt được <b className="text-indigo-600 dark:text-indigo-400 font-extrabold">{score}</b> điểm!
-            </p>
-          </div>
-
-          {/* Highscore Comparison */}
-          <div className="grid grid-cols-2 gap-3 max-w-sm mx-auto">
-            <div className="rounded-2xl border border-line p-3 bg-slate-50 dark:bg-slate-800/40">
-              <span className="text-[11px] font-bold text-muted uppercase">Điểm trận này</span>
-              <p className="text-2xl font-black text-ink mt-0.5">{score}</p>
-            </div>
-            <div className="rounded-2xl border border-amber-200 dark:border-amber-900/60 p-3 bg-amber-50/60 dark:bg-amber-950/40">
-              <span className="text-[11px] font-bold text-amber-700 dark:text-amber-300 uppercase">Kỷ lục cao nhất</span>
-              <p className="text-2xl font-black text-amber-600 dark:text-amber-400 mt-0.5">{highScore}</p>
-            </div>
-          </div>
-
-          {/* Mistakes review list */}
-          {mistakes.length > 0 && (
-            <div className="text-left space-y-2.5 max-h-56 overflow-y-auto pt-2 border-t border-line">
-              <span className="text-xs font-bold text-rose-600 dark:text-rose-400">
-                Các câu bạn đã trả lời sai trong trận này ({mistakes.length} câu):
-              </span>
-              {mistakes.map(({ entry, picked }, i) => (
-                <div key={i} className="rounded-xl border border-line p-3 text-xs space-y-1">
-                  <p className="font-semibold text-ink">
-                    {entry.item.type === 'multiple-choice' ? entry.item.content.question : ''}
-                  </p>
-                  <p className="text-muted">
-                    Bạn chọn: <b className="text-rose-600">{picked || '(Hết giờ)'}</b> · Đáp án đúng:{' '}
-                    <b className="text-emerald-600">{entry.item.type === 'multiple-choice' ? entry.item.content.answer : ''}</b>
-                  </p>
+              <div className="mx-auto mt-6 grid max-w-md grid-cols-2 gap-3">
+                <div className="rounded-2xl border border-line bg-slate-50/70 p-3.5 dark:bg-slate-800/40">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-muted">Điểm trận này</span>
+                  <p className="mt-1 font-mono text-3xl font-black text-ink">{score}</p>
                 </div>
-              ))}
+                <div className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-3.5 dark:border-amber-900/50 dark:bg-amber-950/30">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">Kỷ lục cao nhất</span>
+                  <p className="mt-1 font-mono text-3xl font-black text-amber-600 dark:text-amber-300">{highScore}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {mistakes.length > 0 && (
+            <div className="border-t border-line px-5 py-5 sm:px-9">
+              <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
+                <HeartCrack size={14} /> Các câu đã sai trong trận này ({mistakes.length})
+              </div>
+              <div className="max-h-72 space-y-2.5 overflow-y-auto pr-1">
+                {mistakes.map(({ entry, picked }, i) => {
+                  const mc = entry.item.type === 'multiple-choice' ? entry.item.content : null
+                  const pickedText = mc?.options.find((o) => o.key === picked)?.text
+                  return (
+                    <div key={i} className="rounded-2xl border border-line bg-card p-3.5 text-xs">
+                      <p className="text-[13px] font-semibold leading-snug text-ink">{mc?.question}</p>
+                      <div className="mt-2 space-y-1">
+                        <p className="flex items-start gap-1.5 text-rose-600 dark:text-rose-400">
+                          <X size={13} className="mt-0.5 shrink-0" />
+                          <span>{picked ? `${picked}${pickedText ? `. ${pickedText}` : ''}` : 'Hết giờ, chưa chọn đáp án'}</span>
+                        </p>
+                        <p className="flex items-start gap-1.5 font-semibold text-emerald-600 dark:text-emerald-400">
+                          <Check size={13} className="mt-0.5 shrink-0" />
+                          <span>{previewOf(entry.item).a}</span>
+                        </p>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           )}
 
-          <div className="flex flex-wrap justify-center gap-3 pt-2">
-            <Button variant="primary" onClick={startGame} className="py-2.5 px-6 font-bold shadow-md">
-              <RotateCcw size={15} /> Thử thách lại lần nữa
+          <div className="flex flex-wrap justify-center gap-3 border-t border-line px-5 py-5 sm:px-9">
+            <Button variant="primary" onClick={startGame} className="cursor-pointer px-6 py-2.5 font-bold shadow-md">
+              <RotateCcw size={15} /> Chơi lại
             </Button>
             <Link to="/">
-              <Button variant="outline" className="py-2.5 px-5">
+              <Button variant="outline" className="px-5 py-2.5">
                 Về Tổng quan
               </Button>
             </Link>
           </div>
-        </Card>
+        </div>
       )}
+    </div>
+  )
+}
+
+// ---------------------------------------------------------------------------------------------- small pieces
+
+const TONES = {
+  rose: 'bg-rose-50 text-rose-600 dark:bg-rose-950/50 dark:text-rose-300',
+  amber: 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-300',
+  indigo: 'bg-indigo-50 text-indigo-600 dark:bg-indigo-950/50 dark:text-indigo-300',
+} as const
+
+function Rule({ icon: Icon, tone, title, text }: { icon: LucideIcon; tone: keyof typeof TONES; title: string; text: string }) {
+  return (
+    <div className="rounded-2xl border border-line bg-card/70 p-3 shadow-2xs">
+      <span className={cx('flex h-9 w-9 items-center justify-center rounded-xl', TONES[tone])}>
+        <Icon size={18} />
+      </span>
+      <p className="mt-2 text-sm font-extrabold text-ink">{title}</p>
+      <p className="mt-0.5 text-[11px] leading-snug text-muted">{text}</p>
+    </div>
+  )
+}
+
+function SubjectCard({ label, count, selected, onClick, wide }: { label: string; count: number; selected: boolean; onClick: () => void; wide?: boolean }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={selected}
+      className={cx(
+        'relative cursor-pointer rounded-2xl border-2 p-3 text-left transition-all active:scale-[0.98]',
+        wide && 'col-span-2 sm:col-span-3',
+        selected ? 'border-indigo-500 bg-indigo-50/70 shadow-sm dark:bg-indigo-950/30' : 'border-line bg-card hover:border-slate-300 dark:hover:border-slate-600',
+      )}
+    >
+      <span className="block pr-6 text-[13px] font-bold leading-snug text-ink">{label}</span>
+      <span className="mt-0.5 block text-[11px] font-medium text-muted">{count} câu</span>
+      <span
+        className={cx(
+          'absolute right-2.5 top-2.5 flex h-5 w-5 items-center justify-center rounded-full border-2 transition-colors',
+          selected ? 'border-indigo-600 bg-indigo-600 text-white' : 'border-slate-300 dark:border-slate-600',
+        )}
+      >
+        {selected && <Check size={12} strokeWidth={3.5} />}
+      </span>
+    </button>
+  )
+}
+
+/** Circular countdown: the ring drains clockwise and turns amber, then rose, in the last seconds. */
+function TimerRing({ timeLeft, total }: { timeLeft: number; total: number }) {
+  const r = 22
+  const c = 2 * Math.PI * r
+  const danger = timeLeft <= 5
+  const warn = timeLeft <= 8
+  return (
+    <div className="relative h-14 w-14 shrink-0" role="timer" aria-label={`Còn ${timeLeft} giây`}>
+      <svg viewBox="0 0 56 56" className="h-full w-full -rotate-90">
+        <circle cx="28" cy="28" r={r} fill="none" strokeWidth="5" className="stroke-slate-200 dark:stroke-slate-700" />
+        <circle
+          cx="28"
+          cy="28"
+          r={r}
+          fill="none"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeDasharray={c}
+          strokeDashoffset={c * (1 - Math.max(0, timeLeft) / total)}
+          className={cx('transition-[stroke-dashoffset] duration-1000 ease-linear', danger ? 'stroke-rose-500' : warn ? 'stroke-amber-500' : 'stroke-emerald-500')}
+        />
+      </svg>
+      <span className={cx('absolute inset-0 flex items-center justify-center font-mono text-base font-black', danger ? 'text-rose-600 dark:text-rose-400' : 'text-ink', danger && 'animate-pulse')}>
+        {timeLeft}
+      </span>
     </div>
   )
 }
