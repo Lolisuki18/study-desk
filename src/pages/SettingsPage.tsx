@@ -348,7 +348,7 @@ export default function SettingsPage() {
         <h2 className="mb-2 text-sm font-bold text-ink">Quản lý & Sao lưu tiến độ</h2>
         <Card className="p-5 space-y-4">
           <p className="text-xs text-muted leading-relaxed">
-            Dữ liệu được lưu trong trình duyệt (IndexedDB) hoàn toàn offline trên máy bạn. Hãy sao lưu định kỳ để tránh mất tiến độ khi dọn dẹp trình duyệt.
+            Dữ liệu được lưu trong trình duyệt (IndexedDB) hoàn toàn offline trên máy bạn. File sao lưu gồm tiến độ, ghi chú, đánh dấu bôi màu, bộ học tự tải lên và kỷ lục Sinh tồn. Hãy sao lưu định kỳ để tránh mất dữ liệu khi dọn dẹp trình duyệt.
             {backup.lastAt && ` Lần sao lưu gần nhất: ${new Date(backup.lastAt).toLocaleString('vi-VN', { dateStyle: 'short', timeStyle: 'short' })}.`}
           </p>
 

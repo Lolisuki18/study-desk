@@ -22,10 +22,11 @@ export default function ImportPage() {
 
   // Smart Raw / AI Text state
   const [rawTitle, setRawTitle] = useState('')
-  const [rawSubject, setRawSubject] = useState('Lịch sử Đảng')
+  const [rawSubject, setRawSubject] = useState('')
   const [rawContent, setRawContent] = useState('')
   const [rawParsedResult, setRawParsedResult] = useState<Collection | null>(null)
   const [rawWarnings, setRawWarnings] = useState<string[]>([])
+  const [rawSkipped, setRawSkipped] = useState(0)
 
   // Upload state
   const [jsonInput, setJsonInput] = useState('')
@@ -90,11 +91,13 @@ export default function ImportPage() {
     try {
       const res = parseRawText(rawContent, {
         title: rawTitle || 'Bộ câu hỏi tự nhập',
-        subject: rawSubject || 'Khác',
+        subject: rawSubject,
       })
       setRawParsedResult(res.collection)
       setRawWarnings(res.warnings)
-      toast.info(`Đã nhận diện thành công ${res.itemCount} câu hỏi!`)
+      setRawSkipped(res.skipped)
+      if (res.skipped > 0) toast.info(`Nhận diện được ${res.itemCount} câu, bỏ qua ${res.skipped} câu (xem lưu ý bên dưới).`)
+      else toast.info(`Đã nhận diện thành công ${res.itemCount} câu hỏi!`)
     } catch (err: any) {
       toast.error(err.message || 'Không thể phân tích văn bản này')
     }
@@ -109,6 +112,8 @@ export default function ImportPage() {
       setRawContent('')
       setRawTitle('')
       setRawParsedResult(null)
+      setRawWarnings([])
+      setRawSkipped(0)
       setActiveTab('manage')
     } else {
       toast.error(res.errors[0] || 'Lỗi khi lưu bộ học')
@@ -224,7 +229,9 @@ export default function ImportPage() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-ink mb-1.5">Môn học / Chủ đề:</label>
+                <label className="block text-xs font-bold text-ink mb-1.5">
+                  Môn học / Chủ đề: <span className="font-normal text-muted">(để trống = "Bộ tự nhập")</span>
+                </label>
                 <input
                   type="text"
                   value={rawSubject}
@@ -257,7 +264,7 @@ D. Báo Cứu quốc
 Đáp án: C. Giải thích: Báo Thanh niên do Nguyễn Ái Quốc sáng lập ngày 21/6/1925.`
                     setRawContent(sample)
                     setRawTitle('Mẫu thử: Lịch sử Đảng')
-                    setRawSubject('Lịch sử Đảng')
+                    setRawSubject('Mẫu thử')
                   }}
                   className="text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline font-semibold cursor-pointer"
                 >
@@ -296,8 +303,10 @@ C. [Phương án C]
 D. [Phương án D]
 Đáp án: [Chữ cái đáp án đúng]
 Giải thích: [Giải thích ngắn gọn súc tích lý do chọn]`
-                    navigator.clipboard.writeText(prompt)
-                    toast.info('Đã sao chép prompt mẫu vào clipboard!')
+                    navigator.clipboard
+                      .writeText(prompt)
+                      .then(() => toast.info('Đã sao chép prompt mẫu vào clipboard!'))
+                      .catch(() => toast.error('Trình duyệt không cho sao chép tự động. Hãy chọn và chép prompt thủ công.'))
                   }}
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
                 >
@@ -343,7 +352,7 @@ Giải thích: [Giải thích ngắn gọn súc tích lý do chọn]`
 
               {rawWarnings.length > 0 && (
                 <div className="rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/30 p-3 text-xs text-amber-800 dark:text-amber-300 space-y-1">
-                  <span className="font-bold">Lưu ý khi phân tích:</span>
+                  <span className="font-bold">{rawSkipped > 0 ? `Đã bỏ qua ${rawSkipped} câu vì không đọc chắc được đáp án hoặc phương án:` : 'Lưu ý khi phân tích:'}</span>
                   <ul className="list-disc pl-5 space-y-0.5">
                     {rawWarnings.map((w, i) => (
                       <li key={i}>{w}</li>
@@ -361,7 +370,7 @@ Giải thích: [Giải thích ngắn gọn súc tích lý do chọn]`
                         {idx + 1}
                       </span>
                       <p className="font-bold text-ink leading-snug">
-                        {it.type === 'multiple-choice' ? it.content.question : it.type === 'true-false' ? it.content.statement : (it.content as any).term}
+                        {it.type === 'multiple-choice' ? it.content.question : it.type === 'true-false' ? it.content.statement : it.type === 'vocabulary' ? it.content.term : ''}
                       </p>
                     </div>
 
@@ -386,6 +395,11 @@ Giải thích: [Giải thích ngắn gọn súc tích lý do chọn]`
                         })}
                       </div>
                     )}
+
+                    {it.type === 'true-false' && (
+                      <div className="pl-7.5 text-[11px] font-bold text-emerald-700 dark:text-emerald-300">Đáp án: {it.content.answer ? 'Đúng' : 'Sai'}</div>
+                    )}
+                    {it.type === 'vocabulary' && <div className="pl-7.5 text-[11px] text-muted">{it.content.meaning}</div>}
 
                     {it.type === 'multiple-choice' && it.content.explanation && (
                       <div className="pl-7.5 pt-1 text-[11px] text-muted italic">

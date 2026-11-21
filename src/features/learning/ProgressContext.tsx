@@ -2,8 +2,12 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import type { ActivityKind, ActivityRecord, BackupFile, ExamRecord, Grade, NoteRecord, ProgressRecord } from '../../types'
 import * as db from '../../services/storage/db'
 import { initAutoBackup, scheduleAutoBackup } from '../../services/storage/autoBackup'
+import { getAllHighlights, replaceAllHighlights } from '../../services/storage/highlights'
+import { getCustomCollections, saveCustomCollections } from '../../services/storage/customCollections'
+import { getSavedHighScore, saveHighScore } from '../../services/survival'
+import { validateCollection } from '../../utils/validate'
 import { applyResult, emptyProgress, isMastered, isStudied, reviewReasons } from '../../services/review/srs'
-import { collections, progressKey } from '../../data'
+import { collections, isBundledId, progressKey, refreshDataCollections } from '../../data'
 
 interface Ctx {
   loaded: boolean
@@ -125,6 +129,10 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       activity,
       exams,
       notes: [...notes.values()],
+      // everything else the learner made lives in localStorage: it belongs in the backup too
+      highlights: getAllHighlights(),
+      customCollections: getCustomCollections(),
+      survivalHighScore: getSavedHighScore(),
     }),
     [activity, exams, notes],
   )
@@ -135,6 +143,16 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (loaded && (progress.size > 0 || notes.size > 0)) scheduleAutoBackup(() => exportRef.current())
   }, [loaded, progress, activity, exams, notes])
+
+  // highlights, uploaded decks and the Survival record are not part of the progress state: they announce changes
+  useEffect(() => {
+    const events = ['highlights-changed', 'custom-collections-changed', 'survival-highscore-changed']
+    const onChange = () => {
+      if (loaded) scheduleAutoBackup(() => exportRef.current())
+    }
+    events.forEach((e) => window.addEventListener(e, onChange))
+    return () => events.forEach((e) => window.removeEventListener(e, onChange))
+  }, [loaded])
 
   const reload = useCallback(async () => {
     const d = await db.loadAll()
@@ -151,6 +169,14 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       if (b?.app !== 'personal-study-hub' || !Array.isArray(b.progress)) throw new Error('File sao lưu không hợp lệ')
       // older backups have no notes: keep the current ones in that case
       await db.replaceAll(b.progress, b.activity ?? [], b.exams ?? [], Array.isArray(b.notes) ? b.notes : undefined)
+      // older backups lack the sections below: leave what is on this device alone in that case
+      if (b.highlights && typeof b.highlights === 'object') replaceAllHighlights(b.highlights as never)
+      if (Array.isArray(b.customCollections)) {
+        // same rules as an upload: valid, and never shadowing a bundled deck
+        saveCustomCollections(b.customCollections.filter((c) => validateCollection(c).ok && !isBundledId(c.id)))
+        refreshDataCollections()
+      }
+      if (typeof b.survivalHighScore === 'number') saveHighScore(b.survivalHighScore)
       await reload()
     },
     [reload],
