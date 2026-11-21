@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import {
+  ArrowRight,
   BookOpen,
   CalendarRange,
   CheckCircle2,
   Flame,
   GraduationCap,
+  Heart,
   Library,
   RefreshCw,
 } from 'lucide-react'
@@ -44,10 +46,18 @@ export default function Dashboard() {
                 <span className="font-extrabold text-slate-900 dark:text-white text-sm">Chế độ Sinh tồn 3 mạng</span>
                 <span className="rounded-full bg-orange-100 dark:bg-orange-900/50 px-2 py-0.5 text-[10px] font-black text-orange-600 dark:text-orange-400 uppercase tracking-wider">Hot</span>
               </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">3 ❤️ · 15 giây/câu · Thử thách phản xạ cực căng!</p>
+              <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 text-xs text-slate-500 dark:text-slate-400 [&>span:not(:first-child)]:before:mr-1.5 [&>span:not(:first-child)]:before:content-['·']">
+                <span className="inline-flex items-center gap-1">
+                  3 <Heart size={12} className="fill-rose-500 text-rose-500" /> mạng
+                </span>
+                <span>15 giây/câu</span>
+                <span>Thử thách phản xạ</span>
+              </p>
             </div>
           </div>
-          <span className="text-xs font-bold text-orange-600 dark:text-orange-400 group-hover:translate-x-1 transition-transform">Bắt đầu →</span>
+          <span className="text-xs font-bold text-orange-600 dark:text-orange-400 inline-flex shrink-0 items-center gap-1 whitespace-nowrap group-hover:translate-x-1 transition-transform">
+            Bắt đầu <ArrowRight size={14} />
+          </span>
         </Link>
 
         <Link
@@ -63,10 +73,12 @@ export default function Dashboard() {
                 <span className="font-extrabold text-slate-900 dark:text-white text-sm">Trục thời gian sự kiện</span>
                 <span className="rounded-full bg-sky-100 dark:bg-sky-900/50 px-2 py-0.5 text-[10px] font-black text-sky-600 dark:text-sky-400 uppercase tracking-wider">Mới</span>
               </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Xâu chuỗi các mốc lịch sử VNR202 theo trình tự năm</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Xâu chuỗi các mốc năm trong câu hỏi theo thứ tự thời gian</p>
             </div>
           </div>
-          <span className="text-xs font-bold text-sky-600 dark:text-sky-400 group-hover:translate-x-1 transition-transform">Khám phá →</span>
+          <span className="text-xs font-bold text-sky-600 dark:text-sky-400 inline-flex shrink-0 items-center gap-1 whitespace-nowrap group-hover:translate-x-1 transition-transform">
+            Khám phá <ArrowRight size={14} />
+          </span>
         </Link>
       </div>
 
@@ -135,7 +147,7 @@ export default function Dashboard() {
             to="/collections"
             className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
           >
-            Xem tất cả ({collections.length}) →
+            Xem tất cả ({collections.length}) <ArrowRight size={12} className="inline -mt-0.5" />
           </Link>
         </div>
         {collections.length ? <CollectionsBySubject list={collections} /> : <Empty>Chưa có bộ học nào.</Empty>}

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { entriesFor, getCollection } from '../data'
 import type { Question } from '../services/quiz/generate'
 import CollectionPicker from '../components/dashboard/CollectionPicker'
@@ -29,8 +29,8 @@ export default function QuizPage() {
               Đề trộn mọi chương theo tỉ lệ, tính giờ, chấm điểm theo chương
             </span>
           </span>
-          <span className="font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition-transform">
-            Vào thi →
+          <span className="inline-flex items-center gap-1 font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition-transform">
+            Vào thi <ArrowRight size={14} />
           </span>
         </Link>
         <CollectionPicker base="/quiz" />

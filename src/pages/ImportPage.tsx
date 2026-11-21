@@ -337,8 +337,8 @@ Giải thích: [Giải thích ngắn gọn súc tích lý do chọn]`
               <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="rounded-full bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 text-xs font-bold text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
-                      ✓ Phân tích thành công {rawParsedResult.items.length} câu hỏi
+                    <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 text-xs font-bold text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                      <Check size={13} /> Phân tích thành công {rawParsedResult.items.length} câu hỏi
                     </span>
                     <span className="text-xs text-muted font-medium">({rawParsedResult.contentType})</span>
                   </div>
