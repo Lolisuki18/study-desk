@@ -600,10 +600,11 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     )
 
   const statusLabel = p?.status === 'known' ? 'Đã thuộc' : p?.status === 'unknown' ? 'Chưa nhớ' : 'Mới'
+  const currentKey = `${cur.collection.id}::${cur.item.id}`
 
-  const front = <CardFront item={cur.item} picked={picked} onPick={pick} draft={drafts[pickKey]} onConfirm={confirmPick} />
-  const frontContent = inverted ? <CardBack item={cur.item} /> : front
-  const backContent = inverted ? front : <CardBack item={cur.item} />
+  const front = <CardFront item={cur.item} itemKey={currentKey} picked={picked} onPick={pick} draft={drafts[pickKey]} onConfirm={confirmPick} />
+  const frontContent = inverted ? <CardBack item={cur.item} itemKey={currentKey} /> : front
+  const backContent = inverted ? front : <CardBack item={cur.item} itemKey={currentKey} />
 
   const zoomClass = fontZoom === 'large' ? 'text-lg' : fontZoom === 'xl' ? 'text-xl' : 'text-base'
 

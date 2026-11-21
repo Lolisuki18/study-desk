@@ -13,6 +13,8 @@ import SearchPage from './pages/SearchPage'
 import StatsPage from './pages/StatsPage'
 import SettingsPage from './pages/SettingsPage'
 import ImportPage from './pages/ImportPage'
+import TimelinePage from './pages/TimelinePage'
+import SurvivalPage from './pages/SurvivalPage'
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
         <Route path="collections" element={<Collections />} />
         <Route path="collections/:id" element={<CollectionDetail />} />
         <Route path="import" element={<ImportPage />} />
+        <Route path="timeline" element={<TimelinePage />} />
+        <Route path="survival" element={<SurvivalPage />} />
         <Route path="flashcards/:id?" element={<FlashcardsPage />} />
         <Route path="quiz/:id?" element={<QuizPage />} />
         <Route path="review/:category?" element={<ReviewPage />} />

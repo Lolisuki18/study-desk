@@ -3,6 +3,7 @@ import { BookOpen, Check, CheckCircle2, HelpCircle, Sparkles, X } from 'lucide-r
 import type { Item } from '../../types'
 import { cx } from '../../utils'
 import { isMulti, sameKeys } from '../../utils/answers'
+import HighlightableText from '../ui/HighlightableText'
 
 /** badge colour per option letter */
 const KEY_TONE: Record<string, string> = {
@@ -37,12 +38,14 @@ export function Enrichment({ item }: { item: Item }) {
 
 export function CardFront({
   item,
+  itemKey,
   picked,
   onPick,
   draft,
   onConfirm,
 }: {
   item: Item
+  itemKey?: string
   picked?: string
   onPick?: (key: string) => void
   /** multi-answer questions: keys selected but not confirmed yet */
@@ -81,7 +84,16 @@ export function CardFront({
               {multi ? `Chọn ${item.content.answer.length} đáp án` : 'Trắc nghiệm'}
             </span>
           </div>
-          <h2 className={`${item.content.question.length > 90 ? 'text-left sm:text-center' : 'text-center'} text-[17px] font-bold leading-relaxed tracking-tight text-ink sm:text-lg md:text-xl`}>{item.content.question}</h2>
+          {itemKey ? (
+            <HighlightableText
+              text={item.content.question}
+              itemKey={itemKey}
+              className={`${item.content.question.length > 90 ? 'text-left sm:text-center' : 'text-center'} text-[17px] font-bold leading-relaxed tracking-tight text-ink sm:text-lg md:text-xl`}
+              as="h2"
+            />
+          ) : (
+            <h2 className={`${item.content.question.length > 90 ? 'text-left sm:text-center' : 'text-center'} text-[17px] font-bold leading-relaxed tracking-tight text-ink sm:text-lg md:text-xl`}>{item.content.question}</h2>
+          )}
 
           {/* Phương án dạng thẻ lựa chọn: huy hiệu chữ cái màu, hover nhấc nhẹ */}
           <div className="mt-5 space-y-2.5" onClick={(e) => done && e.stopPropagation()}>
@@ -198,7 +210,7 @@ export function CardFront({
   }
 }
 
-export function CardBack({ item }: { item: Item }) {
+export function CardBack({ item, itemKey }: { item: Item; itemKey?: string }) {
   switch (item.type) {
     case 'vocabulary': {
       const c = item.content
@@ -262,9 +274,18 @@ export function CardBack({ item }: { item: Item }) {
               <div className="mb-1 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-muted">
                 <BookOpen size={13} className="text-indigo-500" /> Giải thích
               </div>
-              <p className={cx('text-[14.5px] leading-relaxed', c.explanation ? 'text-slate-700 dark:text-slate-200' : 'italic text-muted')}>
-                {c.explanation ?? 'Tài liệu gốc chưa có giải thích cho câu này.'}
-              </p>
+              {itemKey && c.explanation ? (
+                <HighlightableText
+                  text={c.explanation}
+                  itemKey={itemKey}
+                  className="text-[14.5px] leading-relaxed text-slate-700 dark:text-slate-200"
+                  as="p"
+                />
+              ) : (
+                <p className={cx('text-[14.5px] leading-relaxed', c.explanation ? 'text-slate-700 dark:text-slate-200' : 'italic text-muted')}>
+                  {c.explanation ?? 'Tài liệu gốc chưa có giải thích cho câu này.'}
+                </p>
+              )}
             </div>
           )}
 

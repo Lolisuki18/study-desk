@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import {
   BarChart3,
+  CalendarRange,
   FileCheck2,
+  Flame,
   GraduationCap,
   Layers,
   LayoutDashboard,
@@ -58,6 +60,8 @@ const navGroups: NavGroup[] = [
       { to: '/collections', label: 'Bộ học', icon: Library },
       { to: '/flashcards', label: 'Thẻ ghi nhớ', icon: Layers },
       { to: '/quiz', label: 'Trắc nghiệm', icon: ListChecks },
+      { to: '/survival', label: 'Sinh tồn 3 mạng', icon: Flame },
+      { to: '/timeline', label: 'Trục thời gian', icon: CalendarRange },
       { to: '/exam', label: 'Thi thử', icon: FileCheck2 },
       { to: '/mistakes', label: 'Sổ câu sai', icon: NotebookPen },
       { to: '/import', label: 'Tải lên & Mẫu', icon: Upload },
@@ -473,6 +477,22 @@ export default function Layout() {
                 >
                   <ListChecks size={18} className="text-emerald-600 dark:text-emerald-400 shrink-0" />
                   <span>Trắc nghiệm</span>
+                </NavLink>
+
+                <NavLink
+                  to="/survival"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200 dark:border-line bg-slate-50 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-200 hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50/50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <Flame size={18} className="text-orange-500 shrink-0" />
+                  <span>Sinh tồn 3 mạng</span>
+                </NavLink>
+
+                <NavLink
+                  to="/timeline"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200 dark:border-line bg-slate-50 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-200 hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50/50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <CalendarRange size={18} className="text-sky-500 shrink-0" />
+                  <span>Trục thời gian</span>
                 </NavLink>
 
                 <NavLink
