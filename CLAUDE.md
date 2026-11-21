@@ -74,6 +74,11 @@ Pomodoro (`src/services/pomodoro.ts`, state + log in localStorage) · print shee
 Zen / focus mode: one shared state in `src/utils/zen.ts`, read with `useZen()` (never a local copy; Z toggles it, Esc leaves it).
 Cram list (`CramView`, `src/utils/preview.ts`): key cards by `collectionId::itemId`, item ids repeat between collections.
 React: keep every hook above any early `return` in a component (an early return before a later hook blanks the whole app).
+Paste importer (`/import`, `src/services/templates/rawParser.ts`): it must never guess an answer. Markers are read only at the start of a
+line; a question with no readable answer is skipped with a warning. Survival rules live in `src/services/survival.ts` (exact answer sets,
+combo points, one question per text); its answers go through `record()` like a quiz. Timeline (`src/services/timeline.ts`): a year counts
+only from the stem, the correct answer(s) and the explanation, never from wrong options. Highlights (`src/services/storage/highlights.ts`):
+character ranges per field (`#q` question, `#e` explanation). The backup file also carries highlights, uploaded decks and the Survival record.
 
 ## Dark theme
 `html.dark` (set by `src/services/theme.ts`) remaps the palette variables at the end of `src/index.css`; components keep their

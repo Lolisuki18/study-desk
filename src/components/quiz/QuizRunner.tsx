@@ -859,6 +859,7 @@ export default function QuizRunner({
           <HighlightableText
             text={q.prompt}
             itemKey={`${q.collectionId}::${q.itemId}`}
+            field="q"
             className="mb-6 text-lg sm:text-xl font-bold leading-relaxed text-ink"
             as="p"
           />
@@ -887,6 +888,7 @@ export default function QuizRunner({
                     <HighlightableText
                       text={q.explanation}
                       itemKey={`${q.collectionId}::${q.itemId}`}
+                      field="e"
                       as="div"
                     />
                   ) : (

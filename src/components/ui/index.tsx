@@ -3,10 +3,6 @@ import { cx } from '../../utils'
 
 export { ToastProvider, useToast } from './Toast'
 export { Modal, ConfirmDialog } from './Modal'
-export { default as Scratchpad } from './Scratchpad'
-export { default as ShareCard } from './ShareCard'
-export { default as CramView } from './CramView'
-export { default as HighlightableText } from './HighlightableText'
 
 export function Card({ className, children, ...p }: HTMLAttributes<HTMLDivElement>) {
   return (

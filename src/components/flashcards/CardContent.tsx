@@ -88,6 +88,7 @@ export function CardFront({
             <HighlightableText
               text={item.content.question}
               itemKey={itemKey}
+              field="q"
               className={`${item.content.question.length > 90 ? 'text-left sm:text-center' : 'text-center'} text-[17px] font-bold leading-relaxed tracking-tight text-ink sm:text-lg md:text-xl`}
               as="h2"
             />
@@ -278,6 +279,7 @@ export function CardBack({ item, itemKey }: { item: Item; itemKey?: string }) {
                 <HighlightableText
                   text={c.explanation}
                   itemKey={itemKey}
+                  field="e"
                   className="text-[14.5px] leading-relaxed text-slate-700 dark:text-slate-200"
                   as="p"
                 />
