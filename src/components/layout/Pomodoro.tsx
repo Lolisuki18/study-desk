@@ -9,7 +9,7 @@ import {
   SkipForward,
   Timer,
   Volume2,
-  VolumeX,
+  
   Waves,
   Wind,
 } from 'lucide-react'

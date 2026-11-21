@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import {
   BarChart3,
@@ -11,6 +11,7 @@ import {
   Library,
   ListChecks,
   Menu,
+  MessageSquareText,
   MoreHorizontal,
   NotebookPen,
   PanelLeftClose,
@@ -27,6 +28,8 @@ import ThemeToggle from './ThemeToggle'
 import CommandPalette from './CommandPalette'
 import ShortcutsModal from './ShortcutsModal'
 import ScrollToTop from './ScrollToTop'
+import ErrorBoundary from '../ErrorBoundary'
+import StorageErrorWatcher from './StorageErrorWatcher'
 import { ToastProvider } from '../ui'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { cx } from '../../utils'
@@ -73,6 +76,7 @@ const navGroups: NavGroup[] = [
       { to: '/search', label: 'Tìm kiếm', icon: Search },
       { to: '/statistics', label: 'Thống kê', icon: BarChart3 },
       { to: '/settings', label: 'Cài đặt', icon: Settings },
+      { to: '/feedback', label: 'Góp ý', icon: MessageSquareText },
     ],
   },
 ]
@@ -124,6 +128,7 @@ export default function Layout() {
 
   return (
     <ToastProvider>
+      <StorageErrorWatcher />
       <div className="flex min-h-full flex-col md:flex-row bg-bg text-ink transition-colors duration-150">
         {/* Global Command Palette */}
         <CommandPalette open={cmdOpen} onClose={() => setCmdOpen(false)} />
@@ -362,7 +367,18 @@ export default function Layout() {
 
         {/* Main Content Area */}
         <main className="min-w-0 flex-1 px-4 pt-4 pb-[calc(var(--bottom-nav-h)+1.25rem)] md:px-8 md:py-8 md:pb-8">
-          <div className="mx-auto max-w-5xl">{loaded ? <Outlet /> : <p className="text-sm text-slate-500 dark:text-muted">Đang nạp dữ liệu…</p>}</div>
+          <div className="mx-auto max-w-5xl">
+            {/* a page that crashes shows an error card here; the menu stays usable and another page clears it */}
+            <ErrorBoundary resetKey={location.pathname}>
+              {loaded ? (
+                <Suspense fallback={<p className="text-sm text-slate-500 dark:text-muted">Đang tải trang…</p>}>
+                  <Outlet />
+                </Suspense>
+              ) : (
+                <p className="text-sm text-slate-500 dark:text-muted">Đang nạp dữ liệu…</p>
+              )}
+            </ErrorBoundary>
+          </div>
         </main>
 
         {/* Modern Mobile Bottom Navigation Bar */}

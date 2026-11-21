@@ -18,6 +18,7 @@ import { exitZen, isZenMode, toggleZen, useZen } from '../../utils/zen'
 import { isSpeaking, speakText, stopSpeaking } from '../../utils/speech'
 import { useStarred } from '../../services/storage/starred'
 import { itemTitle } from '../../data'
+import { isLeech } from '../../services/review/srs'
 
 type Filter = 'all' | Status | 'review'
 const FILTERS: { v: Filter; label: string }[] = [
@@ -625,6 +626,14 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
         <span className="min-w-0 basis-full truncate font-bold text-ink sm:flex-1 sm:basis-auto sm:pr-2">{cur.collection.title}</span>
         <div className="flex shrink-0 flex-wrap items-center gap-1.5">
           {isRepeat && <span className="rounded-full bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900 px-2.5 py-0.5 font-bold text-rose-600 dark:text-rose-400">Ôn lại</span>}
+          {isLeech(p) && (
+            <span
+              className="rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 font-bold text-amber-800 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-300"
+              title={`Bạn đã sai thẻ này ${p!.incorrect} lần. Thử đặt một mẹo nhớ riêng bằng nút Thêm ghi chú.`}
+            >
+              Ngoan cố ({p!.incorrect} lần sai)
+            </span>
+          )}
           {p && p.level > 0 && (
             <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-900 px-2.5 py-0.5 font-bold text-indigo-700 dark:text-indigo-300">
               Hộp {p.level}/5

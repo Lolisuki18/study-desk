@@ -4,6 +4,7 @@ import type { Item } from '../../types'
 import { cx } from '../../utils'
 import { isMulti, sameKeys } from '../../utils/answers'
 import HighlightableText from '../ui/HighlightableText'
+import AnswerNote from '../ui/AnswerNote'
 
 /** badge colour per option letter */
 const KEY_TONE: Record<string, string> = {
@@ -292,6 +293,7 @@ export function CardBack({ item, itemKey }: { item: Item; itemKey?: string }) {
           )}
 
           <Enrichment item={item} />
+          {itemKey && <AnswerNote itemKey={itemKey} />}
         </div>
       )
     }
