@@ -216,6 +216,24 @@ const report = [
 ]
 writeFileSync(REPORT, report.join('\n'))
 
+// the app reads this to warn on a question whose two decks disagree (src/data/conflicts.ts)
+writeFileSync(
+  resolve(root, 'src/data/answer-conflicts.json'),
+  JSON.stringify(
+    conflicts.map((c) => {
+      // the answer as it stands in the deck after the text repairs, not the raw source text
+      const mine = items.find((i) => i.id === `q-${String(c.pos).padStart(3, '0')}`)
+      const mineAnswers = [...mine.content.answer].map((k) => mine.content.options.find((o) => o.key === k).text)
+      return {
+        a: { collectionId: ID, itemId: mine.id, answers: mineAnswers },
+        b: { collectionId: c.hit.col.id, itemId: c.hit.it.id, answers: c.hit.answers },
+      }
+    }),
+    null,
+    2,
+  ) + '\n',
+)
+
 // every text the cleaner changed, so the repair can be reviewed (the raw source file is not modified)
 writeFileSync(
   resolve(root, 'docs/mln131-full-text-cleanup.md'),

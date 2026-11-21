@@ -7,12 +7,28 @@ const ASSETS = '__ASSETS__'
 const MATCH = { ignoreVary: true }
 
 // Precache the whole app so it opens with no network at all.
+// Files under assets/ carry a content hash in their name and never change, so an older version's copy is reused
+// instead of being downloaded again: an update then only fetches what really changed (the question banks, the
+// biggest file, stay put unless the questions change).
+const HASHED = /\/assets\/.+-[\w-]{8}\.\w+$/
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches
-      .open(CACHE)
-      .then((cache) => cache.addAll(ASSETS))
-      .then(() => self.skipWaiting()),
+    (async () => {
+      const cache = await caches.open(CACHE)
+      const older = (await caches.keys()).filter((k) => k.startsWith('psh-') && k !== CACHE)
+      await Promise.all(
+        ASSETS.map(async (url) => {
+          if (HASHED.test(url)) {
+            for (const name of older) {
+              const hit = await (await caches.open(name)).match(url, MATCH)
+              if (hit) return cache.put(url, hit)
+            }
+          }
+          return cache.add(url)
+        }),
+      )
+      await self.skipWaiting()
+    })(),
   )
 })
 

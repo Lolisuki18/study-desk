@@ -32,5 +32,19 @@ export default defineConfig({
   // relative paths: the build works from any folder or sub-path
   base: './',
   plugins: [react(), tailwindcss(), serviceWorker()],
-  test: { environment: 'node', include: ['src/**/*.test.ts'] },
+  build: {
+    // the question banks are bundled on purpose (the app works offline): they are one big, rarely changing file
+    chunkSizeWarningLimit: 3000,
+    rollupOptions: {
+      output: {
+        // separate files keep a code change from re-downloading the question banks (and the other way round)
+        manualChunks(id) {
+          if (id.includes('/src/data/collections/') || id.includes('/src/data/answer-conflicts')) return 'question-banks'
+          if (id.includes('node_modules/react-dom') || id.includes('node_modules/react-router') || id.includes('node_modules/react/')) return 'react'
+          if (id.includes('node_modules/lucide-react')) return 'icons'
+        },
+      },
+    },
+  },
+  test: { environment: 'node', include: ['src/**/*.test.{ts,tsx}'] },
 })

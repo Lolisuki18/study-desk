@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HashRouter } from 'react-router-dom'
 import App from './App'
+import ErrorBoundary from './components/ErrorBoundary'
 import { ProgressProvider } from './features/learning/ProgressContext'
 import { loadSettings } from './services/storage/settings'
 import { applyAccent, applyTheme, watchSystemTheme } from './services/theme'
@@ -23,10 +24,13 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
-      <ProgressProvider>
-        <App />
-      </ProgressProvider>
-    </HashRouter>
+    {/* last resort: if the shell itself fails, show a recovery screen instead of a blank page */}
+    <ErrorBoundary fatal>
+      <HashRouter>
+        <ProgressProvider>
+          <App />
+        </ProgressProvider>
+      </HashRouter>
+    </ErrorBoundary>
   </StrictMode>,
 )

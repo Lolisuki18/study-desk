@@ -1,20 +1,25 @@
+import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Dashboard from './pages/Dashboard'
-import Collections from './pages/Collections'
-import CollectionDetail from './pages/CollectionDetail'
-import FlashcardsPage from './pages/FlashcardsPage'
-import QuizPage from './pages/QuizPage'
-import ReviewPage from './pages/ReviewPage'
-import TodayPage from './pages/TodayPage'
-import ExamPage from './pages/ExamPage'
-import MistakesPage from './pages/MistakesPage'
-import SearchPage from './pages/SearchPage'
-import StatsPage from './pages/StatsPage'
-import SettingsPage from './pages/SettingsPage'
-import ImportPage from './pages/ImportPage'
-import TimelinePage from './pages/TimelinePage'
-import SurvivalPage from './pages/SurvivalPage'
+
+// every other page is fetched when it is first opened, so the first screen loads less code
+const Collections = lazy(() => import('./pages/Collections'))
+const CollectionDetail = lazy(() => import('./pages/CollectionDetail'))
+const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage'))
+const QuizPage = lazy(() => import('./pages/QuizPage'))
+const ReviewPage = lazy(() => import('./pages/ReviewPage'))
+const TodayPage = lazy(() => import('./pages/TodayPage'))
+const ExamPage = lazy(() => import('./pages/ExamPage'))
+const MistakesPage = lazy(() => import('./pages/MistakesPage'))
+const SearchPage = lazy(() => import('./pages/SearchPage'))
+const StatsPage = lazy(() => import('./pages/StatsPage'))
+const SettingsPage = lazy(() => import('./pages/SettingsPage'))
+const ImportPage = lazy(() => import('./pages/ImportPage'))
+const TimelinePage = lazy(() => import('./pages/TimelinePage'))
+const SurvivalPage = lazy(() => import('./pages/SurvivalPage'))
+const DrillPage = lazy(() => import('./pages/DrillPage'))
+const FeedbackPage = lazy(() => import('./pages/FeedbackPage'))
 
 export default function App() {
   return (
@@ -26,6 +31,8 @@ export default function App() {
         <Route path="import" element={<ImportPage />} />
         <Route path="timeline" element={<TimelinePage />} />
         <Route path="survival" element={<SurvivalPage />} />
+        <Route path="drill" element={<DrillPage />} />
+        <Route path="feedback" element={<FeedbackPage />} />
         <Route path="flashcards/:id?" element={<FlashcardsPage />} />
         <Route path="quiz/:id?" element={<QuizPage />} />
         <Route path="review/:category?" element={<ReviewPage />} />
