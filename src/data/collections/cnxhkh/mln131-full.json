@@ -3701,10 +3701,17 @@
             "text": "Thống trị"
           }
         ],
-        "answer": "D"
+        "answer": "C"
       },
       "source": {
-        "ref": "MLN131 Full câu 127"
+        "ref": "MLN131 Full câu 127",
+        "sourceAnswer": "D",
+        "answerChanged": true
+      },
+      "enrichment": {
+        "text": "Đáp án đã được sửa từ \"Thống trị\" (D) thành \"Công nhân\" (C). Theo giáo trình, giai cấp công nhân là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất hiện đại; ngân hàng bổ sung MLN131 (câu 335) cũng chọn \"Công nhân\". Đáp án gốc của file (D) được lưu kèm trong dữ liệu.",
+        "confidence": "verified",
+        "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT): sứ mệnh lịch sử của giai cấp công nhân; Ngân hàng bổ sung MLN131 câu 335"
       }
     },
     {
@@ -3767,9 +3774,9 @@
         "answerChanged": true
       },
       "enrichment": {
-        "text": "Đáp án đã được sửa từ \"Thống trị\" (D) thành \"Công nhân\" (C). Cùng đề với câu 127 trong chính file này (đáp án \"Công nhân\") và theo giáo trình: giai cấp công nhân là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất hiện đại. Đáp án gốc của file (D) được được lưu kèm trong dữ liệu.",
+        "text": "Đáp án đã được sửa từ \"Thống trị\" (D) thành \"Công nhân\" (C). Theo giáo trình, giai cấp công nhân là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất hiện đại; ngân hàng bổ sung MLN131 (câu 335) cũng chọn \"Công nhân\". Đáp án gốc của file (D) được lưu kèm trong dữ liệu.",
         "confidence": "verified",
-        "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT): sứ mệnh lịch sử của giai cấp công nhân; câu 127 của cùng file"
+        "reference": "Giáo trình Chủ nghĩa xã hội khoa học (Bộ GD&ĐT): sứ mệnh lịch sử của giai cấp công nhân; Ngân hàng bổ sung MLN131 câu 335"
       }
     },
     {
