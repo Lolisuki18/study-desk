@@ -98,3 +98,16 @@ only in production builds, so test offline with `npm run build && npm run previe
 ## Commands
 `npm run dev` · `npm test` · `npm run build` · `npm run preview` (serve the built app, with offline support) · `npm run import:cnxhkh` / `npm run import:history` (regenerate the Lịch sử Đảng collections from `docs/`;
 NOTE: it overwrites those two JSON files).
+
+## Safety nets, sharing and storage (added later)
+- `npm run lint` (eslint, `react-hooks/rules-of-hooks` is an error). `src/smoke.test.tsx` renders every route in jsdom; add a route there when you add a page.
+  `ErrorBoundary` (Layout, keyed by pathname, and an outer fatal one in `main.tsx`) shows a recovery screen instead of a blank page.
+- Twin questions (`src/services/twins.ts`): same folded question + same correct answer texts share progress; `record()` expands to twins.
+  Settings has a one-off sync button. Drill weak chapters: `/drill?subject=&chapter=` (`src/services/drill.ts`), linked from the readiness card.
+- Leech = `isLeech` in `srs.ts` (>=4 wrong and wrong >= right); category "leech" in `/review`.
+- Answer conflicts: `npm run import:mln131-full` also writes `src/data/answer-conflicts.json`; `conflictFor` + `AnswerNote` show it; the learner's
+  own "doubtful" flags live in localStorage (`psh.answer_flags`, in the backup file).
+- Feedback page `/feedback`; the address is `FEEDBACK_EMAIL` in `src/config.ts`.
+- Pages are `React.lazy` (Dashboard eager); `manualChunks` in `vite.config.ts`; the service worker reuses hashed `/assets/` files of older caches.
+- Storage: `services/storage/persistence.ts` (persist request, usage); write failures go through `reportStorageError` (`storage/errors.ts`) to a toast
+  (`StorageErrorWatcher`); `addCustomCollection` returns `ok:false` when localStorage refuses.
