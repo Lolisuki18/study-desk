@@ -1,6 +1,8 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { AlertTriangle, CheckCircle2, Download, Trash2, Upload, Volume2, Check, X, RefreshCw, Bell, PartyPopper } from 'lucide-react'
-import { loadReports } from '../data'
+import { collections, loadReports } from '../data'
+import { getTwinIndex, twinStats } from '../services/twins'
+import { formatBytes, requestPersistence, storageStatus, type StorageStatus } from '../services/storage/persistence'
 import { useProgress } from '../features/learning/ProgressContext'
 import { loadSettings, saveSettings } from '../services/storage/settings'
 import { disableAutoBackup, enableAutoBackup, grantAutoBackup, markBackedUp, useAutoBackup } from '../services/storage/autoBackup'
@@ -14,7 +16,12 @@ import { isHapticEnabled, setHapticEnabled, haptic } from '../utils/haptic'
 import { getReadingFont, setReadingFont, type ReadingFont } from '../utils/fonts'
 
 export default function SettingsPage() {
-  const { exportBackup, importBackup, resetAll } = useProgress()
+  const { exportBackup, importBackup, resetAll, syncTwinProgress } = useProgress()
+  const twin = twinStats(getTwinIndex(collections))
+  const [store, setStore] = useState<StorageStatus | null>(null)
+  useEffect(() => {
+    void storageStatus().then(setStore)
+  }, [])
   const { toast } = useToast()
   const backup = useAutoBackup()
   const [settings, setSettings] = useState(loadSettings)
@@ -403,6 +410,56 @@ export default function SettingsPage() {
               <Trash2 size={15} /> Xoá toàn bộ tiến độ
             </Button>
           </div>
+        </Card>
+      </div>
+
+      <div>
+        <h2 className="mb-2 text-sm font-bold text-ink">Câu trùng giữa các bộ</h2>
+        <Card className="space-y-3 p-5">
+          <p className="text-xs leading-relaxed text-muted">
+            Nhiều bộ lặp lại cùng một câu hỏi (ví dụ bản "Full" và bản theo chương). Từ giờ, trả lời một câu sẽ cập nhật cả các bản trùng nội dung và cùng đáp án, nên bạn không phải học lại. Câu trùng nhưng khác đáp án được giữ riêng. Hiện có{' '}
+            <b className="text-ink">{twin.groups}</b> nhóm câu trùng, gồm <b className="text-ink">{twin.items}</b> câu.
+          </p>
+          <Button
+            onClick={async () => {
+              const n = await syncTwinProgress()
+              toast.success(n ? `Đã cập nhật tiến độ của ${n} câu trùng.` : 'Không có câu trùng nào cần cập nhật.')
+            }}
+          >
+            Đồng bộ tiến độ đã học trước đây
+          </Button>
+        </Card>
+      </div>
+
+      <div>
+        <h2 className="mb-2 text-sm font-bold text-ink">Bộ nhớ trên máy</h2>
+        <Card className="space-y-3 p-5">
+          {!store?.supported ? (
+            <p className="text-xs text-muted">Trình duyệt này không báo được thông tin bộ nhớ.</p>
+          ) : (
+            <>
+              <p className="text-xs leading-relaxed text-muted">
+                {store.persisted
+                  ? 'Lưu trữ bền: trình duyệt sẽ không tự xóa tiến độ của bạn khi máy thiếu chỗ.'
+                  : 'Lưu trữ thường: khi máy thiếu chỗ, trình duyệt có thể tự xóa dữ liệu của trang. Hãy xin lưu trữ bền và vẫn nên sao lưu định kỳ.'}
+              </p>
+              <p className="text-xs text-muted">
+                Đã dùng <b className="text-ink">{formatBytes(store.usage)}</b> trên tối đa khoảng {formatBytes(store.quota)}.
+              </p>
+              {!store.persisted && (
+                <Button
+                  onClick={async () => {
+                    const ok = await requestPersistence()
+                    setStore(await storageStatus())
+                    if (ok) toast.success('Đã bật lưu trữ bền.')
+                    else toast.info('Trình duyệt chưa cấp lưu trữ bền. Cài ứng dụng ra màn hình chính hoặc dùng app thường xuyên sẽ tăng khả năng được cấp.')
+                  }}
+                >
+                  Xin lưu trữ bền
+                </Button>
+              )}
+            </>
+          )}
         </Card>
       </div>
 

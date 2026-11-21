@@ -1,18 +1,19 @@
 import { useMemo } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
-import { ArrowLeft, Bookmark, CalendarClock, CircleHelp, XCircle } from 'lucide-react'
+import { ArrowLeft, Bookmark, CalendarClock, CircleHelp, Skull, XCircle } from 'lucide-react'
 import { allEntries, collections, entriesFor } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
-import { priority, reviewReasons, type ReviewReason } from '../services/review/srs'
+import { isLeech, priority, reviewReasons, type ReviewReason } from '../services/review/srs'
 import FlashcardSession from '../components/flashcards/FlashcardSession'
 import { Card, Empty, PageHeader } from '../components/ui'
 
-const CATS: { id: ReviewReason | 'all'; label: string; hint: string; icon: typeof CircleHelp }[] = [
+const CATS: { id: ReviewReason | 'all' | 'leech'; label: string; hint: string; icon: typeof CircleHelp }[] = [
   { id: 'all', label: 'Tất cả cần ôn', hint: 'Ưu tiên mục khó nhất trước', icon: CalendarClock },
   { id: 'unknown', label: 'Chưa biết', hint: 'Mục bạn đánh dấu chưa biết', icon: CircleHelp },
   { id: 'incorrect', label: 'Làm sai', hint: 'Lần gần nhất trả lời sai', icon: XCircle },
   { id: 'marked', label: 'Đã đánh dấu', hint: 'Mục bạn đã đánh dấu', icon: Bookmark },
   { id: 'due', label: 'Đến hạn', hint: 'Đến hạn theo Leitner', icon: CalendarClock },
+  { id: 'leech', label: 'Thẻ ngoan cố', hint: 'Sai từ 4 lần mà vẫn chưa nhớ: hãy học bằng mẹo riêng', icon: Skull },
 ]
 
 export default function ReviewPage() {
@@ -29,11 +30,20 @@ export default function ReviewPage() {
     .map((x) => ({ ...x, reasons: reviewReasons(x.p) }))
     .filter((x) => x.reasons.length)
 
-  const counts = Object.fromEntries(CATS.map((c) => [c.id, c.id === 'all' ? withReasons.length : withReasons.filter((x) => x.reasons.includes(c.id as ReviewReason)).length]))
+  const leechCount = scoped.filter((e) => isLeech(progress.get(`${e.collection.id}::${e.item.id}`))).length
+  const counts = Object.fromEntries(
+    CATS.map((c) => [c.id, c.id === 'all' ? withReasons.length : c.id === 'leech' ? leechCount : withReasons.filter((x) => x.reasons.includes(c.id as ReviewReason)).length]),
+  )
 
   const queue = useMemo(() => {
     if (!category) return []
     const now = new Date()
+    if (category === 'leech')
+      return scoped
+        .map((e) => ({ e, p: get(e.collection.id, e.item.id) }))
+        .filter((x) => isLeech(x.p))
+        .sort((a, b) => b.p!.incorrect - a.p!.incorrect)
+        .map((x) => x.e)
     return scoped
       .map((e) => ({ e, p: get(e.collection.id, e.item.id) }))
       .filter((x) => x.p && (category === 'all' ? reviewReasons(x.p).length > 0 : reviewReasons(x.p).includes(category as ReviewReason)))

@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { AlertCircle, BookOpen, CheckCircle, FileText, Search, Sparkles, Star, X } from 'lucide-react'
+import { AlertCircle, AlertTriangle, BookOpen, CheckCircle, FileText, Search, Sparkles, Star, X } from 'lucide-react'
 import { allEntries, collections, progressKey } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
 import { useStarred } from '../services/storage/starred'
+import { getAnswerFlag, useAnswerFlagsVersion } from '../services/storage/answerFlags'
+import { conflictFor } from '../data/conflicts'
 import ItemSummary from '../components/ui/ItemSummary'
 import { Card, Empty, PageHeader } from '../components/ui'
 import { matcher, searchText } from '../utils/search'
@@ -22,7 +24,7 @@ const QUICK_TAGS = [
   'Cách mạng tháng Tám',
 ]
 
-type FilterType = 'all' | 'starred' | 'explanation' | 'mistakes' | 'mastered'
+type FilterType = 'all' | 'starred' | 'explanation' | 'mistakes' | 'mastered' | 'doubtful'
 
 // Built once: the bundled content never changes while the app is open.
 let index: { entry: ReturnType<typeof allEntries>[number]; text: string }[] | null = null
@@ -35,6 +37,7 @@ export default function SearchPage() {
   const [filterType, setFilterType] = useState<FilterType>('all')
   const { notes, progress } = useProgress()
   const { isStarred } = useStarred()
+  const flagsVersion = useAnswerFlagsVersion()
 
   const subjects = useMemo(() => [...new Set(collections.map((c) => c.subject))].sort(), [])
 
@@ -70,6 +73,11 @@ export default function SearchPage() {
           if (!hasExp) return false
         } else if (filterType === 'mistakes') {
           if (!p || p.incorrect < 1) return false
+        } else if (filterType === 'doubtful') {
+          // marked by you as "answer looks wrong", or two decks disagree and you have not settled it
+          const f = getAnswerFlag(key)
+          const open = !!conflictFor(entry.collection.id, entry.item.id) && f?.status !== 'verified'
+          if (f?.status !== 'suspect' && !open) return false
         } else if (filterType === 'mastered') {
           if (!p || p.level < 2 || p.status !== 'known') return false
         }
@@ -77,7 +85,7 @@ export default function SearchPage() {
         return true
       })
       .map((x) => x.entry)
-  }, [hasSearch, q, selectedSubject, filterType, progress, notes, isStarred])
+  }, [hasSearch, q, selectedSubject, filterType, progress, notes, isStarred, flagsVersion])
 
   return (
     <div className="space-y-5">
@@ -168,6 +176,19 @@ export default function SearchPage() {
         >
           <CheckCircle size={13} />
           <span>Đã thuộc (Thành thạo)</span>
+        </button>
+        <button
+          onClick={() => setFilterType(filterType === 'doubtful' ? 'all' : 'doubtful')}
+          className={cx(
+            'rounded-xl px-2.5 py-1 font-semibold transition-all cursor-pointer flex items-center gap-1 border',
+            filterType === 'doubtful'
+              ? 'bg-amber-600 border-amber-700 text-white shadow-2xs font-bold'
+              : 'border-line bg-card text-muted hover:border-amber-400 hover:text-amber-600 dark:hover:text-amber-400',
+          )}
+          title="Câu bạn nghi đáp án sai, và câu mà hai bộ ghi đáp án khác nhau"
+        >
+          <AlertTriangle size={13} />
+          <span>Nghi vấn đáp án</span>
         </button>
       </div>
 

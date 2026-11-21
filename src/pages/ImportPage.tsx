@@ -1,6 +1,6 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AlertCircle, ArrowRight, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb, Sparkles } from 'lucide-react'
+import { AlertCircle, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb, Sparkles } from 'lucide-react'
 import type { Collection } from '../types'
 import { validateCollection } from '../utils/validate'
 import { isBundledId, refreshDataCollections } from '../data'

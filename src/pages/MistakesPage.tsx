@@ -161,6 +161,20 @@ export default function MistakesPage() {
     if (qs.length) setRun({ kind: 'quiz', qs, n: 0 })
   }
 
+  // Reason tag counts
+  const tagCounts = useMemo(() => {
+    const counts: Record<string, number> = { __none__: 0 }
+    MISTAKE_TAGS.forEach((t) => (counts[t.id] = 0))
+    for (const item of subjectMistakes) {
+      if (item.tag && counts[item.tag] !== undefined) {
+        counts[item.tag]++
+      } else {
+        counts.__none__++
+      }
+    }
+    return counts
+  }, [subjectMistakes])
+
   if (run)
     return (
       <div className="mx-auto max-w-3xl">
@@ -193,20 +207,6 @@ export default function MistakesPage() {
         ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-2xs'
         : 'border border-line bg-card text-muted hover:border-slate-300 dark:hover:border-slate-700 hover:text-ink',
     )
-
-  // Reason tag counts
-  const tagCounts = useMemo(() => {
-    const counts: Record<string, number> = { __none__: 0 }
-    MISTAKE_TAGS.forEach((t) => (counts[t.id] = 0))
-    for (const item of subjectMistakes) {
-      if (item.tag && counts[item.tag] !== undefined) {
-        counts[item.tag]++
-      } else {
-        counts.__none__++
-      }
-    }
-    return counts
-  }, [subjectMistakes])
 
   return (
     <div className="space-y-6">
