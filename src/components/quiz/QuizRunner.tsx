@@ -4,6 +4,7 @@ import { useProgress } from '../../features/learning/ProgressContext'
 import { isCorrect, itemResults, KIND_LABEL, type Answer, type Question } from '../../services/quiz/generate'
 import { Button, Card, ConfirmDialog, Modal, ProgressBar } from '../ui'
 import Scratchpad from '../ui/Scratchpad'
+import HighlightableText from '../ui/HighlightableText'
 import { cx, pct } from '../../utils'
 import { isMulti, toggleKey } from '../../utils/answers'
 import type { QuizStartOptions } from './QuizSetup'
@@ -855,7 +856,12 @@ export default function QuizRunner({
           </div>
 
           {promptTitle(q) && <div className="mb-1 text-xs font-bold uppercase tracking-wider text-muted">{promptTitle(q)}</div>}
-          <p className="mb-6 text-lg sm:text-xl font-bold leading-relaxed text-ink">{q.prompt}</p>
+          <HighlightableText
+            text={q.prompt}
+            itemKey={`${q.collectionId}::${q.itemId}`}
+            className="mb-6 text-lg sm:text-xl font-bold leading-relaxed text-ink"
+            as="p"
+          />
 
           <Input
             key={q.id}
@@ -877,7 +883,15 @@ export default function QuizRunner({
               {!ok && <div className="mt-2 whitespace-pre-line text-slate-800 dark:text-slate-100 font-semibold">Đáp án đúng: {correctText(q)}</div>}
               {(q.explanation || !q.enrichment) && (
                 <div className={cx('mt-2 text-xs sm:text-sm leading-relaxed', !q.explanation && 'italic text-muted')}>
-                  {q.explanation ?? 'Tài liệu gốc chưa có giải thích cho câu này.'}
+                  {q.explanation ? (
+                    <HighlightableText
+                      text={q.explanation}
+                      itemKey={`${q.collectionId}::${q.itemId}`}
+                      as="div"
+                    />
+                  ) : (
+                    'Tài liệu gốc chưa có giải thích cho câu này.'
+                  )}
                 </div>
               )}
               {q.enrichment && <div className="mt-2 text-xs text-muted">Bổ sung: {q.enrichment}</div>}

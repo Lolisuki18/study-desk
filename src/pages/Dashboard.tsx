@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import {
   BookOpen,
+  CalendarRange,
   CheckCircle2,
+  Flame,
   GraduationCap,
   Library,
   RefreshCw,
@@ -26,6 +28,47 @@ export default function Dashboard() {
     <div className="space-y-6">
       {/* 1. Hero Welcome & Motivational Card */}
       <WelcomeHero />
+
+      {/* New Practice Modes Banner */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <Link
+          to="/survival"
+          className="group relative flex items-center justify-between overflow-hidden rounded-2xl border border-orange-200 dark:border-orange-950/60 bg-gradient-to-r from-orange-500/10 via-amber-500/5 to-transparent p-4 transition-all hover:border-orange-400 dark:hover:border-orange-700 hover:shadow-md hover:-translate-y-0.5"
+        >
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-orange-500 to-amber-500 text-white shadow-sm shadow-orange-500/30 group-hover:scale-105 transition-transform">
+              <Flame size={22} className="fill-white" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-extrabold text-slate-900 dark:text-white text-sm">Chế độ Sinh tồn 3 mạng</span>
+                <span className="rounded-full bg-orange-100 dark:bg-orange-900/50 px-2 py-0.5 text-[10px] font-black text-orange-600 dark:text-orange-400 uppercase tracking-wider">Hot</span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">3 ❤️ · 15 giây/câu · Thử thách phản xạ cực căng!</p>
+            </div>
+          </div>
+          <span className="text-xs font-bold text-orange-600 dark:text-orange-400 group-hover:translate-x-1 transition-transform">Bắt đầu →</span>
+        </Link>
+
+        <Link
+          to="/timeline"
+          className="group relative flex items-center justify-between overflow-hidden rounded-2xl border border-sky-200 dark:border-sky-950/60 bg-gradient-to-r from-sky-500/10 via-indigo-500/5 to-transparent p-4 transition-all hover:border-sky-400 dark:hover:border-sky-700 hover:shadow-md hover:-translate-y-0.5"
+        >
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-500 text-white shadow-sm shadow-sky-500/30 group-hover:scale-105 transition-transform">
+              <CalendarRange size={22} />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-extrabold text-slate-900 dark:text-white text-sm">Trục thời gian sự kiện</span>
+                <span className="rounded-full bg-sky-100 dark:bg-sky-900/50 px-2 py-0.5 text-[10px] font-black text-sky-600 dark:text-sky-400 uppercase tracking-wider">Mới</span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Xâu chuỗi các mốc lịch sử VNR202 theo trình tự năm</p>
+            </div>
+          </div>
+          <span className="text-xs font-bold text-sky-600 dark:text-sky-400 group-hover:translate-x-1 transition-transform">Khám phá →</span>
+        </Link>
+      </div>
 
       {/* 2. Key Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
