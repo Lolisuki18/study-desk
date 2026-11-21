@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AlertCircle, ArrowRight, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb } from 'lucide-react'
+import { AlertCircle, ArrowRight, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb, Sparkles } from 'lucide-react'
 import type { Collection } from '../types'
 import { validateCollection } from '../utils/validate'
 import { isBundledId, refreshDataCollections } from '../data'
@@ -8,6 +8,7 @@ import { useCustomCollections } from '../services/storage/customCollections'
 import { TEMPLATES, downloadJsonFile, type JsonTemplate } from '../services/templates/examples'
 import { Button, Card, ConfirmDialog, Empty, PageHeader, useToast } from '../components/ui'
 import { getContentTypeBadge, getSubjectColor } from '../components/dashboard/CollectionCard'
+import { parseRawText } from '../services/templates/rawParser'
 import { cx } from '../utils'
 
 export default function ImportPage() {
@@ -15,9 +16,16 @@ export default function ImportPage() {
   const nav = useNavigate()
   const { customCollections, add, deleteCollection } = useCustomCollections()
 
-  const [activeTab, setActiveTab] = useState<'upload' | 'templates' | 'manage'>('upload')
+  const [activeTab, setActiveTab] = useState<'raw' | 'upload' | 'templates' | 'manage'>('raw')
   const [selectedTemplate, setSelectedTemplate] = useState<JsonTemplate>(TEMPLATES[0])
   const [copied, setCopied] = useState(false)
+
+  // Smart Raw / AI Text state
+  const [rawTitle, setRawTitle] = useState('')
+  const [rawSubject, setRawSubject] = useState('Lịch sử Đảng')
+  const [rawContent, setRawContent] = useState('')
+  const [rawParsedResult, setRawParsedResult] = useState<Collection | null>(null)
+  const [rawWarnings, setRawWarnings] = useState<string[]>([])
 
   // Upload state
   const [jsonInput, setJsonInput] = useState('')
@@ -78,6 +86,35 @@ export default function ImportPage() {
     }
   }
 
+  const handleParseRaw = () => {
+    try {
+      const res = parseRawText(rawContent, {
+        title: rawTitle || 'Bộ câu hỏi tự nhập',
+        subject: rawSubject || 'Khác',
+      })
+      setRawParsedResult(res.collection)
+      setRawWarnings(res.warnings)
+      toast.info(`Đã nhận diện thành công ${res.itemCount} câu hỏi!`)
+    } catch (err: any) {
+      toast.error(err.message || 'Không thể phân tích văn bản này')
+    }
+  }
+
+  const handleSaveRawCollection = () => {
+    if (!rawParsedResult) return
+    const res = add(rawParsedResult)
+    if (res.ok) {
+      refreshDataCollections()
+      toast.info(`Đã tạo bộ học "${rawParsedResult.title}" với ${rawParsedResult.items.length} câu!`)
+      setRawContent('')
+      setRawTitle('')
+      setRawParsedResult(null)
+      setActiveTab('manage')
+    } else {
+      toast.error(res.errors[0] || 'Lỗi khi lưu bộ học')
+    }
+  }
+
   const handleDelete = (id: string) => {
     deleteCollection(id)
     refreshDataCollections()
@@ -106,6 +143,19 @@ export default function ImportPage() {
 
       {/* Main Tabs */}
       <div className="flex flex-wrap items-center gap-2 border-b border-line pb-3">
+        <button
+          onClick={() => setActiveTab('raw')}
+          className={cx(
+            'flex items-center gap-2 rounded-xl px-4 py-2 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+            activeTab === 'raw'
+              ? 'bg-indigo-600 text-white shadow-xs'
+              : 'border border-line bg-card text-muted hover:text-ink hover:border-slate-300 dark:hover:border-slate-700',
+          )}
+        >
+          <Sparkles size={16} />
+          <span>Nhập văn bản thô / AI</span>
+        </button>
+
         <button
           onClick={() => setActiveTab('upload')}
           className={cx(
@@ -145,6 +195,210 @@ export default function ImportPage() {
           <span>Bộ tự tải lên ({customCollections.length})</span>
         </button>
       </div>
+
+      {/* TAB 0: SMART RAW / AI TEXT IMPORTER */}
+      {activeTab === 'raw' && (
+        <div className="space-y-6">
+          <Card className="p-6 sm:p-8 space-y-5">
+            <div>
+              <div className="flex items-center gap-2 font-extrabold text-base text-ink">
+                <Sparkles size={18} className="text-indigo-600 dark:text-indigo-400" />
+                <span>Trình chuyển đổi văn bản thô / ChatGPT sang Bộ học</span>
+              </div>
+              <p className="mt-1 text-xs text-muted leading-relaxed">
+                Dán nguyên văn câu hỏi copy từ ChatGPT, Word, PDF hoặc tài liệu ôn thi. Parser thông minh sẽ tự động tách câu hỏi, đáp án A-B-C-D và lời giải thích.
+              </p>
+            </div>
+
+            {/* Title & Subject Inputs */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-bold text-ink mb-1.5">Tên bộ câu hỏi:</label>
+                <input
+                  type="text"
+                  value={rawTitle}
+                  onChange={(e) => setRawTitle(e.target.value)}
+                  placeholder="Ví dụ: Ôn thi Lịch sử Đảng chương 2"
+                  className="w-full rounded-xl border border-line bg-card px-3.5 py-2 text-xs font-semibold text-ink placeholder-slate-400 focus:outline-none focus:border-indigo-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-ink mb-1.5">Môn học / Chủ đề:</label>
+                <input
+                  type="text"
+                  value={rawSubject}
+                  onChange={(e) => setRawSubject(e.target.value)}
+                  placeholder="Ví dụ: Lịch sử Đảng, Triết học, Tiếng Anh..."
+                  className="w-full rounded-xl border border-line bg-card px-3.5 py-2 text-xs font-semibold text-ink placeholder-slate-400 focus:outline-none focus:border-indigo-500"
+                />
+              </div>
+            </div>
+
+            {/* Raw Text Textarea */}
+            <div>
+              <div className="flex items-center justify-between mb-1.5">
+                <label className="text-xs font-bold text-ink">Nội dung câu hỏi thô:</label>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const sample = `Câu 1: Đảng Cộng sản Việt Nam ra đời vào ngày tháng năm nào?
+A. 03/02/1930
+B. 19/08/1945
+C. 02/09/1945
+D. 30/04/1975
+Đáp án: A. Giải thích: Hội nghị thành lập Đảng họp tại Cửu Long (Hương Cảng, Trung Quốc) do Nguyễn Ái Quốc chủ trì.
+
+Câu 2: Cơ quan ngôn luận của Hội Việt Nam Cách mạng Thanh niên là tờ báo nào?
+A. Báo Lao động
+B. Báo Nhân dân
+C. Báo Thanh niên
+D. Báo Cứu quốc
+Đáp án: C. Giải thích: Báo Thanh niên do Nguyễn Ái Quốc sáng lập ngày 21/6/1925.`
+                    setRawContent(sample)
+                    setRawTitle('Mẫu thử: Lịch sử Đảng')
+                    setRawSubject('Lịch sử Đảng')
+                  }}
+                  className="text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline font-semibold cursor-pointer"
+                >
+                  Dán nội dung mẫu thử
+                </button>
+              </div>
+
+              <textarea
+                rows={10}
+                value={rawContent}
+                onChange={(e) => {
+                  setRawContent(e.target.value)
+                  setRawParsedResult(null)
+                }}
+                placeholder={`Dán câu hỏi vào đây theo bất kỳ định dạng nào, ví dụ:\n\nCâu 1: Nội dung câu hỏi...\nA. Phương án 1\nB. Phương án 2\nC. Phương án 3\nD. Phương án 4\nĐáp án: A\nGiải thích: Vì lý do...`}
+                className="w-full rounded-2xl border border-line bg-slate-50/70 dark:bg-slate-900/50 p-4 font-mono text-xs text-ink placeholder-slate-400 focus:outline-none focus:border-indigo-500 leading-relaxed"
+              />
+            </div>
+
+            {/* AI Prompt Template Suggestion */}
+            <div className="rounded-2xl border border-indigo-100 dark:border-indigo-900/50 bg-indigo-50/40 dark:bg-indigo-950/20 p-4 text-xs space-y-2">
+              <div className="flex items-center justify-between font-bold text-indigo-800 dark:text-indigo-300">
+                <span className="flex items-center gap-1.5">
+                  <Lightbulb size={14} className="text-amber-500" />
+                  <span>Prompt mẫu chuẩn để nhờ ChatGPT / Gemini tạo đề</span>
+                </span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const prompt = `Hãy soạn 15 câu trắc nghiệm về môn [TÊN MÔN HỌC, CHỦ ĐỀ CỦA BẠN].
+Định dạng mỗi câu như sau:
+Câu [Số]: [Nội dung câu hỏi]
+A. [Phương án A]
+B. [Phương án B]
+C. [Phương án C]
+D. [Phương án D]
+Đáp án: [Chữ cái đáp án đúng]
+Giải thích: [Giải thích ngắn gọn súc tích lý do chọn]`
+                    navigator.clipboard.writeText(prompt)
+                    toast.info('Đã sao chép prompt mẫu vào clipboard!')
+                  }}
+                  className="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
+                >
+                  <Copy size={12} /> Sao chép prompt
+                </button>
+              </div>
+              <p className="text-muted leading-relaxed text-[11px]">
+                Copy prompt trên gửi cho AI, sau đó dán toàn bộ kết quả trả về vào khung trên. Ứng dụng sẽ nạp đề vào máy chỉ trong 1 click!
+              </p>
+            </div>
+
+            {/* Parse Action Button */}
+            <div className="flex justify-end gap-2.5 pt-2 border-t border-line">
+              <Button
+                variant="primary"
+                disabled={!rawContent.trim()}
+                onClick={handleParseRaw}
+                className="py-2.5 px-6 font-bold"
+              >
+                <Sparkles size={16} /> Phân tích văn bản (Parse)
+              </Button>
+            </div>
+          </Card>
+
+          {/* Parsed Preview Area */}
+          {rawParsedResult && (
+            <Card className="p-6 sm:p-8 space-y-4 animate-in fade-in duration-200">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="rounded-full bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 text-xs font-bold text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                      ✓ Phân tích thành công {rawParsedResult.items.length} câu hỏi
+                    </span>
+                    <span className="text-xs text-muted font-medium">({rawParsedResult.contentType})</span>
+                  </div>
+                  <h3 className="text-lg font-extrabold text-ink mt-1.5">{rawParsedResult.title}</h3>
+                </div>
+
+                <Button variant="ok" onClick={handleSaveRawCollection} className="py-2.5 px-6 font-bold shadow-md">
+                  <Check size={16} /> Lưu thành bộ học mới
+                </Button>
+              </div>
+
+              {rawWarnings.length > 0 && (
+                <div className="rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/30 p-3 text-xs text-amber-800 dark:text-amber-300 space-y-1">
+                  <span className="font-bold">Lưu ý khi phân tích:</span>
+                  <ul className="list-disc pl-5 space-y-0.5">
+                    {rawWarnings.map((w, i) => (
+                      <li key={i}>{w}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Question Items Preview */}
+              <div className="space-y-3 max-h-96 overflow-y-auto pr-1">
+                {rawParsedResult.items.map((it, idx) => (
+                  <div key={it.id} className="rounded-2xl border border-line bg-card p-4 space-y-2 text-xs">
+                    <div className="flex items-start gap-2.5">
+                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-[10px] font-bold text-indigo-600 dark:text-indigo-400">
+                        {idx + 1}
+                      </span>
+                      <p className="font-bold text-ink leading-snug">
+                        {it.type === 'multiple-choice' ? it.content.question : it.type === 'true-false' ? it.content.statement : (it.content as any).term}
+                      </p>
+                    </div>
+
+                    {it.type === 'multiple-choice' && (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pl-7.5">
+                        {it.content.options.map((o) => {
+                          const isRight = it.content.answer.includes(o.key)
+                          return (
+                            <div
+                              key={o.key}
+                              className={cx(
+                                'flex items-center gap-2 rounded-xl p-2 border transition-colors',
+                                isRight
+                                  ? 'border-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-200 font-bold'
+                                  : 'border-line text-muted',
+                              )}
+                            >
+                              <span className="font-bold font-mono">[{o.key}]</span>
+                              <span>{o.text}</span>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )}
+
+                    {it.type === 'multiple-choice' && it.content.explanation && (
+                      <div className="pl-7.5 pt-1 text-[11px] text-muted italic">
+                        Giải thích: {it.content.explanation}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </Card>
+          )}
+        </div>
+      )}
 
       {/* TAB 1: UPLOAD ZONE */}
       {activeTab === 'upload' && (
