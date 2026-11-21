@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react'
-import { Command, Keyboard, X } from 'lucide-react'
 import { Modal } from '../ui'
 
 interface ShortcutItem {

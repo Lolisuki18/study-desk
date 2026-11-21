@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Award, Check, ChevronLeft, ChevronRight, Clock, Flag, LayoutGrid, Maximize2, Minimize2, RotateCcw, Sparkles, Star, X, Turtle, Zap, AlertTriangle, PenLine } from 'lucide-react'
+import { Check, ChevronLeft, ChevronRight, Clock, Flag, LayoutGrid, Maximize2, Minimize2, RotateCcw, Sparkles, Star, X, Turtle, Zap, AlertTriangle, PenLine } from 'lucide-react'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { isCorrect, itemResults, KIND_LABEL, type Answer, type Question } from '../../services/quiz/generate'
-import { Button, Card, ConfirmDialog, Modal, ProgressBar } from '../ui'
+import { Button, Card, Modal, ProgressBar } from '../ui'
 import Scratchpad from '../ui/Scratchpad'
 import HighlightableText from '../ui/HighlightableText'
 import { cx, pct } from '../../utils'
@@ -11,6 +11,7 @@ import type { QuizStartOptions } from './QuizSetup'
 import { getCollection } from '../../data'
 import { chapterLabel } from '../../services/quiz/exam'
 import NoteBox from '../ui/NoteBox'
+import AnswerNote from '../ui/AnswerNote'
 import { fireConfetti } from '../../utils/confetti'
 import { playSound } from '../../utils/sound'
 import { playMechSound, playLevelUp, playPerfectScore } from '../../utils/mechSound'
@@ -902,6 +903,7 @@ export default function QuizRunner({
                   Tôi trả lời đúng (cách diễn đạt khác)
                 </button>
               )}
+              {q.kind === 'mc' && <AnswerNote itemKey={`${q.collectionId}::${q.itemId}`} className="mt-3.5" />}
               {q.kind !== 'match' && <NoteBox collectionId={q.collectionId} itemId={q.itemId} className="mt-3.5" />}
             </div>
           )}
