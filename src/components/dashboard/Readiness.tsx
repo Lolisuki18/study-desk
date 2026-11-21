@@ -67,6 +67,13 @@ export default function Readiness() {
                     <span className="w-12 shrink-0 text-right text-xs font-bold text-rose-600 dark:text-rose-400">
                       −{c.lost10} đ
                     </span>
+                    <Link
+                      to={`/drill?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(c.label)}`}
+                      className="shrink-0 rounded-lg bg-indigo-600 px-2 py-1 text-[11px] font-bold text-white transition-colors hover:bg-indigo-700"
+                      title={`Làm bài luyện gồm các câu yếu nhất của ${c.label}`}
+                    >
+                      Luyện
+                    </Link>
                   </li>
                 ))}
               </ul>

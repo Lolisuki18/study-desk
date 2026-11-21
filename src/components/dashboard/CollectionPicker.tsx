@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import { ChevronRight, Layers, Sparkles } from 'lucide-react'
+import { ChevronRight, Sparkles } from 'lucide-react'
 import { collections } from '../../data'
 import { collectionStats, useProgress } from '../../features/learning/ProgressContext'
 import { Card, Empty, ProgressBar } from '../ui'
 import { pct, cx } from '../../utils'
-import { getContentTypeBadge, getSubjectColor } from './CollectionCard'
+import { getContentTypeBadge } from './CollectionCard'
 
 /** Pick a collection (or all) and jump to `${base}/${id}`. Used by Flashcards and Quiz. */
 export default function CollectionPicker({ base, allowAll = true }: { base: string; allowAll?: boolean }) {
