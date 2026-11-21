@@ -181,4 +181,6 @@ export interface BackupFile {
   customCollections?: Collection[]
   /** best Survival score */
   survivalHighScore?: number
+  /** the learner's verdicts on answer keys */
+  answerFlags?: Record<string, { status: 'suspect' | 'verified'; at: string }>
 }

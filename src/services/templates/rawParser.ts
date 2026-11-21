@@ -46,10 +46,10 @@ export function slugify(text: string): string {
 /** Remove Markdown noise (**bold**, `code`, headings, quotes, list bullets in front of questions and options). */
 function clean(line: string): string {
   return line
-    .replace(/ /g, ' ')
+    .replace(/ /g, ' ')
     .replace(/\*\*|__|`/g, '')
     .replace(/^\s*(?:#{1,6}\s+|>\s+)/, '')
-    .replace(/^\s*[-*•–]\s+(?=[(\[]?[A-Ha-h][)\].:]|\d+[.)]|(?:Câu|Question|Bài)\b)/i, '')
+    .replace(/^\s*[-*•–]\s+(?=[([]?[A-Ha-h][)\].:]|\d+[.)]|(?:Câu|Question|Bài)\b)/i, '')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -57,11 +57,11 @@ function clean(line: string): string {
 // ---------------------------------------------------------------------------------------------- line classification
 
 const QSTART = /^(?:(?:Câu(?:\s*hỏi)?|Question|Q|Bài)\s*(\d+)\s*[:.)\-–]?\s*|(\d+)\s*[.)]\s+)(.*)$/i
-const OPTION = /^[(\[]?([A-Ha-h])[)\].:](?:\s+(.*))?$/
+const OPTION = /^[([]?([A-Ha-h])[)\].:](?:\s+(.*))?$/
 const EXPL = /^(?:Giải\s*thích(?:\s*chi\s*tiết)?|Lời\s*giải(?:\s*chi\s*tiết)?|Lý\s*giải|Explanation)\s*[:：.\-–]\s*(.*)$/i
 const EXPL_INLINE = /(?:Giải\s*thích|Lời\s*giải|Explanation)\s*[:：]\s*/i
 const ANSWER_LINE = /^(?:Đáp\s*án(?:\s*(?:đúng|chính\s*xác|là))?|Đ\/A|Answer|Ans|Key|Correct\s*answer)\s*[:：]\s*(.*)$/i
-const ANSWER_NO_COLON = /^Đáp\s*án(?:\s*(?:đúng|chính\s*xác|là))?\s+(?=[(\[]?[A-Ha-h]\b|đúng\b|sai\b)(.*)$/i
+const ANSWER_NO_COLON = /^Đáp\s*án(?:\s*(?:đúng|chính\s*xác|là))?\s+(?=[([]?[A-Ha-h]\b|đúng\b|sai\b)(.*)$/i
 const ANSWER_INLINE = /(?:^|[\s.!?;)])(?:Đáp\s*án(?:\s*(?:đúng|chính\s*xác|là))?|Đ\/A|Answer)\s*[:：]\s*(.+)$/i
 const TF_VALUE = /^(đúng|sai|true|false)\b/i
 const MARK = /[✅✔✓☑]/
@@ -82,12 +82,12 @@ function splitAnswerValue(value: string): { value: string; expl?: string } {
 }
 
 /** An answer written inside a question or option line must at least look like one: a key or Đúng/Sai. */
-const looksLikeAnswer = (v: string) => /^[(\[]?[A-Ha-h]\b/.test(v.trim()) || TF_VALUE.test(v.trim())
+const looksLikeAnswer = (v: string) => /^[([]?[A-Ha-h]\b/.test(v.trim()) || TF_VALUE.test(v.trim())
 
 /** "A. one B. two C. three" on one line → separate options (letters must run A, B, C… in order). */
 function splitInlineOptions(first: { key: string; text: string }): { key: string; text: string }[] {
   const out: { key: string; text: string }[] = []
-  const re = /\s+[(\[]?([B-Ha-h])[)\].:]\s+/g
+  const re = /\s+[([]?([B-Ha-h])[)\].:]\s+/g
   let expected = first.key.toUpperCase().charCodeAt(0) + 1
   let last = 0
   let curKey = first.key
@@ -163,7 +163,7 @@ export function resolveAnswerKeys(raw: string, options: McOption[]): string | nu
 
   // letters: only when they stand alone ("Bác Hồ" or "Cách mạng" must not read as B or C)
   // brackets around letters are noise: "(A)(C)" reads as "A C"
-  const spaced = v.replace(/[()\[\]]/g, ' ').replace(/\s+/g, ' ').trim()
+  const spaced = v.replace(/[()[\]]/g, ' ').replace(/\s+/g, ' ').trim()
   const m = spaced.match(/^([A-Ha-h](?:\s*(?:,|;|\/|&|và|and)?\s*[A-Ha-h])*)(?=$|[\s.:,;])/)
   if (m) {
     const letters = [...new Set(m[1].replace(/[^A-Ha-h]/g, '').toUpperCase())]
@@ -172,7 +172,7 @@ export function resolveAnswerKeys(raw: string, options: McOption[]): string | nu
 
   // the answer written out as text, optionally after its letter: "B. Trần Phú"
   const byText = (s: string): string | null => {
-    const n = norm(s.replace(/^[(\[]?[A-Ha-h][)\].:]\s+/, ''))
+    const n = norm(s.replace(/^[([]?[A-Ha-h][)\].:]\s+/, ''))
     if (!n) return null
     const exact = options.filter((o) => norm(o.text) === n)
     if (exact.length === 1) return exact[0].key
