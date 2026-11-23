@@ -28,6 +28,9 @@ import {
   X,
   Gauge,
   Zap,
+  Award,
+  FileText,
+  Compass,
 } from 'lucide-react'
 import { collections } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
@@ -60,6 +63,10 @@ import { ListeningLab } from '../components/english/ListeningLab'
 import { SpeakingLab } from '../components/english/SpeakingLab'
 import { ReadingLab } from '../components/english/ReadingLab'
 import { WritingLab } from '../components/english/WritingLab'
+import { EssayBankViewer } from '../components/english/EssayBankViewer'
+import { CambridgeBankViewer } from '../components/english/CambridgeBankViewer'
+import { ForecastBankViewer } from '../components/english/ForecastBankViewer'
+import { DictionaryModal } from '../components/english/DictionaryModal'
 
 type HubTab =
   | 'overview'
@@ -67,6 +74,9 @@ type HubTab =
   | 'speaking'
   | 'reading'
   | 'writing'
+  | 'essay-bank'
+  | 'cambridge-bank'
+  | 'forecast-bank'
   | 'dictation'
   | 'collocations'
   | 'speed'
@@ -76,6 +86,8 @@ export default function EnglishPage() {
   const { get } = useProgress()
   const [activeTab, setActiveTab] = useState<HubTab>('overview')
   const [targetBand, setTargetBandState] = useState<IeltsBandTarget>(() => getIeltsTargetBand())
+  const [isDictOpen, setIsDictOpen] = useState(false)
+  const [dictInitialWord, setDictInitialWord] = useState('')
 
   const handleBandChange = (b: IeltsBandTarget) => {
     setTargetBandState(b)
@@ -311,16 +323,32 @@ export default function EnglishPage() {
 
         <div className="relative z-1 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2.5 max-w-xl">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-950/60 px-3 py-1 text-xs font-bold text-indigo-700 dark:text-indigo-300 shadow-2xs">
-              <Languages size={14} className="text-indigo-600 dark:text-indigo-400" />
-              <span>Chuyên mục IELTS & Academic English</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-950/60 px-3 py-1 text-xs font-bold text-indigo-700 dark:text-indigo-300 shadow-2xs">
+                <Languages size={14} className="text-indigo-600 dark:text-indigo-400" />
+                <span>Chuyên mục IELTS & Academic English</span>
+              </div>
+
+              {/* Offline Dictionary Quick Button */}
+              <button
+                type="button"
+                onClick={() => {
+                  setDictInitialWord('')
+                  setIsDictOpen(true)
+                }}
+                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 dark:border-line bg-white/90 dark:bg-card hover:bg-indigo-50 dark:hover:bg-slate-800 px-3 py-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 shadow-2xs transition-all cursor-pointer"
+                title="Mở từ điển tra cứu offline có phiên âm IPA và ví dụ"
+              >
+                <BookA size={14} />
+                <span>Tra từ điển Offline</span>
+              </button>
             </div>
 
             <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-white">
               Trung tâm Luyện thi IELTS Toàn diện 4 Kỹ năng
             </h1>
             <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              Trạm luyện thi chuẩn hóa cả 4 kỹ năng Nghe - Nói - Đọc - Viết: Luyện điền form Section 1, phòng thi nói Cue Card 60s/120s, chuyên đề Đọc True/False/Not Given và phòng Viết chấm từ vựng học thuật AWL.
+              Trạm luyện thi tích hợp tài liệu chuẩn Cambridge 10 - 19, kho bài luận mẫu Task 1 & 2 từ Kaggle/Ngọc Bách, đề Forecast theo quý và từ điển tra cứu offline 100%.
             </p>
 
             {/* Target Band Picker */}
@@ -430,7 +458,49 @@ export default function EnglishPage() {
           </button>
         </div>
 
-        {/* Row 2: Secondary / Supporting Modules */}
+        {/* Row 2: Premium Data Banks (Kaggle Essay Bank, Cambridge 18-19, Forecast Q1-Q2) */}
+        <div className="flex flex-wrap items-center gap-2 pt-1">
+          <button
+            onClick={() => setActiveTab('essay-bank')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer border',
+              activeTab === 'essay-bank'
+                ? 'bg-purple-600 text-white border-purple-600 shadow-xs'
+                : 'border-line bg-card text-purple-700 dark:text-purple-300 hover:border-purple-400'
+            )}
+          >
+            <Award size={14} className={activeTab === 'essay-bank' ? 'text-white' : 'text-purple-500'} />
+            <span>Kho Bài mẫu Writing (Band 7.0 - 8.5)</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('cambridge-bank')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer border',
+              activeTab === 'cambridge-bank'
+                ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                : 'border-line bg-card text-blue-700 dark:text-blue-300 hover:border-blue-400'
+            )}
+          >
+            <FileText size={14} className={activeTab === 'cambridge-bank' ? 'text-white' : 'text-blue-500'} />
+            <span>Đề Cambridge 10-19 & Study4 (Song ngữ)</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('forecast-bank')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer border',
+              activeTab === 'forecast-bank'
+                ? 'bg-amber-600 text-white border-amber-600 shadow-xs'
+                : 'border-line bg-card text-amber-700 dark:text-amber-300 hover:border-amber-400'
+            )}
+          >
+            <Flame size={14} className={activeTab === 'forecast-bank' ? 'text-white' : 'text-amber-500'} />
+            <span>Bộ đề Forecast Quý (HOT)</span>
+          </button>
+        </div>
+
+        {/* Row 3: Secondary / Supporting Modules */}
         <div className="flex flex-wrap items-center gap-1.5 pt-1">
           <button
             onClick={() => setActiveTab('overview')}
@@ -509,6 +579,13 @@ export default function EnglishPage() {
       {activeTab === 'speaking' && <SpeakingLab />}
       {activeTab === 'reading' && <ReadingLab />}
       {activeTab === 'writing' && <WritingLab />}
+
+      {/* ----------------------------------------------------------------------------------------- */}
+      {/* PREMIUM RESOURCE BANKS */}
+      {/* ----------------------------------------------------------------------------------------- */}
+      {activeTab === 'essay-bank' && <EssayBankViewer />}
+      {activeTab === 'cambridge-bank' && <CambridgeBankViewer />}
+      {activeTab === 'forecast-bank' && <ForecastBankViewer />}
 
       {/* ----------------------------------------------------------------------------------------- */}
       {/* TAB: OVERVIEW & 4-SKILL READINESS MATRIX */}
@@ -1105,6 +1182,15 @@ export default function EnglishPage() {
           )}
         </div>
       )}
+
+      {/* ------------------------------------------------------------- */}
+      {/* OFFLINE DICTIONARY MODAL */}
+      {/* ------------------------------------------------------------- */}
+      <DictionaryModal
+        isOpen={isDictOpen}
+        onClose={() => setIsDictOpen(false)}
+        initialQuery={dictInitialWord}
+      />
     </div>
   )
 }
