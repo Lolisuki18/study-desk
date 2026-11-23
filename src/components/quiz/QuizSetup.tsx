@@ -61,7 +61,7 @@ export default function QuizSetup({
     if (qs.length) onStart(qs, mode, { limitSec: mode === 'exam' && limitMin > 0 ? Math.round(limitMin * 60) : undefined, title, collectionId })
   }
 
-  const Seg = ({ v, cur, set, children }: { v: string; cur: string; set: (v: any) => void; children: string }) => (
+  const Seg = <T extends string>({ v, cur, set, children }: { v: T; cur: T; set: (v: T) => void; children: string }) => (
     <button
       onClick={() => set(v)}
       className={cx('rounded-lg border px-3 py-1.5 text-sm', cur === v ? 'border-ink bg-ink text-white' : 'border-line bg-card hover:bg-bg')}

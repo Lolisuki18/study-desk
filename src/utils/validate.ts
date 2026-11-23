@@ -7,13 +7,14 @@ export interface ValidationResult {
 }
 
 const isStr = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0
+type Raw = Record<string, unknown>
 const isStrArr = (v: unknown) => Array.isArray(v) && v.every((x) => typeof x === 'string')
 /** collection ids: lowercase words joined by hyphens, e.g. "triet-hoc-chuong-1" */
 export const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const ITEM_TYPES = ['vocabulary', 'multiple-choice', 'true-false', 'theory', 'programming']
 
 /** Content profile validators: one per item type. Return list of problems. */
-const profiles: Record<string, (c: any) => string[]> = {
+const profiles: Record<string, (c: Raw) => string[]> = {
   vocabulary: (c) => [
     ...(isStr(c.term) ? [] : ['content.term is required']),
     ...(isStr(c.meaning) ? [] : ['content.meaning is required']),
@@ -25,11 +26,12 @@ const profiles: Record<string, (c: any) => string[]> = {
     if (!isStr(c.question)) p.push('content.question is required')
     if (!Array.isArray(c.options) || c.options.length < 2) p.push('content.options needs at least 2 options')
     else {
-      const keys = c.options.map((o: any) => o?.key)
-      if (c.options.some((o: any) => !isStr(o?.key) || !isStr(o?.text))) p.push('every option needs key and text')
+      const opts = c.options as (Raw | null)[]
+      const keys = opts.map((o) => o?.key)
+      if (opts.some((o) => !isStr(o?.key) || !isStr(o?.text))) p.push('every option needs key and text')
       if (new Set(keys).size !== keys.length) p.push('duplicate option keys')
       const ans = typeof c.answer === 'string' ? [...c.answer] : []
-      if (!ans.length || ans.some((k: string) => !keys.includes(k)) || new Set(ans).size !== ans.length)
+      if (!ans.length || ans.some((k) => !keys.includes(k)) || new Set(ans).size !== ans.length)
         p.push(`content.answer "${c.answer}" must be option key(s) ("B", or "AB" for select-all-that-apply)`)
     }
     return p
@@ -62,19 +64,20 @@ export function validateCollection(raw: unknown): ValidationResult {
     return { ok: false, errors, warnings }
   }
   const seen = new Set<string>()
-  c.items.forEach((item: any, i) => {
-    const label = `items[${i}]${item?.id ? ` (${item.id})` : ''}`
-    if (!isStr(item?.id)) return errors.push(`${label}: id is required`)
+  c.items.forEach((raw, i) => {
+    const item = raw as unknown as Raw | null
+    const label = `items[${i}]${item?.id ? ` (${String(item.id)})` : ''}`
+    if (!item || !isStr(item.id)) return errors.push(`${label}: id is required`)
     // progress is stored under "collectionId::itemId", so "::" inside an id would make keys ambiguous
     if (item.id.includes('::')) errors.push(`${label}: id must not contain "::"`)
     if (seen.has(item.id)) errors.push(`${label}: duplicate id`)
     seen.add(item.id)
-    if (!ITEM_TYPES.includes(item.type)) return errors.push(`${label}: unknown type "${item.type}"`)
+    if (typeof item.type !== 'string' || !ITEM_TYPES.includes(item.type)) return errors.push(`${label}: unknown type "${String(item.type)}"`)
     if (c.contentType !== 'mixed' && item.type !== c.contentType)
-      warnings.push(`${label}: type "${item.type}" differs from collection contentType "${c.contentType}"`)
+      warnings.push(`${label}: type "${String(item.type)}" differs from collection contentType "${c.contentType}"`)
     if (!item.content || typeof item.content !== 'object') return errors.push(`${label}: content is required`)
-    for (const p of profiles[item.type](item.content)) errors.push(`${label}: ${p}`)
-    if (item.enrichment && !isStr(item.enrichment.text)) errors.push(`${label}: enrichment.text is required`)
+    for (const p of profiles[item.type](item.content as Raw)) errors.push(`${label}: ${p}`)
+    if (item.enrichment && !isStr((item.enrichment as Raw).text)) errors.push(`${label}: enrichment.text is required`)
   })
   return { ok: errors.length === 0, errors, warnings }
 }

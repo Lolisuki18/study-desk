@@ -22,7 +22,7 @@ export function loadCollections(mods: Record<string, unknown> = modules) {
   const ids = new Set<string>()
   for (const [file, raw] of Object.entries(mods).sort(([a], [b]) => a.localeCompare(b))) {
     const res = validateCollection(raw)
-    const id = (raw as any)?.id as string | undefined
+    const id = (raw as { id?: string } | null)?.id
     const errors = [...res.errors]
     if (id && ids.has(id)) errors.push(`duplicate collection id "${id}"`)
     reports.push({ file: file.replace('./collections/', ''), id, ok: errors.length === 0, errors, warnings: res.warnings })
