@@ -14,12 +14,16 @@ import {
   ChevronRight,
   Flame,
   Award,
+  Layers,
+  Info,
+  Sliders,
 } from 'lucide-react'
 import { Card } from '../ui'
 import { cx } from '../../utils'
 import { speakEnglish, stopSpeaking } from '../../utils/speech'
 import { playSound } from '../../utils/sound'
 import { playMechSound } from '../../utils/mechSound'
+import { haptic } from '../../utils/haptic'
 import {
   SPEAKING_PART1_TOPICS,
   SPEAKING_PART2_CUE_CARDS,
@@ -29,23 +33,13 @@ import {
   type SpeakingPart2CueCard,
 } from '../../services/english/speakingLab'
 
-// Types for SpeechRecognition
 interface IWindowSpeechRecognition extends Window {
   SpeechRecognition?: any
   webkitSpeechRecognition?: any
 }
 
 export function SpeakingLab() {
-  const [activeTab, setActiveTab] = useState<'part1' | 'part2' | 'shadowing'>('part2')
-
-  // -----------------------------------------------------------------------------------------------
-  // PART 1 STATE
-  // -----------------------------------------------------------------------------------------------
-  const [selectedP1Topic, setSelectedP1Topic] = useState<SpeakingPart1Topic>(SPEAKING_PART1_TOPICS[0])
-  const [p1QuestionIdx, setP1QuestionIdx] = useState(0)
-  const [showP1Model, setShowP1Model] = useState(false)
-
-  const curP1Q = selectedP1Topic.questions[p1QuestionIdx]
+  const [activeTab, setActiveTab] = useState<'part2' | 'shadowing' | 'part1'>('part2')
 
   // -----------------------------------------------------------------------------------------------
   // PART 2 CUE CARD STATE
@@ -55,6 +49,7 @@ export function SpeakingLab() {
   const [cueTimeLeft, setCueTimeLeft] = useState(60)
   const [prepNotes, setPrepNotes] = useState('')
   const [cueTimerRunning, setCueTimerRunning] = useState(false)
+  const [selectedVocabHighlight, setSelectedVocabHighlight] = useState<string | null>(null)
   const cueIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const startCuePrep = () => {
@@ -62,6 +57,7 @@ export function SpeakingLab() {
     setCueTimeLeft(60)
     setCueTimerRunning(true)
     playSound('fanfare')
+    haptic('success')
   }
 
   const startCueSpeaking = () => {
@@ -69,6 +65,7 @@ export function SpeakingLab() {
     setCueTimeLeft(120)
     setCueTimerRunning(true)
     playSound('fanfare')
+    haptic('success')
   }
 
   const resetCueCard = () => {
@@ -77,6 +74,7 @@ export function SpeakingLab() {
     setCueTimeLeft(60)
     setCueTimerRunning(false)
     setPrepNotes('')
+    stopSpeaking()
   }
 
   useEffect(() => {
@@ -86,7 +84,6 @@ export function SpeakingLab() {
       setCueTimeLeft((prev) => {
         if (prev <= 1) {
           if (cuePhase === 'prep') {
-            // Auto transition to speaking phase
             playSound('fanfare')
             setCuePhase('speaking')
             return 120
@@ -107,8 +104,12 @@ export function SpeakingLab() {
     }
   }, [cueTimerRunning, cuePhase])
 
+  // Total seconds for current phase (used for circular progress)
+  const totalPhaseSeconds = cuePhase === 'prep' ? 60 : cuePhase === 'speaking' ? 120 : 60
+  const timerProgressPct = Math.max(0, Math.min(100, ((totalPhaseSeconds - cueTimeLeft) / totalPhaseSeconds) * 100))
+
   // -----------------------------------------------------------------------------------------------
-  // SHADOWING & MIC SPEECH RECOGNITION STATE
+  // SHADOWING & MIC STATE
   // -----------------------------------------------------------------------------------------------
   const [micSupported] = useState<boolean>(() => isSpeechRecognitionSupported())
   const [isRecording, setIsRecording] = useState(false)
@@ -148,8 +149,10 @@ export function SpeakingLab() {
         setRecognitionScore(score)
         if (score.accuracy >= 75) {
           playSound('correct')
+          haptic('success')
         } else {
           playSound('wrong')
+          haptic('error')
         }
       }
 
@@ -177,49 +180,74 @@ export function SpeakingLab() {
     }
   }
 
+  // -----------------------------------------------------------------------------------------------
+  // PART 1 STATE
+  // -----------------------------------------------------------------------------------------------
+  const [selectedP1Topic, setSelectedP1Topic] = useState<SpeakingPart1Topic>(SPEAKING_PART1_TOPICS[0])
+  const [p1QuestionIdx, setP1QuestionIdx] = useState(0)
+  const [showP1Model, setShowP1Model] = useState(false)
+
+  const curP1Q = selectedP1Topic.questions[p1QuestionIdx]
+
+  useEffect(() => {
+    return () => {
+      stopSpeaking()
+      if (recognitionRef.current) {
+        try {
+          recognitionRef.current.stop()
+        } catch {}
+      }
+    }
+  }, [])
+
   return (
     <div className="space-y-6">
-      {/* Sub Tabs */}
-      <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-50 dark:bg-slate-900/60 p-2 rounded-2xl border border-line">
-        <div className="flex items-center gap-2">
+      {/* Top Segmented Sub Tabs */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-card p-2 rounded-2xl border border-line shadow-2xs">
+        <div className="flex items-center gap-1.5 p-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-xl overflow-x-auto">
           <button
             onClick={() => setActiveTab('part2')}
             className={cx(
-              'px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap',
               activeTab === 'part2'
-                ? 'bg-indigo-600 text-white shadow-xs'
+                ? 'bg-white dark:bg-card text-indigo-600 dark:text-indigo-400 shadow-xs'
                 : 'text-muted hover:text-ink'
             )}
           >
-            IELTS Part 2 (Phòng thi Cue Card & Đồng hồ 60s/120s)
+            <Clock size={14} />
+            <span>IELTS Part 2 (Cue Card Simulator)</span>
           </button>
+
           <button
             onClick={() => setActiveTab('shadowing')}
             className={cx(
-              'px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap',
               activeTab === 'shadowing'
-                ? 'bg-indigo-600 text-white shadow-xs'
+                ? 'bg-white dark:bg-card text-indigo-600 dark:text-indigo-400 shadow-xs'
                 : 'text-muted hover:text-ink'
             )}
           >
-            Luyện Shadowing & Đo phát âm Mic
+            <Mic size={14} />
+            <span>Shadowing & Mic Recognition</span>
           </button>
+
           <button
             onClick={() => setActiveTab('part1')}
             className={cx(
-              'px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap',
               activeTab === 'part1'
-                ? 'bg-indigo-600 text-white shadow-xs'
+                ? 'bg-white dark:bg-card text-indigo-600 dark:text-indigo-400 shadow-xs'
                 : 'text-muted hover:text-ink'
             )}
           >
-            IELTS Part 1 (Phản xạ câu hỏi thường gặp)
+            <Layers size={14} />
+            <span>IELTS Part 1 (Phản xạ câu hỏi)</span>
           </button>
         </div>
 
         <div className="flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-muted">
-          <Mic size={15} className="text-indigo-600 dark:text-indigo-400" />
-          <span>IELTS Speaking Practice Suite</span>
+          <Mic size={15} className="text-rose-600 dark:text-rose-400" />
+          <span>IELTS Speaking Room</span>
         </div>
       </div>
 
@@ -238,7 +266,7 @@ export function SpeakingLab() {
                   resetCueCard()
                 }}
                 className={cx(
-                  'rounded-xl px-3 py-1.5 text-xs font-bold transition-all cursor-pointer',
+                  'rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer',
                   selectedCueCard.id === card.id
                     ? 'bg-indigo-600 text-white shadow-xs'
                     : 'border border-line bg-card text-muted hover:border-indigo-400'
@@ -249,40 +277,61 @@ export function SpeakingLab() {
             ))}
           </div>
 
-          <Card className="p-6 sm:p-8 space-y-6">
+          <div className="relative overflow-hidden rounded-3xl border-2 border-slate-200 dark:border-line bg-white dark:bg-card p-6 sm:p-8 shadow-sm space-y-6">
             {/* Header & Status Indicator */}
-            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line pb-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-line pb-4">
               <div>
-                <span className="inline-flex items-center gap-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 px-2.5 py-0.5 text-[10px] font-bold text-indigo-700 dark:text-indigo-300 uppercase">
-                  IELTS Speaking Part 2 · {selectedCueCard.bandScore}
-                </span>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-rose-50 dark:bg-rose-950/60 px-3 py-1 text-[10px] font-bold text-rose-700 dark:text-rose-300 uppercase tracking-wider">
+                  <Mic size={13} className="text-rose-600 dark:text-rose-400" />
+                  <span>IELTS Speaking Part 2 · {selectedCueCard.bandScore}</span>
+                </div>
                 <h3 className="mt-1 text-xl font-black text-slate-900 dark:text-white">
                   {selectedCueCard.title}
                 </h3>
               </div>
 
-              {/* Timer Pill */}
+              {/* Animated Countdown Dial */}
               <div className="flex items-center gap-3">
-                <div className="text-right">
-                  <div className="text-[10px] uppercase font-bold text-muted">
-                    {cuePhase === 'prep' && 'Thời gian chuẩn bị'}
-                    {cuePhase === 'speaking' && 'Thời gian nói'}
-                    {cuePhase === 'idle' && 'Chuẩn bị / Nói'}
-                    {cuePhase === 'review' && 'Hoàn thành'}
-                  </div>
-                  <div className={cx(
-                    'font-mono text-2xl font-black',
-                    cueTimeLeft <= 10 && cuePhase !== 'idle' ? 'text-rose-600 animate-pulse' : 'text-indigo-600 dark:text-indigo-400'
-                  )}>
-                    {cuePhase === 'idle' ? '01:00' : `${Math.floor(cueTimeLeft / 60).toString().padStart(2, '0')}:${(cueTimeLeft % 60).toString().padStart(2, '0')}`}
+                <div className="relative flex h-16 w-16 items-center justify-center">
+                  <svg className="h-full w-full -rotate-90" viewBox="0 0 36 36">
+                    <path
+                      className="text-slate-100 dark:text-slate-800"
+                      strokeWidth="3.5"
+                      stroke="currentColor"
+                      fill="none"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path
+                      className={cx(
+                        'transition-all duration-300',
+                        cuePhase === 'prep' && 'text-amber-500',
+                        cuePhase === 'speaking' && (cueTimeLeft <= 15 ? 'text-rose-600' : 'text-indigo-600 dark:text-indigo-400'),
+                        cuePhase === 'idle' && 'text-slate-300 dark:text-slate-600'
+                      )}
+                      strokeDasharray={`${timerProgressPct}, 100`}
+                      strokeWidth="3.5"
+                      strokeLinecap="round"
+                      stroke="currentColor"
+                      fill="none"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                  </svg>
+                  <div className="absolute flex flex-col items-center justify-center font-mono">
+                    <span className="text-xs font-black text-slate-900 dark:text-white">
+                      {Math.floor(cueTimeLeft / 60)}:{(cueTimeLeft % 60).toString().padStart(2, '0')}
+                    </span>
+                    <span className="text-[8px] font-bold uppercase text-muted">
+                      {cuePhase === 'prep' ? 'Chuẩn bị' : cuePhase === 'speaking' ? 'Đang nói' : 'Chờ'}
+                    </span>
                   </div>
                 </div>
 
+                {/* Primary Action Button */}
                 {cuePhase === 'idle' && (
                   <button
                     type="button"
                     onClick={startCuePrep}
-                    className="flex items-center gap-1.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 px-4 py-2.5 text-xs font-bold text-white shadow-md transition-all cursor-pointer"
+                    className="flex items-center gap-2 rounded-2xl bg-indigo-600 hover:bg-indigo-700 px-5 py-3 text-xs font-bold text-white shadow-md shadow-indigo-500/25 transition-all cursor-pointer"
                   >
                     <Play size={15} fill="white" />
                     <span>Bắt đầu 1 phút chuẩn bị</span>
@@ -294,7 +343,7 @@ export function SpeakingLab() {
                     type="button"
                     onClick={resetCueCard}
                     className="p-2.5 rounded-xl border border-line hover:bg-slate-100 dark:hover:bg-slate-800 text-muted transition-colors cursor-pointer"
-                    title="Đặt lại"
+                    title="Đặt lại phiên thi"
                   >
                     <RotateCcw size={16} />
                   </button>
@@ -302,28 +351,40 @@ export function SpeakingLab() {
               </div>
             </div>
 
-            {/* Prompt Box */}
-            <div className="rounded-2xl border-2 border-indigo-200 dark:border-indigo-900 bg-indigo-50/50 dark:bg-indigo-950/20 p-5 space-y-3">
-              <h4 className="text-sm font-extrabold text-indigo-950 dark:text-indigo-200">
+            {/* Authentic Cambridge Candidate Cue Card Frame */}
+            <div className="rounded-3xl border-2 border-indigo-200 dark:border-indigo-900 bg-gradient-to-br from-indigo-50/40 via-white to-sky-50/20 dark:from-indigo-950/20 dark:via-card dark:to-card p-6 space-y-4 shadow-xs">
+              <div className="flex items-center justify-between border-b border-indigo-100 dark:border-indigo-900/60 pb-3">
+                <span className="text-[10px] font-mono font-black uppercase tracking-wider text-indigo-700 dark:text-indigo-400">
+                  CANDIDATE CUE CARD
+                </span>
+                <span className="text-[10px] text-muted">Part 2 Long Turn</span>
+              </div>
+
+              <h4 className="text-base sm:text-lg font-black text-slate-900 dark:text-white leading-snug">
                 {selectedCueCard.cuePrompt}
               </h4>
+
               <div className="text-xs font-bold text-muted">You should say:</div>
-              <ul className="space-y-1 text-xs text-slate-700 dark:text-slate-300 font-medium">
+
+              <div className="space-y-2">
                 {selectedCueCard.bulletPoints.map((bp, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-indigo-500" />
+                  <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-mono text-[10px] font-black mt-0.5">
+                      {i + 1}
+                    </span>
                     <span>{bp}</span>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
 
             {/* Prep Scratchpad (Active during prep or speaking) */}
             {(cuePhase === 'prep' || cuePhase === 'speaking') && (
               <div className="space-y-2 animate-in fade-in">
                 <div className="flex items-center justify-between text-xs">
-                  <span className="font-bold text-slate-700 dark:text-slate-300">
-                    Sổ ghi chú nháp (Scratchpad - Bạn có 60s để ghi từ khóa):
+                  <span className="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                    <Sparkles size={14} className="text-amber-500" />
+                    <span>Sổ ghi chú nháp (Ghi từ khóa chuẩn bị):</span>
                   </span>
                   {cuePhase === 'prep' && (
                     <button
@@ -340,59 +401,77 @@ export function SpeakingLab() {
                   value={prepNotes}
                   onChange={(e) => setPrepNotes(e.target.value)}
                   placeholder="Ghi nhanh từ khóa theo sườn: Mở đầu -> Hoàn cảnh -> Chi tiết chính -> Cảm xúc..."
-                  className="w-full rounded-2xl border-2 border-line bg-card p-3.5 text-xs text-ink outline-none focus:border-indigo-500 font-mono shadow-xs"
+                  className="w-full rounded-2xl border-2 border-line bg-card p-4 text-xs font-mono text-ink outline-none focus:border-indigo-500 shadow-inner"
                 />
               </div>
             )}
 
-            {/* Framework Outline Guide */}
-            <div className="space-y-2">
+            {/* Speaking Framework Guide */}
+            <div className="space-y-2.5">
               <div className="text-xs font-bold uppercase tracking-wider text-muted">
-                Khung sườn triển khai Band 8.0:
+                Khung sườn phát triển ý Band 8.0+:
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {selectedCueCard.frameworkGuide.map((f, i) => (
-                  <div key={i} className="rounded-xl border border-line bg-slate-50 dark:bg-slate-800/60 p-3 text-xs">
-                    <div className="font-bold text-indigo-600 dark:text-indigo-400">{f.part}</div>
-                    <div className="text-muted mt-0.5">{f.prompt}</div>
+                  <div key={i} className="rounded-2xl border border-line bg-slate-50/70 dark:bg-slate-800/40 p-3.5 text-xs space-y-1">
+                    <div className="font-extrabold text-indigo-600 dark:text-indigo-400">{f.part}</div>
+                    <div className="text-slate-600 dark:text-slate-300 leading-relaxed">{f.prompt}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Model Answer (Revealed or available in Review) */}
-            <div className="border-t border-line pt-4 space-y-3">
+            {/* Model Answer & Lexical Inspector */}
+            <div className="border-t border-line pt-5 space-y-4">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-muted">
-                  Bài nói mẫu Band 8.0+ & Giọng đọc bản xứ
+                <span className="text-xs font-bold uppercase tracking-wider text-muted flex items-center gap-1.5">
+                  <Award size={15} className="text-amber-500" />
+                  <span>Bài nói mẫu Band 8.0+</span>
                 </span>
                 <button
                   type="button"
                   onClick={() => speakEnglish(selectedCueCard.modelAnswer, { accent: 'UK', rate: 0.95 })}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-slate-700 px-3 py-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 transition-colors cursor-pointer"
                 >
                   <Volume2 size={15} />
-                  <span>Nghe đọc mẫu UK</span>
+                  <span>Nghe audio mẫu (UK)</span>
                 </button>
               </div>
 
-              <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic bg-slate-50 dark:bg-slate-800/40 p-4 rounded-2xl border border-line">
+              <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic bg-slate-50 dark:bg-slate-800/40 p-4 rounded-2xl border border-line font-serif">
                 "{selectedCueCard.modelAnswer}"
               </p>
 
-              <div className="flex flex-wrap items-center gap-1.5 pt-1">
-                <span className="text-[11px] font-bold text-muted mr-1">Từ vựng ăn điểm:</span>
-                {selectedCueCard.lexicalHighlights.map((w, i) => (
-                  <span
-                    key={i}
-                    className="rounded-lg bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 px-2 py-0.5 text-[10px] font-semibold text-emerald-800 dark:text-emerald-300"
-                  >
-                    {w}
-                  </span>
-                ))}
+              {/* Interactive Lexical Highlights Chips */}
+              <div className="space-y-2">
+                <div className="text-[11px] font-bold text-muted flex items-center gap-1">
+                  <Info size={12} />
+                  <span>Bấm vào từ vựng ăn điểm để nghe phát âm riêng:</span>
+                </div>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  {selectedCueCard.lexicalHighlights.map((w, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => {
+                        setSelectedVocabHighlight(w)
+                        speakEnglish(w, { accent: 'UK' })
+                      }}
+                      className={cx(
+                        'rounded-xl border px-3 py-1 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5',
+                        selectedVocabHighlight === w
+                          ? 'border-indigo-600 bg-indigo-600 text-white shadow-xs'
+                          : 'border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 hover:scale-105'
+                      )}
+                    >
+                      <Volume2 size={12} />
+                      <span>{w}</span>
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
-          </Card>
+          </div>
         </div>
       )}
 
@@ -403,11 +482,11 @@ export function SpeakingLab() {
         <div className="max-w-2xl mx-auto space-y-5">
           <Card className="p-6 sm:p-8 space-y-6">
             <div className="border-b border-line pb-4">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
                 Speech Recognition & Shadowing Lab
               </span>
               <h3 className="text-lg font-black text-slate-900 dark:text-white mt-0.5">
-                Luyện phát âm & Đo độ chính xác qua Mic
+                Luyện phát âm & Đo độ chính xác qua Micro
               </h3>
               <p className="text-xs text-muted mt-1">
                 Nghe câu mẫu chuẩn bản ngữ, sau đó bấm Microphone và đọc to câu tiếng Anh để hệ thống phân tích phát âm trực tiếp.
@@ -418,7 +497,7 @@ export function SpeakingLab() {
             <div className="rounded-2xl border-2 border-indigo-200 dark:border-indigo-900 bg-indigo-50/40 dark:bg-indigo-950/30 p-5 space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-bold uppercase text-indigo-600 dark:text-indigo-400">
-                  Câu mục tiêu:
+                  Câu mục tiêu cần đọc:
                 </span>
                 <button
                   type="button"
@@ -439,21 +518,26 @@ export function SpeakingLab() {
             <div className="py-4 text-center space-y-3">
               {micSupported ? (
                 <div>
-                  <button
-                    type="button"
-                    onClick={isRecording ? stopMicRecording : startMicRecording}
-                    className={cx(
-                      'inline-flex h-20 w-20 items-center justify-center rounded-3xl text-white shadow-lg transition-all hover:scale-105 active:scale-95 cursor-pointer',
-                      isRecording
-                        ? 'bg-rose-600 shadow-rose-500/30 animate-pulse'
-                        : 'bg-gradient-to-tr from-indigo-600 to-indigo-500 shadow-indigo-500/25'
+                  <div className="relative inline-flex items-center justify-center">
+                    {isRecording && (
+                      <div className="absolute -inset-3 rounded-full bg-rose-500/30 blur-md animate-ping" />
                     )}
-                    title={isRecording ? 'Bấm để dừng ghi âm' : 'Bấm để nói'}
-                  >
-                    {isRecording ? <MicOff size={32} /> : <Mic size={32} />}
-                  </button>
+                    <button
+                      type="button"
+                      onClick={isRecording ? stopMicRecording : startMicRecording}
+                      className={cx(
+                        'relative inline-flex h-20 w-20 items-center justify-center rounded-3xl text-white shadow-lg transition-all hover:scale-105 active:scale-95 cursor-pointer',
+                        isRecording
+                          ? 'bg-rose-600 shadow-rose-500/40'
+                          : 'bg-gradient-to-tr from-indigo-600 to-indigo-500 shadow-indigo-500/25'
+                      )}
+                      title={isRecording ? 'Bấm để dừng ghi âm' : 'Bấm để nói'}
+                    >
+                      {isRecording ? <MicOff size={32} /> : <Mic size={32} />}
+                    </button>
+                  </div>
                   <div className="text-xs text-muted font-medium mt-3">
-                    {isRecording ? 'Đang lắng nghe... Hãy đọc to câu trên vào Microphone' : 'Bấm vào Micro và đọc to câu mẫu'}
+                    {isRecording ? 'Đang lắng nghe... Hãy đọc to câu trên vào Micro' : 'Bấm vào Micro và đọc to câu mẫu'}
                   </div>
                 </div>
               ) : (
@@ -469,10 +553,14 @@ export function SpeakingLab() {
                 <div className="flex items-center justify-between text-xs font-bold">
                   <span className="text-muted">Âm thanh máy nhận diện được:</span>
                   {recognitionScore && (
-                    <span className={cx(
-                      'font-black font-mono text-sm',
-                      recognitionScore.accuracy >= 75 ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'
-                    )}>
+                    <span
+                      className={cx(
+                        'font-black font-mono text-sm',
+                        recognitionScore.accuracy >= 75
+                          ? 'text-emerald-600 dark:text-emerald-400'
+                          : 'text-amber-600 dark:text-amber-400'
+                      )}
+                    >
                       Độ chính xác: {recognitionScore.accuracy}%
                     </span>
                   )}

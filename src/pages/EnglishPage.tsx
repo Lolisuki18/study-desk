@@ -26,6 +26,8 @@ import {
   Trophy,
   Volume2,
   X,
+  Gauge,
+  Zap,
 } from 'lucide-react'
 import { collections } from '../data'
 import { useProgress } from '../features/learning/ProgressContext'
@@ -371,16 +373,16 @@ export default function EnglishPage() {
         </div>
       </div>
 
-      {/* 2. Primary 4-Skill Navigation Tabs */}
+      {/* 2. Interactive Navigation Tabs */}
       <div className="space-y-2 border-b border-line pb-3">
         {/* Row 1: The 4 Core Skills */}
         <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={() => setActiveTab('listening')}
             className={cx(
-              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 rounded-2xl px-4 py-2.5 text-xs sm:text-sm font-extrabold transition-all cursor-pointer shadow-2xs',
               activeTab === 'listening'
-                ? 'bg-indigo-600 text-white shadow-xs'
+                ? 'bg-indigo-600 text-white shadow-xs scale-105'
                 : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
             )}
           >
@@ -391,10 +393,10 @@ export default function EnglishPage() {
           <button
             onClick={() => setActiveTab('speaking')}
             className={cx(
-              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 rounded-2xl px-4 py-2.5 text-xs sm:text-sm font-extrabold transition-all cursor-pointer shadow-2xs',
               activeTab === 'speaking'
-                ? 'bg-indigo-600 text-white shadow-xs'
-                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+                ? 'bg-rose-600 text-white shadow-xs scale-105'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-rose-300'
             )}
           >
             <Mic size={16} />
@@ -404,10 +406,10 @@ export default function EnglishPage() {
           <button
             onClick={() => setActiveTab('reading')}
             className={cx(
-              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 rounded-2xl px-4 py-2.5 text-xs sm:text-sm font-extrabold transition-all cursor-pointer shadow-2xs',
               activeTab === 'reading'
-                ? 'bg-indigo-600 text-white shadow-xs'
-                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+                ? 'bg-sky-600 text-white shadow-xs scale-105'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-sky-300'
             )}
           >
             <BookOpen size={16} />
@@ -417,10 +419,10 @@ export default function EnglishPage() {
           <button
             onClick={() => setActiveTab('writing')}
             className={cx(
-              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              'flex items-center gap-2 rounded-2xl px-4 py-2.5 text-xs sm:text-sm font-extrabold transition-all cursor-pointer shadow-2xs',
               activeTab === 'writing'
-                ? 'bg-indigo-600 text-white shadow-xs'
-                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+                ? 'bg-emerald-600 text-white shadow-xs'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-emerald-300'
             )}
           >
             <PenTool size={16} />
@@ -428,12 +430,12 @@ export default function EnglishPage() {
           </button>
         </div>
 
-        {/* Row 2: Secondary / Supporting Tools */}
+        {/* Row 2: Secondary / Supporting Modules */}
         <div className="flex flex-wrap items-center gap-1.5 pt-1">
           <button
             onClick={() => setActiveTab('overview')}
             className={cx(
-              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              'flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
               activeTab === 'overview'
                 ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
                 : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
@@ -446,7 +448,7 @@ export default function EnglishPage() {
           <button
             onClick={() => setActiveTab('dictation')}
             className={cx(
-              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              'flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
               activeTab === 'dictation'
                 ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
                 : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
@@ -459,7 +461,7 @@ export default function EnglishPage() {
           <button
             onClick={() => setActiveTab('collocations')}
             className={cx(
-              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              'flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
               activeTab === 'collocations'
                 ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
                 : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
@@ -472,7 +474,7 @@ export default function EnglishPage() {
           <button
             onClick={() => setActiveTab('speed')}
             className={cx(
-              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              'flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
               activeTab === 'speed'
                 ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
                 : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
@@ -488,7 +490,7 @@ export default function EnglishPage() {
               setMistakesList(getSpellingMistakes())
             }}
             className={cx(
-              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              'flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
               activeTab === 'mistakes'
                 ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
                 : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
@@ -509,10 +511,104 @@ export default function EnglishPage() {
       {activeTab === 'writing' && <WritingLab />}
 
       {/* ----------------------------------------------------------------------------------------- */}
-      {/* TAB: OVERVIEW & COLLECTIONS */}
+      {/* TAB: OVERVIEW & 4-SKILL READINESS MATRIX */}
       {/* ----------------------------------------------------------------------------------------- */}
       {activeTab === 'overview' && (
         <div className="space-y-6">
+          {/* 4-Skill Readiness Matrix */}
+          <div className="space-y-3">
+            <h2 className="text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+              <Zap size={18} className="text-amber-500" />
+              <span>Phòng luyện 4 Kỹ năng Chuyên sâu:</span>
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {/* Skill 1: Listening */}
+              <button
+                type="button"
+                onClick={() => setActiveTab('listening')}
+                className="group relative overflow-hidden rounded-3xl border-2 border-indigo-100 dark:border-indigo-900/60 bg-gradient-to-br from-indigo-50/60 to-white dark:from-slate-900 dark:to-card p-5 text-left transition-all hover:-translate-y-1 hover:shadow-md hover:border-indigo-400 cursor-pointer"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                  <Headphones size={20} />
+                </div>
+                <h3 className="mt-3.5 text-base font-black text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors">
+                  Kỹ năng Nghe
+                </h3>
+                <p className="mt-1 text-xs text-muted leading-relaxed line-clamp-2">
+                  Điền form Section 1 số/tên/ngày tháng & chép chính tả câu học thuật.
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+                  <span>Vào phòng Nghe</span>
+                  <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </button>
+
+              {/* Skill 2: Speaking */}
+              <button
+                type="button"
+                onClick={() => setActiveTab('speaking')}
+                className="group relative overflow-hidden rounded-3xl border-2 border-rose-100 dark:border-rose-900/60 bg-gradient-to-br from-rose-50/60 to-white dark:from-slate-900 dark:to-card p-5 text-left transition-all hover:-translate-y-1 hover:shadow-md hover:border-rose-400 cursor-pointer"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-600 text-white shadow-md shadow-rose-500/20 group-hover:scale-105 transition-transform">
+                  <Mic size={20} />
+                </div>
+                <h3 className="mt-3.5 text-base font-black text-slate-900 dark:text-white group-hover:text-rose-600 transition-colors">
+                  Kỹ năng Nói
+                </h3>
+                <p className="mt-1 text-xs text-muted leading-relaxed line-clamp-2">
+                  Phòng thi Cue Card 60s/120s, bài mẫu Band 8.0 & đo phát âm qua Micro.
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-xs font-bold text-rose-600 dark:text-rose-400">
+                  <span>Vào phòng Nói</span>
+                  <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </button>
+
+              {/* Skill 3: Reading */}
+              <button
+                type="button"
+                onClick={() => setActiveTab('reading')}
+                className="group relative overflow-hidden rounded-3xl border-2 border-sky-100 dark:border-sky-900/60 bg-gradient-to-br from-sky-50/60 to-white dark:from-slate-900 dark:to-card p-5 text-left transition-all hover:-translate-y-1 hover:shadow-md hover:border-sky-400 cursor-pointer"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-sky-600 text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                  <BookOpen size={20} />
+                </div>
+                <h3 className="mt-3.5 text-base font-black text-slate-900 dark:text-white group-hover:text-sky-600 transition-colors">
+                  Kỹ năng Đọc
+                </h3>
+                <p className="mt-1 text-xs text-muted leading-relaxed line-clamp-2">
+                  Chuyên đề True/False/Not Given & Đo tốc độ đọc Words Per Minute (WPM).
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-xs font-bold text-sky-600 dark:text-sky-400">
+                  <span>Vào phòng Đọc</span>
+                  <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </button>
+
+              {/* Skill 4: Writing */}
+              <button
+                type="button"
+                onClick={() => setActiveTab('writing')}
+                className="group relative overflow-hidden rounded-3xl border-2 border-emerald-100 dark:border-emerald-900/60 bg-gradient-to-br from-emerald-50/60 to-white dark:from-slate-900 dark:to-card p-5 text-left transition-all hover:-translate-y-1 hover:shadow-md hover:border-emerald-400 cursor-pointer"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                  <PenTool size={20} />
+                </div>
+                <h3 className="mt-3.5 text-base font-black text-slate-900 dark:text-white group-hover:text-emerald-600 transition-colors">
+                  Kỹ năng Viết
+                </h3>
+                <p className="mt-1 text-xs text-muted leading-relaxed line-clamp-2">
+                  Phòng viết Essay Task 1 & 2, đếm từ, quét từ học thuật AWL & sửa từ yếu.
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                  <span>Vào phòng Viết</span>
+                  <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </button>
+            </div>
+          </div>
+
           {/* Quick Flashcard Link for All English */}
           <Link to="/flashcards/oxford-ielts-core" className="block group">
             <div className="relative overflow-hidden rounded-3xl border border-indigo-100/90 dark:border-indigo-900/50 bg-gradient-to-br from-indigo-50/80 via-white to-sky-50/40 dark:from-slate-900/90 dark:via-slate-900 dark:to-indigo-950/40 p-5 sm:p-6 shadow-[0_4px_20px_rgba(99,102,241,0.06)] dark:shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-800">
@@ -540,59 +636,65 @@ export default function EnglishPage() {
           </Link>
 
           {/* IELTS Collections Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {englishCols.map((c) => (
-              <Card
-                key={c.id}
-                className="flex flex-col justify-between p-5 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all hover:-translate-y-1 hover:shadow-md"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/60 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
-                      {c.contentType === 'vocabulary' ? 'Từ vựng' : 'Trắc nghiệm'}
-                    </span>
-                    <span className="text-xs font-mono font-semibold text-muted">
-                      {c.items.length} mục
-                    </span>
+          <div className="space-y-3">
+            <h2 className="text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+              <Layers size={18} className="text-indigo-600 dark:text-indigo-400" />
+              <span>Kho Bộ đề Từ vựng & Collocations:</span>
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {englishCols.map((c) => (
+                <Card
+                  key={c.id}
+                  className="flex flex-col justify-between p-5 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all hover:-translate-y-1 hover:shadow-md"
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/60 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
+                        {c.contentType === 'vocabulary' ? 'Từ vựng' : 'Trắc nghiệm'}
+                      </span>
+                      <span className="text-xs font-mono font-semibold text-muted">
+                        {c.items.length} mục
+                      </span>
+                    </div>
+
+                    <h3 className="text-base font-extrabold text-slate-900 dark:text-white leading-snug">
+                      {c.title}
+                    </h3>
+                    <p className="mt-1.5 text-xs text-muted leading-relaxed line-clamp-3">
+                      {c.description}
+                    </p>
                   </div>
 
-                  <h3 className="text-base font-extrabold text-slate-900 dark:text-white leading-snug">
-                    {c.title}
-                  </h3>
-                  <p className="mt-1.5 text-xs text-muted leading-relaxed line-clamp-3">
-                    {c.description}
-                  </p>
-                </div>
+                  <div className="mt-5 pt-3.5 border-t border-line/60 flex items-center justify-between gap-2">
+                    <Link
+                      to={`/flashcards/${c.id}`}
+                      className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                    >
+                      <span>Lật thẻ</span>
+                      <ArrowRight size={13} />
+                    </Link>
 
-                <div className="mt-5 pt-3.5 border-t border-line/60 flex items-center justify-between gap-2">
-                  <Link
-                    to={`/flashcards/${c.id}`}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
-                  >
-                    <span>Lật thẻ</span>
-                    <ArrowRight size={13} />
-                  </Link>
-
-                  <Link
-                    to={`/quiz/${c.id}`}
-                    className="inline-flex items-center gap-1 rounded-lg border border-slate-200 dark:border-line px-2.5 py-1 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
-                  >
-                    <span>Trắc nghiệm</span>
-                  </Link>
-                </div>
-              </Card>
-            ))}
+                    <Link
+                      to={`/quiz/${c.id}`}
+                      className="inline-flex items-center gap-1 rounded-lg border border-slate-200 dark:border-line px-2.5 py-1 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                    >
+                      <span>Trắc nghiệm</span>
+                    </Link>
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       )}
 
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {/* TAB: VOCABULARY DICTATION */}
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {activeTab === 'dictation' && (
         <div className="max-w-2xl mx-auto space-y-5">
           <Card className="p-6 sm:p-8 space-y-6">
-            {/* Top Toolbar in Dictation */}
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
               <div className="flex items-center gap-2">
                 <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-indigo-50 dark:bg-indigo-950/60 font-mono text-xs font-black text-indigo-600 dark:text-indigo-400">
@@ -609,7 +711,6 @@ export default function EnglishPage() {
                 )}
               </div>
 
-              {/* Accent & Speed controls */}
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setDictAccent((a) => (a === 'US' ? 'UK' : 'US'))}
@@ -634,7 +735,6 @@ export default function EnglishPage() {
               </div>
             </div>
 
-            {/* Main Audio Speaker Action */}
             <div className="py-4 text-center space-y-3">
               <button
                 type="button"
@@ -650,7 +750,6 @@ export default function EnglishPage() {
               </div>
             </div>
 
-            {/* Hint & Meaning Info */}
             <div className="rounded-2xl border border-slate-100 dark:border-line bg-slate-50/70 dark:bg-slate-800/40 p-4 space-y-1.5 text-center">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
                 Nghĩa từ vựng
@@ -670,7 +769,6 @@ export default function EnglishPage() {
               </div>
             </div>
 
-            {/* Spelling Input Form */}
             <div className="space-y-3">
               <div className="flex gap-2">
                 <input
@@ -707,7 +805,6 @@ export default function EnglishPage() {
                 </button>
               </div>
 
-              {/* Feedback & Letter-Level Diff Result */}
               {dictStatus === 'correct' && (
                 <div className="rounded-2xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50 dark:bg-emerald-950/40 p-4 text-center animate-in fade-in">
                   <div className="text-sm font-black text-emerald-700 dark:text-emerald-300 flex items-center justify-center gap-1.5">
@@ -727,7 +824,6 @@ export default function EnglishPage() {
                     <span className="font-mono text-[10px]">Đáp án: {curVocab?.term}</span>
                   </div>
 
-                  {/* Visual Letter Diff */}
                   <div className="flex flex-wrap items-center justify-center gap-1.5 py-1">
                     {dictDiff.map((part, i) => (
                       <span
@@ -756,7 +852,6 @@ export default function EnglishPage() {
                 </div>
               )}
 
-              {/* Peek Hint button */}
               <div className="flex items-center justify-between pt-1">
                 <button
                   type="button"
@@ -780,9 +875,9 @@ export default function EnglishPage() {
         </div>
       )}
 
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {/* TAB: COLLOCATIONS BROWSER */}
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {activeTab === 'collocations' && (
         <div className="space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -845,9 +940,9 @@ export default function EnglishPage() {
         </div>
       )}
 
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {/* TAB: 60-SECOND VOCABULARY SPRINT */}
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {activeTab === 'speed' && (
         <div className="max-w-xl mx-auto space-y-6">
           <Card className="p-6 sm:p-8 space-y-6 text-center">
@@ -864,7 +959,6 @@ export default function EnglishPage() {
               </p>
             </div>
 
-            {/* Score & Timer HUD */}
             <div className="grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-line bg-slate-50 dark:bg-slate-800 p-3">
                 <div className="text-[10px] font-bold uppercase text-muted">Thời gian</div>
@@ -908,7 +1002,6 @@ export default function EnglishPage() {
               </div>
             ) : (
               <div className="space-y-5 animate-in fade-in">
-                {/* Word Prompt */}
                 <div className="py-3">
                   <div className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 dark:text-white">
                     {sprintCur?.word}
@@ -920,7 +1013,6 @@ export default function EnglishPage() {
                   )}
                 </div>
 
-                {/* 4 Choices */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {sprintCur?.options.map((opt, i) => (
                     <button
@@ -939,9 +1031,9 @@ export default function EnglishPage() {
         </div>
       )}
 
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {/* TAB: SPELLING MISTAKES LIST */}
-      {/* ----------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------- */}
       {activeTab === 'mistakes' && (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
