@@ -66,3 +66,21 @@ export function getTextToSpeak(item: Item, back: boolean): string {
   }
   return ''
 }
+
+export function getHintText(item: Item): string {
+  if (item.type === 'multiple-choice') {
+    const keys = [...item.content.answer].join(', ')
+    const expSnippet = item.content.explanation ? ` · ${item.content.explanation.split('.')[0]}` : ''
+    return `Đáp án thuộc nhóm [ ${keys} ]${expSnippet}`
+  }
+  if (item.type === 'vocabulary') {
+    return `Bắt đầu bằng "${item.content.meaning.slice(0, 4)}..." (${item.content.partOfSpeech || 'Từ vựng'})`
+  }
+  if (item.type === 'true-false') {
+    return 'Gợi ý: Đọc kỹ mốc thời gian hoặc từ ngữ khẳng định/phủ định trong mệnh đề.'
+  }
+  if (item.type === 'theory') {
+    return `Khái niệm liên quan đến: "${item.content.definition.slice(0, 30)}..."`
+  }
+  return 'Hãy nhớ lại các ý chính đã học trong giáo trình.'
+}
