@@ -193,32 +193,32 @@ export default function CollectionPicker({ base, allowAll = true }: Props) {
       {/* 2. Hero All-in-One Comprehensive Practice Card */}
       {allowAll && (
         <Link to={`${base}/all`} className="block group">
-          <div className="relative overflow-hidden rounded-3xl border border-indigo-200/90 dark:border-indigo-900/60 bg-gradient-to-br from-indigo-600 via-indigo-700 to-indigo-900 p-5 sm:p-6 text-white shadow-lg shadow-indigo-500/15 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25">
+          <div className="relative overflow-hidden rounded-3xl border border-indigo-100/90 dark:border-indigo-900/50 bg-gradient-to-br from-indigo-50/80 via-white to-sky-50/40 dark:from-slate-900/90 dark:via-slate-900 dark:to-indigo-950/40 p-5 sm:p-6 shadow-[0_4px_20px_rgba(99,102,241,0.06)] dark:shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-800">
             {/* Ambient Background Glows */}
-            <div className="pointer-events-none absolute -right-12 -top-12 h-44 w-44 rounded-full bg-white/10 blur-2xl" />
-            <div className="pointer-events-none absolute -left-12 -bottom-12 h-36 w-36 rounded-full bg-sky-400/20 blur-2xl" />
+            <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-indigo-400/10 dark:bg-indigo-500/10 blur-3xl" />
+            <div className="pointer-events-none absolute -left-12 -bottom-12 h-48 w-48 rounded-full bg-sky-400/10 dark:bg-sky-500/10 blur-2xl" />
 
             <div className="relative z-1 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-start sm:items-center gap-3.5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md text-white shadow-inner group-hover:scale-105 transition-transform">
-                  <Sparkles size={24} />
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                  <Sparkles size={22} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-lg sm:text-xl font-black tracking-tight text-white">
+                    <h2 className="text-lg sm:text-xl font-black tracking-tight text-slate-900 dark:text-white">
                       Tất cả bộ học (Ôn luyện toàn diện)
                     </h2>
-                    <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider backdrop-blur-md">
+                    <span className="inline-flex items-center rounded-full border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-950/60 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-indigo-700 dark:text-indigo-300 shadow-2xs">
                       Toàn kho đề
                     </span>
                   </div>
-                  <p className="mt-1 text-xs sm:text-sm text-indigo-100/90 leading-relaxed max-w-xl">
-                    Trộn toàn bộ <b>{summary.items.toLocaleString()}</b> câu hỏi từ <b>{summary.collections}</b> bộ học để luyện phản xạ ngẫu nhiên không giới hạn theo từng chương.
+                  <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                    Trộn toàn bộ <b className="text-slate-900 dark:text-white font-bold">{summary.items.toLocaleString()}</b> câu hỏi từ <b className="text-slate-900 dark:text-white font-bold">{summary.collections}</b> bộ học để luyện phản xạ ngẫu nhiên không giới hạn theo từng chương.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2 self-start sm:self-center shrink-0 rounded-2xl bg-white px-5 py-2.5 text-xs font-extrabold text-indigo-900 shadow-sm transition-all group-hover:bg-indigo-50 group-hover:translate-x-1">
+              <div className="flex items-center gap-2 self-start sm:self-center shrink-0 rounded-2xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-bold shadow-md shadow-indigo-500/25 transition-all group-hover:shadow-lg group-hover:shadow-indigo-500/35 group-hover:translate-x-0.5">
                 <span>{isFlashcard ? 'Lật thẻ toàn bộ' : 'Bắt đầu làm bài'}</span>
                 <ArrowRight size={15} />
               </div>
