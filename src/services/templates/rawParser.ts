@@ -396,7 +396,7 @@ export function parseRawText(
 
 // ---------------------------------------------------------------------------------------------- glossary mode
 
-/** Text with no options and no answers: "Term: meaning" or "Term - meaning" per entry (entries split by blank lines). */
+/** Text with no options and no answers: "Term: meaning", "Word /IPA/ (type): meaning", or multiline blocks. */
 function parseVocabulary(lines: string[], warnings: string[]): Item[] {
   const hasBlank = lines.some((l) => !l)
   const blocks: string[][] = []
@@ -415,15 +415,156 @@ function parseVocabulary(lines: string[], warnings: string[]): Item[] {
 
   const items: Item[] = []
   blocks.forEach((b, i) => {
-    const m = b[0].match(/^(.{1,70}?)\s*(?::|\s[-–—]\s)\s*(.+)$/)
-    if (!m || /\?\s*$/.test(m[1])) {
-      warnings.push(`Mục ${i + 1} (${snippet(b[0])}): không có dạng "Thuật ngữ: giải nghĩa", đã bỏ qua.`)
+    let term = ''
+    let meaning = ''
+    let pronunciation: string | undefined
+    let partOfSpeech: string | undefined
+    let example: string | undefined
+    let translation: string | undefined
+    const collocations: string[] = []
+    const synonyms: string[] = []
+
+    const firstLine = b[0]
+
+    // Check if block has key-value pairs
+    const isLabeled = b.some((l) => /^(?:Word|Term|Từ|Meaning|Nghĩa|Định nghĩa)\s*[:：]/i.test(l))
+    if (isLabeled) {
+      for (const line of b) {
+        let m = line.match(/^(?:Word|Term|Từ\s*vựng|Thuật\s*ngữ)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          term = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:Meaning|Nghĩa|Ý\s*nghĩa|Định\s*nghĩa)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          meaning = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:IPA|Pronunciation|Phát\s*âm|Phiên\s*âm)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          pronunciation = m[1].trim()
+          if (!pronunciation.startsWith('/')) pronunciation = `/${pronunciation}/`
+          continue
+        }
+        m = line.match(/^(?:Type|Part\s*of\s*Speech|Từ\s*loại)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          partOfSpeech = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:Example|Ví\s*dụ|Ex)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          example = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:Translation|Dịch|Bản\s*dịch)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          translation = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:Collocations?|Cụm\s*từ)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          collocations.push(...m[1].split(/[,;·•]/).map((s) => s.trim()).filter(Boolean))
+          continue
+        }
+        m = line.match(/^(?:Synonyms?|Đồng\s*nghĩa|Từ\s*đồng\s*nghĩa)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          synonyms.push(...m[1].split(/[,;·•]/).map((s) => s.trim()).filter(Boolean))
+          continue
+        }
+      }
+    } else {
+      // Inline formats
+      const tabParts = firstLine.split('\t').map((s) => s.trim()).filter(Boolean)
+      if (tabParts.length >= 2) {
+        term = tabParts[0]
+        if (tabParts.length === 2) {
+          meaning = tabParts[1]
+        } else if (tabParts.length === 3) {
+          if (tabParts[1].startsWith('/') || tabParts[1].startsWith('[')) {
+            pronunciation = tabParts[1]
+            meaning = tabParts[2]
+          } else {
+            partOfSpeech = tabParts[1]
+            meaning = tabParts[2]
+          }
+        } else {
+          pronunciation = tabParts[1]
+          partOfSpeech = tabParts[2]
+          meaning = tabParts[3]
+        }
+      } else {
+        const m = firstLine.match(/^(.{1,70}?)\s*(?::|\s[-–—]\s|\t)\s*(.+)$/)
+        if (!m || /\?\s*$/.test(m[1])) {
+          warnings.push(`Mục ${i + 1} (${snippet(firstLine)}): không có dạng "Thuật ngữ: giải nghĩa", đã bỏ qua.`)
+          return
+        }
+
+        let rawTerm = m[1].trim()
+        meaning = m[2].trim()
+
+        const ipaMatch = rawTerm.match(/[/\[]([^\/\]]+)[/\]]/)
+        if (ipaMatch) {
+          pronunciation = `/${ipaMatch[1].trim()}/`
+          rawTerm = rawTerm.replace(ipaMatch[0], '').trim()
+        }
+
+        const posMatch = rawTerm.match(/\(([^)]+)\)/)
+        if (posMatch) {
+          partOfSpeech = posMatch[1].trim()
+          rawTerm = rawTerm.replace(posMatch[0], '').trim()
+        }
+
+        term = rawTerm
+      }
+
+      // Remaining lines in block for additional fields
+      for (const line of b.slice(1)) {
+        let m = line.match(/^(?:Example|Ví\s*dụ|Ex)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          example = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:Translation|Dịch|Bản\s*dịch)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          translation = m[1].trim()
+          continue
+        }
+        m = line.match(/^(?:Collocations?|Cụm\s*từ)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          collocations.push(...m[1].split(/[,;·•]/).map((s) => s.trim()).filter(Boolean))
+          continue
+        }
+        m = line.match(/^(?:Synonyms?|Đồng\s*nghĩa|Từ\s*đồng\s*nghĩa)\s*[:：]\s*(.+)$/i)
+        if (m) {
+          synonyms.push(...m[1].split(/[,;·•]/).map((s) => s.trim()).filter(Boolean))
+          continue
+        }
+        if (!example) {
+          example = line.trim()
+        } else if (!translation) {
+          translation = line.trim()
+        }
+      }
+    }
+
+    if (!term || !meaning) {
+      warnings.push(`Mục ${i + 1} (${snippet(firstLine)}): thiếu từ hoặc nghĩa, đã bỏ qua.`)
       return
     }
+
     items.push({
       id: `v-${String(items.length + 1).padStart(3, '0')}`,
       type: 'vocabulary',
-      content: { term: m[1].trim(), meaning: m[2].trim(), example: b.slice(1).join(' ').trim() || undefined },
+      content: {
+        term,
+        meaning,
+        pronunciation: pronunciation || undefined,
+        partOfSpeech: partOfSpeech || undefined,
+        example: example || undefined,
+        translation: translation || undefined,
+        collocations: collocations.length ? collocations : undefined,
+        synonyms: synonyms.length ? synonyms : undefined,
+      },
     })
   })
   return items

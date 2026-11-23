@@ -33,8 +33,9 @@ describe('bundled collections', () => {
 
 describe('quiz generation', () => {
   it('multiple-choice content only yields multiple choice', () => {
-    expect(availableKinds(allEntries())).toEqual(['mc'])
-    const qs = buildQuiz(allEntries(), { count: 10, kinds: ['mc'], randomize: true })
+    const mcEntries = allEntries().filter((e) => e.item.type === 'multiple-choice')
+    expect(availableKinds(mcEntries)).toEqual(['mc'])
+    const qs = buildQuiz(mcEntries, { count: 10, kinds: ['mc'], randomize: true })
     expect(qs).toHaveLength(10)
     expect(qs.every((q) => q.kind === 'mc')).toBe(true)
   })

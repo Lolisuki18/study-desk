@@ -244,12 +244,13 @@ export default function ImportPage() {
 
             {/* Raw Text Textarea */}
             <div>
-              <div className="flex items-center justify-between mb-1.5">
-                <label className="text-xs font-bold text-ink">Nội dung câu hỏi thô:</label>
-                <button
-                  type="button"
-                  onClick={() => {
-                    const sample = `Câu 1: Đảng Cộng sản Việt Nam ra đời vào ngày tháng năm nào?
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                <label className="text-xs font-bold text-ink">Nội dung câu hỏi hoặc danh sách từ vựng:</label>
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const sample = `Câu 1: Đảng Cộng sản Việt Nam ra đời vào ngày tháng năm nào?
 A. 03/02/1930
 B. 19/08/1945
 C. 02/09/1945
@@ -262,14 +263,44 @@ B. Báo Nhân dân
 C. Báo Thanh niên
 D. Báo Cứu quốc
 Đáp án: C. Giải thích: Báo Thanh niên do Nguyễn Ái Quốc sáng lập ngày 21/6/1925.`
-                    setRawContent(sample)
-                    setRawTitle('Mẫu thử: Lịch sử Đảng')
-                    setRawSubject('Mẫu thử')
-                  }}
-                  className="text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline font-semibold cursor-pointer"
-                >
-                  Dán nội dung mẫu thử
-                </button>
+                      setRawContent(sample)
+                      setRawTitle('Mẫu thử: Lịch sử Đảng')
+                      setRawSubject('Mẫu thử')
+                    }}
+                    className="text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline font-semibold cursor-pointer"
+                  >
+                    Mẫu trắc nghiệm
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const sampleVocab = `ubiquitous /juːˈbɪk.wə.təs/ (adj): phổ biến, có mặt khắp nơi
+Ví dụ: Smartphones are ubiquitous in modern society.
+Dịch: Điện thoại thông minh có mặt khắp nơi trong xã hội hiện đại.
+Collocations: ubiquitous presence, ubiquitous technology
+Synonyms: omnipresent, pervasive
+
+resilient /rɪˈzɪl.jənt/ (adj): kiên cường, có khả năng phục hồi nhanh
+Ví dụ: Local communities have been remarkably resilient.
+Dịch: Các cộng đồng địa phương đã tỏ ra kiên cường đáng kinh ngạc.
+Collocations: highly resilient, resilient economy
+Synonyms: adaptable, flexible, tough
+
+pragmatic /præɡˈmæt.ɪk/ (adj): thực tế, thực dụng
+Ví dụ: We need to adopt a pragmatic approach to this problem.
+Dịch: Chúng ta cần áp dụng một cách tiếp cận thực tế cho vấn đề này.
+Collocations: pragmatic approach, pragmatic solution
+Synonyms: practical, realistic`
+                      setRawContent(sampleVocab)
+                      setRawTitle('Từ vựng Tiếng Anh Cốt lõi (Mẫu thử)')
+                      setRawSubject('Tiếng Anh')
+                    }}
+                    className="text-[11px] text-emerald-600 dark:text-emerald-400 hover:underline font-semibold cursor-pointer"
+                  >
+                    Mẫu từ vựng Tiếng Anh
+                  </button>
+                </div>
               </div>
 
               <textarea

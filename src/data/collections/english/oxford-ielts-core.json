@@ -1,0 +1,412 @@
+{
+  "id": "oxford-ielts-core",
+  "title": "Tiếng Anh: Từ vựng IELTS & Academic cốt lõi",
+  "subject": "Tiếng Anh",
+  "contentType": "vocabulary",
+  "description": "Bộ từ vựng tiếng Anh học thuật & IELTS thiết yếu kèm phát âm IPA, giọng đọc US/UK, câu ví dụ và collocations chuẩn xác.",
+  "source": {
+    "document": "Oxford 3000 & Academic Word List (AWL)"
+  },
+  "items": [
+    {
+      "id": "ielts-core-001",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 1" },
+      "content": {
+        "term": "ubiquitous",
+        "meaning": "phổ biến, có mặt khắp nơi cùng một lúc",
+        "pronunciation": "/juːˈbɪk.wə.təs/",
+        "partOfSpeech": "adjective",
+        "example": "Smartphones have become ubiquitous in modern urban environments.",
+        "translation": "Điện thoại thông minh đã trở nên phổ biến ở khắp mọi nơi trong môi trường đô thị hiện đại.",
+        "collocations": ["ubiquitous presence", "ubiquitous influence", "ubiquitous technology"],
+        "synonyms": ["omnipresent", "pervasive", "everywhere"]
+      },
+      "enrichment": {
+        "text": "Bắt nguồn từ tiếng Latin 'ubique' có nghĩa là 'mọi nơi'. Trong bài thi IELTS Writing Task 2, từ này thường được dùng thay cho cụm từ đơn giản 'very common'.",
+        "confidence": "verified",
+        "reference": "Oxford Advanced Learner's Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-002",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 1" },
+      "content": {
+        "term": "resilient",
+        "meaning": "kiên cường, có khả năng phục hồi nhanh sau khó khăn",
+        "pronunciation": "/rɪˈzɪl.jənt/",
+        "partOfSpeech": "adjective",
+        "example": "Local communities have shown that they are remarkably resilient in the face of economic hardship.",
+        "translation": "Các cộng đồng địa phương đã cho thấy họ kiên cường đáng kinh ngạc trước những khó khăn kinh tế.",
+        "collocations": ["highly resilient", "resilient economy", "resilient infrastructure"],
+        "synonyms": ["tough", "durable", "adaptable"]
+      },
+      "enrichment": {
+        "text": "Danh từ tương ứng là 'resilience'. Rất thông dụng trong các chủ đề về môi trường (climate resilience) và kinh tế (economic resilience).",
+        "confidence": "verified",
+        "reference": "Cambridge Academic Corpus"
+      }
+    },
+    {
+      "id": "ielts-core-003",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 2" },
+      "content": {
+        "term": "pragmatic",
+        "meaning": "thực tế, thực dụng, dựa trên kết quả hành động hơn lý thuyết",
+        "pronunciation": "/præɡˈmæt.ɪk/",
+        "partOfSpeech": "adjective",
+        "example": "The government adopted a pragmatic approach to solving the housing crisis.",
+        "translation": "Chính phủ đã áp dụng một cách tiếp cận thực tế để giải quyết cuộc khủng hoảng nhà ở.",
+        "collocations": ["pragmatic approach", "pragmatic solution", "pragmatic decision"],
+        "synonyms": ["practical", "realistic", "sensible"]
+      },
+      "enrichment": {
+        "text": "Thường đối lập với 'idealistic' (duy tâm/lý tưởng hóa) hoặc 'ideological' (theo hệ tư tưởng).",
+        "confidence": "verified",
+        "reference": "Merriam-Webster Collegiate Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-004",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 2" },
+      "content": {
+        "term": "mitigate",
+        "meaning": "giảm nhẹ, làm dịu bớt mức độ nghiêm trọng hoặc tác hại",
+        "pronunciation": "/ˈmɪt.ɪ.ɡeɪt/",
+        "partOfSpeech": "verb",
+        "example": "Effective urban planning can help mitigate the risks of flooding in coastal areas.",
+        "translation": "Quy hoạch đô thị hiệu quả có thể giúp giảm nhẹ rủi ro ngập lụt tại các khu vực ven biển.",
+        "collocations": ["mitigate the impact", "mitigate risks", "mitigate the effects"],
+        "synonyms": ["alleviate", "reduce", "diminish", "lessen"]
+      },
+      "enrichment": {
+        "text": "Tránh nhầm lẫn với 'militate' (militate against sth: cản trở điều gì). 'Mitigation strategies' là thuật ngữ cốt lõi trong báo cáo biến đổi khí hậu IPCC.",
+        "confidence": "verified",
+        "reference": "Oxford English Corpus"
+      }
+    },
+    {
+      "id": "ielts-core-005",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 3" },
+      "content": {
+        "term": "paradigm",
+        "meaning": "mô hình, hệ hình mẫu mực, hệ thống các quan niệm chuẩn",
+        "pronunciation": "/ˈpær.ə.daɪm/",
+        "partOfSpeech": "noun",
+        "example": "The discovery of quantum mechanics caused a profound paradigm shift in modern physics.",
+        "translation": "Phát hiện về cơ học lượng tử đã tạo ra một sự chuyển dịch hệ hình sâu sắc trong vật lý hiện đại.",
+        "collocations": ["paradigm shift", "dominant paradigm", "new paradigm"],
+        "synonyms": ["model", "framework", "pattern", "archetype"]
+      },
+      "enrichment": {
+        "text": "Cụm 'paradigm shift' (chuyển dịch hệ hình) được đặt ra bởi nhà triết học khoa học Thomas Kuhn trong cuốn 'The Structure of Scientific Revolutions' (1962).",
+        "confidence": "verified",
+        "reference": "Thomas Kuhn, Structure of Scientific Revolutions"
+      }
+    },
+    {
+      "id": "ielts-core-006",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 3" },
+      "content": {
+        "term": "scrutinize",
+        "meaning": "xem xét kỹ lưỡng, kiểm tra tỉ mỉ và cẩn thận",
+        "pronunciation": "/ˈskruː.tɪ.naɪz/",
+        "partOfSpeech": "verb",
+        "example": "The committee will carefully scrutinize all expenditure proposals before approval.",
+        "translation": "Ủy ban sẽ kiểm tra tỉ mỉ tất cả các đề xuất chi tiêu trước khi phê duyệt.",
+        "collocations": ["closely scrutinize", "carefully scrutinize", "under close scrutiny"],
+        "synonyms": ["examine", "inspect", "audit", "investigate"]
+      },
+      "enrichment": {
+        "text": "Dạng danh từ là 'scrutiny'. Thường đi với cụm 'come under close scrutiny' (bị kiểm tra, giám sát chặt chẽ).",
+        "confidence": "verified",
+        "reference": "Cambridge Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-007",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 4" },
+      "content": {
+        "term": "ambiguity",
+        "meaning": "sự mơ hồ, tính chất có thể hiểu theo nhiều nghĩa",
+        "pronunciation": "/ˌæm.bɪˈɡjuː.ə.ti/",
+        "partOfSpeech": "noun",
+        "example": "The legal contract was drafted carefully to avoid any ambiguity.",
+        "translation": "Bản hợp đồng pháp lý đã được soạn thảo cẩn trọng để tránh bất kỳ sự mơ hồ nào.",
+        "collocations": ["avoid ambiguity", "resolve ambiguity", "moral ambiguity"],
+        "synonyms": ["vagueness", "uncertainty", "obscurity"]
+      },
+      "enrichment": {
+        "text": "Tính từ là 'ambiguous' (mơ hồ), trái nghĩa là 'unambiguous' (rõ ràng, dứt khoát).",
+        "confidence": "verified",
+        "reference": "Collins English Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-008",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 4" },
+      "content": {
+        "term": "lucrative",
+        "meaning": "sinh lợi, mang lại nhiều tiền bạc hoặc lợi nhuận",
+        "pronunciation": "/ˈluː.krə.tɪv/",
+        "partOfSpeech": "adjective",
+        "example": "Renewable energy has transformed from an experimental field into a lucrative industry.",
+        "translation": "Năng lượng tái tạo đã chuyển mình từ một lĩnh vực thử nghiệm thành một ngành công nghiệp sinh lợi cao.",
+        "collocations": ["lucrative market", "lucrative business", "lucrative contract"],
+        "synonyms": ["profitable", "rewarding", "remunerative"]
+      },
+      "enrichment": {
+        "text": "Xuất phát từ từ tiếng Latin 'lucrum' (lợi nhuận). Thường dùng trong văn cảnh kinh doanh, nghề nghiệp.",
+        "confidence": "verified",
+        "reference": "Oxford Collocations Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-009",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 5" },
+      "content": {
+        "term": "comprehensive",
+        "meaning": "toàn diện, bao quát mọi khía cạnh",
+        "pronunciation": "/ˌkɒm.prɪˈhen.sɪv/",
+        "partOfSpeech": "adjective",
+        "example": "The ministry published a comprehensive report on public healthcare reform.",
+        "translation": "Bộ đã công bố một báo cáo toàn diện về cải cách y tế công cộng.",
+        "collocations": ["comprehensive review", "comprehensive study", "comprehensive approach"],
+        "synonyms": ["exhaustive", "thorough", "all-inclusive"]
+      },
+      "enrichment": {
+        "text": "Lưu ý phân biệt với 'comprehensible' (có thể hiểu được). 'Comprehensive' nghĩa là bao quát, đầy đủ mọi phương diện.",
+        "confidence": "verified",
+        "reference": "Oxford Learner's Dictionaries"
+      }
+    },
+    {
+      "id": "ielts-core-010",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 5" },
+      "content": {
+        "term": "deteriorate",
+        "meaning": "xuống cấp, suy thoái, trở nên tồi tệ hơn theo thời gian",
+        "pronunciation": "/dɪˈtɪə.ri.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "example": "Air quality in the metropolitan area has begun to deteriorate rapidly.",
+        "translation": "Chất lượng không khí tại khu vực đô thị lớn đã bắt đầu suy giảm nhanh chóng.",
+        "collocations": ["deteriorate rapidly", "conditions deteriorate", "health deteriorates"],
+        "synonyms": ["worsen", "decline", "degenerate"]
+      },
+      "enrichment": {
+        "text": "Danh từ là 'deterioration'. Thường dùng để miêu tả chất lượng môi trường, cơ sở hạ tầng hoặc sức khỏe.",
+        "confidence": "verified",
+        "reference": "Longman Dictionary of Contemporary English"
+      }
+    },
+    {
+      "id": "ielts-core-011",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 6" },
+      "content": {
+        "term": "prevalent",
+        "meaning": "thịnh hành, phổ biến rộng rãi trong một thời điểm hoặc khu vực",
+        "pronunciation": "/ˈprev.əl.ənt/",
+        "partOfSpeech": "adjective",
+        "example": "Sedentary lifestyles are increasingly prevalent among office workers.",
+        "translation": "Lối sống ít vận động đang ngày càng phổ biến trong giới nhân viên văn phòng.",
+        "collocations": ["widely prevalent", "prevalent view", "prevalent condition"],
+        "synonyms": ["widespread", "common", "dominant"]
+      },
+      "enrichment": {
+        "text": "Danh từ là 'prevalence'. Từ rất hay gặp trong các bài báo cáo y tế công cộng (ví dụ: 'disease prevalence').",
+        "confidence": "verified",
+        "reference": "Cambridge Academic English"
+      }
+    },
+    {
+      "id": "ielts-core-012",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 6" },
+      "content": {
+        "term": "advocate",
+        "meaning": "chủ trương, ủng hộ công khai, biện hộ cho một chính sách",
+        "pronunciation": "/ˈæd.və.keɪt/",
+        "partOfSpeech": "verb",
+        "example": "Environmentalists advocate investing heavily in clean and renewable energy sources.",
+        "translation": "Các nhà hoạt động môi trường ủng hộ mạnh mẽ việc đầu tư vào các nguồn năng lượng sạch và tái tạo.",
+        "collocations": ["strongly advocate", "advocate for reform", "advocate policy"],
+        "synonyms": ["champion", "support", "endorse"]
+      },
+      "enrichment": {
+        "text": "Khi là danh từ, phát âm đuôi là /-kət/: an advocate (người ủng hộ). Khi là động từ, phát âm đuôi là /-keɪt/.",
+        "confidence": "verified",
+        "reference": "Oxford Advanced Learner's Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-013",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 7" },
+      "content": {
+        "term": "facilitate",
+        "meaning": "tạo điều kiện thuận lợi, hỗ trợ để tiến trình diễn ra dễ dàng hơn",
+        "pronunciation": "/fəˈsɪl.ɪ.teɪt/",
+        "partOfSpeech": "verb",
+        "example": "Modern communication tools facilitate effective collaboration across remote teams.",
+        "translation": "Các công cụ truyền thông hiện đại tạo điều kiện thuận lợi cho sự hợp tác hiệu quả giữa các đội ngũ làm việc từ xa.",
+        "collocations": ["facilitate learning", "facilitate growth", "facilitate communication"],
+        "synonyms": ["enable", "assist", "expedite", "ease"]
+      },
+      "enrichment": {
+        "text": "Từ gốc tiếng Latin 'facilis' (dễ dàng). Danh từ người điều phối là 'facilitator', cơ sở vật chất là 'facilities'.",
+        "confidence": "verified",
+        "reference": "Collins English Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-014",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 7" },
+      "content": {
+        "term": "discrepancy",
+        "meaning": "sự khác biệt, sai lệch, không nhất quán giữa hai dữ liệu",
+        "pronunciation": "/dɪˈskrep.ən.si/",
+        "partOfSpeech": "noun",
+        "example": "Auditors noticed a significant discrepancy between the company budget and actual expenses.",
+        "translation": "Các kiểm toán viên đã nhận thấy một sự sai lệch đáng kể giữa ngân sách công ty và các khoản chi thực tế.",
+        "collocations": ["significant discrepancy", "apparent discrepancy", "unexplained discrepancy"],
+        "synonyms": ["inconsistency", "variance", "mismatch", "divergence"]
+      },
+      "enrichment": {
+        "text": "Thường dùng số nhiều 'discrepancies'. Rất đắc lực trong IELTS Writing Task 1 khi mô tả biểu đồ có số liệu không khớp nhau.",
+        "confidence": "verified",
+        "reference": "Cambridge Academic Corpus"
+      }
+    },
+    {
+      "id": "ielts-core-015",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 8" },
+      "content": {
+        "term": "feasible",
+        "meaning": "khả thi, có thể thực hiện thành công trong thực tế",
+        "pronunciation": "/ˈfiː.zə.bəl/",
+        "partOfSpeech": "adjective",
+        "example": "With current battery advancements, fully electric aviation is becoming economically feasible.",
+        "translation": "Với những tiến bộ pin hiện nay, hàng không thuần điện đang dần trở nên khả thi về mặt kinh tế.",
+        "collocations": ["economically feasible", "technically feasible", "feasible plan"],
+        "synonyms": ["viable", "achievable", "workable", "attainable"]
+      },
+      "enrichment": {
+        "text": "Danh từ là 'feasibility', thường xuất hiện trong cụm 'feasibility study' (nghiên cứu tính khả thi của dự án).",
+        "confidence": "verified",
+        "reference": "Oxford Advanced Learner's Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-016",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 8" },
+      "content": {
+        "term": "hierarchy",
+        "meaning": "hệ thống cấp bậc, trật tự thứ bậc quyền lực",
+        "pronunciation": "/ˈhaɪə.rɑː.ki/",
+        "partOfSpeech": "noun",
+        "example": "Tech startups often promote flat organizational structures rather than a rigid corporate hierarchy.",
+        "translation": "Các công ty khởi nghiệp công nghệ thường khuyến khích cơ cấu tổ chức phẳng hơn là một hệ thống phân cấp công ty cứng nhắc.",
+        "collocations": ["social hierarchy", "corporate hierarchy", "rigid hierarchy"],
+        "synonyms": ["pecking order", "ranking", "chain of command"]
+      },
+      "enrichment": {
+        "text": "Tính từ là 'hierarchical' (/ˌhaɪəˈrɑː.kɪ.kəl/). Maslow's hierarchy of needs (tháp nhu cầu Maslow) là ví dụ nổi tiếng.",
+        "confidence": "verified",
+        "reference": "Merriam-Webster Collegiate Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-017",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 9" },
+      "content": {
+        "term": "substantiate",
+        "meaning": "chứng minh, xác minh tính đúng đắn bằng chứng cứ cụ thể",
+        "pronunciation": "/səbˈstæn.ʃi.eɪt/",
+        "partOfSpeech": "verb",
+        "example": "The researcher produced empirical data to substantiate her hypothesis.",
+        "translation": "Nhà nghiên cứu đã đưa ra các dữ liệu thực nghiệm để chứng minh cho giả thuyết của mình.",
+        "collocations": ["substantiate claims", "substantiate allegations", "substantiate findings"],
+        "synonyms": ["corroborate", "verify", "validate", "prove"]
+      },
+      "enrichment": {
+        "text": "Trái nghĩa là 'unsubstantiated' (vô căn cứ, chưa được kiểm chứng), ví dụ 'unsubstantiated rumors'.",
+        "confidence": "verified",
+        "reference": "Cambridge Dictionary"
+      }
+    },
+    {
+      "id": "ielts-core-018",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 9" },
+      "content": {
+        "term": "coherent",
+        "meaning": "mạch lạc, chặt chẽ, các bộ phận liên kết logic và dễ hiểu",
+        "pronunciation": "/kəʊˈhɪə.rənt/",
+        "partOfSpeech": "adjective",
+        "example": "A strong academic essay requires a coherent argument and smooth transitions.",
+        "translation": "Một bài tiểu luận học thuật vững chắc đòi hỏi một lập luận mạch lạc và các bước chuyển tiếp mượt mà.",
+        "collocations": ["coherent strategy", "coherent argument", "coherent narrative"],
+        "synonyms": ["logical", "consistent", "lucid", "articulate"]
+      },
+      "enrichment": {
+        "text": "Danh từ 'coherence' là một trong 4 tiêu chí chấm điểm chính của bài thi IELTS Writing (Coherence and Cohesion).",
+        "confidence": "verified",
+        "reference": "IELTS Official Assessment Criteria"
+      }
+    },
+    {
+      "id": "ielts-core-019",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 10" },
+      "content": {
+        "term": "incentive",
+        "meaning": "động lực thúc đẩy, sự khích lệ hoặc phần thưởng khuyến khích hành động",
+        "pronunciation": "/ɪnˈsen.tɪv/",
+        "partOfSpeech": "noun",
+        "example": "Tax incentives are an effective mechanism to encourage private investment in clean energy.",
+        "translation": "Các ưu đãi thuế là một cơ chế hiệu quả để khuyến khích đầu tư tư nhân vào năng lượng sạch.",
+        "collocations": ["tax incentive", "financial incentive", "create incentives"],
+        "synonyms": ["motivation", "stimulus", "inducement", "impetus"]
+      },
+      "enrichment": {
+        "text": "Từ này đóng vai trò then chốt trong kinh tế học hành vi (nghiên cứu về cách con người phản ứng với các ưu đãi).",
+        "confidence": "verified",
+        "reference": "Economics Encyclopedia"
+      }
+    },
+    {
+      "id": "ielts-core-020",
+      "type": "vocabulary",
+      "source": { "ref": "AWL Sublist 10" },
+      "content": {
+        "term": "indispensable",
+        "meaning": "không thể thiếu được, hoàn toàn thiết yếu",
+        "pronunciation": "/ˌɪn.dɪˈspen.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "example": "Critical thinking skills are indispensable for navigating today's information-heavy society.",
+        "translation": "Kỹ năng tư duy phản biện là không thể thiếu để định hướng trong xã hội ngập tràn thông tin ngày nay.",
+        "collocations": ["indispensable part", "indispensable tool", "indispensable role"],
+        "synonyms": ["essential", "crucial", "vital", "invaluable"]
+      },
+      "enrichment": {
+        "text": "Cụm 'play an indispensable role in...' là cụm từ đắt giá thường dùng để mở bài hoặc khẳng định tầm quan trọng trong IELTS.",
+        "confidence": "verified",
+        "reference": "Oxford Collocations Dictionary"
+      }
+    }
+  ]
+}

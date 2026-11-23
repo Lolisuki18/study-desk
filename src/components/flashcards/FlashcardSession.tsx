@@ -29,6 +29,8 @@ import {
   VolumeX,
   X,
   PartyPopper,
+  Headphones,
+  PenLine,
 } from 'lucide-react'
 import type { Entry, Grade, Item, Status } from '../../types'
 import NoteBox from '../ui/NoteBox'
@@ -46,7 +48,7 @@ import { isSoundEnabled, playSound, setSoundEnabled } from '../../utils/sound'
 import { playMechSound } from '../../utils/mechSound'
 import { haptic } from '../../utils/haptic'
 import { exitZen, isZenMode, toggleZen, useZen } from '../../utils/zen'
-import { isSpeaking, speakText, stopSpeaking } from '../../utils/speech'
+import { isSpeaking, speakEnglish, speakText, stopSpeaking } from '../../utils/speech'
 import { useStarred } from '../../services/storage/starred'
 import { itemTitle } from '../../data'
 import { isLeech } from '../../services/review/srs'
@@ -176,6 +178,44 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
   const [sessionAgainCount, setSessionAgainCount] = useState(0)
   const [peekHint, setPeekHint] = useState(false)
   const [showThemeSettings, setShowThemeSettings] = useState(false)
+
+  // English Learning Modes: Auto Pronounce & Spelling Dictation
+  const [autoPronounce, setAutoPronounce] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem('psh.flashcards.auto_pronounce') === 'true'
+    } catch {
+      return false
+    }
+  })
+  const [spellingMode, setSpellingMode] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem('psh.flashcards.spelling_mode') === 'true'
+    } catch {
+      return false
+    }
+  })
+  const [spellingInput, setSpellingInput] = useState('')
+  const [spellingStatus, setSpellingStatus] = useState<'idle' | 'correct' | 'incorrect'>('idle')
+
+  const toggleAutoPronounce = () => {
+    setAutoPronounce((prev) => {
+      const next = !prev
+      try {
+        localStorage.setItem('psh.flashcards.auto_pronounce', String(next))
+      } catch {}
+      return next
+    })
+  }
+
+  const toggleSpellingMode = () => {
+    setSpellingMode((prev) => {
+      const next = !prev
+      try {
+        localStorage.setItem('psh.flashcards.spelling_mode', String(next))
+      } catch {}
+      return next
+    })
+  }
 
   // Interactive Drag / Swipe physics
   const [dragOffset, setDragOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 })
@@ -307,6 +347,37 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     setPicks({})
     setDrafts({})
   }, [deck])
+
+  // Xử lý tự phát âm & làm mới input chép chính tả cho từ vựng
+  useEffect(() => {
+    setSpellingInput('')
+    setSpellingStatus('idle')
+    if (autoPronounce && cur?.item.type === 'vocabulary' && !flipped) {
+      const term = cur.item.content.term
+      const timer = setTimeout(() => {
+        speakEnglish(term, { accent: 'US' })
+      }, 350)
+      return () => clearTimeout(timer)
+    }
+  }, [idx, autoPronounce, flipped, cur])
+
+  const checkSpelling = () => {
+    if (!cur || cur.item.type !== 'vocabulary') return
+    const expected = cur.item.content.term.trim().toLowerCase()
+    const actual = spellingInput.trim().toLowerCase()
+    if (expected === actual) {
+      setSpellingStatus('correct')
+      playSound('correct')
+      haptic('success')
+      setTimeout(() => {
+        setFlipped(true)
+      }, 600)
+    } else {
+      setSpellingStatus('incorrect')
+      playSound('wrong')
+      haptic('error')
+    }
+  }
 
   const curKey = cur ? entryKey(cur) : ''
   useEffect(() => {
@@ -619,6 +690,27 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
           {autoPlay ? <PauseCircle size={13} className="text-amber-400 animate-pulse" /> : <PlayCircle size={13} />}
           <span className="hidden sm:inline">{autoPlay ? 'Dừng phát' : 'Tự động phát'}</span>
         </button>
+
+        {cur?.item.type === 'vocabulary' && (
+          <>
+            <button
+              className={pill(autoPronounce)}
+              onClick={toggleAutoPronounce}
+              title="Tự động phát âm tiếng Anh khi chuyển sang thẻ mới"
+            >
+              <Headphones size={13} />
+              <span className="hidden sm:inline">Tự phát âm</span>
+            </button>
+            <button
+              className={pill(spellingMode)}
+              onClick={toggleSpellingMode}
+              title="Luyện gõ từ vựng / Chép chính tả (Dictation)"
+            >
+              <PenLine size={13} />
+              <span className="hidden sm:inline">Chính tả</span>
+            </button>
+          </>
+        )}
 
         <button
           className={cx(
@@ -1075,6 +1167,76 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
           </div>
         </div>
       </div>
+
+      {/* Spelling Dictation Tray */}
+      {spellingMode && cur?.item.type === 'vocabulary' && !flipped && (
+        <div
+          className="mt-3.5 rounded-2xl border border-indigo-200 dark:border-indigo-900/80 bg-white dark:bg-card p-3.5 sm:p-4 shadow-sm animate-in fade-in slide-in-from-bottom-2"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <span className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+              <PenLine size={14} />
+              <span>Luyện gõ từ vựng (Dictation)</span>
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                if (cur?.item.type === 'vocabulary') {
+                  speakEnglish(cur.item.content.term, { accent: 'US' })
+                }
+              }}
+              className="inline-flex items-center gap-1 text-xs font-bold text-slate-600 dark:text-muted hover:text-indigo-600 transition-colors cursor-pointer"
+            >
+              <Volume2 size={13} />
+              <span>Nghe phát âm</span>
+            </button>
+          </div>
+
+          <div className="flex gap-2">
+            <input
+              type="text"
+              autoFocus
+              value={spellingInput}
+              onChange={(e) => {
+                setSpellingInput(e.target.value)
+                if (spellingStatus !== 'idle') setSpellingStatus('idle')
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault()
+                  checkSpelling()
+                }
+              }}
+              placeholder="Gõ từ tiếng Anh bạn nghe được hoặc muốn trả lời…"
+              className={cx(
+                'flex-1 rounded-xl border px-3.5 py-2 text-sm font-semibold outline-none transition-colors shadow-2xs',
+                spellingStatus === 'correct' && 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-100',
+                spellingStatus === 'incorrect' && 'border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-100',
+                spellingStatus === 'idle' && 'border-line bg-slate-50 dark:bg-slate-800/60 focus:border-indigo-500'
+              )}
+            />
+            <button
+              type="button"
+              onClick={checkSpelling}
+              className="rounded-xl bg-indigo-600 px-4 py-2 text-xs font-bold text-white shadow-xs hover:bg-indigo-700 active:scale-95 transition-all cursor-pointer whitespace-nowrap"
+            >
+              Kiểm tra
+            </button>
+          </div>
+
+          {spellingStatus === 'correct' && (
+            <p className="mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 animate-in fade-in">
+              <Check size={14} strokeWidth={3} /> Chính xác! Đang mở mặt sau thẻ…
+            </p>
+          )}
+          {spellingStatus === 'incorrect' && (
+            <p className="mt-2 text-xs font-medium text-rose-600 dark:text-rose-400 flex items-center gap-1 animate-in fade-in">
+              <X size={14} strokeWidth={2.5} /> Chưa đúng chính tả. Hãy thử lại hoặc lật thẻ để xem từ chuẩn!
+            </p>
+          )}
+        </div>
+      )}
 
       {/* Action Dock: 4 nút tự tin + Trước / Sau */}
       <div className="sticky bottom-[calc(var(--bottom-nav-h)+0.5rem)] z-20 mt-3.5 flex items-center gap-2 rounded-2xl border border-line bg-card p-2 shadow-lg md:static md:bottom-auto md:shadow-xs">
