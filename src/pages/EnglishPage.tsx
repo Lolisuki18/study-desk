@@ -13,7 +13,9 @@ import {
   Layers,
   Lightbulb,
   ListChecks,
+  Mic,
   PenLine,
+  PenTool,
   Play,
   RefreshCw,
   RotateCcw,
@@ -52,8 +54,21 @@ import {
   type SpellingMistakeRecord,
 } from '../services/english/ielts'
 import type { Item, VocabularyContent } from '../types'
+import { ListeningLab } from '../components/english/ListeningLab'
+import { SpeakingLab } from '../components/english/SpeakingLab'
+import { ReadingLab } from '../components/english/ReadingLab'
+import { WritingLab } from '../components/english/WritingLab'
 
-type HubTab = 'overview' | 'dictation' | 'collocations' | 'speed' | 'mistakes'
+type HubTab =
+  | 'overview'
+  | 'listening'
+  | 'speaking'
+  | 'reading'
+  | 'writing'
+  | 'dictation'
+  | 'collocations'
+  | 'speed'
+  | 'mistakes'
 
 export default function EnglishPage() {
   const { get } = useProgress()
@@ -83,7 +98,7 @@ export default function EnglishPage() {
   const masteryPct = pct(masteredCount, Math.max(1, englishEntries.length))
 
   // ---------------------------------------------------------------------------------------------
-  // TAB 2: DICTATION LAB STATE
+  // DICTATION LAB STATE (VOCABULARY SPELLING)
   // ---------------------------------------------------------------------------------------------
   const [dictationPool, setDictationPool] = useState<typeof englishEntries>([])
   const [dictIndex, setDictIndex] = useState(0)
@@ -96,7 +111,6 @@ export default function EnglishPage() {
   const [dictShowHint, setDictShowHint] = useState(false)
   const [dictCompletedCount, setDictCompletedCount] = useState(0)
 
-  // Initialize dictation pool
   useEffect(() => {
     if (!dictationPool.length && englishEntries.length) {
       setDictationPool(shuffle(englishEntries))
@@ -107,13 +121,11 @@ export default function EnglishPage() {
   const curDictEntry = dictationPool[dictIndex]
   const curVocab = curDictEntry?.item.content as VocabularyContent | undefined
 
-  // Play audio for current dictation word
   const playDictWord = (accent: 'US' | 'UK' = dictAccent, rate: number = dictRate) => {
     if (!curVocab) return
     speakEnglish(curVocab.term, { accent, rate })
   }
 
-  // When card changes in dictation
   useEffect(() => {
     setDictInput('')
     setDictStatus('unsubmitted')
@@ -140,7 +152,6 @@ export default function EnglishPage() {
       playMechSound('enter')
       haptic('success')
 
-      // Remove from spelling mistakes if present
       removeSpellingMistake(curVocab.term)
 
       setTimeout(() => {
@@ -155,7 +166,6 @@ export default function EnglishPage() {
       const diffResult = computeSpellingDiff(typed, expected)
       setDictDiff(diffResult.parts)
 
-      // Record spelling mistake
       recordSpellingMistake(curVocab.term, dictInput.trim(), curVocab.meaning)
     }
   }
@@ -170,19 +180,22 @@ export default function EnglishPage() {
   }
 
   // ---------------------------------------------------------------------------------------------
-  // TAB 3: COLLOCATIONS STATE
+  // COLLOCATIONS STATE
   // ---------------------------------------------------------------------------------------------
   const [collocSearch, setCollocSearch] = useState('')
   const filteredCollocations = useMemo(() => {
     if (!collocSearch.trim()) return collocations
     const q = collocSearch.toLowerCase()
     return collocations.filter(
-      (c) => c.collocation.toLowerCase().includes(q) || c.meaning.toLowerCase().includes(q) || c.term.toLowerCase().includes(q)
+      (c) =>
+        c.collocation.toLowerCase().includes(q) ||
+        c.meaning.toLowerCase().includes(q) ||
+        c.term.toLowerCase().includes(q)
     )
   }, [collocations, collocSearch])
 
   // ---------------------------------------------------------------------------------------------
-  // TAB 4: 60-SECOND VOCABULARY SPRINT STATE
+  // 60-SECOND VOCABULARY SPRINT STATE
   // ---------------------------------------------------------------------------------------------
   const [sprintRunning, setSprintRunning] = useState(false)
   const [sprintTimeLeft, setSprintTimeLeft] = useState(60)
@@ -276,9 +289,11 @@ export default function EnglishPage() {
   }, [])
 
   // ---------------------------------------------------------------------------------------------
-  // TAB 5: SPELLING MISTAKES LIST
+  // SPELLING MISTAKES LIST
   // ---------------------------------------------------------------------------------------------
-  const [mistakesList, setMistakesList] = useState<SpellingMistakeRecord[]>(() => getSpellingMistakes())
+  const [mistakesList, setMistakesList] = useState<SpellingMistakeRecord[]>(() =>
+    getSpellingMistakes()
+  )
 
   const handleRemoveMistake = (term: string) => {
     removeSpellingMistake(term)
@@ -300,10 +315,10 @@ export default function EnglishPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-white">
-              Trung tâm Luyện thi IELTS
+              Trung tâm Luyện thi IELTS Toàn diện 4 Kỹ năng
             </h1>
             <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              Trạm luyện toàn diện cho sĩ tử IELTS: Luyện phát âm US/UK, phòng Dictation bẫy chính tả, kho Collocations Band 7.0+ và bài tập phản xạ nhanh.
+              Trạm luyện thi chuẩn hóa cả 4 kỹ năng Nghe - Nói - Đọc - Viết: Luyện điền form Section 1, phòng thi nói Cue Card 60s/120s, chuyên đề Đọc True/False/Not Given và phòng Viết chấm từ vựng học thuật AWL.
             </p>
 
             {/* Target Band Picker */}
@@ -332,15 +347,21 @@ export default function EnglishPage() {
           {/* Quick Metrics Cards */}
           <div className="grid grid-cols-2 gap-3 shrink-0">
             <div className="rounded-2xl border border-slate-200 dark:border-line bg-white/90 dark:bg-card p-3.5 shadow-2xs">
-              <div className="text-[11px] font-bold uppercase tracking-wider text-muted">Từ vựng IELTS</div>
+              <div className="text-[11px] font-bold uppercase tracking-wider text-muted">
+                Từ vựng IELTS
+              </div>
               <div className="mt-1 text-xl sm:text-2xl font-black text-indigo-600 dark:text-indigo-400">
                 {englishEntries.length}
               </div>
-              <div className="mt-0.5 text-[10px] text-muted">Đã thuộc {masteredCount} ({masteryPct}%)</div>
+              <div className="mt-0.5 text-[10px] text-muted">
+                Đã thuộc {masteredCount} ({masteryPct}%)
+              </div>
             </div>
 
             <div className="rounded-2xl border border-slate-200 dark:border-line bg-white/90 dark:bg-card p-3.5 shadow-2xs">
-              <div className="text-[11px] font-bold uppercase tracking-wider text-muted">Collocations</div>
+              <div className="text-[11px] font-bold uppercase tracking-wider text-muted">
+                Collocations
+              </div>
               <div className="mt-1 text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400">
                 {collocations.length}
               </div>
@@ -350,79 +371,145 @@ export default function EnglishPage() {
         </div>
       </div>
 
-      {/* 2. Interactive Navigation Tabs */}
-      <div className="flex flex-wrap items-center gap-2 border-b border-line pb-3">
-        <button
-          onClick={() => setActiveTab('overview')}
-          className={cx(
-            'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
-            activeTab === 'overview'
-              ? 'bg-indigo-600 text-white shadow-xs'
-              : 'border border-line bg-card text-muted hover:text-ink hover:border-slate-300'
-          )}
-        >
-          <BookOpen size={16} />
-          <span>Kho Bộ đề IELTS ({englishCols.length})</span>
-        </button>
+      {/* 2. Primary 4-Skill Navigation Tabs */}
+      <div className="space-y-2 border-b border-line pb-3">
+        {/* Row 1: The 4 Core Skills */}
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            onClick={() => setActiveTab('listening')}
+            className={cx(
+              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              activeTab === 'listening'
+                ? 'bg-indigo-600 text-white shadow-xs'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+            )}
+          >
+            <Headphones size={16} />
+            <span>Kỹ năng Nghe (Listening)</span>
+          </button>
 
-        <button
-          onClick={() => setActiveTab('dictation')}
-          className={cx(
-            'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
-            activeTab === 'dictation'
-              ? 'bg-indigo-600 text-white shadow-xs'
-              : 'border border-line bg-card text-muted hover:text-ink hover:border-slate-300'
-          )}
-        >
-          <PenLine size={16} />
-          <span>Trạm Chép chính tả (Dictation)</span>
-        </button>
+          <button
+            onClick={() => setActiveTab('speaking')}
+            className={cx(
+              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              activeTab === 'speaking'
+                ? 'bg-indigo-600 text-white shadow-xs'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+            )}
+          >
+            <Mic size={16} />
+            <span>Kỹ năng Nói (Speaking)</span>
+          </button>
 
-        <button
-          onClick={() => setActiveTab('collocations')}
-          className={cx(
-            'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
-            activeTab === 'collocations'
-              ? 'bg-indigo-600 text-white shadow-xs'
-              : 'border border-line bg-card text-muted hover:text-ink hover:border-slate-300'
-          )}
-        >
-          <BookA size={16} />
-          <span>Cụm Collocations ({collocations.length})</span>
-        </button>
+          <button
+            onClick={() => setActiveTab('reading')}
+            className={cx(
+              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              activeTab === 'reading'
+                ? 'bg-indigo-600 text-white shadow-xs'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+            )}
+          >
+            <BookOpen size={16} />
+            <span>Kỹ năng Đọc (Reading)</span>
+          </button>
 
-        <button
-          onClick={() => setActiveTab('speed')}
-          className={cx(
-            'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
-            activeTab === 'speed'
-              ? 'bg-indigo-600 text-white shadow-xs'
-              : 'border border-line bg-card text-muted hover:text-ink hover:border-slate-300'
-          )}
-        >
-          <Flame size={16} />
-          <span>Phản xạ 60 giây</span>
-        </button>
+          <button
+            onClick={() => setActiveTab('writing')}
+            className={cx(
+              'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
+              activeTab === 'writing'
+                ? 'bg-indigo-600 text-white shadow-xs'
+                : 'border border-line bg-card text-muted hover:text-ink hover:border-indigo-300'
+            )}
+          >
+            <PenTool size={16} />
+            <span>Kỹ năng Viết (Writing)</span>
+          </button>
+        </div>
 
-        <button
-          onClick={() => {
-            setActiveTab('mistakes')
-            setMistakesList(getSpellingMistakes())
-          }}
-          className={cx(
-            'flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold transition-all cursor-pointer',
-            activeTab === 'mistakes'
-              ? 'bg-indigo-600 text-white shadow-xs'
-              : 'border border-line bg-card text-muted hover:text-ink hover:border-slate-300'
-          )}
-        >
-          <RotateCcw size={16} />
-          <span>Sổ từ bẫy chính tả ({mistakesList.length})</span>
-        </button>
+        {/* Row 2: Secondary / Supporting Tools */}
+        <div className="flex flex-wrap items-center gap-1.5 pt-1">
+          <button
+            onClick={() => setActiveTab('overview')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              activeTab === 'overview'
+                ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
+                : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
+            )}
+          >
+            <Layers size={13} />
+            <span>Kho Bộ đề ({englishCols.length})</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('dictation')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              activeTab === 'dictation'
+                ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
+                : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
+            )}
+          >
+            <PenLine size={13} />
+            <span>Chính tả từ vựng</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('collocations')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              activeTab === 'collocations'
+                ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
+                : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
+            )}
+          >
+            <BookA size={13} />
+            <span>Collocations ({collocations.length})</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('speed')}
+            className={cx(
+              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              activeTab === 'speed'
+                ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
+                : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
+            )}
+          >
+            <Flame size={13} />
+            <span>Phản xạ 60s</span>
+          </button>
+
+          <button
+            onClick={() => {
+              setActiveTab('mistakes')
+              setMistakesList(getSpellingMistakes())
+            }}
+            className={cx(
+              'flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all cursor-pointer',
+              activeTab === 'mistakes'
+                ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 shadow-2xs'
+                : 'text-muted hover:text-ink hover:bg-slate-100 dark:hover:bg-slate-800'
+            )}
+          >
+            <RotateCcw size={13} />
+            <span>Sổ từ bẫy ({mistakesList.length})</span>
+          </button>
+        </div>
       </div>
 
       {/* ----------------------------------------------------------------------------------------- */}
-      {/* TAB 1: OVERVIEW & COLLECTIONS */}
+      {/* 4 CORE SKILL LABS */}
+      {/* ----------------------------------------------------------------------------------------- */}
+      {activeTab === 'listening' && <ListeningLab />}
+      {activeTab === 'speaking' && <SpeakingLab />}
+      {activeTab === 'reading' && <ReadingLab />}
+      {activeTab === 'writing' && <WritingLab />}
+
+      {/* ----------------------------------------------------------------------------------------- */}
+      {/* TAB: OVERVIEW & COLLECTIONS */}
       {/* ----------------------------------------------------------------------------------------- */}
       {activeTab === 'overview' && (
         <div className="space-y-6">
@@ -464,7 +551,9 @@ export default function EnglishPage() {
                     <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/60 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
                       {c.contentType === 'vocabulary' ? 'Từ vựng' : 'Trắc nghiệm'}
                     </span>
-                    <span className="text-xs font-mono font-semibold text-muted">{c.items.length} mục</span>
+                    <span className="text-xs font-mono font-semibold text-muted">
+                      {c.items.length} mục
+                    </span>
                   </div>
 
                   <h3 className="text-base font-extrabold text-slate-900 dark:text-white leading-snug">
@@ -498,7 +587,7 @@ export default function EnglishPage() {
       )}
 
       {/* ----------------------------------------------------------------------------------------- */}
-      {/* TAB 2: DICTATION LAB */}
+      {/* TAB: VOCABULARY DICTATION */}
       {/* ----------------------------------------------------------------------------------------- */}
       {activeTab === 'dictation' && (
         <div className="max-w-2xl mx-auto space-y-5">
@@ -602,8 +691,10 @@ export default function EnglishPage() {
                   placeholder="Gõ từ tiếng Anh bạn nghe được…"
                   className={cx(
                     'flex-1 rounded-2xl border-2 px-4 py-3.5 text-base sm:text-lg font-bold outline-none transition-all shadow-xs',
-                    dictStatus === 'correct' && 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-100',
-                    dictStatus === 'wrong' && 'border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-100',
+                    dictStatus === 'correct' &&
+                      'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-100',
+                    dictStatus === 'wrong' &&
+                      'border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-100',
                     dictStatus === 'unsubmitted' && 'border-line bg-card focus:border-indigo-500 text-ink'
                   )}
                 />
@@ -643,10 +734,14 @@ export default function EnglishPage() {
                         key={i}
                         className={cx(
                           'inline-flex h-8 min-w-8 items-center justify-center rounded-lg font-mono text-sm font-bold px-1.5 border',
-                          part.status === 'correct' && 'border-emerald-300 bg-emerald-100 text-emerald-900 dark:bg-emerald-900/60 dark:text-emerald-100',
-                          part.status === 'missing' && 'border-amber-400 bg-amber-100 text-amber-900 dark:bg-amber-900/60 dark:text-amber-100 underline decoration-2',
-                          part.status === 'extra' && 'border-rose-400 bg-rose-100 text-rose-900 line-through dark:bg-rose-900/60 dark:text-rose-100',
-                          part.status === 'wrong' && 'border-rose-500 bg-rose-200 text-rose-950 font-black dark:bg-rose-900 dark:text-rose-100'
+                          part.status === 'correct' &&
+                            'border-emerald-300 bg-emerald-100 text-emerald-900 dark:bg-emerald-900/60 dark:text-emerald-100',
+                          part.status === 'missing' &&
+                            'border-amber-400 bg-amber-100 text-amber-900 dark:bg-amber-900/60 dark:text-amber-100 underline decoration-2',
+                          part.status === 'extra' &&
+                            'border-rose-400 bg-rose-100 text-rose-900 line-through dark:bg-rose-900/60 dark:text-rose-100',
+                          part.status === 'wrong' &&
+                            'border-rose-500 bg-rose-200 text-rose-950 font-black dark:bg-rose-900 dark:text-rose-100'
                         )}
                         title={`Ký tự: ${part.char} (${part.status})`}
                       >
@@ -686,7 +781,7 @@ export default function EnglishPage() {
       )}
 
       {/* ----------------------------------------------------------------------------------------- */}
-      {/* TAB 3: COLLOCATIONS BROWSER */}
+      {/* TAB: COLLOCATIONS BROWSER */}
       {/* ----------------------------------------------------------------------------------------- */}
       {activeTab === 'collocations' && (
         <div className="space-y-4">
@@ -739,7 +834,9 @@ export default function EnglishPage() {
                 </div>
 
                 <div className="text-[10px] font-semibold text-muted flex items-center justify-between">
-                  <span>Gốc từ: <b>{c.term}</b></span>
+                  <span>
+                    Gốc từ: <b>{c.term}</b>
+                  </span>
                   <span>{c.collectionTitle.replace('IELTS ', '')}</span>
                 </div>
               </Card>
@@ -749,7 +846,7 @@ export default function EnglishPage() {
       )}
 
       {/* ----------------------------------------------------------------------------------------- */}
-      {/* TAB 4: 60-SECOND VOCABULARY SPRINT */}
+      {/* TAB: 60-SECOND VOCABULARY SPRINT */}
       {/* ----------------------------------------------------------------------------------------- */}
       {activeTab === 'speed' && (
         <div className="max-w-xl mx-auto space-y-6">
@@ -771,7 +868,14 @@ export default function EnglishPage() {
             <div className="grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-line bg-slate-50 dark:bg-slate-800 p-3">
                 <div className="text-[10px] font-bold uppercase text-muted">Thời gian</div>
-                <div className={cx('text-2xl font-black font-mono', sprintTimeLeft <= 10 ? 'text-rose-600 animate-pulse' : 'text-indigo-600 dark:text-indigo-400')}>
+                <div
+                  className={cx(
+                    'text-2xl font-black font-mono',
+                    sprintTimeLeft <= 10
+                      ? 'text-rose-600 animate-pulse'
+                      : 'text-indigo-600 dark:text-indigo-400'
+                  )}
+                >
                   {sprintTimeLeft}s
                 </div>
               </div>
@@ -836,7 +940,7 @@ export default function EnglishPage() {
       )}
 
       {/* ----------------------------------------------------------------------------------------- */}
-      {/* TAB 5: SPELLING MISTAKES LIST */}
+      {/* TAB: SPELLING MISTAKES LIST */}
       {/* ----------------------------------------------------------------------------------------- */}
       {activeTab === 'mistakes' && (
         <div className="space-y-4">
