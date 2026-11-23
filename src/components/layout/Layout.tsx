@@ -174,7 +174,7 @@ export default function Layout() {
         {/* Desktop Sidebar */}
         <aside
           className={cx(
-            'sticky top-0 hidden h-screen shrink-0 flex-col overflow-y-auto border-r border-slate-200 dark:border-line bg-white dark:bg-card py-5 md:flex print:hidden transition-all duration-200',
+            'sticky top-0 hidden h-screen shrink-0 flex-col overflow-hidden border-r border-slate-200 dark:border-line bg-white dark:bg-card py-5 md:flex print:hidden transition-all duration-200',
             collapsed ? 'w-20 px-2.5 items-center' : 'w-64 px-3.5',
           )}
         >
@@ -249,7 +249,7 @@ export default function Layout() {
           )}
 
           {/* Navigation Groups */}
-          <nav className={cx('flex flex-col gap-4 flex-1 overflow-y-auto pr-1', collapsed && 'items-center')}>
+          <nav className={cx('flex flex-col gap-4 flex-1 min-h-0 overflow-y-auto pr-1', collapsed && 'items-center')}>
             {navGroups.map((group) => (
               <div key={group.groupName} className={collapsed ? 'w-full flex flex-col items-center' : ''}>
                 {!collapsed && (
@@ -305,33 +305,12 @@ export default function Layout() {
             ))}
           </nav>
 
-          {/* Sidebar Footer: Pomodoro + SRS status */}
-          <div className="mt-auto pt-3 w-full">
+          {/* Sidebar Footer: Pomodoro */}
+          <div className="mt-auto pt-3 shrink-0 w-full">
             <Pomodoro compact={collapsed} />
           </div>
           {!collapsed ? (
             <>
-              <div className="rounded-2xl border border-slate-200/90 dark:border-line bg-slate-50/90 dark:bg-slate-800/40 p-3 text-xs">
-                <div className="flex items-center justify-between text-slate-600 dark:text-muted mb-1.5 font-semibold">
-                  <span>Độ thành thạo</span>
-                  <span className="font-extrabold text-slate-900 dark:text-ink">
-                    {summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%
-                  </span>
-                </div>
-                <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300"
-                    style={{
-                      width: `${summary.items > 0 ? Math.round((summary.mastered / summary.items) * 100) : 0}%`,
-                    }}
-                  />
-                </div>
-                <div className="mt-2 text-[11px] text-slate-500 dark:text-slate-400 flex justify-between font-medium">
-                  <span>{summary.mastered} đã thuộc</span>
-                  <span>{summary.items} mục</span>
-                </div>
-              </div>
-
               {/* Utility action footer */}
               <div className="mt-2.5 flex items-center justify-between border-t border-slate-100 dark:border-line/60 pt-2 px-1">
                 <div className="flex items-center gap-1">
