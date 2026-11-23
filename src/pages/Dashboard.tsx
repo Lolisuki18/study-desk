@@ -7,6 +7,7 @@ import {
   Flame,
   GraduationCap,
   Heart,
+  Languages,
   Library,
   RefreshCw,
 } from 'lucide-react'
@@ -32,7 +33,28 @@ export default function Dashboard() {
       <WelcomeHero />
 
       {/* New Practice Modes Banner */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <Link
+          to="/english"
+          className="group relative flex items-center justify-between overflow-hidden rounded-2xl border border-emerald-200 dark:border-emerald-950/60 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent p-4 transition-all hover:border-emerald-400 dark:hover:border-emerald-700 hover:shadow-md hover:-translate-y-0.5"
+        >
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-500 text-white shadow-sm shadow-emerald-500/30 group-hover:scale-105 transition-transform">
+              <Languages size={22} />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-extrabold text-slate-900 dark:text-white text-sm">Luyện IELTS & Tiếng Anh</span>
+                <span className="rounded-full bg-emerald-100 dark:bg-emerald-900/50 px-2 py-0.5 text-[10px] font-black text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">IELTS</span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Trạm Dictation bẫy chính tả, Collocations Band 7.0+ & phản xạ</p>
+            </div>
+          </div>
+          <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 inline-flex shrink-0 items-center gap-1 whitespace-nowrap group-hover:translate-x-1 transition-transform">
+            Vào học <ArrowRight size={14} />
+          </span>
+        </Link>
+
         <Link
           to="/survival"
           className="group relative flex items-center justify-between overflow-hidden rounded-2xl border border-orange-200 dark:border-orange-950/60 bg-gradient-to-r from-orange-500/10 via-amber-500/5 to-transparent p-4 transition-all hover:border-orange-400 dark:hover:border-orange-700 hover:shadow-md hover:-translate-y-0.5"

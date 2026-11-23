@@ -20,6 +20,7 @@ const TimelinePage = lazy(() => import('./pages/TimelinePage'))
 const SurvivalPage = lazy(() => import('./pages/SurvivalPage'))
 const DrillPage = lazy(() => import('./pages/DrillPage'))
 const FeedbackPage = lazy(() => import('./pages/FeedbackPage'))
+const EnglishPage = lazy(() => import('./pages/EnglishPage'))
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route index element={<Dashboard />} />
         <Route path="collections" element={<Collections />} />
         <Route path="collections/:id" element={<CollectionDetail />} />
+        <Route path="english" element={<EnglishPage />} />
         <Route path="import" element={<ImportPage />} />
         <Route path="timeline" element={<TimelinePage />} />
         <Route path="survival" element={<SurvivalPage />} />

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowRight, BookOpen, CalendarCheck2, FileCheck2, Layers, LayoutDashboard, Library, ListChecks, NotebookPen, RefreshCw, Search, Settings, Sparkles, X, ArrowUp, ArrowDown } from 'lucide-react'
+import { ArrowRight, BookOpen, CalendarCheck2, FileCheck2, Languages, Layers, LayoutDashboard, Library, ListChecks, NotebookPen, RefreshCw, Search, Settings, Sparkles, X, ArrowUp, ArrowDown } from 'lucide-react'
 import { allEntries, collections, itemTitle } from '../../data'
 import { matcher, searchText } from '../../utils/search'
 import { cx } from '../../utils'
@@ -12,6 +12,7 @@ interface CommandPaletteProps {
 
 const STATIC_NAV = [
   { label: 'Tổng quan', path: '/', icon: LayoutDashboard, category: 'Điều hướng' },
+  { label: 'Luyện IELTS & Tiếng Anh (Dictation & Collocations)', path: '/english', icon: Languages, category: 'Điều hướng' },
   { label: 'Học hôm nay (Phiên học tổng hợp)', path: '/today', icon: Sparkles, category: 'Điều hướng' },
   { label: 'Bộ học (Tất cả bộ câu hỏi)', path: '/collections', icon: Library, category: 'Điều hướng' },
   { label: 'Thẻ ghi nhớ (Flashcards SRS)', path: '/flashcards', icon: Layers, category: 'Điều hướng' },

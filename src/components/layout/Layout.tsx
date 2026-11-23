@@ -6,6 +6,7 @@ import {
   FileCheck2,
   Flame,
   GraduationCap,
+  Languages,
   Layers,
   LayoutDashboard,
   Library,
@@ -60,6 +61,7 @@ const navGroups: NavGroup[] = [
   {
     groupName: 'Luyện tập & Thi',
     items: [
+      { to: '/english', label: 'IELTS & Tiếng Anh', icon: Languages },
       { to: '/collections', label: 'Bộ học', icon: Library },
       { to: '/flashcards', label: 'Thẻ ghi nhớ', icon: Layers },
       { to: '/quiz', label: 'Trắc nghiệm', icon: ListChecks },
@@ -458,6 +460,17 @@ export default function Layout() {
 
               {/* Grid of Other Features */}
               <div className="grid grid-cols-2 gap-2.5 mb-5">
+                <NavLink
+                  to="/english"
+                  className="flex items-center gap-3 rounded-2xl border border-indigo-200 dark:border-indigo-900 bg-indigo-50/70 dark:bg-indigo-950/40 p-3 text-xs font-bold text-indigo-700 dark:text-indigo-300 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors col-span-2"
+                >
+                  <Languages size={18} className="text-indigo-600 dark:text-indigo-400 shrink-0" />
+                  <div className="flex items-center justify-between flex-1">
+                    <span>Luyện IELTS & Tiếng Anh</span>
+                    <span className="rounded-full bg-indigo-600 text-white px-2 py-0.5 text-[9px] font-bold">Mới</span>
+                  </div>
+                </NavLink>
+
                 <NavLink
                   to="/flashcards"
                   className="flex items-center gap-3 rounded-2xl border border-slate-200 dark:border-line bg-slate-50 dark:bg-slate-800/40 p-3 text-xs font-bold text-slate-800 dark:text-slate-200 hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50/50 dark:hover:bg-slate-800 transition-colors"
