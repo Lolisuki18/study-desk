@@ -502,7 +502,7 @@ function parseVocabulary(lines: string[], warnings: string[]): Item[] {
         let rawTerm = m[1].trim()
         meaning = m[2].trim()
 
-        const ipaMatch = rawTerm.match(/[/\[]([^\/\]]+)[/\]]/)
+        const ipaMatch = rawTerm.match(/[/[]([^/\]]+)[/\]]/)
         if (ipaMatch) {
           pronunciation = `/${ipaMatch[1].trim()}/`
           rawTerm = rawTerm.replace(ipaMatch[0], '').trim()

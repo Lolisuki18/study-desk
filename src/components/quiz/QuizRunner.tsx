@@ -79,7 +79,7 @@ function Input({
           </p>
         )}
         <ul className="space-y-2.5">
-          {q.options.map((o, idx) => {
+          {q.options.map((o) => {
             const sel = picked.includes(o.key)
             const showRes = locked
             const isElim = eliminated?.has(o.key) && !locked
@@ -248,7 +248,6 @@ export default function QuizRunner({
   const [override, setOverride] = useState<Record<string, boolean>>({})
   const [committed, setCommitted] = useState<Record<string, boolean>>({})
   const [flagged, setFlagged] = useState<Record<string, boolean>>({})
-  const [eliminated, setEliminated] = useState<Record<string, Set<string>>>({})
   const [showGrid, setShowGrid] = useState(false)
   const [showScratchpad, setShowScratchpad] = useState(false)
   const zenMode = useZen()
@@ -264,15 +263,6 @@ export default function QuizRunner({
     }
   }, [])
 
-  const toggleEliminate = (qid: string, key: string) => {
-    setEliminated((prev) => {
-      const nextSet = new Set(prev[qid] ?? [])
-      if (nextSet.has(key)) nextSet.delete(key)
-      else nextSet.add(key)
-      return { ...prev, [qid]: nextSet }
-    })
-  }
-
   const q = questions[i]
 
   useEffect(() => {
@@ -284,7 +274,7 @@ export default function QuizRunner({
       }
     }
   }, [i, q])
-  const result = (x: Question) => override[x.id] ?? isCorrect(x, answers[x.id])
+  const result = useCallback((x: Question) => override[x.id] ?? isCorrect(x, answers[x.id]), [override, answers])
   const set = (a: Answer) => {
     playSound('click')
     setAnswers((s) => ({ ...s, [q.id]: a }))
@@ -469,6 +459,7 @@ export default function QuizRunner({
 
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q, locked, autoCheck, handleEnter, i, mode, questions.length, answers])
 
   const score = useMemo(() => (finished ? questions.filter((x) => result(x)).length : 0), [finished]) // eslint-disable-line react-hooks/exhaustive-deps

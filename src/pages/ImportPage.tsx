@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { AlertCircle, BookOpen, Check, CheckCircle2, Copy, Download, FileCode, FileJson, Layers, ListChecks, Plus, Trash2, Upload, UploadCloud, Lightbulb, Sparkles } from 'lucide-react'
 import type { Collection } from '../types'
 import { validateCollection } from '../utils/validate'
@@ -13,7 +13,6 @@ import { cx } from '../utils'
 
 export default function ImportPage() {
   const { toast } = useToast()
-  const nav = useNavigate()
   const { customCollections, add, deleteCollection } = useCustomCollections()
 
   const [activeTab, setActiveTab] = useState<'raw' | 'upload' | 'templates' | 'manage'>('raw')
@@ -66,9 +65,9 @@ export default function ImportPage() {
         setParsedData(null)
         setValidationErrors(res.errors)
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       setParsedData(null)
-      setValidationErrors([`Lỗi cú pháp JSON: ${err.message}`])
+      setValidationErrors([`Lỗi cú pháp JSON: ${err instanceof Error ? err.message : String(err)}`])
     }
   }
 
@@ -98,8 +97,8 @@ export default function ImportPage() {
       setRawSkipped(res.skipped)
       if (res.skipped > 0) toast.info(`Nhận diện được ${res.itemCount} câu, bỏ qua ${res.skipped} câu (xem lưu ý bên dưới).`)
       else toast.info(`Đã nhận diện thành công ${res.itemCount} câu hỏi!`)
-    } catch (err: any) {
-      toast.error(err.message || 'Không thể phân tích văn bản này')
+    } catch (err: unknown) {
+      toast.error((err instanceof Error && err.message) || 'Không thể phân tích văn bản này')
     }
   }
 

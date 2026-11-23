@@ -244,9 +244,6 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     } catch {}
   }
 
-  // Touch gesture swipe state
-  const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null)
-  const [swipeHint, setSwipeHint] = useState<string | null>(null)
   const [showCardGrid, setShowCardGrid] = useState(false)
   const [showCram, setShowCram] = useState(false)
   const zenMode = useZen()
@@ -266,18 +263,6 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     setReading(false)
   }, [idx, flipped])
 
-  // Xử lý đọc Text-to-Speech
-  const handleSpeak = (e?: React.MouseEvent) => {
-    e?.stopPropagation()
-    if (isSpeaking() || reading) {
-      stopSpeaking()
-      setReading(false)
-    } else if (cur) {
-      const text = getTextToSpeak(cur.item, inverted ? !flipped : flipped)
-      setReading(true)
-      speakText(text, () => setReading(false))
-    }
-  }
 
   const getRef = useRef(get)
   getRef.current = get
@@ -295,6 +280,8 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
         return (p?.status ?? 'new') === filter
       })
     return shuffled ? shuffle(list) : list
+    // `seed` re-shuffles the deck on demand.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [entries, filter, shuffled, seed, resume])
 
   const [learn, setLearn] = useState(() => loadSettings().learnUntilKnown)
@@ -333,10 +320,28 @@ export default function FlashcardSession({ entries, mode = 'study', resumeKey }:
     setOrder(deck.map((e) => ({ e, repeat: false })))
     setRepeats(0)
     setDone(false)
+    // Reset only when the deck changes, not when `resume` does.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deck])
 
   const slot = order[idx]
   const cur = slot?.e
+
+  // Xử lý đọc Text-to-Speech
+  const handleSpeak = useCallback(
+    (e?: React.MouseEvent) => {
+      e?.stopPropagation()
+      if (isSpeaking() || reading) {
+        stopSpeaking()
+        setReading(false)
+      } else if (cur) {
+        const text = getTextToSpeak(cur.item, inverted ? !flipped : flipped)
+        setReading(true)
+        speakText(text, () => setReading(false))
+      }
+    },
+    [reading, cur, inverted, flipped],
+  )
   const isRepeat = !!slot?.repeat
   const p = cur ? get(cur.collection.id, cur.item.id) : undefined
   const { isStarred, toggle: toggleStar } = useStarred()

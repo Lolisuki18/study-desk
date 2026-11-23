@@ -18,6 +18,8 @@ export default function Readiness() {
         r: estimateReadiness(allEntries(examCollections(subject)), get),
         left: standaloneCollections(subject),
       })),
+    // `progress` is the invalidation key; `get` is read through it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [progress],
   )
   if (!rows.length) return null

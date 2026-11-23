@@ -2,28 +2,23 @@ import { useMemo, useState } from 'react'
 import {
   ArrowLeft,
   Bookmark,
-  BookOpen,
-  Check,
   CheckCircle2,
   ChevronDown,
   ChevronRight,
   Eye,
   EyeOff,
-  HelpCircle,
   RotateCw,
   Search,
   Sparkles,
   Star,
   Volume2,
-  X,
 } from 'lucide-react'
-import type { Entry, Grade, Item, MultipleChoiceContent } from '../../types'
-import { Card, Button, ProgressBar, useToast } from '../ui'
+import type { Entry, Grade } from '../../types'
+import { Button, useToast } from '../ui'
 import { useProgress } from '../../features/learning/ProgressContext'
 import { useStarred } from '../../services/storage/starred'
 import { itemTitle } from '../../data'
 import { cx } from '../../utils'
-import { isMulti } from '../../utils/answers'
 import { playSound } from '../../utils/sound'
 import { playMechSound } from '../../utils/mechSound'
 import { haptic } from '../../utils/haptic'

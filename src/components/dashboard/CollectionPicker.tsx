@@ -8,14 +8,9 @@ import {
   ChevronRight,
   ChevronUp,
   Filter,
-  Flame,
-  GraduationCap,
-  Grid,
-  Layers,
   LayoutGrid,
   Library,
   List,
-  ListChecks,
   RefreshCw,
   Search,
   Sparkles,
@@ -25,7 +20,7 @@ import { collections } from '../../data'
 import { collectionStats, useProgress } from '../../features/learning/ProgressContext'
 import { Card, Empty, ProgressBar } from '../ui'
 import { pct, cx } from '../../utils'
-import { getContentTypeBadge, getSubjectColor } from './CollectionCard'
+import { getContentTypeBadge } from './CollectionCard'
 import type { Collection } from '../../types'
 
 interface Props {
@@ -62,10 +57,6 @@ export default function CollectionPicker({ base, allowAll = true }: Props) {
 
   const toggleSubjectCollapse = (subject: string) => {
     setCollapsedSubjects((prev) => ({ ...prev, [subject]: !prev[subject] }))
-  }
-
-  if (!collections.length) {
-    return <Empty>Chưa có bộ học nào. Hãy nhờ AI Agent thêm một file JSON vào src/data/collections.</Empty>
   }
 
   const subjects = useMemo(() => {
@@ -141,6 +132,10 @@ export default function CollectionPicker({ base, allowAll = true }: Props) {
   const overallPercent = pct(overallMastered, overallTotal)
 
   const isFlashcard = base.includes('flashcard')
+
+  if (!collections.length) {
+    return <Empty>Chưa có bộ học nào. Hãy nhờ AI Agent thêm một file JSON vào src/data/collections.</Empty>
+  }
 
   return (
     <div className="space-y-6 pb-12">
@@ -383,7 +378,6 @@ export default function CollectionPicker({ base, allowAll = true }: Props) {
               return acc + (st?.mastered || 0)
             }, 0)
             const subjectPercent = pct(masteredSubjectItems, totalSubjectItems)
-            const subjectTone = getSubjectColor(subj)
 
             return (
               <section key={subj} className="space-y-3.5">

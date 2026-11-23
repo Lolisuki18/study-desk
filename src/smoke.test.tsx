@@ -7,7 +7,7 @@
  * render. A page that throws is caught by the error boundary, which shows role="alert"; a healthy page never does.
  */
 import 'fake-indexeddb/auto'
-import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import App from './App'
@@ -151,6 +151,14 @@ describe('feedback page', () => {
 })
 
 describe('error boundary', () => {
+  // React and ErrorBoundary log the deliberate throws below; keep the test output readable.
+  beforeEach(() => {
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+  })
+  afterEach(() => {
+    vi.restoreAllMocks()
+  })
+
   it('shows a recovery card instead of a blank page when a component throws', () => {
     const Bomb = () => {
       throw new Error('nổ thử')

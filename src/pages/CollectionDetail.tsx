@@ -50,6 +50,8 @@ export default function CollectionDetail() {
       if (filter === 'new') return !p || p.status === 'new'
       return true
     })
+    // `progress` forces a recompute when answers change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [c, q, filter, get, progress])
 
   if (!c) return <Empty>Không tìm thấy bộ học "{id}".</Empty>

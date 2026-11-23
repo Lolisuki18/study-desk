@@ -15,7 +15,7 @@ import {
 import type { Item, VocabularyContent } from '../../types'
 import { cx } from '../../utils'
 import { isMulti, sameKeys } from '../../utils/answers'
-import { speakEnglish, stopSpeaking } from '../../utils/speech'
+import { speakEnglish } from '../../utils/speech'
 import HighlightableText from '../ui/HighlightableText'
 import AnswerNote from '../ui/AnswerNote'
 
@@ -193,7 +193,7 @@ function VocabCardBack({ item, itemKey }: { item: Extract<Item, { type: 'vocabul
   const c = item.content
   const [showTranslation, setShowTranslation] = useState(true)
   const [playingItem, setPlayingItem] = useState<string | null>(null)
-  const [rate, setRate] = useState<number>(1.0)
+  const [rate] = useState<number>(1.0)
   const posBadge = getPosBadge(c.partOfSpeech)
 
   const handleSpeakWord = (e: React.MouseEvent, accent: 'US' | 'UK') => {

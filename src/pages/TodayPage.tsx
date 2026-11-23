@@ -25,6 +25,8 @@ export default function TodayPage() {
 
   const plan = useMemo(
     () => buildToday({ entries: allEntries(), progress: get, goalLeft, examDates: settings.examDates }),
+    // `progress` is the invalidation key; `get` reads it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [progress, goalLeft],
   )
   const total = plan.due.length + plan.wrong.length + plan.fresh.length

@@ -85,6 +85,8 @@ export default function SearchPage() {
         return true
       })
       .map((x) => x.entry)
+    // `flagsVersion` forces a recompute when answer flags change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasSearch, q, selectedSubject, filterType, progress, notes, isStarred, flagsVersion])
 
   return (

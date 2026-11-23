@@ -3,8 +3,6 @@
  * Supports English (US / UK accents) and Vietnamese with speed controls.
  */
 
-let speaking = false
-
 export interface SpeakOptions {
   lang?: string
   rate?: number
@@ -21,7 +19,6 @@ export function isSpeaking(): boolean {
 export function stopSpeaking() {
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.cancel()
-    speaking = false
   }
 }
 
@@ -126,19 +123,15 @@ export function speakText(
       u.lang = targetLang
     }
 
-    speaking = true
     u.onend = () => {
-      speaking = false
       options.onEnd?.()
     }
     u.onerror = () => {
-      speaking = false
       options.onEnd?.()
     }
 
     window.speechSynthesis.speak(u)
   } catch {
-    speaking = false
     options.onEnd?.()
   }
 }

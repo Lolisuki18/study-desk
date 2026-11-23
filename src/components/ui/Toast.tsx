@@ -82,9 +82,10 @@ export function useToast() {
   if (!ctx) {
     return {
       toast: {
-        success: (msg: string) => console.log('[Success]', msg),
+        // No provider mounted (e.g. isolated tests): fail quietly, but never hide errors.
+        success: () => {},
         error: (msg: string) => console.error('[Error]', msg),
-        info: (msg: string) => console.info('[Info]', msg),
+        info: () => {},
       },
     }
   }
